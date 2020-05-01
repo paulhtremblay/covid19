@@ -19,9 +19,10 @@ from henry_covid19.states_data import us_states_list as states_list
 def get_state_data(test = False):
   if test:
         return states_list
-  sql = """SELECT date, state, cases, deaths FROM `paul-henry-tremblay.covid19.us_states`
+  sql = """
+  SELECT date, state, new_cases as cases, new_deaths as deaths
+FROM `paul-henry-tremblay.covid19.us_states_day_diff`
 order by date
-
   """
   client = bigquery.Client(project='paul-henry-tremblay')
 
@@ -31,7 +32,6 @@ order by date
     date = i.get('date')
     cases = i.get('cases')
     final.append([date, i.get('state'), cases, i.get('deaths')])
-  pp.pprint(final)
   return final
 
 def rates(df_states,  min_value, window = 3):
@@ -96,20 +96,20 @@ def all_states(df_states, key, min_value, window = 3,
 
 def main():
     df_states = common.make_dataframe(get_state_data(test = False))
-    rates(df_states,  min_value = 3, window = 3)
-    grid = all_states(df_states = df_states, key = 'deaths', min_value = 10, 
+    rates(df_states,  min_value = 0, window = 3)
+    grid = all_states(df_states = df_states, key = 'deaths', min_value = 0, 
             window = 3)
-    grid2 = all_states(df_states = df_states, key = 'cases', min_value = 10, 
+    grid2 = all_states(df_states = df_states, key = 'cases', min_value = 0, 
             window = 3)
     script, div = components(grid)
     script2, div2 = components(grid2)
-    with open('html_dir/states_rt1.js', 'w') as write_obj:
+    with open('html_temp/states_deaths_rt.js', 'w') as write_obj:
         write_obj.write(script)
-    with open('html_dir/states_rt1.div', 'w') as write_obj:
+    with open('html_temp/states_deaths_rt.div', 'w') as write_obj:
         write_obj.write(div)
-    with open('html_dir/states_rt2.js', 'w') as write_obj:
+    with open('html_temp/states_cases_rt.js', 'w') as write_obj:
         write_obj.write(script2)
-    with open('html_dir/states_rt2.div', 'w') as write_obj:
+    with open('html_temp/states_cases_rt.div', 'w') as write_obj:
         write_obj.write(div2)
 
 if __name__ == '__main__':

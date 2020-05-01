@@ -1,10 +1,10 @@
-with open('html_dir/states_rt1.js', 'r') as read_obj:
+with open('html_temp/states_deaths_rt.js', 'r') as read_obj:
     states1_js = ''.join(read_obj.readlines())
-with open('html_dir/states_rt1.div', 'r') as read_obj:
+with open('html_temp/states_deaths_rt.div', 'r') as read_obj:
     states1_div = ''.join(read_obj.readlines())
-with open('html_dir/states_rt2.js', 'r') as read_obj:
+with open('html_temp/states_cases_rt.js', 'r') as read_obj:
     states2_js = ''.join(read_obj.readlines())
-with open('html_dir/states_rt2.div', 'r') as read_obj:
+with open('html_temp/states_cases_rt.div', 'r') as read_obj:
     states2_div = ''.join(read_obj.readlines())
 
 html_raw = """
@@ -56,7 +56,7 @@ html_raw2 = """
         )
 
 
-with open('html_dir/states_rt.html', 'w') as write_obj:
+with open('html_temp/states_deaths_rt.html', 'w') as write_obj:
     write_obj.write(html_raw)
-with open('html_dir/states_cases_rt.html', 'w') as write_obj:
+with open('html_temp/states_cases_rt.html', 'w') as write_obj:
     write_obj.write(html_raw2)

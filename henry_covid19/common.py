@@ -6,7 +6,7 @@ import numpy as np
 
 def get_double_rate(b):
   if b == 1:
-    return 1000
+    return 0
   x = math.log(2)/math.log(b)
   if math.isnan(x):
     return x

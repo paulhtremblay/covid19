@@ -10,6 +10,9 @@ from bokeh.models import DatetimeTickFormatter
 from bokeh.embed import components
 
 from henry_covid19 import common
+"""
+makes graphs for rates of states compared to US
+"""
 
 def get_state_data():
   sql = """SELECT date, state, cases, deaths FROM `paul-henry-tremblay.covid19.us_states`
@@ -77,9 +80,9 @@ def main():
     df_us = common.make_dataframe(get_us_data(), us= True)
     grid = all_states(df_states, df_us)
     script, div = components(grid)
-    with open('html_dir/states1.js', 'w') as write_obj:
+    with open('html_temp/states1.js', 'w') as write_obj:
         write_obj.write(script)
-    with open('html_dir/states1.div', 'w') as write_obj:
+    with open('html_temp/states1.div', 'w') as write_obj:
         write_obj.write(div)
 
 if __name__ == '__main__':

@@ -1,13 +1,13 @@
-with open('html_dir/states1.js', 'r') as read_obj:
+with open('html_temp/states1.js', 'r') as read_obj:
     states1_js = ''.join(read_obj.readlines())
-with open('html_dir/states1.div', 'r') as read_obj:
+with open('html_temp/states1.div', 'r') as read_obj:
     states1_div = ''.join(read_obj.readlines())
 
 html_raw = """
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Bokeh Scatter Plots</title>
+        <title>States</title>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js">
 	</script>
@@ -27,5 +27,5 @@ html_raw = """
         states1_div = states1_div,
         )
 
-with open('html_dir/states.html', 'w') as write_obj:
+with open('html_temp/states_deaths.html', 'w') as write_obj:
     write_obj.write(html_raw)
