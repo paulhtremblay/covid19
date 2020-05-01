@@ -78,29 +78,30 @@ def all_states(df_states, key, min_value, window = 3,
         if math.isnan(increase[-1]):
             continue
         min_val = common.get_double_rate(increase[-1])
+        if min_val < 1:
+            n = common.get_days_less_than_0(increase)
+            msg = 'under 1 for {n} days'.format(n = n)
+        else:
+            msg = 'doubles every {b} days'.format(b = round(min_val))
         p = figure( plot_height = plot_height, plot_width = plot_width, 
-                title = '{state}: doubles every {b} days'.format(
+                title = '{state}: {msg}'.format(
                     state = i, 
-                    b = round(min_val)
+                    msg = msg
                     )
                 )
-        #p.y_range.start = 0
         seven_day = math.pow(2, 1/7)
         p.line(x = range(len(increase)), y = increase )
-        #p.line(x = [0, max(range(len(increase)))], y = [seven_day, seven_day])
-        #p.line(x = [0, max(range(len(increase)))], 
-        #y = [increase[-1], increase[-1]], legend_label = str(min_val))
         p_list.append(p)
     grid = gridplot(p_list, ncols = 4)
     return grid
 
-def main():
+def main(window = 3):
     df_states = common.make_dataframe(get_state_data(test = False))
-    rates(df_states,  min_value = 0, window = 3)
+    rates(df_states,  min_value = 0, window = window)
     grid = all_states(df_states = df_states, key = 'deaths', min_value = 0, 
-            window = 3)
+            window = window)
     grid2 = all_states(df_states = df_states, key = 'cases', min_value = 0, 
-            window = 3)
+            window = window)
     script, div = components(grid)
     script2, div2 = components(grid2)
     with open('html_temp/states_deaths_rt.js', 'w') as write_obj:

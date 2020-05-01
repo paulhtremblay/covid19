@@ -4,6 +4,15 @@ import pandas as pd
 import math
 import numpy as np
 
+def get_days_less_than_0(l):
+    n = 1
+    for i in range(len(l)):
+        ind = len(l) - i - 1
+        if l[ind] < 1:
+            n+= 1
+        else:
+            return n
+
 def get_double_rate(b):
   if b == 1:
     return 0
