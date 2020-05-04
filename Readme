@@ -1,4 +1,31 @@
 Code for making graphs for covid19
-gsutil web set -m index.html -e 404.html gs://www.henry-data.com
+
+The site is currently served at http://www.paulhtremblay.com will change this site to henry-data.com
+in the futre. If I have enough contributors, I will use a name reflects the efforts of he group.
+
+Building the website:
+
+the bash make.sh does the following:
+
+1. calls on the individual scripts to generate bokeh objects and copy these
+objects to the html_temp dir
+
+2. insert the objects into an html document
+
+3. copy all .html files to a bucket in GCP, wher they are served. 
+
+It would be better to have the site served via https, but I will only do
+that if I get help on the front end. 
+
+Back end
+========
+
+Work done generting the graphs and doing analysis on the data
+
+Front End
+=========
+
+work done in serving the pages, such as using javascript to create links,
+etc.
 
 

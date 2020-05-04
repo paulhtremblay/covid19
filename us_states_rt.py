@@ -59,7 +59,7 @@ def rates(df_states,  min_value, window = 3):
         l.append([i, last_value_deaths, double_r_deaths,
             last_value_cases, double_r_cases])
     l.insert(0, ['state', 'deaths_rate', 'deaths_double', 'cases_rate', 'cases_double'])
-    with open('html_dir/rates.csv', 'w') as write_obj:
+    with open('html_temp/rates.csv', 'w') as write_obj:
         writer = csv.writer(write_obj)
         writer.writerows(l)
 
