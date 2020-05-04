@@ -71,26 +71,24 @@ def all_states(df_states, key, min_value, window = 3,
         increase = common.get_rate_increase(
                df = df_states[(df_states['state']==i) & (df_states[key] > min_value)],
                 key = key, window =window)
-        if len(increase) == 0:
+        if len(increase) == 0 or len(increase) == 1 or math.isnan(increase[-1]):
             continue
-        if len(increase) == 1:
-            continue
-        if math.isnan(increase[-1]):
-            continue
-        min_val = common.get_double_rate(increase[-1])
+        min_val = increase[-1]
         if min_val < 1:
             n = common.get_days_less_than_0(increase)
             msg = 'under 1 for {n} days'.format(n = n)
         else:
-            msg = 'doubles every {b} days'.format(b = round(min_val))
+            double_rate = common.get_double_rate(min_val)
+            msg = 'doubles every {b} days'.format(b = round(double_rate))
         p = figure( plot_height = plot_height, plot_width = plot_width, 
                 title = '{state}: {msg}'.format(
                     state = i, 
                     msg = msg
                     )
                 )
-        seven_day = math.pow(2, 1/7)
         p.line(x = range(len(increase)), y = increase )
+        p.line(x = range(len(increase)), y = [1 for x in increase], 
+           line_dash = 'dashed', color = 'black')
         p_list.append(p)
     grid = gridplot(p_list, ncols = 4)
     return grid

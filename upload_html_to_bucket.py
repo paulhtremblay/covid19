@@ -1,3 +1,4 @@
+import datetime
 from google.cloud import storage
 import os
 import glob
@@ -26,14 +27,6 @@ def upload_html(bucket_name = 'www.paulhtremblay.com'):
         head, tail = os.path.split(i)
         upload_to_storage(local_path = i, bucket_name = bucket_name,
                 blob_name = tail)
-    index = os.path.join('html_dir', 'index.html')
-    upload_to_storage(local_path = index, bucket_name = bucket_name,
-                blob_name = 'index.html')
-    not_found = os.path.join('html_dir', '404.html')
-    upload_to_storage(local_path = index, bucket_name = bucket_name,
-                blob_name = 'index.html')
-    upload_to_storage(local_path = index, bucket_name = bucket_name,
-                blob_name = '404.html')
 
 if __name__ == '__main__':
     upload_html()

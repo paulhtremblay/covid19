@@ -3,6 +3,7 @@ from google.cloud import bigquery
 import pandas as pd
 import math
 import numpy as np
+from bokeh.plotting import figure
 
 def get_days_less_than_0(l):
     n = 1
@@ -91,3 +92,43 @@ def get_rate_increase(df, key, window):
     else:
       final.append(i/y[counter - 1])
   return final
+
+def incidents_over_time_bar(df, key, window= 3, plot_height = 600, 
+             plot_width = 600, title = None):
+    labels = df['dates']
+    if isinstance(labels[0], datetime.date):
+        labels = [datetime.datetime(x.year, x.month, x.day) for x in labels]
+    nums = df[key].rolling(window).mean()
+    p = figure(x_axis_type = 'datetime', title = title, 
+                 plot_width = plot_width , plot_height = plot_height)
+    p.vbar(x=labels, top=nums, line_width = 5, width = .9)
+    return p
+
+def graph_wash_county_order(df, start = 3, plot_height = 450,line_width = 10):
+  weeks = df['dates'][start:-1]
+  years = ["King", "Snohomish", "Other"]
+  colors = ["blue", "orange", "green"]
+  data = {'weeks' : weeks,
+        'King'   : df['king'].tolist()[start:-1],
+        'Snohomish'   : df['snohomish'].tolist()[start:-1],
+        'Other':df['other'].tolist()[start:-1],
+        }
+  p = figure( plot_height=plot_height, title="Covid19 Deaths Washington",
+           x_axis_type= 'datetime')
+
+  r = p.vbar_stack(years, x='weeks', width=1, color=colors, source=data,
+             legend_label=years, line_width = line_width)
+
+  p.y_range.start = 0
+  p.x_range.range_padding = 0.1
+  p.xgrid.grid_line_color = None
+  p.axis.minor_tick_line_color = None
+  p.outline_line_color = None
+  p.legend.location = "top_left"
+  p.legend.orientation = "vertical"
+  p.legend.glyph_height = 1
+  p.legend.glyph_width= 1
+  p.legend.spacing  = 30
+  p.legend.label_standoff = 30
+  return p
+
