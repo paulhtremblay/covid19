@@ -18,6 +18,7 @@ script, div = components(grid)
 script2, div2 = components(p3)
 
 html_raw = """
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">

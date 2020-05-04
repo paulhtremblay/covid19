@@ -4,6 +4,7 @@ with open('html_temp/states1.div', 'r') as read_obj:
     states1_div = ''.join(read_obj.readlines())
 
 html_raw = """
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">

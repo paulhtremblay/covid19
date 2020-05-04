@@ -9,6 +9,7 @@ with open('html_temp/states_cases_rt.div', 'r') as read_obj:
     states2_div = ''.join(read_obj.readlines())
 
 html_raw = """
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -37,6 +38,7 @@ html_raw = """
         )
 
 html_raw2 = """
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
