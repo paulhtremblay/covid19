@@ -26,6 +26,8 @@ html_raw = """
 
             <h1>Covid 19 Deaths</h1>
 
+            <p>updated: {date}</p>
+
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -54,6 +56,7 @@ html_raw = """
 """.format(
         states1_js = states1_js, 
         states1_div = states1_div,
+        date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         )
 
 with open('html_temp/states_deaths.html', 'w') as write_obj:
