@@ -19,22 +19,27 @@ html_raw = """
 
     </head>
     <body>
+        <header>
 
-        <h1>Deaths in Washington State</h1>
+            <h1>Covid 19 Deaths in Washington State</h1>
 
-        <p>updated: {date}</p>
+            <p>updated: {date}</p>
 
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="states_cases_rt.html">Infection Rate Growth</a></li>
-                <li><a href="states_deaths.html">Deaths</a></li>
-                <li><a href="states_deaths_rt.html">Death Rate Growth</a></li>
-                <li><a href="wa.html">Deaths In Washington State</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="states_cases_rt.html">Infection Rate Growth</a></li>
+                    <li><a href="states_deaths.html">Deaths</a></li>
+                    <li><a href="states_deaths_rt.html">Death Rate Growth</a></li>
+                    <li><a href="wa.html">Deaths In Washington State</a></li>
+                </ul>
+            </nav>
 
-        {states1_div}
+        </header>
+
+        <main>
+            {states1_div}
+        </main>
 
     </body>
 </html>
