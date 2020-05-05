@@ -42,6 +42,13 @@ html_raw = """
             {states1_div}
         </main>
 
+        <footer>
+            <address>
+                <p>created by <a href="https://github.com/paulhtremblay">Henry Tremblay</a></p>
+                <p><a href="https://github.com/paulhtremblay/covid19">contributions welcome</a></p>
+            </address>
+        </footer>
+
     </body>
 </html>
 """.format(
