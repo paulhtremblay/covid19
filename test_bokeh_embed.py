@@ -24,8 +24,7 @@ html_raw = """
         <meta charset="utf-8">
         <title>Bokeh Scatter Plots</title>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js">
-	</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js"></script>
 
         <!-- COPY/PASTE SCRIPT HERE -->
 
@@ -33,7 +32,7 @@ html_raw = """
 
     </head>
     <body>
-    <p>is not working</p>
+        <p>is not working</p>
         {states_div}
     </body>
 </html>

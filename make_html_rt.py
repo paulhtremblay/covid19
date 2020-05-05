@@ -15,8 +15,7 @@ html_raw = """
         <meta charset="utf-8">
         <title>RT US Deaths</title>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js">
-	</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js"></script>
 
         <!-- COPY/PASTE SCRIPT HERE -->
 
@@ -24,10 +23,10 @@ html_raw = """
 
     </head>
     <body>
-    <h1>States Rate of Growth Deaths</h1>
-    <p>updated: {date}</p>
-    <p><a href = "index.html">home</a></p>
-    <p><a href = "states_cases_rt.html">cases</a></p>
+        <h1>States Rate of Growth Deaths</h1>
+        <p>updated: {date}</p>
+        <p><a href = "index.html">home</a></p>
+        <p><a href = "states_cases_rt.html">cases</a></p>
         {states1_div}
     </body>
 </html>
@@ -44,8 +43,7 @@ html_raw2 = """
         <meta charset="utf-8">
         <title>RT Cases US</title>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js">
-	</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js"></script>
 
         <!-- COPY/PASTE SCRIPT HERE -->
 
@@ -53,10 +51,10 @@ html_raw2 = """
 
     </head>
     <body>
-    <h1>States Rate of Growth Cases</h1>
-    <p>updated: {date}</p>
-    <p><a href = "index.html">home</a></p>
-    <p><a href = "states_deaths_rt.html">deaths</a></p>
+        <h1>States Rate of Growth Cases</h1>
+        <p>updated: {date}</p>
+        <p><a href = "index.html">home</a></p>
+        <p><a href = "states_deaths_rt.html">deaths</a></p>
         {states2_div}
     </body>
 </html>

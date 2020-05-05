@@ -11,8 +11,7 @@ html_raw = """
         <meta charset="utf-8">
         <title>RT US Deaths</title>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js">
-	</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js"></script>
 
         <!-- COPY/PASTE SCRIPT HERE -->
 
@@ -20,9 +19,9 @@ html_raw = """
 
     </head>
     <body>
-    <h1>Washington</h1>
-    <p><a href = "index.html">home</a></p>
-    <p>updated: {date}</p>
+        <h1>Washington</h1>
+        <p><a href = "index.html">home</a></p>
+        <p>updated: {date}</p>
         {states1_div}
     </body>
 </html>
