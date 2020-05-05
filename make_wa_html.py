@@ -21,6 +21,8 @@ html_raw = """
     <body>
         <header>
 
+            <div class="siteName">Covid 19 Data: Cases, Deaths, and Changes by State</div>
+
             <h1>Covid 19 Deaths in Washington State</h1>
 
             <p>updated: {date}</p>

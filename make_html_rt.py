@@ -26,6 +26,8 @@ html_raw = """
     <body>
         <header>
 
+            <div class="siteName">Covid 19 Data: Cases, Deaths, and Changes by State</div>
+
             <h1>States Rate of Growth Deaths</h1>
 
             <p>updated: {date}</p>
@@ -70,6 +72,8 @@ html_raw2 = """
     </head>
     <body>
         <header>
+
+            <div class="siteName">Covid 19 Data: Cases, Deaths, and Changes by State</div>
 
             <h1>States Rate of Growth Cases</h1>
 

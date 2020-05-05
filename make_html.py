@@ -22,6 +22,8 @@ html_raw = """
 
         <header>
 
+            <div class="siteName">Covid 19 Data: Cases, Deaths, and Changes by State</div>
+
             <h1>Covid 19 Deaths</h1>
 
             <nav>
