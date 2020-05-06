@@ -29,12 +29,16 @@ def double_rate_line(start,  rate, the_len, base = 2):
     l.append(start * math.pow(base, ((i + 1)/rate)))
   return l
 
-def make_dataframe(l, us= False):
+def make_dataframe(l, us= False, country = False):
     d = {}
     d['dates'] = [x[0] for x in l]
     if us:
         d['cases'] = [x[1] for x in l]
         d['deaths'] = [x[2] for x in l]
+    elif country:
+      d['country'] = [x[1] for x in l]
+      d['cases'] = [x[2] for x in l]
+      d['deaths'] = [x[3] for x in l]
     else: 
       d['state'] = [x[1] for x in l]
       d['cases'] = [x[2] for x in l]
@@ -93,15 +97,32 @@ def get_rate_increase(df, key, window):
       final.append(i/y[counter - 1])
   return final
 
+def bar_over_time(df, key, plot_height = 600, 
+             plot_width = 600, title = None, line_width = 5, 
+             ignore_last = False):
+    labels = df['dates'].tolist()
+    if ignore_last:
+        labels = labels[0:-1]
+    if isinstance(labels[0], datetime.date):
+        labels = [datetime.datetime(x.year, x.month, x.day) for x in labels]
+    nums = df[key].tolist()
+    if ignore_last:
+        nums = nums[0:-1]
+    p = figure(x_axis_type = 'datetime', title = title, 
+                 plot_width = plot_width , plot_height = plot_height)
+    p.vbar(x=labels, top=nums, line_width = line_width, width = .9)
+    return p
+
+
 def incidents_over_time_bar(df, key, window= 3, plot_height = 600, 
-             plot_width = 600, title = None):
-    labels = df['dates']
+             plot_width = 600, title = None, line_width = 5):
+    labels = df['dates'].tolist()
     if isinstance(labels[0], datetime.date):
         labels = [datetime.datetime(x.year, x.month, x.day) for x in labels]
     nums = df[key].rolling(window).mean()
     p = figure(x_axis_type = 'datetime', title = title, 
                  plot_width = plot_width , plot_height = plot_height)
-    p.vbar(x=labels, top=nums, line_width = 5, width = .9)
+    p.vbar(x=labels, top=nums, line_width = line_width, width = .9)
     return p
 
 def graph_wash_county_order(df, start = 3, plot_height = 450,line_width = 10):
