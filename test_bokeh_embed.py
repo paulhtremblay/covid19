@@ -23,6 +23,7 @@ html_raw = """
     <head>
         <meta charset="utf-8">
         <title>Bokeh Scatter Plots</title>
+        <link rel="stylesheet" href="/styles/site.css">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js"></script>
 
