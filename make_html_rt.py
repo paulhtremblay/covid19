@@ -9,25 +9,52 @@ with open('html_temp/states_cases_rt.div', 'r') as read_obj:
     states2_div = ''.join(read_obj.readlines())
 
 html_raw = """
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>RT US Deaths</title>
+        <title>Covid 19 Death Rate Growth</title>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js">
-	</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js"></script>
 
         <!-- COPY/PASTE SCRIPT HERE -->
 
         {states1_js}
 
     </head>
+
     <body>
-    <h1>States Rate of Growth Deaths</h1>
-    <p>updated: {date}</p>
-    <p><a href = "index.html">home</a></p>
-    <p><a href = "states_cases_rt.html">cases</a></p>
-        {states1_div}
+        <header>
+
+            <div class="siteName">Covid 19 Data: Cases, Deaths, and Changes by State</div>
+
+            <h1>States Rate of Growth Deaths</h1>
+
+            <p>updated: {date}</p>
+
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="states_cases_rt.html">Infection Rate Growth</a></li>
+                    <li><a href="states_deaths.html">Deaths</a></li>
+                    <li><a href="states_deaths_rt.html">Death Rate Growth</a></li>
+                    <li><a href="wa.html">Deaths In Washington State</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+            {states1_div}
+        </main>
+
+        <footer>
+            <address>
+                <p>created by <a href="https://github.com/paulhtremblay">Henry Tremblay</a></p>
+                <p><a href="https://github.com/paulhtremblay/covid19">contributions welcome</a></p>
+            </address>
+        </footer>
+
     </body>
 </html>
 """.format(
@@ -37,13 +64,13 @@ html_raw = """
         )
 
 html_raw2 = """
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <title>RT Cases US</title>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js">
-	</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js"></script>
 
         <!-- COPY/PASTE SCRIPT HERE -->
 
@@ -51,11 +78,37 @@ html_raw2 = """
 
     </head>
     <body>
-    <h1>States Rate of Growth Cases</h1>
-    <p>updated: {date}</p>
-    <p><a href = "index.html">home</a></p>
-    <p><a href = "states_deaths_rt.html">deaths</a></p>
-        {states2_div}
+        <header>
+
+            <div class="siteName">Covid 19 Data: Cases, Deaths, and Changes by State</div>
+
+            <h1>States Rate of Growth Cases</h1>
+
+            <p>updated: {date}</p>
+
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="states_cases_rt.html">Infection Rate Growth</a></li>
+                    <li><a href="states_deaths.html">Deaths</a></li>
+                    <li><a href="states_deaths_rt.html">Death Rate Growth</a></li>
+                    <li><a href="wa.html">Deaths In Washington State</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+            {states2_div}
+        </main>
+
+        <footer>
+            <address>
+                <p>created by <a href="https://github.com/paulhtremblay">Henry Tremblay</a></p>
+                <p><a href="https://github.com/paulhtremblay/covid19">contributions welcome</a></p>
+            </address>
+        </footer>
+
     </body>
 </html>
 """.format(
