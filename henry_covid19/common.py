@@ -116,7 +116,7 @@ def bar_over_time(df, key, plot_height = 600,
 
 def incidents_over_time_bar(df, key, window= 3, plot_height = 600, 
              plot_width = 600, title = None, line_width = 5):
-    labels = df['dates']
+    labels = df['dates'].tolist()
     if isinstance(labels[0], datetime.date):
         labels = [datetime.datetime(x.year, x.month, x.day) for x in labels]
     nums = df[key].rolling(window).mean()

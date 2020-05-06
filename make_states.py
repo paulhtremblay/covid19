@@ -60,6 +60,10 @@ order by date
 
 def get_html(state, script, div, death_ro, death_double_rate, 
         cases_ro, cases_double_rate):
+    if death_ro == None:
+        death_ro = 0
+    if cases_ro == None:
+        cases_ro = 0
     return """
 <html lang="en">
     <head>
@@ -97,7 +101,7 @@ def dy_dx(state, df, window, key, plot_height, plot_width, min_value = 0):
            df = df[(df['state']==state) & (df[key] > min_value)],
             key = key, window =window)
     if len(increase) == 0 or len(increase) == 1 or math.isnan(increase[-1]):
-        return
+        return None, None, None
     last_val = increase[-1]
     double_rate = common.get_double_rate(last_val)
     if last_val < 1:
@@ -120,31 +124,37 @@ def dy_dx(state, df, window, key, plot_height, plot_width, min_value = 0):
        line_dash = 'dashed', color = 'black')
     return last_val, double_rate, p
 
-def all_states(df_week, df_day, window = 3, plot_height = 300,
-        plot_width = 300):
+def all_states(df_week, df_day, window = 3, plot_height = 550,
+        plot_width = 550, verbose = False):
     states = list(set(df_week['state']))
     for i in states:
+        if verbose:
+            print('working on {state}'.format(state = i))
         min_value = 10
-        if i != 'Washington':
-            continue
         df_ = df_week[(df_week['state']==i)]
         p1 = common.bar_over_time(df_, key = 'deaths', 
                 plot_height = plot_height, plot_width = plot_width, 
-                title = 'By Week', line_width = 10, ignore_last = True)
+                title = 'Deaths by Week', line_width = 10, ignore_last = True)
+        p6 = common.bar_over_time(df_, key = 'cases', 
+                plot_height = plot_height, plot_width = plot_width, 
+                title = 'Cases by Week', line_width = 10, ignore_last = True)
         p2 = common.incidents_over_time_bar(df_day[df_day['state'] == i], 
                 key = 'deaths', window= 3, plot_height = plot_height, 
-            plot_width = plot_width, title = 'By Day', line_width = 2)
+            plot_width = plot_width, title = 'Deaths by Day', line_width = 2)
+        p5 = common.incidents_over_time_bar(df_day[df_day['state'] == i], 
+                key = 'cases', window= 3, plot_height = plot_height, 
+            plot_width = plot_width, title = 'Cases by Day', line_width = 2)
         death_ro, death_double_rate, p3 =  dy_dx(state = i, df = df_day, window = window, 
-                key = 'deaths', plot_height = plot_height, plot_width = plot_width)
+                key = 'deaths', plot_height = 300, plot_width = 300)
         cases_ro, cases_double_rate, p4 =  dy_dx(state = i, df = df_day, window = window, 
-                key = 'cases', plot_height = plot_height, plot_width = plot_width)
-        grid = gridplot([p1, p2, p3, p4], ncols = 4)
+                key = 'cases', plot_height = 300, plot_width = 300)
+        grid = gridplot([p1, p2, p6, p5,  p3, p4], ncols = 2)
         script, div = components(grid)
         html = get_html(state = i, script = script, div = div,
                 death_ro = death_ro, cases_ro = cases_ro, 
                 death_double_rate = death_double_rate, cases_double_rate = cases_double_rate)
         with open(os.path.join('html_temp', 'states', '{state}.html'.format(
-            state = i.lower())), 'w') as write_obj:
+            state = i.replace(' ', '_').lower())), 'w') as write_obj:
             write_obj.write(html)
 
 
