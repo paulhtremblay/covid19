@@ -1,3 +1,4 @@
+import datetime
 with open('html_temp/states1.js', 'r') as read_obj:
     states1_js = ''.join(read_obj.readlines())
 with open('html_temp/states1.div', 'r') as read_obj:

@@ -1,6 +1,6 @@
 set -e
 rm html_temp/* || echo 
-rm html_temp/states/*
+rm html_temp/states/* || echo
 python us_states_rt.py  
 python us_states_rates.py
 python make_html_rt.py 
