@@ -6,7 +6,6 @@ import pandas as pd
 
 from bokeh.io import show
 from bokeh.plotting import figure
-from bokeh.io import output_notebook
 from bokeh.layouts import gridplot
 from bokeh.models import NumeralTickFormatter
 from bokeh.models import DatetimeTickFormatter
@@ -15,10 +14,15 @@ from bokeh.embed import components
 from henry_covid19 import common
 
 """
-makes all graphs for states
+makes 50 + HTML files, one for each state and territory
+makes a master HTML file with links to each state
+TODO: format pages
 """
 
 def get_state_data_week():
+    """
+    get the data from BQ, grouped by week
+    """
     sql = """
   select *
 from
@@ -43,50 +47,38 @@ group by date_trunc(date,week), state
     return df
 
 def get_state_data_day():
-  sql = """
+    """
+    Get the data by day for US states
+
+    return: a list
+    """
+    sql = """
   SELECT  date, state, new_cases as cases, new_deaths as deaths
 FROM `paul-henry-tremblay.covid19.us_states_day_diff`
 order by date
   """
-  client = bigquery.Client(project='paul-henry-tremblay')
+    client = bigquery.Client(project='paul-henry-tremblay')
 
-  result = client.query(sql)
-  final = []
-  for i in result:
-    date = i.get('date')
-    cases = i.get('cases')
-    final.append([date, i.get('state'), cases, i.get('deaths')])
-  return final
+    result = client.query(sql)
+    final = []
+    for i in result:
+        date = i.get('date')
+        cases = i.get('cases')
+        final.append([date, i.get('state'), cases, i.get('deaths')])
+    return final
 
 def get_html(state, script, div, death_ro, death_double_rate, 
         cases_ro, cases_double_rate):
+    """
+    Create the HTML for each state
+    """
     if death_ro == None:
         death_ro = 0
     if cases_ro == None:
         cases_ro = 0
-    return """
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>{title}</title>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js">
-	</script>
-
-        <!-- COPY/PASTE SCRIPT HERE -->
-
-        {script}
-
-    </head>
-    <body>
-    <h1>{title}</h1>
-    <p>updated: {date}</p>
-    <p><a href = "index.html">home</a></p>
-    <p>Cases RO: {cases_ro} Deaths RO: {death_ro} <p>
-        {div}
-    </body>
-</html>
-""".format(
+    with open(os.path.join('html_dir', 'states_ind.html'), 'r') as read_obj:
+        s = ''.join(read_obj.readlines())
+    return s.format(
         title = state, 
         div = div,
         script = script,
@@ -97,6 +89,9 @@ def get_html(state, script, div, death_ro, death_double_rate,
         )
 
 def dy_dx(state, df, window, key, plot_height, plot_width, min_value = 0):
+    """
+    Create a figure and metrics for the rate of increase or decrease
+    """
     increase = common.get_rate_increase(
            df = df[(df['state']==state) & (df[key] > min_value)],
             key = key, window =window)
@@ -124,8 +119,38 @@ def dy_dx(state, df, window, key, plot_height, plot_width, min_value = 0):
        line_dash = 'dashed', color = 'black')
     return last_val, double_rate, p
 
+def make_state_ref(states):
+    """
+    make the link to each state
+    """
+    s = ''
+    for i in sorted(states):
+        s += '<p><a href="{r}">{i}</a></p>\n'.format(
+                i = i,
+                r = 'states/' + i.replace(' ', '_').lower() + '.html',
+                )
+    return s
+
+def make_states_ref_list(states):
+    """
+    create the link page  for each state
+    """
+    with open('html_dir/states_list.html', 'r') as read_obj:
+        s = ''.join(read_obj.readlines())
+    s = s.format(
+            states = make_state_ref(states),
+            title = 'title',
+            date = 'date',
+
+            )
+    with open(os.path.join('html_temp', 'by_state.html'), 'w') as write_obj:
+        write_obj.write(s)
+
 def all_states(df_week, df_day, window = 3, plot_height = 550,
         plot_width = 550, verbose = False):
+    """
+    Create all the HTML files for the states
+    """
     states = list(set(df_week['state']))
     for i in states:
         if verbose:
@@ -152,10 +177,12 @@ def all_states(df_week, df_day, window = 3, plot_height = 550,
         script, div = components(grid)
         html = get_html(state = i, script = script, div = div,
                 death_ro = death_ro, cases_ro = cases_ro, 
-                death_double_rate = death_double_rate, cases_double_rate = cases_double_rate)
+                death_double_rate = death_double_rate, 
+                cases_double_rate = cases_double_rate)
         with open(os.path.join('html_temp', 'states', '{state}.html'.format(
             state = i.replace(' ', '_').lower())), 'w') as write_obj:
             write_obj.write(html)
+    make_states_ref_list(states)
 
 
 def main():
