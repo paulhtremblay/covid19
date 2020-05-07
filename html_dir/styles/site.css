@@ -1,2 +1,49 @@
 /* site wide styles for covid 19 data site */
 
+.siteName {
+  font-size: 200%;
+  font-weight: bold;
+  margin-top: .68em;
+}
+
+a:hover {
+  color: white;
+  background-color: blue;
+}
+
+nav > ul > li > a {
+  padding: .3em;
+}
+
+@media screen and (width < 20em) {
+
+  nav > ul > li {
+    margin-bottom: .5em;
+  }
+
+}
+
+@media screen and (min-width: 20em) {
+
+  nav > ul {
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+}
+
+@media screen and (min-width: 40em) {
+
+  nav > ul {
+    justify-content: space-between;
+    max-width: 60em;
+  }
+
+}
