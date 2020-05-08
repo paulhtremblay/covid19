@@ -5,6 +5,9 @@ import math
 import numpy as np
 from bokeh.plotting import figure
 
+def tidy_name(s):
+    return s.replace(' ', '_').lower()
+
 def get_days_less_than_0(l):
     n = 1
     for i in range(len(l)):
