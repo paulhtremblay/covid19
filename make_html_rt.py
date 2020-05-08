@@ -14,6 +14,7 @@ html_raw = """
     <head>
         <meta charset="utf-8">
         <title>Covid 19 Death Rate Growth</title>
+        <link rel="stylesheet" href="/styles/site.css">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js"></script>
 
@@ -69,6 +70,7 @@ html_raw2 = """
     <head>
         <meta charset="utf-8">
         <title>RT Cases US</title>
+        <link rel="stylesheet" href="/styles/site.css">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js"></script>
 
