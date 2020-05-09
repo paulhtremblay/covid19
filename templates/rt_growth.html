@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+        <header>
+			<div class="siteName">{site_name}</div>
+			<h1>{h1_name}</h1>
+            <p>updated: {date}</p>
+			{% include "nav.html" %}
+        </header>
+        <main>
+            {states1_div}
+        </main>
+        <footer>
+            <address>
+                <p>created by <a href="https://github.com/paulhtremblay">Henry Tremblay</a></p>
+                <p><a href="https://github.com/paulhtremblay/covid19">contributions welcome</a></p>
+            </address>
+        </footer>
+{% endblock %}
+

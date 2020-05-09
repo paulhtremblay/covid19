@@ -3,8 +3,8 @@ import datetime
 import os
 from google.cloud import bigquery
 import pandas as pd
-import pprint
-pp = pprint.PrettyPrinter(indent = 4)
+
+from jinja2 import Environment, select_autoescape, FileSystemLoader
 
 from bokeh.io import show
 from bokeh.plotting import figure
@@ -12,10 +12,11 @@ from bokeh.layouts import gridplot
 from bokeh.models import NumeralTickFormatter
 from bokeh.models import DatetimeTickFormatter
 from bokeh.embed import components
-
-from jinja2 import Environment, select_autoescape, FileSystemLoader
-
 from henry_covid19 import common
+
+import pprint
+pp = pprint.PrettyPrinter(indent = 4)
+
 
 DIR = os.path.split(os.path.abspath(__file__))[0]
 
