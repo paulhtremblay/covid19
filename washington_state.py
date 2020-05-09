@@ -1,3 +1,5 @@
+import pprint
+pp = pprint.PrettyPrinter(indent = 4)
 from google.cloud import bigquery
 import pandas as pd
 
@@ -16,7 +18,8 @@ makes bar graphs for deaths/cases for WA and by counties
 """
 
 def get_data_wash_order_county():
-  sql = """
+    sql = """
+    /* WA COUNTIES */
   with t1  as
 (
 SELECT DATE_TRUNC(date, week) as date,
@@ -36,13 +39,23 @@ group by DATE_TRUNC(date, week)
 )
 select * from t1 order by date
   """
-  client = bigquery.Client(project='paul-henry-tremblay')
-
-  result = client.query(sql)
-  final = []
-  for i in result:
-    final.append([i.get('date'),  i.get('king'),  i.get('snohomish'), i.get('other')])
-  return final
+    client = bigquery.Client(project='paul-henry-tremblay')
+    result = client.query(sql)
+    final = []
+    final_dict = {
+            'date': [],
+            'king': [],
+            'snohomish': [],
+            'other': [],
+            }
+    for i in result:
+        final.append([i.get('date'),  i.get('king'),  i.get('snohomish'), i.get('other')])
+        final_dict['date'].append(i.get('date'))
+        final_dict['king'].append(i.get('king'))
+        final_dict['snohomish'].append(i.get('snohomish'))
+        final_dict['other'].append(i.get('other'))
+    pp.pprint(final_dict)
+    return final
 
 def make_dataframe_wash_order():
   l = get_data_wash_order_county()
@@ -56,39 +69,21 @@ def make_dataframe_wash_order():
   return df
 
 def get_state_data():
-  sql = """
+    sql = """
+    /* 'US STATES' */
   SELECT  date, state, new_cases as cases, new_deaths as deaths
 FROM `paul-henry-tremblay.covid19.us_states_day_diff`
 order by date
   """
-  client = bigquery.Client(project='paul-henry-tremblay')
+    client = bigquery.Client(project='paul-henry-tremblay')
+    result = client.query(sql)
+    final = []
+    for i in result:
+        final.append([i.get('date'), i.get('state'), i.get('cases'), i.get('deaths')])
+    return final
 
-  result = client.query(sql)
-  final = []
-  for i in result:
-    date = i.get('date')
-    cases = i.get('cases')
-    final.append([date, i.get('state'), cases, i.get('deaths')])
-  return final
-
-def get_us_data():
-  sql = """SELECT date, sum(cases) as cases, sum(deaths) as deaths 
-  FROM `paul-henry-tremblay.covid19.us_states`
-  group by date
-  order by date
-  """
-  client = bigquery.Client(project='paul-henry-tremblay')
-  result = client.query(sql)
-  final = []
-  for i in result:
-    date = i.get('date')
-    cases = i.get('cases')
-    final.append([date, cases, i.get('deaths')])
-  return final
-
-def main():
+def make_washington_graphs():
     df_states = common.make_dataframe(get_state_data())
-    df_us = common.make_dataframe(get_us_data(), us= True)
     df_counties =  make_dataframe_wash_order()
     p_counties = common.graph_wash_county_order(df = df_counties, 
             start = 3, plot_height = 450, line_width = 40)
@@ -104,4 +99,4 @@ def main():
         write_obj.write(div)
 
 if __name__ == '__main__':
-    main()
+    make_washington_graphs()
