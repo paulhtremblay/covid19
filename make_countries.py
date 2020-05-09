@@ -17,11 +17,10 @@ from jinja2 import Environment, select_autoescape, FileSystemLoader
 
 from henry_covid19 import common
 
-from test_data import world
-from test_data import country
+DIR = os.path.split(os.path.abspath(__file__))[0]
 
 ENV = Environment(
-    loader=FileSystemLoader( 'templates'),
+    loader=FileSystemLoader(os.path.join(DIR, 'templates')),
     autoescape=select_autoescape(['html', 'xml'])
 )
 
@@ -30,16 +29,17 @@ makes countries
 TODO: format pages
 """
 
-def get_world_data_week():
+def _get_world_data_week():
     d = world.d
     df = pd.DataFrame.from_dict(d)
     return df
 
-def _get_world_data_week():
+def get_world_data_week():
     """
     get the data from BQ, grouped by week
     """
     sql = """
+    /* WORLD BY WEEK */
   select *
 from
 (
@@ -63,17 +63,13 @@ group by date_trunc(date,week), country
     return df
 
 def get_world_data_day():
-    d = country.d 
-    df = pd.DataFrame.from_dict(d)
-    return df
-
-def _get_world_data_day():
     """
     Get the data by day for world
 
     return: a list
     """
     sql = """
+    /* WORLD BY DAY */
   SELECT  date, country, cases, deaths
 FROM `paul-henry-tremblay.covid19.world`
 order by date
@@ -82,10 +78,6 @@ order by date
 
     result = client.query(sql)
     final = []
-    for i in result:
-        date = i.get('date')
-        cases = i.get('cases')
-        final.append([date, i.get('state'), cases, i.get('deaths')])
     l = [[i.get('date'), i.get('country'), i.get('cases'), i.get('deaths')] for i in result]
     d = {}
     d['dates'] = [x[0] for x in l]
@@ -183,6 +175,8 @@ def make_territories_ref_list(territory_key, territories):
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             territories = [(d[territory_key] + '/' + common.tidy_name(x) + '.html', x) for x in territories]
             )
+    if not os.path.isdir('html_temp'):
+        os.mkdir('html_temp')
     with open(os.path.join('html_temp', path), 'w') as write_obj:
         write_obj.write(t)
 
