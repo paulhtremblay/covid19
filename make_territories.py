@@ -87,6 +87,63 @@ order by date
     df = pd.DataFrame.from_dict(d)
     return df
 
+def get_state_data_week():
+    """
+    get the data from BQ, grouped by week
+    """
+    sql = """
+    /* STATE BY WEEK */
+  select *
+from
+(
+SELECT DATE_TRUNC(date, week) as date,
+state,
+sum(new_cases) as cases,
+sum(new_deaths) as deaths
+from covid19.us_states_day_diff
+group by date_trunc(date,week), state
+) order by state, date
+  """
+    client = bigquery.Client(project='paul-henry-tremblay')
+    result = client.query(sql)
+    l = [[i.get('date'), i.get('state'), i.get('cases'), i.get('deaths')] for i in result]
+    d = {}
+    d['dates'] = [x[0] for x in l]
+    d['state'] = [x[1] for x in l]
+    d['cases'] = [x[2] for x in l]
+    d['deaths'] = [x[3] for x in l]
+    df = pd.DataFrame.from_dict(d)
+    return df
+
+def get_state_data_day():
+    """
+    Get the data by day for US states
+
+    return: a list
+    """
+    sql = """
+    /* STATE BY DAY */
+  SELECT  date, state, new_cases as cases, new_deaths as deaths
+FROM `paul-henry-tremblay.covid19.us_states_day_diff`
+order by date
+  """
+    client = bigquery.Client(project='paul-henry-tremblay')
+
+    result = client.query(sql)
+    l = []
+    for i in result:
+        date = i.get('date')
+        cases = i.get('cases')
+        l.append([date, i.get('state'), cases, i.get('deaths')])
+    d = {}
+    d['dates'] = [x[0] for x in l]
+    d['state'] = [x[1] for x in l]
+    d['cases'] = [x[2] for x in l]
+    d['deaths'] = [x[3] for x in l]
+    df = pd.DataFrame.from_dict(d)
+    return df
+
+
 def get_html(territory, script, div, death_ro, death_double_rate, 
         cases_ro, cases_double_rate):
     """
@@ -205,10 +262,10 @@ def all_territories(df_week, df_day, territory_key, window = 3, plot_height = 55
         p5 = common.incidents_over_time_bar(df_day[df_day[territory_key] == i], 
                 key = 'cases', window= 3, plot_height = plot_height, 
             plot_width = plot_width, title = 'Cases by Day', line_width = 2)
-        death_ro, death_double_rate, p3 =  dy_dx(territory_key = 'country', 
+        death_ro, death_double_rate, p3 =  dy_dx(territory_key = territory_key, 
                 territory = i, df = df_day, window = window, 
                 key = 'deaths', plot_height = 300, plot_width = 300)
-        cases_ro, cases_double_rate, p4 =  dy_dx(territory_key = 'country', 
+        cases_ro, cases_double_rate, p4 =  dy_dx(territory_key = territory_key, 
                 territory = i, df = df_day, window = window, 
                 key = 'cases', plot_height = 300, plot_width = 300)
         grid = gridplot([p1, p2, p6, p5,  p3, p4], ncols = 2)
@@ -225,8 +282,12 @@ def all_territories(df_week, df_day, territory_key, window = 3, plot_height = 55
 def main():
     df_world_week = get_world_data_week()
     df_world_day = get_world_data_day()
+    df_state_week =  get_state_data_week()
+    df_state_day = get_state_data_day()
     all_territories(df_week =  df_world_week, df_day = df_world_day, 
             territory_key = 'country', verbose = False)
+    all_territories(df_week =  df_state_week, df_day = df_state_day, 
+            territory_key = 'state', verbose = False)
 
 if __name__ == '__main__':
     main()

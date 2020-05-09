@@ -13,7 +13,7 @@ import make_territories
 from test_data import world_by_week_short
 from test_data import world_by_day_short
 from test_data import country
-
+import copy
 
 def mocked_client1(*args, **kwargs):
 
@@ -31,6 +31,12 @@ def mocked_client1(*args, **kwargs):
                 d = test_data.world_by_week_short.d
             elif '/* WORLD BY DAY */' in sql:
                 d = test_data.world_by_day_short.d
+            elif '/* STATE BY WEEK */' in sql:
+                d = copy.deepcopy(test_data.world_by_week_short.d)
+                d['state'] =  d['country']
+            elif '/* STATE BY DAY */' in sql:
+                d = copy.deepcopy(test_data.world_by_day_short.d)
+                d['state'] =  d['country']
             else:
                 raise ValueError('no sql match')
             return MockQeryJob(d)
@@ -51,6 +57,8 @@ class TestMakeCountries(unittest.TestCase):
     def test_main(self, bq):
         make_territories.main()
         self.assertTrue(len(os.listdir('html_temp')) > 0)
+        self.assertTrue('states' in os.listdir('html_temp'))
+        self.assertTrue('countries' in os.listdir('html_temp'))
    
 if __name__ == '__main__':
     unittest.main()
