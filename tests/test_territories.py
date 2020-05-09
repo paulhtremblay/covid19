@@ -1,20 +1,18 @@
 import sys
+import os
+import datetime
+import shutil
 #sys.path.append('/home/henry/projects/covid19')
 import test_data
 sys.path.append('..')
-import os
 import unittest
 from unittest import mock
-import json
-import pprint
-from bokeh.io import show
+
 from henry_covid19.mock_query_job import MockQeryJob
 import make_countries
-import datetime
 from test_data import world_by_week_short
 from test_data import world_by_day_short
 from test_data import country
-import shutil
 
 
 def mocked_client1(*args, **kwargs):
