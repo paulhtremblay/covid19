@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+        <header>
+			<div class="siteName">{site_name}</div>
+			<h1>{h1_name}</h1>
+            <p>updated: {date}</p>
+			{% include "nav.html" %}
+        </header>
+        <main>
+            {div}
+        </main>
+        <footer>
+			{% include "address.html" %}
+        </footer>
+{% endblock %}
+
+
