@@ -9,7 +9,7 @@ import unittest
 from unittest import mock
 
 from henry_covid19.mock_query_job import MockQeryJob
-import make_countries
+import make_territories
 from test_data import world_by_week_short
 from test_data import world_by_day_short
 from test_data import country
@@ -49,7 +49,7 @@ class TestMakeCountries(unittest.TestCase):
 
     @mock.patch('google.cloud.bigquery.Client', side_effect=mocked_client1)
     def test_main(self, bq):
-        make_countries.main()
+        make_territories.main()
         self.assertTrue(len(os.listdir('html_temp')) > 0)
    
 if __name__ == '__main__':
