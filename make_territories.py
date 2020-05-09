@@ -223,14 +223,18 @@ def make_territories_ref_list(territory_key, territories):
     """
     create the link page  for each state
     """
+    territories = sorted(territories)
     d = {'country': 'countries', 'state': 'states'}
     if territory_key == 'state':
         path = 'states_list.html'
+        h1_name = 'States'
     else:
         path = 'countries_list.html'
+        h1_name = 'Countries'
     t = ENV.get_template('territories_ref.html')
     t =  t.render(title = 'By {k}'.format(k = territory_key), 
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            h1_name = h1_name,
             territories = [(d[territory_key] + '/' + common.tidy_name(x) + '.html', x) for x in territories]
             )
     if not os.path.isdir('html_temp'):

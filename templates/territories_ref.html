@@ -2,8 +2,15 @@
 {% block content %}
 <h1>{{title}}</h1>
 	<p>updated: {{date}}</p>
-    <p><a href = "index.html">home</a></p>
+	<div class="siteName">{{site_name}}</div>
+	<h1>{{h1_name}}</h1>
+	{% include "nav.html" %}
+	<main>
 	{% for t in territories %}
 		<p><a href="{{ t[0]}}">{{ t[1]}}</a></p>
 	{% endfor %}
+	</main>
+	<footer>
+		{% include "address.html" %}
+	</footer>
 {% endblock %}

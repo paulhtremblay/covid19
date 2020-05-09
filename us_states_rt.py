@@ -107,17 +107,21 @@ def all_states(df_states, key, min_value, window = 3,
     grid = gridplot(p_list, ncols = 4)
     return grid
 
-def get_html(script, div, date, title):
+def get_html(script, div, date, title, the_type ):
     """
     Create the HTML for each state
     """
     t = ENV.get_template('rt_growth.html')
+    if the_type == 'deaths':
+        h1_name = 'States Rate of Growth Deaths'
+    elif the_type == 'cases':
+        h1_name = 'States Rate of Growth Infections'
     return t.render(title = title, 
             script =  script,
             date = date,
             site_name = 'Covid 19 Data: Cases, Deaths, and Changes by State',
             div = div,
-            h1_name = 'States Rate of Growth Deaths',
+            h1_name = h1_name,
             )
 
 def make_rt_html(window = 3):
@@ -127,12 +131,12 @@ def make_rt_html(window = 3):
     #make CSV
     rates(df_states,  min_value = 0, window = window)
     date = datetime.datetime.now()
-    for i in [('deaths', 'states_deaths_rt.html', 'Death Rate'), 
-            ('cases', 'states_cases_rt.html', 'Cases Rate')]:
+    for i in [('deaths', 'states_deaths_rt.html', 'Death Rate', 'deaths', ), 
+            ('cases', 'states_cases_rt.html', 'Cases Rate', 'cases')]:
         grid = all_states(df_states = df_states, key = i[0], min_value = 0, 
                 window = window)
         script, div = components(grid)
-        html = get_html(script, div, date, i[2])
+        html = get_html(script, div, date, i[2], the_type = i[3])
         with open(os.path.join('html_temp', i[1]), 'w') as write_obj:
             write_obj.write(html)
 
