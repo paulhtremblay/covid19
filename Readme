@@ -7,15 +7,16 @@ Building the website:
 
 the bash make.sh does the following:
 
-1. calls on the individual scripts to generate bokeh objects and copy these
-objects to the html_temp dir
+1. Creates bokeh objects and inserts them into HTML documents using jina
 
-2. insert the objects into an html document
+2. copy all .html files to a bucket in GCP, wher they are served. 
 
-3. copy all .html files to a bucket in GCP, wher they are served. 
-
-It would be better to have the site served via https, but I will only do
-that if I get help on the front end. 
+Setup
+======
+mkvirtualenv <name>
+pip install -r requirements.txt
+cd tests
+bash test_all.sh
 
 Back end
 ========
@@ -29,3 +30,7 @@ work done in serving the pages, such as using javascript to create links,
 etc.
 
 
+Dev
+====
+
+URL is http://seattle-data-dev.s3-website-us-west-2.amazonaws.com/
