@@ -29,7 +29,7 @@ def upload_to_storage(local_path, bucket_name, object_name):
         CacheControl='max-age=60, public',
         ) 
 
-def upload_html(bucket_name ):
+def upload_html(bucket_name, verbose):
     files = glob.glob('html_temp/*.html')
     for i in files:
         head, tail = os.path.split(i)
@@ -38,8 +38,17 @@ def upload_html(bucket_name ):
     files2 = glob.glob('html_temp/states/*.html')
     for i in files2:
         head, tail = os.path.split(i)
+        if verbose:
+            print('uploading {t}'.format(t = tail))
         upload_to_storage(local_path = i, bucket_name = bucket_name,
                 object_name = 'states/{name}'.format(name = tail))
+    files3 = glob.glob('html_temp/countries/*.html')
+    for i in files3:
+        head, tail = os.path.split(i)
+        if verbose:
+            print('uploading {t}'.format(t = tail))
+        upload_to_storage(local_path = i, bucket_name = bucket_name,
+                object_name = 'countries/{name}'.format(name = tail))
 
 def get_bucket_name(branch):
     if branch == 'dev':
@@ -51,5 +60,5 @@ def get_bucket_name(branch):
 
 if __name__ == '__main__':
     args = _get_args()
-    upload_html(get_bucket_name(args.branch))
+    upload_html(get_bucket_name(args.branch), verbose = args.verbose)
 

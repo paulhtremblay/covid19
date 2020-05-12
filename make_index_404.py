@@ -21,7 +21,7 @@ def make_index():
         write_obj.write(html)
 
 def make_404():
-    t = ENV.get_template('index.html')
+    t = ENV.get_template('404.html')
     html = t.render(title = 'home', 
             date = datetime.datetime.now(),
             site_name = 'Covid 19',
