@@ -8,11 +8,12 @@ python us_states_rates.py
 python washington_state.py
 python make_territories.py
 python make_index_404.py
-if [ $BRANCH == 'development' ]; then
-	python upload_html_to_bucket_s3.py --branch dev
-
-elif [ $BRANCH == 'development' ]; then
-	python upload_html_to_bucket_s3.py --branch prod
+UPLOAD_TO=dev
+if [ $BRANCH == 'master' ]; then
+	UPLOAD_TO=prod
+fi
+if [ $BRANCH == 'development' ] || [ $BRANCH == 'master' ]; then
+	python upload_html_to_bucket_s3.py --branch ${UPLOAD_TO}
 else
 	echo Not uploading because not dev or prod
 fi

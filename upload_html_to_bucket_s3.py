@@ -54,7 +54,7 @@ def get_bucket_name(branch):
     if branch == 'dev':
         return 'seattle-data-dev'
     elif branch == 'prod':
-        raise NotImplementedError()
+        return 'seattle-data.com'
     else:
         raise ValueError('no if')
 
