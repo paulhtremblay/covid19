@@ -11,6 +11,7 @@ from henry_covid19.mock_query_job import MockQeryJob
 import by_state
 from test_data import state_deaths
 from test_data import state_cases
+from test_data import us_states
 import copy
 
 def mocked_client1(*args, **kwargs):
@@ -28,6 +29,8 @@ def mocked_client1(*args, **kwargs):
                 d = state_deaths.d
             elif '/* STATE CASES */' in sql:
                 d = state_cases.d
+            elif '/* STATE BY DAY */' in sql:
+                d = test_data.us_states.d
             else:
                 raise ValueError('no sql match')
             return MockQeryJob(d)

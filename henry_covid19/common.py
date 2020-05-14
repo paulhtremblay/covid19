@@ -100,6 +100,16 @@ def get_rate_increase(df, key, window):
       final.append(i/y[counter - 1])
   return final
 
+def get_rt(incidents, window, space):
+    if isinstance(incidents, list):
+        incidents = pd.Series(incidents)
+    l = incidents.rolling(window).mean()
+    if len(l) < space:
+        return
+    if l[-1 * space] == 0:
+        return
+    return l[-1]/l[-1 * space]
+
 def bar_over_time(df, key, plot_height = 600, 
              plot_width = 600, title = None, line_width = 5, 
              ignore_last = False):
@@ -129,7 +139,7 @@ def incidents_over_time_bar(df, key, window= 3, plot_height = 600,
     return p
 
 def graph_stacked(data, title = None, start = 3, 
-        plot_height = 450,line_width = 10, 
+        plot_height = 450,line_width = 10, plot_width = 450,
         colors = ['blue', 'green', 'red', 'orange']
         ):
     if type(data['dates'][0]) == type(datetime.datetime(2020, 1, 1).date()):
@@ -138,7 +148,7 @@ def graph_stacked(data, title = None, start = 3,
     del(labels[labels.index('dates')])
     colors = colors[0:len(labels) ]
     p = figure( plot_height=plot_height, title=title,
-           x_axis_type= 'datetime')
+           x_axis_type= 'datetime', plot_width = plot_width)
 
     r = p.vbar_stack(labels, x='dates', width=1, color=colors, source=data,
              legend_label=labels, line_width = line_width)
