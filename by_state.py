@@ -62,9 +62,11 @@ group by date_trunc(date, week), county, state, the_rank
         D['date'].append(i.get('date'))
         D['state'].append(i.get('state'))
         D['county'].append(i.get('county'))
-        D['cases'].append(i.get('deaths'))
+        D['cases'].append(i.get('cases'))
         D['the_rank'].append(i.get('the_rank'))
         final.append([i.get('date'),  i.get('state'),  i.get('county'), i.get('cases'), i.get('the_rank') ])
+    pp.pprint(D)
+    assert False
     d = {}
     d['dates'] = [x[0] for x in final]
     d['state'] = [x[1] for x in final]

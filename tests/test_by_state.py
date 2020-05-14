@@ -47,6 +47,8 @@ class TestMakeCountries(unittest.TestCase):
     def test_main(self, bq):
         by_state.make_state_graphs()
     """
+    def test_main(self):
+        by_state.make_state_graphs()
    
 if __name__ == '__main__':
     unittest.main()
