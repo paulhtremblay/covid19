@@ -62,54 +62,10 @@ group by date_trunc(date, week), county, state, the_rank
     df = pd.DataFrame.from_dict(d)
     return df
 
-def graph_stacked(data, start = 3, plot_height = 450,line_width = 10):
-    labels = list(data.keys())
-    del(labels[labels.index('dates')])
-    colors = ['blue', 'green', 'red', 'orange']
-    colors = colors[0:len(labels) ]
-    p = figure( plot_height=plot_height, title="Covid19 Deaths Washington",
-           x_axis_type= 'datetime')
-
-    r = p.vbar_stack(labels, x='dates', width=1, color=colors, source=data,
-             legend_label=labels, line_width = line_width)
-
-    p.y_range.start = 0
-    p.x_range.range_padding = 0.1
-    p.xgrid.grid_line_color = None
-    p.axis.minor_tick_line_color = None
-    p.outline_line_color = None
-    p.legend.location = "top_left"
-    p.legend.orientation = "vertical"
-    p.legend.glyph_height = 1
-    p.legend.glyph_width= 1
-    p.legend.spacing  = 30
-    p.legend.label_standoff = 30
-    return p
-
-
 def make_state_graphs():
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
     date = datetime.datetime.now()
-    dates = [datetime.datetime(2020, 1, 1), 
-            datetime.datetime(2020, 1, 7),
-            datetime.datetime(2020, 1, 14),
-            datetime.datetime(2020, 1, 21),
-            datetime.datetime(2020, 1, 28),
-            datetime.datetime(2020, 2, 7),
-            ]
-    """
-    p =graph_stacked(  data = {'dates': dates,
-                'first': [1, 2, 3, 4, 5, 6], 
-            'second': [1, 2, 3, 4, 5, 6], 
-            'third': [1, 2, 3, 4, 5, 6], 
-            })
-    p =graph_stacked(  data = {'dates': dates,
-                'first': [1, 2, 3, 4, 5, 6], 
-            'second': [1, 2, 3, 4, 5, 6], 
-            })
-    """
-    #show(p)
     df = get_data()
     def get_key(df, state, rank, the_dict):
         if rank == 4:
@@ -121,13 +77,19 @@ def make_state_graphs():
             return
         county_name = list(set(df_['county'].tolist()))[0]
         deaths = df_['death'].tolist()
-        the_dict[county_name]= deaths
+        dates = df_['dates'].tolist()
+        temp_dict = dict(zip(dates, deaths))
+        final = []
+        for i in the_dict['dates']:
+            final.append(temp_dict.get(i, 0))
+        the_dict[county_name]= final
     the_dict = {}
+    the_dict['dates'] = sorted(list(set(df['dates'].tolist())))
     for i in range(1,5):
         get_key(df, 'Washington', i, the_dict)
-    the_dict['dates'] = df[(df['state']=='Washington') & (df['rank'] == 1)]['dates'].tolist()
-    p = graph_stacked(data = the_dict, start = 0, plot_height = 450,line_width = 10)
-    #show(p)
+    the_dict['dates'] = [datetime.datetime(x.year, x.month, x.day) for x in the_dict['dates']]
+    p = common.graph_stacked(data = the_dict, start = 0, plot_height = 450,line_width = 10)
+    show(p)
 
 if __name__ == '__main__':
     make_state_graphs()
