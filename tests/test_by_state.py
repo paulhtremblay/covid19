@@ -10,6 +10,7 @@ from unittest import mock
 from henry_covid19.mock_query_job import MockQeryJob
 import by_state
 from test_data import state_deaths
+from test_data import state_cases
 import copy
 
 def mocked_client1(*args, **kwargs):
@@ -25,6 +26,8 @@ def mocked_client1(*args, **kwargs):
         def query(self, sql,  job_config = None):
             if '/* STATE DEATHS */' in sql:
                 d = state_deaths.d
+            elif '/* STATE CASES */' in sql:
+                d = state_cases.d
             else:
                 raise ValueError('no sql match')
             return MockQeryJob(d)
@@ -42,13 +45,9 @@ class TestMakeCountries(unittest.TestCase):
         if os.path.isdir('html_temp'):
             shutil.rmtree('html_temp')
 
-    """
     @mock.patch('google.cloud.bigquery.Client', side_effect=mocked_client1)
     def test_main(self, bq):
-        by_state.make_state_graphs()
-    """
-    def test_main(self):
-        by_state.make_state_graphs()
+        by_state.make_state_graphs(verbose = False)
    
 if __name__ == '__main__':
     unittest.main()

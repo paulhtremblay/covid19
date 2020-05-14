@@ -1,4 +1,5 @@
 import datetime
+import math
 import os
 import pprint
 pp = pprint.PrettyPrinter(indent = 4)
@@ -52,21 +53,8 @@ group by date_trunc(date, week), county, state, the_rank
     client = bigquery.Client(project='paul-henry-tremblay')
     result = client.query(sql)
     final = []
-    D = {'date':[],
-            'state':[],
-            'county':[],
-            'cases':[],
-            'the_rank': [],
-            }
     for i in result:
-        D['date'].append(i.get('date'))
-        D['state'].append(i.get('state'))
-        D['county'].append(i.get('county'))
-        D['cases'].append(i.get('cases'))
-        D['the_rank'].append(i.get('the_rank'))
         final.append([i.get('date'),  i.get('state'),  i.get('county'), i.get('cases'), i.get('the_rank') ])
-    pp.pprint(D)
-    assert False
     d = {}
     d['dates'] = [x[0] for x in final]
     d['state'] = [x[1] for x in final]
@@ -156,34 +144,46 @@ def make_territories_dir(key):
         os.mkdir(dir_path)
     return dir_path
 
-def _trim_data(d, start = 0):
+def _trim_data(d):
     d_ = {}
+    start = math.inf
+    for i in d.keys():
+        if i == 'dates':
+            continue
+        for counter, j in enumerate(d[i]):
+            if j > 0 and counter < start:
+                start = counter
     for i in d.keys():
         d_[i] = d[i][start:-1]
     return d_
 
-def make_state_graphs():
-    df = get_data_cases()
 
-def _make_state_graphs():
+def make_state_graphs(verbose = False):
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
     date = datetime.datetime.now()
-    df = get_data_deaths()
+    df_deaths = get_data_deaths()
+    df_cases = get_data_cases()
     dir_path = make_territories_dir('state')
-    the_dict = {'dates': sorted(list(set(df['dates'].tolist())))}
-    for state in ['Washington']:
-        for i in range(1,5):
-            shape_data(df, state, i, the_dict, key = 'death')
-        the_dict = _trim_data(the_dict)
-        p_deaths_stacked = common.graph_stacked(data = the_dict, start = 0, 
-                plot_height = 450,line_width = 10)
-        grid = gridplot([p_deaths_stacked], ncols = 2)
+    for state in set(df_deaths['state']):
+        if verbose:
+            print('working on {state}'.format(state = state))
+        ps = []
+        for the_info in [(df_deaths, 'death'), (df_cases, 'cases')]:
+            df = the_info[0]
+            the_dict = {'dates': sorted(list(set(df['dates'].tolist())))}
+            for i in range(1,5):
+                shape_data(df, state, i, the_dict, key = the_info[1])
+            the_dict = _trim_data(the_dict)
+            p = common.graph_stacked(data = the_dict, start = 0, 
+                    plot_height = 450,line_width = 10)
+            ps.append(p)
+        grid = gridplot(ps, ncols = 2)
         script, div = components(grid)
         html = get_html(territory = state, script = script, div = div,
                 date = date,
                     )
-        tt = '{territory}'.format(territory = common.tidy_name(state)) + '_.html'
+        tt = '{territory}'.format(territory = common.tidy_name(state)) + '.html'
         with open(os.path.join(dir_path, tt), 'w') as write_obj:
             write_obj.write(html)
 
