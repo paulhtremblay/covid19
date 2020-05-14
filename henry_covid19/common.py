@@ -128,12 +128,16 @@ def incidents_over_time_bar(df, key, window= 3, plot_height = 600,
     p.vbar(x=labels, top=nums, line_width = line_width, width = .9)
     return p
 
-def graph_stacked(data, start = 3, plot_height = 450,line_width = 10):
+def graph_stacked(data, title = None, start = 3, 
+        plot_height = 450,line_width = 10, 
+        colors = ['blue', 'green', 'red', 'orange']
+        ):
+    if type(data['dates'][0]) == type(datetime.datetime(2020, 1, 1).date()):
+        data['dates'] = [datetime.datetime(x.year, x.month, x.day) for x in data['dates']]
     labels = list(data.keys())
     del(labels[labels.index('dates')])
-    colors = ['blue', 'green', 'red', 'orange']
     colors = colors[0:len(labels) ]
-    p = figure( plot_height=plot_height, title="Covid19 Deaths Washington",
+    p = figure( plot_height=plot_height, title=title,
            x_axis_type= 'datetime')
 
     r = p.vbar_stack(labels, x='dates', width=1, color=colors, source=data,

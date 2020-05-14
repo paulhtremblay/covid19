@@ -26,6 +26,7 @@ ENV = Environment(
 
 def get_data():
     sql = """
+    /* STATE DEATHS */
     select * from 
     (
     select DATE_TRUNC(date, week) as date,
