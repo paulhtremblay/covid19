@@ -24,7 +24,57 @@ ENV = Environment(
     autoescape=select_autoescape(['html', 'xml'])
 )
 
-def get_data():
+def get_data_cases():
+    sql = """
+    /* STATE CASES */
+    select * from 
+    (
+    select DATE_TRUNC(date, week) as date,
+state,
+county,
+sum(cases) as cases, 
+the_rank
+from
+(
+SELECT c.date,
+c.state,
+case when the_rank <= 3 then c.county else 'other' end as county,
+c.new_cases as cases,
+the_rank
+FROM `paul-henry-tremblay.covid19.us_counties_diff` c
+inner join covid19.cases_ranked_by_county r
+on r.state = c.state
+and r.county = c.county
+)
+group by date_trunc(date, week), county, state, the_rank
+) order by date
+    """
+    client = bigquery.Client(project='paul-henry-tremblay')
+    result = client.query(sql)
+    final = []
+    D = {'date':[],
+            'state':[],
+            'county':[],
+            'cases':[],
+            'the_rank': [],
+            }
+    for i in result:
+        D['date'].append(i.get('date'))
+        D['state'].append(i.get('state'))
+        D['county'].append(i.get('county'))
+        D['cases'].append(i.get('deaths'))
+        D['the_rank'].append(i.get('the_rank'))
+        final.append([i.get('date'),  i.get('state'),  i.get('county'), i.get('cases'), i.get('the_rank') ])
+    d = {}
+    d['dates'] = [x[0] for x in final]
+    d['state'] = [x[1] for x in final]
+    d['county'] = [x[2] for x in final]
+    d['cases'] = [x[3] for x in final]
+    d['rank'] = [x[4] for x in final]
+    df = pd.DataFrame.from_dict(d)
+    return df
+
+def get_data_deaths():
     sql = """
     /* STATE DEATHS */
     select * from 
@@ -63,34 +113,77 @@ group by date_trunc(date, week), county, state, the_rank
     df = pd.DataFrame.from_dict(d)
     return df
 
+def shape_data(df, state, rank, the_dict, key):
+    start = 1
+    if rank == 4:
+        df_ = df[(df['state']==state) & (df['county'] == 'other')]
+    else:
+        df_ = df[(df['state']==state) & (df['rank'] == rank)]
+    l = df_['county'].tolist()
+    if len(l) == 0:
+        return
+    county_name = list(set(df_['county'].tolist()))[0]
+    deaths = df_[key].tolist()
+    dates = df_['dates'].tolist()
+    temp_dict = dict(zip(dates, deaths))
+    final = []
+    for i in the_dict['dates']:
+        final.append(temp_dict.get(i, 0))
+    the_dict[county_name]= final
+
+def get_html(date, territory, script, div):
+    """
+    Create the HTML for each state
+    """
+    t = ENV.get_template('countries.html')
+    return t.render(title = territory, 
+            script =  script,
+            date = date,
+            div = div
+            )
+
+def make_territories_dir(key):
+    if key == 'country':
+        dir_path = 'countries'
+    elif key == 'state':
+        dir_path = 'states'
+    else:
+        raise ValueError('not a valid key')
+    dir_path = os.path.join('html_temp', dir_path)
+    if not os.path.isdir(dir_path):
+        os.mkdir(dir_path)
+    return dir_path
+
+def _trim_data(d, start = 0):
+    d_ = {}
+    for i in d.keys():
+        d_[i] = d[i][start:-1]
+    return d_
+
 def make_state_graphs():
+    df = get_data_cases()
+
+def _make_state_graphs():
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
     date = datetime.datetime.now()
-    df = get_data()
-    def get_key(df, state, rank, the_dict):
-        if rank == 4:
-            df_ = df[(df['state']==state) & (df['county'] == 'other')]
-        else:
-            df_ = df[(df['state']==state) & (df['rank'] == rank)]
-        l = df_['county'].tolist()
-        if len(l) == 0:
-            return
-        county_name = list(set(df_['county'].tolist()))[0]
-        deaths = df_['death'].tolist()
-        dates = df_['dates'].tolist()
-        temp_dict = dict(zip(dates, deaths))
-        final = []
-        for i in the_dict['dates']:
-            final.append(temp_dict.get(i, 0))
-        the_dict[county_name]= final
-    the_dict = {}
-    the_dict['dates'] = sorted(list(set(df['dates'].tolist())))
-    for i in range(1,5):
-        get_key(df, 'Washington', i, the_dict)
-    the_dict['dates'] = [datetime.datetime(x.year, x.month, x.day) for x in the_dict['dates']]
-    p = common.graph_stacked(data = the_dict, start = 0, plot_height = 450,line_width = 10)
-    show(p)
+    df = get_data_deaths()
+    dir_path = make_territories_dir('state')
+    the_dict = {'dates': sorted(list(set(df['dates'].tolist())))}
+    for state in ['Washington']:
+        for i in range(1,5):
+            shape_data(df, state, i, the_dict, key = 'death')
+        the_dict = _trim_data(the_dict)
+        p_deaths_stacked = common.graph_stacked(data = the_dict, start = 0, 
+                plot_height = 450,line_width = 10)
+        grid = gridplot([p_deaths_stacked], ncols = 2)
+        script, div = components(grid)
+        html = get_html(territory = state, script = script, div = div,
+                date = date,
+                    )
+        tt = '{territory}'.format(territory = common.tidy_name(state)) + '_.html'
+        with open(os.path.join(dir_path, tt), 'w') as write_obj:
+            write_obj.write(html)
 
 if __name__ == '__main__':
     make_state_graphs()
