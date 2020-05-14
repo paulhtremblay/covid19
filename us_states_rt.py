@@ -5,6 +5,7 @@ import pandas as pd
 import math
 import pprint
 import csv
+from henry_covid19 import variables
 pp = pprint.PrettyPrinter(indent = 4)
 
 from bokeh.io import show
@@ -125,6 +126,7 @@ def get_html(script, div, date, title, the_type ):
             )
 
 def make_rt_html(window = 3):
+    window = int(variables.values['rt_window'])
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
     df_states = common.make_dataframe(get_state_data(test = False))

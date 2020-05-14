@@ -64,11 +64,16 @@ def get_us_data():
     return final
 
 def make_state_graph(df_state, df_us, min_values, state, 
-        plot_height = 300, plot_width = 300, key = 'deaths'):
-    p = figure (y_axis_type = 'log', 
-            title = '{state}'.format(state = state),
-             plot_width=plot_width, 
-             plot_height=plot_height)
+        plot_height = 300, plot_width = 300, key = 'deaths', use_log = True):
+    if use_log:
+        p = figure (y_axis_type = 'log', 
+                title = '{state}'.format(state = state),
+                 plot_width=plot_width, 
+                 plot_height=plot_height)
+    else:
+        p = figure (title = '{state}'.format(state = state),
+                 plot_width=plot_width, 
+                 plot_height=plot_height)
     df_state = df_state[(df_state['state']==state) & ( df_state[key] > min_values)]
     df_us = df_us[(df_us['deaths'] > min_values)]
     p.line(x= range(len(df_state[key].tolist())),  y=df_state[key].tolist(), color='green', 
@@ -76,25 +81,27 @@ def make_state_graph(df_state, df_us, min_values, state,
     seven_day = common.double_rate_line(start = min_values, rate =  7, 
             the_len = len(df_us[key].tolist()))
     two_day = common.double_rate_line(start = min_values, rate =  3, 
-            the_len = len(df_us['deaths'].tolist()))
-    p.line(x= range(len(df_us[key].tolist())),  y=df_us[key].tolist(), color='gray',
+            the_len = len(df_us[key].tolist()))
+    if use_log:
+        p.line(x= range(len(df_us[key].tolist())),  y=df_us[key].tolist(), color='gray',
            legend_label = 'US')
 
-    p.line(x = range(len(df_us[key].tolist())), y = seven_day, legend_label = '7 days',
+        p.line(x = range(len(df_us[key].tolist())), y = seven_day, legend_label = '7 days',
            line_dash = 'dashed')
-    p.line(x = range(len(df_us[key].tolist())), y = two_day, legend_label = '3 days',
+        p.line(x = range(len(df_us[key].tolist())), y = two_day, legend_label = '3 days',
            line_dash = 'dashed')
     p.legend.location = 'top_left'
     p.yaxis.formatter=NumeralTickFormatter(format="0,")
 
     return p
 
-def all_states(df_state, df_us, key_territory, key):
+def all_states(df_state, df_us, key_territory, key, use_log):
     states = sorted(set(df_state[key_territory].tolist()))
     p_list = []
     for i in states:
         p_list.append(make_state_graph(df_state = df_state, 
-            df_us = df_us, min_values = 10, state = i, key = key))
+            df_us = df_us, min_values = 10, state = i, key = key, 
+            use_log = use_log))
     grid = gridplot(p_list, ncols = 4)
     return grid
 
@@ -120,11 +127,13 @@ def main():
         os.mkdir('html_temp')
     df_states = common.make_dataframe(get_state_data())
     df_us = common.make_dataframe(get_us_data(), us= True)
-    for i in [('deaths', 'states_deaths.html'),
-            ('cases', 'states_cases.html')
+    for i in [('deaths', 'states_deaths.html', True),
+            ('cases', 'states_cases.html', True),
+            ('deaths', 'states_deaths_lin.html', False),
+            ('cases', 'states_cases_lin.html', False),
             ]:
         grid = all_states(df_states, df_us, key_territory = 'state', 
-                key = i[0])
+                key = i[0], use_log = i[2])
         script, div = components(grid)
         html = get_html(script, div, the_type = 'deaths')
         with open(os.path.join('html_temp', i[1]), 'w') as write_obj:
