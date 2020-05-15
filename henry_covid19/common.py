@@ -101,14 +101,28 @@ def get_rate_increase(df, key, window):
   return final
 
 def get_rt(incidents, window, space):
+    if isinstance(incidents, pd.core.series.Series):
+        ll = incidents.tolist()
+    else:
+        ll = incidents
+    if len(ll) < 14:
+        s = None
+    last_week = ll[-14: -7]
+    week = ll[-7:]
+    if sum(last_week) == 0 and sum(week) == 0:
+        s = 0
+    elif sum(last_week) == 0:
+        s = None
+    else:
+        s = sum(week)/sum(last_week)
     if isinstance(incidents, list):
         incidents = pd.Series(incidents)
-    l = incidents.rolling(window).mean()
+    l = incidents.rolling(window).mean().tolist()
     if len(l) < space:
-        return
+        return s, None
     if l[-1 * space] == 0:
-        return
-    return l[-1]/l[-1 * space]
+        return s, None
+    return s, l[-1]/l[-1 * space]
 
 def bar_over_time(df, key, plot_height = 600, 
              plot_width = 600, title = None, line_width = 5, 

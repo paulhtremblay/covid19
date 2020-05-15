@@ -149,15 +149,21 @@ def shape_data(df, state, rank, the_dict, key):
         final.append(temp_dict.get(i, 0))
     the_dict[county_name]= final
 
-def get_html(date, territory, script, div):
+def get_html(date, territory, script, div, rt_death, rt_cases):
     """
     Create the HTML for each state
     """
+    if rt_death == None:
+        rt_death = 0
+    if rt_cases == None:
+        rt_cases = 0
     t = ENV.get_template('countries.html')
     return t.render(title = territory, 
             script =  script,
             date = date,
-            div = div
+            div = div,
+            cases_ro = round(rt_cases, 2),
+            death_ro = round(rt_death, 2),
             )
 
 def make_territories_dir(key):
@@ -211,6 +217,8 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400):
                 (df_cases, 'cases', df_day, 'cases', 'Cases by Week', 'Cases by Day')]:
             df = the_info[0]
             df_day_ = the_info[2]
+            rt_death, rt_death2 = common.get_rt(df_day_[df_day_['state'] == state]['deaths'], 7, 7)
+            rt_cases, rt_cases2 = common.get_rt(df_day_[df_day_['state'] == state]['cases'], 7, 7)
             the_dict = {'dates': sorted(list(set(df['dates'].tolist())))}
             for i in range(1,5):
                 shape_data(df, state, i, the_dict, key = the_info[1], 
@@ -227,7 +235,7 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400):
         grid = gridplot(ps, ncols = 2)
         script, div = components(grid)
         html = get_html(territory = state, script = script, div = div,
-                date = date,
+                date = date, rt_cases = rt_cases, rt_death = rt_death
                     )
         tt = '{territory}'.format(territory = common.tidy_name(state)) + '.html'
         with open(os.path.join(dir_path, tt), 'w') as write_obj:
