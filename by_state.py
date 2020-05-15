@@ -200,6 +200,30 @@ def _make_state_graphs(verbose = False):
                     key = the_info[3], window= 3, plot_height = 350, 
                 plot_width = 350, title = 'Deaths by Day', line_width = 2)
 
+def make_territories_ref_list(territory_key, territories):
+    """
+    create the link page  for each state
+    """
+    territories = sorted(territories)
+    d = {'country': 'countries', 'state': 'states'}
+    if territory_key == 'state':
+        path = 'states_list.html'
+        h1_name = 'States'
+    else:
+        path = 'countries_list.html'
+        h1_name = 'Countries'
+    t = ENV.get_template('territories_ref.html')
+    t =  t.render(title = 'By {k}'.format(k = territory_key), 
+            date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            h1_name = h1_name,
+            territories = [(d[territory_key] + '/' + common.tidy_name(x) + '.html', x) for x in territories]
+            )
+    if not os.path.isdir('html_temp'):
+        os.mkdir('html_temp')
+    print(path)
+    with open(os.path.join('html_temp', path), 'w') as write_obj:
+        write_obj.write(t)
+
 def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400):
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
@@ -240,6 +264,7 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400):
         tt = '{territory}'.format(territory = common.tidy_name(state)) + '.html'
         with open(os.path.join(dir_path, tt), 'w') as write_obj:
             write_obj.write(html)
+    make_territories_ref_list('state', list(set(df_day['state'])))
 
 if __name__ == '__main__':
     make_state_graphs()

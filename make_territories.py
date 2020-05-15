@@ -291,8 +291,10 @@ def main():
     df_state_day = get_state_data_day()
     all_territories(df_week =  df_world_week, df_day = df_world_day, 
             territory_key = 'country', verbose = False)
+    """
     all_territories(df_week =  df_state_week, df_day = df_state_day, 
             territory_key = 'state', verbose = False)
+    """
 
 if __name__ == '__main__':
     main()
