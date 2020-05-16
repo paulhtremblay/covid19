@@ -30,15 +30,15 @@ logarithmic graphs
 """
 
 def get_state_data():
-    with open(os.path.join('data', 'states.csv'), 'r') as read_obj:
+    path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'states.csv')
+    with open(path, 'r') as read_obj:
         df = pd.read_csv(read_obj)
-    df['date'] = pd.to_datetime(df['date'])
     return df
 
 def get_us_data():
-    with open(os.path.join('data', 'us.csv'), 'r') as read_obj:
+    path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'us.csv')
+    with open(path, 'r') as read_obj:
         df = pd.read_csv(read_obj)
-    df['date'] = pd.to_datetime(df['date'])
     return df
 
 def make_state_graph(df_state, df_us, min_values, state, 

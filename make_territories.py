@@ -30,7 +30,8 @@ def get_world_data_week():
     """
     get the data from BQ, grouped by week
     """
-    with open(os.path.join('data', 'world_week.csv'), 'r') as read_obj:
+    path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'world_week.csv')
+    with open(path, 'r') as read_obj:
         df = pd.read_csv(read_obj)
     df['date'] = pd.to_datetime(df['date'])
     df['dates'] = df['date']
@@ -42,7 +43,8 @@ def get_world_data_day():
 
     return: df
     """
-    with open(os.path.join('data', 'world.csv'), 'r') as read_obj:
+    path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'world.csv')
+    with open(path, 'r') as read_obj:
         df = pd.read_csv(read_obj)
     df['date'] = pd.to_datetime(df['date'])
     df['dates'] = df['date']
@@ -192,8 +194,6 @@ def all_territories(df_week, df_day, territory_key, window = 3, plot_height = 55
 def main():
     df_world_week = get_world_data_week()
     df_world_day = get_world_data_day()
-    #df_state_week =  get_state_data_week()
-    #df_state_day = get_state_data_day()
     all_territories(df_week =  df_world_week, df_day = df_world_day, 
             territory_key = 'country', verbose = False)
 

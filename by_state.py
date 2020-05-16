@@ -26,21 +26,24 @@ ENV = Environment(
 )
 
 def get_state_data_day():
-    with open(os.path.join('data', 'states.csv'), 'r') as read_obj:
+    path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'states.csv')
+    with open(path, 'r') as read_obj:
         df = pd.read_csv(read_obj)
     df['date'] = pd.to_datetime(df['date'])
     df['dates'] = df['date']
     return df
 
 def get_data_cases():
-    with open(os.path.join('data', 'states_cases_ranked.csv'), 'r') as read_obj:
+    path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'states_cases_ranked.csv')
+    with open(path, 'r') as read_obj:
         df = pd.read_csv(read_obj)
     df['date'] = pd.to_datetime(df['date'])
     df['dates'] = df['date']
     return df
 
 def get_data_deaths():
-    with open(os.path.join('data', 'states_deaths_ranked.csv'), 'r') as read_obj:
+    path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'states_deaths_ranked.csv')
+    with open(path, 'r') as read_obj:
         df = pd.read_csv(read_obj)
     df['date'] = pd.to_datetime(df['date'])
     df['dates'] = df['date']

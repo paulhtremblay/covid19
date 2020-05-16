@@ -1,9 +1,13 @@
+import os
 import datetime
 from google.cloud import bigquery
 import pandas as pd
 import math
 import numpy as np
 from bokeh.plotting import figure
+
+def get_data_path(dir_path, local_path, data_path = 'data'):
+    return os.path.join(dir_path, data_path, local_path)
 
 def tidy_name(s):
     return s.replace(' ', '_').lower()

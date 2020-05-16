@@ -13,6 +13,8 @@ from test_data import state_deaths
 from test_data import state_cases
 from test_data import us_states
 import copy
+from henry_covid19 import common
+
 
 def mocked_client1(*args, **kwargs):
 
@@ -36,19 +38,20 @@ def mocked_client1(*args, **kwargs):
             return MockQeryJob(d)
     return MockClient()
 
+def get_path_mock1(*args, **kwargs):
+    return os.path.join('test_data', args[1])
+
 class TestMakeCountries(unittest.TestCase):
 
     def setUp(self):
-        return
         if os.path.isdir('html_temp'):
             shutil.rmtree('html_temp')
 
     def tearDown(self):
-        return
         if os.path.isdir('html_temp'):
             shutil.rmtree('html_temp')
 
-    @mock.patch('google.cloud.bigquery.Client', side_effect=mocked_client1)
+    @mock.patch('henry_covid19.common.get_data_path', side_effect=get_path_mock1)
     def test_main(self, bq):
         by_state.make_state_graphs(verbose = False)
    
