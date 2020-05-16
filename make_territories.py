@@ -25,124 +25,29 @@ ENV = Environment(
     autoescape=select_autoescape(['html', 'xml'])
 )
 
-"""
-makes countries
-TODO: format pages
-"""
-
-def _get_world_data_week():
-    d = world.d
-    df = pd.DataFrame.from_dict(d)
-    return df
 
 def get_world_data_week():
     """
     get the data from BQ, grouped by week
     """
-    sql = """
-    /* WORLD BY WEEK */
-  select *
-from
-(
-SELECT DATE_TRUNC(date, week) as date,
-country,
-sum(cases) as cases,
-sum(deaths) as deaths
-from covid19.world
-group by date_trunc(date,week), country
-) order by country, date
-  """
-    client = bigquery.Client(project='paul-henry-tremblay')
-    result = client.query(sql)
-    l = [[i.get('date'), i.get('country'), i.get('cases'), i.get('deaths')] for i in result]
-    d = {}
-    d['dates'] = [x[0] for x in l]
-    d['country'] = [x[1] for x in l]
-    d['cases'] = [x[2] for x in l]
-    d['deaths'] = [x[3] for x in l]
-    df = pd.DataFrame.from_dict(d)
+    with open(os.path.join('data', 'world_week.csv'), 'r') as read_obj:
+        df = pd.read_csv(read_obj)
+    df['date'] = pd.to_datetime(df['date'])
+    df['dates'] = df['date']
     return df
 
 def get_world_data_day():
     """
     Get the data by day for world
 
-    return: a list
+    return: df
     """
-    sql = """
-    /* WORLD BY DAY */
-  SELECT  date, country, cases, deaths
-FROM `paul-henry-tremblay.covid19.world`
-order by date
-  """
-    client = bigquery.Client(project='paul-henry-tremblay')
-
-    result = client.query(sql)
-    final = []
-    l = [[i.get('date'), i.get('country'), i.get('cases'), i.get('deaths')] for i in result]
-    d = {}
-    d['dates'] = [x[0] for x in l]
-    d['country'] = [x[1] for x in l]
-    d['cases'] = [x[2] for x in l]
-    d['deaths'] = [x[3] for x in l]
-    df = pd.DataFrame.from_dict(d)
+    with open(os.path.join('data', 'world.csv'), 'r') as read_obj:
+        df = pd.read_csv(read_obj)
+    df['date'] = pd.to_datetime(df['date'])
+    df['dates'] = df['date']
     return df
 
-def get_state_data_week():
-    """
-    get the data from BQ, grouped by week
-    """
-    sql = """
-    /* STATE BY WEEK */
-  select *
-from
-(
-SELECT DATE_TRUNC(date, week) as date,
-state,
-sum(new_cases) as cases,
-sum(new_deaths) as deaths
-from covid19.us_states_day_diff
-group by date_trunc(date,week), state
-) order by state, date
-  """
-    client = bigquery.Client(project='paul-henry-tremblay')
-    result = client.query(sql)
-    l = [[i.get('date'), i.get('state'), i.get('cases'), i.get('deaths')] for i in result]
-    d = {}
-    d['dates'] = [x[0] for x in l]
-    d['state'] = [x[1] for x in l]
-    d['cases'] = [x[2] for x in l]
-    d['deaths'] = [x[3] for x in l]
-    df = pd.DataFrame.from_dict(d)
-    return df
-
-def get_state_data_day():
-    """
-    Get the data by day for US states
-
-    return: a list
-    """
-    sql = """
-    /* STATE BY DAY */
-  SELECT  date, state, new_cases as cases, new_deaths as deaths
-FROM `paul-henry-tremblay.covid19.us_states_day_diff`
-order by date
-  """
-    client = bigquery.Client(project='paul-henry-tremblay')
-
-    result = client.query(sql)
-    l = []
-    for i in result:
-        date = i.get('date')
-        cases = i.get('cases')
-        l.append([date, i.get('state'), cases, i.get('deaths')])
-    d = {}
-    d['dates'] = [x[0] for x in l]
-    d['state'] = [x[1] for x in l]
-    d['cases'] = [x[2] for x in l]
-    d['deaths'] = [x[3] for x in l]
-    df = pd.DataFrame.from_dict(d)
-    return df
 
 
 def get_html(territory, script, div, death_ro, death_double_rate, 
@@ -287,14 +192,10 @@ def all_territories(df_week, df_day, territory_key, window = 3, plot_height = 55
 def main():
     df_world_week = get_world_data_week()
     df_world_day = get_world_data_day()
-    df_state_week =  get_state_data_week()
-    df_state_day = get_state_data_day()
+    #df_state_week =  get_state_data_week()
+    #df_state_day = get_state_data_day()
     all_territories(df_week =  df_world_week, df_day = df_world_day, 
             territory_key = 'country', verbose = False)
-    """
-    all_territories(df_week =  df_state_week, df_day = df_state_day, 
-            territory_key = 'state', verbose = False)
-    """
 
 if __name__ == '__main__':
     main()

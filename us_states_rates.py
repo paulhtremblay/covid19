@@ -30,38 +30,16 @@ logarithmic graphs
 """
 
 def get_state_data():
-    sql = """
-    /* US STATES */
-    SELECT date, state, cases, deaths FROM `paul-henry-tremblay.covid19.us_states`
-order by date
-
-  """
-    client = bigquery.Client(project='paul-henry-tremblay')
-
-    result = client.query(sql)
-    final = []
-    for i in result:
-        date = i.get('date')
-        cases = i.get('cases')
-        final.append([date, i.get('state'), cases, i.get('deaths')])
-    return final
+    with open(os.path.join('data', 'states.csv'), 'r') as read_obj:
+        df = pd.read_csv(read_obj)
+    df['date'] = pd.to_datetime(df['date'])
+    return df
 
 def get_us_data():
-    sql = """
-    /* US */
-    SELECT date, sum(cases) as cases, sum(deaths) as deaths 
-    FROM `paul-henry-tremblay.covid19.us_states`
-    group by date
-    order by date
-    """
-    client = bigquery.Client(project='paul-henry-tremblay')
-    result = client.query(sql)
-    final = []
-    for i in result:
-        date = i.get('date')
-        cases = i.get('cases')
-        final.append([date, cases, i.get('deaths')])
-    return final
+    with open(os.path.join('data', 'us.csv'), 'r') as read_obj:
+        df = pd.read_csv(read_obj)
+    df['date'] = pd.to_datetime(df['date'])
+    return df
 
 def make_state_graph(df_state, df_us, min_values, state, 
         plot_height = 300, plot_width = 300, key = 'deaths', use_log = True):
@@ -125,8 +103,8 @@ def get_html(script, div, the_type):
 def main():
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
-    df_states = common.make_dataframe(get_state_data())
-    df_us = common.make_dataframe(get_us_data(), us= True)
+    df_states = get_state_data()
+    df_us = get_us_data()
     for i in [('deaths', 'states_deaths.html', True),
             ('cases', 'states_cases.html', True),
             ('deaths', 'states_deaths_lin.html', False),

@@ -26,109 +26,24 @@ ENV = Environment(
 )
 
 def get_state_data_day():
-    """
-    Get the data by day for US states
-
-    return: a list
-    """
-    sql = """
-    /* STATE BY DAY */
-  SELECT  date, state, new_cases as cases, new_deaths as deaths
-FROM `paul-henry-tremblay.covid19.us_states_day_diff`
-order by date
-  """
-    client = bigquery.Client(project='paul-henry-tremblay')
-
-    result = client.query(sql)
-    l = []
-    for i in result:
-        date = i.get('date')
-        cases = i.get('cases')
-        l.append([date, i.get('state'), cases, i.get('deaths')])
-    d = {}
-    d['dates'] = [x[0] for x in l]
-    d['state'] = [x[1] for x in l]
-    d['cases'] = [x[2] for x in l]
-    d['deaths'] = [x[3] for x in l]
-    df = pd.DataFrame.from_dict(d)
+    with open(os.path.join('data', 'states.csv'), 'r') as read_obj:
+        df = pd.read_csv(read_obj)
+    df['date'] = pd.to_datetime(df['date'])
+    df['dates'] = df['date']
     return df
 
 def get_data_cases():
-    sql = """
-    /* STATE CASES */
-    select * from 
-    (
-    select DATE_TRUNC(date, week) as date,
-state,
-county,
-sum(cases) as cases, 
-the_rank
-from
-(
-SELECT c.date,
-c.state,
-case when the_rank <= 3 then c.county else 'other' end as county,
-c.new_cases as cases,
-the_rank
-FROM `paul-henry-tremblay.covid19.us_counties_diff` c
-inner join covid19.cases_ranked_by_county r
-on r.state = c.state
-and r.county = c.county
-)
-group by date_trunc(date, week), county, state, the_rank
-) order by date
-    """
-    client = bigquery.Client(project='paul-henry-tremblay')
-    result = client.query(sql)
-    final = []
-    for i in result:
-        final.append([i.get('date'),  i.get('state'),  i.get('county'), i.get('cases'), i.get('the_rank') ])
-    d = {}
-    d['dates'] = [x[0] for x in final]
-    d['state'] = [x[1] for x in final]
-    d['county'] = [x[2] for x in final]
-    d['cases'] = [x[3] for x in final]
-    d['rank'] = [x[4] for x in final]
-    df = pd.DataFrame.from_dict(d)
+    with open(os.path.join('data', 'states_cases_ranked.csv'), 'r') as read_obj:
+        df = pd.read_csv(read_obj)
+    df['date'] = pd.to_datetime(df['date'])
+    df['dates'] = df['date']
     return df
 
 def get_data_deaths():
-    sql = """
-    /* STATE DEATHS */
-    select * from 
-    (
-    select DATE_TRUNC(date, week) as date,
-state,
-county,
-sum(deaths) as deaths, 
-the_rank
-from
-(
-SELECT c.date,
-c.state,
-case when the_rank <= 3 then c.county else 'other' end as county,
-c.new_deaths as deaths,
-the_rank
-FROM `paul-henry-tremblay.covid19.us_counties_diff` c
-inner join covid19.deaths_ranked_by_county r
-on r.state = c.state
-and r.county = c.county
-)
-group by date_trunc(date, week), county, state, the_rank
-) order by date
-    """
-    client = bigquery.Client(project='paul-henry-tremblay')
-    result = client.query(sql)
-    final = []
-    for i in result:
-        final.append([i.get('date'),  i.get('state'),  i.get('county'), i.get('deaths'), i.get('the_rank') ])
-    d = {}
-    d['dates'] = [x[0] for x in final]
-    d['state'] = [x[1] for x in final]
-    d['county'] = [x[2] for x in final]
-    d['death'] = [x[3] for x in final]
-    d['rank'] = [x[4] for x in final]
-    df = pd.DataFrame.from_dict(d)
+    with open(os.path.join('data', 'states_deaths_ranked.csv'), 'r') as read_obj:
+        df = pd.read_csv(read_obj)
+    df['date'] = pd.to_datetime(df['date'])
+    df['dates'] = df['date']
     return df
 
 def shape_data(df, state, rank, the_dict, key):
@@ -194,7 +109,7 @@ def _trim_data(d):
 def _make_state_graphs(verbose = False):
     df_day = get_state_data_day()
     for state in ['Washington']:
-        for the_info in [(None, 'death', df_day, 'deaths'), (None, 'cases', df_day, 'cases')]:
+        for the_info in [(None, 'deaths', df_day, 'deaths'), (None, 'cases', df_day, 'cases')]:
             df_day_ = the_info[2]
             p = common.incidents_over_time_bar(df_day_[df_day_['state'] == state ], 
                     key = the_info[3], window= 3, plot_height = 350, 
@@ -220,7 +135,6 @@ def make_territories_ref_list(territory_key, territories):
             )
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
-    print(path)
     with open(os.path.join('html_temp', path), 'w') as write_obj:
         write_obj.write(t)
 
@@ -237,7 +151,7 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400):
             print('working on {state}'.format(state = state))
         ps = []
         for the_info in [
-                (df_deaths, 'death', df_day, 'deaths', 'Deaths by Week', 'Deaths by Day',), 
+                (df_deaths, 'deaths', df_day, 'deaths', 'Deaths by Week', 'Deaths by Day',), 
                 (df_cases, 'cases', df_day, 'cases', 'Cases by Week', 'Cases by Day')]:
             df = the_info[0]
             df_day_ = the_info[2]
