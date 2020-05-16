@@ -128,6 +128,8 @@ def bar_over_time(df, key, plot_height = 600,
              plot_width = 600, title = None, line_width = 5, 
              ignore_last = False):
     labels = df['dates'].tolist()
+    if len(labels) == 1:
+        return
     if ignore_last:
         labels = labels[0:-1]
     if isinstance(labels[0], datetime.date):
