@@ -1,13 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>{{title}}</h1>
-	<p>updated: {{date}}</p>
-	<div class="siteName">{{site_name}}</div>
-	<h1>{{page_title}}</h1>
-	{% include "nav.html" %}
-	<main>
 	{% for t in territories %}
 		<p><a href="{{ t[0]}}">{{ t[1]}}</a></p>
 	{% endfor %}
-	</main>
 {% endblock %}
