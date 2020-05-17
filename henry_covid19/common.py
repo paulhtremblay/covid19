@@ -146,9 +146,21 @@ def bar_over_time(df, key, plot_height = 600,
     p.vbar(x=labels, top=nums, line_width = line_width, width = .9)
     return p
 
+def incidents_over_time_bar2(x, y,  plot_height = 600, 
+             plot_width = 600, title = None, line_width = 5, y_range = None,
+             y_axis_label = None):
+    if isinstance(x, datetime.date):
+        x = [datetime.datetime(x.year, x.month, x.day) for x in x]
+    p = figure(x_axis_type = 'datetime', title = title, 
+                 plot_width = plot_width , plot_height = plot_height, y_range = y_range)
+    p.vbar(x=x, top=y, line_width = line_width, width = .9)
+    if y_axis_label:
+        p.yaxis.axis_label = y_axis_label
+    return p
 
 def incidents_over_time_bar(df, key, window= 3, plot_height = 600, 
-             plot_width = 600, title = None, line_width = 5, y_range = None):
+             plot_width = 600, title = None, line_width = 5, y_range = None,
+             y_axis_label = None):
     labels = df['date'].tolist()
     if isinstance(labels[0], datetime.date):
         labels = [datetime.datetime(x.year, x.month, x.day) for x in labels]
@@ -156,6 +168,8 @@ def incidents_over_time_bar(df, key, window= 3, plot_height = 600,
     p = figure(x_axis_type = 'datetime', title = title, 
                  plot_width = plot_width , plot_height = plot_height, y_range = y_range)
     p.vbar(x=labels, top=nums, line_width = line_width, width = .9)
+    if y_axis_label:
+        p.yaxis.axis_label = y_axis_label
     return p
 
 def graph_stacked(data, title = None, start = 3, 
