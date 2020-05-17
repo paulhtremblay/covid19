@@ -30,7 +30,6 @@ def get_state_data_day():
     with open(path, 'r') as read_obj:
         df = pd.read_csv(read_obj)
     df['date'] = pd.to_datetime(df['date'])
-    df['dates'] = df['date']
     return df
 
 def get_data_cases():
@@ -38,7 +37,6 @@ def get_data_cases():
     with open(path, 'r') as read_obj:
         df = pd.read_csv(read_obj)
     df['date'] = pd.to_datetime(df['date'])
-    df['dates'] = df['date']
     return df
 
 def get_data_deaths():
@@ -46,7 +44,6 @@ def get_data_deaths():
     with open(path, 'r') as read_obj:
         df = pd.read_csv(read_obj)
     df['date'] = pd.to_datetime(df['date'])
-    df['dates'] = df['date']
     return df
 
 def shape_data(df, state, rank, the_dict, key):
@@ -60,10 +57,10 @@ def shape_data(df, state, rank, the_dict, key):
         return
     county_name = list(set(df_['county'].tolist()))[0]
     deaths = df_[key].tolist()
-    dates = df_['dates'].tolist()
+    dates = df_['date'].tolist()
     temp_dict = dict(zip(dates, deaths))
     final = []
-    for i in the_dict['dates']:
+    for i in the_dict['date']:
         final.append(temp_dict.get(i, 0))
     the_dict[county_name]= final
 
@@ -100,7 +97,7 @@ def _trim_data(d):
     d_ = {}
     start = math.inf
     for i in d.keys():
-        if i == 'dates':
+        if i == 'date':
             continue
         for counter, j in enumerate(d[i]):
             if j > 0 and counter < start:
@@ -160,7 +157,7 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400):
             df_day_ = the_info[2]
             rt_death, rt_death2 = common.get_rt(df_day_[df_day_['state'] == state]['deaths'], 7, 7)
             rt_cases, rt_cases2 = common.get_rt(df_day_[df_day_['state'] == state]['cases'], 7, 7)
-            the_dict = {'dates': sorted(list(set(df['dates'].tolist())))}
+            the_dict = {'date': sorted(list(set(df['date'].tolist())))}
             for i in range(1,5):
                 shape_data(df, state, i, the_dict, key = the_info[1], 
                         )

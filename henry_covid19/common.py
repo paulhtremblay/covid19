@@ -162,15 +162,15 @@ def graph_stacked(data, title = None, start = 3,
         plot_height = 450,line_width = 10, plot_width = 450,
         colors = ['blue', 'green', 'red', 'orange']
         ):
-    if type(data['dates'][0]) == type(datetime.datetime(2020, 1, 1).date()):
-        data['dates'] = [datetime.datetime(x.year, x.month, x.day) for x in data['dates']]
+    if type(data['date'][0]) == type(datetime.datetime(2020, 1, 1).date()):
+        data['date'] = [datetime.datetime(x.year, x.month, x.day) for x in data['dates']]
     labels = list(data.keys())
-    del(labels[labels.index('dates')])
+    del(labels[labels.index('date')])
     colors = colors[0:len(labels) ]
     p = figure( plot_height=plot_height, title=title,
            x_axis_type= 'datetime', plot_width = plot_width)
 
-    r = p.vbar_stack(labels, x='dates', width=1, color=colors, source=data,
+    r = p.vbar_stack(labels, x='date', width=1, color=colors, source=data,
              legend_label=labels, line_width = line_width)
 
     p.y_range.start = 0
