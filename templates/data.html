@@ -1,0 +1,6 @@
+{% extends "base.html" %} {# for all pages that show Covid data/charts/etc. #}
+
+{% block main_header %}
+      {{ super() }}
+      <p>Last updated: {{date}}</p>
+{% endblock main_header %}
