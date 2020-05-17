@@ -33,7 +33,7 @@ def get_data():
 
 def do_graphs(df,  pop, title, y_range,
         plot_width = 300, plot_height = 300):
-    df['deaths_million'] = df['deaths'] / 10.2
+    df['deaths_million'] = df['deaths'] /(pop/1e6) 
     p = common.incidents_over_time_bar(df = df, key = 'deaths_million', 
             title = title,
             y_range = y_range, plot_height = plot_height, plot_width = plot_width)
@@ -74,11 +74,11 @@ def make_sweden_graph(plot_width = 300, plot_height = 300):
     p3 = do_graphs(df = df_washington,  pop = pops['washington'], title ='Washington',
         plot_width = plot_width, plot_height = plot_height, y_range = (0, 15))
     p4 = do_graphs(df = df_sweden,  pop = pops['sweden'], title ='Sweden',
-        plot_width = plot_width, plot_height = plot_height, y_range = (0, 110))
+        plot_width = plot_width, plot_height = plot_height, y_range = (0, 60))
     p5 = do_graphs(df = df_ny,  pop = pops['ny'], title ='New York',
-        plot_width = plot_width, plot_height = plot_height, y_range = (0, 110))
+        plot_width = plot_width, plot_height = plot_height, y_range = (0, 60))
     p6 = do_graphs(df = df_belgium,  pop = pops['belgium'], title ='Belgium',
-        plot_width = plot_width, plot_height = plot_height, y_range = (0, 110))
+        plot_width = plot_width, plot_height = plot_height, y_range = (0, 60))
     grid = gridplot([p1, p2, p3, p4, p5, p6], ncols = 3)
     script, div = components(grid)
     html = get_html(script = script, div = div,
