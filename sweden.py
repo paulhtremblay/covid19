@@ -74,11 +74,11 @@ def make_sweden_graph(plot_width = 300, plot_height = 300):
     p3 = do_graphs(df = df_washington,  pop = pops['washington'], title ='Washington',
         plot_width = plot_width, plot_height = plot_height, y_range = (0, 15))
     p4 = do_graphs(df = df_sweden,  pop = pops['sweden'], title ='Sweden',
-        plot_width = plot_width, plot_height = plot_height, y_range = (0, 90))
+        plot_width = plot_width, plot_height = plot_height, y_range = (0, 110))
     p5 = do_graphs(df = df_ny,  pop = pops['ny'], title ='New York',
-        plot_width = plot_width, plot_height = plot_height, y_range = (0, 90))
+        plot_width = plot_width, plot_height = plot_height, y_range = (0, 110))
     p6 = do_graphs(df = df_belgium,  pop = pops['belgium'], title ='Belgium',
-        plot_width = plot_width, plot_height = plot_height, y_range = (0, 90))
+        plot_width = plot_width, plot_height = plot_height, y_range = (0, 110))
     grid = gridplot([p1, p2, p3, p4, p5, p6], ncols = 3)
     script, div = components(grid)
     html = get_html(script = script, div = div,
