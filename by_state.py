@@ -126,14 +126,14 @@ def make_territories_ref_list(territory_key, territories):
     d = {'country': 'countries', 'state': 'states'}
     if territory_key == 'state':
         path = 'states_list.html'
-        h1_name = 'States'
+        page_title = 'States'
     else:
         path = 'countries_list.html'
-        h1_name = 'Countries'
+        page_title = 'Countries'
     t = ENV.get_template('territories_ref.html')
     t =  t.render(title = 'By {k}'.format(k = territory_key), 
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-            h1_name = h1_name,
+            page_title = page_title,
             territories = [(d[territory_key] + '/' + common.tidy_name(x) + '.html', x) for x in territories]
             )
     if not os.path.isdir('html_temp'):
