@@ -98,7 +98,7 @@ def get_html(script, div, the_type):
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             div = div,
             site_name = site_name,
-            h1_name = title,
+            page_title = title,
             )
 def main():
     if not os.path.isdir('html_temp'):
