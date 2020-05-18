@@ -28,4 +28,17 @@ Front End
 work done in serving the pages, such as using javascript to create links,
 etc.
 
+Data
+====
+notes
+
+The data for Polulation is from this website:
+https://data.ers.usda.gov/reports.aspx?ID=17827.
+The file rural_urban_codes_2013 has columns of fips code, rual,urban classification,state, county, actual population. 
+The actual population in 2010 was 312,471,327.
+
+Rural urban definition
+ Urban: in the rucc_2010 column, codes numbered as 1, 2, 3 
+ Rural: in the rucc_2010 column, codes numbered as 4-9
+
 
