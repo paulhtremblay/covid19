@@ -92,7 +92,7 @@ def get_html(script, div, date, title):
             date = date,
             site_name = 'Covid 19 Data: Cases, Deaths, and Changes by State',
             div = div,
-            h1_name = 'States Rate of Growth Deaths',
+            page_title = 'States Rate of Growth Deaths',
             )
 
 def make_washington_graphs():
