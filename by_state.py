@@ -1,4 +1,5 @@
 import datetime
+import numpy as np
 import math
 import os
 import pprint
@@ -17,6 +18,7 @@ from bokeh.embed import components
 from jinja2 import Environment, select_autoescape, FileSystemLoader
 
 from henry_covid19 import common
+from henry_covid19 import variables
 
 ENV = Environment(
     loader=FileSystemLoader(os.path.join(
@@ -123,14 +125,14 @@ def make_territories_ref_list(territory_key, territories):
     d = {'country': 'countries', 'state': 'states'}
     if territory_key == 'state':
         path = 'states_list.html'
-        page_title = 'States'
+        h1_name = 'States'
     else:
         path = 'countries_list.html'
-        page_title = 'Countries'
+        h1_name = 'Countries'
     t = ENV.get_template('territories_ref.html')
     t =  t.render(title = 'By {k}'.format(k = territory_key), 
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-            page_title = page_title,
+            h1_name = h1_name,
             territories = [(d[territory_key] + '/' + common.tidy_name(x) + '.html', x) for x in territories]
             )
     if not os.path.isdir('html_temp'):
@@ -138,7 +140,16 @@ def make_territories_ref_list(territory_key, territories):
     with open(os.path.join('html_temp', path), 'w') as write_obj:
         write_obj.write(t)
 
-def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400):
+def _get_first_nonzero(x):
+    for counter, i in enumerate(x):
+        if i != 0 and not np.isnan(i):
+            return counter
+    return 0
+
+def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400, 
+        window = None):
+    if not window:
+        window = int(variables.values['by_state_window'])
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
     date = datetime.datetime.now()
@@ -151,8 +162,12 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400):
             print('working on {state}'.format(state = state))
         ps = []
         for the_info in [
-                (df_deaths, 'deaths', df_day, 'deaths', 'Deaths by Week', 'Deaths by Day',), 
-                (df_cases, 'cases', df_day, 'cases', 'Cases by Week', 'Cases by Day')]:
+                (df_deaths, 'deaths', df_day, 'deaths', 
+                    'Deaths by Week'.format(w = window), 
+                    'Deaths by Day ({w} day mean)'.format(w = window)), 
+                (df_cases, 'cases', df_day, 'cases', 
+                    'Cases by Week', 
+                    'Cases by Day ({w} day mean)'.format(w = window))]:
             df = the_info[0]
             df_day_ = the_info[2]
             rt_death, rt_death2 = common.get_rt(df_day_[df_day_['state'] == state]['deaths'], 7, 7)
@@ -162,12 +177,20 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400):
                 shape_data(df, state, i, the_dict, key = the_info[1], 
                         )
             the_dict = _trim_data(the_dict)
+            y = df_day_[df_day_['state'] == state][the_info[1]].rolling(window).mean()  
+            first = _get_first_nonzero(y)
+            y = y[first:]
+            x = df_day_[df_day_['state'] == state]['date'] 
+            x = x[first:]
             p = common.graph_stacked(data = the_dict, start = 0, 
                     plot_height = plot_height,plot_width = plot_width ,
-                    line_width = 10, title = the_info[4])
-            p_day = common.incidents_over_time_bar(df_day_[df_day_['state'] == state ], 
-                    key = the_info[3], window= 3, plot_height = plot_height, 
-                plot_width = plot_width, title = the_info[5], line_width = 2)
+                    line_width = 10, title = the_info[4] )
+            p_day = common.incidents_over_time_bar2(
+                    x = x,
+                    y = y,  
+                    plot_height = plot_height, 
+                    line_width = 3,
+                    plot_width = plot_width, title = the_info[5])
             ps.append(p)
             ps.append(p_day)
         grid = gridplot(ps, ncols = 2)
@@ -175,8 +198,8 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400):
         html = get_html(territory = state, script = script, div = div,
                 date = date, rt_cases = rt_cases, rt_death = rt_death
                     )
-        tt = '{territory}'.format(territory = common.tidy_name(state)) + '.html'
-        with open(os.path.join(dir_path, tt), 'w') as write_obj:
+        with open(os.path.join(dir_path, 
+            '{territory}'.format(territory = common.tidy_name(state)) + '.html'), 'w') as write_obj:
             write_obj.write(html)
     make_territories_ref_list('state', list(set(df_day['state'])))
 

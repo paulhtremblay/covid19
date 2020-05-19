@@ -196,36 +196,8 @@ def graph_stacked(data, title = None, start = 3,
     p.legend.orientation = "vertical"
     p.legend.glyph_height = 1
     p.legend.glyph_width= 1
-    p.legend.spacing  = 30
-    p.legend.label_standoff = 30
+    p.legend.spacing  = 10
+    p.legend.label_standoff = 10
     return p
 
-
-def graph_wash_county_order(df, start = 3, plot_height = 450,line_width = 10):
-  weeks = df['dates'][start:-1]
-  years = ["King", "Snohomish", "Other"]
-  colors = ["blue", "orange", "green"]
-  data = {'weeks' : weeks,
-        'King'   : df['king'].tolist()[start:-1],
-        'Snohomish'   : df['snohomish'].tolist()[start:-1],
-        'Other':df['other'].tolist()[start:-1],
-        }
-  p = figure( plot_height=plot_height, title="Covid19 Deaths Washington",
-           x_axis_type= 'datetime')
-
-  r = p.vbar_stack(years, x='weeks', width=1, color=colors, source=data,
-             legend_label=years, line_width = line_width)
-
-  p.y_range.start = 0
-  p.x_range.range_padding = 0.1
-  p.xgrid.grid_line_color = None
-  p.axis.minor_tick_line_color = None
-  p.outline_line_color = None
-  p.legend.location = "top_left"
-  p.legend.orientation = "vertical"
-  p.legend.glyph_height = 1
-  p.legend.glyph_width= 1
-  p.legend.spacing  = 30
-  p.legend.label_standoff = 30
-  return p
 
