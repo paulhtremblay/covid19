@@ -25,7 +25,7 @@ def make_404():
     html = t.render(title = 'home', 
             date = datetime.datetime.now(),
             site_name = 'Covid 19',
-            page_title = 'Covid 19',
+            page_title = 'Not Found',
             )
     with open(os.path.join('html_temp', '404.html'), 'w') as write_obj:
         write_obj.write(html)
