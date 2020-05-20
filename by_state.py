@@ -75,7 +75,7 @@ def get_html(date, territory, script, div, rt_death, rt_cases):
     if rt_cases == None:
         rt_cases = 0
     t = ENV.get_template('countries.html')
-    return t.render(title = territory, 
+    return t.render(territory_name = territory, 
             script =  script,
             date = date,
             div = div,
