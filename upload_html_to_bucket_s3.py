@@ -49,6 +49,13 @@ def upload_html(bucket_name, verbose):
             print('uploading {t}'.format(t = tail))
         upload_to_storage(local_path = i, bucket_name = bucket_name,
                 object_name = 'countries/{name}'.format(name = tail))
+    files4 = glob.glob('templates/styles/*')
+    for i in files4:
+        head, tail = os.path.split(i)
+        if verbose:
+            print('uploading {t}'.format(t = tail))
+        upload_to_storage(local_path = i, bucket_name = bucket_name,
+                object_name = 'styles/{name}'.format(name = tail))
 
 def get_bucket_name(branch):
     if branch == 'dev':
