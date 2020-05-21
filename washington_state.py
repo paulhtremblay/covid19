@@ -86,7 +86,7 @@ def get_html(script, div, date, title):
     """
     Create the HTML for each state
     """
-    t = ENV.get_template('wa.html')
+    t = ENV.get_template('data.html')
     return t.render(title = title, 
             script =  script,
             date = date,

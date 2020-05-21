@@ -1,20 +1,17 @@
 {% extends "base.html" %}
-        <header>
-			<div class="siteName">{{site_name}}</div>
-			<h1>{{page_title}}</h1>
-			<p>updated: {{date}}</p>
-			{% include "nav.html" %}
-        </header>
-{% block content %}
-        <main>
-            <p>
-                Graphs showing covid 19 cases of infection, deaths, and changes
-                in the rates in the <abbr title="United States">U.S.</abbr> and world.
-            </p>
-        </main>
-        <footer>
-			{% include "address.html" %}
-        </footer>
-{% endblock %}
 
+{% block title %}{{ website.name }}: {{ website.slogan }}{% endblock %}
+
+{% block main_header %}
+        <h1 class="siteNameSlogan">{{ website.name }}: {{ website.slogan }}</h1>
+        {% include "nav.html" %}
+{% endblock main_header %}
+
+
+{% block content %}
+      <p>
+        Graphs showing trends in Covid-19 infection, deaths, and rates
+        in the <abbr title="United States">U.S.</abbr> and world.
+      </p>
+{% endblock content %}
 
