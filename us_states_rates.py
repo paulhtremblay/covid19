@@ -30,7 +30,7 @@ logarithmic graphs
 """
 
 def get_state_data():
-    path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'states.csv')
+    path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'states_cum.csv')
     with open(path, 'r') as read_obj:
         df = pd.read_csv(read_obj)
     return df
@@ -98,7 +98,7 @@ def get_html(script, div, the_type):
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             div = div,
             site_name = site_name,
-            h1_name = title,
+            page_title = title,
             )
 def main():
     if not os.path.isdir('html_temp'):

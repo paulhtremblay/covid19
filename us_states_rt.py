@@ -114,15 +114,15 @@ def get_html(script, div, date, title, the_type ):
     """
     t = ENV.get_template('rt_growth.html')
     if the_type == 'deaths':
-        h1_name = 'States Rate of Growth Deaths'
+        page_title = 'States Rate of Growth Deaths'
     elif the_type == 'cases':
-        h1_name = 'States Rate of Growth Infections'
+        page_title = 'States Rate of Growth Infections'
     return t.render(title = title, 
             script =  script,
             date = date,
             site_name = 'Covid 19 Data: Cases, Deaths, and Changes by State',
             div = div,
-            h1_name = h1_name,
+            page_title = page_title,
             )
 
 def make_rt_html(window = 3):

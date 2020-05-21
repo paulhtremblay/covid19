@@ -2,6 +2,56 @@ import csv
 import os
 from google.cloud import bigquery
 
+def get_state_sql_day_cum():
+    return """
+    SELECT date, state, cases, deaths
+FROM `paul-henry-tremblay.covid19.us_states`
+order by date
+    """
+
+def get_sql_sweden():
+    return """
+    SELECT 'Seattle' as region, date,
+sum (case when county = 'King' then new_cases else 0 end) as cases,
+sum (case when county = 'King' then new_deaths else 0 end) as deaths
+FROM `paul-henry-tremblay.covid19.us_counties_diff`
+where state = 'Washington'
+group by date
+union all
+SELECT 'New York City' as region, date,
+sum (case when county = 'New York City' then new_cases else 0 end) as cases,
+sum (case when county = 'New York City' then new_deaths else 0 end) as deaths
+FROM `paul-henry-tremblay.covid19.us_counties_diff`
+where state = 'New York'
+group by date
+union all
+SELECT 'Washington' as region, date,
+sum(new_cases) as cases,
+sum(new_deaths) as deaths
+FROM `paul-henry-tremblay.covid19.us_states_day_diff`
+where state = 'Washington'
+group by date
+union all
+SELECT 'New York' as region, date,
+sum(new_cases) as cases,
+sum(new_deaths) as deaths
+FROM `paul-henry-tremblay.covid19.us_states_day_diff`
+where state = 'New York'
+group by date
+union all
+select 'Sweden',  date, cases, deaths from
+covid19.world
+where country = 'Sweden'
+union all
+select 'Belgium',  date, cases, deaths from
+covid19.world
+where country = 'Belgium'
+union all
+select 'Norway',  date, cases, deaths from
+covid19.world
+where country = 'Norway'
+    """
+
 def get_sql_world_day():
     return  """
     /* WORLD BY DAY */
@@ -121,6 +171,11 @@ def get_all_data():
             path = 'world_week.csv')
     gen_writer(client = client, sql =get_sql_world_day(), 
             path = 'world.csv')
+    gen_writer(client = client, sql =get_sql_sweden(), 
+            path = 'sweden_vs.csv')
+    gen_writer(client = client, sql =get_state_sql_day_cum(), 
+            path = 'states_cum.csv')
+
     
 if __name__ == '__main__':
     get_all_data()

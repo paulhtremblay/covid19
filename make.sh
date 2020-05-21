@@ -25,6 +25,7 @@ rm html_temp/states/* 2> /dev/null || echo
 python us_states_rates.py
 python make_territories.py
 python by_state.py
+python sweden.py
 python make_index_404.py
 UPLOAD_TO=dev
 if [ $BRANCH == 'master' ]; then

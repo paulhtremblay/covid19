@@ -44,10 +44,12 @@ def get_path_mock1(*args, **kwargs):
 class TestMakeCountries(unittest.TestCase):
 
     def setUp(self):
+        return
         if os.path.isdir('html_temp'):
             shutil.rmtree('html_temp')
 
     def tearDown(self):
+        return
         if os.path.isdir('html_temp'):
             shutil.rmtree('html_temp')
 
