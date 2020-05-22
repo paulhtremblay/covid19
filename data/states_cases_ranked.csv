@@ -1,0 +1,3134 @@
+date,state,county,cases,rank
+2020-01-19,Illinois,Cook,0,1
+2020-01-19,Washington,Snohomish,0,2
+2020-01-26,Arizona,Maricopa,0,1
+2020-01-26,Illinois,Cook,1,1
+2020-01-26,California,Los Angeles,0,1
+2020-01-26,California,other,0,100
+2020-01-26,Washington,Snohomish,0,2
+2020-02-02,Arizona,Maricopa,0,1
+2020-02-02,Illinois,Cook,0,1
+2020-02-02,Wisconsin,other,0,100
+2020-02-02,California,Los Angeles,0,1
+2020-02-02,California,other,1,100
+2020-02-02,Washington,Snohomish,0,2
+2020-02-02,Massachusetts,Suffolk,0,2
+2020-02-09,Texas,other,1,5
+2020-02-09,Arizona,Maricopa,0,1
+2020-02-09,Illinois,Cook,0,1
+2020-02-09,Wisconsin,other,0,100
+2020-02-09,California,Los Angeles,0,1
+2020-02-09,California,other,0,100
+2020-02-09,Washington,Snohomish,0,2
+2020-02-09,Massachusetts,Suffolk,0,2
+2020-02-16,Texas,other,2,5
+2020-02-16,Arizona,Maricopa,0,1
+2020-02-16,Illinois,Cook,0,1
+2020-02-16,Nebraska,Douglas,1,1
+2020-02-16,Wisconsin,other,0,100
+2020-02-16,California,other,0,100
+2020-02-16,California,Los Angeles,0,1
+2020-02-16,Washington,Snohomish,0,2
+2020-02-16,Massachusetts,Suffolk,0,2
+2020-02-23,Utah,Salt Lake,0,1
+2020-02-23,Texas,other,7,5
+2020-02-23,Oregon,Washington,0,3
+2020-02-23,Arizona,Maricopa,0,1
+2020-02-23,Illinois,Cook,1,1
+2020-02-23,Nebraska,Douglas,2,1
+2020-02-23,Wisconsin,other,0,100
+2020-02-23,California,other,15,100
+2020-02-23,California,Los Angeles,0,1
+2020-02-23,Washington,King,3,1
+2020-02-23,Washington,Snohomish,1,2
+2020-02-23,Washington,other,0,100
+2020-02-23,Massachusetts,Suffolk,0,2
+2020-03-01,Utah,other,0,100
+2020-03-01,Utah,Salt Lake,0,1
+2020-03-01,Texas,other,2,100
+2020-03-01,Texas,Harris,1,1
+2020-03-01,Texas,other,0,5
+2020-03-01,Hawaii,Honolulu,0,1
+2020-03-01,Nevada,Clark,0,1
+2020-03-01,Nevada,Washoe,0,2
+2020-03-01,Oregon,Washington,2,3
+2020-03-01,Arizona,Maricopa,1,1
+2020-03-01,Arizona,other,2,100
+2020-03-01,Florida,other,3,100
+2020-03-01,Florida,Broward,0,2
+2020-03-01,Georgia,Fulton,2,1
+2020-03-01,Georgia,other,0,100
+2020-03-01,Indiana,Marion,0,1
+2020-03-01,Colorado,Denver,0,1
+2020-03-01,Colorado,other,2,100
+2020-03-01,Colorado,other,0,6
+2020-03-01,Colorado,other,0,5
+2020-03-01,Illinois,Cook,3,1
+2020-03-01,Kentucky,Fayette,0,3
+2020-03-01,Maryland,Montgomery,0,2
+2020-03-01,Nebraska,Douglas,1,1
+2020-03-01,New York,New York City,11,1
+2020-03-01,New York,other,63,100
+2020-03-01,Oklahoma,Tulsa,0,2
+2020-03-01,Minnesota,Ramsey,0,3
+2020-03-01,Tennessee,other,0,100
+2020-03-01,Wisconsin,other,0,100
+2020-03-01,California,other,50,100
+2020-03-01,California,Los Angeles,13,1
+2020-03-01,New Jersey,Bergen,2,2
+2020-03-01,New Jersey,other,0,11
+2020-03-01,Washington,other,0,100
+2020-03-01,Washington,King,68,1
+2020-03-01,Washington,other,2,4
+2020-03-01,Washington,Snohomish,24,2
+2020-03-01,Pennsylvania,Delaware,0,3
+2020-03-01,Pennsylvania,other,0,100
+2020-03-01,Rhode Island,Unknown,1,2
+2020-03-01,Massachusetts,Middlesex,4,1
+2020-03-01,Massachusetts,other,2,5
+2020-03-01,Massachusetts,Suffolk,3,2
+2020-03-01,New Hampshire,other,2,100
+2020-03-01,North Carolina,Wake,0,2
+2020-03-01,North Carolina,other,0,100
+2020-03-01,South Carolina,other,0,5
+2020-03-01,South Carolina,other,0,12
+2020-03-08,Iowa,other,11,100
+2020-03-08,Ohio,Cuyahoga,8,2
+2020-03-08,Ohio,other,2,100
+2020-03-08,Utah,other,1,100
+2020-03-08,Utah,Salt Lake,14,1
+2020-03-08,Idaho,Ada,1,1
+2020-03-08,Maine,other,0,100
+2020-03-08,Maine,Cumberland,1,1
+2020-03-08,Texas,other,12,100
+2020-03-08,Texas,Tarrant,3,3
+2020-03-08,Texas,other,0,4
+2020-03-08,Texas,Harris,6,1
+2020-03-08,Texas,other,1,5
+2020-03-08,Texas,Dallas,9,2
+2020-03-08,Alaska,Anchorage,0,1
+2020-03-08,Hawaii,Honolulu,1,1
+2020-03-08,Kansas,other,0,100
+2020-03-08,Kansas,other,4,6
+2020-03-08,Kansas,Wyandotte,0,3
+2020-03-08,Nevada,Clark,15,1
+2020-03-08,Nevada,Washoe,3,2
+2020-03-08,Nevada,other,0,100
+2020-03-08,Oregon,other,0,4
+2020-03-08,Oregon,other,10,100
+2020-03-08,Oregon,Marion,1,2
+2020-03-08,Oregon,Multnomah,0,1
+2020-03-08,Oregon,Washington,10,3
+2020-03-08,Alabama,other,0,100
+2020-03-08,Alabama,Jefferson,4,2
+2020-03-08,Alabama,Montgomery,0,3
+2020-03-08,Alabama,other,1,7
+2020-03-08,Arizona,Maricopa,2,1
+2020-03-08,Arizona,Pima,1,2
+2020-03-08,Arizona,other,2,100
+2020-03-08,Florida,other,10,100
+2020-03-08,Florida,Miami-Dade,7,1
+2020-03-08,Florida,Palm Beach,3,3
+2020-03-08,Florida,Broward,19,2
+2020-03-08,Georgia,other,12,100
+2020-03-08,Georgia,other,14,4
+2020-03-08,Georgia,DeKalb,6,2
+2020-03-08,Georgia,Fulton,9,1
+2020-03-08,Georgia,Gwinnett,1,3
+2020-03-08,Indiana,other,1,100
+2020-03-08,Indiana,Marion,2,1
+2020-03-08,Montana,Gallatin,0,1
+2020-03-08,Montana,other,0,100
+2020-03-08,Montana,Yellowstone,0,2
+2020-03-08,Vermont,other,0,100
+2020-03-08,Vermont,Chittenden,0,1
+2020-03-08,Wyoming,Fremont,0,1
+2020-03-08,Wyoming,other,1,100
+2020-03-08,Arkansas,Jefferson,1,3
+2020-03-08,Arkansas,Pulaski,2,2
+2020-03-08,Colorado,Adams,4,3
+2020-03-08,Colorado,Arapahoe,9,2
+2020-03-08,Colorado,other,28,100
+2020-03-08,Colorado,Denver,21,1
+2020-03-08,Colorado,other,2,6
+2020-03-08,Colorado,other,8,5
+2020-03-08,Colorado,other,1,4
+2020-03-08,Delaware,New Castle,3,2
+2020-03-08,Illinois,Cook,45,1
+2020-03-08,Illinois,other,5,100
+2020-03-08,Kentucky,Fayette,4,3
+2020-03-08,Kentucky,other,5,100
+2020-03-08,Kentucky,Jefferson,3,1
+2020-03-08,Maryland,other,0,5
+2020-03-08,Maryland,Baltimore,2,3
+2020-03-08,Maryland,other,1,100
+2020-03-08,Maryland,Montgomery,9,2
+2020-03-08,Maryland,Prince George's,6,1
+2020-03-08,Michigan,other,2,100
+2020-03-08,Michigan,Oakland,8,2
+2020-03-08,Michigan,Wayne,7,1
+2020-03-08,Michigan,Macomb,1,3
+2020-03-08,Missouri,St. Louis,1,1
+2020-03-08,Missouri,other,1,100
+2020-03-08,Nebraska,other,0,100
+2020-03-08,Nebraska,Douglas,14,1
+2020-03-08,New York,New York City,257,1
+2020-03-08,New York,other,251,100
+2020-03-08,Oklahoma,Oklahoma,0,1
+2020-03-08,Oklahoma,Tulsa,1,2
+2020-03-08,Virginia,other,11,100
+2020-03-08,Virginia,Arlington,5,3
+2020-03-08,Virginia,Fairfax,9,1
+2020-03-08,Virginia,Prince William,1,2
+2020-03-08,Louisiana,other,1,4
+2020-03-08,Louisiana,Jefferson,10,1
+2020-03-08,Louisiana,Orleans,48,2
+2020-03-08,Louisiana,other,2,100
+2020-03-08,Louisiana,other,2,5
+2020-03-08,Minnesota,Stearns,1,2
+2020-03-08,Minnesota,other,2,100
+2020-03-08,Minnesota,Hennepin,5,1
+2020-03-08,Minnesota,Ramsey,3,3
+2020-03-08,Tennessee,other,0,4
+2020-03-08,Tennessee,Shelby,1,2
+2020-03-08,Tennessee,other,9,100
+2020-03-08,Tennessee,Davidson,13,1
+2020-03-08,Wisconsin,Milwaukee,4,1
+2020-03-08,Wisconsin,other,11,100
+2020-03-08,Wisconsin,Racine,0,3
+2020-03-08,California,other,234,100
+2020-03-08,California,Los Angeles,39,1
+2020-03-08,New Jersey,other,0,100
+2020-03-08,New Jersey,Bergen,28,2
+2020-03-08,New Jersey,other,1,13
+2020-03-08,New Jersey,other,1,11
+2020-03-08,New Jersey,Essex,6,3
+2020-03-08,New Jersey,Hudson,4,1
+2020-03-08,New Jersey,other,6,6
+2020-03-08,New Jersey,other,6,8
+2020-03-08,New Jersey,other,4,9
+2020-03-08,New Jersey,other,0,7
+2020-03-08,New Jersey,other,1,4
+2020-03-08,New Jersey,other,0,5
+2020-03-08,New Mexico,Bernalillo,5,3
+2020-03-08,New Mexico,other,2,100
+2020-03-08,Washington,other,19,100
+2020-03-08,Washington,King,317,1
+2020-03-08,Washington,other,23,4
+2020-03-08,Washington,Snohomish,128,2
+2020-03-08,Washington,Yakima,1,3
+2020-03-08,Connecticut,Fairfield,14,1
+2020-03-08,Connecticut,other,2,100
+2020-03-08,Mississippi,other,0,17
+2020-03-08,Mississippi,other,2,5
+2020-03-08,Mississippi,other,0,18
+2020-03-08,Mississippi,other,0,21
+2020-03-08,Puerto Rico,Unknown,1,1
+2020-03-08,North Dakota,other,0,100
+2020-03-08,Pennsylvania,other,2,4
+2020-03-08,Pennsylvania,other,3,100
+2020-03-08,Pennsylvania,Delaware,5,3
+2020-03-08,Pennsylvania,Montgomery,18,2
+2020-03-08,Pennsylvania,Philadelphia,3,1
+2020-03-08,Rhode Island,Unknown,17,2
+2020-03-08,South Dakota,other,0,100
+2020-03-08,South Dakota,Minnehaha,2,1
+2020-03-08,Massachusetts,other,8,100
+2020-03-08,Massachusetts,Essex,4,3
+2020-03-08,Massachusetts,Middlesex,60,1
+2020-03-08,Massachusetts,other,25,5
+2020-03-08,Massachusetts,Suffolk,23,2
+2020-03-08,Massachusetts,other,1,4
+2020-03-08,New Hampshire,other,0,100
+2020-03-08,New Hampshire,Rockingham,3,2
+2020-03-08,North Carolina,other,1,100
+2020-03-08,North Carolina,Wake,10,2
+2020-03-08,North Carolina,other,0,5
+2020-03-08,North Carolina,other,0,6
+2020-03-08,North Carolina,Mecklenburg,0,1
+2020-03-08,South Carolina,other,1,100
+2020-03-08,South Carolina,other,0,6
+2020-03-08,South Carolina,other,0,5
+2020-03-08,South Carolina,other,10,12
+2020-03-08,District of Columbia,District of Columbia,15,1
+2020-03-15,Guam,Unknown,12,1
+2020-03-15,Iowa,other,20,100
+2020-03-15,Iowa,Black Hawk,2,3
+2020-03-15,Iowa,other,4,6
+2020-03-15,Iowa,Polk,9,1
+2020-03-15,Ohio,other,56,100
+2020-03-15,Ohio,Cuyahoga,81,2
+2020-03-15,Ohio,Franklin,20,1
+2020-03-15,Ohio,other,6,4
+2020-03-15,Ohio,other,3,6
+2020-03-15,Ohio,other,13,7
+2020-03-15,Ohio,Marion,0,3
+2020-03-15,Ohio,other,13,8
+2020-03-15,Utah,other,60,100
+2020-03-15,Utah,Salt Lake,45,1
+2020-03-15,Utah,Utah,6,2
+2020-03-15,Idaho,Ada,9,1
+2020-03-15,Idaho,other,2,100
+2020-03-15,Idaho,Blaine,19,2
+2020-03-15,Idaho,other,0,4
+2020-03-15,Idaho,Twin Falls,0,3
+2020-03-15,Maine,other,14,100
+2020-03-15,Maine,Cumberland,39,1
+2020-03-15,Maine,York,7,2
+2020-03-15,Texas,other,157,100
+2020-03-15,Texas,Tarrant,43,3
+2020-03-15,Texas,other,58,4
+2020-03-15,Texas,Harris,57,1
+2020-03-15,Texas,other,38,5
+2020-03-15,Texas,Dallas,84,2
+2020-03-15,Alaska,Fairbanks North Star Borough,5,2
+2020-03-15,Alaska,other,7,100
+2020-03-15,Alaska,Anchorage,4,1
+2020-03-15,Hawaii,other,3,100
+2020-03-15,Hawaii,Honolulu,33,1
+2020-03-15,Hawaii,Maui,6,2
+2020-03-15,Kansas,other,3,100
+2020-03-15,Kansas,Ford,0,1
+2020-03-15,Kansas,other,20,6
+2020-03-15,Kansas,other,2,4
+2020-03-15,Kansas,other,1,7
+2020-03-15,Kansas,Wyandotte,12,3
+2020-03-15,Nevada,other,10,100
+2020-03-15,Nevada,Clark,110,1
+2020-03-15,Nevada,Washoe,18,2
+2020-03-15,Oregon,other,21,100
+2020-03-15,Oregon,other,10,4
+2020-03-15,Oregon,Marion,17,2
+2020-03-15,Oregon,Multnomah,17,1
+2020-03-15,Oregon,Washington,29,3
+2020-03-15,Alabama,other,16,100
+2020-03-15,Alabama,Jefferson,55,2
+2020-03-15,Alabama,other,11,5
+2020-03-15,Alabama,Mobile,1,1
+2020-03-15,Alabama,Montgomery,2,3
+2020-03-15,Alabama,other,14,6
+2020-03-15,Alabama,other,4,7
+2020-03-15,Arizona,other,28,100
+2020-03-15,Arizona,Maricopa,45,1
+2020-03-15,Arizona,Pima,10,2
+2020-03-15,Florida,other,315,100
+2020-03-15,Florida,Miami-Dade,162,1
+2020-03-15,Florida,Palm Beach,51,3
+2020-03-15,Florida,Broward,143,2
+2020-03-15,Georgia,other,21,6
+2020-03-15,Georgia,other,148,100
+2020-03-15,Georgia,other,10,8
+2020-03-15,Georgia,other,41,4
+2020-03-15,Georgia,DeKalb,34,2
+2020-03-15,Georgia,other,41,7
+2020-03-15,Georgia,Fulton,87,1
+2020-03-15,Georgia,Gwinnett,21,3
+2020-03-15,Georgia,other,8,5
+2020-03-15,Indiana,other,38,100
+2020-03-15,Indiana,Lake,5,2
+2020-03-15,Indiana,Marion,43,1
+2020-03-15,Montana,other,2,100
+2020-03-15,Montana,other,1,4
+2020-03-15,Montana,Gallatin,6,1
+2020-03-15,Montana,Missoula,2,3
+2020-03-15,Montana,Yellowstone,4,2
+2020-03-15,Vermont,other,16,100
+2020-03-15,Vermont,Chittenden,21,1
+2020-03-15,Wyoming,other,2,100
+2020-03-15,Wyoming,Fremont,8,1
+2020-03-15,Wyoming,Laramie,3,2
+2020-03-15,Wyoming,other,0,4
+2020-03-15,Wyoming,Teton,1,3
+2020-03-15,Arkansas,other,27,100
+2020-03-15,Arkansas,other,0,5
+2020-03-15,Arkansas,Jefferson,17,3
+2020-03-15,Arkansas,Lincoln,0,1
+2020-03-15,Arkansas,Pulaski,21,2
+2020-03-15,Colorado,Adams,8,3
+2020-03-15,Colorado,Arapahoe,30,2
+2020-03-15,Colorado,other,157,100
+2020-03-15,Colorado,Denver,75,1
+2020-03-15,Colorado,other,34,6
+2020-03-15,Colorado,other,34,5
+2020-03-15,Colorado,other,19,4
+2020-03-15,Delaware,Kent,2,3
+2020-03-15,Delaware,New Castle,28,2
+2020-03-15,Delaware,Sussex,7,1
+2020-03-15,Illinois,other,167,100
+2020-03-15,Illinois,Cook,497,1
+2020-03-15,Kentucky,other,13,100
+2020-03-15,Kentucky,Fayette,8,3
+2020-03-15,Kentucky,Jefferson,21,1
+2020-03-15,Kentucky,other,2,4
+2020-03-15,Kentucky,Warren,3,2
+2020-03-15,Maryland,other,14,4
+2020-03-15,Maryland,other,15,5
+2020-03-15,Maryland,Baltimore,16,3
+2020-03-15,Maryland,other,28,100
+2020-03-15,Maryland,Montgomery,56,2
+2020-03-15,Maryland,Prince George's,29,1
+2020-03-15,Michigan,other,74,100
+2020-03-15,Michigan,Oakland,220,2
+2020-03-15,Michigan,Wayne,341,1
+2020-03-15,Michigan,Macomb,99,3
+2020-03-15,Missouri,Kansas City,1,3
+2020-03-15,Missouri,St. Louis,20,1
+2020-03-15,Missouri,other,30,100
+2020-03-15,Missouri,St. Louis city,9,2
+2020-03-15,Nebraska,other,6,100
+2020-03-15,Nebraska,Douglas,18,1
+2020-03-15,Nebraska,other,1,4
+2020-03-15,New York,New York City,5957,1
+2020-03-15,New York,other,3769,100
+2020-03-15,Oklahoma,other,5,100
+2020-03-15,Oklahoma,other,11,4
+2020-03-15,Oklahoma,Oklahoma,19,1
+2020-03-15,Oklahoma,Tulsa,3,2
+2020-03-15,Oklahoma,other,0,5
+2020-03-15,Virginia,other,48,100
+2020-03-15,Virginia,Arlington,15,3
+2020-03-15,Virginia,Fairfax,12,1
+2020-03-15,Virginia,Prince William,12,2
+2020-03-15,Louisiana,other,82,100
+2020-03-15,Louisiana,other,13,4
+2020-03-15,Louisiana,East Baton Rouge,17,3
+2020-03-15,Louisiana,Jefferson,155,1
+2020-03-15,Louisiana,Orleans,365,2
+2020-03-15,Louisiana,other,18,5
+2020-03-15,Minnesota,other,36,100
+2020-03-15,Minnesota,Stearns,1,2
+2020-03-15,Minnesota,Hennepin,46,1
+2020-03-15,Minnesota,Ramsey,13,3
+2020-03-15,Tennessee,other,73,100
+2020-03-15,Tennessee,other,4,4
+2020-03-15,Tennessee,Shelby,40,2
+2020-03-15,Tennessee,Davidson,126,1
+2020-03-15,Wisconsin,other,97,100
+2020-03-15,Wisconsin,Milwaukee,120,1
+2020-03-15,Wisconsin,Racine,3,3
+2020-03-15,Wisconsin,Brown,2,2
+2020-03-15,California,other,846,100
+2020-03-15,California,Los Angeles,298,1
+2020-03-15,New Jersey,other,177,100
+2020-03-15,New Jersey,Bergen,331,2
+2020-03-15,New Jersey,other,17,13
+2020-03-15,New Jersey,other,13,11
+2020-03-15,New Jersey,Essex,100,3
+2020-03-15,New Jersey,Hudson,92,1
+2020-03-15,New Jersey,other,29,10
+2020-03-15,New Jersey,other,108,6
+2020-03-15,New Jersey,other,84,8
+2020-03-15,New Jersey,other,59,9
+2020-03-15,New Jersey,other,61,7
+2020-03-15,New Jersey,other,65,4
+2020-03-15,New Jersey,other,30,12
+2020-03-15,New Jersey,other,80,5
+2020-03-15,New Mexico,Bernalillo,26,3
+2020-03-15,New Mexico,other,8,100
+2020-03-15,New Mexico,McKinley,0,1
+2020-03-15,New Mexico,other,5,4
+2020-03-15,Washington,other,112,100
+2020-03-15,Washington,King,546,1
+2020-03-15,Washington,other,69,4
+2020-03-15,Washington,Snohomish,292,2
+2020-03-15,Washington,Yakima,17,3
+2020-03-15,Connecticut,Fairfield,125,1
+2020-03-15,Connecticut,Hartford,34,3
+2020-03-15,Connecticut,other,14,100
+2020-03-15,Connecticut,New Haven,23,2
+2020-03-15,Mississippi,other,0,22
+2020-03-15,Mississippi,other,0,24
+2020-03-15,Mississippi,other,13,100
+2020-03-15,Mississippi,other,1,17
+2020-03-15,Mississippi,other,12,7
+2020-03-15,Mississippi,other,2,5
+2020-03-15,Mississippi,other,9,15
+2020-03-15,Mississippi,Hinds,12,1
+2020-03-15,Mississippi,other,2,10
+2020-03-15,Mississippi,other,4,12
+2020-03-15,Mississippi,other,0,9
+2020-03-15,Mississippi,other,6,18
+2020-03-15,Mississippi,Madison,6,3
+2020-03-15,Mississippi,other,1,14
+2020-03-15,Mississippi,other,8,21
+2020-03-15,Mississippi,other,1,23
+2020-03-15,Mississippi,other,4,11
+2020-03-15,Mississippi,other,0,4
+2020-03-15,Puerto Rico,Unknown,17,1
+2020-03-15,North Dakota,other,20,100
+2020-03-15,North Dakota,Cass,0,1
+2020-03-15,Pennsylvania,other,144,100
+2020-03-15,Pennsylvania,other,28,4
+2020-03-15,Pennsylvania,Delaware,27,3
+2020-03-15,Pennsylvania,Montgomery,57,2
+2020-03-15,Pennsylvania,Philadelphia,65,1
+2020-03-15,Rhode Island,Unknown,46,2
+2020-03-15,South Dakota,other,3,100
+2020-03-15,South Dakota,Minnehaha,2,1
+2020-03-15,Massachusetts,other,49,100
+2020-03-15,Massachusetts,other,13,7
+2020-03-15,Massachusetts,Essex,36,3
+2020-03-15,Massachusetts,other,8,8
+2020-03-15,Massachusetts,Middlesex,112,1
+2020-03-15,Massachusetts,other,41,5
+2020-03-15,Massachusetts,other,17,6
+2020-03-15,Massachusetts,Suffolk,81,2
+2020-03-15,Massachusetts,other,22,4
+2020-03-15,New Hampshire,other,19,100
+2020-03-15,New Hampshire,Hillsborough,11,1
+2020-03-15,New Hampshire,Rockingham,21,2
+2020-03-15,West Virginia,Jackson,0,3
+2020-03-15,West Virginia,other,1,5
+2020-03-15,West Virginia,Kanawha,0,2
+2020-03-15,West Virginia,other,1,100
+2020-03-15,West Virginia,other,0,4
+2020-03-15,North Carolina,other,15,100
+2020-03-15,North Carolina,other,0,8
+2020-03-15,North Carolina,Wake,38,2
+2020-03-15,North Carolina,other,0,5
+2020-03-15,North Carolina,Durham,32,3
+2020-03-15,North Carolina,other,6,6
+2020-03-15,North Carolina,other,3,4
+2020-03-15,North Carolina,Mecklenburg,39,1
+2020-03-15,South Carolina,other,11,100
+2020-03-15,South Carolina,other,11,4
+2020-03-15,South Carolina,Richland,27,1
+2020-03-15,South Carolina,other,1,6
+2020-03-15,South Carolina,other,2,7
+2020-03-15,South Carolina,other,1,8
+2020-03-15,South Carolina,other,9,10
+2020-03-15,South Carolina,other,8,5
+2020-03-15,South Carolina,other,0,11
+2020-03-15,South Carolina,Florence,0,3
+2020-03-15,South Carolina,Greenville,16,2
+2020-03-15,South Carolina,other,6,9
+2020-03-15,South Carolina,other,31,12
+2020-03-15,Virgin Islands,Unknown,5,1
+2020-03-15,District of Columbia,District of Columbia,61,1
+2020-03-22,Guam,Unknown,42,1
+2020-03-22,Iowa,other,110,100
+2020-03-22,Iowa,Black Hawk,3,3
+2020-03-22,Iowa,other,10,6
+2020-03-22,Iowa,other,33,4
+2020-03-22,Iowa,other,4,5
+2020-03-22,Iowa,Polk,30,1
+2020-03-22,Iowa,Woodbury,2,2
+2020-03-22,Ohio,other,381,100
+2020-03-22,Ohio,Cuyahoga,278,2
+2020-03-22,Ohio,Franklin,201,1
+2020-03-22,Ohio,other,63,4
+2020-03-22,Ohio,other,63,6
+2020-03-22,Ohio,other,66,7
+2020-03-22,Ohio,Marion,4,3
+2020-03-22,Ohio,other,3,5
+2020-03-22,Ohio,other,64,8
+2020-03-22,Utah,other,220,100
+2020-03-22,Utah,Salt Lake,216,1
+2020-03-22,Utah,Utah,23,2
+2020-03-22,Idaho,Ada,77,1
+2020-03-22,Idaho,other,14,100
+2020-03-22,Idaho,Blaine,93,2
+2020-03-22,Idaho,other,21,4
+2020-03-22,Idaho,Twin Falls,1,3
+2020-03-22,Maine,other,31,100
+2020-03-22,Maine,Cumberland,79,1
+2020-03-22,Maine,York,30,2
+2020-03-22,Texas,other,772,100
+2020-03-22,Texas,Tarrant,67,3
+2020-03-22,Texas,other,98,4
+2020-03-22,Texas,Harris,377,1
+2020-03-22,Texas,other,75,5
+2020-03-22,Texas,Dallas,344,2
+2020-03-22,Texas,other,0,6
+2020-03-22,Alaska,Fairbanks North Star Borough,16,2
+2020-03-22,Alaska,other,13,100
+2020-03-22,Alaska,Anchorage,49,1
+2020-03-22,Hawaii,other,15,100
+2020-03-22,Hawaii,Honolulu,73,1
+2020-03-22,Hawaii,Maui,9,2
+2020-03-22,Kansas,other,52,100
+2020-03-22,Kansas,Ford,0,1
+2020-03-22,Kansas,other,55,6
+2020-03-22,Kansas,other,11,4
+2020-03-22,Kansas,other,3,8
+2020-03-22,Kansas,other,31,7
+2020-03-22,Kansas,Wyandotte,40,3
+2020-03-22,Nevada,other,97,100
+2020-03-22,Nevada,Clark,402,1
+2020-03-22,Nevada,Washoe,71,2
+2020-03-22,Oregon,other,75,100
+2020-03-22,Oregon,other,25,4
+2020-03-22,Oregon,Marion,75,2
+2020-03-22,Oregon,Multnomah,63,1
+2020-03-22,Oregon,Washington,98,3
+2020-03-22,Alabama,other,222,100
+2020-03-22,Alabama,other,2,9
+2020-03-22,Alabama,Jefferson,153,2
+2020-03-22,Alabama,other,44,5
+2020-03-22,Alabama,other,3,4
+2020-03-22,Alabama,Mobile,32,1
+2020-03-22,Alabama,Montgomery,15,3
+2020-03-22,Alabama,other,56,6
+2020-03-22,Alabama,other,4,8
+2020-03-22,Alabama,other,17,7
+2020-03-22,Arizona,other,151,100
+2020-03-22,Arizona,Maricopa,405,1
+2020-03-22,Arizona,Pima,108,2
+2020-03-22,Florida,other,1395,100
+2020-03-22,Florida,Miami-Dade,951,1
+2020-03-22,Florida,Palm Beach,262,3
+2020-03-22,Florida,Broward,656,2
+2020-03-22,Georgia,other,202,6
+2020-03-22,Georgia,other,661,100
+2020-03-22,Georgia,other,45,8
+2020-03-22,Georgia,other,129,4
+2020-03-22,Georgia,DeKalb,204,2
+2020-03-22,Georgia,other,177,7
+2020-03-22,Georgia,Fulton,278,1
+2020-03-22,Georgia,Gwinnett,108,3
+2020-03-22,Georgia,other,22,5
+2020-03-22,Indiana,other,457,100
+2020-03-22,Indiana,Lake,61,2
+2020-03-22,Indiana,Marion,538,1
+2020-03-22,Montana,other,31,100
+2020-03-22,Montana,other,4,4
+2020-03-22,Montana,Gallatin,50,1
+2020-03-22,Montana,Missoula,5,3
+2020-03-22,Montana,Yellowstone,21,2
+2020-03-22,Vermont,other,60,100
+2020-03-22,Vermont,Chittenden,83,1
+2020-03-22,Vermont,Franklin,5,2
+2020-03-22,Wyoming,other,8,100
+2020-03-22,Wyoming,Fremont,12,1
+2020-03-22,Wyoming,Laramie,14,2
+2020-03-22,Wyoming,other,7,4
+2020-03-22,Wyoming,Teton,12,3
+2020-03-22,Arkansas,other,229,100
+2020-03-22,Arkansas,other,14,5
+2020-03-22,Arkansas,Jefferson,6,3
+2020-03-22,Arkansas,Lincoln,5,1
+2020-03-22,Arkansas,Pulaski,64,2
+2020-03-22,Colorado,other,627,100
+2020-03-22,Colorado,Adams,81,3
+2020-03-22,Colorado,Arapahoe,164,2
+2020-03-22,Colorado,Denver,269,1
+2020-03-22,Colorado,other,147,6
+2020-03-22,Colorado,other,139,5
+2020-03-22,Colorado,other,140,4
+2020-03-22,Delaware,Kent,20,3
+2020-03-22,Delaware,New Castle,98,2
+2020-03-22,Delaware,Sussex,51,1
+2020-03-22,Illinois,other,708,100
+2020-03-22,Illinois,Cook,2065,1
+2020-03-22,Kentucky,other,71,100
+2020-03-22,Kentucky,Fayette,47,3
+2020-03-22,Kentucky,Jefferson,74,1
+2020-03-22,Kentucky,other,15,4
+2020-03-22,Kentucky,other,0,5
+2020-03-22,Kentucky,Warren,6,2
+2020-03-22,Maryland,other,97,4
+2020-03-22,Maryland,other,72,5
+2020-03-22,Maryland,Baltimore,122,3
+2020-03-22,Maryland,other,226,100
+2020-03-22,Maryland,Montgomery,187,2
+2020-03-22,Maryland,Prince George's,160,1
+2020-03-22,Michigan,other,612,100
+2020-03-22,Michigan,Oakland,789,2
+2020-03-22,Michigan,Wayne,1967,1
+2020-03-22,Michigan,Macomb,433,3
+2020-03-22,Missouri,Kansas City,81,3
+2020-03-22,Missouri,other,242,100
+2020-03-22,Missouri,St. Louis,291,1
+2020-03-22,Missouri,St. Louis city,83,2
+2020-03-22,Nebraska,other,19,100
+2020-03-22,Nebraska,other,0,5
+2020-03-22,Nebraska,Douglas,28,1
+2020-03-22,Nebraska,Hall,2,3
+2020-03-22,Nebraska,other,2,4
+2020-03-22,New York,New York City,24693,1
+2020-03-22,New York,other,18439,100
+2020-03-22,Oklahoma,other,100,100
+2020-03-22,Oklahoma,other,34,4
+2020-03-22,Oklahoma,other,3,6
+2020-03-22,Oklahoma,Oklahoma,87,1
+2020-03-22,Oklahoma,Tulsa,52,2
+2020-03-22,Oklahoma,other,13,5
+2020-03-22,Virginia,other,301,100
+2020-03-22,Virginia,Arlington,53,3
+2020-03-22,Virginia,Fairfax,134,1
+2020-03-22,Virginia,Prince William,42,2
+2020-03-22,Louisiana,other,644,100
+2020-03-22,Louisiana,other,174,4
+2020-03-22,Louisiana,East Baton Rouge,135,3
+2020-03-22,Louisiana,Jefferson,578,1
+2020-03-22,Louisiana,Orleans,880,2
+2020-03-22,Louisiana,other,112,5
+2020-03-22,Minnesota,other,163,100
+2020-03-22,Minnesota,Stearns,1,2
+2020-03-22,Minnesota,Hennepin,100,1
+2020-03-22,Minnesota,Ramsey,25,3
+2020-03-22,Tennessee,other,507,100
+2020-03-22,Tennessee,other,41,4
+2020-03-22,Tennessee,Shelby,233,2
+2020-03-22,Tennessee,Davidson,236,1
+2020-03-22,Wisconsin,other,314,100
+2020-03-22,Wisconsin,Milwaukee,415,1
+2020-03-22,Wisconsin,Racine,12,3
+2020-03-22,Wisconsin,Brown,3,2
+2020-03-22,California,other,2558,100
+2020-03-22,California,Los Angeles,1453,1
+2020-03-22,New Jersey,other,2570,100
+2020-03-22,New Jersey,Bergen,1476,2
+2020-03-22,New Jersey,other,95,13
+2020-03-22,New Jersey,other,108,11
+2020-03-22,New Jersey,Essex,979,3
+2020-03-22,New Jersey,Hudson,674,1
+2020-03-22,New Jersey,other,138,10
+2020-03-22,New Jersey,other,692,6
+2020-03-22,New Jersey,other,689,8
+2020-03-22,New Jersey,other,378,9
+2020-03-22,New Jersey,other,562,7
+2020-03-22,New Jersey,other,541,4
+2020-03-22,New Jersey,other,224,12
+2020-03-22,New Jersey,other,661,5
+2020-03-22,New Mexico,Bernalillo,61,3
+2020-03-22,New Mexico,other,51,100
+2020-03-22,New Mexico,McKinley,4,1
+2020-03-22,New Mexico,other,8,4
+2020-03-22,New Mexico,San Juan,17,2
+2020-03-22,Washington,other,615,100
+2020-03-22,Washington,King,1144,1
+2020-03-22,Washington,other,187,4
+2020-03-22,Washington,Snohomish,466,2
+2020-03-22,Washington,Yakima,80,3
+2020-03-22,Connecticut,Fairfield,768,1
+2020-03-22,Connecticut,Hartford,193,3
+2020-03-22,Connecticut,other,128,100
+2020-03-22,Connecticut,New Haven,212,2
+2020-03-22,Mississippi,other,182,100
+2020-03-22,Mississippi,other,3,22
+2020-03-22,Mississippi,other,5,24
+2020-03-22,Mississippi,other,8,13
+2020-03-22,Mississippi,other,6,17
+2020-03-22,Mississippi,other,52,7
+2020-03-22,Mississippi,other,13,5
+2020-03-22,Mississippi,other,35,15
+2020-03-22,Mississippi,Hinds,44,1
+2020-03-22,Mississippi,other,10,10
+2020-03-22,Mississippi,other,28,12
+2020-03-22,Mississippi,other,2,9
+2020-03-22,Mississippi,other,3,19
+2020-03-22,Mississippi,Lauderdale,9,2
+2020-03-22,Mississippi,other,3,8
+2020-03-22,Mississippi,other,8,18
+2020-03-22,Mississippi,Madison,22,3
+2020-03-22,Mississippi,other,1,14
+2020-03-22,Mississippi,other,2,6
+2020-03-22,Mississippi,other,0,20
+2020-03-22,Mississippi,other,14,21
+2020-03-22,Mississippi,other,10,23
+2020-03-22,Mississippi,other,24,11
+2020-03-22,Mississippi,other,6,4
+2020-03-22,Puerto Rico,Unknown,79,1
+2020-03-22,North Dakota,other,33,100
+2020-03-22,North Dakota,Cass,17,1
+2020-03-22,Pennsylvania,other,1047,100
+2020-03-22,Pennsylvania,other,184,4
+2020-03-22,Pennsylvania,Delaware,193,3
+2020-03-22,Pennsylvania,Montgomery,334,2
+2020-03-22,Pennsylvania,Philadelphia,640,1
+2020-03-22,Rhode Island,Unknown,102,2
+2020-03-22,Rhode Island,other,0,100
+2020-03-22,Rhode Island,Providence,5,1
+2020-03-22,South Dakota,other,19,100
+2020-03-22,South Dakota,Minnehaha,16,1
+2020-03-22,Massachusetts,other,621,100
+2020-03-22,Massachusetts,other,165,7
+2020-03-22,Massachusetts,Essex,431,3
+2020-03-22,Massachusetts,other,174,8
+2020-03-22,Massachusetts,Middlesex,665,1
+2020-03-22,Massachusetts,other,421,5
+2020-03-22,Massachusetts,other,252,6
+2020-03-22,Massachusetts,Suffolk,735,2
+2020-03-22,Massachusetts,other,267,4
+2020-03-22,New Hampshire,other,46,100
+2020-03-22,New Hampshire,Hillsborough,41,1
+2020-03-22,New Hampshire,Rockingham,61,2
+2020-03-22,West Virginia,other,17,100
+2020-03-22,West Virginia,Jackson,6,3
+2020-03-22,West Virginia,other,2,5
+2020-03-22,West Virginia,Kanawha,18,2
+2020-03-22,West Virginia,other,4,8
+2020-03-22,West Virginia,other,28,4
+2020-03-22,West Virginia,other,1,9
+2020-03-22,West Virginia,Berkeley,8,1
+2020-03-22,North Carolina,other,272,100
+2020-03-22,North Carolina,other,1,7
+2020-03-22,North Carolina,other,13,8
+2020-03-22,North Carolina,Wake,75,2
+2020-03-22,North Carolina,other,2,5
+2020-03-22,North Carolina,Durham,68,3
+2020-03-22,North Carolina,other,16,6
+2020-03-22,North Carolina,other,30,4
+2020-03-22,North Carolina,Mecklenburg,258,1
+2020-03-22,South Carolina,other,100,100
+2020-03-22,South Carolina,other,18,4
+2020-03-22,South Carolina,Richland,53,1
+2020-03-22,South Carolina,other,19,6
+2020-03-22,South Carolina,other,21,7
+2020-03-22,South Carolina,other,29,8
+2020-03-22,South Carolina,other,27,10
+2020-03-22,South Carolina,other,99,5
+2020-03-22,South Carolina,other,6,11
+2020-03-22,South Carolina,Florence,11,3
+2020-03-22,South Carolina,Greenville,40,2
+2020-03-22,South Carolina,other,19,9
+2020-03-22,South Carolina,other,35,12
+2020-03-22,Virgin Islands,Unknown,13,1
+2020-03-22,District of Columbia,District of Columbia,227,1
+2020-03-29,Guam,Unknown,166,1
+2020-03-29,Iowa,other,263,100
+2020-03-29,Iowa,Black Hawk,4,3
+2020-03-29,Iowa,other,18,6
+2020-03-29,Iowa,other,103,4
+2020-03-29,Iowa,other,5,5
+2020-03-29,Iowa,Polk,69,1
+2020-03-29,Iowa,Woodbury,5,2
+2020-03-29,Ohio,other,857,100
+2020-03-29,Ohio,Cuyahoga,411,2
+2020-03-29,Ohio,Franklin,335,1
+2020-03-29,Ohio,other,217,4
+2020-03-29,Ohio,other,205,6
+2020-03-29,Ohio,other,170,7
+2020-03-29,Ohio,Marion,7,3
+2020-03-29,Ohio,other,16,5
+2020-03-29,Ohio,other,105,8
+2020-03-29,Utah,other,281,100
+2020-03-29,Utah,Salt Lake,374,1
+2020-03-29,Utah,Utah,156,2
+2020-03-29,Idaho,Ada,297,1
+2020-03-29,Idaho,other,98,100
+2020-03-29,Idaho,Blaine,296,2
+2020-03-29,Idaho,other,77,4
+2020-03-29,Idaho,Twin Falls,35,3
+2020-03-29,Maine,other,71,100
+2020-03-29,Maine,Cumberland,111,1
+2020-03-29,Maine,York,57,2
+2020-03-29,Texas,other,1888,100
+2020-03-29,Texas,Tarrant,269,3
+2020-03-29,Texas,other,270,4
+2020-03-29,Texas,Harris,839,1
+2020-03-29,Texas,other,270,5
+2020-03-29,Texas,Dallas,576,2
+2020-03-29,Texas,other,22,6
+2020-03-29,Alaska,Fairbanks North Star Borough,23,2
+2020-03-29,Alaska,other,15,100
+2020-03-29,Alaska,Anchorage,27,1
+2020-03-29,Hawaii,other,16,100
+2020-03-29,Hawaii,Honolulu,158,1
+2020-03-29,Hawaii,Maui,22,2
+2020-03-29,Kansas,other,105,100
+2020-03-29,Kansas,Finney,8,2
+2020-03-29,Kansas,Ford,1,1
+2020-03-29,Kansas,other,105,6
+2020-03-29,Kansas,other,18,4
+2020-03-29,Kansas,other,14,8
+2020-03-29,Kansas,other,64,7
+2020-03-29,Kansas,Wyandotte,96,3
+2020-03-29,Nevada,other,68,100
+2020-03-29,Nevada,Clark,890,1
+2020-03-29,Nevada,Washoe,152,2
+2020-03-29,Oregon,other,146,100
+2020-03-29,Oregon,other,42,4
+2020-03-29,Oregon,Marion,94,2
+2020-03-29,Oregon,Multnomah,128,1
+2020-03-29,Oregon,Washington,107,3
+2020-03-29,Alabama,other,454,100
+2020-03-29,Alabama,other,3,9
+2020-03-29,Alabama,Jefferson,162,2
+2020-03-29,Alabama,other,48,5
+2020-03-29,Alabama,other,13,4
+2020-03-29,Alabama,Mobile,80,1
+2020-03-29,Alabama,Montgomery,45,3
+2020-03-29,Alabama,other,55,6
+2020-03-29,Alabama,other,15,8
+2020-03-29,Alabama,other,21,7
+2020-03-29,Arizona,other,322,100
+2020-03-29,Arizona,Maricopa,717,1
+2020-03-29,Arizona,Pima,206,2
+2020-03-29,Florida,other,3138,100
+2020-03-29,Florida,Miami-Dade,2768,1
+2020-03-29,Florida,Palm Beach,634,3
+2020-03-29,Florida,Broward,945,2
+2020-03-29,Georgia,other,-141,6
+2020-03-29,Georgia,other,1897,100
+2020-03-29,Georgia,other,178,8
+2020-03-29,Georgia,other,268,4
+2020-03-29,Georgia,DeKalb,293,2
+2020-03-29,Georgia,other,461,7
+2020-03-29,Georgia,Fulton,581,1
+2020-03-29,Georgia,Gwinnett,269,3
+2020-03-29,Georgia,other,86,5
+2020-03-29,Indiana,other,1476,100
+2020-03-29,Indiana,Lake,245,2
+2020-03-29,Indiana,Marion,986,1
+2020-03-29,Montana,other,37,100
+2020-03-29,Montana,other,17,4
+2020-03-29,Montana,Gallatin,52,1
+2020-03-29,Montana,Missoula,10,3
+2020-03-29,Montana,Yellowstone,12,2
+2020-03-29,Vermont,other,78,100
+2020-03-29,Vermont,Chittenden,140,1
+2020-03-29,Vermont,Franklin,16,2
+2020-03-29,Wyoming,other,26,100
+2020-03-29,Wyoming,Fremont,15,1
+2020-03-29,Wyoming,Laramie,23,2
+2020-03-29,Wyoming,other,15,4
+2020-03-29,Wyoming,Teton,22,3
+2020-03-29,Arkansas,other,156,100
+2020-03-29,Arkansas,other,2,4
+2020-03-29,Arkansas,other,29,5
+2020-03-29,Arkansas,Jefferson,28,3
+2020-03-29,Arkansas,Lincoln,0,1
+2020-03-29,Arkansas,Pulaski,47,2
+2020-03-29,Colorado,other,739,100
+2020-03-29,Colorado,Adams,225,3
+2020-03-29,Colorado,Arapahoe,348,2
+2020-03-29,Colorado,Denver,402,1
+2020-03-29,Colorado,other,222,6
+2020-03-29,Colorado,other,301,5
+2020-03-29,Colorado,other,263,4
+2020-03-29,Delaware,Kent,43,3
+2020-03-29,Delaware,New Castle,270,2
+2020-03-29,Delaware,Sussex,66,1
+2020-03-29,Illinois,other,1943,100
+2020-03-29,Illinois,Cook,4826,1
+2020-03-29,Kentucky,other,175,100
+2020-03-29,Kentucky,Fayette,65,3
+2020-03-29,Kentucky,Jefferson,195,1
+2020-03-29,Kentucky,other,14,4
+2020-03-29,Kentucky,other,6,5
+2020-03-29,Kentucky,Warren,9,2
+2020-03-29,Maryland,other,231,4
+2020-03-29,Maryland,other,433,100
+2020-03-29,Maryland,other,201,5
+2020-03-29,Maryland,Baltimore,350,3
+2020-03-29,Maryland,Montgomery,385,2
+2020-03-29,Maryland,Prince George's,457,1
+2020-03-29,Michigan,other,2056,100
+2020-03-29,Michigan,Oakland,1767,2
+2020-03-29,Michigan,Wayne,4446,1
+2020-03-29,Michigan,Macomb,1304,3
+2020-03-29,Missouri,Kansas City,78,3
+2020-03-29,Missouri,other,595,100
+2020-03-29,Missouri,St. Louis,551,1
+2020-03-29,Missouri,St. Louis city,194,2
+2020-03-29,Nebraska,other,79,100
+2020-03-29,Nebraska,other,0,6
+2020-03-29,Nebraska,other,0,5
+2020-03-29,Nebraska,Douglas,74,1
+2020-03-29,Nebraska,Hall,37,3
+2020-03-29,Nebraska,other,14,4
+2020-03-29,New York,New York City,33355,1
+2020-03-29,New York,other,29085,100
+2020-03-29,Oklahoma,other,277,100
+2020-03-29,Oklahoma,other,123,4
+2020-03-29,Oklahoma,other,31,6
+2020-03-29,Oklahoma,Oklahoma,149,1
+2020-03-29,Oklahoma,Texas,0,3
+2020-03-29,Oklahoma,Tulsa,164,2
+2020-03-29,Oklahoma,other,19,5
+2020-03-29,Virginia,other,1240,100
+2020-03-29,Virginia,Arlington,75,3
+2020-03-29,Virginia,Fairfax,231,1
+2020-03-29,Virginia,Prince William,103,2
+2020-03-29,Louisiana,other,2964,100
+2020-03-29,Louisiana,other,409,4
+2020-03-29,Louisiana,East Baton Rouge,468,3
+2020-03-29,Louisiana,Jefferson,2264,1
+2020-03-29,Louisiana,Orleans,2668,2
+2020-03-29,Louisiana,other,398,5
+2020-03-29,Minnesota,other,265,100
+2020-03-29,Minnesota,Stearns,1,2
+2020-03-29,Minnesota,Hennepin,100,1
+2020-03-29,Minnesota,Ramsey,37,3
+2020-03-29,Tennessee,other,865,100
+2020-03-29,Tennessee,other,94,4
+2020-03-29,Tennessee,Shelby,431,2
+2020-03-29,Tennessee,Trousdale,6,3
+2020-03-29,Tennessee,Davidson,480,1
+2020-03-29,Wisconsin,other,471,100
+2020-03-29,Wisconsin,Milwaukee,528,1
+2020-03-29,Wisconsin,Racine,32,3
+2020-03-29,Wisconsin,Brown,21,2
+2020-03-29,California,other,4752,100
+2020-03-29,California,Los Angeles,3473,1
+2020-03-29,New Jersey,other,2192,100
+2020-03-29,New Jersey,Bergen,3922,2
+2020-03-29,New Jersey,other,354,13
+2020-03-29,New Jersey,other,358,11
+2020-03-29,New Jersey,Essex,2498,3
+2020-03-29,New Jersey,Hudson,2720,1
+2020-03-29,New Jersey,other,418,10
+2020-03-29,New Jersey,other,1770,6
+2020-03-29,New Jersey,other,1284,8
+2020-03-29,New Jersey,other,1176,9
+2020-03-29,New Jersey,other,1379,7
+2020-03-29,New Jersey,other,2248,4
+2020-03-29,New Jersey,other,507,12
+2020-03-29,New Jersey,other,2174,5
+2020-03-29,New Mexico,Bernalillo,132,3
+2020-03-29,New Mexico,other,73,100
+2020-03-29,New Mexico,McKinley,27,1
+2020-03-29,New Mexico,other,54,4
+2020-03-29,New Mexico,San Juan,40,2
+2020-03-29,Washington,other,688,100
+2020-03-29,Washington,King,821,1
+2020-03-29,Washington,other,344,4
+2020-03-29,Washington,Snohomish,590,2
+2020-03-29,Washington,Yakima,189,3
+2020-03-29,Connecticut,other,374,100
+2020-03-29,Connecticut,Fairfield,1916,1
+2020-03-29,Connecticut,Hartford,498,3
+2020-03-29,Connecticut,New Haven,788,2
+2020-03-29,Mississippi,other,306,100
+2020-03-29,Mississippi,other,15,22
+2020-03-29,Mississippi,other,10,24
+2020-03-29,Mississippi,other,5,13
+2020-03-29,Mississippi,other,4,17
+2020-03-29,Mississippi,other,53,7
+2020-03-29,Mississippi,other,16,5
+2020-03-29,Mississippi,other,38,15
+2020-03-29,Mississippi,Hinds,82,1
+2020-03-29,Mississippi,other,4,10
+2020-03-29,Mississippi,other,46,12
+2020-03-29,Mississippi,other,6,9
+2020-03-29,Mississippi,other,9,19
+2020-03-29,Mississippi,Lauderdale,49,2
+2020-03-29,Mississippi,other,4,8
+2020-03-29,Mississippi,other,7,18
+2020-03-29,Mississippi,Madison,38,3
+2020-03-29,Mississippi,other,9,14
+2020-03-29,Mississippi,other,3,6
+2020-03-29,Mississippi,other,5,20
+2020-03-29,Mississippi,other,20,21
+2020-03-29,Mississippi,other,11,23
+2020-03-29,Mississippi,other,35,11
+2020-03-29,Mississippi,other,10,4
+2020-03-29,Puerto Rico,Unknown,352,1
+2020-03-29,North Dakota,other,43,100
+2020-03-29,North Dakota,Cass,30,1
+2020-03-29,North Dakota,Grand Forks,8,2
+2020-03-29,Pennsylvania,other,4052,100
+2020-03-29,Pennsylvania,other,364,4
+2020-03-29,Pennsylvania,Delaware,390,3
+2020-03-29,Pennsylvania,Montgomery,571,2
+2020-03-29,Pennsylvania,Philadelphia,1901,1
+2020-03-29,Rhode Island,Unknown,-46,2
+2020-03-29,Rhode Island,other,164,100
+2020-03-29,Rhode Island,Providence,449,1
+2020-03-29,South Dakota,other,75,100
+2020-03-29,South Dakota,Minnehaha,60,1
+2020-03-29,Massachusetts,other,408,100
+2020-03-29,Massachusetts,other,422,7
+2020-03-29,Massachusetts,Essex,928,3
+2020-03-29,Massachusetts,other,550,8
+2020-03-29,Massachusetts,Middlesex,1626,1
+2020-03-29,Massachusetts,other,709,5
+2020-03-29,Massachusetts,other,626,6
+2020-03-29,Massachusetts,Suffolk,1586,2
+2020-03-29,Massachusetts,other,624,4
+2020-03-29,New Hampshire,other,97,100
+2020-03-29,New Hampshire,Hillsborough,178,1
+2020-03-29,New Hampshire,Rockingham,127,2
+2020-03-29,West Virginia,other,42,100
+2020-03-29,West Virginia,Jackson,6,3
+2020-03-29,West Virginia,other,13,5
+2020-03-29,West Virginia,Kanawha,29,2
+2020-03-29,West Virginia,other,8,8
+2020-03-29,West Virginia,other,11,4
+2020-03-29,West Virginia,other,5,9
+2020-03-29,West Virginia,Berkeley,39,1
+2020-03-29,West Virginia,other,4,7
+2020-03-29,North Carolina,other,669,100
+2020-03-29,North Carolina,other,1,7
+2020-03-29,North Carolina,other,30,8
+2020-03-29,North Carolina,Wake,159,2
+2020-03-29,North Carolina,other,8,5
+2020-03-29,North Carolina,Durham,80,3
+2020-03-29,North Carolina,other,58,6
+2020-03-29,North Carolina,other,60,4
+2020-03-29,North Carolina,Mecklenburg,336,1
+2020-03-29,South Carolina,other,306,100
+2020-03-29,South Carolina,other,65,4
+2020-03-29,South Carolina,Richland,161,1
+2020-03-29,South Carolina,other,51,6
+2020-03-29,South Carolina,other,55,7
+2020-03-29,South Carolina,other,50,8
+2020-03-29,South Carolina,other,109,10
+2020-03-29,South Carolina,other,166,5
+2020-03-29,South Carolina,other,38,11
+2020-03-29,South Carolina,Florence,23,3
+2020-03-29,South Carolina,Greenville,126,2
+2020-03-29,South Carolina,other,35,9
+2020-03-29,South Carolina,other,64,12
+2020-03-29,Virgin Islands,Unknown,23,1
+2020-03-29,District of Columbia,District of Columbia,598,1
+2020-03-29,Northern Mariana Islands,Unknown,6,1
+2020-04-05,Guam,Unknown,458,1
+2020-04-05,Iowa,other,499,100
+2020-04-05,Iowa,Black Hawk,31,3
+2020-04-05,Iowa,other,4,6
+2020-04-05,Iowa,other,96,4
+2020-04-05,Iowa,other,18,5
+2020-04-05,Iowa,Polk,54,1
+2020-04-05,Iowa,Woodbury,10,2
+2020-04-05,Ohio,other,1119,100
+2020-04-05,Ohio,Cuyahoga,332,2
+2020-04-05,Ohio,Franklin,337,1
+2020-04-05,Ohio,other,241,4
+2020-04-05,Ohio,other,218,6
+2020-04-05,Ohio,other,125,7
+2020-04-05,Ohio,Marion,37,3
+2020-04-05,Ohio,other,31,5
+2020-04-05,Ohio,other,59,8
+2020-04-05,Utah,other,267,100
+2020-04-05,Utah,Salt Lake,421,1
+2020-04-05,Utah,Utah,109,2
+2020-04-05,Idaho,Ada,132,1
+2020-04-05,Idaho,other,68,100
+2020-04-05,Idaho,Blaine,44,2
+2020-04-05,Idaho,other,47,4
+2020-04-05,Idaho,Twin Falls,38,3
+2020-04-05,Maine,other,59,100
+2020-04-05,Maine,Cumberland,53,1
+2020-04-05,Maine,York,48,2
+2020-04-05,Texas,other,2751,100
+2020-04-05,Texas,Tarrant,322,3
+2020-04-05,Texas,other,260,4
+2020-04-05,Texas,Harris,2277,1
+2020-04-05,Texas,other,328,5
+2020-04-05,Texas,Dallas,633,2
+2020-04-05,Texas,other,42,6
+2020-04-05,Alaska,other,13,100
+2020-04-05,Alaska,Fairbanks North Star Borough,30,2
+2020-04-05,Alaska,Anchorage,40,1
+2020-04-05,Hawaii,other,16,100
+2020-04-05,Hawaii,Honolulu,82,1
+2020-04-05,Hawaii,Maui,42,2
+2020-04-05,Kansas,other,148,100
+2020-04-05,Kansas,Finney,6,2
+2020-04-05,Kansas,Ford,3,1
+2020-04-05,Kansas,other,98,6
+2020-04-05,Kansas,other,42,4
+2020-04-05,Kansas,other,8,8
+2020-04-05,Kansas,other,94,7
+2020-04-05,Kansas,other,4,5
+2020-04-05,Kansas,Wyandotte,166,3
+2020-04-05,Nevada,other,-24,100
+2020-04-05,Nevada,Clark,840,1
+2020-04-05,Nevada,Washoe,144,2
+2020-04-05,Oregon,other,108,100
+2020-04-05,Oregon,other,43,4
+2020-04-05,Oregon,Marion,75,2
+2020-04-05,Oregon,Multnomah,134,1
+2020-04-05,Oregon,Washington,83,3
+2020-04-05,Alabama,other,714,100
+2020-04-05,Alabama,other,2,9
+2020-04-05,Alabama,Jefferson,203,2
+2020-04-05,Alabama,other,117,5
+2020-04-05,Alabama,other,67,4
+2020-04-05,Alabama,Mobile,315,1
+2020-04-05,Alabama,Montgomery,43,3
+2020-04-05,Alabama,other,69,6
+2020-04-05,Alabama,other,42,8
+2020-04-05,Alabama,other,56,7
+2020-04-05,Arizona,other,389,100
+2020-04-05,Arizona,Maricopa,720,1
+2020-04-05,Arizona,Pima,265,2
+2020-04-05,Florida,other,2942,100
+2020-04-05,Florida,Miami-Dade,2868,1
+2020-04-05,Florida,Palm Beach,547,3
+2020-04-05,Florida,Broward,1079,2
+2020-04-05,Georgia,other,1212,6
+2020-04-05,Georgia,other,2644,100
+2020-04-05,Georgia,other,104,8
+2020-04-05,Georgia,other,252,4
+2020-04-05,Georgia,DeKalb,309,2
+2020-04-05,Georgia,other,417,7
+2020-04-05,Georgia,Fulton,487,1
+2020-04-05,Georgia,Gwinnett,281,3
+2020-04-05,Georgia,other,159,5
+2020-04-05,Indiana,other,1941,100
+2020-04-05,Indiana,Lake,363,2
+2020-04-05,Indiana,Marion,1172,1
+2020-04-05,Montana,other,25,100
+2020-04-05,Montana,other,11,4
+2020-04-05,Montana,Gallatin,26,1
+2020-04-05,Montana,Missoula,10,3
+2020-04-05,Montana,Yellowstone,19,2
+2020-04-05,Vermont,other,83,100
+2020-04-05,Vermont,Chittenden,106,1
+2020-04-05,Vermont,Franklin,57,2
+2020-04-05,Wyoming,other,54,100
+2020-04-05,Wyoming,Fremont,10,1
+2020-04-05,Wyoming,Laramie,35,2
+2020-04-05,Wyoming,other,17,4
+2020-04-05,Wyoming,Teton,36,3
+2020-04-05,Arkansas,other,252,100
+2020-04-05,Arkansas,other,28,4
+2020-04-05,Arkansas,other,45,5
+2020-04-05,Arkansas,Jefferson,38,3
+2020-04-05,Arkansas,Lincoln,4,1
+2020-04-05,Arkansas,Pulaski,110,2
+2020-04-05,Colorado,other,524,100
+2020-04-05,Colorado,Adams,273,3
+2020-04-05,Colorado,Arapahoe,446,2
+2020-04-05,Colorado,Denver,413,1
+2020-04-05,Colorado,other,172,6
+2020-04-05,Colorado,other,230,5
+2020-04-05,Colorado,other,259,4
+2020-04-05,Delaware,other,4,100
+2020-04-05,Delaware,Kent,187,3
+2020-04-05,Delaware,New Castle,407,2
+2020-04-05,Delaware,Sussex,279,1
+2020-04-05,Illinois,other,2751,100
+2020-04-05,Illinois,Cook,5978,1
+2020-04-05,Kentucky,other,627,100
+2020-04-05,Kentucky,Fayette,54,3
+2020-04-05,Kentucky,Jefferson,201,1
+2020-04-05,Kentucky,other,59,4
+2020-04-05,Kentucky,other,20,5
+2020-04-05,Kentucky,Warren,30,2
+2020-04-05,Maryland,other,413,4
+2020-04-05,Maryland,other,981,100
+2020-04-05,Maryland,other,326,5
+2020-04-05,Maryland,Baltimore,682,3
+2020-04-05,Maryland,Montgomery,897,2
+2020-04-05,Maryland,Prince George's,1270,1
+2020-04-05,Michigan,other,2092,100
+2020-04-05,Michigan,Oakland,2017,2
+2020-04-05,Michigan,Wayne,4189,1
+2020-04-05,Michigan,Macomb,1326,3
+2020-04-05,Missouri,Kansas City,126,3
+2020-04-05,Missouri,other,595,100
+2020-04-05,Missouri,St. Louis,704,1
+2020-04-05,Missouri,St. Louis city,298,2
+2020-04-05,Nebraska,other,140,100
+2020-04-05,Nebraska,other,3,6
+2020-04-05,Nebraska,other,2,5
+2020-04-05,Nebraska,Douglas,96,1
+2020-04-05,Nebraska,Hall,91,3
+2020-04-05,Nebraska,other,32,4
+2020-04-05,New York,New York City,36566,1
+2020-04-05,New York,other,30461,100
+2020-04-05,Oklahoma,other,290,100
+2020-04-05,Oklahoma,other,78,4
+2020-04-05,Oklahoma,other,12,6
+2020-04-05,Oklahoma,Oklahoma,169,1
+2020-04-05,Oklahoma,Texas,2,3
+2020-04-05,Oklahoma,Tulsa,102,2
+2020-04-05,Oklahoma,other,50,5
+2020-04-05,Virginia,other,1640,100
+2020-04-05,Virginia,Arlington,199,3
+2020-04-05,Virginia,Fairfax,559,1
+2020-04-05,Virginia,Prince William,231,2
+2020-04-05,Louisiana,other,2851,100
+2020-04-05,Louisiana,other,376,4
+2020-04-05,Louisiana,East Baton Rouge,537,3
+2020-04-05,Louisiana,Jefferson,1869,1
+2020-04-05,Louisiana,Orleans,1569,2
+2020-04-05,Louisiana,other,313,5
+2020-04-05,Minnesota,other,284,100
+2020-04-05,Minnesota,Stearns,1,2
+2020-04-05,Minnesota,Hennepin,212,1
+2020-04-05,Minnesota,other,0,4
+2020-04-05,Minnesota,Ramsey,53,3
+2020-04-05,Tennessee,other,861,100
+2020-04-05,Tennessee,other,95,4
+2020-04-05,Tennessee,Shelby,441,2
+2020-04-05,Tennessee,Trousdale,10,3
+2020-04-05,Tennessee,Davidson,400,1
+2020-04-05,Wisconsin,other,420,100
+2020-04-05,Wisconsin,Milwaukee,584,1
+2020-04-05,Wisconsin,Racine,57,3
+2020-04-05,Wisconsin,Brown,33,2
+2020-04-05,California,other,5027,100
+2020-04-05,California,Los Angeles,3596,1
+2020-04-05,New Jersey,other,-1853,100
+2020-04-05,New Jersey,Bergen,3602,2
+2020-04-05,New Jersey,other,562,13
+2020-04-05,New Jersey,other,699,11
+2020-04-05,New Jersey,Essex,3423,3
+2020-04-05,New Jersey,Hudson,3360,1
+2020-04-05,New Jersey,other,848,10
+2020-04-05,New Jersey,other,2828,6
+2020-04-05,New Jersey,other,1586,8
+2020-04-05,New Jersey,other,1307,9
+2020-04-05,New Jersey,other,1400,7
+2020-04-05,New Jersey,other,2439,4
+2020-04-05,New Jersey,other,877,12
+2020-04-05,New Jersey,other,2949,5
+2020-04-05,New Mexico,Bernalillo,197,3
+2020-04-05,New Mexico,other,100,100
+2020-04-05,New Mexico,McKinley,108,1
+2020-04-05,New Mexico,other,130,4
+2020-04-05,New Mexico,San Juan,91,2
+2020-04-05,Washington,other,608,100
+2020-04-05,Washington,King,1364,1
+2020-04-05,Washington,other,302,4
+2020-04-05,Washington,Snohomish,332,2
+2020-04-05,Washington,Yakima,246,3
+2020-04-05,Connecticut,other,854,100
+2020-04-05,Connecticut,Fairfield,2583,1
+2020-04-05,Connecticut,Hartford,1106,3
+2020-04-05,Connecticut,New Haven,1691,2
+2020-04-05,Mississippi,other,394,100
+2020-04-05,Mississippi,other,39,22
+2020-04-05,Mississippi,other,33,24
+2020-04-05,Mississippi,other,4,13
+2020-04-05,Mississippi,other,16,17
+2020-04-05,Mississippi,other,45,7
+2020-04-05,Mississippi,other,52,5
+2020-04-05,Mississippi,other,64,15
+2020-04-05,Mississippi,Hinds,94,1
+2020-04-05,Mississippi,other,25,10
+2020-04-05,Mississippi,other,60,12
+2020-04-05,Mississippi,other,21,9
+2020-04-05,Mississippi,other,18,19
+2020-04-05,Mississippi,Lauderdale,72,2
+2020-04-05,Mississippi,other,19,8
+2020-04-05,Mississippi,other,22,18
+2020-04-05,Mississippi,Madison,32,3
+2020-04-05,Mississippi,other,19,14
+2020-04-05,Mississippi,other,20,6
+2020-04-05,Mississippi,other,6,20
+2020-04-05,Mississippi,other,39,21
+2020-04-05,Mississippi,other,24,23
+2020-04-05,Mississippi,other,28,11
+2020-04-05,Mississippi,other,35,4
+2020-04-05,Puerto Rico,Unknown,336,1
+2020-04-05,North Dakota,other,53,100
+2020-04-05,North Dakota,Cass,47,1
+2020-04-05,North Dakota,Grand Forks,1,2
+2020-04-05,Pennsylvania,other,5693,100
+2020-04-05,Pennsylvania,other,590,4
+2020-04-05,Pennsylvania,Delaware,894,3
+2020-04-05,Pennsylvania,Montgomery,1071,2
+2020-04-05,Pennsylvania,Philadelphia,3412,1
+2020-04-05,Rhode Island,Unknown,551,2
+2020-04-05,Rhode Island,other,205,100
+2020-04-05,Rhode Island,Providence,787,1
+2020-04-05,South Dakota,other,52,100
+2020-04-05,South Dakota,Minnehaha,357,1
+2020-04-05,Massachusetts,other,311,100
+2020-04-05,Massachusetts,other,590,7
+2020-04-05,Massachusetts,Essex,1496,3
+2020-04-05,Massachusetts,other,812,8
+2020-04-05,Massachusetts,Middlesex,2404,1
+2020-04-05,Massachusetts,other,1196,5
+2020-04-05,Massachusetts,other,911,6
+2020-04-05,Massachusetts,Suffolk,2497,2
+2020-04-05,Massachusetts,other,907,4
+2020-04-05,New Hampshire,other,77,100
+2020-04-05,New Hampshire,Hillsborough,136,1
+2020-04-05,New Hampshire,Rockingham,101,2
+2020-04-05,West Virginia,other,70,100
+2020-04-05,West Virginia,Jackson,10,3
+2020-04-05,West Virginia,other,31,5
+2020-04-05,West Virginia,Kanawha,35,2
+2020-04-05,West Virginia,other,19,8
+2020-04-05,West Virginia,other,43,4
+2020-04-05,West Virginia,other,11,6
+2020-04-05,West Virginia,other,11,9
+2020-04-05,West Virginia,Berkeley,42,1
+2020-04-05,West Virginia,other,17,7
+2020-04-05,North Carolina,other,1175,100
+2020-04-05,North Carolina,other,4,7
+2020-04-05,North Carolina,other,61,8
+2020-04-05,North Carolina,Wake,141,2
+2020-04-05,North Carolina,other,58,5
+2020-04-05,North Carolina,Durham,94,3
+2020-04-05,North Carolina,other,30,6
+2020-04-05,North Carolina,other,40,4
+2020-04-05,North Carolina,Mecklenburg,300,1
+2020-04-05,South Carolina,other,316,100
+2020-04-05,South Carolina,other,107,4
+2020-04-05,South Carolina,Richland,237,1
+2020-04-05,South Carolina,other,98,6
+2020-04-05,South Carolina,other,67,7
+2020-04-05,South Carolina,other,46,8
+2020-04-05,South Carolina,other,43,10
+2020-04-05,South Carolina,other,57,5
+2020-04-05,South Carolina,other,40,11
+2020-04-05,South Carolina,Florence,31,3
+2020-04-05,South Carolina,Greenville,142,2
+2020-04-05,South Carolina,other,69,9
+2020-04-05,South Carolina,other,37,12
+2020-04-05,Virgin Islands,Unknown,9,1
+2020-04-05,District of Columbia,District of Columbia,876,1
+2020-04-05,Northern Mariana Islands,Unknown,3,1
+2020-04-12,Guam,Unknown,124,1
+2020-04-12,Iowa,other,569,100
+2020-04-12,Iowa,Black Hawk,125,3
+2020-04-12,Iowa,other,8,6
+2020-04-12,Iowa,other,97,4
+2020-04-12,Iowa,other,55,5
+2020-04-12,Iowa,Polk,130,1
+2020-04-12,Iowa,Woodbury,17,2
+2020-04-12,Ohio,other,1236,100
+2020-04-12,Ohio,Cuyahoga,340,2
+2020-04-12,Ohio,Franklin,509,1
+2020-04-12,Ohio,other,172,4
+2020-04-12,Ohio,other,234,6
+2020-04-12,Ohio,other,197,7
+2020-04-12,Ohio,Marion,934,3
+2020-04-12,Ohio,other,251,5
+2020-04-12,Ohio,other,97,8
+2020-04-12,Utah,other,116,100
+2020-04-12,Utah,Salt Lake,476,1
+2020-04-12,Utah,Utah,122,2
+2020-04-12,Idaho,Ada,53,1
+2020-04-12,Idaho,other,39,100
+2020-04-12,Idaho,Blaine,15,2
+2020-04-12,Idaho,other,35,4
+2020-04-12,Idaho,Twin Falls,28,3
+2020-04-12,Maine,other,114,100
+2020-04-12,Maine,Cumberland,85,1
+2020-04-12,Maine,York,32,2
+2020-04-12,Texas,other,2681,100
+2020-04-12,Texas,Tarrant,524,3
+2020-04-12,Texas,other,402,4
+2020-04-12,Texas,Harris,1092,1
+2020-04-12,Texas,other,280,5
+2020-04-12,Texas,Dallas,676,2
+2020-04-12,Texas,other,44,6
+2020-04-12,Alaska,other,22,100
+2020-04-12,Alaska,Fairbanks North Star Borough,3,2
+2020-04-12,Alaska,Anchorage,30,1
+2020-04-12,Hawaii,other,29,100
+2020-04-12,Hawaii,Honolulu,34,1
+2020-04-12,Hawaii,Maui,24,2
+2020-04-12,Kansas,other,78,100
+2020-04-12,Kansas,Finney,20,2
+2020-04-12,Kansas,Ford,102,1
+2020-04-12,Kansas,other,86,6
+2020-04-12,Kansas,other,48,4
+2020-04-12,Kansas,other,30,8
+2020-04-12,Kansas,other,41,7
+2020-04-12,Kansas,other,30,5
+2020-04-12,Kansas,Wyandotte,97,3
+2020-04-12,Nevada,other,63,100
+2020-04-12,Nevada,Clark,624,1
+2020-04-12,Nevada,Washoe,217,2
+2020-04-12,Oregon,other,84,100
+2020-04-12,Oregon,other,33,4
+2020-04-12,Oregon,Marion,72,2
+2020-04-12,Oregon,Multnomah,150,1
+2020-04-12,Oregon,Washington,57,3
+2020-04-12,Alabama,other,677,100
+2020-04-12,Alabama,other,9,9
+2020-04-12,Alabama,Jefferson,94,2
+2020-04-12,Alabama,other,85,5
+2020-04-12,Alabama,other,55,4
+2020-04-12,Alabama,Mobile,209,1
+2020-04-12,Alabama,Montgomery,111,3
+2020-04-12,Alabama,other,61,6
+2020-04-12,Alabama,other,118,8
+2020-04-12,Alabama,other,41,7
+2020-04-12,Arizona,other,461,100
+2020-04-12,Arizona,Maricopa,600,1
+2020-04-12,Arizona,Pima,265,2
+2020-04-12,Florida,other,2588,100
+2020-04-12,Florida,Miami-Dade,2287,1
+2020-04-12,Florida,Palm Beach,637,3
+2020-04-12,Florida,Broward,994,2
+2020-04-12,Georgia,other,-1055,6
+2020-04-12,Georgia,other,3047,100
+2020-04-12,Georgia,other,166,8
+2020-04-12,Georgia,other,399,4
+2020-04-12,Georgia,DeKalb,560,2
+2020-04-12,Georgia,other,307,7
+2020-04-12,Georgia,Fulton,619,1
+2020-04-12,Georgia,Gwinnett,378,3
+2020-04-12,Georgia,other,331,5
+2020-04-12,Indiana,other,1902,100
+2020-04-12,Indiana,Lake,419,2
+2020-04-12,Indiana,Marion,882,1
+2020-04-12,Montana,other,19,100
+2020-04-12,Montana,other,3,4
+2020-04-12,Montana,Gallatin,7,1
+2020-04-12,Montana,Missoula,6,3
+2020-04-12,Montana,Yellowstone,13,2
+2020-04-12,Vermont,other,49,100
+2020-04-12,Vermont,Chittenden,33,1
+2020-04-12,Vermont,Franklin,10,2
+2020-04-12,Wyoming,other,19,100
+2020-04-12,Wyoming,Fremont,6,1
+2020-04-12,Wyoming,Laramie,18,2
+2020-04-12,Wyoming,other,8,4
+2020-04-12,Wyoming,Teton,17,3
+2020-04-12,Arkansas,other,210,100
+2020-04-12,Arkansas,other,33,4
+2020-04-12,Arkansas,other,49,5
+2020-04-12,Arkansas,Jefferson,27,3
+2020-04-12,Arkansas,Lincoln,101,1
+2020-04-12,Arkansas,Pulaski,128,2
+2020-04-12,Colorado,other,492,100
+2020-04-12,Colorado,Adams,301,3
+2020-04-12,Colorado,Arapahoe,500,2
+2020-04-12,Colorado,Denver,541,1
+2020-04-12,Colorado,other,143,6
+2020-04-12,Colorado,other,217,5
+2020-04-12,Colorado,other,346,4
+2020-04-12,Delaware,other,27,100
+2020-04-12,Delaware,Kent,162,3
+2020-04-12,Delaware,New Castle,398,2
+2020-04-12,Delaware,Sussex,482,1
+2020-04-12,Illinois,other,2992,100
+2020-04-12,Illinois,Cook,6978,1
+2020-04-12,Kentucky,other,461,100
+2020-04-12,Kentucky,Fayette,39,3
+2020-04-12,Kentucky,Jefferson,194,1
+2020-04-12,Kentucky,other,37,4
+2020-04-12,Kentucky,other,42,5
+2020-04-12,Kentucky,Warren,38,2
+2020-04-12,Maryland,other,1021,100
+2020-04-12,Maryland,other,625,4
+2020-04-12,Maryland,other,397,5
+2020-04-12,Maryland,Baltimore,498,3
+2020-04-12,Maryland,Montgomery,883,2
+2020-04-12,Maryland,Prince George's,1247,1
+2020-04-12,Michigan,other,2032,100
+2020-04-12,Michigan,Oakland,1219,2
+2020-04-12,Michigan,Wayne,2520,1
+2020-04-12,Michigan,Macomb,1087,3
+2020-04-12,Missouri,Kansas City,114,3
+2020-04-12,Missouri,other,558,100
+2020-04-12,Missouri,St. Louis,595,1
+2020-04-12,Missouri,St. Louis city,223,2
+2020-04-12,Nebraska,other,141,100
+2020-04-12,Nebraska,other,0,6
+2020-04-12,Nebraska,Dakota,26,2
+2020-04-12,Nebraska,other,40,5
+2020-04-12,Nebraska,Douglas,53,1
+2020-04-12,Nebraska,Hall,337,3
+2020-04-12,Nebraska,other,23,4
+2020-04-12,New York,New York City,34212,1
+2020-04-12,New York,other,23340,100
+2020-04-12,Oklahoma,other,342,100
+2020-04-12,Oklahoma,other,61,4
+2020-04-12,Oklahoma,other,16,6
+2020-04-12,Oklahoma,Oklahoma,125,1
+2020-04-12,Oklahoma,Texas,10,3
+2020-04-12,Oklahoma,Tulsa,86,2
+2020-04-12,Oklahoma,other,55,5
+2020-04-12,Virginia,other,1806,100
+2020-04-12,Virginia,Arlington,171,3
+2020-04-12,Virginia,Fairfax,687,1
+2020-04-12,Virginia,Prince William,310,2
+2020-04-12,Louisiana,other,1752,100
+2020-04-12,Louisiana,other,270,4
+2020-04-12,Louisiana,East Baton Rouge,318,3
+2020-04-12,Louisiana,Jefferson,666,1
+2020-04-12,Louisiana,Orleans,418,2
+2020-04-12,Louisiana,other,142,5
+2020-04-12,Minnesota,other,262,100
+2020-04-12,Minnesota,Stearns,9,2
+2020-04-12,Minnesota,Hennepin,411,1
+2020-04-12,Minnesota,other,35,4
+2020-04-12,Minnesota,Ramsey,60,3
+2020-04-12,Tennessee,other,554,100
+2020-04-12,Tennessee,other,67,4
+2020-04-12,Tennessee,Shelby,583,2
+2020-04-12,Tennessee,Trousdale,3,3
+2020-04-12,Tennessee,Davidson,424,1
+2020-04-12,Wisconsin,other,369,100
+2020-04-12,Wisconsin,Milwaukee,412,1
+2020-04-12,Wisconsin,Racine,59,3
+2020-04-12,Wisconsin,Brown,144,2
+2020-04-12,California,other,5260,100
+2020-04-12,California,Los Angeles,3148,1
+2020-04-12,New Jersey,other,850,100
+2020-04-12,New Jersey,Bergen,2801,2
+2020-04-12,New Jersey,other,425,13
+2020-04-12,New Jersey,other,738,11
+2020-04-12,New Jersey,Essex,2894,3
+2020-04-12,New Jersey,Hudson,3105,1
+2020-04-12,New Jersey,other,781,10
+2020-04-12,New Jersey,other,2218,6
+2020-04-12,New Jersey,other,877,8
+2020-04-12,New Jersey,other,1059,9
+2020-04-12,New Jersey,other,1145,7
+2020-04-12,New Jersey,other,2641,4
+2020-04-12,New Jersey,other,641,12
+2020-04-12,New Jersey,other,3094,5
+2020-04-12,New Mexico,Bernalillo,105,3
+2020-04-12,New Mexico,other,79,100
+2020-04-12,New Mexico,McKinley,216,1
+2020-04-12,New Mexico,other,112,4
+2020-04-12,New Mexico,San Juan,111,2
+2020-04-12,Washington,other,424,100
+2020-04-12,Washington,King,801,1
+2020-04-12,Washington,other,221,4
+2020-04-12,Washington,Snohomish,258,2
+2020-04-12,Washington,Yakima,224,3
+2020-04-12,Connecticut,other,692,100
+2020-04-12,Connecticut,Fairfield,1956,1
+2020-04-12,Connecticut,Hartford,1364,3
+2020-04-12,Connecticut,New Haven,2028,2
+2020-04-12,Mississippi,other,417,100
+2020-04-12,Mississippi,other,27,22
+2020-04-12,Mississippi,other,24,24
+2020-04-12,Mississippi,other,16,13
+2020-04-12,Mississippi,other,13,17
+2020-04-12,Mississippi,other,57,7
+2020-04-12,Mississippi,other,51,5
+2020-04-12,Mississippi,other,98,15
+2020-04-12,Mississippi,Hinds,91,1
+2020-04-12,Mississippi,other,16,10
+2020-04-12,Mississippi,other,62,12
+2020-04-12,Mississippi,other,33,9
+2020-04-12,Mississippi,other,28,19
+2020-04-12,Mississippi,Lauderdale,57,2
+2020-04-12,Mississippi,other,37,8
+2020-04-12,Mississippi,other,31,18
+2020-04-12,Mississippi,Madison,28,3
+2020-04-12,Mississippi,other,31,14
+2020-04-12,Mississippi,other,29,6
+2020-04-12,Mississippi,other,9,20
+2020-04-12,Mississippi,other,37,21
+2020-04-12,Mississippi,other,50,23
+2020-04-12,Mississippi,other,36,11
+2020-04-12,Mississippi,other,54,4
+2020-04-12,Puerto Rico,Unknown,330,1
+2020-04-12,North Dakota,other,45,100
+2020-04-12,North Dakota,Cass,102,1
+2020-04-12,North Dakota,Grand Forks,88,2
+2020-04-12,Pennsylvania,other,4867,100
+2020-04-12,Pennsylvania,other,519,4
+2020-04-12,Pennsylvania,Delaware,862,3
+2020-04-12,Pennsylvania,Montgomery,728,2
+2020-04-12,Pennsylvania,Philadelphia,2992,1
+2020-04-12,Rhode Island,Unknown,142,2
+2020-04-12,Rhode Island,other,264,100
+2020-04-12,Rhode Island,Providence,1736,1
+2020-04-12,South Dakota,other,73,100
+2020-04-12,South Dakota,Minnehaha,838,1
+2020-04-12,Massachusetts,other,810,100
+2020-04-12,Massachusetts,other,507,7
+2020-04-12,Massachusetts,Essex,2018,3
+2020-04-12,Massachusetts,other,709,8
+2020-04-12,Massachusetts,Middlesex,3425,1
+2020-04-12,Massachusetts,other,1264,5
+2020-04-12,Massachusetts,other,879,6
+2020-04-12,Massachusetts,Suffolk,2770,2
+2020-04-12,Massachusetts,other,1130,4
+2020-04-12,New Hampshire,other,76,100
+2020-04-12,New Hampshire,Hillsborough,185,1
+2020-04-12,New Hampshire,Rockingham,152,2
+2020-04-12,West Virginia,other,38,100
+2020-04-12,West Virginia,Jackson,47,3
+2020-04-12,West Virginia,other,12,5
+2020-04-12,West Virginia,Kanawha,28,2
+2020-04-12,West Virginia,other,10,8
+2020-04-12,West Virginia,other,1,4
+2020-04-12,West Virginia,other,58,6
+2020-04-12,West Virginia,other,11,9
+2020-04-12,West Virginia,Berkeley,16,1
+2020-04-12,West Virginia,other,8,7
+2020-04-12,North Carolina,other,905,100
+2020-04-12,North Carolina,other,11,7
+2020-04-12,North Carolina,other,139,8
+2020-04-12,North Carolina,Wake,155,2
+2020-04-12,North Carolina,other,247,5
+2020-04-12,North Carolina,Durham,105,3
+2020-04-12,North Carolina,other,12,6
+2020-04-12,North Carolina,other,34,4
+2020-04-12,North Carolina,Mecklenburg,218,1
+2020-04-12,South Carolina,other,327,100
+2020-04-12,South Carolina,other,69,4
+2020-04-12,South Carolina,Richland,147,1
+2020-04-12,South Carolina,other,41,6
+2020-04-12,South Carolina,other,35,7
+2020-04-12,South Carolina,other,29,8
+2020-04-12,South Carolina,other,29,10
+2020-04-12,South Carolina,other,54,5
+2020-04-12,South Carolina,other,24,11
+2020-04-12,South Carolina,Florence,62,3
+2020-04-12,South Carolina,Greenville,161,2
+2020-04-12,South Carolina,other,44,9
+2020-04-12,South Carolina,other,17,12
+2020-04-12,Virgin Islands,Unknown,2,1
+2020-04-12,District of Columbia,District of Columbia,888,1
+2020-04-12,Northern Mariana Islands,Unknown,3,1
+2020-04-19,Guam,Unknown,192,1
+2020-04-19,Iowa,other,852,100
+2020-04-19,Iowa,Black Hawk,526,3
+2020-04-19,Iowa,other,86,6
+2020-04-19,Iowa,other,218,4
+2020-04-19,Iowa,other,262,5
+2020-04-19,Iowa,Polk,367,1
+2020-04-19,Iowa,Woodbury,281,2
+2020-04-19,Ohio,other,1099,100
+2020-04-19,Ohio,Cuyahoga,414,2
+2020-04-19,Ohio,Franklin,436,1
+2020-04-19,Ohio,other,274,4
+2020-04-19,Ohio,other,309,6
+2020-04-19,Ohio,other,149,7
+2020-04-19,Ohio,Marion,1189,3
+2020-04-19,Ohio,other,1360,5
+2020-04-19,Ohio,other,135,8
+2020-04-19,Utah,other,196,100
+2020-04-19,Utah,Salt Lake,504,1
+2020-04-19,Utah,Utah,308,2
+2020-04-19,Idaho,Ada,80,1
+2020-04-19,Idaho,other,109,100
+2020-04-19,Idaho,Blaine,21,2
+2020-04-19,Idaho,other,50,4
+2020-04-19,Idaho,Twin Falls,49,3
+2020-04-19,Maine,other,58,100
+2020-04-19,Maine,Cumberland,65,1
+2020-04-19,Maine,York,19,2
+2020-04-19,Texas,other,2630,100
+2020-04-19,Texas,Tarrant,607,3
+2020-04-19,Texas,other,304,4
+2020-04-19,Texas,Harris,975,1
+2020-04-19,Texas,other,240,5
+2020-04-19,Texas,Dallas,585,2
+2020-04-19,Texas,other,216,6
+2020-04-19,Alaska,other,8,100
+2020-04-19,Alaska,Fairbanks North Star Borough,0,2
+2020-04-19,Alaska,Anchorage,17,1
+2020-04-19,Hawaii,other,8,100
+2020-04-19,Hawaii,Honolulu,13,1
+2020-04-19,Hawaii,Maui,8,2
+2020-04-19,Kansas,other,115,100
+2020-04-19,Kansas,Finney,104,2
+2020-04-19,Kansas,Ford,313,1
+2020-04-19,Kansas,other,55,6
+2020-04-19,Kansas,other,46,4
+2020-04-19,Kansas,other,101,8
+2020-04-19,Kansas,other,102,7
+2020-04-19,Kansas,other,272,5
+2020-04-19,Kansas,Wyandotte,153,3
+2020-04-19,Nevada,other,11,100
+2020-04-19,Nevada,Clark,688,1
+2020-04-19,Nevada,Washoe,185,2
+2020-04-19,Oregon,other,63,100
+2020-04-19,Oregon,other,47,4
+2020-04-19,Oregon,Marion,97,2
+2020-04-19,Oregon,Multnomah,130,1
+2020-04-19,Oregon,Washington,72,3
+2020-04-19,Alabama,other,633,100
+2020-04-19,Alabama,other,21,9
+2020-04-19,Alabama,Jefferson,155,2
+2020-04-19,Alabama,other,52,5
+2020-04-19,Alabama,other,140,4
+2020-04-19,Alabama,Mobile,250,1
+2020-04-19,Alabama,Montgomery,67,3
+2020-04-19,Alabama,other,41,6
+2020-04-19,Alabama,other,87,8
+2020-04-19,Alabama,other,44,7
+2020-04-19,Arizona,other,584,100
+2020-04-19,Arizona,Maricopa,743,1
+2020-04-19,Arizona,Pima,234,2
+2020-04-19,Florida,other,2097,100
+2020-04-19,Florida,Miami-Dade,1960,1
+2020-04-19,Florida,Palm Beach,476,3
+2020-04-19,Florida,Broward,821,2
+2020-04-19,Georgia,other,363,6
+2020-04-19,Georgia,other,2675,100
+2020-04-19,Georgia,other,137,8
+2020-04-19,Georgia,other,291,4
+2020-04-19,Georgia,DeKalb,380,2
+2020-04-19,Georgia,other,61,7
+2020-04-19,Georgia,Fulton,478,1
+2020-04-19,Georgia,Gwinnett,401,3
+2020-04-19,Georgia,other,425,5
+2020-04-19,Indiana,other,2231,100
+2020-04-19,Indiana,Lake,420,2
+2020-04-19,Indiana,Marion,1103,1
+2020-04-19,Montana,other,3,100
+2020-04-19,Montana,other,0,4
+2020-04-19,Montana,Gallatin,4,1
+2020-04-19,Montana,Missoula,4,3
+2020-04-19,Montana,Yellowstone,7,2
+2020-04-19,Vermont,other,19,100
+2020-04-19,Vermont,Chittenden,21,1
+2020-04-19,Vermont,Franklin,0,2
+2020-04-19,Wyoming,other,9,100
+2020-04-19,Wyoming,Fremont,24,1
+2020-04-19,Wyoming,Laramie,25,2
+2020-04-19,Wyoming,other,1,4
+2020-04-19,Wyoming,Teton,6,3
+2020-04-19,Arkansas,other,354,100
+2020-04-19,Arkansas,other,11,4
+2020-04-19,Arkansas,other,31,5
+2020-04-19,Arkansas,Jefferson,31,3
+2020-04-19,Arkansas,Lincoln,610,1
+2020-04-19,Arkansas,Pulaski,94,2
+2020-04-19,Colorado,other,929,100
+2020-04-19,Colorado,Adams,408,3
+2020-04-19,Colorado,Arapahoe,585,2
+2020-04-19,Colorado,Denver,764,1
+2020-04-19,Colorado,other,141,6
+2020-04-19,Colorado,other,306,5
+2020-04-19,Colorado,other,401,4
+2020-04-19,Delaware,other,-27,100
+2020-04-19,Delaware,Kent,162,3
+2020-04-19,Delaware,New Castle,299,2
+2020-04-19,Delaware,Sussex,604,1
+2020-04-19,Illinois,other,3759,100
+2020-04-19,Illinois,Cook,8663,1
+2020-04-19,Kentucky,other,524,100
+2020-04-19,Kentucky,Fayette,17,3
+2020-04-19,Kentucky,Jefferson,432,1
+2020-04-19,Kentucky,other,98,4
+2020-04-19,Kentucky,other,26,5
+2020-04-19,Kentucky,Warren,97,2
+2020-04-19,Maryland,other,1179,100
+2020-04-19,Maryland,other,416,4
+2020-04-19,Maryland,other,426,5
+2020-04-19,Maryland,Baltimore,726,3
+2020-04-19,Maryland,Montgomery,1082,2
+2020-04-19,Maryland,Prince George's,1636,1
+2020-04-19,Michigan,other,2642,100
+2020-04-19,Michigan,Oakland,860,2
+2020-04-19,Michigan,Wayne,2077,1
+2020-04-19,Michigan,Macomb,888,3
+2020-04-19,Missouri,Kansas City,74,3
+2020-04-19,Missouri,other,500,100
+2020-04-19,Missouri,St. Louis,555,1
+2020-04-19,Missouri,St. Louis city,177,2
+2020-04-19,Nebraska,other,307,100
+2020-04-19,Nebraska,other,5,6
+2020-04-19,Nebraska,Dakota,434,2
+2020-04-19,Nebraska,other,309,5
+2020-04-19,Nebraska,Douglas,99,1
+2020-04-19,Nebraska,Hall,343,3
+2020-04-19,Nebraska,other,47,4
+2020-04-19,New York,New York City,24799,1
+2020-04-19,New York,other,21560,100
+2020-04-19,Oklahoma,other,166,100
+2020-04-19,Oklahoma,other,92,4
+2020-04-19,Oklahoma,other,11,6
+2020-04-19,Oklahoma,Oklahoma,144,1
+2020-04-19,Oklahoma,Texas,55,3
+2020-04-19,Oklahoma,Tulsa,70,2
+2020-04-19,Oklahoma,other,84,5
+2020-04-19,Virginia,other,2469,100
+2020-04-19,Virginia,Arlington,244,3
+2020-04-19,Virginia,Fairfax,1112,1
+2020-04-19,Virginia,Prince William,484,2
+2020-04-19,Louisiana,other,1541,100
+2020-04-19,Louisiana,other,188,4
+2020-04-19,Louisiana,East Baton Rouge,244,3
+2020-04-19,Louisiana,Jefferson,464,1
+2020-04-19,Louisiana,Orleans,344,2
+2020-04-19,Louisiana,other,151,5
+2020-04-19,Minnesota,other,437,100
+2020-04-19,Minnesota,Stearns,22,2
+2020-04-19,Minnesota,Hennepin,412,1
+2020-04-19,Minnesota,other,289,4
+2020-04-19,Minnesota,Ramsey,69,3
+2020-04-19,Tennessee,other,1293,100
+2020-04-19,Tennessee,other,85,4
+2020-04-19,Tennessee,Shelby,356,2
+2020-04-19,Tennessee,Trousdale,27,3
+2020-04-19,Tennessee,Davidson,533,1
+2020-04-19,Wisconsin,other,420,100
+2020-04-19,Wisconsin,Milwaukee,460,1
+2020-04-19,Wisconsin,Racine,91,3
+2020-04-19,Wisconsin,Brown,516,2
+2020-04-19,California,other,4675,100
+2020-04-19,California,Los Angeles,7086,1
+2020-04-19,New Jersey,other,1162,100
+2020-04-19,New Jersey,Bergen,2575,2
+2020-04-19,New Jersey,other,697,13
+2020-04-19,New Jersey,other,952,11
+2020-04-19,New Jersey,Essex,2619,3
+2020-04-19,New Jersey,Hudson,3411,1
+2020-04-19,New Jersey,other,1030,10
+2020-04-19,New Jersey,other,2451,6
+2020-04-19,New Jersey,other,993,8
+2020-04-19,New Jersey,other,837,9
+2020-04-19,New Jersey,other,1263,7
+2020-04-19,New Jersey,other,2802,4
+2020-04-19,New Jersey,other,747,12
+2020-04-19,New Jersey,other,2564,5
+2020-04-19,New Mexico,Bernalillo,143,3
+2020-04-19,New Mexico,other,138,100
+2020-04-19,New Mexico,McKinley,352,1
+2020-04-19,New Mexico,other,54,4
+2020-04-19,New Mexico,San Juan,175,2
+2020-04-19,Washington,other,491,100
+2020-04-19,Washington,King,748,1
+2020-04-19,Washington,other,164,4
+2020-04-19,Washington,Snohomish,205,2
+2020-04-19,Washington,Yakima,307,3
+2020-04-19,Connecticut,other,691,100
+2020-04-19,Connecticut,Fairfield,3010,1
+2020-04-19,Connecticut,Hartford,1565,3
+2020-04-19,Connecticut,New Haven,1766,2
+2020-04-19,Mississippi,other,534,100
+2020-04-19,Mississippi,other,35,22
+2020-04-19,Mississippi,other,36,24
+2020-04-19,Mississippi,other,46,13
+2020-04-19,Mississippi,other,27,17
+2020-04-19,Mississippi,other,43,7
+2020-04-19,Mississippi,other,44,5
+2020-04-19,Mississippi,other,48,15
+2020-04-19,Mississippi,Hinds,87,1
+2020-04-19,Mississippi,other,42,10
+2020-04-19,Mississippi,other,36,12
+2020-04-19,Mississippi,other,53,9
+2020-04-19,Mississippi,other,26,19
+2020-04-19,Mississippi,Lauderdale,94,2
+2020-04-19,Mississippi,other,85,8
+2020-04-19,Mississippi,other,56,18
+2020-04-19,Mississippi,Madison,59,3
+2020-04-19,Mississippi,other,61,14
+2020-04-19,Mississippi,other,64,6
+2020-04-19,Mississippi,other,37,20
+2020-04-19,Mississippi,other,29,21
+2020-04-19,Mississippi,other,36,23
+2020-04-19,Mississippi,other,32,11
+2020-04-19,Mississippi,other,134,4
+2020-04-19,Puerto Rico,Unknown,189,1
+2020-04-19,North Dakota,other,38,100
+2020-04-19,North Dakota,Cass,160,1
+2020-04-19,North Dakota,Grand Forks,74,2
+2020-04-19,Pennsylvania,other,4102,100
+2020-04-19,Pennsylvania,other,780,4
+2020-04-19,Pennsylvania,Delaware,841,3
+2020-04-19,Pennsylvania,Montgomery,846,2
+2020-04-19,Pennsylvania,Philadelphia,3315,1
+2020-04-19,Rhode Island,Unknown,383,2
+2020-04-19,Rhode Island,other,353,100
+2020-04-19,Rhode Island,Providence,1902,1
+2020-04-19,South Dakota,other,84,100
+2020-04-19,South Dakota,Minnehaha,520,1
+2020-04-19,Massachusetts,other,381,100
+2020-04-19,Massachusetts,other,1131,7
+2020-04-19,Massachusetts,Essex,2298,3
+2020-04-19,Massachusetts,other,975,8
+2020-04-19,Massachusetts,Middlesex,3956,1
+2020-04-19,Massachusetts,other,1513,5
+2020-04-19,Massachusetts,other,1692,6
+2020-04-19,Massachusetts,Suffolk,3522,2
+2020-04-19,Massachusetts,other,1508,4
+2020-04-19,New Hampshire,other,96,100
+2020-04-19,New Hampshire,Hillsborough,228,1
+2020-04-19,New Hampshire,Rockingham,127,2
+2020-04-19,West Virginia,other,37,100
+2020-04-19,West Virginia,Jackson,54,3
+2020-04-19,West Virginia,other,11,5
+2020-04-19,West Virginia,Kanawha,37,2
+2020-04-19,West Virginia,other,3,8
+2020-04-19,West Virginia,other,13,4
+2020-04-19,West Virginia,other,7,6
+2020-04-19,West Virginia,other,6,9
+2020-04-19,West Virginia,Berkeley,23,1
+2020-04-19,West Virginia,other,8,7
+2020-04-19,North Carolina,other,1283,100
+2020-04-19,North Carolina,other,74,7
+2020-04-19,North Carolina,other,98,8
+2020-04-19,North Carolina,Wake,66,2
+2020-04-19,North Carolina,other,302,5
+2020-04-19,North Carolina,Durham,137,3
+2020-04-19,North Carolina,other,25,6
+2020-04-19,North Carolina,other,125,4
+2020-04-19,North Carolina,Mecklenburg,297,1
+2020-04-19,South Carolina,other,343,100
+2020-04-19,South Carolina,other,46,4
+2020-04-19,South Carolina,Richland,161,1
+2020-04-19,South Carolina,other,32,6
+2020-04-19,South Carolina,other,32,7
+2020-04-19,South Carolina,other,21,8
+2020-04-19,South Carolina,other,33,10
+2020-04-19,South Carolina,other,39,5
+2020-04-19,South Carolina,other,63,11
+2020-04-19,South Carolina,Florence,114,3
+2020-04-19,South Carolina,Greenville,78,2
+2020-04-19,South Carolina,other,25,9
+2020-04-19,South Carolina,other,20,12
+2020-04-19,Virgin Islands,Unknown,2,1
+2020-04-19,District of Columbia,District of Columbia,1033,1
+2020-04-19,Northern Mariana Islands,Unknown,0,1
+2020-04-26,Guam,Unknown,120,1
+2020-04-26,Iowa,other,769,100
+2020-04-26,Iowa,Black Hawk,563,3
+2020-04-26,Iowa,other,384,6
+2020-04-26,Iowa,other,155,4
+2020-04-26,Iowa,other,200,5
+2020-04-26,Iowa,Polk,690,1
+2020-04-26,Iowa,Woodbury,758,2
+2020-04-26,Ohio,other,1222,100
+2020-04-26,Ohio,Cuyahoga,438,2
+2020-04-26,Ohio,Franklin,859,1
+2020-04-26,Ohio,other,378,4
+2020-04-26,Ohio,other,298,6
+2020-04-26,Ohio,other,162,7
+2020-04-26,Ohio,Marion,122,3
+2020-04-26,Ohio,other,62,5
+2020-04-26,Ohio,other,204,8
+2020-04-26,Utah,other,177,100
+2020-04-26,Utah,Salt Lake,558,1
+2020-04-26,Utah,Utah,296,2
+2020-04-26,Idaho,Ada,55,1
+2020-04-26,Idaho,other,41,100
+2020-04-26,Idaho,Blaine,7,2
+2020-04-26,Idaho,other,27,4
+2020-04-26,Idaho,Twin Falls,44,3
+2020-04-26,Maine,other,54,100
+2020-04-26,Maine,Cumberland,93,1
+2020-04-26,Maine,York,16,2
+2020-04-26,Texas,other,3094,100
+2020-04-26,Texas,Tarrant,667,3
+2020-04-26,Texas,other,318,4
+2020-04-26,Texas,Harris,1080,1
+2020-04-26,Texas,other,342,5
+2020-04-26,Texas,Dallas,990,2
+2020-04-26,Texas,other,440,6
+2020-04-26,Alaska,other,4,100
+2020-04-26,Alaska,Fairbanks North Star Borough,4,2
+2020-04-26,Alaska,Anchorage,17,1
+2020-04-26,Hawaii,other,4,100
+2020-04-26,Hawaii,Honolulu,5,1
+2020-04-26,Hawaii,Maui,5,2
+2020-04-26,Kansas,other,148,100
+2020-04-26,Kansas,Finney,364,2
+2020-04-26,Kansas,Ford,350,1
+2020-04-26,Kansas,other,62,6
+2020-04-26,Kansas,other,217,4
+2020-04-26,Kansas,other,87,8
+2020-04-26,Kansas,other,84,7
+2020-04-26,Kansas,other,232,5
+2020-04-26,Kansas,Wyandotte,224,3
+2020-04-26,Nevada,other,54,100
+2020-04-26,Nevada,Clark,655,1
+2020-04-26,Nevada,Washoe,158,2
+2020-04-26,Oregon,other,106,100
+2020-04-26,Oregon,other,23,4
+2020-04-26,Oregon,Marion,91,2
+2020-04-26,Oregon,Multnomah,111,1
+2020-04-26,Oregon,Washington,50,3
+2020-04-26,Alabama,other,665,100
+2020-04-26,Alabama,other,62,9
+2020-04-26,Alabama,Jefferson,118,2
+2020-04-26,Alabama,other,39,5
+2020-04-26,Alabama,other,55,4
+2020-04-26,Alabama,Mobile,284,1
+2020-04-26,Alabama,Montgomery,95,3
+2020-04-26,Alabama,other,26,6
+2020-04-26,Alabama,other,23,8
+2020-04-26,Alabama,other,31,7
+2020-04-26,Arizona,other,687,100
+2020-04-26,Arizona,Maricopa,1187,1
+2020-04-26,Arizona,Pima,210,2
+2020-04-26,Florida,other,1933,100
+2020-04-26,Florida,Miami-Dade,1627,1
+2020-04-26,Florida,Palm Beach,466,3
+2020-04-26,Florida,Broward,598,2
+2020-04-26,Georgia,other,-83,6
+2020-04-26,Georgia,other,2565,100
+2020-04-26,Georgia,other,135,8
+2020-04-26,Georgia,other,354,4
+2020-04-26,Georgia,DeKalb,360,2
+2020-04-26,Georgia,other,64,7
+2020-04-26,Georgia,Fulton,385,1
+2020-04-26,Georgia,Gwinnett,474,3
+2020-04-26,Georgia,other,662,5
+2020-04-26,Indiana,other,3429,100
+2020-04-26,Indiana,Lake,500,2
+2020-04-26,Indiana,Marion,1305,1
+2020-04-26,Montana,other,4,100
+2020-04-26,Montana,other,0,4
+2020-04-26,Montana,Gallatin,0,1
+2020-04-26,Montana,Missoula,0,3
+2020-04-26,Montana,Yellowstone,5,2
+2020-04-26,Vermont,other,18,100
+2020-04-26,Vermont,Chittenden,17,1
+2020-04-26,Vermont,Franklin,8,2
+2020-04-26,Wyoming,other,18,100
+2020-04-26,Wyoming,Fremont,52,1
+2020-04-26,Wyoming,Laramie,31,2
+2020-04-26,Wyoming,other,-1,4
+2020-04-26,Wyoming,Teton,2,3
+2020-04-26,Arkansas,other,233,100
+2020-04-26,Arkansas,other,12,4
+2020-04-26,Arkansas,other,24,5
+2020-04-26,Arkansas,Jefferson,29,3
+2020-04-26,Arkansas,Lincoln,96,1
+2020-04-26,Arkansas,Pulaski,68,2
+2020-04-26,Colorado,other,766,100
+2020-04-26,Colorado,Adams,428,3
+2020-04-26,Colorado,Arapahoe,542,2
+2020-04-26,Colorado,Denver,735,1
+2020-04-26,Colorado,other,126,6
+2020-04-26,Colorado,other,148,5
+2020-04-26,Colorado,other,406,4
+2020-04-26,Delaware,other,19,100
+2020-04-26,Delaware,Kent,214,3
+2020-04-26,Delaware,New Castle,360,2
+2020-04-26,Delaware,Sussex,869,1
+2020-04-26,Illinois,other,5554,100
+2020-04-26,Illinois,Cook,11169,1
+2020-04-26,Kentucky,other,483,100
+2020-04-26,Kentucky,Fayette,19,3
+2020-04-26,Kentucky,Jefferson,244,1
+2020-04-26,Kentucky,other,66,4
+2020-04-26,Kentucky,other,29,5
+2020-04-26,Kentucky,Warren,168,2
+2020-04-26,Maryland,other,1330,100
+2020-04-26,Maryland,other,449,4
+2020-04-26,Maryland,other,455,5
+2020-04-26,Maryland,Baltimore,800,3
+2020-04-26,Maryland,Montgomery,1443,2
+2020-04-26,Maryland,Prince George's,2247,1
+2020-04-26,Michigan,other,3327,100
+2020-04-26,Michigan,Oakland,594,2
+2020-04-26,Michigan,Wayne,1558,1
+2020-04-26,Michigan,Macomb,527,3
+2020-04-26,Missouri,Kansas City,111,3
+2020-04-26,Missouri,other,489,100
+2020-04-26,Missouri,St. Louis,526,1
+2020-04-26,Missouri,St. Louis city,201,2
+2020-04-26,Nebraska,other,680,100
+2020-04-26,Nebraska,other,144,6
+2020-04-26,Nebraska,Dakota,480,2
+2020-04-26,Nebraska,other,166,5
+2020-04-26,Nebraska,Douglas,429,1
+2020-04-26,Nebraska,Hall,349,3
+2020-04-26,Nebraska,other,179,4
+2020-04-26,New York,New York City,17639,1
+2020-04-26,New York,other,13594,100
+2020-04-26,Oklahoma,other,213,100
+2020-04-26,Oklahoma,other,30,4
+2020-04-26,Oklahoma,other,8,6
+2020-04-26,Oklahoma,Oklahoma,128,1
+2020-04-26,Oklahoma,Texas,104,3
+2020-04-26,Oklahoma,Tulsa,128,2
+2020-04-26,Oklahoma,other,46,5
+2020-04-26,Virginia,other,3066,100
+2020-04-26,Virginia,Arlington,280,3
+2020-04-26,Virginia,Fairfax,1301,1
+2020-04-26,Virginia,Prince William,716,2
+2020-04-26,Louisiana,other,1360,100
+2020-04-26,Louisiana,other,169,4
+2020-04-26,Louisiana,East Baton Rouge,334,3
+2020-04-26,Louisiana,Jefferson,355,1
+2020-04-26,Louisiana,Orleans,227,2
+2020-04-26,Louisiana,other,183,5
+2020-04-26,Minnesota,other,827,100
+2020-04-26,Minnesota,Stearns,493,2
+2020-04-26,Minnesota,Hennepin,693,1
+2020-04-26,Minnesota,other,574,4
+2020-04-26,Minnesota,Ramsey,192,3
+2020-04-26,Tennessee,other,753,100
+2020-04-26,Tennessee,other,160,4
+2020-04-26,Tennessee,Shelby,586,2
+2020-04-26,Tennessee,Trousdale,1297,3
+2020-04-26,Tennessee,Davidson,662,1
+2020-04-26,Wisconsin,other,645,100
+2020-04-26,Wisconsin,Milwaukee,622,1
+2020-04-26,Wisconsin,Racine,153,3
+2020-04-26,Wisconsin,Brown,552,2
+2020-04-26,California,other,5375,100
+2020-04-26,California,Los Angeles,5787,1
+2020-04-26,New Jersey,other,1868,100
+2020-04-26,New Jersey,Bergen,1236,2
+2020-04-26,New Jersey,other,726,13
+2020-04-26,New Jersey,other,903,11
+2020-04-26,New Jersey,Essex,1728,3
+2020-04-26,New Jersey,Hudson,2034,1
+2020-04-26,New Jersey,other,1026,10
+2020-04-26,New Jersey,other,2138,6
+2020-04-26,New Jersey,other,677,8
+2020-04-26,New Jersey,other,585,9
+2020-04-26,New Jersey,other,881,7
+2020-04-26,New Jersey,other,2344,4
+2020-04-26,New Jersey,other,575,12
+2020-04-26,New Jersey,other,1473,5
+2020-04-26,New Mexico,Bernalillo,213,3
+2020-04-26,New Mexico,other,128,100
+2020-04-26,New Mexico,McKinley,408,1
+2020-04-26,New Mexico,other,45,4
+2020-04-26,New Mexico,San Juan,275,2
+2020-04-26,Washington,other,476,100
+2020-04-26,Washington,King,694,1
+2020-04-26,Washington,other,177,4
+2020-04-26,Washington,Snohomish,195,2
+2020-04-26,Washington,Yakima,227,3
+2020-04-26,Connecticut,other,470,100
+2020-04-26,Connecticut,Fairfield,1428,1
+2020-04-26,Connecticut,Hartford,1351,3
+2020-04-26,Connecticut,New Haven,1515,2
+2020-04-26,Mississippi,other,540,100
+2020-04-26,Mississippi,other,24,22
+2020-04-26,Mississippi,other,40,24
+2020-04-26,Mississippi,other,37,13
+2020-04-26,Mississippi,other,46,17
+2020-04-26,Mississippi,other,31,7
+2020-04-26,Mississippi,other,45,5
+2020-04-26,Mississippi,other,37,15
+2020-04-26,Mississippi,Hinds,93,1
+2020-04-26,Mississippi,other,59,10
+2020-04-26,Mississippi,other,30,12
+2020-04-26,Mississippi,other,52,9
+2020-04-26,Mississippi,other,29,19
+2020-04-26,Mississippi,Lauderdale,94,2
+2020-04-26,Mississippi,other,80,8
+2020-04-26,Mississippi,other,34,18
+2020-04-26,Mississippi,Madison,82,3
+2020-04-26,Mississippi,other,50,14
+2020-04-26,Mississippi,other,93,6
+2020-04-26,Mississippi,other,30,20
+2020-04-26,Mississippi,other,28,21
+2020-04-26,Mississippi,other,20,23
+2020-04-26,Mississippi,other,35,11
+2020-04-26,Mississippi,other,114,4
+2020-04-26,Puerto Rico,Unknown,448,1
+2020-04-26,North Dakota,other,41,100
+2020-04-26,North Dakota,Cass,215,1
+2020-04-26,North Dakota,Grand Forks,92,2
+2020-04-26,Pennsylvania,other,3746,100
+2020-04-26,Pennsylvania,other,801,4
+2020-04-26,Pennsylvania,Delaware,840,3
+2020-04-26,Pennsylvania,Montgomery,860,2
+2020-04-26,Pennsylvania,Philadelphia,3198,1
+2020-04-26,Rhode Island,Unknown,-56,2
+2020-04-26,Rhode Island,other,310,100
+2020-04-26,Rhode Island,Providence,1906,1
+2020-04-26,South Dakota,other,109,100
+2020-04-26,South Dakota,Minnehaha,327,1
+2020-04-26,Massachusetts,other,8,100
+2020-04-26,Massachusetts,other,1087,7
+2020-04-26,Massachusetts,Essex,2150,3
+2020-04-26,Massachusetts,other,774,8
+2020-04-26,Massachusetts,Middlesex,2795,1
+2020-04-26,Massachusetts,other,1015,5
+2020-04-26,Massachusetts,other,1029,6
+2020-04-26,Massachusetts,Suffolk,2388,2
+2020-04-26,Massachusetts,other,1669,4
+2020-04-26,New Hampshire,other,123,100
+2020-04-26,New Hampshire,Hillsborough,278,1
+2020-04-26,New Hampshire,Rockingham,235,2
+2020-04-26,West Virginia,other,70,100
+2020-04-26,West Virginia,Jackson,6,3
+2020-04-26,West Virginia,other,8,5
+2020-04-26,West Virginia,Kanawha,20,2
+2020-04-26,West Virginia,other,1,8
+2020-04-26,West Virginia,other,8,4
+2020-04-26,West Virginia,other,7,6
+2020-04-26,West Virginia,other,6,9
+2020-04-26,West Virginia,Berkeley,26,1
+2020-04-26,West Virginia,other,6,7
+2020-04-26,North Carolina,other,1776,100
+2020-04-26,North Carolina,other,109,7
+2020-04-26,North Carolina,other,46,8
+2020-04-26,North Carolina,Wake,225,2
+2020-04-26,North Carolina,other,56,5
+2020-04-26,North Carolina,Durham,238,3
+2020-04-26,North Carolina,other,117,6
+2020-04-26,North Carolina,other,144,4
+2020-04-26,North Carolina,Mecklenburg,249,1
+2020-04-26,South Carolina,other,428,100
+2020-04-26,South Carolina,other,97,4
+2020-04-26,South Carolina,Richland,159,1
+2020-04-26,South Carolina,other,59,6
+2020-04-26,South Carolina,other,35,7
+2020-04-26,South Carolina,other,42,8
+2020-04-26,South Carolina,other,16,10
+2020-04-26,South Carolina,other,32,5
+2020-04-26,South Carolina,other,46,11
+2020-04-26,South Carolina,Florence,87,3
+2020-04-26,South Carolina,Greenville,185,2
+2020-04-26,South Carolina,other,22,9
+2020-04-26,South Carolina,other,28,12
+2020-04-26,Virgin Islands,Unknown,11,1
+2020-04-26,District of Columbia,District of Columbia,1098,1
+2020-04-26,Northern Mariana Islands,Unknown,0,1
+2020-05-03,Guam,Unknown,3,1
+2020-05-03,Iowa,other,1147,100
+2020-05-03,Iowa,Black Hawk,222,3
+2020-05-03,Iowa,other,145,6
+2020-05-03,Iowa,other,114,4
+2020-05-03,Iowa,other,157,5
+2020-05-03,Iowa,Polk,844,1
+2020-05-03,Iowa,Woodbury,480,2
+2020-05-03,Ohio,other,1514,100
+2020-05-03,Ohio,Cuyahoga,450,2
+2020-05-03,Ohio,Franklin,1012,1
+2020-05-03,Ohio,other,378,4
+2020-05-03,Ohio,other,379,6
+2020-05-03,Ohio,other,221,7
+2020-05-03,Ohio,Marion,87,3
+2020-05-03,Ohio,other,120,5
+2020-05-03,Ohio,other,201,8
+2020-05-03,Utah,other,227,100
+2020-05-03,Utah,Salt Lake,597,1
+2020-05-03,Utah,Utah,297,2
+2020-05-03,Idaho,Ada,28,1
+2020-05-03,Idaho,other,58,100
+2020-05-03,Idaho,Blaine,6,2
+2020-05-03,Idaho,other,14,4
+2020-05-03,Idaho,Twin Falls,63,3
+2020-05-03,Maine,other,50,100
+2020-05-03,Maine,Cumberland,158,1
+2020-05-03,Maine,York,46,2
+2020-05-03,Texas,other,2869,100
+2020-05-03,Texas,Tarrant,707,3
+2020-05-03,Texas,other,381,4
+2020-05-03,Texas,Harris,1095,1
+2020-05-03,Texas,other,302,5
+2020-05-03,Texas,Dallas,1720,2
+2020-05-03,Texas,other,335,6
+2020-05-03,Alaska,other,4,100
+2020-05-03,Alaska,Fairbanks North Star Borough,0,2
+2020-05-03,Alaska,Anchorage,9,1
+2020-05-03,Hawaii,other,2,100
+2020-05-03,Hawaii,Honolulu,7,1
+2020-05-03,Hawaii,Maui,0,2
+2020-05-03,Kansas,other,182,100
+2020-05-03,Kansas,Finney,399,2
+2020-05-03,Kansas,Ford,294,1
+2020-05-03,Kansas,other,104,6
+2020-05-03,Kansas,other,524,4
+2020-05-03,Kansas,other,81,8
+2020-05-03,Kansas,other,40,7
+2020-05-03,Kansas,other,142,5
+2020-05-03,Kansas,Wyandotte,291,3
+2020-05-03,Nevada,other,78,100
+2020-05-03,Nevada,Clark,479,1
+2020-05-03,Nevada,Washoe,128,2
+2020-05-03,Oregon,other,170,100
+2020-05-03,Oregon,other,32,4
+2020-05-03,Oregon,Marion,140,2
+2020-05-03,Oregon,Multnomah,129,1
+2020-05-03,Oregon,Washington,53,3
+2020-05-03,Alabama,other,945,100
+2020-05-03,Alabama,other,116,9
+2020-05-03,Alabama,Jefferson,163,2
+2020-05-03,Alabama,other,25,5
+2020-05-03,Alabama,other,209,4
+2020-05-03,Alabama,Mobile,280,1
+2020-05-03,Alabama,Montgomery,197,3
+2020-05-03,Alabama,other,38,6
+2020-05-03,Alabama,other,26,8
+2020-05-03,Alabama,other,58,7
+2020-05-03,Arizona,other,984,100
+2020-05-03,Arizona,Maricopa,1358,1
+2020-05-03,Arizona,Pima,254,2
+2020-05-03,Florida,other,2088,100
+2020-05-03,Florida,Miami-Dade,1209,1
+2020-05-03,Florida,Palm Beach,718,3
+2020-05-03,Florida,Broward,523,2
+2020-05-03,Georgia,other,98,6
+2020-05-03,Georgia,other,1982,100
+2020-05-03,Georgia,other,124,8
+2020-05-03,Georgia,other,379,4
+2020-05-03,Georgia,DeKalb,341,2
+2020-05-03,Georgia,other,53,7
+2020-05-03,Georgia,Fulton,457,1
+2020-05-03,Georgia,Gwinnett,469,3
+2020-05-03,Georgia,other,308,5
+2020-05-03,Indiana,other,2927,100
+2020-05-03,Indiana,Lake,401,2
+2020-05-03,Indiana,Marion,1282,1
+2020-05-03,Montana,other,1,100
+2020-05-03,Montana,other,0,4
+2020-05-03,Montana,Gallatin,3,1
+2020-05-03,Montana,Missoula,0,3
+2020-05-03,Montana,Yellowstone,0,2
+2020-05-03,Vermont,other,25,100
+2020-05-03,Vermont,Chittenden,9,1
+2020-05-03,Vermont,Franklin,1,2
+2020-05-03,Wyoming,other,9,100
+2020-05-03,Wyoming,Fremont,52,1
+2020-05-03,Wyoming,Laramie,12,2
+2020-05-03,Wyoming,other,0,4
+2020-05-03,Wyoming,Teton,1,3
+2020-05-03,Arkansas,other,140,100
+2020-05-03,Arkansas,other,21,4
+2020-05-03,Arkansas,other,12,5
+2020-05-03,Arkansas,Jefferson,48,3
+2020-05-03,Arkansas,Lincoln,90,1
+2020-05-03,Arkansas,Pulaski,64,2
+2020-05-03,Colorado,other,640,100
+2020-05-03,Colorado,Adams,475,3
+2020-05-03,Colorado,Arapahoe,603,2
+2020-05-03,Colorado,Denver,779,1
+2020-05-03,Colorado,other,121,6
+2020-05-03,Colorado,other,243,5
+2020-05-03,Colorado,other,284,4
+2020-05-03,Delaware,other,5,100
+2020-05-03,Delaware,Kent,192,3
+2020-05-03,Delaware,New Castle,411,2
+2020-05-03,Delaware,Sussex,631,1
+2020-05-03,Illinois,other,6260,100
+2020-05-03,Illinois,Cook,11447,1
+2020-05-03,Kentucky,other,581,100
+2020-05-03,Kentucky,Fayette,132,3
+2020-05-03,Kentucky,Jefferson,277,1
+2020-05-03,Kentucky,other,91,4
+2020-05-03,Kentucky,other,328,5
+2020-05-03,Kentucky,Warren,178,2
+2020-05-03,Maryland,other,1244,100
+2020-05-03,Maryland,other,971,4
+2020-05-03,Maryland,other,488,5
+2020-05-03,Maryland,Baltimore,556,3
+2020-05-03,Maryland,Montgomery,1643,2
+2020-05-03,Maryland,Prince George's,2168,1
+2020-05-03,Michigan,other,2120,100
+2020-05-03,Michigan,Oakland,217,2
+2020-05-03,Michigan,Wayne,854,1
+2020-05-03,Michigan,Macomb,353,3
+2020-05-03,Missouri,Kansas City,155,3
+2020-05-03,Missouri,other,647,100
+2020-05-03,Missouri,St. Louis,483,1
+2020-05-03,Missouri,St. Louis city,298,2
+2020-05-03,Nebraska,other,786,100
+2020-05-03,Nebraska,other,260,6
+2020-05-03,Nebraska,Dakota,465,2
+2020-05-03,Nebraska,other,187,5
+2020-05-03,Nebraska,Douglas,690,1
+2020-05-03,Nebraska,Hall,165,3
+2020-05-03,Nebraska,other,307,4
+2020-05-03,New York,New York City,11173,1
+2020-05-03,New York,other,9212,100
+2020-05-03,Oklahoma,other,179,100
+2020-05-03,Oklahoma,other,25,4
+2020-05-03,Oklahoma,other,40,6
+2020-05-03,Oklahoma,Oklahoma,105,1
+2020-05-03,Oklahoma,Texas,173,3
+2020-05-03,Oklahoma,Tulsa,88,2
+2020-05-03,Oklahoma,other,28,5
+2020-05-03,Virginia,other,2964,100
+2020-05-03,Virginia,Arlington,288,3
+2020-05-03,Virginia,Fairfax,1564,1
+2020-05-03,Virginia,Prince William,648,2
+2020-05-03,Louisiana,other,1248,100
+2020-05-03,Louisiana,other,142,4
+2020-05-03,Louisiana,East Baton Rouge,294,3
+2020-05-03,Louisiana,Jefferson,317,1
+2020-05-03,Louisiana,Orleans,150,2
+2020-05-03,Louisiana,other,126,5
+2020-05-03,Minnesota,other,1590,100
+2020-05-03,Minnesota,Stearns,817,2
+2020-05-03,Minnesota,Hennepin,1399,1
+2020-05-03,Minnesota,other,331,4
+2020-05-03,Minnesota,Ramsey,422,3
+2020-05-03,Tennessee,other,804,100
+2020-05-03,Tennessee,other,173,4
+2020-05-03,Tennessee,Shelby,517,2
+2020-05-03,Tennessee,Trousdale,13,3
+2020-05-03,Tennessee,Davidson,711,1
+2020-05-03,Wisconsin,other,737,100
+2020-05-03,Wisconsin,Milwaukee,707,1
+2020-05-03,Wisconsin,Racine,272,3
+2020-05-03,Wisconsin,Brown,562,2
+2020-05-03,California,other,6767,100
+2020-05-03,California,Los Angeles,6303,1
+2020-05-03,New Jersey,other,1559,100
+2020-05-03,New Jersey,Bergen,830,2
+2020-05-03,New Jersey,other,652,13
+2020-05-03,New Jersey,other,985,11
+2020-05-03,New Jersey,Essex,1117,3
+2020-05-03,New Jersey,Hudson,1274,1
+2020-05-03,New Jersey,other,962,10
+2020-05-03,New Jersey,other,1546,6
+2020-05-03,New Jersey,other,617,8
+2020-05-03,New Jersey,other,427,9
+2020-05-03,New Jersey,other,674,7
+2020-05-03,New Jersey,other,1346,4
+2020-05-03,New Jersey,other,391,12
+2020-05-03,New Jersey,other,988,5
+2020-05-03,New Mexico,Bernalillo,167,3
+2020-05-03,New Mexico,other,140,100
+2020-05-03,New Mexico,McKinley,392,1
+2020-05-03,New Mexico,other,42,4
+2020-05-03,New Mexico,San Juan,305,2
+2020-05-03,Washington,other,626,100
+2020-05-03,Washington,King,812,1
+2020-05-03,Washington,other,184,4
+2020-05-03,Washington,Snohomish,425,2
+2020-05-03,Washington,Yakima,463,3
+2020-05-03,Connecticut,other,349,100
+2020-05-03,Connecticut,Fairfield,1229,1
+2020-05-03,Connecticut,Hartford,993,3
+2020-05-03,Connecticut,New Haven,1067,2
+2020-05-03,Mississippi,other,613,100
+2020-05-03,Mississippi,other,18,22
+2020-05-03,Mississippi,other,9,24
+2020-05-03,Mississippi,other,74,13
+2020-05-03,Mississippi,other,43,17
+2020-05-03,Mississippi,other,39,7
+2020-05-03,Mississippi,other,83,5
+2020-05-03,Mississippi,other,51,15
+2020-05-03,Mississippi,Hinds,158,1
+2020-05-03,Mississippi,other,47,10
+2020-05-03,Mississippi,other,8,12
+2020-05-03,Mississippi,other,75,9
+2020-05-03,Mississippi,other,31,19
+2020-05-03,Mississippi,Lauderdale,93,2
+2020-05-03,Mississippi,other,70,8
+2020-05-03,Mississippi,other,20,18
+2020-05-03,Mississippi,Madison,154,3
+2020-05-03,Mississippi,other,27,14
+2020-05-03,Mississippi,other,95,6
+2020-05-03,Mississippi,other,49,20
+2020-05-03,Mississippi,other,14,21
+2020-05-03,Mississippi,other,15,23
+2020-05-03,Mississippi,other,51,11
+2020-05-03,Mississippi,other,100,4
+2020-05-03,Puerto Rico,Unknown,418,1
+2020-05-03,North Dakota,other,77,100
+2020-05-03,North Dakota,Cass,209,1
+2020-05-03,North Dakota,Grand Forks,19,2
+2020-05-03,Pennsylvania,other,3184,100
+2020-05-03,Pennsylvania,other,582,4
+2020-05-03,Pennsylvania,Delaware,841,3
+2020-05-03,Pennsylvania,Montgomery,629,2
+2020-05-03,Pennsylvania,Philadelphia,2354,1
+2020-05-03,Rhode Island,Unknown,1328,2
+2020-05-03,Rhode Island,other,56,100
+2020-05-03,Rhode Island,Providence,316,1
+2020-05-03,South Dakota,other,159,100
+2020-05-03,South Dakota,Minnehaha,644,1
+2020-05-03,Massachusetts,other,200,100
+2020-05-03,Massachusetts,other,931,7
+2020-05-03,Massachusetts,Essex,1849,3
+2020-05-03,Massachusetts,other,644,8
+2020-05-03,Massachusetts,Middlesex,2259,1
+2020-05-03,Massachusetts,other,700,5
+2020-05-03,Massachusetts,other,902,6
+2020-05-03,Massachusetts,Suffolk,1513,2
+2020-05-03,Massachusetts,other,1482,4
+2020-05-03,New Hampshire,other,100,100
+2020-05-03,New Hampshire,Hillsborough,346,1
+2020-05-03,New Hampshire,Rockingham,136,2
+2020-05-03,West Virginia,other,80,100
+2020-05-03,West Virginia,Jackson,6,3
+2020-05-03,West Virginia,other,9,5
+2020-05-03,West Virginia,Kanawha,14,2
+2020-05-03,West Virginia,other,0,8
+2020-05-03,West Virginia,other,7,4
+2020-05-03,West Virginia,other,4,6
+2020-05-03,West Virginia,other,2,9
+2020-05-03,West Virginia,Berkeley,31,1
+2020-05-03,West Virginia,other,8,7
+2020-05-03,North Carolina,other,1716,100
+2020-05-03,North Carolina,other,164,7
+2020-05-03,North Carolina,other,92,8
+2020-05-03,North Carolina,Wake,143,2
+2020-05-03,North Carolina,other,52,5
+2020-05-03,North Carolina,Durham,121,3
+2020-05-03,North Carolina,other,103,6
+2020-05-03,North Carolina,other,137,4
+2020-05-03,North Carolina,Mecklenburg,344,1
+2020-05-03,South Carolina,other,395,100
+2020-05-03,South Carolina,other,58,4
+2020-05-03,South Carolina,Richland,136,1
+2020-05-03,South Carolina,other,34,6
+2020-05-03,South Carolina,other,38,7
+2020-05-03,South Carolina,other,18,8
+2020-05-03,South Carolina,other,4,10
+2020-05-03,South Carolina,other,26,5
+2020-05-03,South Carolina,other,44,11
+2020-05-03,South Carolina,Florence,83,3
+2020-05-03,South Carolina,Greenville,163,2
+2020-05-03,South Carolina,other,33,9
+2020-05-03,South Carolina,other,10,12
+2020-05-03,Virgin Islands,Unknown,3,1
+2020-05-03,District of Columbia,District of Columbia,1305,1
+2020-05-03,Northern Mariana Islands,Unknown,2,1
+2020-05-10,Guam,Unknown,3,1
+2020-05-10,Iowa,other,1043,100
+2020-05-10,Iowa,Black Hawk,94,3
+2020-05-10,Iowa,other,113,6
+2020-05-10,Iowa,other,73,4
+2020-05-10,Iowa,other,76,5
+2020-05-10,Iowa,Polk,651,1
+2020-05-10,Iowa,Woodbury,603,2
+2020-05-10,Ohio,other,1645,100
+2020-05-10,Ohio,Cuyahoga,468,2
+2020-05-10,Ohio,Franklin,710,1
+2020-05-10,Ohio,other,276,4
+2020-05-10,Ohio,other,235,6
+2020-05-10,Ohio,other,95,7
+2020-05-10,Ohio,Marion,68,3
+2020-05-10,Ohio,other,167,5
+2020-05-10,Ohio,other,115,8
+2020-05-10,Utah,other,243,100
+2020-05-10,Utah,Salt Lake,579,1
+2020-05-10,Utah,Utah,153,2
+2020-05-10,Idaho,Ada,40,1
+2020-05-10,Idaho,other,80,100
+2020-05-10,Idaho,Blaine,5,2
+2020-05-10,Idaho,other,5,4
+2020-05-10,Idaho,Twin Falls,59,3
+2020-05-10,Maine,other,72,100
+2020-05-10,Maine,Cumberland,136,1
+2020-05-10,Maine,York,32,2
+2020-05-10,Texas,other,3329,100
+2020-05-10,Texas,Tarrant,1140,3
+2020-05-10,Texas,other,330,4
+2020-05-10,Texas,Harris,1323,1
+2020-05-10,Texas,other,233,5
+2020-05-10,Texas,Dallas,1631,2
+2020-05-10,Texas,other,1028,6
+2020-05-10,Alaska,other,5,100
+2020-05-10,Alaska,Fairbanks North Star Borough,2,2
+2020-05-10,Alaska,Anchorage,8,1
+2020-05-10,Hawaii,other,1,100
+2020-05-10,Hawaii,Honolulu,8,1
+2020-05-10,Hawaii,Maui,0,2
+2020-05-10,Kansas,other,154,100
+2020-05-10,Kansas,Finney,332,2
+2020-05-10,Kansas,Ford,235,1
+2020-05-10,Kansas,other,58,6
+2020-05-10,Kansas,other,48,4
+2020-05-10,Kansas,other,37,8
+2020-05-10,Kansas,other,76,7
+2020-05-10,Kansas,other,77,5
+2020-05-10,Kansas,Wyandotte,119,3
+2020-05-10,Nevada,other,16,100
+2020-05-10,Nevada,Clark,594,1
+2020-05-10,Nevada,Washoe,125,2
+2020-05-10,Oregon,other,84,100
+2020-05-10,Oregon,other,25,4
+2020-05-10,Oregon,Marion,161,2
+2020-05-10,Oregon,Multnomah,116,1
+2020-05-10,Oregon,Washington,66,3
+2020-05-10,Alabama,other,979,100
+2020-05-10,Alabama,other,113,9
+2020-05-10,Alabama,Jefferson,190,2
+2020-05-10,Alabama,other,26,5
+2020-05-10,Alabama,other,81,4
+2020-05-10,Alabama,Mobile,229,1
+2020-05-10,Alabama,Montgomery,240,3
+2020-05-10,Alabama,other,36,6
+2020-05-10,Alabama,other,41,8
+2020-05-10,Alabama,other,71,7
+2020-05-10,Arizona,other,1127,100
+2020-05-10,Arizona,Maricopa,1317,1
+2020-05-10,Arizona,Pima,227,2
+2020-05-10,Florida,other,2222,100
+2020-05-10,Florida,Miami-Dade,1525,1
+2020-05-10,Florida,Palm Beach,642,3
+2020-05-10,Florida,Broward,421,2
+2020-05-10,Georgia,other,1037,6
+2020-05-10,Georgia,other,1669,100
+2020-05-10,Georgia,other,101,8
+2020-05-10,Georgia,other,279,4
+2020-05-10,Georgia,DeKalb,311,2
+2020-05-10,Georgia,other,75,7
+2020-05-10,Georgia,Fulton,364,1
+2020-05-10,Georgia,Gwinnett,194,3
+2020-05-10,Georgia,other,144,5
+2020-05-10,Indiana,other,2330,100
+2020-05-10,Indiana,Lake,424,2
+2020-05-10,Indiana,Marion,926,1
+2020-05-10,Montana,other,7,100
+2020-05-10,Montana,other,0,4
+2020-05-10,Montana,Gallatin,0,1
+2020-05-10,Montana,Missoula,0,3
+2020-05-10,Montana,Yellowstone,3,2
+2020-05-10,Vermont,other,10,100
+2020-05-10,Vermont,Chittenden,3,1
+2020-05-10,Vermont,Franklin,0,2
+2020-05-10,Wyoming,other,23,100
+2020-05-10,Wyoming,Fremont,40,1
+2020-05-10,Wyoming,Laramie,18,2
+2020-05-10,Wyoming,other,5,4
+2020-05-10,Wyoming,Teton,2,3
+2020-05-10,Arkansas,other,314,100
+2020-05-10,Arkansas,other,227,4
+2020-05-10,Arkansas,other,25,5
+2020-05-10,Arkansas,Jefferson,136,3
+2020-05-10,Arkansas,Lincoln,48,1
+2020-05-10,Arkansas,Pulaski,80,2
+2020-05-10,Colorado,other,479,100
+2020-05-10,Colorado,Adams,370,3
+2020-05-10,Colorado,Arapahoe,424,2
+2020-05-10,Colorado,Denver,547,1
+2020-05-10,Colorado,other,182,6
+2020-05-10,Colorado,other,173,5
+2020-05-10,Colorado,other,161,4
+2020-05-10,Delaware,other,19,100
+2020-05-10,Delaware,Kent,191,3
+2020-05-10,Delaware,New Castle,392,2
+2020-05-10,Delaware,Sussex,668,1
+2020-05-10,Illinois,other,7192,100
+2020-05-10,Illinois,Cook,9538,1
+2020-05-10,Kentucky,other,531,100
+2020-05-10,Kentucky,Fayette,164,3
+2020-05-10,Kentucky,Jefferson,280,1
+2020-05-10,Kentucky,other,61,4
+2020-05-10,Kentucky,other,21,5
+2020-05-10,Kentucky,Warren,246,2
+2020-05-10,Maryland,other,1425,100
+2020-05-10,Maryland,other,510,4
+2020-05-10,Maryland,other,428,5
+2020-05-10,Maryland,Baltimore,813,3
+2020-05-10,Maryland,Montgomery,1438,2
+2020-05-10,Maryland,Prince George's,1831,1
+2020-05-10,Michigan,other,2009,100
+2020-05-10,Michigan,Oakland,331,2
+2020-05-10,Michigan,Wayne,1056,1
+2020-05-10,Michigan,Macomb,285,3
+2020-05-10,Missouri,Kansas City,111,3
+2020-05-10,Missouri,other,418,100
+2020-05-10,Missouri,St. Louis,379,1
+2020-05-10,Missouri,St. Louis city,147,2
+2020-05-10,Nebraska,other,559,100
+2020-05-10,Nebraska,other,95,6
+2020-05-10,Nebraska,Dakota,102,2
+2020-05-10,Nebraska,other,99,5
+2020-05-10,Nebraska,Douglas,804,1
+2020-05-10,Nebraska,Hall,99,3
+2020-05-10,Nebraska,other,185,4
+2020-05-10,New York,New York City,7818,1
+2020-05-10,New York,other,6799,100
+2020-05-10,Oklahoma,other,101,100
+2020-05-10,Oklahoma,other,11,4
+2020-05-10,Oklahoma,other,91,6
+2020-05-10,Oklahoma,Oklahoma,143,1
+2020-05-10,Oklahoma,Texas,313,3
+2020-05-10,Oklahoma,Tulsa,81,2
+2020-05-10,Oklahoma,other,6,5
+2020-05-10,Virginia,other,3468,100
+2020-05-10,Virginia,Arlington,228,3
+2020-05-10,Virginia,Fairfax,1776,1
+2020-05-10,Virginia,Prince William,1015,2
+2020-05-10,Louisiana,other,1427,100
+2020-05-10,Louisiana,other,121,4
+2020-05-10,Louisiana,East Baton Rouge,661,3
+2020-05-10,Louisiana,Jefferson,303,1
+2020-05-10,Louisiana,Orleans,107,2
+2020-05-10,Louisiana,other,81,5
+2020-05-10,Minnesota,other,1647,100
+2020-05-10,Minnesota,Stearns,327,2
+2020-05-10,Minnesota,Hennepin,1551,1
+2020-05-10,Minnesota,other,123,4
+2020-05-10,Minnesota,Ramsey,541,3
+2020-05-10,Tennessee,other,1425,100
+2020-05-10,Tennessee,other,127,4
+2020-05-10,Tennessee,Shelby,492,2
+2020-05-10,Tennessee,Trousdale,25,3
+2020-05-10,Tennessee,Davidson,463,1
+2020-05-10,Wisconsin,other,785,100
+2020-05-10,Wisconsin,Milwaukee,1082,1
+2020-05-10,Wisconsin,Racine,324,3
+2020-05-10,Wisconsin,Brown,236,2
+2020-05-10,California,other,6003,100
+2020-05-10,California,Los Angeles,6106,1
+2020-05-10,New Jersey,other,1459,100
+2020-05-10,New Jersey,Bergen,442,2
+2020-05-10,New Jersey,other,344,13
+2020-05-10,New Jersey,other,623,11
+2020-05-10,New Jersey,Essex,667,3
+2020-05-10,New Jersey,Hudson,651,1
+2020-05-10,New Jersey,other,486,10
+2020-05-10,New Jersey,other,755,6
+2020-05-10,New Jersey,other,482,8
+2020-05-10,New Jersey,other,179,9
+2020-05-10,New Jersey,other,512,7
+2020-05-10,New Jersey,other,603,4
+2020-05-10,New Jersey,other,216,12
+2020-05-10,New Jersey,other,585,5
+2020-05-10,New Mexico,Bernalillo,144,3
+2020-05-10,New Mexico,other,232,100
+2020-05-10,New Mexico,McKinley,356,1
+2020-05-10,New Mexico,other,36,4
+2020-05-10,New Mexico,San Juan,301,2
+2020-05-10,Washington,other,357,100
+2020-05-10,Washington,King,440,1
+2020-05-10,Washington,other,119,4
+2020-05-10,Washington,Snohomish,154,2
+2020-05-10,Washington,Yakima,593,3
+2020-05-10,Connecticut,other,431,100
+2020-05-10,Connecticut,Fairfield,1110,1
+2020-05-10,Connecticut,Hartford,1194,3
+2020-05-10,Connecticut,New Haven,984,2
+2020-05-10,Mississippi,other,585,100
+2020-05-10,Mississippi,other,20,22
+2020-05-10,Mississippi,other,13,24
+2020-05-10,Mississippi,other,42,13
+2020-05-10,Mississippi,other,38,17
+2020-05-10,Mississippi,other,51,7
+2020-05-10,Mississippi,other,107,5
+2020-05-10,Mississippi,other,35,15
+2020-05-10,Mississippi,Hinds,105,1
+2020-05-10,Mississippi,other,82,10
+2020-05-10,Mississippi,other,9,12
+2020-05-10,Mississippi,other,76,9
+2020-05-10,Mississippi,other,28,19
+2020-05-10,Mississippi,Lauderdale,107,2
+2020-05-10,Mississippi,other,53,8
+2020-05-10,Mississippi,other,15,18
+2020-05-10,Mississippi,Madison,104,3
+2020-05-10,Mississippi,other,22,14
+2020-05-10,Mississippi,other,90,6
+2020-05-10,Mississippi,other,49,20
+2020-05-10,Mississippi,other,5,21
+2020-05-10,Mississippi,other,8,23
+2020-05-10,Mississippi,other,34,11
+2020-05-10,Mississippi,other,67,4
+2020-05-10,Puerto Rico,Unknown,416,1
+2020-05-10,North Dakota,other,28,100
+2020-05-10,North Dakota,Cass,325,1
+2020-05-10,North Dakota,Grand Forks,31,2
+2020-05-10,Pennsylvania,other,2961,100
+2020-05-10,Pennsylvania,other,539,4
+2020-05-10,Pennsylvania,Delaware,661,3
+2020-05-10,Pennsylvania,Montgomery,681,2
+2020-05-10,Pennsylvania,Philadelphia,1725,1
+2020-05-10,Rhode Island,Unknown,-825,2
+2020-05-10,Rhode Island,other,296,100
+2020-05-10,Rhode Island,Providence,1974,1
+2020-05-10,South Dakota,other,213,100
+2020-05-10,South Dakota,Minnehaha,352,1
+2020-05-10,Massachusetts,other,240,100
+2020-05-10,Massachusetts,other,901,7
+2020-05-10,Massachusetts,Essex,1103,3
+2020-05-10,Massachusetts,other,486,8
+2020-05-10,Massachusetts,Middlesex,1576,1
+2020-05-10,Massachusetts,other,525,5
+2020-05-10,Massachusetts,other,676,6
+2020-05-10,Massachusetts,Suffolk,1227,2
+2020-05-10,Massachusetts,other,1456,4
+2020-05-10,New Hampshire,other,95,100
+2020-05-10,New Hampshire,Hillsborough,319,1
+2020-05-10,New Hampshire,Rockingham,131,2
+2020-05-10,West Virginia,other,53,100
+2020-05-10,West Virginia,Jackson,0,3
+2020-05-10,West Virginia,other,10,5
+2020-05-10,West Virginia,Kanawha,24,2
+2020-05-10,West Virginia,other,1,8
+2020-05-10,West Virginia,other,3,4
+2020-05-10,West Virginia,other,3,6
+2020-05-10,West Virginia,other,4,9
+2020-05-10,West Virginia,Berkeley,20,1
+2020-05-10,West Virginia,other,4,7
+2020-05-10,North Carolina,other,2130,100
+2020-05-10,North Carolina,other,166,7
+2020-05-10,North Carolina,other,45,8
+2020-05-10,North Carolina,Wake,163,2
+2020-05-10,North Carolina,other,93,5
+2020-05-10,North Carolina,Durham,104,3
+2020-05-10,North Carolina,other,258,6
+2020-05-10,North Carolina,other,202,4
+2020-05-10,North Carolina,Mecklenburg,461,1
+2020-05-10,South Carolina,other,470,100
+2020-05-10,South Carolina,other,37,4
+2020-05-10,South Carolina,Richland,140,1
+2020-05-10,South Carolina,other,47,6
+2020-05-10,South Carolina,other,27,7
+2020-05-10,South Carolina,other,53,8
+2020-05-10,South Carolina,other,18,10
+2020-05-10,South Carolina,other,24,5
+2020-05-10,South Carolina,other,12,11
+2020-05-10,South Carolina,Florence,107,3
+2020-05-10,South Carolina,Greenville,146,2
+2020-05-10,South Carolina,other,37,9
+2020-05-10,South Carolina,other,12,12
+2020-05-10,Virgin Islands,Unknown,0,1
+2020-05-10,District of Columbia,District of Columbia,940,1
+2020-05-10,Northern Mariana Islands,Unknown,5,1
+2020-05-17,Guam,Unknown,0,1
+2020-05-17,Iowa,other,372,100
+2020-05-17,Iowa,Black Hawk,57,3
+2020-05-17,Iowa,other,22,6
+2020-05-17,Iowa,other,7,4
+2020-05-17,Iowa,other,39,5
+2020-05-17,Iowa,Polk,283,1
+2020-05-17,Iowa,Woodbury,185,2
+2020-05-17,Ohio,other,582,100
+2020-05-17,Ohio,Cuyahoga,240,2
+2020-05-17,Ohio,Franklin,286,1
+2020-05-17,Ohio,other,131,4
+2020-05-17,Ohio,other,54,6
+2020-05-17,Ohio,other,48,7
+2020-05-17,Ohio,Marion,75,3
+2020-05-17,Ohio,other,14,5
+2020-05-17,Ohio,other,47,8
+2020-05-17,Utah,other,162,100
+2020-05-17,Utah,Salt Lake,234,1
+2020-05-17,Utah,Utah,66,2
+2020-05-17,Idaho,Ada,10,1
+2020-05-17,Idaho,other,29,100
+2020-05-17,Idaho,Blaine,1,2
+2020-05-17,Idaho,other,3,4
+2020-05-17,Idaho,Twin Falls,14,3
+2020-05-17,Maine,other,32,100
+2020-05-17,Maine,Cumberland,42,1
+2020-05-17,Maine,York,19,2
+2020-05-17,Texas,other,1140,100
+2020-05-17,Texas,Tarrant,293,3
+2020-05-17,Texas,other,170,4
+2020-05-17,Texas,Harris,733,1
+2020-05-17,Texas,other,158,5
+2020-05-17,Texas,Dallas,654,2
+2020-05-17,Texas,other,64,6
+2020-05-17,Alaska,other,3,100
+2020-05-17,Alaska,Fairbanks North Star Borough,0,2
+2020-05-17,Alaska,Anchorage,4,1
+2020-05-17,Hawaii,other,2,100
+2020-05-17,Hawaii,Honolulu,0,1
+2020-05-17,Hawaii,Maui,0,2
+2020-05-17,Kansas,other,56,100
+2020-05-17,Kansas,Finney,97,2
+2020-05-17,Kansas,Ford,105,1
+2020-05-17,Kansas,other,18,6
+2020-05-17,Kansas,other,95,4
+2020-05-17,Kansas,other,6,8
+2020-05-17,Kansas,other,4,7
+2020-05-17,Kansas,other,22,5
+2020-05-17,Kansas,Wyandotte,25,3
+2020-05-17,Nevada,other,19,100
+2020-05-17,Nevada,Clark,238,1
+2020-05-17,Nevada,Washoe,93,2
+2020-05-17,Oregon,other,38,100
+2020-05-17,Oregon,other,3,4
+2020-05-17,Oregon,Marion,31,2
+2020-05-17,Oregon,Multnomah,26,1
+2020-05-17,Oregon,Washington,16,3
+2020-05-17,Alabama,other,360,100
+2020-05-17,Alabama,other,35,9
+2020-05-17,Alabama,Jefferson,68,2
+2020-05-17,Alabama,other,2,5
+2020-05-17,Alabama,other,14,4
+2020-05-17,Alabama,Mobile,70,1
+2020-05-17,Alabama,Montgomery,91,3
+2020-05-17,Alabama,other,6,6
+2020-05-17,Alabama,other,14,8
+2020-05-17,Alabama,other,42,7
+2020-05-17,Arizona,other,442,100
+2020-05-17,Arizona,Maricopa,386,1
+2020-05-17,Arizona,Pima,107,2
+2020-05-17,Florida,other,1130,100
+2020-05-17,Florida,Miami-Dade,576,1
+2020-05-17,Florida,Palm Beach,259,3
+2020-05-17,Florida,Broward,168,2
+2020-05-17,Georgia,other,349,6
+2020-05-17,Georgia,other,717,100
+2020-05-17,Georgia,other,8,8
+2020-05-17,Georgia,other,96,4
+2020-05-17,Georgia,DeKalb,118,2
+2020-05-17,Georgia,other,6,7
+2020-05-17,Georgia,Fulton,46,1
+2020-05-17,Georgia,Gwinnett,174,3
+2020-05-17,Georgia,other,45,5
+2020-05-17,Indiana,other,957,100
+2020-05-17,Indiana,Lake,134,2
+2020-05-17,Indiana,Marion,392,1
+2020-05-17,Montana,other,1,100
+2020-05-17,Montana,other,0,4
+2020-05-17,Montana,Gallatin,0,1
+2020-05-17,Montana,Missoula,0,3
+2020-05-17,Montana,Yellowstone,2,2
+2020-05-17,Vermont,other,5,100
+2020-05-17,Vermont,Chittenden,5,1
+2020-05-17,Vermont,Franklin,0,2
+2020-05-17,Wyoming,other,14,100
+2020-05-17,Wyoming,Fremont,8,1
+2020-05-17,Wyoming,Laramie,2,2
+2020-05-17,Wyoming,other,11,4
+2020-05-17,Wyoming,Teton,0,3
+2020-05-17,Arkansas,other,132,100
+2020-05-17,Arkansas,other,27,4
+2020-05-17,Arkansas,other,11,5
+2020-05-17,Arkansas,Jefferson,135,3
+2020-05-17,Arkansas,Lincoln,10,1
+2020-05-17,Arkansas,Pulaski,30,2
+2020-05-17,Colorado,other,140,100
+2020-05-17,Colorado,Adams,100,3
+2020-05-17,Colorado,Arapahoe,175,2
+2020-05-17,Colorado,Denver,242,1
+2020-05-17,Colorado,other,66,6
+2020-05-17,Colorado,other,82,5
+2020-05-17,Colorado,other,45,4
+2020-05-17,Delaware,other,4,100
+2020-05-17,Delaware,Kent,62,3
+2020-05-17,Delaware,New Castle,178,2
+2020-05-17,Delaware,Sussex,246,1
+2020-05-17,Illinois,other,2150,100
+2020-05-17,Illinois,Cook,3479,1
+2020-05-17,Kentucky,other,150,100
+2020-05-17,Kentucky,Fayette,46,3
+2020-05-17,Kentucky,Jefferson,145,1
+2020-05-17,Kentucky,other,35,4
+2020-05-17,Kentucky,other,2,5
+2020-05-17,Kentucky,Warren,52,2
+2020-05-17,Maryland,other,577,100
+2020-05-17,Maryland,other,283,4
+2020-05-17,Maryland,other,180,5
+2020-05-17,Maryland,Baltimore,370,3
+2020-05-17,Maryland,Montgomery,962,2
+2020-05-17,Maryland,Prince George's,1209,1
+2020-05-17,Michigan,other,1527,100
+2020-05-17,Michigan,Oakland,55,2
+2020-05-17,Michigan,Wayne,276,1
+2020-05-17,Michigan,Macomb,63,3
+2020-05-17,Missouri,Kansas City,40,3
+2020-05-17,Missouri,other,193,100
+2020-05-17,Missouri,St. Louis,268,1
+2020-05-17,Missouri,St. Louis city,74,2
+2020-05-17,Nebraska,other,130,100
+2020-05-17,Nebraska,other,24,6
+2020-05-17,Nebraska,Dakota,56,2
+2020-05-17,Nebraska,other,6,5
+2020-05-17,Nebraska,Douglas,278,1
+2020-05-17,Nebraska,Hall,11,3
+2020-05-17,Nebraska,other,121,4
+2020-05-17,New York,New York City,2229,1
+2020-05-17,New York,other,2392,100
+2020-05-17,Oklahoma,other,62,100
+2020-05-17,Oklahoma,other,4,4
+2020-05-17,Oklahoma,other,14,6
+2020-05-17,Oklahoma,Oklahoma,17,1
+2020-05-17,Oklahoma,Texas,126,3
+2020-05-17,Oklahoma,Tulsa,26,2
+2020-05-17,Oklahoma,other,2,5
+2020-05-17,Virginia,other,1329,100
+2020-05-17,Virginia,Arlington,128,3
+2020-05-17,Virginia,Fairfax,634,1
+2020-05-17,Virginia,Prince William,371,2
+2020-05-17,Louisiana,other,628,100
+2020-05-17,Louisiana,other,48,4
+2020-05-17,Louisiana,East Baton Rouge,136,3
+2020-05-17,Louisiana,Jefferson,113,1
+2020-05-17,Louisiana,Orleans,88,2
+2020-05-17,Louisiana,other,31,5
+2020-05-17,Minnesota,other,888,100
+2020-05-17,Minnesota,Stearns,107,2
+2020-05-17,Minnesota,Hennepin,720,1
+2020-05-17,Minnesota,other,41,4
+2020-05-17,Minnesota,Ramsey,304,3
+2020-05-17,Tennessee,other,439,100
+2020-05-17,Tennessee,other,59,4
+2020-05-17,Tennessee,Shelby,255,2
+2020-05-17,Tennessee,Trousdale,2,3
+2020-05-17,Tennessee,Davidson,341,1
+2020-05-17,Wisconsin,other,279,100
+2020-05-17,Wisconsin,Milwaukee,249,1
+2020-05-17,Wisconsin,Racine,57,3
+2020-05-17,Wisconsin,Brown,48,2
+2020-05-17,California,other,2778,100
+2020-05-17,California,Los Angeles,2270,1
+2020-05-17,New Jersey,other,364,100
+2020-05-17,New Jersey,Bergen,276,2
+2020-05-17,New Jersey,other,125,13
+2020-05-17,New Jersey,other,263,11
+2020-05-17,New Jersey,Essex,654,3
+2020-05-17,New Jersey,Hudson,295,1
+2020-05-17,New Jersey,other,299,10
+2020-05-17,New Jersey,other,320,6
+2020-05-17,New Jersey,other,173,8
+2020-05-17,New Jersey,other,88,9
+2020-05-17,New Jersey,other,189,7
+2020-05-17,New Jersey,other,340,4
+2020-05-17,New Jersey,other,100,12
+2020-05-17,New Jersey,other,462,5
+2020-05-17,New Mexico,Bernalillo,31,3
+2020-05-17,New Mexico,other,88,100
+2020-05-17,New Mexico,McKinley,123,1
+2020-05-17,New Mexico,other,10,4
+2020-05-17,New Mexico,San Juan,92,2
+2020-05-17,Washington,other,130,100
+2020-05-17,Washington,King,142,1
+2020-05-17,Washington,other,34,4
+2020-05-17,Washington,Snohomish,82,2
+2020-05-17,Washington,Yakima,249,3
+2020-05-17,Connecticut,other,242,100
+2020-05-17,Connecticut,Fairfield,382,1
+2020-05-17,Connecticut,Hartford,751,3
+2020-05-17,Connecticut,New Haven,352,2
+2020-05-17,Mississippi,other,198,100
+2020-05-17,Mississippi,other,10,22
+2020-05-17,Mississippi,other,6,24
+2020-05-17,Mississippi,other,26,13
+2020-05-17,Mississippi,other,12,17
+2020-05-17,Mississippi,other,20,7
+2020-05-17,Mississippi,other,19,5
+2020-05-17,Mississippi,other,19,15
+2020-05-17,Mississippi,Hinds,18,1
+2020-05-17,Mississippi,other,22,10
+2020-05-17,Mississippi,other,3,12
+2020-05-17,Mississippi,other,39,9
+2020-05-17,Mississippi,other,26,19
+2020-05-17,Mississippi,Lauderdale,24,2
+2020-05-17,Mississippi,other,12,8
+2020-05-17,Mississippi,other,2,18
+2020-05-17,Mississippi,Madison,35,3
+2020-05-17,Mississippi,other,-2,14
+2020-05-17,Mississippi,other,32,6
+2020-05-17,Mississippi,other,10,20
+2020-05-17,Mississippi,other,0,21
+2020-05-17,Mississippi,other,8,23
+2020-05-17,Mississippi,other,13,11
+2020-05-17,Mississippi,other,29,4
+2020-05-17,Puerto Rico,Unknown,216,1
+2020-05-17,North Dakota,other,19,100
+2020-05-17,North Dakota,Cass,123,1
+2020-05-17,North Dakota,Grand Forks,2,2
+2020-05-17,Pennsylvania,other,953,100
+2020-05-17,Pennsylvania,other,182,4
+2020-05-17,Pennsylvania,Delaware,252,3
+2020-05-17,Pennsylvania,Montgomery,266,2
+2020-05-17,Pennsylvania,Philadelphia,523,1
+2020-05-17,Rhode Island,Unknown,517,2
+2020-05-17,Rhode Island,other,0,100
+2020-05-17,Rhode Island,Providence,0,1
+2020-05-17,South Dakota,other,80,100
+2020-05-17,South Dakota,Minnehaha,46,1
+2020-05-17,Massachusetts,other,45,100
+2020-05-17,Massachusetts,other,332,7
+2020-05-17,Massachusetts,Essex,434,3
+2020-05-17,Massachusetts,other,202,8
+2020-05-17,Massachusetts,Middlesex,621,1
+2020-05-17,Massachusetts,other,153,5
+2020-05-17,Massachusetts,other,211,6
+2020-05-17,Massachusetts,Suffolk,479,2
+2020-05-17,Massachusetts,other,515,4
+2020-05-17,New Hampshire,other,25,100
+2020-05-17,New Hampshire,Hillsborough,97,1
+2020-05-17,New Hampshire,Rockingham,43,2
+2020-05-17,West Virginia,other,27,100
+2020-05-17,West Virginia,Jackson,-1,3
+2020-05-17,West Virginia,other,4,5
+2020-05-17,West Virginia,Kanawha,-3,2
+2020-05-17,West Virginia,other,1,8
+2020-05-17,West Virginia,other,1,4
+2020-05-17,West Virginia,other,0,6
+2020-05-17,West Virginia,other,0,9
+2020-05-17,West Virginia,Berkeley,16,1
+2020-05-17,West Virginia,other,-1,7
+2020-05-17,North Carolina,other,969,100
+2020-05-17,North Carolina,other,69,7
+2020-05-17,North Carolina,other,35,8
+2020-05-17,North Carolina,Wake,96,2
+2020-05-17,North Carolina,other,60,5
+2020-05-17,North Carolina,Durham,73,3
+2020-05-17,North Carolina,other,109,6
+2020-05-17,North Carolina,other,128,4
+2020-05-17,North Carolina,Mecklenburg,213,1
+2020-05-17,South Carolina,other,119,100
+2020-05-17,South Carolina,other,7,4
+2020-05-17,South Carolina,Richland,45,1
+2020-05-17,South Carolina,other,28,6
+2020-05-17,South Carolina,other,10,7
+2020-05-17,South Carolina,other,18,8
+2020-05-17,South Carolina,other,8,10
+2020-05-17,South Carolina,other,9,5
+2020-05-17,South Carolina,other,19,11
+2020-05-17,South Carolina,Florence,28,3
+2020-05-17,South Carolina,Greenville,87,2
+2020-05-17,South Carolina,other,10,9
+2020-05-17,South Carolina,other,7,12
+2020-05-17,Virgin Islands,Unknown,0,1
+2020-05-17,District of Columbia,District of Columbia,392,1
+2020-05-17,Northern Mariana Islands,Unknown,0,1

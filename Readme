@@ -7,15 +7,16 @@ Building the website:
 
 the bash make.sh does the following:
 
-1. calls on the individual scripts to generate bokeh objects and copy these
-objects to the html_temp dir
+1. Creates bokeh objects and inserts them into HTML documents using jina
 
-2. insert the objects into an html document
+2. copy all .html files to a bucket in GCP, wher they are served. 
 
-3. copy all .html files to a bucket in GCP, wher they are served. 
-
-It would be better to have the site served via https, but I will only do
-that if I get help on the front end. 
+Setup
+======
+mkvirtualenv <name>
+pip install -r requirements.txt
+cd tests
+bash test_all.sh
 
 Back end
 ========
@@ -32,6 +33,7 @@ Data
 ====
 notes
 
+<<<<<<< HEAD
 The data for Polulation is from this website:
 https://data.ers.usda.gov/reports.aspx?ID=17827.
 The file rural_urban_codes_2013 has columns of fips code, rual,urban classification,state, county, actual population. 
@@ -41,4 +43,8 @@ Rural urban definition
  Urban: in the rucc_2010 column, codes numbered as 1, 2, 3 
  Rural: in the rucc_2010 column, codes numbered as 4-9
 
-testing
+=======
+Dev
+====
+
+URL is http://seattle-data-dev.s3-website-us-west-2.amazonaws.com/

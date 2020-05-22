@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}{{ website.name }}: {{ website.slogan }}{% endblock %}
+
+{% block main_header %}
+        <h1 class="siteNameSlogan">{{ website.name }}: {{ website.slogan }}</h1>
+        {% include "nav.html" %}
+{% endblock main_header %}
+
+
+{% block content %}
+      <p>
+        Graphs showing trends in Covid-19 infection, deaths, and rates
+        in the <abbr title="United States">U.S.</abbr> and world.
+      </p>
+{% endblock content %}
+

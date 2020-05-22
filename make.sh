@@ -1,15 +1,44 @@
-set -e
-rm html_temp/* || echo 
-rm html_temp/states/* || echo
-python us_states_rt.py  
+set -e 
+VERBOSE=false
+REFRESH_DATA=false
+
+while getopts u:vr flag
+do
+    case "${flag}" in
+		v) VERBOSE='true';;
+		r) REFRESH_DATA='true';;
+        u) username=${OPTARG};;
+    esac
+done
+if [ $REFRESH_DATA == 'true' ]; then
+	if [ $VERBOSE == 'true' ]; then 
+		echo refreshing data
+	fi
+	python make_data.py
+fi
+
+
+BRANCH=`git rev-parse --abbrev-ref HEAD`
+cp -R templates/styles html_temp/styles
+rm html_temp/* 2> /dev/null || echo 
+rm html_temp/states/* 2> /dev/null || echo
 python us_states_rates.py
-python make_html_rt.py 
-python make_html.py 
-python make_html_index.py
-python incidents_over_time.py
-python make_wa_html.py
-python make_states.py
-#gsutil web set -m index.html -e 404.html gs://www.paulhtremblay.com
-python  upload_html_to_bucket.py
+python make_territories.py
+python by_state.py
+python sweden.py
+python make_index_404.py
+UPLOAD_TO=dev
+if [ $BRANCH == 'master' ]; then
+	UPLOAD_TO=prod
+fi
+if [ $BRANCH == 'development' ] || [ $BRANCH == 'master' ]; then
+	if [ $VERBOSE == 'true' ]; then
+		echo uploading to ${UPLOAD_TO}
+	fi
+	python upload_html_to_bucket_s3.py --branch ${UPLOAD_TO}
+else
+	echo Not uploading because not dev or prod
+fi
+# copy styles
 
 

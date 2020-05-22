@@ -1,3 +1,7 @@
+import datetime
+import os
+import pprint
+pp = pprint.PrettyPrinter(indent = 4)
 from google.cloud import bigquery
 import pandas as pd
 
@@ -9,14 +13,24 @@ from bokeh.models import NumeralTickFormatter
 from bokeh.models import DatetimeTickFormatter
 from bokeh.embed import components
 
+from jinja2 import Environment, select_autoescape, FileSystemLoader
+
 from henry_covid19 import common
+
+ENV = Environment(
+    loader=FileSystemLoader(os.path.join(
+        os.path.split(os.path.abspath(__file__))[0], 
+        'templates')),
+    autoescape=select_autoescape(['html', 'xml'])
+)
 
 """
 makes bar graphs for deaths/cases for WA and by counties
 """
 
 def get_data_wash_order_county():
-  sql = """
+    sql = """
+    /* WA COUNTIES */
   with t1  as
 (
 SELECT DATE_TRUNC(date, week) as date,
@@ -36,13 +50,12 @@ group by DATE_TRUNC(date, week)
 )
 select * from t1 order by date
   """
-  client = bigquery.Client(project='paul-henry-tremblay')
-
-  result = client.query(sql)
-  final = []
-  for i in result:
-    final.append([i.get('date'),  i.get('king'),  i.get('snohomish'), i.get('other')])
-  return final
+    client = bigquery.Client(project='paul-henry-tremblay')
+    result = client.query(sql)
+    final = []
+    for i in result:
+        final.append([i.get('date'),  i.get('king'),  i.get('snohomish'), i.get('other')])
+    return final
 
 def make_dataframe_wash_order():
   l = get_data_wash_order_county()
@@ -56,39 +69,37 @@ def make_dataframe_wash_order():
   return df
 
 def get_state_data():
-  sql = """
+    sql = """
+    /* 'US STATES' */
   SELECT  date, state, new_cases as cases, new_deaths as deaths
 FROM `paul-henry-tremblay.covid19.us_states_day_diff`
 order by date
   """
-  client = bigquery.Client(project='paul-henry-tremblay')
+    client = bigquery.Client(project='paul-henry-tremblay')
+    result = client.query(sql)
+    final = []
+    for i in result:
+        final.append([i.get('date'), i.get('state'), i.get('cases'), i.get('deaths')])
+    return final
 
-  result = client.query(sql)
-  final = []
-  for i in result:
-    date = i.get('date')
-    cases = i.get('cases')
-    final.append([date, i.get('state'), cases, i.get('deaths')])
-  return final
+def get_html(script, div, date, title):
+    """
+    Create the HTML for each state
+    """
+    t = ENV.get_template('data.html')
+    return t.render(title = title, 
+            script =  script,
+            date = date,
+            site_name = 'Covid 19 Data: Cases, Deaths, and Changes by State',
+            div = div,
+            page_title = 'States Rate of Growth Deaths',
+            )
 
-def get_us_data():
-  sql = """SELECT date, sum(cases) as cases, sum(deaths) as deaths 
-  FROM `paul-henry-tremblay.covid19.us_states`
-  group by date
-  order by date
-  """
-  client = bigquery.Client(project='paul-henry-tremblay')
-  result = client.query(sql)
-  final = []
-  for i in result:
-    date = i.get('date')
-    cases = i.get('cases')
-    final.append([date, cases, i.get('deaths')])
-  return final
-
-def main():
+def make_washington_graphs():
+    if not os.path.isdir('html_temp'):
+        os.mkdir('html_temp')
+    date = datetime.datetime.now()
     df_states = common.make_dataframe(get_state_data())
-    df_us = common.make_dataframe(get_us_data(), us= True)
     df_counties =  make_dataframe_wash_order()
     p_counties = common.graph_wash_county_order(df = df_counties, 
             start = 3, plot_height = 450, line_width = 40)
@@ -98,10 +109,9 @@ def main():
             plot_width = 600, title = None)
     grid = gridplot([p_all, p_counties], ncols = 4)
     script, div = components(grid)
-    with open('html_temp/deaths_wa.js', 'w') as write_obj:
-        write_obj.write(script)
-    with open('html_temp/deaths_wa.div', 'w') as write_obj:
-        write_obj.write(div)
+    html = get_html(script, div, date, title = 'Washington')
+    with open('html_temp/wa.html', 'w') as write_obj:
+        write_obj.write(html)
 
 if __name__ == '__main__':
-    main()
+    make_washington_graphs()

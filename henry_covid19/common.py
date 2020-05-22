@@ -1,9 +1,13 @@
+import os
 import datetime
 from google.cloud import bigquery
 import pandas as pd
 import math
 import numpy as np
 from bokeh.plotting import figure
+
+def get_data_path(dir_path, local_path, data_path = 'data'):
+    return os.path.join(dir_path, data_path, local_path)
 
 def tidy_name(s):
     return s.replace(' ', '_').lower()
@@ -100,10 +104,36 @@ def get_rate_increase(df, key, window):
       final.append(i/y[counter - 1])
   return final
 
+def get_rt(incidents, window, space):
+    if isinstance(incidents, pd.core.series.Series):
+        ll = incidents.tolist()
+    else:
+        ll = incidents
+    if len(ll) < 14:
+        s = None
+    last_week = ll[-14: -7]
+    week = ll[-7:]
+    if sum(last_week) == 0 and sum(week) == 0:
+        s = 0
+    elif sum(last_week) == 0:
+        s = None
+    else:
+        s = sum(week)/sum(last_week)
+    if isinstance(incidents, list):
+        incidents = pd.Series(incidents)
+    l = incidents.rolling(window).mean().tolist()
+    if len(l) < space:
+        return s, None
+    if l[-1 * space] == 0:
+        return s, None
+    return s, l[-1]/l[-1 * space]
+
 def bar_over_time(df, key, plot_height = 600, 
              plot_width = 600, title = None, line_width = 5, 
              ignore_last = False):
     labels = df['dates'].tolist()
+    if len(labels) == 1:
+        return
     if ignore_last:
         labels = labels[0:-1]
     if isinstance(labels[0], datetime.date):
@@ -116,43 +146,58 @@ def bar_over_time(df, key, plot_height = 600,
     p.vbar(x=labels, top=nums, line_width = line_width, width = .9)
     return p
 
+def incidents_over_time_bar2(x, y,  plot_height = 600, 
+             plot_width = 600, title = None, line_width = 5, y_range = None,
+             y_axis_label = None):
+    if isinstance(x, datetime.date):
+        x = [datetime.datetime(x.year, x.month, x.day) for x in x]
+    p = figure(x_axis_type = 'datetime', title = title, 
+                 plot_width = plot_width , plot_height = plot_height, y_range = y_range)
+    p.vbar(x=x, top=y, line_width = line_width, width = .9)
+    if y_axis_label:
+        p.yaxis.axis_label = y_axis_label
+    return p
 
 def incidents_over_time_bar(df, key, window= 3, plot_height = 600, 
-             plot_width = 600, title = None, line_width = 5):
-    labels = df['dates'].tolist()
+             plot_width = 600, title = None, line_width = 5, y_range = None,
+             y_axis_label = None):
+    labels = df['date'].tolist()
     if isinstance(labels[0], datetime.date):
         labels = [datetime.datetime(x.year, x.month, x.day) for x in labels]
     nums = df[key].rolling(window).mean()
     p = figure(x_axis_type = 'datetime', title = title, 
-                 plot_width = plot_width , plot_height = plot_height)
+                 plot_width = plot_width , plot_height = plot_height, y_range = y_range)
     p.vbar(x=labels, top=nums, line_width = line_width, width = .9)
+    if y_axis_label:
+        p.yaxis.axis_label = y_axis_label
     return p
 
-def graph_wash_county_order(df, start = 3, plot_height = 450,line_width = 10):
-  weeks = df['dates'][start:-1]
-  years = ["King", "Snohomish", "Other"]
-  colors = ["blue", "orange", "green"]
-  data = {'weeks' : weeks,
-        'King'   : df['king'].tolist()[start:-1],
-        'Snohomish'   : df['snohomish'].tolist()[start:-1],
-        'Other':df['other'].tolist()[start:-1],
-        }
-  p = figure( plot_height=plot_height, title="Covid19 Deaths Washington",
-           x_axis_type= 'datetime')
+def graph_stacked(data, title = None, start = 3, 
+        plot_height = 450,line_width = 10, plot_width = 450,
+        colors = ['blue', 'green', 'red', 'orange']
+        ):
+    if type(data['date'][0]) == type(datetime.datetime(2020, 1, 1).date()):
+        data['date'] = [datetime.datetime(x.year, x.month, x.day) for x in data['dates']]
+    labels = list(data.keys())
+    del(labels[labels.index('date')])
+    colors = colors[0:len(labels) ]
+    p = figure( plot_height=plot_height, title=title,
+           x_axis_type= 'datetime', plot_width = plot_width)
 
-  r = p.vbar_stack(years, x='weeks', width=1, color=colors, source=data,
-             legend_label=years, line_width = line_width)
+    r = p.vbar_stack(labels, x='date', width=1, color=colors, source=data,
+             legend_label=labels, line_width = line_width)
 
-  p.y_range.start = 0
-  p.x_range.range_padding = 0.1
-  p.xgrid.grid_line_color = None
-  p.axis.minor_tick_line_color = None
-  p.outline_line_color = None
-  p.legend.location = "top_left"
-  p.legend.orientation = "vertical"
-  p.legend.glyph_height = 1
-  p.legend.glyph_width= 1
-  p.legend.spacing  = 30
-  p.legend.label_standoff = 30
-  return p
+    p.y_range.start = 0
+    p.x_range.range_padding = 0.1
+    p.xgrid.grid_line_color = None
+    p.axis.minor_tick_line_color = None
+    p.outline_line_color = None
+    p.legend.location = "top_left"
+    p.legend.orientation = "vertical"
+    p.legend.glyph_height = 1
+    p.legend.glyph_width= 1
+    p.legend.spacing  = 10
+    p.legend.label_standoff = 10
+    return p
+
 

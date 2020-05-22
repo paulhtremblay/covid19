@@ -1,8 +1,7 @@
-{% extends "base.html" %}
+{% extends "data.html" %}
 {% block content %}
-<h1>{{title}}</h1>
-	<p>updated: {{date}}</p>
-    <p><a href = "../index.html">home</a></p>
+<h2 class = 'territory-name'>{{territory_name}}</h2>
+
 	<p>Cases RO: {{cases_ro}} Deaths RO: {{death_ro}} <p>
 	{{div|safe}}
 

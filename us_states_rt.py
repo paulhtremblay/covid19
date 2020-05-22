@@ -1,8 +1,11 @@
+import os
+import datetime
 from google.cloud import bigquery
 import pandas as pd
 import math
 import pprint
 import csv
+from henry_covid19 import variables
 pp = pprint.PrettyPrinter(indent = 4)
 
 from bokeh.io import show
@@ -13,13 +16,25 @@ from bokeh.models import NumeralTickFormatter
 from bokeh.models import DatetimeTickFormatter
 from bokeh.embed import components
 
+from jinja2 import Environment, select_autoescape, FileSystemLoader
+
 from henry_covid19 import common
 from henry_covid19.states_data import us_states_list as states_list
+
+DIR = os.path.split(os.path.abspath(__file__))[0]
+
+ENV = Environment(
+    loader=FileSystemLoader(os.path.join(
+        DIR, 
+        'templates')),
+    autoescape=select_autoescape(['html', 'xml'])
+)
 
 def get_state_data(test = False):
   if test:
         return states_list
   sql = """
+/* US STATES */
   SELECT date, state, new_cases as cases, new_deaths as deaths
 FROM `paul-henry-tremblay.covid19.us_states_day_diff`
 order by date
@@ -93,23 +108,39 @@ def all_states(df_states, key, min_value, window = 3,
     grid = gridplot(p_list, ncols = 4)
     return grid
 
-def main(window = 3):
+def get_html(script, div, date, title, the_type ):
+    """
+    Create the HTML for each state
+    """
+    t = ENV.get_template('data.html')
+    if the_type == 'deaths':
+        page_title = 'States Rate of Growth Deaths'
+    elif the_type == 'cases':
+        page_title = 'States Rate of Growth Infections'
+    return t.render(title = title, 
+            script =  script,
+            date = date,
+            site_name = 'Covid 19 Data: Cases, Deaths, and Changes by State',
+            div = div,
+            page_title = page_title,
+            )
+
+def make_rt_html(window = 3):
+    window = int(variables.values['rt_window'])
+    if not os.path.isdir('html_temp'):
+        os.mkdir('html_temp')
     df_states = common.make_dataframe(get_state_data(test = False))
+    #make CSV
     rates(df_states,  min_value = 0, window = window)
-    grid = all_states(df_states = df_states, key = 'deaths', min_value = 0, 
-            window = window)
-    grid2 = all_states(df_states = df_states, key = 'cases', min_value = 0, 
-            window = window)
-    script, div = components(grid)
-    script2, div2 = components(grid2)
-    with open('html_temp/states_deaths_rt.js', 'w') as write_obj:
-        write_obj.write(script)
-    with open('html_temp/states_deaths_rt.div', 'w') as write_obj:
-        write_obj.write(div)
-    with open('html_temp/states_cases_rt.js', 'w') as write_obj:
-        write_obj.write(script2)
-    with open('html_temp/states_cases_rt.div', 'w') as write_obj:
-        write_obj.write(div2)
+    date = datetime.datetime.now()
+    for i in [('deaths', 'states_deaths_rt.html', 'Death Rate', 'deaths', ), 
+            ('cases', 'states_cases_rt.html', 'Cases Rate', 'cases')]:
+        grid = all_states(df_states = df_states, key = i[0], min_value = 0, 
+                window = window)
+        script, div = components(grid)
+        html = get_html(script, div, date, i[2], the_type = i[3])
+        with open(os.path.join('html_temp', i[1]), 'w') as write_obj:
+            write_obj.write(html)
 
 if __name__ == '__main__':
-    main()
+    make_rt_html()

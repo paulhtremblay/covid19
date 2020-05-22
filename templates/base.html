@@ -1,13 +1,39 @@
+<!DOCTYPE html>{% set website = { "name": "Covid-19 Data", "slogan": "Trends in Number and Rates of Infections" } %}
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-		<title>{{title}}</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js">
-	</script>
-	{{script|safe}}
-    </head>
-    <body>
-	{% block content %}
-	{% endblock %}
-    </body>
+
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{{ page_title }} || {{ website.name }}{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/styles/site.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js" integrity="sha256-q6H2tiCn/WI6/yUscC8yNCGup3XM1lizbZckx5edIl0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    {{script|safe}}
+  </head>
+
+  <body>
+
+    <header>
+    {% block main_header %}
+      <div class="siteNameSlogan">{{ website.name }}: {{ website.slogan }}</div>
+			{% include "nav.html" %}
+			<h1>{{ page_title }}</h1>
+    {% endblock main_header %}
+    </header>
+
+    <main>
+      {% block content %}
+        {{div|safe}}
+      {% endblock %}
+    </main>
+
+    <footer>
+      <address>
+      	<p>created by <a href="https://github.com/paulhtremblay">Henry Tremblay</a></p>
+      	<p><a href="https://github.com/paulhtremblay/covid19">contributions welcome</a></p>
+      </address>
+    </footer>
+
+  </body>
+
 </html>

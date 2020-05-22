@@ -3,8 +3,8 @@ import datetime
 import os
 from google.cloud import bigquery
 import pandas as pd
-import pprint
-pp = pprint.PrettyPrinter(indent = 4)
+
+from jinja2 import Environment, select_autoescape, FileSystemLoader
 
 from bokeh.io import show
 from bokeh.plotting import figure
@@ -12,88 +12,45 @@ from bokeh.layouts import gridplot
 from bokeh.models import NumeralTickFormatter
 from bokeh.models import DatetimeTickFormatter
 from bokeh.embed import components
-
-from jinja2 import Environment, select_autoescape, FileSystemLoader
-
 from henry_covid19 import common
 
-from test_data import world
-from test_data import country
+import pprint
+pp = pprint.PrettyPrinter(indent = 4)
+
+
+DIR = os.path.split(os.path.abspath(__file__))[0]
 
 ENV = Environment(
-    loader=FileSystemLoader( 'templates'),
+    loader=FileSystemLoader(os.path.join(DIR, 'templates')),
     autoescape=select_autoescape(['html', 'xml'])
 )
 
-"""
-makes countries
-TODO: format pages
-"""
 
 def get_world_data_week():
-    d = world.d
-    df = pd.DataFrame.from_dict(d)
-    return df
-
-def _get_world_data_week():
     """
     get the data from BQ, grouped by week
     """
-    sql = """
-  select *
-from
-(
-SELECT DATE_TRUNC(date, week) as date,
-country,
-sum(cases) as cases,
-sum(deaths) as deaths
-from covid19.world
-group by date_trunc(date,week), country
-) order by country, date
-  """
-    client = bigquery.Client(project='paul-henry-tremblay')
-    result = client.query(sql)
-    l = [[i.get('date'), i.get('country'), i.get('cases'), i.get('deaths')] for i in result]
-    d = {}
-    d['dates'] = [x[0] for x in l]
-    d['country'] = [x[1] for x in l]
-    d['cases'] = [x[2] for x in l]
-    d['deaths'] = [x[3] for x in l]
-    df = pd.DataFrame.from_dict(d)
+    path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'world_week.csv')
+    with open(path, 'r') as read_obj:
+        df = pd.read_csv(read_obj)
+    df['date'] = pd.to_datetime(df['date'])
+    df['dates'] = df['date']
     return df
 
 def get_world_data_day():
-    d = country.d 
-    df = pd.DataFrame.from_dict(d)
-    return df
-
-def _get_world_data_day():
     """
     Get the data by day for world
 
-    return: a list
+    return: df
     """
-    sql = """
-  SELECT  date, country, cases, deaths
-FROM `paul-henry-tremblay.covid19.world`
-order by date
-  """
-    client = bigquery.Client(project='paul-henry-tremblay')
-
-    result = client.query(sql)
-    final = []
-    for i in result:
-        date = i.get('date')
-        cases = i.get('cases')
-        final.append([date, i.get('state'), cases, i.get('deaths')])
-    l = [[i.get('date'), i.get('country'), i.get('cases'), i.get('deaths')] for i in result]
-    d = {}
-    d['dates'] = [x[0] for x in l]
-    d['country'] = [x[1] for x in l]
-    d['cases'] = [x[2] for x in l]
-    d['deaths'] = [x[3] for x in l]
-    df = pd.DataFrame.from_dict(d)
+    path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'world.csv')
+    with open(path, 'r') as read_obj:
+        df = pd.read_csv(read_obj)
+    df['date'] = pd.to_datetime(df['date'])
+    df['dates'] = df['date']
     return df
+
+
 
 def get_html(territory, script, div, death_ro, death_double_rate, 
         cases_ro, cases_double_rate):
@@ -173,16 +130,22 @@ def make_territories_ref_list(territory_key, territories):
     """
     create the link page  for each state
     """
+    territories = sorted(territories)
     d = {'country': 'countries', 'state': 'states'}
     if territory_key == 'state':
         path = 'states_list.html'
+        page_title = 'States'
     else:
         path = 'countries_list.html'
+        page_title = 'Countries'
     t = ENV.get_template('territories_ref.html')
     t =  t.render(title = 'By {k}'.format(k = territory_key), 
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            page_title = page_title,
             territories = [(d[territory_key] + '/' + common.tidy_name(x) + '.html', x) for x in territories]
             )
+    if not os.path.isdir('html_temp'):
+        os.mkdir('html_temp')
     with open(os.path.join('html_temp', path), 'w') as write_obj:
         write_obj.write(t)
 
@@ -211,10 +174,10 @@ def all_territories(df_week, df_day, territory_key, window = 3, plot_height = 55
         p5 = common.incidents_over_time_bar(df_day[df_day[territory_key] == i], 
                 key = 'cases', window= 3, plot_height = plot_height, 
             plot_width = plot_width, title = 'Cases by Day', line_width = 2)
-        death_ro, death_double_rate, p3 =  dy_dx(territory_key = 'country', 
+        death_ro, death_double_rate, p3 =  dy_dx(territory_key = territory_key, 
                 territory = i, df = df_day, window = window, 
                 key = 'deaths', plot_height = 300, plot_width = 300)
-        cases_ro, cases_double_rate, p4 =  dy_dx(territory_key = 'country', 
+        cases_ro, cases_double_rate, p4 =  dy_dx(territory_key = territory_key, 
                 territory = i, df = df_day, window = window, 
                 key = 'cases', plot_height = 300, plot_width = 300)
         grid = gridplot([p1, p2, p6, p5,  p3, p4], ncols = 2)
