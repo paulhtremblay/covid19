@@ -1,8 +1,13 @@
-"""Bigquery test"""
+ """
+ Google Bigquery SQL query test and matplot test
+ The data is hosted in Google Cloud Bigg query,project ='paul-henry-tremblay'.
+ The below function is for testing if can get data from the above project via SQL query.
+ Also, based on the data, if can make a graph via matplotlib.
+ """
+
 import datetime
 from google.cloud import bigquery
 from matplotlib.pyplot import plot_date, axis, show, gcf
-# def make_data_frame(l):
 
 
 def get_state_data():
