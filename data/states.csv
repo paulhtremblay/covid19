@@ -3572,7 +3572,7 @@ date,state,cases,deaths
 2020-05-07,California,1694,83
 2020-05-07,New Jersey,1745,252
 2020-05-07,New Mexico,202,3
-2020-05-07,Washington,621,22
+2020-05-07,Washington,304,22
 2020-05-07,Connecticut,789,79
 2020-05-07,Mississippi,262,22
 2020-05-07,Puerto Rico,63,3
@@ -3627,7 +3627,7 @@ date,state,cases,deaths
 2020-05-08,California,2135,89
 2020-05-08,New Jersey,1819,151
 2020-05-08,New Mexico,181,9
-2020-05-08,Washington,203,12
+2020-05-08,Washington,280,12
 2020-05-08,Connecticut,627,77
 2020-05-08,Mississippi,404,13
 2020-05-08,Puerto Rico,125,5
@@ -3682,7 +3682,7 @@ date,state,cases,deaths
 2020-05-09,California,2208,82
 2020-05-09,New Jersey,1631,164
 2020-05-09,New Mexico,105,10
-2020-05-09,Washington,226,10
+2020-05-09,Washington,149,10
 2020-05-09,Connecticut,573,58
 2020-05-09,Mississippi,288,12
 2020-05-09,Puerto Rico,17,1
@@ -3957,7 +3957,7 @@ date,state,cases,deaths
 2020-05-14,California,1729,25
 2020-05-14,New Jersey,1144,244
 2020-05-14,New Mexico,139,11
-2020-05-14,Washington,360,14
+2020-05-14,Washington,362,14
 2020-05-14,Connecticut,609,94
 2020-05-14,Mississippi,393,15
 2020-05-14,Puerto Rico,98,2
@@ -4012,7 +4012,7 @@ date,state,cases,deaths
 2020-05-15,California,2068,153
 2020-05-15,New Jersey,1201,192
 2020-05-15,New Mexico,159,11
-2020-05-15,Washington,266,17
+2020-05-15,Washington,264,17
 2020-05-15,Connecticut,621,66
 2020-05-15,Mississippi,318,13
 2020-05-15,Puerto Rico,115,5
@@ -4287,7 +4287,7 @@ date,state,cases,deaths
 2020-05-20,California,2144,92
 2020-05-20,New Jersey,1386,161
 2020-05-20,New Mexico,146,7
-2020-05-20,Washington,116,3
+2020-05-20,Washington,118,3
 2020-05-20,Connecticut,587,57
 2020-05-20,Mississippi,263,16
 2020-05-20,Puerto Rico,61,1
@@ -4303,3 +4303,58 @@ date,state,cases,deaths
 2020-05-20,Virgin Islands,0,0
 2020-05-20,District of Columbia,117,7
 2020-05-20,Northern Mariana Islands,0,0
+2020-05-21,Guam,0,0
+2020-05-21,Iowa,302,14
+2020-05-21,Ohio,731,55
+2020-05-21,Utah,159,2
+2020-05-21,Idaho,28,0
+2020-05-21,Maine,58,0
+2020-05-21,Texas,1258,42
+2020-05-21,Alaska,0,0
+2020-05-21,Hawaii,4,0
+2020-05-21,Kansas,110,2
+2020-05-21,Nevada,101,3
+2020-05-21,Oregon,16,1
+2020-05-21,Alabama,362,7
+2020-05-21,Arizona,418,16
+2020-05-21,Florida,1204,48
+2020-05-21,Georgia,807,77
+2020-05-21,Indiana,687,49
+2020-05-21,Montana,1,0
+2020-05-21,Vermont,6,0
+2020-05-21,Wyoming,14,1
+2020-05-21,Arkansas,455,3
+2020-05-21,Colorado,392,11
+2020-05-21,Delaware,192,7
+2020-05-21,Illinois,2282,87
+2020-05-21,Kentucky,139,12
+2020-05-21,Maryland,1203,36
+2020-05-21,Michigan,480,69
+2020-05-21,Missouri,147,26
+2020-05-21,Nebraska,303,7
+2020-05-21,New York,2078,123
+2020-05-21,Oklahoma,148,5
+2020-05-21,Virginia,1229,25
+2020-05-21,Louisiana,1188,21
+2020-05-21,Minnesota,530,32
+2020-05-21,Tennessee,436,4
+2020-05-21,Wisconsin,318,6
+2020-05-21,California,2363,110
+2020-05-21,New Jersey,1073,96
+2020-05-21,New Mexico,134,11
+2020-05-21,Washington,169,9
+2020-05-21,Connecticut,191,53
+2020-05-21,Mississippi,255,10
+2020-05-21,Puerto Rico,47,1
+2020-05-21,North Dakota,134,2
+2020-05-21,Pennsylvania,1101,93
+2020-05-21,Rhode Island,215,18
+2020-05-21,South Dakota,0,1
+2020-05-21,Massachusetts,1114,82
+2020-05-21,New Hampshire,67,9
+2020-05-21,West Virginia,36,2
+2020-05-21,North Carolina,694,12
+2020-05-21,South Carolina,204,9
+2020-05-21,Virgin Islands,0,0
+2020-05-21,District of Columbia,237,5
+2020-05-21,Northern Mariana Islands,1,0
