@@ -2,7 +2,13 @@
 {% block content %}
 <h2 class = 'territory-name'>{{territory_name}}</h2>
 
+	<!--
 	<p>Cases RO: {{cases_ro}} Deaths RO: {{death_ro}} <p>
+	-->
+	<p>Last 7-days deaths: {{curr_death}} per day {{sig_curr}}
+	<p>
+	<p>
+	Previous 7-day deaths: {{last_week_deaths}} per day {{sig_prev}} </p>
 	{{div|safe}}
 
 {% endblock %}

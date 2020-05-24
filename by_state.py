@@ -19,6 +19,7 @@ from jinja2 import Environment, select_autoescape, FileSystemLoader
 
 from henry_covid19 import common
 from henry_covid19 import variables
+from henry_covid19 import bootstrap
 
 ENV = Environment(
     loader=FileSystemLoader(os.path.join(
@@ -66,21 +67,26 @@ def shape_data(df, state, rank, the_dict, key):
         final.append(temp_dict.get(i, 0))
     the_dict[county_name]= final
 
-def get_html(date, territory, script, div, rt_death, rt_cases):
+def get_html(date, territory, script, div, curr_death, last_week_deaths,
+        p_curr_week, p_last_week):
     """
     Create the HTML for each state
     """
-    if rt_death == None:
-        rt_death = 0
-    if rt_cases == None:
-        rt_cases = 0
+    sig_curr = ''
+    if p_curr_week > .1:
+        sig_curr = '(not significant change from previous)'
+    sig_prev = ''
+    if p_last_week > .1:
+        sig_prev = '(not significant change from previous)'
     t = ENV.get_template('countries.html')
     return t.render(territory_name = territory, 
             script =  script,
             date = date,
             div = div,
-            cases_ro = round(rt_cases, 2),
-            death_ro = round(rt_death, 2),
+            curr_death = int(round(curr_death)),
+            last_week_deaths = int(round(last_week_deaths)),
+            sig_curr = sig_curr,
+            sig_prev = sig_prev,
             )
 
 def make_territories_dir(key):
@@ -146,12 +152,42 @@ def _get_first_nonzero(x):
             return counter
     return 0
 
+def _get_stats_for_state(deaths):
+    current_week = deaths[-7:]
+    last_week = deaths[-14:-7]
+    last_week_2 = deaths[-21:-14]
+    the_dict = {}
+    resample1, resample2 = bootstrap.resample_two_samples(last_week, current_week, num_iterations = 1000)
+    both = bootstrap.combine_resamples(last_week, current_week, resample1, resample2)
+    p_value = bootstrap.get_p_value(both)
+
+    resample3, resample4 = bootstrap.resample_two_samples(last_week_2, current_week, num_iterations = 1000)
+    both2 = bootstrap.combine_resamples(last_week_2, current_week, resample3, resample4)
+    p_value2 = bootstrap.get_p_value(both2)
+
+    the_dict['p_value_last_week'] =  p_value
+    the_dict['p_value_last_week2'] =  p_value2
+    the_dict['current_week_mean'] = np.mean(current_week)
+    the_dict['last_week_mean'] = np.mean(last_week)
+    the_dict['last_week_mean_2'] = np.mean(last_week_2)
+    return the_dict
+
+def change_with_sig(df):
+    the_dict = {}
+    for i in list(set(df['state'])):
+        df_ = df[df['state'] == i]
+        deaths = df_['deaths'].tolist()
+        the_dict[i] = _get_stats_for_state(deaths)
+    return the_dict
+
 def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400, 
         window = None):
     if not window:
         window = int(variables.values['by_state_window'])
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
+    df_day = get_state_data_day()
+    change_dict = change_with_sig(df_day)
     date = datetime.datetime.now()
     df_deaths = get_data_deaths()
     df_cases = get_data_cases()
@@ -196,7 +232,11 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400,
         grid = gridplot(ps, ncols = 2)
         script, div = components(grid)
         html = get_html(territory = state, script = script, div = div,
-                date = date, rt_cases = rt_cases, rt_death = rt_death
+                date = date, 
+                last_week_deaths = change_dict[state]['last_week_mean'],
+                curr_death = change_dict[state]['current_week_mean'],
+                p_curr_week = change_dict[state]['p_value_last_week'],
+                p_last_week = change_dict[state]['p_value_last_week2'],
                     )
         with open(os.path.join(dir_path, 
             '{territory}'.format(territory = common.tidy_name(state)) + '.html'), 'w') as write_obj:
