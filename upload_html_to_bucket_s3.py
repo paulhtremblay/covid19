@@ -12,7 +12,8 @@ def _get_args():
 
 
 
-def upload_to_storage(local_path, bucket_name, object_name):
+def upload_to_storage(local_path, bucket_name, object_name, 
+        content_type= 'text/html'):
     """Upload a file to an S3 bucket
 
     :param file_name: File to upload
@@ -25,7 +26,7 @@ def upload_to_storage(local_path, bucket_name, object_name):
     bucket = s3.Bucket(bucket_name)
     bucket.put_object(Key = object_name,
         Body = b, 
-        ContentType='text/html',
+        ContentType=content_type,
         CacheControl='max-age=60, public',
         ) 
 
@@ -55,7 +56,9 @@ def upload_html(bucket_name, verbose):
         if verbose:
             print('uploading {t}'.format(t = tail))
         upload_to_storage(local_path = i, bucket_name = bucket_name,
-                object_name = 'styles/{name}'.format(name = tail))
+                object_name = 'styles/{name}'.format(name = tail),
+                content_type = 'text/css'
+                )
 
 def get_bucket_name(branch):
     if branch == 'dev':
