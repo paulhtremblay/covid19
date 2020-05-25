@@ -19,7 +19,7 @@ fi
 
 
 BRANCH=`git rev-parse --abbrev-ref HEAD`
-cp -R templates/styles html_temp/styles
+cp -R templates/styles html_temp
 rm html_temp/* 2> /dev/null || echo 
 rm html_temp/states/* 2> /dev/null || echo
 python us_states_rates.py
