@@ -19,9 +19,9 @@ fi
 
 
 BRANCH=`git rev-parse --abbrev-ref HEAD`
+rm -Rf html_temp 
+mkdir html_temp
 cp -R templates/styles html_temp/styles
-rm html_temp/* 2> /dev/null || echo 
-rm html_temp/states/* 2> /dev/null || echo
 python us_states_rates.py
 python make_territories.py
 python by_state.py
