@@ -44,5 +44,5 @@ html_raw = """
         div2 = div2
         )
 
-with open('html_dir/states.html', 'w') as write_obj:
+with open('html_temp/states.html', 'w') as write_obj:
     write_obj.write(html_raw)

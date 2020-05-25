@@ -12,6 +12,7 @@ from bokeh.models import DatetimeTickFormatter
 from bokeh.embed import components
 
 from henry_covid19 import common
+#NOT USED!!
 
 """
 makes 50 + HTML files, one for each state and territory
@@ -76,7 +77,7 @@ def get_html(state, script, div, death_ro, death_double_rate,
         death_ro = 0
     if cases_ro == None:
         cases_ro = 0
-    with open(os.path.join('html_dir', 'states_ind.html'), 'r') as read_obj:
+    with open(os.path.join('html_temp', 'states_ind.html'), 'r') as read_obj:
         s = ''.join(read_obj.readlines())
     return s.format(
         title = state, 
@@ -135,7 +136,7 @@ def make_states_ref_list(states):
     """
     create the link page  for each state
     """
-    with open('html_dir/states_list.html', 'r') as read_obj:
+    with open('html_temp/states_list.html', 'r') as read_obj:
         s = ''.join(read_obj.readlines())
     s = s.format(
             states = make_state_ref(states),
