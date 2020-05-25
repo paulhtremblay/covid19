@@ -22,15 +22,22 @@
     </header>
 
     <main>
-      {% block content %}
-        {{div|safe}}
-      {% endblock %}
+    {% block content %}
+      {{div|safe}}
+    {% endblock %}
     </main>
 
     <footer>
       <address>
-      	<p>created by <a href="https://github.com/paulhtremblay">Henry Tremblay</a></p>
-      	<p><a href="https://github.com/paulhtremblay/covid19">contributions welcome</a></p>
+      {% block address %}
+      	<p>
+        	This page is part of a <a href="/about.html">collaborative project</a>
+        	created by <a href="https://github.com/paulhtremblay">Henry Tremblay</a>
+        </p>
+      	<p>
+        	<a href="https://github.com/paulhtremblay/covid19">contributions welcome</a>
+      	</p>
+      {% endblock address %}
       </address>
     </footer>
 

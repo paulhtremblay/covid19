@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block main_header %}
+      {{ super() }}
+      <p>Last updated: {{date}}</p>
+{% endblock main_header %}
+
+{% block content %}
+      <p>
+        {{ website.name }} is a collaborative project with these contributors:
+      </p>
+
+      <ul>
+      	{% for contributor in contributors %}
+        <li>
+          <a href="{{ contributor.html_url }}">{{ contributor.login }}</a>
+          ({{ contributor.contributions }} contributions)
+        </li>
+      	{% endfor %}
+      </ul>
+{% endblock %}
+
+{% block address %}
+      	<p>
+        	This page is part of a collaborative project
+        	created by <a href="https://github.com/paulhtremblay">Henry Tremblay</a>
+        </p>
+      	<p>
+        	<a href="https://github.com/paulhtremblay/covid19">contributions welcome</a>
+      	</p>
+{% endblock address %}
