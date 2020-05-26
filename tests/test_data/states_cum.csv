@@ -1,0 +1,4470 @@
+date,state,cases,deaths
+2020-01-21,Washington,1,0
+2020-01-22,Washington,1,0
+2020-01-23,Washington,1,0
+2020-01-24,Illinois,1,0
+2020-01-24,Washington,1,0
+2020-01-25,Illinois,1,0
+2020-01-25,California,1,0
+2020-01-25,Washington,1,0
+2020-01-26,Arizona,1,0
+2020-01-26,Illinois,1,0
+2020-01-26,California,2,0
+2020-01-26,Washington,1,0
+2020-01-27,Arizona,1,0
+2020-01-27,Illinois,1,0
+2020-01-27,California,2,0
+2020-01-27,Washington,1,0
+2020-01-28,Arizona,1,0
+2020-01-28,Illinois,1,0
+2020-01-28,California,2,0
+2020-01-28,Washington,1,0
+2020-01-29,Arizona,1,0
+2020-01-29,Illinois,1,0
+2020-01-29,California,2,0
+2020-01-29,Washington,1,0
+2020-01-30,Arizona,1,0
+2020-01-30,Illinois,2,0
+2020-01-30,California,2,0
+2020-01-30,Washington,1,0
+2020-01-31,Arizona,1,0
+2020-01-31,Illinois,2,0
+2020-01-31,California,3,0
+2020-01-31,Washington,1,0
+2020-02-01,Arizona,1,0
+2020-02-01,Illinois,2,0
+2020-02-01,California,3,0
+2020-02-01,Washington,1,0
+2020-02-01,Massachusetts,1,0
+2020-02-02,Arizona,1,0
+2020-02-02,Illinois,2,0
+2020-02-02,California,6,0
+2020-02-02,Washington,1,0
+2020-02-02,Massachusetts,1,0
+2020-02-03,Arizona,1,0
+2020-02-03,Illinois,2,0
+2020-02-03,California,6,0
+2020-02-03,Washington,1,0
+2020-02-03,Massachusetts,1,0
+2020-02-04,Arizona,1,0
+2020-02-04,Illinois,2,0
+2020-02-04,California,6,0
+2020-02-04,Washington,1,0
+2020-02-04,Massachusetts,1,0
+2020-02-05,Arizona,1,0
+2020-02-05,Illinois,2,0
+2020-02-05,Wisconsin,1,0
+2020-02-05,California,6,0
+2020-02-05,Washington,1,0
+2020-02-05,Massachusetts,1,0
+2020-02-06,Arizona,1,0
+2020-02-06,Illinois,2,0
+2020-02-06,Wisconsin,1,0
+2020-02-06,California,6,0
+2020-02-06,Washington,1,0
+2020-02-06,Massachusetts,1,0
+2020-02-07,Arizona,1,0
+2020-02-07,Illinois,2,0
+2020-02-07,Wisconsin,1,0
+2020-02-07,California,6,0
+2020-02-07,Washington,1,0
+2020-02-07,Massachusetts,1,0
+2020-02-08,Arizona,1,0
+2020-02-08,Illinois,2,0
+2020-02-08,Wisconsin,1,0
+2020-02-08,California,6,0
+2020-02-08,Washington,1,0
+2020-02-08,Massachusetts,1,0
+2020-02-09,Arizona,1,0
+2020-02-09,Illinois,2,0
+2020-02-09,Wisconsin,1,0
+2020-02-09,California,6,0
+2020-02-09,Washington,1,0
+2020-02-09,Massachusetts,1,0
+2020-02-10,Arizona,1,0
+2020-02-10,Illinois,2,0
+2020-02-10,Wisconsin,1,0
+2020-02-10,California,7,0
+2020-02-10,Washington,1,0
+2020-02-10,Massachusetts,1,0
+2020-02-11,Arizona,1,0
+2020-02-11,Illinois,2,0
+2020-02-11,Wisconsin,1,0
+2020-02-11,California,7,0
+2020-02-11,Washington,1,0
+2020-02-11,Massachusetts,1,0
+2020-02-12,Texas,1,0
+2020-02-12,Arizona,1,0
+2020-02-12,Illinois,2,0
+2020-02-12,Wisconsin,1,0
+2020-02-12,California,7,0
+2020-02-12,Washington,1,0
+2020-02-12,Massachusetts,1,0
+2020-02-13,Texas,2,0
+2020-02-13,Arizona,1,0
+2020-02-13,Illinois,2,0
+2020-02-13,Wisconsin,1,0
+2020-02-13,California,7,0
+2020-02-13,Washington,1,0
+2020-02-13,Massachusetts,1,0
+2020-02-14,Texas,2,0
+2020-02-14,Arizona,1,0
+2020-02-14,Illinois,2,0
+2020-02-14,Wisconsin,1,0
+2020-02-14,California,7,0
+2020-02-14,Washington,1,0
+2020-02-14,Massachusetts,1,0
+2020-02-15,Texas,2,0
+2020-02-15,Arizona,1,0
+2020-02-15,Illinois,2,0
+2020-02-15,Wisconsin,1,0
+2020-02-15,California,7,0
+2020-02-15,Washington,1,0
+2020-02-15,Massachusetts,1,0
+2020-02-16,Texas,2,0
+2020-02-16,Arizona,1,0
+2020-02-16,Illinois,2,0
+2020-02-16,Wisconsin,1,0
+2020-02-16,California,7,0
+2020-02-16,Washington,1,0
+2020-02-16,Massachusetts,1,0
+2020-02-17,Texas,2,0
+2020-02-17,Arizona,1,0
+2020-02-17,Illinois,2,0
+2020-02-17,Nebraska,10,0
+2020-02-17,Wisconsin,1,0
+2020-02-17,California,7,0
+2020-02-17,Washington,1,0
+2020-02-17,Massachusetts,1,0
+2020-02-18,Texas,2,0
+2020-02-18,Arizona,1,0
+2020-02-18,Illinois,2,0
+2020-02-18,Nebraska,10,0
+2020-02-18,Wisconsin,1,0
+2020-02-18,California,7,0
+2020-02-18,Washington,1,0
+2020-02-18,Massachusetts,1,0
+2020-02-19,Texas,2,0
+2020-02-19,Arizona,1,0
+2020-02-19,Illinois,2,0
+2020-02-19,Nebraska,10,0
+2020-02-19,Wisconsin,1,0
+2020-02-19,California,7,0
+2020-02-19,Washington,1,0
+2020-02-19,Massachusetts,1,0
+2020-02-20,Texas,2,0
+2020-02-20,Arizona,1,0
+2020-02-20,Illinois,2,0
+2020-02-20,Nebraska,11,0
+2020-02-20,Wisconsin,1,0
+2020-02-20,California,8,0
+2020-02-20,Washington,1,0
+2020-02-20,Massachusetts,1,0
+2020-02-21,Texas,4,0
+2020-02-21,Arizona,1,0
+2020-02-21,Illinois,2,0
+2020-02-21,Nebraska,11,0
+2020-02-21,Wisconsin,1,0
+2020-02-21,California,9,0
+2020-02-21,Washington,1,0
+2020-02-21,Massachusetts,1,0
+2020-02-22,Texas,4,0
+2020-02-22,Arizona,1,0
+2020-02-22,Illinois,2,0
+2020-02-22,Nebraska,11,0
+2020-02-22,Wisconsin,1,0
+2020-02-22,California,9,0
+2020-02-22,Washington,1,0
+2020-02-22,Massachusetts,1,0
+2020-02-23,Texas,4,0
+2020-02-23,Arizona,1,0
+2020-02-23,Illinois,2,0
+2020-02-23,Nebraska,11,0
+2020-02-23,Wisconsin,1,0
+2020-02-23,California,9,0
+2020-02-23,Washington,1,0
+2020-02-23,Massachusetts,1,0
+2020-02-24,Texas,10,0
+2020-02-24,Arizona,1,0
+2020-02-24,Illinois,2,0
+2020-02-24,Nebraska,12,0
+2020-02-24,Wisconsin,1,0
+2020-02-24,California,11,0
+2020-02-24,Washington,5,0
+2020-02-24,Massachusetts,1,0
+2020-02-25,Utah,1,0
+2020-02-25,Texas,10,0
+2020-02-25,Arizona,1,0
+2020-02-25,Illinois,2,0
+2020-02-25,Nebraska,13,0
+2020-02-25,Wisconsin,1,0
+2020-02-25,California,11,0
+2020-02-25,Washington,5,0
+2020-02-25,Massachusetts,1,0
+2020-02-26,Utah,1,0
+2020-02-26,Texas,10,0
+2020-02-26,Arizona,1,0
+2020-02-26,Illinois,2,0
+2020-02-26,Nebraska,13,0
+2020-02-26,Wisconsin,1,0
+2020-02-26,California,26,0
+2020-02-26,Washington,5,0
+2020-02-26,Massachusetts,1,0
+2020-02-27,Utah,1,0
+2020-02-27,Texas,10,0
+2020-02-27,Arizona,1,0
+2020-02-27,Illinois,2,0
+2020-02-27,Nebraska,13,0
+2020-02-27,Wisconsin,1,0
+2020-02-27,California,26,0
+2020-02-27,Washington,5,0
+2020-02-27,Massachusetts,1,0
+2020-02-28,Utah,1,0
+2020-02-28,Texas,11,0
+2020-02-28,Oregon,1,0
+2020-02-28,Arizona,1,0
+2020-02-28,Illinois,2,0
+2020-02-28,Nebraska,13,0
+2020-02-28,Wisconsin,1,0
+2020-02-28,California,27,0
+2020-02-28,Washington,7,0
+2020-02-28,Massachusetts,1,0
+2020-02-29,Utah,1,0
+2020-02-29,Texas,11,0
+2020-02-29,Oregon,1,0
+2020-02-29,Arizona,1,0
+2020-02-29,Illinois,3,0
+2020-02-29,Nebraska,13,0
+2020-02-29,Wisconsin,1,0
+2020-02-29,California,28,0
+2020-02-29,Washington,10,1
+2020-02-29,Massachusetts,1,0
+2020-03-01,Utah,1,0
+2020-03-01,Texas,11,0
+2020-03-01,Oregon,2,0
+2020-03-01,Arizona,1,0
+2020-03-01,Florida,2,0
+2020-03-01,Illinois,3,0
+2020-03-01,Nebraska,13,0
+2020-03-01,New York,1,0
+2020-03-01,Wisconsin,1,0
+2020-03-01,California,33,0
+2020-03-01,Washington,17,3
+2020-03-01,Rhode Island,2,0
+2020-03-01,Massachusetts,1,0
+2020-03-02,Utah,1,0
+2020-03-02,Texas,11,0
+2020-03-02,Oregon,2,0
+2020-03-02,Arizona,1,0
+2020-03-02,Florida,2,0
+2020-03-02,Georgia,2,0
+2020-03-02,Illinois,4,0
+2020-03-02,Nebraska,13,0
+2020-03-02,New York,1,0
+2020-03-02,Wisconsin,1,0
+2020-03-02,California,38,0
+2020-03-02,Washington,23,6
+2020-03-02,Rhode Island,2,0
+2020-03-02,Massachusetts,2,0
+2020-03-02,New Hampshire,1,0
+2020-03-03,Utah,1,0
+2020-03-03,Texas,11,0
+2020-03-03,Oregon,2,0
+2020-03-03,Arizona,2,0
+2020-03-03,Florida,3,0
+2020-03-03,Georgia,2,0
+2020-03-03,Illinois,4,0
+2020-03-03,Nebraska,13,0
+2020-03-03,New York,2,0
+2020-03-03,Wisconsin,1,0
+2020-03-03,California,45,0
+2020-03-03,Washington,32,10
+2020-03-03,Rhode Island,2,0
+2020-03-03,Massachusetts,2,0
+2020-03-03,New Hampshire,2,0
+2020-03-03,North Carolina,1,0
+2020-03-04,Utah,1,0
+2020-03-04,Texas,12,0
+2020-03-04,Oregon,2,0
+2020-03-04,Arizona,2,0
+2020-03-04,Florida,3,0
+2020-03-04,Georgia,2,0
+2020-03-04,Illinois,4,0
+2020-03-04,Nebraska,13,0
+2020-03-04,New York,11,0
+2020-03-04,Wisconsin,1,0
+2020-03-04,California,55,1
+2020-03-04,New Jersey,1,0
+2020-03-04,Washington,47,11
+2020-03-04,Rhode Island,2,0
+2020-03-04,Massachusetts,2,0
+2020-03-04,New Hampshire,2,0
+2020-03-04,North Carolina,1,0
+2020-03-05,Utah,1,0
+2020-03-05,Texas,16,0
+2020-03-05,Nevada,2,0
+2020-03-05,Oregon,2,0
+2020-03-05,Arizona,2,0
+2020-03-05,Florida,4,0
+2020-03-05,Georgia,2,0
+2020-03-05,Colorado,2,0
+2020-03-05,Illinois,5,0
+2020-03-05,Maryland,3,0
+2020-03-05,Nebraska,13,0
+2020-03-05,New York,22,0
+2020-03-05,Tennessee,1,0
+2020-03-05,Wisconsin,1,0
+2020-03-05,California,67,1
+2020-03-05,New Jersey,2,0
+2020-03-05,Washington,75,11
+2020-03-05,Rhode Island,2,0
+2020-03-05,Massachusetts,3,0
+2020-03-05,New Hampshire,2,0
+2020-03-05,North Carolina,1,0
+2020-03-06,Utah,3,0
+2020-03-06,Texas,19,0
+2020-03-06,Hawaii,1,0
+2020-03-06,Nevada,2,0
+2020-03-06,Oregon,2,0
+2020-03-06,Arizona,3,0
+2020-03-06,Florida,7,2
+2020-03-06,Georgia,3,0
+2020-03-06,Indiana,1,0
+2020-03-06,Colorado,8,0
+2020-03-06,Illinois,6,0
+2020-03-06,Kentucky,1,0
+2020-03-06,Maryland,3,0
+2020-03-06,Nebraska,14,0
+2020-03-06,New York,44,0
+2020-03-06,Oklahoma,1,0
+2020-03-06,Minnesota,1,0
+2020-03-06,Tennessee,1,0
+2020-03-06,Wisconsin,1,0
+2020-03-06,California,81,1
+2020-03-06,New Jersey,4,0
+2020-03-06,Washington,86,12
+2020-03-06,Pennsylvania,2,0
+2020-03-06,Rhode Island,3,0
+2020-03-06,Massachusetts,8,0
+2020-03-06,New Hampshire,2,0
+2020-03-06,North Carolina,2,0
+2020-03-06,South Carolina,2,0
+2020-03-07,Utah,3,0
+2020-03-07,Texas,19,0
+2020-03-07,Hawaii,1,0
+2020-03-07,Kansas,1,0
+2020-03-07,Nevada,2,0
+2020-03-07,Oregon,6,0
+2020-03-07,Arizona,5,0
+2020-03-07,Florida,12,2
+2020-03-07,Georgia,7,0
+2020-03-07,Indiana,1,0
+2020-03-07,Vermont,1,0
+2020-03-07,Colorado,8,0
+2020-03-07,Illinois,6,0
+2020-03-07,Kentucky,1,0
+2020-03-07,Maryland,3,0
+2020-03-07,Missouri,1,0
+2020-03-07,Nebraska,14,0
+2020-03-07,New York,89,0
+2020-03-07,Oklahoma,1,0
+2020-03-07,Virginia,1,0
+2020-03-07,Minnesota,1,0
+2020-03-07,Tennessee,1,0
+2020-03-07,Wisconsin,1,0
+2020-03-07,California,100,1
+2020-03-07,New Jersey,4,0
+2020-03-07,Washington,110,16
+2020-03-07,Pennsylvania,4,0
+2020-03-07,Rhode Island,3,0
+2020-03-07,Massachusetts,13,0
+2020-03-07,New Hampshire,4,0
+2020-03-07,North Carolina,2,0
+2020-03-07,South Carolina,2,0
+2020-03-07,District of Columbia,1,0
+2020-03-08,Iowa,3,0
+2020-03-08,Utah,3,0
+2020-03-08,Texas,23,0
+2020-03-08,Hawaii,2,0
+2020-03-08,Kansas,1,0
+2020-03-08,Nevada,4,0
+2020-03-08,Oregon,13,0
+2020-03-08,Arizona,5,0
+2020-03-08,Florida,13,2
+2020-03-08,Georgia,11,0
+2020-03-08,Indiana,2,0
+2020-03-08,Vermont,1,0
+2020-03-08,Colorado,8,0
+2020-03-08,Illinois,7,0
+2020-03-08,Kentucky,4,0
+2020-03-08,Maryland,5,0
+2020-03-08,Missouri,1,0
+2020-03-08,Nebraska,16,0
+2020-03-08,New York,106,0
+2020-03-08,Oklahoma,1,0
+2020-03-08,Virginia,2,0
+2020-03-08,Minnesota,2,0
+2020-03-08,Tennessee,3,0
+2020-03-08,Wisconsin,1,0
+2020-03-08,California,112,1
+2020-03-08,New Jersey,6,0
+2020-03-08,Washington,141,19
+2020-03-08,Connecticut,1,0
+2020-03-08,Pennsylvania,6,0
+2020-03-08,Rhode Island,3,0
+2020-03-08,Massachusetts,28,0
+2020-03-08,New Hampshire,4,0
+2020-03-08,North Carolina,2,0
+2020-03-08,South Carolina,6,0
+2020-03-08,District of Columbia,1,0
+2020-03-09,Iowa,8,0
+2020-03-09,Ohio,3,0
+2020-03-09,Utah,3,0
+2020-03-09,Texas,24,0
+2020-03-09,Hawaii,2,0
+2020-03-09,Kansas,1,0
+2020-03-09,Nevada,4,0
+2020-03-09,Oregon,13,0
+2020-03-09,Arizona,6,0
+2020-03-09,Florida,14,2
+2020-03-09,Georgia,17,0
+2020-03-09,Indiana,4,0
+2020-03-09,Vermont,1,0
+2020-03-09,Colorado,12,0
+2020-03-09,Illinois,11,0
+2020-03-09,Kentucky,5,0
+2020-03-09,Maryland,6,0
+2020-03-09,Missouri,1,0
+2020-03-09,Nebraska,16,0
+2020-03-09,New York,142,0
+2020-03-09,Oklahoma,1,0
+2020-03-09,Virginia,5,0
+2020-03-09,Louisiana,1,0
+2020-03-09,Minnesota,2,0
+2020-03-09,Tennessee,4,0
+2020-03-09,Wisconsin,2,0
+2020-03-09,California,172,2
+2020-03-09,New Jersey,11,0
+2020-03-09,Washington,179,22
+2020-03-09,Connecticut,2,0
+2020-03-09,Pennsylvania,10,0
+2020-03-09,Rhode Island,3,0
+2020-03-09,Massachusetts,41,0
+2020-03-09,New Hampshire,4,0
+2020-03-09,North Carolina,7,0
+2020-03-09,South Carolina,7,0
+2020-03-09,District of Columbia,4,0
+2020-03-10,Iowa,13,0
+2020-03-10,Ohio,3,0
+2020-03-10,Utah,4,0
+2020-03-10,Texas,31,0
+2020-03-10,Hawaii,2,0
+2020-03-10,Kansas,1,0
+2020-03-10,Nevada,4,0
+2020-03-10,Oregon,14,0
+2020-03-10,Arizona,6,0
+2020-03-10,Florida,23,2
+2020-03-10,Georgia,22,0
+2020-03-10,Indiana,6,0
+2020-03-10,Vermont,1,0
+2020-03-10,Colorado,17,0
+2020-03-10,Illinois,19,0
+2020-03-10,Kentucky,7,0
+2020-03-10,Maryland,9,0
+2020-03-10,Michigan,2,0
+2020-03-10,Missouri,1,0
+2020-03-10,Nebraska,17,0
+2020-03-10,New York,173,0
+2020-03-10,Oklahoma,2,0
+2020-03-10,Virginia,8,0
+2020-03-10,Louisiana,6,0
+2020-03-10,Minnesota,3,0
+2020-03-10,Tennessee,7,0
+2020-03-10,Wisconsin,3,0
+2020-03-10,California,179,3
+2020-03-10,New Jersey,15,1
+2020-03-10,Washington,279,24
+2020-03-10,Connecticut,2,0
+2020-03-10,Pennsylvania,12,0
+2020-03-10,Rhode Island,5,0
+2020-03-10,South Dakota,5,1
+2020-03-10,Massachusetts,92,0
+2020-03-10,New Hampshire,5,0
+2020-03-10,North Carolina,7,0
+2020-03-10,South Carolina,9,0
+2020-03-10,District of Columbia,4,0
+2020-03-11,Iowa,14,0
+2020-03-11,Ohio,4,0
+2020-03-11,Utah,5,0
+2020-03-11,Texas,33,0
+2020-03-11,Hawaii,2,0
+2020-03-11,Kansas,1,0
+2020-03-11,Nevada,7,0
+2020-03-11,Oregon,20,0
+2020-03-11,Arizona,9,0
+2020-03-11,Florida,26,2
+2020-03-11,Georgia,31,0
+2020-03-11,Indiana,11,0
+2020-03-11,Vermont,2,0
+2020-03-11,Wyoming,1,0
+2020-03-11,Arkansas,1,0
+2020-03-11,Colorado,34,0
+2020-03-11,Delaware,1,0
+2020-03-11,Illinois,25,0
+2020-03-11,Kentucky,7,0
+2020-03-11,Maryland,13,0
+2020-03-11,Michigan,2,0
+2020-03-11,Missouri,1,0
+2020-03-11,Nebraska,23,0
+2020-03-11,New York,217,0
+2020-03-11,Oklahoma,2,0
+2020-03-11,Virginia,10,0
+2020-03-11,Louisiana,13,0
+2020-03-11,Minnesota,5,0
+2020-03-11,Tennessee,8,0
+2020-03-11,Wisconsin,6,0
+2020-03-11,California,202,4
+2020-03-11,New Jersey,23,1
+2020-03-11,New Mexico,4,0
+2020-03-11,Washington,338,29
+2020-03-11,Connecticut,3,0
+2020-03-11,Mississippi,1,0
+2020-03-11,North Dakota,1,0
+2020-03-11,Pennsylvania,16,0
+2020-03-11,Rhode Island,5,0
+2020-03-11,South Dakota,8,1
+2020-03-11,Massachusetts,95,0
+2020-03-11,New Hampshire,5,0
+2020-03-11,North Carolina,8,0
+2020-03-11,South Carolina,10,0
+2020-03-11,District of Columbia,10,0
+2020-03-12,Iowa,16,0
+2020-03-12,Ohio,5,0
+2020-03-12,Utah,7,0
+2020-03-12,Maine,1,0
+2020-03-12,Texas,41,0
+2020-03-12,Alaska,1,0
+2020-03-12,Hawaii,2,0
+2020-03-12,Kansas,5,1
+2020-03-12,Nevada,11,0
+2020-03-12,Oregon,30,0
+2020-03-12,Arizona,9,0
+2020-03-12,Florida,46,2
+2020-03-12,Georgia,31,1
+2020-03-12,Indiana,12,0
+2020-03-12,Vermont,2,0
+2020-03-12,Wyoming,1,0
+2020-03-12,Arkansas,6,0
+2020-03-12,Colorado,49,1
+2020-03-12,Delaware,4,0
+2020-03-12,Illinois,32,0
+2020-03-12,Kentucky,11,0
+2020-03-12,Maryland,13,0
+2020-03-12,Michigan,12,0
+2020-03-12,Missouri,2,0
+2020-03-12,Nebraska,24,0
+2020-03-12,New York,326,0
+2020-03-12,Oklahoma,2,0
+2020-03-12,Virginia,17,0
+2020-03-12,Louisiana,14,0
+2020-03-12,Minnesota,9,0
+2020-03-12,Tennessee,18,0
+2020-03-12,Wisconsin,8,0
+2020-03-12,California,252,4
+2020-03-12,New Jersey,29,1
+2020-03-12,New Mexico,6,0
+2020-03-12,Washington,419,32
+2020-03-12,Connecticut,6,0
+2020-03-12,Mississippi,1,0
+2020-03-12,North Dakota,1,0
+2020-03-12,Pennsylvania,22,0
+2020-03-12,Rhode Island,5,0
+2020-03-12,South Dakota,8,1
+2020-03-12,Massachusetts,108,0
+2020-03-12,New Hampshire,6,0
+2020-03-12,North Carolina,16,0
+2020-03-12,South Carolina,12,0
+2020-03-12,District of Columbia,10,0
+2020-03-13,Iowa,17,0
+2020-03-13,Ohio,13,0
+2020-03-13,Utah,7,0
+2020-03-13,Idaho,1,0
+2020-03-13,Maine,2,0
+2020-03-13,Texas,58,0
+2020-03-13,Alaska,1,0
+2020-03-13,Hawaii,2,0
+2020-03-13,Kansas,6,1
+2020-03-13,Nevada,19,0
+2020-03-13,Oregon,30,0
+2020-03-13,Alabama,6,0
+2020-03-13,Arizona,9,0
+2020-03-13,Florida,70,2
+2020-03-13,Georgia,41,1
+2020-03-13,Indiana,12,0
+2020-03-13,Montana,4,0
+2020-03-13,Vermont,2,0
+2020-03-13,Wyoming,2,0
+2020-03-13,Arkansas,7,0
+2020-03-13,Colorado,78,2
+2020-03-13,Delaware,4,0
+2020-03-13,Illinois,46,0
+2020-03-13,Kentucky,11,0
+2020-03-13,Maryland,18,0
+2020-03-13,Michigan,25,0
+2020-03-13,Missouri,4,0
+2020-03-13,Nebraska,27,0
+2020-03-13,New York,421,0
+2020-03-13,Oklahoma,3,0
+2020-03-13,Virginia,30,0
+2020-03-13,Louisiana,36,0
+2020-03-13,Minnesota,14,0
+2020-03-13,Tennessee,26,0
+2020-03-13,Wisconsin,19,0
+2020-03-13,California,320,5
+2020-03-13,New Jersey,50,1
+2020-03-13,New Mexico,10,0
+2020-03-13,Washington,511,37
+2020-03-13,Connecticut,11,0
+2020-03-13,Mississippi,6,0
+2020-03-13,Puerto Rico,3,0
+2020-03-13,North Dakota,1,0
+2020-03-13,Pennsylvania,41,0
+2020-03-13,Rhode Island,20,0
+2020-03-13,South Dakota,9,1
+2020-03-13,Massachusetts,123,0
+2020-03-13,New Hampshire,7,0
+2020-03-13,North Carolina,18,0
+2020-03-13,South Carolina,13,0
+2020-03-13,District of Columbia,10,0
+2020-03-14,Iowa,18,0
+2020-03-14,Ohio,26,0
+2020-03-14,Utah,21,0
+2020-03-14,Idaho,5,0
+2020-03-14,Maine,3,0
+2020-03-14,Texas,69,0
+2020-03-14,Alaska,1,0
+2020-03-14,Hawaii,4,0
+2020-03-14,Kansas,8,1
+2020-03-14,Nevada,21,0
+2020-03-14,Oregon,36,1
+2020-03-14,Alabama,12,0
+2020-03-14,Arizona,12,0
+2020-03-14,Florida,70,3
+2020-03-14,Georgia,65,1
+2020-03-14,Indiana,15,0
+2020-03-14,Montana,6,0
+2020-03-14,Vermont,5,0
+2020-03-14,Wyoming,3,0
+2020-03-14,Arkansas,9,0
+2020-03-14,Colorado,103,2
+2020-03-14,Delaware,4,0
+2020-03-14,Illinois,66,0
+2020-03-14,Kentucky,18,0
+2020-03-14,Maryland,27,0
+2020-03-14,Michigan,33,0
+2020-03-14,Missouri,5,0
+2020-03-14,Nebraska,29,0
+2020-03-14,New York,610,2
+2020-03-14,Oklahoma,4,0
+2020-03-14,Virginia,42,1
+2020-03-14,Louisiana,77,1
+2020-03-14,Minnesota,21,0
+2020-03-14,Tennessee,32,0
+2020-03-14,Wisconsin,27,0
+2020-03-14,California,381,5
+2020-03-14,New Jersey,75,2
+2020-03-14,New Mexico,13,0
+2020-03-14,Washington,609,40
+2020-03-14,Connecticut,20,0
+2020-03-14,Mississippi,6,0
+2020-03-14,Puerto Rico,4,0
+2020-03-14,North Dakota,1,0
+2020-03-14,Pennsylvania,47,0
+2020-03-14,Rhode Island,20,0
+2020-03-14,South Dakota,9,1
+2020-03-14,Massachusetts,138,0
+2020-03-14,New Hampshire,7,0
+2020-03-14,North Carolina,25,0
+2020-03-14,South Carolina,19,0
+2020-03-14,Virgin Islands,1,0
+2020-03-14,District of Columbia,16,0
+2020-03-15,Guam,3,0
+2020-03-15,Iowa,22,0
+2020-03-15,Ohio,37,0
+2020-03-15,Utah,29,0
+2020-03-15,Idaho,5,0
+2020-03-15,Maine,12,0
+2020-03-15,Texas,80,0
+2020-03-15,Alaska,1,0
+2020-03-15,Hawaii,7,0
+2020-03-15,Kansas,9,1
+2020-03-15,Nevada,26,0
+2020-03-15,Oregon,39,1
+2020-03-15,Alabama,23,0
+2020-03-15,Arizona,13,0
+2020-03-15,Florida,109,3
+2020-03-15,Georgia,97,1
+2020-03-15,Indiana,19,0
+2020-03-15,Montana,6,0
+2020-03-15,Vermont,8,0
+2020-03-15,Wyoming,3,0
+2020-03-15,Arkansas,16,0
+2020-03-15,Colorado,136,2
+2020-03-15,Delaware,7,0
+2020-03-15,Illinois,94,0
+2020-03-15,Kentucky,21,0
+2020-03-15,Maryland,32,0
+2020-03-15,Michigan,53,0
+2020-03-15,Missouri,5,0
+2020-03-15,Nebraska,31,0
+2020-03-15,New York,732,6
+2020-03-15,Oklahoma,8,0
+2020-03-15,Virginia,45,1
+2020-03-15,Louisiana,103,2
+2020-03-15,Minnesota,35,0
+2020-03-15,Tennessee,39,0
+2020-03-15,Wisconsin,33,0
+2020-03-15,California,478,6
+2020-03-15,New Jersey,98,2
+2020-03-15,New Mexico,17,0
+2020-03-15,Washington,675,42
+2020-03-15,Connecticut,26,0
+2020-03-15,Mississippi,10,0
+2020-03-15,Puerto Rico,5,0
+2020-03-15,North Dakota,1,0
+2020-03-15,Pennsylvania,68,0
+2020-03-15,Rhode Island,20,0
+2020-03-15,South Dakota,9,1
+2020-03-15,Massachusetts,164,0
+2020-03-15,New Hampshire,13,0
+2020-03-15,North Carolina,32,0
+2020-03-15,South Carolina,28,0
+2020-03-15,Virgin Islands,1,0
+2020-03-15,District of Columbia,17,0
+2020-03-16,Guam,3,0
+2020-03-16,Iowa,22,0
+2020-03-16,Ohio,50,0
+2020-03-16,Utah,40,0
+2020-03-16,Idaho,5,0
+2020-03-16,Maine,17,0
+2020-03-16,Texas,87,1
+2020-03-16,Alaska,3,0
+2020-03-16,Hawaii,10,0
+2020-03-16,Kansas,11,1
+2020-03-16,Nevada,45,1
+2020-03-16,Oregon,46,1
+2020-03-16,Alabama,29,0
+2020-03-16,Arizona,18,0
+2020-03-16,Florida,141,4
+2020-03-16,Georgia,118,1
+2020-03-16,Indiana,24,1
+2020-03-16,Montana,8,0
+2020-03-16,Vermont,12,0
+2020-03-16,Wyoming,10,0
+2020-03-16,Arkansas,22,0
+2020-03-16,Colorado,161,2
+2020-03-16,Delaware,8,0
+2020-03-16,Illinois,104,0
+2020-03-16,Kentucky,22,1
+2020-03-16,Maryland,39,0
+2020-03-16,Michigan,54,0
+2020-03-16,Missouri,9,0
+2020-03-16,Nebraska,33,0
+2020-03-16,New York,950,10
+2020-03-16,Oklahoma,10,0
+2020-03-16,Virginia,51,1
+2020-03-16,Louisiana,137,3
+2020-03-16,Minnesota,54,0
+2020-03-16,Tennessee,52,0
+2020-03-16,Wisconsin,47,0
+2020-03-16,California,588,11
+2020-03-16,New Jersey,176,3
+2020-03-16,New Mexico,21,0
+2020-03-16,Washington,794,48
+2020-03-16,Connecticut,41,0
+2020-03-16,Mississippi,12,0
+2020-03-16,Puerto Rico,5,0
+2020-03-16,North Dakota,1,0
+2020-03-16,Pennsylvania,81,0
+2020-03-16,Rhode Island,21,0
+2020-03-16,South Dakota,10,1
+2020-03-16,Massachusetts,197,0
+2020-03-16,New Hampshire,17,0
+2020-03-16,North Carolina,34,0
+2020-03-16,South Carolina,33,1
+2020-03-16,Virgin Islands,2,0
+2020-03-16,District of Columbia,22,0
+2020-03-17,Guam,3,0
+2020-03-17,Iowa,29,0
+2020-03-17,Ohio,67,0
+2020-03-17,Utah,51,0
+2020-03-17,Idaho,9,0
+2020-03-17,Maine,32,0
+2020-03-17,Texas,106,1
+2020-03-17,Alaska,6,0
+2020-03-17,Hawaii,14,0
+2020-03-17,Kansas,17,1
+2020-03-17,Nevada,55,1
+2020-03-17,Oregon,66,2
+2020-03-17,Alabama,39,0
+2020-03-17,Arizona,20,0
+2020-03-17,Florida,210,6
+2020-03-17,Georgia,142,1
+2020-03-17,Indiana,30,2
+2020-03-17,Montana,8,0
+2020-03-17,Vermont,14,0
+2020-03-17,Wyoming,15,0
+2020-03-17,Arkansas,22,0
+2020-03-17,Colorado,183,3
+2020-03-17,Delaware,16,0
+2020-03-17,Illinois,159,1
+2020-03-17,Kentucky,26,1
+2020-03-17,Maryland,57,0
+2020-03-17,Michigan,65,0
+2020-03-17,Missouri,16,0
+2020-03-17,Nebraska,36,0
+2020-03-17,New York,1375,18
+2020-03-17,Oklahoma,18,0
+2020-03-17,Virginia,67,2
+2020-03-17,Louisiana,196,5
+2020-03-17,Minnesota,60,0
+2020-03-17,Tennessee,73,0
+2020-03-17,Wisconsin,72,0
+2020-03-17,California,732,14
+2020-03-17,New Jersey,268,3
+2020-03-17,New Mexico,23,0
+2020-03-17,Washington,908,54
+2020-03-17,Connecticut,68,0
+2020-03-17,Mississippi,21,0
+2020-03-17,Puerto Rico,5,0
+2020-03-17,North Dakota,5,0
+2020-03-17,Pennsylvania,101,0
+2020-03-17,Rhode Island,23,0
+2020-03-17,South Dakota,11,1
+2020-03-17,Massachusetts,218,0
+2020-03-17,New Hampshire,26,0
+2020-03-17,West Virginia,1,0
+2020-03-17,North Carolina,42,0
+2020-03-17,South Carolina,47,1
+2020-03-17,Virgin Islands,2,0
+2020-03-17,District of Columbia,31,0
+2020-03-18,Guam,8,0
+2020-03-18,Iowa,38,0
+2020-03-18,Ohio,90,0
+2020-03-18,Utah,65,0
+2020-03-18,Idaho,11,0
+2020-03-18,Maine,43,0
+2020-03-18,Texas,166,2
+2020-03-18,Alaska,9,0
+2020-03-18,Hawaii,16,0
+2020-03-18,Kansas,22,1
+2020-03-18,Nevada,82,1
+2020-03-18,Oregon,74,3
+2020-03-18,Alabama,51,0
+2020-03-18,Arizona,28,0
+2020-03-18,Florida,326,7
+2020-03-18,Georgia,193,3
+2020-03-18,Indiana,39,2
+2020-03-18,Montana,12,0
+2020-03-18,Vermont,19,0
+2020-03-18,Wyoming,17,0
+2020-03-18,Arkansas,33,0
+2020-03-18,Colorado,216,3
+2020-03-18,Delaware,26,0
+2020-03-18,Illinois,286,1
+2020-03-18,Kentucky,35,1
+2020-03-18,Maryland,85,1
+2020-03-18,Michigan,80,1
+2020-03-18,Missouri,21,1
+2020-03-18,Nebraska,43,0
+2020-03-18,New York,2387,32
+2020-03-18,Oklahoma,29,0
+2020-03-18,Virginia,78,2
+2020-03-18,Louisiana,280,7
+2020-03-18,Minnesota,77,0
+2020-03-18,Tennessee,98,0
+2020-03-18,Wisconsin,106,0
+2020-03-18,California,893,17
+2020-03-18,New Jersey,427,5
+2020-03-18,New Mexico,28,0
+2020-03-18,Washington,1026,68
+2020-03-18,Connecticut,96,1
+2020-03-18,Mississippi,34,0
+2020-03-18,Puerto Rico,5,0
+2020-03-18,North Dakota,7,0
+2020-03-18,Pennsylvania,139,1
+2020-03-18,Rhode Island,33,0
+2020-03-18,South Dakota,11,1
+2020-03-18,Massachusetts,256,0
+2020-03-18,New Hampshire,39,0
+2020-03-18,West Virginia,2,0
+2020-03-18,North Carolina,66,0
+2020-03-18,South Carolina,60,1
+2020-03-18,Virgin Islands,3,0
+2020-03-18,District of Columbia,36,0
+2020-03-19,Guam,12,0
+2020-03-19,Iowa,44,0
+2020-03-19,Ohio,120,0
+2020-03-19,Utah,80,0
+2020-03-19,Idaho,23,0
+2020-03-19,Maine,52,0
+2020-03-19,Texas,248,4
+2020-03-19,Alaska,12,0
+2020-03-19,Hawaii,26,0
+2020-03-19,Kansas,35,1
+2020-03-19,Nevada,99,1
+2020-03-19,Oregon,87,3
+2020-03-19,Alabama,78,0
+2020-03-19,Arizona,47,0
+2020-03-19,Florida,434,8
+2020-03-19,Georgia,282,10
+2020-03-19,Indiana,56,2
+2020-03-19,Montana,19,0
+2020-03-19,Vermont,22,2
+2020-03-19,Wyoming,18,0
+2020-03-19,Arkansas,62,0
+2020-03-19,Colorado,278,5
+2020-03-19,Delaware,30,0
+2020-03-19,Illinois,420,4
+2020-03-19,Kentucky,47,2
+2020-03-19,Maryland,108,1
+2020-03-19,Michigan,334,3
+2020-03-19,Missouri,35,1
+2020-03-19,Nebraska,47,0
+2020-03-19,New York,4161,39
+2020-03-19,Oklahoma,44,1
+2020-03-19,Virginia,94,2
+2020-03-19,Louisiana,392,10
+2020-03-19,Minnesota,89,0
+2020-03-19,Tennessee,155,0
+2020-03-19,Wisconsin,155,2
+2020-03-19,California,1067,19
+2020-03-19,New Jersey,735,9
+2020-03-19,New Mexico,35,0
+2020-03-19,Washington,1228,75
+2020-03-19,Connecticut,159,4
+2020-03-19,Mississippi,50,1
+2020-03-19,Puerto Rico,6,0
+2020-03-19,North Dakota,19,0
+2020-03-19,Pennsylvania,187,1
+2020-03-19,Rhode Island,44,0
+2020-03-19,South Dakota,14,1
+2020-03-19,Massachusetts,328,0
+2020-03-19,New Hampshire,44,0
+2020-03-19,West Virginia,5,0
+2020-03-19,North Carolina,104,0
+2020-03-19,South Carolina,81,1
+2020-03-19,Virgin Islands,3,0
+2020-03-19,District of Columbia,39,0
+2020-03-20,Guam,14,0
+2020-03-20,Iowa,45,0
+2020-03-20,Ohio,169,1
+2020-03-20,Utah,112,0
+2020-03-20,Idaho,31,0
+2020-03-20,Maine,57,0
+2020-03-20,Texas,377,5
+2020-03-20,Alaska,14,0
+2020-03-20,Hawaii,37,0
+2020-03-20,Kansas,49,1
+2020-03-20,Nevada,165,2
+2020-03-20,Oregon,114,3
+2020-03-20,Alabama,106,0
+2020-03-20,Arizona,70,1
+2020-03-20,Florida,564,9
+2020-03-20,Georgia,482,14
+2020-03-20,Indiana,79,3
+2020-03-20,Montana,19,0
+2020-03-20,Vermont,29,2
+2020-03-20,Wyoming,22,0
+2020-03-20,Arkansas,100,0
+2020-03-20,Colorado,364,5
+2020-03-20,Delaware,39,0
+2020-03-20,Illinois,583,5
+2020-03-20,Kentucky,63,2
+2020-03-20,Maryland,150,2
+2020-03-20,Michigan,548,4
+2020-03-20,Missouri,73,3
+2020-03-20,Nebraska,53,0
+2020-03-20,New York,7113,68
+2020-03-20,Oklahoma,49,1
+2020-03-20,Virginia,115,2
+2020-03-20,Louisiana,537,10
+2020-03-20,Minnesota,115,0
+2020-03-20,Tennessee,237,0
+2020-03-20,Wisconsin,216,3
+2020-03-20,California,1283,24
+2020-03-20,New Jersey,896,11
+2020-03-20,New Mexico,43,0
+2020-03-20,Washington,1404,83
+2020-03-20,Connecticut,194,4
+2020-03-20,Mississippi,80,1
+2020-03-20,Puerto Rico,14,0
+2020-03-20,North Dakota,27,0
+2020-03-20,Pennsylvania,269,1
+2020-03-20,Rhode Island,44,0
+2020-03-20,South Dakota,14,1
+2020-03-20,Massachusetts,413,1
+2020-03-20,New Hampshire,55,0
+2020-03-20,West Virginia,8,0
+2020-03-20,North Carolina,144,0
+2020-03-20,South Carolina,126,3
+2020-03-20,Virgin Islands,6,0
+2020-03-20,District of Columbia,71,0
+2020-03-21,Guam,15,0
+2020-03-21,Iowa,68,0
+2020-03-21,Ohio,247,3
+2020-03-21,Utah,138,0
+2020-03-21,Idaho,42,0
+2020-03-21,Maine,70,0
+2020-03-21,Texas,547,5
+2020-03-21,Alaska,21,0
+2020-03-21,Hawaii,48,0
+2020-03-21,Kansas,57,2
+2020-03-21,Nevada,165,2
+2020-03-21,Oregon,137,4
+2020-03-21,Alabama,131,0
+2020-03-21,Arizona,104,1
+2020-03-21,Florida,764,11
+2020-03-21,Georgia,552,20
+2020-03-21,Indiana,126,4
+2020-03-21,Montana,29,0
+2020-03-21,Vermont,49,2
+2020-03-21,Wyoming,24,0
+2020-03-21,Arkansas,118,0
+2020-03-21,Colorado,475,6
+2020-03-21,Delaware,45,0
+2020-03-21,Illinois,751,6
+2020-03-21,Kentucky,84,3
+2020-03-21,Maryland,195,3
+2020-03-21,Michigan,787,6
+2020-03-21,Missouri,93,3
+2020-03-21,Nebraska,61,0
+2020-03-21,New York,10371,95
+2020-03-21,Oklahoma,53,1
+2020-03-21,Virginia,152,3
+2020-03-21,Louisiana,763,16
+2020-03-21,Minnesota,138,1
+2020-03-21,Tennessee,312,2
+2020-03-21,Wisconsin,281,4
+2020-03-21,California,1544,28
+2020-03-21,New Jersey,1336,16
+2020-03-21,New Mexico,57,0
+2020-03-21,Washington,1655,95
+2020-03-21,Connecticut,223,5
+2020-03-21,Mississippi,140,1
+2020-03-21,Puerto Rico,21,1
+2020-03-21,North Dakota,28,0
+2020-03-21,Pennsylvania,388,2
+2020-03-21,Rhode Island,66,0
+2020-03-21,South Dakota,14,1
+2020-03-21,Massachusetts,525,2
+2020-03-21,New Hampshire,65,0
+2020-03-21,West Virginia,12,0
+2020-03-21,North Carolina,184,0
+2020-03-21,South Carolina,172,3
+2020-03-21,Virgin Islands,6,0
+2020-03-21,District of Columbia,77,1
+2020-03-22,Guam,27,1
+2020-03-22,Iowa,90,0
+2020-03-22,Ohio,351,3
+2020-03-22,Utah,182,1
+2020-03-22,Idaho,47,0
+2020-03-22,Maine,89,0
+2020-03-22,Texas,632,7
+2020-03-22,Alaska,22,0
+2020-03-22,Hawaii,56,0
+2020-03-22,Kansas,66,2
+2020-03-22,Nevada,190,2
+2020-03-22,Oregon,161,5
+2020-03-22,Alabama,157,0
+2020-03-22,Arizona,153,2
+2020-03-22,Florida,1000,13
+2020-03-22,Georgia,620,25
+2020-03-22,Indiana,201,6
+2020-03-22,Montana,34,0
+2020-03-22,Vermont,52,2
+2020-03-22,Wyoming,26,0
+2020-03-22,Arkansas,165,0
+2020-03-22,Colorado,591,7
+2020-03-22,Delaware,56,0
+2020-03-22,Illinois,1047,9
+2020-03-22,Kentucky,103,3
+2020-03-22,Maryland,245,3
+2020-03-22,Michigan,1033,9
+2020-03-22,Missouri,130,3
+2020-03-22,Nebraska,62,0
+2020-03-22,New York,15188,142
+2020-03-22,Oklahoma,67,2
+2020-03-22,Virginia,219,6
+2020-03-22,Louisiana,837,20
+2020-03-22,Minnesota,171,1
+2020-03-22,Tennessee,424,2
+2020-03-22,Wisconsin,382,4
+2020-03-22,California,1851,35
+2020-03-22,New Jersey,1914,20
+2020-03-22,New Mexico,65,0
+2020-03-22,Washington,1844,97
+2020-03-22,Connecticut,327,8
+2020-03-22,Mississippi,207,1
+2020-03-22,Puerto Rico,23,1
+2020-03-22,North Dakota,30,0
+2020-03-22,Pennsylvania,504,3
+2020-03-22,Rhode Island,83,0
+2020-03-22,South Dakota,21,1
+2020-03-22,Massachusetts,646,5
+2020-03-22,New Hampshire,78,0
+2020-03-22,West Virginia,16,0
+2020-03-22,North Carolina,269,0
+2020-03-22,South Carolina,194,3
+2020-03-22,Virgin Islands,17,0
+2020-03-22,District of Columbia,98,1
+2020-03-23,Guam,29,1
+2020-03-23,Iowa,105,0
+2020-03-23,Ohio,444,6
+2020-03-23,Utah,257,1
+2020-03-23,Idaho,50,0
+2020-03-23,Maine,107,0
+2020-03-23,Texas,728,7
+2020-03-23,Alaska,36,0
+2020-03-23,Hawaii,77,0
+2020-03-23,Kansas,82,2
+2020-03-23,Nevada,265,4
+2020-03-23,Oregon,191,5
+2020-03-23,Alabama,196,0
+2020-03-23,Arizona,234,2
+2020-03-23,Florida,1222,18
+2020-03-23,Georgia,800,25
+2020-03-23,Indiana,259,7
+2020-03-23,Montana,45,0
+2020-03-23,Vermont,75,2
+2020-03-23,Wyoming,28,0
+2020-03-23,Arkansas,201,0
+2020-03-23,Colorado,721,10
+2020-03-23,Delaware,87,0
+2020-03-23,Illinois,1285,12
+2020-03-23,Kentucky,124,3
+2020-03-23,Maryland,290,3
+2020-03-23,Michigan,1324,16
+2020-03-23,Missouri,183,4
+2020-03-23,Nebraska,73,0
+2020-03-23,New York,20899,183
+2020-03-23,Oklahoma,81,2
+2020-03-23,Virginia,254,6
+2020-03-23,Louisiana,1172,34
+2020-03-23,Minnesota,235,1
+2020-03-23,Tennessee,522,2
+2020-03-23,Wisconsin,418,5
+2020-03-23,California,2240,39
+2020-03-23,New Jersey,2844,27
+2020-03-23,New Mexico,83,0
+2020-03-23,Washington,2101,110
+2020-03-23,Connecticut,415,10
+2020-03-23,Mississippi,249,1
+2020-03-23,Puerto Rico,31,2
+2020-03-23,North Dakota,32,0
+2020-03-23,Pennsylvania,644,6
+2020-03-23,Rhode Island,106,0
+2020-03-23,South Dakota,28,1
+2020-03-23,Massachusetts,777,9
+2020-03-23,New Hampshire,101,1
+2020-03-23,West Virginia,16,0
+2020-03-23,North Carolina,302,0
+2020-03-23,South Carolina,299,5
+2020-03-23,Virgin Islands,17,0
+2020-03-23,District of Columbia,116,2
+2020-03-24,Guam,32,1
+2020-03-24,Iowa,124,1
+2020-03-24,Ohio,564,8
+2020-03-24,Utah,298,1
+2020-03-24,Idaho,73,0
+2020-03-24,Maine,118,0
+2020-03-24,Texas,857,11
+2020-03-24,Alaska,42,0
+2020-03-24,Hawaii,90,0
+2020-03-24,Kansas,99,3
+2020-03-24,Nevada,315,6
+2020-03-24,Oregon,209,8
+2020-03-24,Alabama,242,0
+2020-03-24,Arizona,326,6
+2020-03-24,Florida,1467,19
+2020-03-24,Georgia,1095,38
+2020-03-24,Indiana,366,12
+2020-03-24,Montana,51,0
+2020-03-24,Vermont,95,7
+2020-03-24,Wyoming,37,0
+2020-03-24,Arkansas,231,2
+2020-03-24,Colorado,912,11
+2020-03-24,Delaware,104,0
+2020-03-24,Illinois,1535,16
+2020-03-24,Kentucky,157,3
+2020-03-24,Maryland,349,4
+2020-03-24,Michigan,1791,24
+2020-03-24,Missouri,255,5
+2020-03-24,Nebraska,77,0
+2020-03-24,New York,25703,256
+2020-03-24,Oklahoma,106,3
+2020-03-24,Virginia,290,7
+2020-03-24,Louisiana,1388,46
+2020-03-24,Minnesota,262,1
+2020-03-24,Tennessee,678,2
+2020-03-24,Wisconsin,481,5
+2020-03-24,California,2644,52
+2020-03-24,New Jersey,3675,44
+2020-03-24,New Mexico,100,0
+2020-03-24,Washington,2469,123
+2020-03-24,Connecticut,618,12
+2020-03-24,Mississippi,320,1
+2020-03-24,Puerto Rico,39,2
+2020-03-24,North Dakota,36,0
+2020-03-24,Pennsylvania,851,7
+2020-03-24,Rhode Island,124,0
+2020-03-24,South Dakota,30,1
+2020-03-24,Massachusetts,1159,11
+2020-03-24,New Hampshire,108,1
+2020-03-24,West Virginia,39,0
+2020-03-24,North Carolina,397,0
+2020-03-24,South Carolina,342,7
+2020-03-24,Virgin Islands,17,0
+2020-03-24,District of Columbia,137,2
+2020-03-25,Guam,32,1
+2020-03-25,Iowa,145,1
+2020-03-25,Ohio,706,11
+2020-03-25,Utah,346,1
+2020-03-25,Idaho,123,0
+2020-03-25,Maine,142,0
+2020-03-25,Texas,1119,12
+2020-03-25,Alaska,59,0
+2020-03-25,Hawaii,95,0
+2020-03-25,Kansas,132,3
+2020-03-25,Nevada,405,10
+2020-03-25,Oregon,266,10
+2020-03-25,Alabama,386,1
+2020-03-25,Arizona,402,6
+2020-03-25,Florida,1965,23
+2020-03-25,Georgia,1385,47
+2020-03-25,Indiana,479,14
+2020-03-25,Montana,65,0
+2020-03-25,Vermont,123,8
+2020-03-25,Wyoming,49,0
+2020-03-25,Arkansas,307,2
+2020-03-25,Colorado,1086,19
+2020-03-25,Delaware,119,0
+2020-03-25,Illinois,1874,21
+2020-03-25,Kentucky,198,5
+2020-03-25,Maryland,423,4
+2020-03-25,Michigan,2293,43
+2020-03-25,Missouri,377,8
+2020-03-25,Nebraska,84,0
+2020-03-25,New York,33116,375
+2020-03-25,Oklahoma,164,5
+2020-03-25,Virginia,390,9
+2020-03-25,Louisiana,1795,65
+2020-03-25,Minnesota,287,1
+2020-03-25,Tennessee,806,3
+2020-03-25,Wisconsin,623,7
+2020-03-25,California,3183,67
+2020-03-25,New Jersey,4402,62
+2020-03-25,New Mexico,112,1
+2020-03-25,Washington,2585,130
+2020-03-25,Connecticut,875,19
+2020-03-25,Mississippi,376,5
+2020-03-25,Puerto Rico,51,2
+2020-03-25,North Dakota,45,0
+2020-03-25,Pennsylvania,1151,11
+2020-03-25,Rhode Island,132,0
+2020-03-25,South Dakota,41,1
+2020-03-25,Massachusetts,1838,15
+2020-03-25,New Hampshire,137,1
+2020-03-25,West Virginia,51,0
+2020-03-25,North Carolina,561,1
+2020-03-25,South Carolina,424,7
+2020-03-25,Virgin Islands,17,0
+2020-03-25,District of Columbia,183,2
+2020-03-26,Guam,49,1
+2020-03-26,Iowa,179,1
+2020-03-26,Ohio,867,15
+2020-03-26,Utah,402,1
+2020-03-26,Idaho,189,3
+2020-03-26,Maine,155,0
+2020-03-26,Texas,1542,21
+2020-03-26,Alaska,69,0
+2020-03-26,Hawaii,106,0
+2020-03-26,Kansas,171,3
+2020-03-26,Nevada,535,10
+2020-03-26,Oregon,316,11
+2020-03-26,Alabama,538,3
+2020-03-26,Arizona,508,8
+2020-03-26,Florida,2477,29
+2020-03-26,Georgia,1641,56
+2020-03-26,Indiana,656,18
+2020-03-26,Montana,90,0
+2020-03-26,Vermont,158,9
+2020-03-26,Wyoming,56,0
+2020-03-26,Arkansas,350,3
+2020-03-26,Colorado,1432,24
+2020-03-26,Delaware,143,1
+2020-03-26,Illinois,2538,26
+2020-03-26,Kentucky,248,5
+2020-03-26,Maryland,581,4
+2020-03-26,Michigan,2877,63
+2020-03-26,Missouri,507,8
+2020-03-26,Nebraska,91,0
+2020-03-26,New York,39057,502
+2020-03-26,Oklahoma,248,7
+2020-03-26,Virginia,603,14
+2020-03-26,Louisiana,2305,83
+2020-03-26,Minnesota,346,2
+2020-03-26,Tennessee,981,3
+2020-03-26,Wisconsin,754,10
+2020-03-26,California,4060,82
+2020-03-26,New Jersey,6876,81
+2020-03-26,New Mexico,136,1
+2020-03-26,Washington,3208,151
+2020-03-26,Connecticut,1012,21
+2020-03-26,Mississippi,486,6
+2020-03-26,Puerto Rico,64,2
+2020-03-26,North Dakota,58,0
+2020-03-26,Pennsylvania,1690,16
+2020-03-26,Rhode Island,165,0
+2020-03-26,South Dakota,46,1
+2020-03-26,Massachusetts,2417,25
+2020-03-26,New Hampshire,158,1
+2020-03-26,West Virginia,76,0
+2020-03-26,North Carolina,637,2
+2020-03-26,South Carolina,456,9
+2020-03-26,Virgin Islands,17,0
+2020-03-26,District of Columbia,231,3
+2020-03-27,Guam,53,1
+2020-03-27,Iowa,235,3
+2020-03-27,Ohio,1144,22
+2020-03-27,Utah,480,2
+2020-03-27,Idaho,231,4
+2020-03-27,Maine,168,1
+2020-03-27,Texas,1940,23
+2020-03-27,Alaska,85,1
+2020-03-27,Hawaii,120,0
+2020-03-27,Kansas,212,4
+2020-03-27,Nevada,621,10
+2020-03-27,Oregon,414,12
+2020-03-27,Alabama,639,4
+2020-03-27,Arizona,665,15
+2020-03-27,Florida,3198,46
+2020-03-27,Georgia,2198,64
+2020-03-27,Indiana,982,26
+2020-03-27,Montana,121,1
+2020-03-27,Vermont,184,10
+2020-03-27,Wyoming,73,0
+2020-03-27,Arkansas,385,3
+2020-03-27,Colorado,1735,31
+2020-03-27,Delaware,165,2
+2020-03-27,Illinois,3029,37
+2020-03-27,Kentucky,302,8
+2020-03-27,Maryland,775,5
+2020-03-27,Michigan,3655,93
+2020-03-27,Missouri,670,9
+2020-03-27,Nebraska,99,2
+2020-03-27,New York,44745,645
+2020-03-27,Oklahoma,322,8
+2020-03-27,Virginia,605,14
+2020-03-27,Louisiana,2746,119
+2020-03-27,Minnesota,398,4
+2020-03-27,Tennessee,1180,6
+2020-03-27,Wisconsin,930,16
+2020-03-27,California,4914,102
+2020-03-27,New Jersey,8825,108
+2020-03-27,New Mexico,191,1
+2020-03-27,Washington,3770,177
+2020-03-27,Connecticut,1291,27
+2020-03-27,Mississippi,579,8
+2020-03-27,Puerto Rico,79,3
+2020-03-27,North Dakota,68,1
+2020-03-27,Pennsylvania,2217,23
+2020-03-27,Rhode Island,203,0
+2020-03-27,South Dakota,58,1
+2020-03-27,Massachusetts,3240,35
+2020-03-27,New Hampshire,187,2
+2020-03-27,West Virginia,96,0
+2020-03-27,North Carolina,782,3
+2020-03-27,South Carolina,539,13
+2020-03-27,Virgin Islands,19,0
+2020-03-27,District of Columbia,267,3
+2020-03-28,Guam,57,1
+2020-03-28,Iowa,298,3
+2020-03-28,Ohio,1406,25
+2020-03-28,Utah,608,2
+2020-03-28,Idaho,261,5
+2020-03-28,Maine,211,1
+2020-03-28,Texas,2158,29
+2020-03-28,Alaska,102,1
+2020-03-28,Hawaii,151,0
+2020-03-28,Kansas,271,6
+2020-03-28,Nevada,738,14
+2020-03-28,Oregon,479,13
+2020-03-28,Alabama,720,4
+2020-03-28,Arizona,773,15
+2020-03-28,Florida,4038,56
+2020-03-28,Georgia,2447,79
+2020-03-28,Indiana,1232,31
+2020-03-28,Montana,147,1
+2020-03-28,Vermont,211,12
+2020-03-28,Wyoming,84,0
+2020-03-28,Arkansas,409,5
+2020-03-28,Colorado,2061,44
+2020-03-28,Delaware,214,5
+2020-03-28,Illinois,3547,50
+2020-03-28,Kentucky,394,9
+2020-03-28,Maryland,1066,10
+2020-03-28,Michigan,4634,111
+2020-03-28,Missouri,837,10
+2020-03-28,Nebraska,121,2
+2020-03-28,New York,53516,935
+2020-03-28,Oklahoma,377,15
+2020-03-28,Virginia,739,17
+2020-03-28,Louisiana,3315,137
+2020-03-28,Minnesota,440,5
+2020-03-28,Tennessee,1363,6
+2020-03-28,Wisconsin,1042,17
+2020-03-28,California,5565,121
+2020-03-28,New Jersey,11124,140
+2020-03-28,New Mexico,208,2
+2020-03-28,Washington,4311,191
+2020-03-28,Connecticut,1524,33
+2020-03-28,Mississippi,669,13
+2020-03-28,Puerto Rico,100,3
+2020-03-28,North Dakota,93,1
+2020-03-28,Pennsylvania,2815,35
+2020-03-28,Rhode Island,239,2
+2020-03-28,South Dakota,68,1
+2020-03-28,Massachusetts,4257,44
+2020-03-28,New Hampshire,214,2
+2020-03-28,West Virginia,113,0
+2020-03-28,North Carolina,971,4
+2020-03-28,South Carolina,660,15
+2020-03-28,Virgin Islands,19,0
+2020-03-28,District of Columbia,304,4
+2020-03-28,Northern Mariana Islands,2,0
+2020-03-29,Guam,58,1
+2020-03-29,Iowa,336,4
+2020-03-29,Ohio,1665,30
+2020-03-29,Utah,719,2
+2020-03-29,Idaho,310,6
+2020-03-29,Maine,253,3
+2020-03-29,Texas,2709,35
+2020-03-29,Alaska,114,1
+2020-03-29,Hawaii,175,0
+2020-03-29,Kansas,332,7
+2020-03-29,Nevada,920,15
+2020-03-29,Oregon,548,13
+2020-03-29,Alabama,830,5
+2020-03-29,Arizona,929,18
+2020-03-29,Florida,4942,59
+2020-03-29,Georgia,2683,83
+2020-03-29,Indiana,1514,32
+2020-03-29,Montana,161,1
+2020-03-29,Vermont,235,12
+2020-03-29,Wyoming,87,0
+2020-03-29,Arkansas,449,6
+2020-03-29,Colorado,2315,47
+2020-03-29,Delaware,232,6
+2020-03-29,Illinois,4613,70
+2020-03-29,Kentucky,439,9
+2020-03-29,Maryland,1244,11
+2020-03-29,Michigan,5486,132
+2020-03-29,Missouri,902,12
+2020-03-29,Nebraska,136,2
+2020-03-29,New York,59783,1180
+2020-03-29,Oklahoma,429,16
+2020-03-29,Virginia,889,22
+2020-03-29,Louisiana,3539,152
+2020-03-29,Minnesota,504,9
+2020-03-29,Tennessee,1569,7
+2020-03-29,Wisconsin,1120,17
+2020-03-29,California,6266,130
+2020-03-29,New Jersey,13386,161
+2020-03-29,New Mexico,237,2
+2020-03-29,Washington,4896,207
+2020-03-29,Connecticut,1993,34
+2020-03-29,Mississippi,759,14
+2020-03-29,Puerto Rico,127,5
+2020-03-29,North Dakota,97,1
+2020-03-29,Pennsylvania,3441,40
+2020-03-29,Rhode Island,294,3
+2020-03-29,South Dakota,90,1
+2020-03-29,Massachusetts,4955,48
+2020-03-29,New Hampshire,258,3
+2020-03-29,West Virginia,124,1
+2020-03-29,North Carolina,1164,6
+2020-03-29,South Carolina,774,16
+2020-03-29,Virgin Islands,23,0
+2020-03-29,District of Columbia,342,5
+2020-03-29,Northern Mariana Islands,2,0
+2020-03-30,Guam,60,1
+2020-03-30,Iowa,424,6
+2020-03-30,Ohio,1933,40
+2020-03-30,Utah,806,4
+2020-03-30,Idaho,415,7
+2020-03-30,Maine,275,3
+2020-03-30,Texas,3036,46
+2020-03-30,Alaska,119,2
+2020-03-30,Hawaii,204,0
+2020-03-30,Kansas,373,9
+2020-03-30,Nevada,1044,18
+2020-03-30,Oregon,606,16
+2020-03-30,Alabama,947,11
+2020-03-30,Arizona,1169,20
+2020-03-30,Florida,5694,71
+2020-03-30,Georgia,3032,102
+2020-03-30,Indiana,1788,35
+2020-03-30,Montana,177,4
+2020-03-30,Vermont,256,12
+2020-03-30,Wyoming,95,0
+2020-03-30,Arkansas,508,7
+2020-03-30,Colorado,2628,51
+2020-03-30,Delaware,264,7
+2020-03-30,Illinois,5070,84
+2020-03-30,Kentucky,480,11
+2020-03-30,Maryland,1414,15
+2020-03-30,Michigan,6508,197
+2020-03-30,Missouri,1049,13
+2020-03-30,Nebraska,185,3
+2020-03-30,New York,67462,1512
+2020-03-30,Oklahoma,481,17
+2020-03-30,Virginia,1020,26
+2020-03-30,Louisiana,4024,186
+2020-03-30,Minnesota,576,10
+2020-03-30,Tennessee,1721,13
+2020-03-30,Wisconsin,1267,20
+2020-03-30,California,7421,146
+2020-03-30,New Jersey,16636,199
+2020-03-30,New Mexico,281,4
+2020-03-30,Washington,5179,221
+2020-03-30,Connecticut,2571,36
+2020-03-30,Mississippi,848,16
+2020-03-30,Puerto Rico,174,6
+2020-03-30,North Dakota,108,3
+2020-03-30,Pennsylvania,4156,48
+2020-03-30,Rhode Island,408,4
+2020-03-30,South Dakota,100,1
+2020-03-30,Massachusetts,5752,56
+2020-03-30,New Hampshire,314,3
+2020-03-30,West Virginia,145,1
+2020-03-30,North Carolina,1302,6
+2020-03-30,South Carolina,925,18
+2020-03-30,Virgin Islands,30,0
+2020-03-30,District of Columbia,401,9
+2020-03-30,Northern Mariana Islands,2,0
+2020-03-31,Guam,139,2
+2020-03-31,Iowa,498,7
+2020-03-31,Ohio,2199,55
+2020-03-31,Utah,887,5
+2020-03-31,Idaho,526,9
+2020-03-31,Maine,303,5
+2020-03-31,Texas,3570,57
+2020-03-31,Alaska,133,2
+2020-03-31,Hawaii,224,1
+2020-03-31,Kansas,434,10
+2020-03-31,Nevada,1113,26
+2020-03-31,Oregon,690,18
+2020-03-31,Alabama,999,13
+2020-03-31,Arizona,1298,24
+2020-03-31,Florida,6741,85
+2020-03-31,Georgia,4116,125
+2020-03-31,Indiana,2159,50
+2020-03-31,Montana,198,5
+2020-03-31,Vermont,293,13
+2020-03-31,Wyoming,120,0
+2020-03-31,Arkansas,564,8
+2020-03-31,Colorado,2990,69
+2020-03-31,Delaware,319,10
+2020-03-31,Illinois,5992,107
+2020-03-31,Kentucky,590,18
+2020-03-31,Maryland,1662,18
+2020-03-31,Michigan,7629,264
+2020-03-31,Missouri,1350,15
+2020-03-31,Nebraska,193,4
+2020-03-31,New York,76211,1929
+2020-03-31,Oklahoma,566,23
+2020-03-31,Virginia,1249,27
+2020-03-31,Louisiana,5237,240
+2020-03-31,Minnesota,629,12
+2020-03-31,Tennessee,2049,13
+2020-03-31,Wisconsin,1351,25
+2020-03-31,California,8582,183
+2020-03-31,New Jersey,18696,267
+2020-03-31,New Mexico,315,5
+2020-03-31,Washington,5292,226
+2020-03-31,Connecticut,3128,69
+2020-03-31,Mississippi,937,20
+2020-03-31,Puerto Rico,239,8
+2020-03-31,North Dakota,126,3
+2020-03-31,Pennsylvania,4997,72
+2020-03-31,Rhode Island,488,8
+2020-03-31,South Dakota,107,1
+2020-03-31,Massachusetts,6620,89
+2020-03-31,New Hampshire,367,3
+2020-03-31,West Virginia,162,1
+2020-03-31,North Carolina,1526,10
+2020-03-31,South Carolina,1083,22
+2020-03-31,Virgin Islands,30,0
+2020-03-31,District of Columbia,495,9
+2020-03-31,Northern Mariana Islands,2,0
+2020-04-01,Guam,147,3
+2020-04-01,Iowa,549,9
+2020-04-01,Ohio,2547,65
+2020-04-01,Utah,1012,7
+2020-04-01,Idaho,669,9
+2020-04-01,Maine,344,7
+2020-04-01,Texas,4255,63
+2020-04-01,Alaska,143,2
+2020-04-01,Hawaii,258,1
+2020-04-01,Kansas,488,11
+2020-04-01,Nevada,1279,32
+2020-04-01,Oregon,736,19
+2020-04-01,Alabama,1106,28
+2020-04-01,Arizona,1413,29
+2020-04-01,Florida,7765,100
+2020-04-01,Georgia,4747,154
+2020-04-01,Indiana,2564,65
+2020-04-01,Montana,217,5
+2020-04-01,Vermont,321,16
+2020-04-01,Wyoming,137,0
+2020-04-01,Arkansas,624,10
+2020-04-01,Colorado,3346,80
+2020-04-01,Delaware,368,11
+2020-04-01,Illinois,6978,146
+2020-04-01,Kentucky,674,20
+2020-04-01,Maryland,1985,33
+2020-04-01,Michigan,9292,336
+2020-04-01,Missouri,1580,18
+2020-04-01,Nebraska,249,5
+2020-04-01,New York,84363,2415
+2020-04-01,Oklahoma,719,30
+2020-04-01,Virginia,1511,34
+2020-04-01,Louisiana,6424,273
+2020-04-01,Minnesota,689,17
+2020-04-01,Tennessee,2689,23
+2020-04-01,Wisconsin,1550,33
+2020-04-01,California,9816,212
+2020-04-01,New Jersey,22255,355
+2020-04-01,New Mexico,363,6
+2020-04-01,Washington,5588,249
+2020-04-01,Connecticut,3557,85
+2020-04-01,Mississippi,1073,22
+2020-04-01,Puerto Rico,286,11
+2020-04-01,North Dakota,147,3
+2020-04-01,Pennsylvania,5805,74
+2020-04-01,Rhode Island,566,10
+2020-04-01,South Dakota,128,2
+2020-04-01,Massachusetts,7738,122
+2020-04-01,New Hampshire,415,4
+2020-04-01,West Virginia,191,2
+2020-04-01,North Carolina,1580,11
+2020-04-01,South Carolina,1293,26
+2020-04-01,Virgin Islands,30,0
+2020-04-01,District of Columbia,586,11
+2020-04-01,Northern Mariana Islands,6,1
+2020-04-02,Guam,152,3
+2020-04-02,Iowa,614,11
+2020-04-02,Ohio,2902,81
+2020-04-02,Utah,1077,7
+2020-04-02,Idaho,890,9
+2020-04-02,Maine,376,7
+2020-04-02,Texas,4880,79
+2020-04-02,Alaska,146,2
+2020-04-02,Hawaii,283,2
+2020-04-02,Kansas,554,14
+2020-04-02,Nevada,1458,38
+2020-04-02,Oregon,826,21
+2020-04-02,Alabama,1270,32
+2020-04-02,Arizona,1600,35
+2020-04-02,Florida,9000,144
+2020-04-02,Georgia,5444,176
+2020-04-02,Indiana,3040,78
+2020-04-02,Montana,241,5
+2020-04-02,Vermont,338,17
+2020-04-02,Wyoming,153,0
+2020-04-02,Arkansas,683,12
+2020-04-02,Colorado,3728,96
+2020-04-02,Delaware,393,12
+2020-04-02,Illinois,7695,165
+2020-04-02,Kentucky,747,34
+2020-04-02,Maryland,2331,36
+2020-04-02,Michigan,10791,417
+2020-04-02,Missouri,1834,24
+2020-04-02,Nebraska,273,6
+2020-04-02,New York,92971,2963
+2020-04-02,Oklahoma,879,34
+2020-04-02,Virginia,1705,41
+2020-04-02,Louisiana,9152,310
+2020-04-02,Minnesota,742,18
+2020-04-02,Tennessee,2868,32
+2020-04-02,Wisconsin,1730,37
+2020-04-02,California,11190,247
+2020-04-02,New Jersey,25590,539
+2020-04-02,New Mexico,403,7
+2020-04-02,Washington,6585,272
+2020-04-02,Connecticut,3824,112
+2020-04-02,Mississippi,1177,26
+2020-04-02,Puerto Rico,316,12
+2020-04-02,North Dakota,159,3
+2020-04-02,Pennsylvania,7016,90
+2020-04-02,Rhode Island,657,12
+2020-04-02,South Dakota,165,2
+2020-04-02,Massachusetts,8966,154
+2020-04-02,New Hampshire,479,5
+2020-04-02,West Virginia,217,2
+2020-04-02,North Carolina,1857,17
+2020-04-02,South Carolina,1554,31
+2020-04-02,Virgin Islands,37,0
+2020-04-02,District of Columbia,653,12
+2020-04-02,Northern Mariana Islands,8,1
+2020-04-03,Guam,154,4
+2020-04-03,Iowa,699,11
+2020-04-03,Ohio,3312,91
+2020-04-03,Utah,1248,7
+2020-04-03,Idaho,1012,10
+2020-04-03,Maine,432,9
+2020-04-03,Texas,5669,97
+2020-04-03,Alaska,156,2
+2020-04-03,Hawaii,317,3
+2020-04-03,Kansas,624,19
+2020-04-03,Nevada,1549,43
+2020-04-03,Oregon,899,22
+2020-04-03,Alabama,1535,38
+2020-04-03,Arizona,1769,41
+2020-04-03,Florida,10260,169
+2020-04-03,Georgia,5967,198
+2020-04-03,Indiana,3439,102
+2020-04-03,Montana,262,5
+2020-04-03,Vermont,389,17
+2020-04-03,Wyoming,166,0
+2020-04-03,Arkansas,738,12
+2020-04-03,Colorado,4182,110
+2020-04-03,Delaware,450,14
+2020-04-03,Illinois,8904,211
+2020-04-03,Kentucky,762,34
+2020-04-03,Maryland,2758,42
+2020-04-03,Michigan,12669,478
+2020-04-03,Missouri,2113,31
+2020-04-03,Nebraska,296,6
+2020-04-03,New York,103651,3716
+2020-04-03,Oklahoma,987,38
+2020-04-03,Virginia,2011,46
+2020-04-03,Louisiana,10299,370
+2020-04-03,Minnesota,789,22
+2020-04-03,Tennessee,3032,36
+2020-04-03,Wisconsin,1916,49
+2020-04-03,California,12569,282
+2020-04-03,New Jersey,29895,647
+2020-04-03,New Mexico,495,10
+2020-04-03,Washington,6966,293
+2020-04-03,Connecticut,4915,132
+2020-04-03,Mississippi,1358,29
+2020-04-03,Puerto Rico,378,15
+2020-04-03,North Dakota,173,3
+2020-04-03,Pennsylvania,8420,102
+2020-04-03,Rhode Island,711,14
+2020-04-03,South Dakota,187,2
+2020-04-03,Massachusetts,10402,192
+2020-04-03,New Hampshire,540,7
+2020-04-03,West Virginia,242,2
+2020-04-03,North Carolina,2093,19
+2020-04-03,South Carolina,1700,34
+2020-04-03,Virgin Islands,38,0
+2020-04-03,District of Columbia,757,15
+2020-04-03,Northern Mariana Islands,8,1
+2020-04-04,Guam,223,4
+2020-04-04,Iowa,786,11
+2020-04-04,Ohio,3739,102
+2020-04-04,Utah,1426,8
+2020-04-04,Idaho,1076,10
+2020-04-04,Maine,456,10
+2020-04-04,Texas,6566,124
+2020-04-04,Alaska,169,3
+2020-04-04,Hawaii,349,3
+2020-04-04,Kansas,702,21
+2020-04-04,Nevada,1758,46
+2020-04-04,Oregon,999,26
+2020-04-04,Alabama,1632,44
+2020-04-04,Arizona,2019,53
+2020-04-04,Florida,11537,194
+2020-04-04,Georgia,6383,208
+2020-04-04,Indiana,3955,116
+2020-04-04,Montana,281,6
+2020-04-04,Vermont,461,20
+2020-04-04,Wyoming,188,0
+2020-04-04,Arkansas,743,14
+2020-04-04,Colorado,4574,126
+2020-04-04,Delaware,593,14
+2020-04-04,Illinois,10357,248
+2020-04-04,Kentucky,909,40
+2020-04-04,Maryland,3125,54
+2020-04-04,Michigan,14225,540
+2020-04-04,Missouri,2291,44
+2020-04-04,Nebraska,339,8
+2020-04-04,New York,115963,4535
+2020-04-04,Oklahoma,1159,42
+2020-04-04,Virginia,2406,52
+2020-04-04,Louisiana,12500,412
+2020-04-04,Minnesota,865,24
+2020-04-04,Tennessee,3265,47
+2020-04-04,Wisconsin,2112,60
+2020-04-04,California,13796,323
+2020-04-04,New Jersey,34124,847
+2020-04-04,New Mexico,543,11
+2020-04-04,Washington,7498,318
+2020-04-04,Connecticut,5276,165
+2020-04-04,Mississippi,1455,35
+2020-04-04,Puerto Rico,452,18
+2020-04-04,North Dakota,186,3
+2020-04-04,Pennsylvania,10109,139
+2020-04-04,Rhode Island,806,17
+2020-04-04,South Dakota,212,2
+2020-04-04,Massachusetts,11736,216
+2020-04-04,New Hampshire,621,9
+2020-04-04,West Virginia,282,2
+2020-04-04,North Carolina,2402,30
+2020-04-04,South Carolina,1917,40
+2020-04-04,Virgin Islands,42,0
+2020-04-04,District of Columbia,902,21
+2020-04-04,Northern Mariana Islands,8,1
+2020-04-05,Guam,265,4
+2020-04-05,Iowa,868,22
+2020-04-05,Ohio,4043,119
+2020-04-05,Utah,1618,8
+2020-04-05,Idaho,1100,10
+2020-04-05,Maine,470,10
+2020-04-05,Texas,7091,136
+2020-04-05,Alaska,183,4
+2020-04-05,Hawaii,369,4
+2020-04-05,Kansas,767,23
+2020-04-05,Nevada,1880,46
+2020-04-05,Oregon,1068,27
+2020-04-05,Alabama,1840,45
+2020-04-05,Arizona,2269,64
+2020-04-05,Florida,12342,220
+2020-04-05,Georgia,6742,219
+2020-04-05,Indiana,4413,127
+2020-04-05,Montana,298,6
+2020-04-05,Vermont,512,22
+2020-04-05,Wyoming,200,0
+2020-04-05,Arkansas,853,16
+2020-04-05,Colorado,4950,140
+2020-04-05,Delaware,673,14
+2020-04-05,Illinois,11276,282
+2020-04-05,Kentucky,1048,44
+2020-04-05,Maryland,3609,68
+2020-04-05,Michigan,15633,616
+2020-04-05,Missouri,2367,52
+2020-04-05,Nebraska,376,8
+2020-04-05,New York,124085,5335
+2020-04-05,Oklahoma,1251,46
+2020-04-05,Virginia,2636,52
+2020-04-05,Louisiana,13014,477
+2020-04-05,Minnesota,935,29
+2020-04-05,Tennessee,3538,50
+2020-04-05,Wisconsin,2267,73
+2020-04-05,California,15076,349
+2020-04-05,New Jersey,37505,917
+2020-04-05,New Mexico,624,12
+2020-04-05,Washington,7984,344
+2020-04-05,Connecticut,5675,189
+2020-04-05,Mississippi,1638,43
+2020-04-05,Puerto Rico,475,20
+2020-04-05,North Dakota,207,3
+2020-04-05,Pennsylvania,11589,159
+2020-04-05,Rhode Island,922,25
+2020-04-05,South Dakota,240,2
+2020-04-05,Massachusetts,12500,231
+2020-04-05,New Hampshire,669,9
+2020-04-05,West Virginia,324,3
+2020-04-05,North Carolina,2585,37
+2020-04-05,South Carolina,2049,44
+2020-04-05,Virgin Islands,42,0
+2020-04-05,District of Columbia,998,22
+2020-04-05,Northern Mariana Islands,8,1
+2020-04-06,Guam,266,4
+2020-04-06,Iowa,946,25
+2020-04-06,Ohio,4450,142
+2020-04-06,Utah,1662,13
+2020-04-06,Idaho,1170,13
+2020-04-06,Maine,499,10
+2020-04-06,Texas,8104,159
+2020-04-06,Alaska,189,4
+2020-04-06,Hawaii,385,5
+2020-04-06,Kansas,854,25
+2020-04-06,Nevada,1971,58
+2020-04-06,Oregon,1132,29
+2020-04-06,Alabama,2005,53
+2020-04-06,Arizona,2465,67
+2020-04-06,Florida,13621,253
+2020-04-06,Georgia,7558,294
+2020-04-06,Indiana,4956,141
+2020-04-06,Montana,319,6
+2020-04-06,Vermont,543,23
+2020-04-06,Wyoming,212,0
+2020-04-06,Arkansas,927,16
+2020-04-06,Colorado,5172,150
+2020-04-06,Delaware,783,15
+2020-04-06,Illinois,12262,309
+2020-04-06,Kentucky,1057,52
+2020-04-06,Maryland,4045,92
+2020-04-06,Michigan,17129,727
+2020-04-06,Missouri,2722,56
+2020-04-06,Nebraska,437,10
+2020-04-06,New York,132061,6130
+2020-04-06,Oklahoma,1326,51
+2020-04-06,Virginia,2877,54
+2020-04-06,Louisiana,14867,512
+2020-04-06,Minnesota,986,30
+2020-04-06,Tennessee,3753,65
+2020-04-06,Wisconsin,2440,83
+2020-04-06,California,16284,386
+2020-04-06,New Jersey,41090,1005
+2020-04-06,New Mexico,686,12
+2020-04-06,Washington,8384,383
+2020-04-06,Connecticut,6906,206
+2020-04-06,Mississippi,1738,51
+2020-04-06,Puerto Rico,513,21
+2020-04-06,North Dakota,225,3
+2020-04-06,Pennsylvania,13074,169
+2020-04-06,Rhode Island,1082,27
+2020-04-06,South Dakota,288,4
+2020-04-06,Massachusetts,13837,260
+2020-04-06,New Hampshire,715,9
+2020-04-06,West Virginia,345,4
+2020-04-06,North Carolina,2870,40
+2020-04-06,South Carolina,2232,48
+2020-04-06,Virgin Islands,43,1
+2020-04-06,District of Columbia,1097,24
+2020-04-06,Northern Mariana Islands,8,1
+2020-04-07,Guam,274,4
+2020-04-07,Iowa,1048,26
+2020-04-07,Ohio,4783,167
+2020-04-07,Utah,1737,13
+2020-04-07,Idaho,1210,15
+2020-04-07,Maine,519,12
+2020-04-07,Texas,8968,177
+2020-04-07,Alaska,211,4
+2020-04-07,Hawaii,408,5
+2020-04-07,Kansas,905,30
+2020-04-07,Nevada,2101,60
+2020-04-07,Oregon,1181,33
+2020-04-07,Alabama,2197,64
+2020-04-07,Arizona,2575,77
+2020-04-07,Florida,14739,295
+2020-04-07,Georgia,9156,348
+2020-04-07,Indiana,5507,173
+2020-04-07,Montana,319,6
+2020-04-07,Vermont,575,23
+2020-04-07,Wyoming,221,0
+2020-04-07,Arkansas,997,18
+2020-04-07,Colorado,5429,179
+2020-04-07,Delaware,928,16
+2020-04-07,Illinois,13549,384
+2020-04-07,Kentucky,1289,66
+2020-04-07,Maryland,4371,104
+2020-04-07,Michigan,18851,845
+2020-04-07,Missouri,3037,79
+2020-04-07,Nebraska,490,12
+2020-04-07,New York,141703,7185
+2020-04-07,Oklahoma,1470,67
+2020-04-07,Virginia,3332,69
+2020-04-07,Louisiana,16284,582
+2020-04-07,Minnesota,1069,34
+2020-04-07,Tennessee,4010,72
+2020-04-07,Wisconsin,2578,94
+2020-04-07,California,17540,447
+2020-04-07,New Jersey,44416,1232
+2020-04-07,New Mexico,794,13
+2020-04-07,Washington,8682,409
+2020-04-07,Connecticut,7781,277
+2020-04-07,Mississippi,1915,59
+2020-04-07,Puerto Rico,573,23
+2020-04-07,North Dakota,237,4
+2020-04-07,Pennsylvania,14582,240
+2020-04-07,Rhode Island,1229,30
+2020-04-07,South Dakota,320,6
+2020-04-07,Massachusetts,15202,356
+2020-04-07,New Hampshire,747,13
+2020-04-07,West Virginia,412,4
+2020-04-07,North Carolina,3220,50
+2020-04-07,South Carolina,2417,51
+2020-04-07,Virgin Islands,45,1
+2020-04-07,District of Columbia,1211,24
+2020-04-07,Northern Mariana Islands,8,2
+2020-04-08,Guam,409,4
+2020-04-08,Iowa,1145,27
+2020-04-08,Ohio,5149,193
+2020-04-08,Utah,1860,13
+2020-04-08,Idaho,1232,19
+2020-04-08,Maine,537,14
+2020-04-08,Texas,9897,195
+2020-04-08,Alaska,224,5
+2020-04-08,Hawaii,433,5
+2020-04-08,Kansas,1055,38
+2020-04-08,Nevada,2318,80
+2020-04-08,Oregon,1239,38
+2020-04-08,Alabama,2498,67
+2020-04-08,Arizona,2726,80
+2020-04-08,Florida,15690,322
+2020-04-08,Georgia,10204,370
+2020-04-08,Indiana,5943,203
+2020-04-08,Montana,332,6
+2020-04-08,Vermont,605,23
+2020-04-08,Wyoming,230,0
+2020-04-08,Arkansas,1077,18
+2020-04-08,Colorado,5655,192
+2020-04-08,Delaware,1116,19
+2020-04-08,Illinois,15078,464
+2020-04-08,Kentucky,1393,73
+2020-04-08,Maryland,5529,124
+2020-04-08,Michigan,20220,959
+2020-04-08,Missouri,3327,86
+2020-04-08,Nebraska,538,14
+2020-04-08,New York,151271,8138
+2020-04-08,Oklahoma,1523,79
+2020-04-08,Virginia,3644,75
+2020-04-08,Louisiana,17030,652
+2020-04-08,Minnesota,1154,39
+2020-04-08,Tennessee,4246,83
+2020-04-08,Wisconsin,2756,107
+2020-04-08,California,19043,506
+2020-04-08,New Jersey,47437,1504
+2020-04-08,New Mexico,865,16
+2020-04-08,Washington,9097,430
+2020-04-08,Connecticut,8781,335
+2020-04-08,Mississippi,2003,67
+2020-04-08,Puerto Rico,620,24
+2020-04-08,North Dakota,251,4
+2020-04-08,Pennsylvania,16414,313
+2020-04-08,Rhode Island,1450,35
+2020-04-08,South Dakota,393,6
+2020-04-08,Massachusetts,16790,433
+2020-04-08,New Hampshire,788,18
+2020-04-08,West Virginia,483,4
+2020-04-08,North Carolina,3423,61
+2020-04-08,South Carolina,2552,63
+2020-04-08,Virgin Islands,45,1
+2020-04-08,District of Columbia,1440,27
+2020-04-08,Northern Mariana Islands,11,2
+2020-04-09,Guam,542,4
+2020-04-09,Iowa,1270,27
+2020-04-09,Ohio,5513,213
+2020-04-09,Utah,1980,13
+2020-04-09,Idaho,1366,24
+2020-04-09,Maine,560,16
+2020-04-09,Texas,11372,228
+2020-04-09,Alaska,233,5
+2020-04-09,Hawaii,440,6
+2020-04-09,Kansas,1116,42
+2020-04-09,Nevada,2456,82
+2020-04-09,Oregon,1321,44
+2020-04-09,Alabama,2838,78
+2020-04-09,Arizona,3018,89
+2020-04-09,Florida,16819,370
+2020-04-09,Georgia,10885,412
+2020-04-09,Indiana,6351,246
+2020-04-09,Montana,354,6
+2020-04-09,Vermont,628,23
+2020-04-09,Wyoming,303,0
+2020-04-09,Arkansas,1146,21
+2020-04-09,Colorado,6202,227
+2020-04-09,Delaware,1209,23
+2020-04-09,Illinois,16422,534
+2020-04-09,Kentucky,1525,84
+2020-04-09,Maryland,6185,139
+2020-04-09,Michigan,21375,1076
+2020-04-09,Missouri,3539,94
+2020-04-09,Nebraska,594,15
+2020-04-09,New York,162036,9166
+2020-04-09,Oklahoma,1683,80
+2020-04-09,Virginia,4041,109
+2020-04-09,Louisiana,18283,702
+2020-04-09,Minnesota,1242,50
+2020-04-09,Tennessee,4456,95
+2020-04-09,Wisconsin,2885,116
+2020-04-09,California,20191,548
+2020-04-09,New Jersey,51027,1700
+2020-04-09,New Mexico,989,17
+2020-04-09,Washington,9608,456
+2020-04-09,Connecticut,9784,380
+2020-04-09,Mississippi,2260,76
+2020-04-09,Puerto Rico,683,33
+2020-04-09,North Dakota,269,5
+2020-04-09,Pennsylvania,18379,344
+2020-04-09,Rhode Island,1727,43
+2020-04-09,South Dakota,447,6
+2020-04-09,Massachusetts,18941,503
+2020-04-09,New Hampshire,819,21
+2020-04-09,West Virginia,524,5
+2020-04-09,North Carolina,3651,74
+2020-04-09,South Carolina,2792,67
+2020-04-09,Virgin Islands,46,1
+2020-04-09,District of Columbia,1523,32
+2020-04-09,Northern Mariana Islands,11,2
+2020-04-10,Guam,577,4
+2020-04-10,Iowa,1388,31
+2020-04-10,Ohio,5879,231
+2020-04-10,Utah,2103,17
+2020-04-10,Idaho,1425,25
+2020-04-10,Maine,586,17
+2020-04-10,Texas,12290,246
+2020-04-10,Alaska,244,5
+2020-04-10,Hawaii,463,8
+2020-04-10,Kansas,1180,50
+2020-04-10,Nevada,2606,86
+2020-04-10,Oregon,1371,48
+2020-04-10,Alabama,3008,80
+2020-04-10,Arizona,3112,97
+2020-04-10,Florida,17960,418
+2020-04-10,Georgia,11859,425
+2020-04-10,Indiana,6907,300
+2020-04-10,Montana,365,6
+2020-04-10,Vermont,679,24
+2020-04-10,Wyoming,320,0
+2020-04-10,Arkansas,1202,24
+2020-04-10,Colorado,6510,253
+2020-04-10,Delaware,1326,32
+2020-04-10,Illinois,17887,607
+2020-04-10,Kentucky,1702,90
+2020-04-10,Maryland,6968,172
+2020-04-10,Michigan,22646,1280
+2020-04-10,Missouri,3799,105
+2020-04-10,Nebraska,678,18
+2020-04-10,New York,172830,10162
+2020-04-10,Oklahoma,1794,88
+2020-04-10,Virginia,4508,121
+2020-04-10,Louisiana,19253,755
+2020-04-10,Minnesota,1335,57
+2020-04-10,Tennessee,4793,104
+2020-04-10,Wisconsin,3068,131
+2020-04-10,California,21366,594
+2020-04-10,New Jersey,54588,1932
+2020-04-10,New Mexico,1090,19
+2020-04-10,Washington,9887,483
+2020-04-10,Connecticut,10538,448
+2020-04-10,Mississippi,2469,82
+2020-04-10,Puerto Rico,725,39
+2020-04-10,North Dakota,278,7
+2020-04-10,Pennsylvania,20128,435
+2020-04-10,Rhode Island,2015,49
+2020-04-10,South Dakota,536,6
+2020-04-10,Massachusetts,20974,599
+2020-04-10,New Hampshire,885,22
+2020-04-10,West Virginia,537,5
+2020-04-10,North Carolina,3906,78
+2020-04-10,South Carolina,3065,72
+2020-04-10,Virgin Islands,46,1
+2020-04-10,District of Columbia,1660,38
+2020-04-10,Northern Mariana Islands,11,2
+2020-04-11,Guam,681,5
+2020-04-11,Iowa,1510,34
+2020-04-11,Ohio,6251,247
+2020-04-11,Utah,2208,18
+2020-04-11,Idaho,1438,27
+2020-04-11,Maine,616,19
+2020-04-11,Texas,13208,265
+2020-04-11,Alaska,255,6
+2020-04-11,Hawaii,484,8
+2020-04-11,Kansas,1282,55
+2020-04-11,Nevada,2720,111
+2020-04-11,Oregon,1447,51
+2020-04-11,Alabama,3262,93
+2020-04-11,Arizona,3393,112
+2020-04-11,Florida,18978,445
+2020-04-11,Georgia,12261,432
+2020-04-11,Indiana,7435,330
+2020-04-11,Montana,377,6
+2020-04-11,Vermont,711,24
+2020-04-11,Wyoming,343,0
+2020-04-11,Arkansas,1228,25
+2020-04-11,Colorado,6893,274
+2020-04-11,Delaware,1479,33
+2020-04-11,Illinois,19180,682
+2020-04-11,Kentucky,1851,94
+2020-04-11,Maryland,7694,207
+2020-04-11,Michigan,23853,1391
+2020-04-11,Missouri,4024,116
+2020-04-11,Nebraska,718,18
+2020-04-11,New York,182990,11159
+2020-04-11,Oklahoma,1868,93
+2020-04-11,Virginia,5076,130
+2020-04-11,Louisiana,20014,806
+2020-04-11,Minnesota,1427,64
+2020-04-11,Tennessee,4983,107
+2020-04-11,Wisconsin,3213,141
+2020-04-11,California,22421,632
+2020-04-11,New Jersey,58151,2183
+2020-04-11,New Mexico,1174,20
+2020-04-11,Washington,10224,498
+2020-04-11,Connecticut,11510,494
+2020-04-11,Mississippi,2642,93
+2020-04-11,Puerto Rico,788,42
+2020-04-11,North Dakota,293,7
+2020-04-11,Pennsylvania,21774,515
+2020-04-11,Rhode Island,2349,56
+2020-04-11,South Dakota,626,6
+2020-04-11,Massachusetts,22860,686
+2020-04-11,New Hampshire,929,23
+2020-04-11,West Virginia,593,6
+2020-04-11,North Carolina,4310,86
+2020-04-11,South Carolina,3207,80
+2020-04-11,Virgin Islands,51,1
+2020-04-11,District of Columbia,1778,47
+2020-04-11,Northern Mariana Islands,11,2
+2020-04-12,Guam,716,5
+2020-04-12,Iowa,1587,41
+2020-04-12,Ohio,6605,253
+2020-04-12,Utah,2305,18
+2020-04-12,Idaho,1457,27
+2020-04-12,Maine,633,19
+2020-04-12,Texas,13776,288
+2020-04-12,Alaska,270,6
+2020-04-12,Hawaii,497,9
+2020-04-12,Kansas,1337,56
+2020-04-12,Nevada,2860,113
+2020-04-12,Oregon,1527,52
+2020-04-12,Alabama,3583,93
+2020-04-12,Arizona,3539,117
+2020-04-12,Florida,19855,460
+2020-04-12,Georgia,12103,438
+2020-04-12,Indiana,7928,343
+2020-04-12,Montana,387,6
+2020-04-12,Vermont,727,26
+2020-04-12,Wyoming,364,0
+2020-04-12,Arkansas,1280,27
+2020-04-12,Colorado,7303,290
+2020-04-12,Delaware,1625,35
+2020-04-12,Illinois,20852,727
+2020-04-12,Kentucky,1963,98
+2020-04-12,Maryland,8225,236
+2020-04-12,Michigan,24494,1486
+2020-04-12,Missouri,4160,116
+2020-04-12,Nebraska,805,18
+2020-04-12,New York,191425,12116
+2020-04-12,Oklahoma,1970,96
+2020-04-12,Virginia,5273,141
+2020-04-12,Louisiana,20595,840
+2020-04-12,Minnesota,1621,70
+2020-04-12,Tennessee,5144,107
+2020-04-12,Wisconsin,3341,145
+2020-04-12,California,23323,676
+2020-04-12,New Jersey,61850,2350
+2020-04-12,New Mexico,1245,26
+2020-04-12,Washington,10411,511
+2020-04-12,Connecticut,12035,554
+2020-04-12,Mississippi,2781,96
+2020-04-12,Puerto Rico,897,44
+2020-04-12,North Dakota,308,8
+2020-04-12,Pennsylvania,22955,525
+2020-04-12,Rhode Island,2665,63
+2020-04-12,South Dakota,729,6
+2020-04-12,Massachusetts,25475,756
+2020-04-12,New Hampshire,985,23
+2020-04-12,West Virginia,615,8
+2020-04-12,North Carolina,4520,86
+2020-04-12,South Carolina,3319,82
+2020-04-12,Virgin Islands,51,1
+2020-04-12,District of Columbia,1875,50
+2020-04-12,Northern Mariana Islands,11,2
+2020-04-13,Guam,719,6
+2020-04-13,Iowa,1710,44
+2020-04-13,Ohio,6975,274
+2020-04-13,Utah,2368,18
+2020-04-13,Idaho,1499,33
+2020-04-13,Maine,698,19
+2020-04-13,Texas,14487,320
+2020-04-13,Alaska,275,6
+2020-04-13,Hawaii,502,9
+2020-04-13,Kansas,1382,63
+2020-04-13,Nevada,3036,114
+2020-04-13,Oregon,1584,53
+2020-04-13,Alabama,3805,104
+2020-04-13,Arizona,3702,122
+2020-04-13,Florida,21011,498
+2020-04-13,Georgia,13125,479
+2020-04-13,Indiana,8236,350
+2020-04-13,Montana,394,7
+2020-04-13,Vermont,748,27
+2020-04-13,Wyoming,373,1
+2020-04-13,Arkansas,1475,30
+2020-04-13,Colorado,7691,308
+2020-04-13,Delaware,1761,41
+2020-04-13,Illinois,22025,800
+2020-04-13,Kentucky,2048,106
+2020-04-13,Maryland,8936,262
+2020-04-13,Michigan,25487,1601
+2020-04-13,Missouri,4388,136
+2020-04-13,Nebraska,870,19
+2020-04-13,New York,197973,12998
+2020-04-13,Oklahoma,2069,98
+2020-04-13,Virginia,5746,149
+2020-04-13,Louisiana,21016,884
+2020-04-13,Minnesota,1650,70
+2020-04-13,Tennessee,5483,114
+2020-04-13,Wisconsin,3428,155
+2020-04-13,California,24334,725
+2020-04-13,New Jersey,64584,2443
+2020-04-13,New Mexico,1345,31
+2020-04-13,Washington,10538,525
+2020-04-13,Connecticut,13381,602
+2020-04-13,Mississippi,2942,98
+2020-04-13,Puerto Rico,903,45
+2020-04-13,North Dakota,331,9
+2020-04-13,Pennsylvania,24295,563
+2020-04-13,Rhode Island,2976,73
+2020-04-13,South Dakota,867,6
+2020-04-13,Massachusetts,26867,844
+2020-04-13,New Hampshire,1020,23
+2020-04-13,West Virginia,638,9
+2020-04-13,North Carolina,4788,91
+2020-04-13,South Carolina,3439,87
+2020-04-13,Virgin Islands,51,1
+2020-04-13,District of Columbia,1955,52
+2020-04-13,Northern Mariana Islands,11,2
+2020-04-14,Guam,721,6
+2020-04-14,Iowa,1899,44
+2020-04-14,Ohio,7280,324
+2020-04-14,Utah,2420,19
+2020-04-14,Idaho,1538,39
+2020-04-14,Maine,734,20
+2020-04-14,Texas,15303,365
+2020-04-14,Alaska,283,7
+2020-04-14,Hawaii,511,9
+2020-04-14,Kansas,1438,69
+2020-04-14,Nevada,3137,130
+2020-04-14,Oregon,1633,55
+2020-04-14,Alabama,3953,114
+2020-04-14,Arizona,3806,131
+2020-04-14,Florida,21620,570
+2020-04-14,Georgia,13913,517
+2020-04-14,Indiana,8527,387
+2020-04-14,Montana,399,7
+2020-04-14,Vermont,752,28
+2020-04-14,Wyoming,373,1
+2020-04-14,Arkansas,1498,32
+2020-04-14,Colorado,7941,329
+2020-04-14,Delaware,1926,43
+2020-04-14,Illinois,23247,878
+2020-04-14,Kentucky,2210,115
+2020-04-14,Maryland,9472,302
+2020-04-14,Michigan,26844,1766
+2020-04-14,Missouri,4686,151
+2020-04-14,Nebraska,930,21
+2020-04-14,New York,205375,14001
+2020-04-14,Oklahoma,2184,109
+2020-04-14,Virginia,6170,154
+2020-04-14,Louisiana,21518,1013
+2020-04-14,Minnesota,1695,79
+2020-04-14,Tennessee,5654,123
+2020-04-14,Wisconsin,3555,172
+2020-04-14,California,25758,778
+2020-04-14,New Jersey,68824,2805
+2020-04-14,New Mexico,1407,36
+2020-04-14,Washington,10694,552
+2020-04-14,Connecticut,13989,671
+2020-04-14,Mississippi,3087,111
+2020-04-14,Puerto Rico,923,45
+2020-04-14,North Dakota,341,9
+2020-04-14,Pennsylvania,25591,746
+2020-04-14,Rhode Island,3251,80
+2020-04-14,South Dakota,987,6
+2020-04-14,Massachusetts,28163,957
+2020-04-14,New Hampshire,1091,27
+2020-04-14,West Virginia,697,10
+2020-04-14,North Carolina,4992,116
+2020-04-14,South Carolina,3553,97
+2020-04-14,Virgin Islands,51,1
+2020-04-14,District of Columbia,2058,67
+2020-04-14,Northern Mariana Islands,13,2
+2020-04-15,Guam,750,6
+2020-04-15,Iowa,1995,53
+2020-04-15,Ohio,7791,361
+2020-04-15,Utah,2549,20
+2020-04-15,Idaho,1587,41
+2020-04-15,Maine,770,24
+2020-04-15,Texas,16106,395
+2020-04-15,Alaska,291,7
+2020-04-15,Hawaii,524,9
+2020-04-15,Kansas,1501,76
+2020-04-15,Nevada,3212,137
+2020-04-15,Oregon,1663,58
+2020-04-15,Alabama,4241,123
+2020-04-15,Arizona,3962,142
+2020-04-15,Florida,22526,613
+2020-04-15,Georgia,14583,569
+2020-04-15,Indiana,8955,436
+2020-04-15,Montana,404,7
+2020-04-15,Vermont,759,29
+2020-04-15,Wyoming,392,2
+2020-04-15,Arkansas,1599,34
+2020-04-15,Colorado,8280,355
+2020-04-15,Delaware,2014,46
+2020-04-15,Illinois,24593,958
+2020-04-15,Kentucky,2295,124
+2020-04-15,Maryland,10096,413
+2020-04-15,Michigan,27893,1919
+2020-04-15,Missouri,4895,164
+2020-04-15,Nebraska,994,22
+2020-04-15,New York,217130,14937
+2020-04-15,Oklahoma,2263,123
+2020-04-15,Virginia,6499,195
+2020-04-15,Louisiana,21951,1103
+2020-04-15,Minnesota,1809,87
+2020-04-15,Tennessee,5864,135
+2020-04-15,Wisconsin,3721,184
+2020-04-15,California,27107,885
+2020-04-15,New Jersey,71030,3156
+2020-04-15,New Mexico,1484,36
+2020-04-15,Washington,10783,572
+2020-04-15,Connecticut,14755,868
+2020-04-15,Mississippi,3360,122
+2020-04-15,Puerto Rico,974,51
+2020-04-15,North Dakota,365,9
+2020-04-15,Pennsylvania,26804,833
+2020-04-15,Rhode Island,3529,87
+2020-04-15,South Dakota,1167,6
+2020-04-15,Massachusetts,29918,1108
+2020-04-15,New Hampshire,1139,32
+2020-04-15,West Virginia,725,12
+2020-04-15,North Carolina,5123,128
+2020-04-15,South Carolina,3656,107
+2020-04-15,Virgin Islands,51,1
+2020-04-15,District of Columbia,2197,72
+2020-04-15,Northern Mariana Islands,13,2
+2020-04-16,Guam,790,6
+2020-04-16,Iowa,2141,60
+2020-04-16,Ohio,8414,389
+2020-04-16,Utah,2687,21
+2020-04-16,Idaho,1609,41
+2020-04-16,Maine,796,27
+2020-04-16,Texas,16928,428
+2020-04-16,Alaska,298,7
+2020-04-16,Hawaii,535,9
+2020-04-16,Kansas,1593,80
+2020-04-16,Nevada,3321,142
+2020-04-16,Oregon,1736,64
+2020-04-16,Alabama,4404,137
+2020-04-16,Arizona,4234,152
+2020-04-16,Florida,23332,667
+2020-04-16,Georgia,15644,611
+2020-04-16,Indiana,9542,477
+2020-04-16,Montana,415,7
+2020-04-16,Vermont,768,34
+2020-04-16,Wyoming,393,2
+2020-04-16,Arkansas,1620,37
+2020-04-16,Colorado,8675,374
+2020-04-16,Delaware,2075,52
+2020-04-16,Illinois,25734,1081
+2020-04-16,Kentucky,2429,131
+2020-04-16,Maryland,10851,459
+2020-04-16,Michigan,29119,2091
+2020-04-16,Missouri,5111,170
+2020-04-16,Nebraska,1094,24
+2020-04-16,New York,225761,15669
+2020-04-16,Oklahoma,2357,131
+2020-04-16,Virginia,6888,208
+2020-04-16,Louisiana,22532,1156
+2020-04-16,Minnesota,1912,94
+2020-04-16,Tennessee,6077,142
+2020-04-16,Wisconsin,3875,197
+2020-04-16,California,28142,971
+2020-04-16,New Jersey,75317,3518
+2020-04-16,New Mexico,1597,44
+2020-04-16,Washington,11152,588
+2020-04-16,Connecticut,15884,971
+2020-04-16,Mississippi,3624,129
+2020-04-16,Puerto Rico,1043,56
+2020-04-16,North Dakota,393,9
+2020-04-16,Pennsylvania,28314,864
+2020-04-16,Rhode Island,3838,105
+2020-04-16,South Dakota,1310,7
+2020-04-16,Massachusetts,32181,1245
+2020-04-16,New Hampshire,1211,34
+2020-04-16,West Virginia,739,13
+2020-04-16,North Carolina,5463,140
+2020-04-16,South Carolina,3931,109
+2020-04-16,Virgin Islands,51,1
+2020-04-16,District of Columbia,2350,81
+2020-04-16,Northern Mariana Islands,13,2
+2020-04-17,Guam,796,6
+2020-04-17,Iowa,2332,64
+2020-04-17,Ohio,9107,418
+2020-04-17,Utah,2813,23
+2020-04-17,Idaho,1655,43
+2020-04-17,Maine,827,29
+2020-04-17,Texas,18131,461
+2020-04-17,Alaska,307,7
+2020-04-17,Hawaii,547,9
+2020-04-17,Kansas,1730,84
+2020-04-17,Nevada,3524,151
+2020-04-17,Oregon,1785,70
+2020-04-17,Alabama,4572,151
+2020-04-17,Arizona,4507,174
+2020-04-17,Florida,24745,725
+2020-04-17,Georgia,16658,661
+2020-04-17,Indiana,10154,519
+2020-04-17,Montana,422,8
+2020-04-17,Vermont,779,34
+2020-04-17,Wyoming,401,2
+2020-04-17,Arkansas,1695,37
+2020-04-17,Colorado,9047,389
+2020-04-17,Delaware,2323,61
+2020-04-17,Illinois,27575,1142
+2020-04-17,Kentucky,2522,140
+2020-04-17,Maryland,11641,494
+2020-04-17,Michigan,29952,2226
+2020-04-17,Missouri,5283,184
+2020-04-17,Nebraska,1216,24
+2020-04-17,New York,233293,16473
+2020-04-17,Oklahoma,2465,136
+2020-04-17,Virginia,7490,238
+2020-04-17,Louisiana,23118,1213
+2020-04-17,Minnesota,2071,111
+2020-04-17,Tennessee,6423,146
+2020-04-17,Wisconsin,4045,205
+2020-04-17,California,29398,1050
+2020-04-17,New Jersey,78467,3840
+2020-04-17,New Mexico,1711,51
+2020-04-17,Washington,11445,610
+2020-04-17,Connecticut,16809,1036
+2020-04-17,Mississippi,3793,140
+2020-04-17,Puerto Rico,1068,58
+2020-04-17,North Dakota,439,9
+2020-04-17,Pennsylvania,30121,1027
+2020-04-17,Rhode Island,4177,118
+2020-04-17,South Dakota,1410,7
+2020-04-17,Massachusetts,34402,1404
+2020-04-17,New Hampshire,1287,37
+2020-04-17,West Virginia,776,16
+2020-04-17,North Carolina,5859,159
+2020-04-17,South Carolina,4086,116
+2020-04-17,Virgin Islands,51,2
+2020-04-17,District of Columbia,2476,86
+2020-04-17,Northern Mariana Islands,14,2
+2020-04-18,Guam,805,6
+2020-04-18,Iowa,2513,74
+2020-04-18,Ohio,10222,451
+2020-04-18,Utah,2942,25
+2020-04-18,Idaho,1668,44
+2020-04-18,Maine,847,32
+2020-04-18,Texas,18927,487
+2020-04-18,Alaska,312,7
+2020-04-18,Hawaii,568,9
+2020-04-18,Kansas,1818,86
+2020-04-18,Nevada,3626,155
+2020-04-18,Oregon,1844,72
+2020-04-18,Alabama,4723,147
+2020-04-18,Arizona,4719,181
+2020-04-18,Florida,25484,747
+2020-04-18,Georgia,17014,670
+2020-04-18,Indiana,10641,545
+2020-04-18,Montana,426,10
+2020-04-18,Vermont,803,36
+2020-04-18,Wyoming,412,2
+2020-04-18,Arkansas,1777,38
+2020-04-18,Colorado,9433,409
+2020-04-18,Delaware,2538,67
+2020-04-18,Illinois,29160,1272
+2020-04-18,Kentucky,2707,145
+2020-04-18,Maryland,12379,534
+2020-04-18,Michigan,30717,2307
+2020-04-18,Missouri,5517,194
+2020-04-18,Nebraska,1348,28
+2020-04-18,New York,240542,17141
+2020-04-18,Oklahoma,2570,139
+2020-04-18,Virginia,8052,258
+2020-04-18,Louisiana,23580,1267
+2020-04-18,Minnesota,2213,121
+2020-04-18,Tennessee,6624,148
+2020-04-18,Wisconsin,4199,212
+2020-04-18,California,30829,1146
+2020-04-18,New Jersey,81420,4070
+2020-04-18,New Mexico,1798,53
+2020-04-18,Washington,11802,629
+2020-04-18,Connecticut,17550,1086
+2020-04-18,Mississippi,3974,152
+2020-04-18,Puerto Rico,1118,60
+2020-04-18,North Dakota,528,9
+2020-04-18,Pennsylvania,31742,1150
+2020-04-18,Rhode Island,4491,137
+2020-04-18,South Dakota,1541,7
+2020-04-18,Massachusetts,36372,1560
+2020-04-18,New Hampshire,1342,38
+2020-04-18,West Virginia,825,18
+2020-04-18,North Carolina,6140,175
+2020-04-18,South Carolina,4246,119
+2020-04-18,Virgin Islands,53,3
+2020-04-18,District of Columbia,2666,91
+2020-04-18,Northern Mariana Islands,14,2
+2020-04-19,Guam,808,6
+2020-04-19,Iowa,2915,75
+2020-04-19,Ohio,11602,471
+2020-04-19,Utah,3071,27
+2020-04-19,Idaho,1672,45
+2020-04-19,Maine,867,34
+2020-04-19,Texas,19441,503
+2020-04-19,Alaska,317,7
+2020-04-19,Hawaii,574,10
+2020-04-19,Kansas,1896,94
+2020-04-19,Nevada,3741,158
+2020-04-19,Oregon,1910,74
+2020-04-19,Alabama,4903,160
+2020-04-19,Arizona,4929,188
+2020-04-19,Florida,26306,773
+2020-04-19,Georgia,17619,682
+2020-04-19,Indiana,11210,562
+2020-04-19,Montana,433,10
+2020-04-19,Vermont,812,36
+2020-04-19,Wyoming,422,2
+2020-04-19,Arkansas,1781,39
+2020-04-19,Colorado,9730,421
+2020-04-19,Delaware,2538,67
+2020-04-19,Illinois,30357,1302
+2020-04-19,Kentucky,2960,149
+2020-04-19,Maryland,12892,548
+2020-04-19,Michigan,31348,2389
+2020-04-19,Missouri,5667,196
+2020-04-19,Nebraska,1473,28
+2020-04-19,New York,246741,17793
+2020-04-19,Oklahoma,2599,140
+2020-04-19,Virginia,8536,277
+2020-04-19,Louisiana,23928,1296
+2020-04-19,Minnesota,2356,134
+2020-04-19,Tennessee,6824,151
+2020-04-19,Wisconsin,4346,222
+2020-04-19,California,31544,1176
+2020-04-19,New Jersey,85301,4202
+2020-04-19,New Mexico,1845,55
+2020-04-19,Washington,11805,637
+2020-04-19,Connecticut,17962,1127
+2020-04-19,Mississippi,4274,159
+2020-04-19,Puerto Rico,1213,41
+2020-04-19,North Dakota,585,10
+2020-04-19,Pennsylvania,32992,1285
+2020-04-19,Rhode Island,4706,150
+2020-04-19,South Dakota,1635,7
+2020-04-19,Massachusetts,38077,1706
+2020-04-19,New Hampshire,1392,41
+2020-04-19,West Virginia,890,20
+2020-04-19,North Carolina,6493,183
+2020-04-19,South Carolina,4377,120
+2020-04-19,Virgin Islands,53,3
+2020-04-19,District of Columbia,2793,96
+2020-04-19,Northern Mariana Islands,14,2
+2020-04-20,Guam,811,6
+2020-04-20,Iowa,3175,79
+2020-04-20,Ohio,12919,509
+2020-04-20,Utah,3213,28
+2020-04-20,Idaho,1736,48
+2020-04-20,Maine,875,35
+2020-04-20,Texas,20035,523
+2020-04-20,Alaska,319,7
+2020-04-20,Hawaii,578,10
+2020-04-20,Kansas,2029,101
+2020-04-20,Nevada,3830,163
+2020-04-20,Oregon,1956,75
+2020-04-20,Alabama,5078,164
+2020-04-20,Arizona,5064,191
+2020-04-20,Florida,27050,822
+2020-04-20,Georgia,18447,767
+2020-04-20,Indiana,11686,569
+2020-04-20,Montana,433,12
+2020-04-20,Vermont,816,37
+2020-04-20,Wyoming,426,2
+2020-04-20,Arkansas,1971,42
+2020-04-20,Colorado,10106,448
+2020-04-20,Delaware,2745,72
+2020-04-20,Illinois,31508,1359
+2020-04-20,Kentucky,3050,155
+2020-04-20,Maryland,13750,582
+2020-04-20,Michigan,31927,2466
+2020-04-20,Missouri,5807,201
+2020-04-20,Nebraska,1646,33
+2020-04-20,New York,251608,18412
+2020-04-20,Oklahoma,2680,143
+2020-04-20,Virginia,8989,300
+2020-04-20,Louisiana,24523,1328
+2020-04-20,Minnesota,2470,143
+2020-04-20,Tennessee,6994,156
+2020-04-20,Wisconsin,4499,231
+2020-04-20,California,33862,1223
+2020-04-20,New Jersey,88806,4377
+2020-04-20,New Mexico,1971,58
+2020-04-20,Washington,12191,661
+2020-04-20,Connecticut,19815,1331
+2020-04-20,Mississippi,4512,169
+2020-04-20,Puerto Rico,1252,42
+2020-04-20,North Dakota,627,13
+2020-04-20,Pennsylvania,34005,1366
+2020-04-20,Rhode Island,5090,155
+2020-04-20,South Dakota,1685,7
+2020-04-20,Massachusetts,39643,1809
+2020-04-20,New Hampshire,1447,42
+2020-04-20,West Virginia,908,26
+2020-04-20,North Carolina,6764,187
+2020-04-20,South Carolina,4439,124
+2020-04-20,Virgin Islands,54,3
+2020-04-20,District of Columbia,2927,105
+2020-04-20,Northern Mariana Islands,14,2
+2020-04-21,Guam,852,6
+2020-04-21,Iowa,3641,83
+2020-04-21,Ohio,13725,557
+2020-04-21,Utah,3301,32
+2020-04-21,Idaho,1766,51
+2020-04-21,Maine,888,36
+2020-04-21,Texas,20949,552
+2020-04-21,Alaska,327,7
+2020-04-21,Hawaii,580,12
+2020-04-21,Kansas,2113,107
+2020-04-21,Nevada,3937,163
+2020-04-21,Oregon,2002,78
+2020-04-21,Alabama,5327,186
+2020-04-21,Arizona,5251,213
+2020-04-21,Florida,27861,866
+2020-04-21,Georgia,19189,810
+2020-04-21,Indiana,12097,630
+2020-04-21,Montana,437,12
+2020-04-21,Vermont,818,39
+2020-04-21,Wyoming,441,6
+2020-04-21,Arkansas,2262,43
+2020-04-21,Colorado,10447,484
+2020-04-21,Delaware,2931,82
+2020-04-21,Illinois,33059,1479
+2020-04-21,Kentucky,3193,172
+2020-04-21,Maryland,14261,652
+2020-04-21,Michigan,32935,2698
+2020-04-21,Missouri,5941,221
+2020-04-21,Nebraska,1726,38
+2020-04-21,New York,255932,19040
+2020-04-21,Oklahoma,2807,164
+2020-04-21,Virginia,9629,325
+2020-04-21,Louisiana,24854,1405
+2020-04-21,Minnesota,2567,160
+2020-04-21,Tennessee,7317,159
+2020-04-21,Wisconsin,4620,243
+2020-04-21,California,35844,1316
+2020-04-21,New Jersey,92387,4753
+2020-04-21,New Mexico,2072,65
+2020-04-21,Washington,12345,683
+2020-04-21,Connecticut,20360,1423
+2020-04-21,Mississippi,4716,183
+2020-04-21,Puerto Rico,915,43
+2020-04-21,North Dakota,644,13
+2020-04-21,Pennsylvania,35384,1620
+2020-04-21,Rhode Island,5500,171
+2020-04-21,South Dakota,1755,8
+2020-04-21,Massachusetts,41199,1961
+2020-04-21,New Hampshire,1491,42
+2020-04-21,West Virginia,929,26
+2020-04-21,North Carolina,6951,217
+2020-04-21,South Carolina,4608,135
+2020-04-21,Virgin Islands,54,3
+2020-04-21,District of Columbia,3098,112
+2020-04-21,Northern Mariana Islands,14,2
+2020-04-22,Guam,911,6
+2020-04-22,Iowa,3764,90
+2020-04-22,Ohio,14117,610
+2020-04-22,Utah,3451,34
+2020-04-22,Idaho,1802,54
+2020-04-22,Maine,907,39
+2020-04-22,Texas,21769,571
+2020-04-22,Alaska,333,7
+2020-04-22,Hawaii,586,12
+2020-04-22,Kansas,2290,111
+2020-04-22,Nevada,4081,187
+2020-04-22,Oregon,2059,78
+2020-04-22,Alabama,5610,201
+2020-04-22,Arizona,5459,236
+2020-04-22,Florida,28301,926
+2020-04-22,Georgia,20099,837
+2020-04-22,Indiana,12438,661
+2020-04-22,Montana,439,14
+2020-04-22,Vermont,823,39
+2020-04-22,Wyoming,447,6
+2020-04-22,Arkansas,2392,44
+2020-04-22,Colorado,10878,526
+2020-04-22,Delaware,3200,89
+2020-04-22,Illinois,35108,1577
+2020-04-22,Kentucky,3373,185
+2020-04-22,Maryland,14842,698
+2020-04-22,Michigan,33929,2812
+2020-04-22,Missouri,6137,236
+2020-04-22,Nebraska,1826,42
+2020-04-22,New York,261591,19647
+2020-04-22,Oklahoma,2894,169
+2020-04-22,Virginia,10265,349
+2020-04-22,Louisiana,25317,1532
+2020-04-22,Minnesota,2721,179
+2020-04-22,Tennessee,7681,169
+2020-04-22,Wisconsin,4845,247
+2020-04-22,California,37573,1425
+2020-04-22,New Jersey,95865,5063
+2020-04-22,New Mexico,2210,71
+2020-04-22,Washington,12539,696
+2020-04-22,Connecticut,22469,1544
+2020-04-22,Mississippi,4894,193
+2020-04-22,Puerto Rico,915,46
+2020-04-22,North Dakota,679,14
+2020-04-22,Pennsylvania,36763,1720
+2020-04-22,Rhode Island,5841,181
+2020-04-22,South Dakota,1858,9
+2020-04-22,Massachusetts,42944,2182
+2020-04-22,New Hampshire,1588,48
+2020-04-22,West Virginia,939,29
+2020-04-22,North Carolina,7220,242
+2020-04-22,South Carolina,4761,140
+2020-04-22,Virgin Islands,54,3
+2020-04-22,District of Columbia,3206,127
+2020-04-22,Northern Mariana Islands,14,2
+2020-04-23,Guam,979,6
+2020-04-23,Iowa,3939,96
+2020-04-23,Ohio,14694,656
+2020-04-23,Utah,3621,35
+2020-04-23,Idaho,1836,54
+2020-04-23,Maine,937,44
+2020-04-23,Texas,22706,601
+2020-04-23,Alaska,335,7
+2020-04-23,Hawaii,590,12
+2020-04-23,Kansas,2625,112
+2020-04-23,Nevada,4208,195
+2020-04-23,Oregon,2127,83
+2020-04-23,Alabama,5832,197
+2020-04-23,Arizona,5769,257
+2020-04-23,Florida,29640,986
+2020-04-23,Georgia,20905,871
+2020-04-23,Indiana,13039,706
+2020-04-23,Montana,442,14
+2020-04-23,Vermont,825,42
+2020-04-23,Wyoming,453,7
+2020-04-23,Arkansas,2599,45
+2020-04-23,Colorado,11262,557
+2020-04-23,Delaware,3308,92
+2020-04-23,Illinois,36935,1696
+2020-04-23,Kentucky,3548,194
+2020-04-23,Maryland,15805,748
+2020-04-23,Michigan,35252,2977
+2020-04-23,Missouri,6321,248
+2020-04-23,Nebraska,2190,46
+2020-04-23,New York,267932,20212
+2020-04-23,Oklahoma,3017,179
+2020-04-23,Virginia,10999,375
+2020-04-23,Louisiana,25798,1599
+2020-04-23,Minnesota,2942,200
+2020-04-23,Tennessee,8169,172
+2020-04-23,Wisconsin,5052,257
+2020-04-23,California,39534,1548
+2020-04-23,New Jersey,99989,5368
+2020-04-23,New Mexico,2379,78
+2020-04-23,Washington,12906,717
+2020-04-23,Connecticut,23100,1639
+2020-04-23,Mississippi,5153,201
+2020-04-23,Puerto Rico,1230,69
+2020-04-23,North Dakota,709,15
+2020-04-23,Pennsylvania,38334,1723
+2020-04-23,Rhode Island,6256,189
+2020-04-23,South Dakota,1956,9
+2020-04-23,Massachusetts,46023,2360
+2020-04-23,New Hampshire,1670,51
+2020-04-23,West Virginia,981,31
+2020-04-23,North Carolina,7608,253
+2020-04-23,South Carolina,4917,150
+2020-04-23,Virgin Islands,54,3
+2020-04-23,District of Columbia,3361,139
+2020-04-23,Northern Mariana Islands,14,2
+2020-04-24,Guam,997,6
+2020-04-24,Iowa,4459,107
+2020-04-24,Ohio,15169,690
+2020-04-24,Utah,3782,39
+2020-04-24,Idaho,1870,54
+2020-04-24,Maine,965,47
+2020-04-24,Texas,23650,625
+2020-04-24,Alaska,337,7
+2020-04-24,Hawaii,595,13
+2020-04-24,Kansas,2841,117
+2020-04-24,Nevada,4398,203
+2020-04-24,Oregon,2177,86
+2020-04-24,Alabama,6026,209
+2020-04-24,Arizona,6045,268
+2020-04-24,Florida,30525,1045
+2020-04-24,Georgia,21575,889
+2020-04-24,Indiana,13680,741
+2020-04-24,Montana,444,14
+2020-04-24,Vermont,827,43
+2020-04-24,Wyoming,473,7
+2020-04-24,Arkansas,2810,47
+2020-04-24,Colorado,12255,672
+2020-04-24,Delaware,3442,100
+2020-04-24,Illinois,39658,1804
+2020-04-24,Kentucky,3779,203
+2020-04-24,Maryland,16693,798
+2020-04-24,Michigan,36627,3084
+2020-04-24,Missouri,6625,267
+2020-04-24,Nebraska,2474,50
+2020-04-24,New York,276218,20759
+2020-04-24,Oklahoma,3120,188
+2020-04-24,Virginia,11595,413
+2020-04-24,Louisiana,26199,1660
+2020-04-24,Minnesota,3185,221
+2020-04-24,Tennessee,8618,172
+2020-04-24,Wisconsin,5356,262
+2020-04-24,California,41368,1619
+2020-04-24,New Jersey,102196,5617
+2020-04-24,New Mexico,2524,84
+2020-04-24,Washington,13120,731
+2020-04-24,Connecticut,23921,1764
+2020-04-24,Mississippi,5434,209
+2020-04-24,Puerto Rico,1276,77
+2020-04-24,North Dakota,748,15
+2020-04-24,Pennsylvania,40298,1786
+2020-04-24,Rhode Island,6699,202
+2020-04-24,South Dakota,2040,10
+2020-04-24,Massachusetts,50969,2556
+2020-04-24,New Hampshire,1720,53
+2020-04-24,West Virginia,1010,32
+2020-04-24,North Carolina,8052,270
+2020-04-24,South Carolina,5070,157
+2020-04-24,Virgin Islands,54,3
+2020-04-24,District of Columbia,3528,153
+2020-04-24,Northern Mariana Islands,14,2
+2020-04-25,Guam,997,6
+2020-04-25,Iowa,5109,112
+2020-04-25,Ohio,15587,711
+2020-04-25,Utah,3950,41
+2020-04-25,Idaho,1887,56
+2020-04-25,Maine,990,50
+2020-04-25,Texas,24494,662
+2020-04-25,Alaska,337,7
+2020-04-25,Hawaii,597,14
+2020-04-25,Kansas,3090,119
+2020-04-25,Nevada,4539,206
+2020-04-25,Oregon,2253,87
+2020-04-25,Alabama,6213,213
+2020-04-25,Arizona,6280,275
+2020-04-25,Florida,30831,1054
+2020-04-25,Georgia,22225,897
+2020-04-25,Indiana,14395,785
+2020-04-25,Montana,445,14
+2020-04-25,Vermont,843,45
+2020-04-25,Wyoming,473,7
+2020-04-25,Arkansas,2909,48
+2020-04-25,Colorado,12967,670
+2020-04-25,Delaware,3576,112
+2020-04-25,Illinois,41777,1884
+2020-04-25,Kentucky,3905,208
+2020-04-25,Maryland,17844,875
+2020-04-25,Michigan,37184,3273
+2020-04-25,Missouri,6826,280
+2020-04-25,Nebraska,2898,52
+2020-04-25,New York,286901,21326
+2020-04-25,Oklahoma,3193,194
+2020-04-25,Virginia,12365,436
+2020-04-25,Louisiana,26571,1703
+2020-04-25,Minnesota,3446,244
+2020-04-25,Tennessee,8918,179
+2020-04-25,Wisconsin,5687,266
+2020-04-25,California,42590,1692
+2020-04-25,New Jersey,105523,5863
+2020-04-25,New Mexico,2662,93
+2020-04-25,Washington,13484,743
+2020-04-25,Connecticut,24582,1862
+2020-04-25,Mississippi,5718,221
+2020-04-25,Puerto Rico,1307,83
+2020-04-25,North Dakota,803,16
+2020-04-25,Pennsylvania,41626,1842
+2020-04-25,Rhode Island,7129,215
+2020-04-25,South Dakota,2147,10
+2020-04-25,Massachusetts,53348,2730
+2020-04-25,New Hampshire,1793,60
+2020-04-25,West Virginia,1025,33
+2020-04-25,North Carolina,8542,300
+2020-04-25,South Carolina,5253,166
+2020-04-25,Virgin Islands,55,3
+2020-04-25,District of Columbia,3699,165
+2020-04-25,Northern Mariana Islands,14,2
+2020-04-26,Guam,997,6
+2020-04-26,Iowa,5490,118
+2020-04-26,Ohio,15963,728
+2020-04-26,Utah,4123,41
+2020-04-26,Idaho,1897,56
+2020-04-26,Maine,1015,50
+2020-04-26,Texas,25209,676
+2020-04-26,Alaska,339,7
+2020-04-26,Hawaii,599,14
+2020-04-26,Kansas,3197,120
+2020-04-26,Nevada,4638,206
+2020-04-26,Oregon,2311,91
+2020-04-26,Alabama,6421,219
+2020-04-26,Arizona,6526,277
+2020-04-26,Florida,31520,1073
+2020-04-26,Georgia,22459,907
+2020-04-26,Indiana,15012,813
+2020-04-26,Montana,448,14
+2020-04-26,Vermont,851,45
+2020-04-26,Wyoming,502,7
+2020-04-26,Arkansas,3001,50
+2020-04-26,Colorado,13440,678
+2020-04-26,Delaware,4034,120
+2020-04-26,Illinois,43903,1943
+2020-04-26,Kentucky,4074,211
+2020-04-26,Maryland,18664,910
+2020-04-26,Michigan,37751,3314
+2020-04-26,Missouri,6997,282
+2020-04-26,Nebraska,3126,54
+2020-04-26,New York,292914,21804
+2020-04-26,Oklahoma,3253,195
+2020-04-26,Virginia,12969,448
+2020-04-26,Louisiana,26832,1729
+2020-04-26,Minnesota,3602,272
+2020-04-26,Tennessee,9435,182
+2020-04-26,Wisconsin,5911,274
+2020-04-26,California,43691,1716
+2020-04-26,New Jersey,109038,5938
+2020-04-26,New Mexico,2728,99
+2020-04-26,Washington,13663,757
+2020-04-26,Connecticut,25269,1925
+2020-04-26,Mississippi,5911,227
+2020-04-26,Puerto Rico,1371,84
+2020-04-26,North Dakota,867,17
+2020-04-26,Pennsylvania,42709,1871
+2020-04-26,Rhode Island,7439,226
+2020-04-26,South Dakota,2213,11
+2020-04-26,Massachusetts,54938,2899
+2020-04-26,New Hampshire,1864,60
+2020-04-26,West Virginia,1053,34
+2020-04-26,North Carolina,8830,309
+2020-04-26,South Carolina,5490,174
+2020-04-26,Virgin Islands,57,4
+2020-04-26,District of Columbia,3841,178
+2020-04-26,Northern Mariana Islands,14,2
+2020-04-27,Guam,1113,6
+2020-04-27,Iowa,5868,127
+2020-04-27,Ohio,16325,753
+2020-04-27,Utah,4236,41
+2020-04-27,Idaho,1917,58
+2020-04-27,Maine,1023,51
+2020-04-27,Texas,25963,699
+2020-04-27,Alaska,343,7
+2020-04-27,Hawaii,600,16
+2020-04-27,Kansas,3406,126
+2020-04-27,Nevada,4708,219
+2020-04-27,Oregon,2354,92
+2020-04-27,Alabama,6539,228
+2020-04-27,Arizona,6716,277
+2020-04-27,Florida,32130,1087
+2020-04-27,Georgia,23229,981
+2020-04-27,Indiana,16137,932
+2020-04-27,Montana,449,14
+2020-04-27,Vermont,855,46
+2020-04-27,Wyoming,520,7
+2020-04-27,Arkansas,3069,51
+2020-04-27,Colorado,13804,705
+2020-04-27,Delaware,4162,125
+2020-04-27,Illinois,45883,1992
+2020-04-27,Kentucky,4146,216
+2020-04-27,Maryland,19574,945
+2020-04-27,Michigan,38190,3406
+2020-04-27,Missouri,7171,296
+2020-04-27,Nebraska,3487,54
+2020-04-27,New York,296991,22267
+2020-04-27,Oklahoma,3280,197
+2020-04-27,Virginia,13534,458
+2020-04-27,Louisiana,27111,1740
+2020-04-27,Minnesota,3816,286
+2020-04-27,Tennessee,9739,184
+2020-04-27,Wisconsin,6081,281
+2020-04-27,California,45208,1800
+2020-04-27,New Jersey,111188,6044
+2020-04-27,New Mexico,2825,104
+2020-04-27,Washington,13864,771
+2020-04-27,Connecticut,25997,2012
+2020-04-27,Mississippi,6094,229
+2020-04-27,Puerto Rico,1388,84
+2020-04-27,North Dakota,942,19
+2020-04-27,Pennsylvania,43728,1946
+2020-04-27,Rhode Island,7708,233
+2020-04-27,South Dakota,2246,11
+2020-04-27,Massachusetts,56462,3003
+2020-04-27,New Hampshire,1938,60
+2020-04-27,West Virginia,1077,37
+2020-04-27,North Carolina,9035,331
+2020-04-27,South Carolina,5613,177
+2020-04-27,Virgin Islands,59,4
+2020-04-27,District of Columbia,3892,185
+2020-04-27,Northern Mariana Islands,14,2
+2020-04-28,Guam,1114,6
+2020-04-28,Iowa,6376,136
+2020-04-28,Ohio,16769,799
+2020-04-28,Utah,4343,45
+2020-04-28,Idaho,1952,60
+2020-04-28,Maine,1040,51
+2020-04-28,Texas,26868,738
+2020-04-28,Alaska,349,7
+2020-04-28,Hawaii,602,16
+2020-04-28,Kansas,3601,127
+2020-04-28,Nevada,4812,225
+2020-04-28,Oregon,2385,99
+2020-04-28,Alabama,6750,242
+2020-04-28,Arizona,6948,297
+2020-04-28,Florida,32838,1170
+2020-04-28,Georgia,23607,1022
+2020-04-28,Indiana,16783,992
+2020-04-28,Montana,451,15
+2020-04-28,Vermont,862,46
+2020-04-28,Wyoming,536,7
+2020-04-28,Arkansas,3127,57
+2020-04-28,Colorado,14239,734
+2020-04-28,Delaware,4575,137
+2020-04-28,Illinois,48102,2132
+2020-04-28,Kentucky,4375,231
+2020-04-28,Maryland,20200,1016
+2020-04-28,Michigan,39234,3566
+2020-04-28,Missouri,7306,324
+2020-04-28,Nebraska,3613,56
+2020-04-28,New York,300276,22777
+2020-04-28,Oklahoma,3410,207
+2020-04-28,Virginia,14338,492
+2020-04-28,Louisiana,27329,1801
+2020-04-28,Minnesota,4181,301
+2020-04-28,Tennessee,9974,190
+2020-04-28,Wisconsin,6289,300
+2020-04-28,California,46570,1884
+2020-04-28,New Jersey,113856,6442
+2020-04-28,New Mexico,2975,110
+2020-04-28,Washington,14059,792
+2020-04-28,Connecticut,26312,2089
+2020-04-28,Mississippi,6342,239
+2020-04-28,Puerto Rico,1400,86
+2020-04-28,North Dakota,991,19
+2020-04-28,Pennsylvania,45323,2092
+2020-04-28,Rhode Island,7926,239
+2020-04-28,South Dakota,2314,11
+2020-04-28,Massachusetts,58302,3153
+2020-04-28,New Hampshire,2010,60
+2020-04-28,West Virginia,1095,38
+2020-04-28,North Carolina,9568,353
+2020-04-28,South Carolina,5735,192
+2020-04-28,Virgin Islands,59,4
+2020-04-28,District of Columbia,3994,190
+2020-04-28,Northern Mariana Islands,14,2
+2020-04-29,Guam,1114,6
+2020-04-29,Iowa,6843,148
+2020-04-29,Ohio,17303,937
+2020-04-29,Utah,4499,45
+2020-04-29,Idaho,1984,60
+2020-04-29,Maine,1056,52
+2020-04-29,Texas,27839,776
+2020-04-29,Alaska,353,7
+2020-04-29,Hawaii,605,16
+2020-04-29,Kansas,3811,132
+2020-04-29,Nevada,4934,237
+2020-04-29,Oregon,2446,101
+2020-04-29,Alabama,6925,262
+2020-04-29,Arizona,7202,308
+2020-04-29,Florida,33185,1216
+2020-04-29,Georgia,24300,1086
+2020-04-29,Indiana,17409,1065
+2020-04-29,Montana,451,16
+2020-04-29,Vermont,862,46
+2020-04-29,Wyoming,544,7
+2020-04-29,Arkansas,3207,59
+2020-04-29,Colorado,14680,764
+2020-04-29,Delaware,4655,144
+2020-04-29,Illinois,50355,2221
+2020-04-29,Kentucky,4538,235
+2020-04-29,Maryland,20942,1078
+2020-04-29,Michigan,40360,3670
+2020-04-29,Missouri,7426,331
+2020-04-29,Nebraska,3876,67
+2020-04-29,New York,304994,23287
+2020-04-29,Oklahoma,3473,214
+2020-04-29,Virginia,14961,522
+2020-04-29,Louisiana,27703,1845
+2020-04-29,Minnesota,4644,319
+2020-04-29,Tennessee,10255,196
+2020-04-29,Wisconsin,6520,308
+2020-04-29,California,48904,1961
+2020-04-29,New Jersey,116264,6770
+2020-04-29,New Mexico,3213,112
+2020-04-29,Washington,14378,805
+2020-04-29,Connecticut,26767,2168
+2020-04-29,Mississippi,6569,250
+2020-04-29,Puerto Rico,1465,86
+2020-04-29,North Dakota,1033,19
+2020-04-29,Pennsylvania,46191,2392
+2020-04-29,Rhode Island,8247,251
+2020-04-29,South Dakota,2375,13
+2020-04-29,Massachusetts,60265,3405
+2020-04-29,New Hampshire,2054,66
+2020-04-29,West Virginia,1109,40
+2020-04-29,North Carolina,9947,366
+2020-04-29,South Carolina,5881,232
+2020-04-29,Virgin Islands,66,4
+2020-04-29,District of Columbia,4106,205
+2020-04-29,Northern Mariana Islands,14,2
+2020-04-30,Guam,1115,6
+2020-04-30,Iowa,7145,162
+2020-04-30,Ohio,18027,975
+2020-04-30,Utah,4672,46
+2020-04-30,Idaho,2016,63
+2020-04-30,Maine,1095,53
+2020-04-30,Texas,29072,828
+2020-04-30,Alaska,353,7
+2020-04-30,Hawaii,609,16
+2020-04-30,Kansas,4305,133
+2020-04-30,Nevada,5053,243
+2020-04-30,Oregon,2510,103
+2020-04-30,Alabama,7068,272
+2020-04-30,Arizona,7648,320
+2020-04-30,Florida,33683,1267
+2020-04-30,Georgia,25431,1121
+2020-04-30,Indiana,18099,1114
+2020-04-30,Montana,452,16
+2020-04-30,Vermont,866,48
+2020-04-30,Wyoming,559,7
+2020-04-30,Arkansas,3281,61
+2020-04-30,Colorado,15207,775
+2020-04-30,Delaware,4734,152
+2020-04-30,Illinois,52918,2361
+2020-04-30,Kentucky,4708,240
+2020-04-30,Maryland,21825,1139
+2020-04-30,Michigan,41347,3788
+2020-04-30,Missouri,7563,341
+2020-04-30,Nebraska,4332,70
+2020-04-30,New York,309696,23616
+2020-04-30,Oklahoma,3618,222
+2020-04-30,Virginia,15846,552
+2020-04-30,Louisiana,28044,1905
+2020-04-30,Minnesota,5136,343
+2020-04-30,Tennessee,10506,200
+2020-04-30,Wisconsin,6854,316
+2020-04-30,California,50470,2057
+2020-04-30,New Jersey,118652,7228
+2020-04-30,New Mexico,3411,123
+2020-04-30,Washington,14696,822
+2020-04-30,Connecticut,27700,2257
+2020-04-30,Mississippi,6815,261
+2020-04-30,Puerto Rico,1537,92
+2020-04-30,North Dakota,1067,19
+2020-04-30,Pennsylvania,48224,2580
+2020-04-30,Rhode Island,8621,266
+2020-04-30,South Dakota,2450,17
+2020-04-30,Massachusetts,62205,3562
+2020-04-30,New Hampshire,2146,72
+2020-04-30,West Virginia,1125,44
+2020-04-30,North Carolina,10507,385
+2020-04-30,South Carolina,6095,244
+2020-04-30,Virgin Islands,66,4
+2020-04-30,District of Columbia,4323,224
+2020-04-30,Northern Mariana Islands,14,2
+2020-05-01,Guam,1115,6
+2020-05-01,Iowa,7883,170
+2020-05-01,Ohio,18743,1002
+2020-05-01,Utah,4829,46
+2020-05-01,Idaho,2035,63
+2020-05-01,Maine,1123,55
+2020-05-01,Texas,30342,853
+2020-05-01,Alaska,362,7
+2020-05-01,Hawaii,610,16
+2020-05-01,Kansas,4510,136
+2020-05-01,Nevada,5249,254
+2020-05-01,Oregon,2579,104
+2020-05-01,Alabama,7294,289
+2020-05-01,Arizona,7962,330
+2020-05-01,Florida,34720,1313
+2020-05-01,Georgia,26436,1153
+2020-05-01,Indiana,18941,1175
+2020-05-01,Montana,452,16
+2020-05-01,Vermont,879,49
+2020-05-01,Wyoming,566,7
+2020-05-01,Arkansas,3310,64
+2020-05-01,Colorado,15661,818
+2020-05-01,Delaware,4918,159
+2020-05-01,Illinois,56055,2464
+2020-05-01,Kentucky,4879,248
+2020-05-01,Maryland,23566,1192
+2020-05-01,Michigan,42348,3866
+2020-05-01,Missouri,7840,355
+2020-05-01,Nebraska,4838,72
+2020-05-01,New York,313575,23841
+2020-05-01,Oklahoma,3748,230
+2020-05-01,Virginia,16901,581
+2020-05-01,Louisiana,28754,1970
+2020-05-01,Minnesota,5730,371
+2020-05-01,Tennessee,11781,205
+2020-05-01,Wisconsin,7314,327
+2020-05-01,California,52318,2147
+2020-05-01,New Jersey,121190,7538
+2020-05-01,New Mexico,3513,131
+2020-05-01,Washington,15010,829
+2020-05-01,Connecticut,28764,2339
+2020-05-01,Mississippi,7212,281
+2020-05-01,Puerto Rico,1573,94
+2020-05-01,North Dakota,1107,23
+2020-05-01,Pennsylvania,49764,2671
+2020-05-01,Rhode Island,8962,279
+2020-05-01,South Dakota,2525,21
+2020-05-01,Massachusetts,64311,3716
+2020-05-01,New Hampshire,2310,81
+2020-05-01,West Virginia,1151,47
+2020-05-01,North Carolina,10922,405
+2020-05-01,South Carolina,6258,256
+2020-05-01,Virgin Islands,66,4
+2020-05-01,District of Columbia,4658,231
+2020-05-01,Northern Mariana Islands,14,2
+2020-05-02,Guam,1117,6
+2020-05-02,Iowa,8641,175
+2020-05-02,Ohio,19335,1021
+2020-05-02,Utah,4981,49
+2020-05-02,Idaho,2061,64
+2020-05-02,Maine,1152,56
+2020-05-02,Texas,31433,875
+2020-05-02,Alaska,363,7
+2020-05-02,Hawaii,611,16
+2020-05-02,Kansas,4863,140
+2020-05-02,Nevada,5390,257
+2020-05-02,Oregon,2635,109
+2020-05-02,Alabama,7611,288
+2020-05-02,Arizona,8364,353
+2020-05-02,Florida,35455,1363
+2020-05-02,Georgia,27268,1161
+2020-05-02,Indiana,19629,1229
+2020-05-02,Montana,454,16
+2020-05-02,Vermont,886,50
+2020-05-02,Wyoming,579,7
+2020-05-02,Arkansas,3372,72
+2020-05-02,Colorado,16118,830
+2020-05-02,Delaware,5038,168
+2020-05-02,Illinois,58505,2576
+2020-05-02,Kentucky,4881,252
+2020-05-02,Maryland,24568,1251
+2020-05-02,Michigan,43191,4020
+2020-05-02,Missouri,8154,373
+2020-05-02,Nebraska,5332,75
+2020-05-02,New York,318134,24035
+2020-05-02,Oklahoma,3851,238
+2020-05-02,Virginia,17731,616
+2020-05-02,Louisiana,29183,1993
+2020-05-02,Minnesota,6228,395
+2020-05-02,Tennessee,12376,210
+2020-05-02,Wisconsin,7660,334
+2020-05-02,California,53753,2213
+2020-05-02,New Jersey,123717,7742
+2020-05-02,New Mexico,3732,139
+2020-05-02,Washington,15253,833
+2020-05-02,Connecticut,29287,2436
+2020-05-02,Mississippi,7441,291
+2020-05-02,Puerto Rico,1755,95
+2020-05-02,North Dakota,1153,24
+2020-05-02,Pennsylvania,51071,2794
+2020-05-02,Rhode Island,9289,296
+2020-05-02,South Dakota,2587,21
+2020-05-02,Massachusetts,66263,3846
+2020-05-02,New Hampshire,2429,84
+2020-05-02,West Virginia,1184,50
+2020-05-02,North Carolina,11514,428
+2020-05-02,South Carolina,6489,267
+2020-05-02,Virgin Islands,66,4
+2020-05-02,District of Columbia,4797,240
+2020-05-02,Northern Mariana Islands,14,2
+2020-05-03,Guam,1118,6
+2020-05-03,Iowa,9169,184
+2020-05-03,Ohio,19914,1038
+2020-05-03,Utah,5175,50
+2020-05-03,Idaho,2059,64
+2020-05-03,Maine,1185,57
+2020-05-03,Texas,32299,890
+2020-05-03,Alaska,366,7
+2020-05-03,Hawaii,611,17
+2020-05-03,Kansas,5177,142
+2020-05-03,Nevada,5473,262
+2020-05-03,Oregon,2680,109
+2020-05-03,Alabama,7888,290
+2020-05-03,Arizona,8640,362
+2020-05-03,Florida,36070,1378
+2020-05-03,Georgia,27618,1168
+2020-05-03,Indiana,20267,1246
+2020-05-03,Montana,454,16
+2020-05-03,Vermont,897,52
+2020-05-03,Wyoming,586,7
+2020-05-03,Arkansas,3431,76
+2020-05-03,Colorado,16527,840
+2020-05-03,Delaware,5208,177
+2020-05-03,Illinois,61499,2632
+2020-05-03,Kentucky,5223,256
+2020-05-03,Maryland,25561,1281
+2020-05-03,Michigan,43736,4049
+2020-05-03,Missouri,8454,378
+2020-05-03,Nebraska,5686,77
+2020-05-03,New York,321833,24576
+2020-05-03,Oklahoma,3972,238
+2020-05-03,Virginia,18671,660
+2020-05-03,Louisiana,29383,2012
+2020-05-03,Minnesota,6663,419
+2020-05-03,Tennessee,12871,211
+2020-05-03,Wisconsin,7964,339
+2020-05-03,California,55072,2235
+2020-05-03,New Jersey,126744,7871
+2020-05-03,New Mexico,3850,151
+2020-05-03,Washington,15809,840
+2020-05-03,Connecticut,29287,2436
+2020-05-03,Mississippi,7550,303
+2020-05-03,Puerto Rico,1806,97
+2020-05-03,North Dakota,1191,25
+2020-05-03,Pennsylvania,52079,2843
+2020-05-03,Rhode Island,9477,320
+2020-05-03,South Dakota,2630,21
+2020-05-03,Massachusetts,68087,4004
+2020-05-03,New Hampshire,2518,86
+2020-05-03,West Virginia,1195,50
+2020-05-03,North Carolina,11668,436
+2020-05-03,South Carolina,6626,275
+2020-05-03,Virgin Islands,66,4
+2020-05-03,District of Columbia,5016,251
+2020-05-03,Northern Mariana Islands,14,2
+2020-05-04,Guam,1118,6
+2020-05-04,Iowa,9703,188
+2020-05-04,Ohio,20474,1056
+2020-05-04,Utah,5326,50
+2020-05-04,Idaho,2106,64
+2020-05-04,Maine,1205,57
+2020-05-04,Texas,33134,914
+2020-05-04,Alaska,368,7
+2020-05-04,Hawaii,612,17
+2020-05-04,Kansas,5385,154
+2020-05-04,Nevada,5627,266
+2020-05-04,Oregon,2759,109
+2020-05-04,Alabama,8112,298
+2020-05-04,Arizona,8919,362
+2020-05-04,Florida,36889,1398
+2020-05-04,Georgia,28350,1228
+2020-05-04,Indiana,20855,1264
+2020-05-04,Montana,456,16
+2020-05-04,Vermont,902,52
+2020-05-04,Wyoming,596,7
+2020-05-04,Arkansas,3469,80
+2020-05-04,Colorado,16799,849
+2020-05-04,Delaware,5288,182
+2020-05-04,Illinois,63840,2673
+2020-05-04,Kentucky,5370,267
+2020-05-04,Maryland,26509,1317
+2020-05-04,Michigan,43928,4135
+2020-05-04,Missouri,8776,387
+2020-05-04,Nebraska,6123,78
+2020-05-04,New York,324357,24788
+2020-05-04,Oklahoma,4044,238
+2020-05-04,Virginia,19492,684
+2020-05-04,Louisiana,29746,2064
+2020-05-04,Minnesota,7234,428
+2020-05-04,Tennessee,13283,216
+2020-05-04,Wisconsin,8236,340
+2020-05-04,California,56333,2297
+2020-05-04,New Jersey,128269,7910
+2020-05-04,New Mexico,4030,156
+2020-05-04,Washington,15905,846
+2020-05-04,Connecticut,29973,2556
+2020-05-04,Mississippi,7877,310
+2020-05-04,Puerto Rico,1875,97
+2020-05-04,North Dakota,1225,25
+2020-05-04,Pennsylvania,52992,2880
+2020-05-04,Rhode Island,9652,341
+2020-05-04,South Dakota,2667,21
+2020-05-04,Massachusetts,69087,4090
+2020-05-04,New Hampshire,2588,86
+2020-05-04,West Virginia,1224,50
+2020-05-04,North Carolina,11871,454
+2020-05-04,South Carolina,6757,283
+2020-05-04,Virgin Islands,66,4
+2020-05-04,District of Columbia,5170,258
+2020-05-04,Northern Mariana Islands,14,2
+2020-05-05,Guam,1118,6
+2020-05-05,Iowa,10111,207
+2020-05-05,Ohio,20969,1135
+2020-05-05,Utah,5449,56
+2020-05-05,Idaho,2127,66
+2020-05-05,Maine,1226,61
+2020-05-05,Texas,34286,955
+2020-05-05,Alaska,369,7
+2020-05-05,Hawaii,615,17
+2020-05-05,Kansas,5627,160
+2020-05-05,Nevada,5665,276
+2020-05-05,Oregon,2839,113
+2020-05-05,Alabama,8437,315
+2020-05-05,Arizona,9305,395
+2020-05-05,Florida,37431,1470
+2020-05-05,Georgia,28876,1277
+2020-05-05,Indiana,21423,1326
+2020-05-05,Montana,456,16
+2020-05-05,Vermont,907,52
+2020-05-05,Wyoming,604,7
+2020-05-05,Arkansas,3525,83
+2020-05-05,Colorado,17256,901
+2020-05-05,Delaware,5371,187
+2020-05-05,Illinois,65889,2843
+2020-05-05,Kentucky,5822,278
+2020-05-05,Maryland,27217,1390
+2020-05-05,Michigan,44333,4179
+2020-05-05,Missouri,8919,408
+2020-05-05,Nebraska,6442,81
+2020-05-05,New York,326659,25028
+2020-05-05,Oklahoma,4127,247
+2020-05-05,Virginia,20256,713
+2020-05-05,Louisiana,30069,2115
+2020-05-05,Minnesota,7851,455
+2020-05-05,Tennessee,13555,225
+2020-05-05,Wisconsin,8566,353
+2020-05-05,California,58848,2386
+2020-05-05,New Jersey,130593,8244
+2020-05-05,New Mexico,4137,162
+2020-05-05,Washington,16081,863
+2020-05-05,Connecticut,30621,2633
+2020-05-05,Mississippi,8207,342
+2020-05-05,Puerto Rico,1924,99
+2020-05-05,North Dakota,1266,25
+2020-05-05,Pennsylvania,53967,3206
+2020-05-05,Rhode Island,9933,355
+2020-05-05,South Dakota,2720,24
+2020-05-05,Massachusetts,70271,4212
+2020-05-05,New Hampshire,2636,92
+2020-05-05,West Virginia,1242,50
+2020-05-05,North Carolina,12283,477
+2020-05-05,South Carolina,6841,296
+2020-05-05,Virgin Islands,66,4
+2020-05-05,District of Columbia,5322,264
+2020-05-05,Northern Mariana Islands,14,2
+2020-05-06,Guam,1118,6
+2020-05-06,Iowa,10404,219
+2020-05-06,Ohio,21576,1225
+2020-05-06,Utah,5605,59
+2020-05-06,Idaho,2158,67
+2020-05-06,Maine,1254,62
+2020-05-06,Texas,35441,985
+2020-05-06,Alaska,370,8
+2020-05-06,Hawaii,616,17
+2020-05-06,Kansas,5893,163
+2020-05-06,Nevada,5744,286
+2020-05-06,Oregon,2916,115
+2020-05-06,Alabama,8691,343
+2020-05-06,Arizona,9707,426
+2020-05-06,Florida,37994,1538
+2020-05-06,Georgia,29724,1309
+2020-05-06,Indiana,22286,1377
+2020-05-06,Montana,456,16
+2020-05-06,Vermont,908,52
+2020-05-06,Wyoming,631,7
+2020-05-06,Arkansas,3611,87
+2020-05-06,Colorado,17720,919
+2020-05-06,Delaware,5778,193
+2020-05-06,Illinois,68164,2977
+2020-05-06,Kentucky,5946,286
+2020-05-06,Maryland,28263,1443
+2020-05-06,Michigan,45048,4250
+2020-05-06,Missouri,9164,429
+2020-05-06,Nebraska,6771,85
+2020-05-06,New York,329405,25956
+2020-05-06,Oklahoma,4201,253
+2020-05-06,Virginia,20256,713
+2020-05-06,Louisiana,30472,2167
+2020-05-06,Minnesota,8579,485
+2020-05-06,Tennessee,13737,237
+2020-05-06,Wisconsin,8901,362
+2020-05-06,California,60787,2478
+2020-05-06,New Jersey,131890,8549
+2020-05-06,New Mexico,4290,169
+2020-05-06,Washington,16713,881
+2020-05-06,Connecticut,30995,2718
+2020-05-06,Mississippi,8424,374
+2020-05-06,Puerto Rico,1968,99
+2020-05-06,North Dakota,1323,31
+2020-05-06,Pennsylvania,54989,3360
+2020-05-06,Rhode Island,10205,370
+2020-05-06,South Dakota,2779,29
+2020-05-06,Massachusetts,72025,4420
+2020-05-06,New Hampshire,2741,111
+2020-05-06,West Virginia,1276,51
+2020-05-06,North Carolina,12783,497
+2020-05-06,South Carolina,6936,305
+2020-05-06,Virgin Islands,66,4
+2020-05-06,District of Columbia,5461,277
+2020-05-06,Northern Mariana Islands,15,2
+2020-05-07,Guam,1118,6
+2020-05-07,Iowa,11059,231
+2020-05-07,Ohio,22131,1271
+2020-05-07,Utah,5724,61
+2020-05-07,Idaho,2178,67
+2020-05-07,Maine,1330,62
+2020-05-07,Texas,36682,1016
+2020-05-07,Alaska,373,8
+2020-05-07,Hawaii,619,17
+2020-05-07,Kansas,6240,164
+2020-05-07,Nevada,5858,293
+2020-05-07,Oregon,2989,121
+2020-05-07,Alabama,9046,369
+2020-05-07,Arizona,9945,450
+2020-05-07,Florida,38820,1599
+2020-05-07,Georgia,30524,1332
+2020-05-07,Indiana,22942,1414
+2020-05-07,Montana,456,16
+2020-05-07,Vermont,916,53
+2020-05-07,Wyoming,635,7
+2020-05-07,Arkansas,3694,88
+2020-05-07,Colorado,18264,942
+2020-05-07,Delaware,5939,202
+2020-05-07,Illinois,70802,3139
+2020-05-07,Kentucky,6173,302
+2020-05-07,Maryland,29476,1503
+2020-05-07,Michigan,45643,4343
+2020-05-07,Missouri,9409,449
+2020-05-07,Nebraska,7190,91
+2020-05-07,New York,332931,26206
+2020-05-07,Oklahoma,4330,260
+2020-05-07,Virginia,21570,769
+2020-05-07,Louisiana,30725,2208
+2020-05-07,Minnesota,9364,508
+2020-05-07,Tennessee,14108,238
+2020-05-07,Wisconsin,9215,374
+2020-05-07,California,62481,2561
+2020-05-07,New Jersey,133635,8801
+2020-05-07,New Mexico,4492,172
+2020-05-07,Washington,17017,903
+2020-05-07,Connecticut,31784,2797
+2020-05-07,Mississippi,8686,396
+2020-05-07,Puerto Rico,2031,102
+2020-05-07,North Dakota,1371,31
+2020-05-07,Pennsylvania,56149,3599
+2020-05-07,Rhode Island,10530,388
+2020-05-07,South Dakota,2905,31
+2020-05-07,Massachusetts,73721,4552
+2020-05-07,New Hampshire,2843,114
+2020-05-07,West Virginia,1297,51
+2020-05-07,North Carolina,13431,521
+2020-05-07,South Carolina,7142,316
+2020-05-07,Virgin Islands,66,4
+2020-05-07,District of Columbia,5654,285
+2020-05-07,Northern Mariana Islands,15,2
+2020-05-08,Guam,1120,6
+2020-05-08,Iowa,11457,243
+2020-05-08,Ohio,23018,1306
+2020-05-08,Utah,5919,61
+2020-05-08,Idaho,2205,67
+2020-05-08,Maine,1374,63
+2020-05-08,Texas,37943,1059
+2020-05-08,Alaska,376,8
+2020-05-08,Hawaii,619,17
+2020-05-08,Kansas,6751,167
+2020-05-08,Nevada,5942,301
+2020-05-08,Oregon,3068,124
+2020-05-08,Alabama,9385,383
+2020-05-08,Arizona,10526,517
+2020-05-08,Florida,39191,1668
+2020-05-08,Georgia,31089,1378
+2020-05-08,Indiana,23620,1447
+2020-05-08,Montana,458,16
+2020-05-08,Vermont,919,53
+2020-05-08,Wyoming,644,7
+2020-05-08,Arkansas,3747,88
+2020-05-08,Colorado,18719,958
+2020-05-08,Delaware,6111,213
+2020-05-08,Illinois,73688,3262
+2020-05-08,Kentucky,6298,304
+2020-05-08,Maryland,30592,1560
+2020-05-08,Michigan,46319,4393
+2020-05-08,Missouri,9573,481
+2020-05-08,Nebraska,7830,92
+2020-05-08,New York,335804,26358
+2020-05-08,Oklahoma,4424,266
+2020-05-08,Virginia,22342,812
+2020-05-08,Louisiana,30928,2227
+2020-05-08,Minnesota,10087,534
+2020-05-08,Tennessee,14276,240
+2020-05-08,Wisconsin,9590,384
+2020-05-08,California,64616,2650
+2020-05-08,New Jersey,135454,8952
+2020-05-08,New Mexico,4673,181
+2020-05-08,Washington,17297,915
+2020-05-08,Connecticut,32411,2874
+2020-05-08,Mississippi,9090,409
+2020-05-08,Puerto Rico,2156,107
+2020-05-08,North Dakota,1425,33
+2020-05-08,Pennsylvania,57501,3724
+2020-05-08,Rhode Island,10779,399
+2020-05-08,South Dakota,3144,31
+2020-05-08,Massachusetts,75333,4702
+2020-05-08,New Hampshire,2947,121
+2020-05-08,West Virginia,1323,52
+2020-05-08,North Carolina,13879,537
+2020-05-08,South Carolina,7367,320
+2020-05-08,Virgin Islands,68,4
+2020-05-08,District of Columbia,5899,304
+2020-05-08,Northern Mariana Islands,15,2
+2020-05-09,Guam,1120,6
+2020-05-09,Iowa,11671,252
+2020-05-09,Ohio,23697,1331
+2020-05-09,Utah,6103,66
+2020-05-09,Idaho,2230,67
+2020-05-09,Maine,1408,64
+2020-05-09,Texas,38849,1086
+2020-05-09,Alaska,377,8
+2020-05-09,Hawaii,620,17
+2020-05-09,Kansas,6923,172
+2020-05-09,Nevada,6046,306
+2020-05-09,Oregon,3160,127
+2020-05-09,Alabama,9668,390
+2020-05-09,Arizona,10960,532
+2020-05-09,Florida,39993,1714
+2020-05-09,Georgia,31481,1380
+2020-05-09,Indiana,24239,1490
+2020-05-09,Montana,458,16
+2020-05-09,Vermont,921,53
+2020-05-09,Wyoming,653,7
+2020-05-09,Arkansas,3747,88
+2020-05-09,Colorado,19267,965
+2020-05-09,Delaware,6277,221
+2020-05-09,Illinois,76008,3362
+2020-05-09,Kentucky,6469,312
+2020-05-09,Maryland,31638,1614
+2020-05-09,Michigan,46735,4526
+2020-05-09,Missouri,9737,492
+2020-05-09,Nebraska,8233,95
+2020-05-09,New York,338519,26584
+2020-05-09,Oklahoma,4490,270
+2020-05-09,Virginia,23196,827
+2020-05-09,Louisiana,31490,2267
+2020-05-09,Minnesota,10789,558
+2020-05-09,Tennessee,14675,241
+2020-05-09,Wisconsin,9939,398
+2020-05-09,California,66824,2732
+2020-05-09,New Jersey,137085,9116
+2020-05-09,New Mexico,4778,191
+2020-05-09,Washington,17446,925
+2020-05-09,Connecticut,32984,2932
+2020-05-09,Mississippi,9378,421
+2020-05-09,Puerto Rico,2173,108
+2020-05-09,North Dakota,1464,35
+2020-05-09,Pennsylvania,58661,3793
+2020-05-09,Rhode Island,10989,418
+2020-05-09,South Dakota,3393,34
+2020-05-09,Massachusetts,76743,4840
+2020-05-09,New Hampshire,3011,131
+2020-05-09,West Virginia,1347,53
+2020-05-09,North Carolina,14387,554
+2020-05-09,South Carolina,7531,330
+2020-05-09,Virgin Islands,69,4
+2020-05-09,District of Columbia,6102,311
+2020-05-09,Northern Mariana Islands,16,2
+2020-05-10,Guam,1120,6
+2020-05-10,Iowa,11959,265
+2020-05-10,Ohio,24086,1341
+2020-05-10,Utah,6251,67
+2020-05-10,Idaho,2232,67
+2020-05-10,Maine,1436,64
+2020-05-10,Texas,40037,1110
+2020-05-10,Alaska,378,8
+2020-05-10,Hawaii,621,17
+2020-05-10,Kansas,7045,172
+2020-05-10,Nevada,6120,306
+2020-05-10,Oregon,3228,127
+2020-05-10,Alabama,9889,393
+2020-05-10,Arizona,11119,536
+2020-05-10,Florida,40588,1720
+2020-05-10,Georgia,32267,1383
+2020-05-10,Indiana,24633,1508
+2020-05-10,Montana,458,16
+2020-05-10,Vermont,926,53
+2020-05-10,Wyoming,662,7
+2020-05-10,Arkansas,4012,91
+2020-05-10,Colorado,19595,969
+2020-05-10,Delaware,6447,224
+2020-05-10,Illinois,77662,3426
+2020-05-10,Kentucky,6486,312
+2020-05-10,Maryland,32693,1644
+2020-05-10,Michigan,47116,4551
+2020-05-10,Missouri,9906,502
+2020-05-10,Nebraska,8328,97
+2020-05-10,New York,340657,26798
+2020-05-10,Oklahoma,4589,272
+2020-05-10,Virginia,24081,839
+2020-05-10,Louisiana,31673,2286
+2020-05-10,Minnesota,11270,578
+2020-05-10,Tennessee,15060,242
+2020-05-10,Wisconsin,10219,400
+2020-05-10,California,68051,2769
+2020-05-10,New Jersey,138532,9255
+2020-05-10,New Mexico,4863,200
+2020-05-10,Washington,17592,939
+2020-05-10,Connecticut,33554,2967
+2020-05-10,Mississippi,9501,430
+2020-05-10,Puerto Rico,2198,111
+2020-05-10,North Dakota,1491,35
+2020-05-10,Pennsylvania,60037,3819
+2020-05-10,Rhode Island,11274,422
+2020-05-10,South Dakota,3517,34
+2020-05-10,Massachusetts,77793,4979
+2020-05-10,New Hampshire,3071,133
+2020-05-10,West Virginia,1362,54
+2020-05-10,North Carolina,14783,561
+2020-05-10,South Carolina,7653,331
+2020-05-10,Virgin Islands,69,4
+2020-05-10,District of Columbia,6272,323
+2020-05-10,Northern Mariana Islands,16,2
+2020-05-11,Guam,1120,6
+2020-05-11,Iowa,12373,271
+2020-05-11,Ohio,24785,1357
+2020-05-11,Utah,6364,68
+2020-05-11,Idaho,2261,69
+2020-05-11,Maine,1462,65
+2020-05-11,Texas,40988,1137
+2020-05-11,Alaska,380,8
+2020-05-11,Hawaii,623,17
+2020-05-11,Kansas,7161,174
+2020-05-11,Nevada,6152,312
+2020-05-11,Oregon,3286,130
+2020-05-11,Alabama,10164,403
+2020-05-11,Arizona,11380,542
+2020-05-11,Florida,40974,1734
+2020-05-11,Georgia,32448,1420
+2020-05-11,Indiana,25134,1540
+2020-05-11,Montana,459,16
+2020-05-11,Vermont,926,53
+2020-05-11,Wyoming,669,7
+2020-05-11,Arkansas,4043,94
+2020-05-11,Colorado,19793,986
+2020-05-11,Delaware,6565,225
+2020-05-11,Illinois,79123,3480
+2020-05-11,Kentucky,6710,325
+2020-05-11,Maryland,33483,1683
+2020-05-11,Michigan,47526,4584
+2020-05-11,Missouri,10025,512
+2020-05-11,Nebraska,8575,99
+2020-05-11,New York,342267,27003
+2020-05-11,Oklahoma,4613,274
+2020-05-11,Virginia,25070,850
+2020-05-11,Louisiana,31881,2308
+2020-05-11,Minnesota,11798,591
+2020-05-11,Tennessee,15423,248
+2020-05-11,Wisconsin,10418,409
+2020-05-11,California,69514,2820
+2020-05-11,New Jersey,139945,9310
+2020-05-11,New Mexico,5069,208
+2020-05-11,Washington,17983,957
+2020-05-11,Connecticut,33765,3008
+2020-05-11,Mississippi,9674,435
+2020-05-11,Puerto Rico,2256,113
+2020-05-11,North Dakota,1518,36
+2020-05-11,Pennsylvania,60557,3846
+2020-05-11,Rhode Island,11450,430
+2020-05-11,South Dakota,3614,34
+2020-05-11,Massachusetts,78462,5108
+2020-05-11,New Hampshire,3160,133
+2020-05-11,West Virginia,1369,57
+2020-05-11,North Carolina,15069,571
+2020-05-11,South Carolina,7792,346
+2020-05-11,Virgin Islands,69,5
+2020-05-11,District of Columbia,6389,328
+2020-05-11,Northern Mariana Islands,19,2
+2020-05-12,Guam,1121,6
+2020-05-12,Iowa,12912,289
+2020-05-12,Ohio,25257,1436
+2020-05-12,Utah,6454,73
+2020-05-12,Idaho,2294,69
+2020-05-12,Maine,1477,65
+2020-05-12,Texas,42348,1169
+2020-05-12,Alaska,383,8
+2020-05-12,Hawaii,624,17
+2020-05-12,Kansas,7352,178
+2020-05-12,Nevada,6311,321
+2020-05-12,Oregon,3359,130
+2020-05-12,Alabama,10464,435
+2020-05-12,Arizona,11736,562
+2020-05-12,Florida,41915,1778
+2020-05-12,Georgia,33311,1470
+2020-05-12,Indiana,25676,1578
+2020-05-12,Montana,461,16
+2020-05-12,Vermont,927,53
+2020-05-12,Wyoming,675,7
+2020-05-12,Arkansas,4164,95
+2020-05-12,Colorado,20103,1009
+2020-05-12,Delaware,6741,237
+2020-05-12,Illinois,83168,3617
+2020-05-12,Kentucky,7003,333
+2020-05-12,Maryland,34174,1756
+2020-05-12,Michigan,47946,4674
+2020-05-12,Missouri,10124,530
+2020-05-12,Nebraska,8732,102
+2020-05-12,New York,343705,27282
+2020-05-12,Oklahoma,4731,278
+2020-05-12,Virginia,25800,891
+2020-05-12,Louisiana,32116,2347
+2020-05-12,Minnesota,12493,614
+2020-05-12,Tennessee,15777,264
+2020-05-12,Wisconsin,10617,418
+2020-05-12,California,71150,2902
+2020-05-12,New Jersey,140743,9508
+2020-05-12,New Mexico,5212,219
+2020-05-12,Washington,18186,972
+2020-05-12,Connecticut,34333,3041
+2020-05-12,Mississippi,9908,457
+2020-05-12,Puerto Rico,2299,114
+2020-05-12,North Dakota,1571,38
+2020-05-12,Pennsylvania,61407,3924
+2020-05-12,Rhode Island,11614,444
+2020-05-12,South Dakota,3663,39
+2020-05-12,Massachusetts,79332,5141
+2020-05-12,New Hampshire,3239,142
+2020-05-12,West Virginia,1378,58
+2020-05-12,North Carolina,15402,597
+2020-05-12,South Carolina,7927,355
+2020-05-12,Virgin Islands,69,6
+2020-05-12,District of Columbia,6485,336
+2020-05-12,Northern Mariana Islands,19,2
+2020-05-13,Guam,1121,6
+2020-05-13,Iowa,13289,306
+2020-05-13,Ohio,25727,1483
+2020-05-13,Utah,6624,76
+2020-05-13,Idaho,2325,69
+2020-05-13,Maine,1515,66
+2020-05-13,Texas,43822,1205
+2020-05-13,Alaska,383,8
+2020-05-13,Hawaii,627,17
+2020-05-13,Kansas,7552,179
+2020-05-13,Nevada,6482,331
+2020-05-13,Oregon,3416,134
+2020-05-13,Alabama,10700,450
+2020-05-13,Arizona,12176,594
+2020-05-13,Florida,42394,1826
+2020-05-13,Georgia,33866,1494
+2020-05-13,Indiana,26044,1619
+2020-05-13,Montana,462,16
+2020-05-13,Vermont,929,53
+2020-05-13,Wyoming,688,7
+2020-05-13,Arkansas,4236,97
+2020-05-13,Colorado,20442,1062
+2020-05-13,Delaware,6952,247
+2020-05-13,Illinois,84874,3815
+2020-05-13,Kentucky,7102,334
+2020-05-13,Maryland,34927,1809
+2020-05-13,Michigan,48307,4714
+2020-05-13,Missouri,10369,550
+2020-05-13,Nebraska,9072,106
+2020-05-13,New York,345828,27448
+2020-05-13,Oklahoma,4852,278
+2020-05-13,Virginia,26746,927
+2020-05-13,Louisiana,32728,2381
+2020-05-13,Minnesota,12916,638
+2020-05-13,Tennessee,16261,271
+2020-05-13,Wisconsin,10903,421
+2020-05-13,California,73218,3014
+2020-05-13,New Jersey,141560,9702
+2020-05-13,New Mexico,5364,231
+2020-05-13,Washington,18287,977
+2020-05-13,Connecticut,34855,3125
+2020-05-13,Mississippi,10090,465
+2020-05-13,Puerto Rico,2329,115
+2020-05-13,North Dakota,1647,40
+2020-05-13,Pennsylvania,62194,4104
+2020-05-13,Rhode Island,11835,462
+2020-05-13,South Dakota,3732,39
+2020-05-13,Massachusetts,80497,5315
+2020-05-13,New Hampshire,3299,150
+2020-05-13,West Virginia,1404,59
+2020-05-13,North Carolina,15850,615
+2020-05-13,South Carolina,8030,362
+2020-05-13,Virgin Islands,69,6
+2020-05-13,District of Columbia,6584,350
+2020-05-13,Northern Mariana Islands,19,2
+2020-05-14,Guam,1121,6
+2020-05-14,Iowa,13675,318
+2020-05-14,Ohio,26363,1534
+2020-05-14,Utah,6760,76
+2020-05-14,Idaho,2352,72
+2020-05-14,Maine,1565,69
+2020-05-14,Texas,45169,1256
+2020-05-14,Alaska,387,8
+2020-05-14,Hawaii,627,17
+2020-05-14,Kansas,7668,181
+2020-05-14,Nevada,6604,339
+2020-05-14,Oregon,3479,137
+2020-05-14,Alabama,11101,473
+2020-05-14,Arizona,12674,624
+2020-05-14,Florida,43202,1874
+2020-05-14,Georgia,34422,1521
+2020-05-14,Indiana,26627,1646
+2020-05-14,Montana,462,16
+2020-05-14,Vermont,932,53
+2020-05-14,Wyoming,701,7
+2020-05-14,Arkansas,4366,98
+2020-05-14,Colorado,20813,1091
+2020-05-14,Delaware,7223,260
+2020-05-14,Illinois,88081,3945
+2020-05-14,Kentucky,7397,341
+2020-05-14,Maryland,36021,1866
+2020-05-14,Michigan,49489,4787
+2020-05-14,Missouri,10490,566
+2020-05-14,Nebraska,9411,117
+2020-05-14,New York,348192,27617
+2020-05-14,Oklahoma,4962,284
+2020-05-14,Virginia,27813,955
+2020-05-14,Louisiana,33555,2417
+2020-05-14,Minnesota,13443,672
+2020-05-14,Tennessee,16588,284
+2020-05-14,Wisconsin,11280,434
+2020-05-14,California,74947,3039
+2020-05-14,New Jersey,142704,9946
+2020-05-14,New Mexico,5503,242
+2020-05-14,Washington,18649,991
+2020-05-14,Connecticut,35464,3219
+2020-05-14,Mississippi,10483,480
+2020-05-14,Puerto Rico,2427,117
+2020-05-14,North Dakota,1712,40
+2020-05-14,Pennsylvania,63158,4298
+2020-05-14,Rhode Island,12016,468
+2020-05-14,South Dakota,3792,43
+2020-05-14,Massachusetts,82182,5482
+2020-05-14,New Hampshire,3382,151
+2020-05-14,West Virginia,1434,62
+2020-05-14,North Carolina,16593,632
+2020-05-14,South Carolina,8189,371
+2020-05-14,Virgin Islands,69,6
+2020-05-14,District of Columbia,6736,358
+2020-05-14,Northern Mariana Islands,19,2
+2020-05-15,Guam,1123,6
+2020-05-15,Iowa,14049,336
+2020-05-15,Ohio,26956,1581
+2020-05-15,Utah,6930,77
+2020-05-15,Idaho,2389,73
+2020-05-15,Maine,1603,69
+2020-05-15,Texas,46987,1300
+2020-05-15,Alaska,388,8
+2020-05-15,Hawaii,628,17
+2020-05-15,Kansas,8006,187
+2020-05-15,Nevada,6733,345
+2020-05-15,Oregon,3541,137
+2020-05-15,Alabama,11373,483
+2020-05-15,Arizona,13169,651
+2020-05-15,Florida,44130,1916
+2020-05-15,Georgia,35242,1563
+2020-05-15,Indiana,27281,1691
+2020-05-15,Montana,466,16
+2020-05-15,Vermont,933,53
+2020-05-15,Wyoming,716,7
+2020-05-15,Arkansas,4463,98
+2020-05-15,Colorado,21207,1150
+2020-05-15,Delaware,7373,271
+2020-05-15,Illinois,90528,4075
+2020-05-15,Kentucky,7578,343
+2020-05-15,Maryland,37105,1911
+2020-05-15,Michigan,49982,4825
+2020-05-15,Missouri,10567,581
+2020-05-15,Nebraska,9766,122
+2020-05-15,New York,350951,27755
+2020-05-15,Oklahoma,5086,285
+2020-05-15,Virginia,28672,977
+2020-05-15,Louisiana,33903,2448
+2020-05-15,Minnesota,14249,692
+2020-05-15,Tennessee,16917,288
+2020-05-15,Wisconsin,11854,445
+2020-05-15,California,77015,3192
+2020-05-15,New Jersey,143905,10138
+2020-05-15,New Mexico,5662,253
+2020-05-15,Washington,18913,1008
+2020-05-15,Connecticut,36085,3285
+2020-05-15,Mississippi,10801,493
+2020-05-15,Puerto Rico,2542,122
+2020-05-15,North Dakota,1761,42
+2020-05-15,Pennsylvania,64178,4432
+2020-05-15,Rhode Island,12219,479
+2020-05-15,South Dakota,3887,44
+2020-05-15,Massachusetts,83421,5592
+2020-05-15,New Hampshire,3464,159
+2020-05-15,West Virginia,1447,64
+2020-05-15,North Carolina,17190,660
+2020-05-15,South Carolina,8407,380
+2020-05-15,Virgin Islands,69,6
+2020-05-15,District of Columbia,6871,368
+2020-05-15,Northern Mariana Islands,19,2
+2020-05-16,Guam,1123,6
+2020-05-16,Iowa,14328,346
+2020-05-16,Ohio,27476,1610
+2020-05-16,Utah,7068,78
+2020-05-16,Idaho,2419,73
+2020-05-16,Maine,1648,70
+2020-05-16,Texas,47866,1330
+2020-05-16,Alaska,392,8
+2020-05-16,Hawaii,629,17
+2020-05-16,Kansas,8059,189
+2020-05-16,Nevada,6810,349
+2020-05-16,Oregon,3612,137
+2020-05-16,Alabama,11674,485
+2020-05-16,Arizona,13631,679
+2020-05-16,Florida,44803,1963
+2020-05-16,Georgia,35655,1573
+2020-05-16,Indiana,27919,1741
+2020-05-16,Montana,468,16
+2020-05-16,Vermont,934,53
+2020-05-16,Wyoming,741,7
+2020-05-16,Arkansas,4578,98
+2020-05-16,Colorado,21604,1192
+2020-05-16,Delaware,7547,286
+2020-05-16,Illinois,92669,4149
+2020-05-16,Kentucky,7773,346
+2020-05-16,Maryland,38083,1957
+2020-05-16,Michigan,50416,4880
+2020-05-16,Missouri,10794,595
+2020-05-16,Nebraska,10220,129
+2020-05-16,New York,353136,27953
+2020-05-16,Oklahoma,5237,288
+2020-05-16,Virginia,29683,1002
+2020-05-16,Louisiana,34183,2479
+2020-05-16,Minnesota,14978,709
+2020-05-16,Tennessee,17204,292
+2020-05-16,Wisconsin,12368,453
+2020-05-16,California,78933,3254
+2020-05-16,New Jersey,145089,10249
+2020-05-16,New Mexico,5847,259
+2020-05-16,Washington,19109,1015
+2020-05-16,Connecticut,36703,3339
+2020-05-16,Mississippi,11123,510
+2020-05-16,Puerto Rico,2589,122
+2020-05-16,North Dakota,1848,42
+2020-05-16,Pennsylvania,65228,4490
+2020-05-16,Rhode Island,12434,489
+2020-05-16,South Dakota,3959,44
+2020-05-16,Massachusetts,84933,5705
+2020-05-16,New Hampshire,3556,171
+2020-05-16,West Virginia,1470,65
+2020-05-16,North Carolina,18009,671
+2020-05-16,South Carolina,8661,380
+2020-05-16,Virgin Islands,69,6
+2020-05-16,District of Columbia,7042,375
+2020-05-16,Northern Mariana Islands,21,2
+2020-05-17,Guam,1123,6
+2020-05-17,Iowa,14651,351
+2020-05-17,Ohio,27925,1625
+2020-05-17,Utah,7238,80
+2020-05-17,Idaho,2421,73
+2020-05-17,Maine,1687,70
+2020-05-17,Texas,48828,1356
+2020-05-17,Alaska,396,8
+2020-05-17,Hawaii,630,17
+2020-05-17,Kansas,8066,189
+2020-05-17,Nevada,6935,350
+2020-05-17,Oregon,3623,137
+2020-05-17,Alabama,11771,488
+2020-05-17,Arizona,13937,680
+2020-05-17,Florida,45580,1972
+2020-05-17,Georgia,35954,1584
+2020-05-17,Indiana,28419,1751
+2020-05-17,Montana,468,16
+2020-05-17,Vermont,940,54
+2020-05-17,Wyoming,754,8
+2020-05-17,Arkansas,4759,98
+2020-05-17,Colorado,21909,1215
+2020-05-17,Delaware,7670,290
+2020-05-17,Illinois,94360,4198
+2020-05-17,Kentucky,7793,346
+2020-05-17,Maryland,38920,1992
+2020-05-17,Michigan,51054,4891
+2020-05-17,Missouri,11069,603
+2020-05-17,Nebraska,10348,129
+2020-05-17,New York,355037,28168
+2020-05-17,Oklahoma,5310,288
+2020-05-17,Virginia,30388,1009
+2020-05-17,Louisiana,34498,2491
+2020-05-17,Minnesota,15677,731
+2020-05-17,Tennessee,17391,293
+2020-05-17,Wisconsin,12571,453
+2020-05-17,California,80366,3290
+2020-05-17,New Jersey,146334,10356
+2020-05-17,New Mexico,5938,265
+2020-05-17,Washington,19281,1016
+2020-05-17,Connecticut,37419,3408
+2020-05-17,Mississippi,11296,521
+2020-05-17,Puerto Rico,2646,123
+2020-05-17,North Dakota,1900,43
+2020-05-17,Pennsylvania,65745,4504
+2020-05-17,Rhode Island,12674,499
+2020-05-17,South Dakota,3987,44
+2020-05-17,Massachusetts,86010,5797
+2020-05-17,New Hampshire,3596,172
+2020-05-17,West Virginia,1492,67
+2020-05-17,North Carolina,18537,679
+2020-05-17,South Carolina,8816,385
+2020-05-17,Virgin Islands,69,6
+2020-05-17,District of Columbia,7123,383
+2020-05-17,Northern Mariana Islands,21,2
+2020-05-18,Guam,1123,6
+2020-05-18,Iowa,14955,355
+2020-05-18,Ohio,28455,1657
+2020-05-18,Utah,7384,80
+2020-05-18,Idaho,2455,74
+2020-05-18,Maine,1713,71
+2020-05-18,Texas,49788,1362
+2020-05-18,Alaska,399,8
+2020-05-18,Hawaii,630,17
+2020-05-18,Kansas,8439,190
+2020-05-18,Nevada,7059,364
+2020-05-18,Oregon,3687,138
+2020-05-18,Alabama,12086,489
+2020-05-18,Arizona,14170,686
+2020-05-18,Florida,46434,1996
+2020-05-18,Georgia,36634,1624
+2020-05-18,Indiana,28897,1765
+2020-05-18,Montana,470,16
+2020-05-18,Vermont,940,54
+2020-05-18,Wyoming,766,10
+2020-05-18,Arkansas,4813,100
+2020-05-18,Colorado,22174,1224
+2020-05-18,Delaware,7869,297
+2020-05-18,Illinois,96778,4257
+2020-05-18,Kentucky,8041,354
+2020-05-18,Maryland,39882,2023
+2020-05-18,Michigan,51853,4915
+2020-05-18,Missouri,11225,611
+2020-05-18,Nebraska,10625,132
+2020-05-18,New York,356278,28302
+2020-05-18,Oklahoma,5398,288
+2020-05-18,Virginia,31140,1014
+2020-05-18,Louisiana,34832,2563
+2020-05-18,Minnesota,16381,740
+2020-05-18,Tennessee,17767,296
+2020-05-18,Wisconsin,12722,459
+2020-05-18,California,81943,3322
+2020-05-18,New Jersey,148039,10435
+2020-05-18,New Mexico,6096,270
+2020-05-18,Washington,19521,1020
+2020-05-18,Connecticut,38116,3449
+2020-05-18,Mississippi,11432,528
+2020-05-18,Puerto Rico,2710,124
+2020-05-18,North Dakota,1931,44
+2020-05-18,Pennsylvania,66676,4560
+2020-05-18,Rhode Island,12795,506
+2020-05-18,South Dakota,4027,44
+2020-05-18,Massachusetts,87052,5862
+2020-05-18,New Hampshire,3652,172
+2020-05-18,West Virginia,1502,68
+2020-05-18,North Carolina,19121,684
+2020-05-18,South Carolina,8942,391
+2020-05-18,Virgin Islands,69,6
+2020-05-18,District of Columbia,7270,392
+2020-05-18,Northern Mariana Islands,21,2
+2020-05-19,Guam,1123,6
+2020-05-19,Iowa,15296,367
+2020-05-19,Ohio,28953,1720
+2020-05-19,Utah,7530,88
+2020-05-19,Idaho,2476,77
+2020-05-19,Maine,1741,73
+2020-05-19,Texas,51080,1405
+2020-05-19,Alaska,399,8
+2020-05-19,Hawaii,631,17
+2020-05-19,Kansas,8488,193
+2020-05-19,Nevada,7169,373
+2020-05-19,Oregon,3726,140
+2020-05-19,Alabama,12376,504
+2020-05-19,Arizona,14566,704
+2020-05-19,Florida,46936,2051
+2020-05-19,Georgia,37214,1650
+2020-05-19,Indiana,29402,1824
+2020-05-19,Montana,471,16
+2020-05-19,Vermont,944,54
+2020-05-19,Wyoming,776,10
+2020-05-19,Arkansas,4923,102
+2020-05-19,Colorado,22454,1257
+2020-05-19,Delaware,8037,304
+2020-05-19,Illinois,98298,4399
+2020-05-19,Kentucky,8205,369
+2020-05-19,Maryland,41664,2081
+2020-05-19,Michigan,52337,5017
+2020-05-19,Missouri,11369,633
+2020-05-19,Nebraska,10846,136
+2020-05-19,New York,357757,28437
+2020-05-19,Oklahoma,5489,294
+2020-05-19,Virginia,32145,1041
+2020-05-19,Louisiana,35161,2581
+2020-05-19,Minnesota,17038,757
+2020-05-19,Tennessee,18301,301
+2020-05-19,Wisconsin,13001,467
+2020-05-19,California,83981,3422
+2020-05-19,New Jersey,149013,10586
+2020-05-19,New Mexico,6192,276
+2020-05-19,Washington,19746,1042
+2020-05-19,Connecticut,38430,3472
+2020-05-19,Mississippi,11704,554
+2020-05-19,Puerto Rico,2805,124
+2020-05-19,North Dakota,1994,45
+2020-05-19,Pennsylvania,67404,4675
+2020-05-19,Rhode Island,12951,532
+2020-05-19,South Dakota,4085,46
+2020-05-19,Massachusetts,87925,5938
+2020-05-19,New Hampshire,3721,182
+2020-05-19,West Virginia,1514,68
+2020-05-19,North Carolina,19762,711
+2020-05-19,South Carolina,9056,399
+2020-05-19,Virgin Islands,69,6
+2020-05-19,District of Columbia,7434,400
+2020-05-19,Northern Mariana Islands,21,2
+2020-05-20,Guam,1134,6
+2020-05-20,Iowa,15868,400
+2020-05-20,Ohio,29437,1781
+2020-05-20,Utah,7717,90
+2020-05-20,Idaho,2506,77
+2020-05-20,Maine,1819,73
+2020-05-20,Texas,52183,1438
+2020-05-20,Alaska,402,8
+2020-05-20,Hawaii,633,17
+2020-05-20,Kansas,8661,197
+2020-05-20,Nevada,7301,378
+2020-05-20,Oregon,3801,144
+2020-05-20,Alabama,13052,522
+2020-05-20,Arizona,14897,747
+2020-05-20,Florida,47463,2095
+2020-05-20,Georgia,38162,1672
+2020-05-20,Indiana,29986,1864
+2020-05-20,Montana,478,16
+2020-05-20,Vermont,944,54
+2020-05-20,Wyoming,787,11
+2020-05-20,Arkansas,5003,107
+2020-05-20,Colorado,22769,1299
+2020-05-20,Delaware,8194,310
+2020-05-20,Illinois,100713,4547
+2020-05-20,Kentucky,8336,381
+2020-05-20,Maryland,42442,2123
+2020-05-20,Michigan,52988,5060
+2020-05-20,Missouri,11510,645
+2020-05-20,Nebraska,11119,141
+2020-05-20,New York,359235,28540
+2020-05-20,Oklahoma,5532,299
+2020-05-20,Virginia,32908,1074
+2020-05-20,Louisiana,35439,2608
+2020-05-20,Minnesota,17679,786
+2020-05-20,Tennessee,18534,309
+2020-05-20,Wisconsin,13574,481
+2020-05-20,California,86125,3514
+2020-05-20,New Jersey,150399,10747
+2020-05-20,New Mexico,6338,283
+2020-05-20,Washington,19864,1045
+2020-05-20,Connecticut,39017,3529
+2020-05-20,Mississippi,11967,570
+2020-05-20,Puerto Rico,2866,125
+2020-05-20,North Dakota,2095,49
+2020-05-20,Pennsylvania,68151,4794
+2020-05-20,Rhode Island,13356,538
+2020-05-20,South Dakota,4177,46
+2020-05-20,Massachusetts,88970,6066
+2020-05-20,New Hampshire,3868,190
+2020-05-20,West Virginia,1567,69
+2020-05-20,North Carolina,20221,721
+2020-05-20,South Carolina,9175,407
+2020-05-20,Virgin Islands,69,6
+2020-05-20,District of Columbia,7551,407
+2020-05-20,Northern Mariana Islands,21,2
+2020-05-21,Guam,1134,6
+2020-05-21,Iowa,16170,414
+2020-05-21,Ohio,30168,1836
+2020-05-21,Utah,7876,92
+2020-05-21,Idaho,2534,77
+2020-05-21,Maine,1877,73
+2020-05-21,Texas,53441,1480
+2020-05-21,Alaska,402,8
+2020-05-21,Hawaii,637,17
+2020-05-21,Kansas,8771,199
+2020-05-21,Nevada,7402,381
+2020-05-21,Oregon,3817,145
+2020-05-21,Alabama,13414,529
+2020-05-21,Arizona,15315,763
+2020-05-21,Florida,48667,2143
+2020-05-21,Georgia,38969,1749
+2020-05-21,Indiana,30673,1913
+2020-05-21,Montana,479,16
+2020-05-21,Vermont,950,54
+2020-05-21,Wyoming,801,12
+2020-05-21,Arkansas,5458,110
+2020-05-21,Colorado,23161,1310
+2020-05-21,Delaware,8386,317
+2020-05-21,Illinois,102995,4634
+2020-05-21,Kentucky,8475,393
+2020-05-21,Maryland,43645,2159
+2020-05-21,Michigan,53468,5129
+2020-05-21,Missouri,11657,671
+2020-05-21,Nebraska,11424,148
+2020-05-21,New York,361313,28663
+2020-05-21,Oklahoma,5680,304
+2020-05-21,Virginia,34137,1099
+2020-05-21,Louisiana,36627,2629
+2020-05-21,Minnesota,18209,818
+2020-05-21,Tennessee,18970,313
+2020-05-21,Wisconsin,13892,487
+2020-05-21,California,88488,3624
+2020-05-21,New Jersey,151472,10843
+2020-05-21,New Mexico,6472,294
+2020-05-21,Washington,20033,1054
+2020-05-21,Connecticut,39208,3582
+2020-05-21,Mississippi,12222,580
+2020-05-21,Puerto Rico,2913,126
+2020-05-21,North Dakota,2229,51
+2020-05-21,Pennsylvania,69252,4887
+2020-05-21,Rhode Island,13571,556
+2020-05-21,South Dakota,4177,47
+2020-05-21,Massachusetts,90084,6148
+2020-05-21,New Hampshire,3935,199
+2020-05-21,West Virginia,1603,71
+2020-05-21,North Carolina,20915,733
+2020-05-21,South Carolina,9379,416
+2020-05-21,Virgin Islands,69,6
+2020-05-21,District of Columbia,7788,412
+2020-05-21,Northern Mariana Islands,22,2
+2020-05-22,Guam,1134,6
+2020-05-22,Iowa,16510,441
+2020-05-22,Ohio,30795,1872
+2020-05-22,Utah,8057,93
+2020-05-22,Idaho,2595,79
+2020-05-22,Maine,1948,75
+2020-05-22,Texas,54369,1498
+2020-05-22,Alaska,404,8
+2020-05-22,Hawaii,632,17
+2020-05-22,Kansas,9068,200
+2020-05-22,Nevada,7531,387
+2020-05-22,Oregon,3864,147
+2020-05-22,Alabama,13670,541
+2020-05-22,Arizona,15608,775
+2020-05-22,Florida,49443,2189
+2020-05-22,Georgia,39734,1779
+2020-05-22,Indiana,31165,1941
+2020-05-22,Montana,479,16
+2020-05-22,Vermont,952,54
+2020-05-22,Wyoming,803,12
+2020-05-22,Arkansas,5612,113
+2020-05-22,Colorado,23456,1324
+2020-05-22,Delaware,8529,322
+2020-05-22,Illinois,105710,4740
+2020-05-22,Kentucky,8688,398
+2020-05-22,Maryland,44539,2207
+2020-05-22,Michigan,53865,5158
+2020-05-22,Missouri,11797,681
+2020-05-22,Nebraska,11662,149
+2020-05-22,New York,362991,28802
+2020-05-22,Oklahoma,5849,307
+2020-05-22,Virginia,34950,1136
+2020-05-22,Louisiana,37048,2669
+2020-05-22,Minnesota,19014,851
+2020-05-22,Tennessee,19364,315
+2020-05-22,Wisconsin,14557,496
+2020-05-22,California,90801,3690
+2020-05-22,New Jersey,152719,10985
+2020-05-22,New Mexico,6625,302
+2020-05-22,Washington,20274,1061
+2020-05-22,Connecticut,39640,3637
+2020-05-22,Mississippi,12624,596
+2020-05-22,Puerto Rico,3030,126
+2020-05-22,North Dakota,2317,52
+2020-05-22,Pennsylvania,70305,5032
+2020-05-22,Rhode Island,13736,579
+2020-05-22,South Dakota,4356,50
+2020-05-22,Massachusetts,90889,6228
+2020-05-22,New Hampshire,4014,204
+2020-05-22,West Virginia,1705,72
+2020-05-22,North Carolina,21661,754
+2020-05-22,South Carolina,9638,419
+2020-05-22,Virgin Islands,69,6
+2020-05-22,District of Columbia,7893,418
+2020-05-22,Northern Mariana Islands,22,2
