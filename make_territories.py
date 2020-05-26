@@ -61,7 +61,7 @@ def get_html(territory, script, div, death_ro, death_double_rate,
         death_ro = 0
     if cases_ro == None:
         cases_ro = 0
-    t = ENV.get_template('countries.html')
+    t = ENV.get_template('countries.j2')
     return t.render(title = territory, 
             script =  script,
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
@@ -138,7 +138,7 @@ def make_territories_ref_list(territory_key, territories):
     else:
         path = 'countries_list.html'
         page_title = 'Countries'
-    t = ENV.get_template('territories_ref.html')
+    t = ENV.get_template('territories_ref.j2')
     t =  t.render(title = 'By {k}'.format(k = territory_key), 
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_title = page_title,

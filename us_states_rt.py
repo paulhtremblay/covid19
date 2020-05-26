@@ -112,7 +112,7 @@ def get_html(script, div, date, title, the_type ):
     """
     Create the HTML for each state
     """
-    t = ENV.get_template('data.html')
+    t = ENV.get_template('data.j2')
     if the_type == 'deaths':
         page_title = 'States Rate of Growth Deaths'
     elif the_type == 'cases':

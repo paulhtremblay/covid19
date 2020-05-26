@@ -78,7 +78,7 @@ def get_html(date, territory, script, div, curr_death, last_week_deaths,
     sig_prev = ''
     if p_last_week > .1:
         sig_prev = '(not significant change from previous)'
-    t = ENV.get_template('countries.html')
+    t = ENV.get_template('countries.j2')
     return t.render(territory_name = territory, 
             script =  script,
             date = date,
@@ -135,7 +135,7 @@ def make_territories_ref_list(territory_key, territories):
     else:
         path = 'countries_list.html'
         h1_name = 'Countries'
-    t = ENV.get_template('territories_ref.html')
+    t = ENV.get_template('territories_ref.j2')
     t =  t.render(title = 'By {k}'.format(k = territory_key), 
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             h1_name = h1_name,

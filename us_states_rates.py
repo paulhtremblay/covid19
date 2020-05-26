@@ -92,7 +92,7 @@ def get_html(script, div, the_type):
         title = 'Growth of rates of deaths'
     elif the_type == 'cases':
         title = 'Growth of rates of cases'
-    t = ENV.get_template('data.html')
+    t = ENV.get_template('data.j2')
     return t.render(title = title, 
             script =  script,
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
