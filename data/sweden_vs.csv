@@ -1,418 +1,12 @@
 region,date,cases,deaths
-Washington,2020-01-22,0,0
-Washington,2020-01-23,0,0
-Washington,2020-01-24,0,0
-Washington,2020-01-25,0,0
-Washington,2020-01-26,0,0
-Washington,2020-01-27,0,0
-Washington,2020-01-28,0,0
-Washington,2020-01-29,0,0
-Washington,2020-01-30,0,0
-Washington,2020-01-31,0,0
-Washington,2020-02-01,0,0
-Washington,2020-02-02,0,0
-Washington,2020-02-03,0,0
-Washington,2020-02-04,0,0
-Washington,2020-02-05,0,0
-Washington,2020-02-06,0,0
-Washington,2020-02-07,0,0
-Washington,2020-02-08,0,0
-Washington,2020-02-09,0,0
-Washington,2020-02-10,0,0
-Washington,2020-02-11,0,0
-Washington,2020-02-12,0,0
-Washington,2020-02-13,0,0
-Washington,2020-02-14,0,0
-Washington,2020-02-15,0,0
-Washington,2020-02-16,0,0
-Washington,2020-02-17,0,0
-Washington,2020-02-18,0,0
-Washington,2020-02-19,0,0
-Washington,2020-02-20,0,0
-Washington,2020-02-21,0,0
-Washington,2020-02-22,0,0
-Washington,2020-02-23,0,0
-Washington,2020-02-24,4,0
-Washington,2020-02-25,0,0
-Washington,2020-02-26,0,0
-Washington,2020-02-27,0,0
-Washington,2020-02-28,2,0
-Washington,2020-02-29,3,1
-Washington,2020-03-01,7,2
-Washington,2020-03-02,6,3
-Washington,2020-03-03,9,4
-Washington,2020-03-04,15,1
-Washington,2020-03-05,28,0
-Washington,2020-03-06,11,1
-Washington,2020-03-07,24,4
-Washington,2020-03-08,31,3
-Washington,2020-03-09,38,3
-Washington,2020-03-10,100,2
-Washington,2020-03-11,59,5
-Washington,2020-03-12,81,3
-Washington,2020-03-13,92,5
-Washington,2020-03-14,98,3
-Washington,2020-03-15,66,2
-Washington,2020-03-16,119,6
-Washington,2020-03-17,114,6
-Washington,2020-03-18,118,14
-Washington,2020-03-19,202,7
-Washington,2020-03-20,176,8
-Washington,2020-03-21,251,12
-Washington,2020-03-22,189,2
-Washington,2020-03-23,257,13
-Washington,2020-03-24,368,13
-Washington,2020-03-25,116,7
-Washington,2020-03-26,623,21
-Washington,2020-03-27,562,26
-Washington,2020-03-28,541,14
-Washington,2020-03-29,585,16
-Washington,2020-03-30,283,14
-Washington,2020-03-31,113,5
-Washington,2020-04-01,296,23
-Washington,2020-04-02,997,23
-Washington,2020-04-03,381,21
-Washington,2020-04-04,532,25
-Washington,2020-04-05,486,26
-Washington,2020-04-06,400,39
-Washington,2020-04-07,298,26
-Washington,2020-04-08,415,21
-Washington,2020-04-09,511,26
-Washington,2020-04-10,279,27
-Washington,2020-04-11,337,15
-Washington,2020-04-12,187,13
-Washington,2020-04-13,127,14
-Washington,2020-04-14,156,27
-Washington,2020-04-15,89,20
-Washington,2020-04-16,369,16
-Washington,2020-04-17,293,22
-Washington,2020-04-18,357,19
-Washington,2020-04-19,3,8
-Washington,2020-04-20,386,24
-Washington,2020-04-21,154,22
-Washington,2020-04-22,194,13
-Washington,2020-04-23,367,21
-Washington,2020-04-24,214,14
-Washington,2020-04-25,364,12
-Washington,2020-04-26,179,14
-Washington,2020-04-27,201,14
-Washington,2020-04-28,195,21
-Washington,2020-04-29,319,13
-Washington,2020-04-30,318,17
-Washington,2020-05-01,314,7
-Washington,2020-05-02,243,4
-Washington,2020-05-03,556,7
-Washington,2020-05-04,96,6
-Washington,2020-05-05,176,17
-Washington,2020-05-06,632,18
-Washington,2020-05-07,304,22
-Washington,2020-05-08,280,12
-Washington,2020-05-09,149,10
-Washington,2020-05-10,146,14
-Washington,2020-05-11,391,18
-Washington,2020-05-12,203,15
-Washington,2020-05-13,101,5
-Washington,2020-05-14,362,14
-Washington,2020-05-15,264,17
-Washington,2020-05-16,196,7
-Washington,2020-05-17,172,1
-Washington,2020-05-18,240,4
-Washington,2020-05-19,225,22
-Washington,2020-05-20,118,3
-Washington,2020-05-21,169,9
-Washington,2020-05-22,241,7
-New York,2020-03-02,0,0
-New York,2020-03-03,1,0
-New York,2020-03-04,9,0
-New York,2020-03-05,11,0
-New York,2020-03-06,22,0
-New York,2020-03-07,45,0
-New York,2020-03-08,17,0
-New York,2020-03-09,36,0
-New York,2020-03-10,31,0
-New York,2020-03-11,44,0
-New York,2020-03-12,109,0
-New York,2020-03-13,95,0
-New York,2020-03-14,189,2
-New York,2020-03-15,122,4
-New York,2020-03-16,218,4
-New York,2020-03-17,425,8
-New York,2020-03-18,1012,14
-New York,2020-03-19,1774,7
-New York,2020-03-20,2952,29
-New York,2020-03-21,3258,27
-New York,2020-03-22,4817,47
-New York,2020-03-23,5711,41
-New York,2020-03-24,4804,73
-New York,2020-03-25,7413,119
-New York,2020-03-26,5941,127
-New York,2020-03-27,5688,143
-New York,2020-03-28,8771,290
-New York,2020-03-29,6267,245
-New York,2020-03-30,7679,332
-New York,2020-03-31,8749,417
-New York,2020-04-01,8152,486
-New York,2020-04-02,8608,548
-New York,2020-04-03,10680,753
-New York,2020-04-04,12312,819
-New York,2020-04-05,8122,800
-New York,2020-04-06,7976,795
-New York,2020-04-07,9642,1055
-New York,2020-04-08,9568,953
-New York,2020-04-09,10765,1028
-New York,2020-04-10,10794,996
-New York,2020-04-11,10160,997
-New York,2020-04-12,8435,957
-New York,2020-04-13,6548,882
-New York,2020-04-14,7402,1003
-New York,2020-04-15,11755,936
-New York,2020-04-16,8631,732
-New York,2020-04-17,7532,804
-New York,2020-04-18,7249,668
-New York,2020-04-19,6199,652
-New York,2020-04-20,4867,619
-New York,2020-04-21,4324,628
-New York,2020-04-22,5659,607
-New York,2020-04-23,6341,565
-New York,2020-04-24,8286,547
-New York,2020-04-25,10683,567
-New York,2020-04-26,6013,478
-New York,2020-04-27,4077,463
-New York,2020-04-28,3285,510
-New York,2020-04-29,4718,510
-New York,2020-04-30,4702,329
-New York,2020-05-01,3879,225
-New York,2020-05-02,4559,194
-New York,2020-05-03,3699,541
-New York,2020-05-04,2524,212
-New York,2020-05-05,2302,240
-New York,2020-05-06,2746,928
-New York,2020-05-07,3526,250
-New York,2020-05-08,2873,152
-New York,2020-05-09,2715,226
-New York,2020-05-10,2138,214
-New York,2020-05-11,1610,205
-New York,2020-05-12,1438,279
-New York,2020-05-13,2123,166
-New York,2020-05-14,2364,169
-New York,2020-05-15,2759,138
-New York,2020-05-16,2185,198
-New York,2020-05-17,1901,215
-New York,2020-05-18,1241,134
-New York,2020-05-19,1479,135
-New York,2020-05-20,1478,103
-New York,2020-05-21,2078,123
-New York,2020-05-22,1678,139
-Seattle,2020-04-07,155,8
-Seattle,2020-04-08,202,14
-Seattle,2020-04-09,198,14
-Seattle,2020-04-10,231,19
-Seattle,2020-04-11,145,7
-Seattle,2020-04-12,164,8
-Seattle,2020-04-13,123,4
-Seattle,2020-04-14,71,7
-Seattle,2020-04-15,77,9
-Seattle,2020-04-16,112,8
-Seattle,2020-04-17,93,11
-Seattle,2020-04-18,161,9
-Seattle,2020-04-19,109,6
-Seattle,2020-03-24,112,7
-Seattle,2020-03-25,82,6
-Seattle,2020-03-26,219,10
-Seattle,2020-03-27,251,16
-Seattle,2020-03-28,249,11
-Seattle,2020-03-29,84,8
-Seattle,2020-03-30,169,6
-Seattle,2020-03-31,0,0
-Seattle,2020-04-01,166,14
-Seattle,2020-04-02,160,11
-Seattle,2020-04-03,131,11
-Seattle,2020-04-04,111,16
-Seattle,2020-04-05,269,6
-Seattle,2020-04-06,164,14
-Seattle,2020-04-20,121,14
-Seattle,2020-04-21,86,12
-Seattle,2020-04-22,70,7
-Seattle,2020-04-23,120,5
-Seattle,2020-04-24,120,7
-Seattle,2020-04-25,122,8
-Seattle,2020-04-26,101,9
-Seattle,2020-04-27,78,8
-Seattle,2020-04-28,64,11
-Seattle,2020-04-29,128,9
-Seattle,2020-04-30,126,10
-Seattle,2020-05-01,99,3
-Seattle,2020-05-02,98,5
-Seattle,2020-05-03,113,5
-Seattle,2020-05-04,-36,4
-Seattle,2020-05-05,71,6
-Seattle,2020-05-06,117,5
-Seattle,2020-05-07,93,6
-Seattle,2020-05-08,77,5
-Seattle,2020-05-09,60,5
-Seattle,2020-05-10,46,10
-Seattle,2020-05-11,69,5
-Seattle,2020-05-12,64,6
-Seattle,2020-05-13,42,3
-Seattle,2020-05-14,86,0
-Seattle,2020-05-15,53,7
-Seattle,2020-05-16,80,5
-Seattle,2020-05-17,40,1
-Seattle,2020-05-18,49,1
-Seattle,2020-05-19,53,6
-Seattle,2020-05-20,35,0
-Seattle,2020-05-21,28,5
-Seattle,2020-05-22,52,3
-Seattle,2020-03-19,130,4
-Seattle,2020-03-20,101,7
-Seattle,2020-03-21,141,8
-Seattle,2020-03-22,101,1
-Seattle,2020-03-23,130,11
-Seattle,2020-03-05,19,0
-Seattle,2020-03-06,7,1
-Seattle,2020-03-07,13,4
-Seattle,2020-03-08,19,2
-Seattle,2020-03-09,26,3
-Seattle,2020-03-10,74,2
-Seattle,2020-03-11,44,4
-Seattle,2020-03-12,36,1
-Seattle,2020-03-13,58,5
-Seattle,2020-03-14,60,3
-Seattle,2020-03-15,32,2
-Seattle,2020-03-16,68,6
-Seattle,2020-03-17,29,3
-Seattle,2020-03-18,45,10
-Seattle,2020-02-29,3,1
-Seattle,2020-03-01,7,2
-Seattle,2020-03-02,4,3
-Seattle,2020-03-03,7,4
-Seattle,2020-03-04,11,1
-Seattle,2020-01-22,0,0
-Seattle,2020-01-23,0,0
-Seattle,2020-01-24,0,0
-Seattle,2020-01-25,0,0
-Seattle,2020-01-26,0,0
-Seattle,2020-01-27,0,0
-Seattle,2020-01-28,0,0
-Seattle,2020-01-29,0,0
-Seattle,2020-01-30,0,0
-Seattle,2020-01-31,0,0
-Seattle,2020-02-01,0,0
-Seattle,2020-02-02,0,0
-Seattle,2020-02-03,0,0
-Seattle,2020-02-04,0,0
-Seattle,2020-02-05,0,0
-Seattle,2020-02-06,0,0
-Seattle,2020-02-07,0,0
-Seattle,2020-02-08,0,0
-Seattle,2020-02-09,0,0
-Seattle,2020-02-10,0,0
-Seattle,2020-02-11,0,0
-Seattle,2020-02-12,0,0
-Seattle,2020-02-13,0,0
-Seattle,2020-02-14,0,0
-Seattle,2020-02-15,0,0
-Seattle,2020-02-16,0,0
-Seattle,2020-02-17,0,0
-Seattle,2020-02-18,0,0
-Seattle,2020-02-19,0,0
-Seattle,2020-02-20,0,0
-Seattle,2020-02-21,0,0
-Seattle,2020-02-22,0,0
-Seattle,2020-02-23,0,0
-Seattle,2020-02-24,0,0
-Seattle,2020-02-25,0,0
-Seattle,2020-02-26,0,0
-Seattle,2020-02-27,0,0
-Seattle,2020-02-28,0,0
-New York City,2020-03-02,0,0
-New York City,2020-03-03,1,0
-New York City,2020-03-04,0,0
-New York City,2020-03-05,2,0
-New York City,2020-03-06,1,0
-New York City,2020-03-07,7,0
-New York City,2020-03-08,2,0
-New York City,2020-03-09,6,0
-New York City,2020-03-10,17,0
-New York City,2020-03-11,15,0
-New York City,2020-03-12,44,0
-New York City,2020-03-13,59,0
-New York City,2020-03-14,114,1
-New York City,2020-03-15,61,4
-New York City,2020-03-16,134,2
-New York City,2020-03-17,182,4
-New York City,2020-03-18,698,14
-New York City,2020-03-19,1133,6
-New York City,2020-03-20,1942,23
-New York City,2020-03-21,1807,21
-New York City,2020-03-22,2839,44
-New York City,2020-03-23,3264,36
-New York City,2020-03-24,2614,75
-New York City,2020-03-25,5118,100
-New York City,2020-03-26,3121,105
-New York City,2020-03-27,2327,125
-New York City,2020-03-28,5410,265
-New York City,2020-03-29,3064,166
-New York City,2020-03-30,4392,211
-New York City,2020-03-31,5143,273
-New York City,2020-04-01,4396,373
-New York City,2020-04-02,4486,304
-New York City,2020-04-03,5541,496
-New York City,2020-04-04,6333,573
-New York City,2020-04-05,4452,425
-New York City,2020-04-06,4827,1211
-New York City,2020-04-07,4945,774
-New York City,2020-04-08,5175,810
-New York City,2020-04-09,5454,808
-New York City,2020-04-10,5575,732
-New York City,2020-04-11,6138,753
-New York City,2020-04-12,5099,714
-New York City,2020-04-13,3767,648
-New York City,2020-04-14,3926,761
-New York City,2020-04-15,8021,709
-New York City,2020-04-16,4970,543
-New York City,2020-04-17,4380,174
-New York City,2020-04-18,4049,128
-New York City,2020-04-19,3318,1221
-New York City,2020-04-20,2511,442
-New York City,2020-04-21,2666,439
-New York City,2020-04-22,3240,446
-New York City,2020-04-23,3540,402
-New York City,2020-04-24,4754,393
-New York City,2020-04-25,4770,392
-New York City,2020-04-26,3255,340
-New York City,2020-04-27,2357,335
-New York City,2020-04-28,2024,385
-New York City,2020-04-29,2637,391
-New York City,2020-04-30,2660,212
-New York City,2020-05-01,2147,122
-New York City,2020-05-02,2559,90
-New York City,2020-05-03,2238,430
-New York City,2020-05-04,1306,129
-New York City,2020-05-05,1284,139
-New York City,2020-05-06,1452,274
-New York City,2020-05-07,1883,148
-New York City,2020-05-08,1504,69
-New York City,2020-05-09,1506,114
-New York City,2020-05-10,993,112
-New York City,2020-05-11,890,127
-New York City,2020-05-12,774,173
-New York City,2020-05-13,1074,79
-New York City,2020-05-14,1269,89
-New York City,2020-05-15,1809,68
-New York City,2020-05-16,1009,99
-New York City,2020-05-17,1005,143
-New York City,2020-05-18,628,84
-New York City,2020-05-19,596,78
-New York City,2020-05-20,682,46
-New York City,2020-05-21,1115,69
-New York City,2020-05-22,791,78
 Norway,2020-04-25,63,11
 Norway,2020-04-24,95,11
 Norway,2020-04-19,193,12
 Norway,2020-04-15,78,13
 Norway,2020-04-14,73,11
 Norway,2020-04-09,147,11
+Norway,2020-05-25,0,0
+Norway,2020-05-24,0,0
 Norway,2020-05-22,0,0
 Norway,2020-05-20,8,0
 Norway,2020-05-18,0,0
@@ -552,6 +146,155 @@ Norway,2020-04-06,130,8
 Norway,2020-04-22,53,9
 Norway,2020-04-08,108,10
 Norway,2020-04-03,270,10
+Sweden,2020-05-24,379,67
+Sweden,2020-05-23,637,54
+Sweden,2020-05-22,649,40
+Sweden,2020-05-21,724,88
+Sweden,2020-05-20,422,45
+Sweden,2020-05-19,234,19
+Sweden,2020-05-17,470,28
+Sweden,2020-05-16,625,117
+Sweden,2020-05-15,673,69
+Sweden,2020-05-14,637,147
+Sweden,2020-05-13,602,57
+Sweden,2020-05-12,348,31
+Sweden,2020-05-10,656,45
+Sweden,2020-05-09,642,135
+Sweden,2020-05-08,705,99
+Sweden,2020-05-07,702,87
+Sweden,2020-05-06,495,85
+Sweden,2020-05-05,404,90
+Sweden,2020-05-03,562,16
+Sweden,2020-05-02,428,67
+Sweden,2020-05-01,790,124
+Sweden,2020-04-30,681,107
+Sweden,2020-04-29,695,81
+Sweden,2020-04-28,286,80
+Sweden,2020-04-26,610,40
+Sweden,2020-04-25,812,131
+Sweden,2020-04-24,751,84
+Sweden,2020-04-23,682,172
+Sweden,2020-04-22,545,185
+Sweden,2020-04-21,392,40
+Sweden,2020-04-20,563,29
+Sweden,2020-04-19,606,111
+Sweden,2020-04-18,676,67
+Sweden,2020-04-17,613,130
+Sweden,2020-04-16,482,170
+Sweden,2020-04-15,497,114
+Sweden,2020-04-14,465,20
+Sweden,2020-04-13,332,12
+Sweden,2020-04-12,466,17
+Sweden,2020-04-11,544,77
+Sweden,2020-04-10,722,106
+Sweden,2020-04-09,726,96
+Sweden,2020-04-08,487,114
+Sweden,2020-04-07,376,76
+Sweden,2020-04-06,387,28
+Sweden,2020-04-05,365,40
+Sweden,2020-04-04,612,51
+Sweden,2020-04-03,519,43
+Sweden,2020-04-02,512,59
+Sweden,2020-04-01,407,34
+Sweden,2020-03-31,328,36
+Sweden,2020-03-28,240,26
+Sweden,2020-03-27,296,24
+Sweden,2020-03-25,256,11
+Sweden,2020-03-20,122,0
+Sweden,2020-03-15,149,0
+Sweden,2020-03-14,155,0
+Sweden,2020-03-13,158,0
+Sweden,2020-03-11,78,0
+Sweden,2020-03-10,45,0
+Sweden,2020-03-09,42,0
+Sweden,2020-03-08,24,0
+Sweden,2020-03-07,76,0
+Sweden,2020-03-06,26,0
+Sweden,2020-03-05,11,0
+Sweden,2020-03-04,9,0
+Sweden,2020-03-03,1,0
+Sweden,2020-03-02,1,0
+Sweden,2020-03-01,1,0
+Sweden,2020-02-29,5,0
+Sweden,2020-02-28,5,0
+Sweden,2020-02-27,1,0
+Sweden,2020-02-26,0,0
+Sweden,2020-02-25,0,0
+Sweden,2020-02-24,0,0
+Sweden,2020-02-23,0,0
+Sweden,2020-02-22,0,0
+Sweden,2020-02-21,0,0
+Sweden,2020-02-20,0,0
+Sweden,2020-02-19,0,0
+Sweden,2020-02-18,0,0
+Sweden,2020-02-17,0,0
+Sweden,2020-02-16,0,0
+Sweden,2020-02-15,0,0
+Sweden,2020-02-14,0,0
+Sweden,2020-02-13,0,0
+Sweden,2020-02-12,0,0
+Sweden,2020-02-11,0,0
+Sweden,2020-02-10,0,0
+Sweden,2020-02-09,0,0
+Sweden,2020-02-08,0,0
+Sweden,2020-02-07,0,0
+Sweden,2020-02-06,0,0
+Sweden,2020-02-05,0,0
+Sweden,2020-02-04,0,0
+Sweden,2020-02-03,0,0
+Sweden,2020-02-02,0,0
+Sweden,2020-02-01,1,0
+Sweden,2020-01-31,0,0
+Sweden,2020-01-30,0,0
+Sweden,2020-01-29,0,0
+Sweden,2020-01-28,0,0
+Sweden,2020-01-27,0,0
+Sweden,2020-01-26,0,0
+Sweden,2020-01-25,0,0
+Sweden,2020-01-24,0,0
+Sweden,2020-01-23,0,0
+Sweden,2020-01-22,0,0
+Sweden,2020-01-21,0,0
+Sweden,2020-01-20,0,0
+Sweden,2020-01-19,0,0
+Sweden,2020-01-18,0,0
+Sweden,2020-01-17,0,0
+Sweden,2020-01-16,0,0
+Sweden,2020-01-15,0,0
+Sweden,2020-01-14,0,0
+Sweden,2020-01-13,0,0
+Sweden,2020-01-12,0,0
+Sweden,2020-01-11,0,0
+Sweden,2020-01-10,0,0
+Sweden,2020-01-09,0,0
+Sweden,2020-01-08,0,0
+Sweden,2020-01-07,0,0
+Sweden,2020-01-06,0,0
+Sweden,2020-01-05,0,0
+Sweden,2020-01-04,0,0
+Sweden,2020-01-03,0,0
+Sweden,2020-01-02,0,0
+Sweden,2020-01-01,0,0
+Sweden,2019-12-31,0,0
+Sweden,2020-03-23,160,1
+Sweden,2020-03-18,46,1
+Sweden,2020-03-12,136,1
+Sweden,2020-04-27,463,2
+Sweden,2020-03-19,134,2
+Sweden,2020-03-16,108,2
+Sweden,2020-03-24,110,4
+Sweden,2020-03-22,123,4
+Sweden,2020-03-17,89,4
+Sweden,2020-05-18,466,5
+Sweden,2020-05-11,401,5
+Sweden,2020-05-25,271,6
+Sweden,2020-03-26,238,6
+Sweden,2020-03-21,200,6
+Sweden,2020-03-30,253,8
+Sweden,2020-05-04,235,10
+Sweden,2020-03-29,401,10
+Belgium,2020-05-25,282,43
+Belgium,2020-05-24,299,25
 Belgium,2020-05-23,276,26
 Belgium,2020-05-22,252,36
 Belgium,2020-05-21,192,42
@@ -697,148 +440,419 @@ Belgium,2020-03-12,47,3
 Belgium,2020-03-20,309,7
 Belgium,2020-03-23,586,8
 Belgium,2020-03-19,243,9
-Sweden,2020-05-23,637,54
-Sweden,2020-05-22,649,40
-Sweden,2020-05-21,724,88
-Sweden,2020-05-20,422,45
-Sweden,2020-05-19,234,19
-Sweden,2020-05-17,470,28
-Sweden,2020-05-16,625,117
-Sweden,2020-05-15,673,69
-Sweden,2020-05-14,637,147
-Sweden,2020-05-13,602,57
-Sweden,2020-05-12,348,31
-Sweden,2020-05-10,656,45
-Sweden,2020-05-09,642,135
-Sweden,2020-05-08,705,99
-Sweden,2020-05-07,702,87
-Sweden,2020-05-06,495,85
-Sweden,2020-05-05,404,90
-Sweden,2020-05-03,562,16
-Sweden,2020-05-02,428,67
-Sweden,2020-05-01,790,124
-Sweden,2020-04-30,681,107
-Sweden,2020-04-29,695,81
-Sweden,2020-04-28,286,80
-Sweden,2020-04-26,610,40
-Sweden,2020-04-25,812,131
-Sweden,2020-04-24,751,84
-Sweden,2020-04-23,682,172
-Sweden,2020-04-22,545,185
-Sweden,2020-04-21,392,40
-Sweden,2020-04-20,563,29
-Sweden,2020-04-19,606,111
-Sweden,2020-04-18,676,67
-Sweden,2020-04-17,613,130
-Sweden,2020-04-16,482,170
-Sweden,2020-04-15,497,114
-Sweden,2020-04-14,465,20
-Sweden,2020-04-13,332,12
-Sweden,2020-04-12,466,17
-Sweden,2020-04-11,544,77
-Sweden,2020-04-10,722,106
-Sweden,2020-04-09,726,96
-Sweden,2020-04-08,487,114
-Sweden,2020-04-07,376,76
-Sweden,2020-04-06,387,28
-Sweden,2020-04-05,365,40
-Sweden,2020-04-04,612,51
-Sweden,2020-04-03,519,43
-Sweden,2020-04-02,512,59
-Sweden,2020-04-01,407,34
-Sweden,2020-03-31,328,36
-Sweden,2020-03-28,240,26
-Sweden,2020-03-27,296,24
-Sweden,2020-03-25,256,11
-Sweden,2020-03-20,122,0
-Sweden,2020-03-15,149,0
-Sweden,2020-03-14,155,0
-Sweden,2020-03-13,158,0
-Sweden,2020-03-11,78,0
-Sweden,2020-03-10,45,0
-Sweden,2020-03-09,42,0
-Sweden,2020-03-08,24,0
-Sweden,2020-03-07,76,0
-Sweden,2020-03-06,26,0
-Sweden,2020-03-05,11,0
-Sweden,2020-03-04,9,0
-Sweden,2020-03-03,1,0
-Sweden,2020-03-02,1,0
-Sweden,2020-03-01,1,0
-Sweden,2020-02-29,5,0
-Sweden,2020-02-28,5,0
-Sweden,2020-02-27,1,0
-Sweden,2020-02-26,0,0
-Sweden,2020-02-25,0,0
-Sweden,2020-02-24,0,0
-Sweden,2020-02-23,0,0
-Sweden,2020-02-22,0,0
-Sweden,2020-02-21,0,0
-Sweden,2020-02-20,0,0
-Sweden,2020-02-19,0,0
-Sweden,2020-02-18,0,0
-Sweden,2020-02-17,0,0
-Sweden,2020-02-16,0,0
-Sweden,2020-02-15,0,0
-Sweden,2020-02-14,0,0
-Sweden,2020-02-13,0,0
-Sweden,2020-02-12,0,0
-Sweden,2020-02-11,0,0
-Sweden,2020-02-10,0,0
-Sweden,2020-02-09,0,0
-Sweden,2020-02-08,0,0
-Sweden,2020-02-07,0,0
-Sweden,2020-02-06,0,0
-Sweden,2020-02-05,0,0
-Sweden,2020-02-04,0,0
-Sweden,2020-02-03,0,0
-Sweden,2020-02-02,0,0
-Sweden,2020-02-01,1,0
-Sweden,2020-01-31,0,0
-Sweden,2020-01-30,0,0
-Sweden,2020-01-29,0,0
-Sweden,2020-01-28,0,0
-Sweden,2020-01-27,0,0
-Sweden,2020-01-26,0,0
-Sweden,2020-01-25,0,0
-Sweden,2020-01-24,0,0
-Sweden,2020-01-23,0,0
-Sweden,2020-01-22,0,0
-Sweden,2020-01-21,0,0
-Sweden,2020-01-20,0,0
-Sweden,2020-01-19,0,0
-Sweden,2020-01-18,0,0
-Sweden,2020-01-17,0,0
-Sweden,2020-01-16,0,0
-Sweden,2020-01-15,0,0
-Sweden,2020-01-14,0,0
-Sweden,2020-01-13,0,0
-Sweden,2020-01-12,0,0
-Sweden,2020-01-11,0,0
-Sweden,2020-01-10,0,0
-Sweden,2020-01-09,0,0
-Sweden,2020-01-08,0,0
-Sweden,2020-01-07,0,0
-Sweden,2020-01-06,0,0
-Sweden,2020-01-05,0,0
-Sweden,2020-01-04,0,0
-Sweden,2020-01-03,0,0
-Sweden,2020-01-02,0,0
-Sweden,2020-01-01,0,0
-Sweden,2019-12-31,0,0
-Sweden,2020-03-23,160,1
-Sweden,2020-03-18,46,1
-Sweden,2020-03-12,136,1
-Sweden,2020-04-27,463,2
-Sweden,2020-03-19,134,2
-Sweden,2020-03-16,108,2
-Sweden,2020-03-24,110,4
-Sweden,2020-03-22,123,4
-Sweden,2020-03-17,89,4
-Sweden,2020-05-18,466,5
-Sweden,2020-05-11,401,5
-Sweden,2020-03-26,238,6
-Sweden,2020-03-21,200,6
-Sweden,2020-03-30,253,8
-Sweden,2020-05-04,235,10
-Sweden,2020-03-29,401,10
+New York City,2020-03-02,0,0
+New York City,2020-03-03,1,0
+New York City,2020-03-04,0,0
+New York City,2020-03-05,2,0
+New York City,2020-03-06,1,0
+New York City,2020-03-07,7,0
+New York City,2020-03-08,2,0
+New York City,2020-03-09,6,0
+New York City,2020-03-10,17,0
+New York City,2020-03-11,15,0
+New York City,2020-03-12,44,0
+New York City,2020-03-13,59,0
+New York City,2020-03-14,114,1
+New York City,2020-03-15,61,4
+New York City,2020-03-16,134,2
+New York City,2020-03-17,182,4
+New York City,2020-03-18,698,14
+New York City,2020-03-19,1133,6
+New York City,2020-03-20,1942,23
+New York City,2020-03-21,1807,21
+New York City,2020-03-22,2839,44
+New York City,2020-03-23,3264,36
+New York City,2020-03-24,2614,75
+New York City,2020-03-25,5118,100
+New York City,2020-03-26,3121,105
+New York City,2020-03-27,2327,125
+New York City,2020-03-28,5410,265
+New York City,2020-03-29,3064,166
+New York City,2020-03-30,4392,211
+New York City,2020-03-31,5143,273
+New York City,2020-04-01,4396,373
+New York City,2020-04-02,4486,304
+New York City,2020-04-03,5541,496
+New York City,2020-04-04,6333,573
+New York City,2020-04-05,4452,425
+New York City,2020-04-06,4827,1211
+New York City,2020-04-07,4945,774
+New York City,2020-04-08,5175,810
+New York City,2020-04-09,5454,808
+New York City,2020-04-10,5575,732
+New York City,2020-04-11,6138,753
+New York City,2020-04-12,5099,714
+New York City,2020-04-13,3767,648
+New York City,2020-04-14,3926,761
+New York City,2020-04-15,8021,709
+New York City,2020-04-16,4970,543
+New York City,2020-04-17,4380,174
+New York City,2020-04-18,4049,128
+New York City,2020-04-19,3318,1221
+New York City,2020-04-20,2511,442
+New York City,2020-04-21,2666,439
+New York City,2020-04-22,3240,446
+New York City,2020-04-23,3540,402
+New York City,2020-04-24,4754,393
+New York City,2020-04-25,4770,392
+New York City,2020-04-26,3255,340
+New York City,2020-04-27,2357,335
+New York City,2020-04-28,2024,385
+New York City,2020-04-29,2637,391
+New York City,2020-04-30,2660,212
+New York City,2020-05-01,2147,122
+New York City,2020-05-02,2559,90
+New York City,2020-05-03,2238,430
+New York City,2020-05-04,1306,129
+New York City,2020-05-05,1284,139
+New York City,2020-05-06,1452,274
+New York City,2020-05-07,1883,148
+New York City,2020-05-08,1504,69
+New York City,2020-05-09,1506,114
+New York City,2020-05-10,993,112
+New York City,2020-05-11,890,127
+New York City,2020-05-12,774,173
+New York City,2020-05-13,1074,79
+New York City,2020-05-14,1269,89
+New York City,2020-05-15,1809,68
+New York City,2020-05-16,1009,99
+New York City,2020-05-17,1005,143
+New York City,2020-05-18,628,84
+New York City,2020-05-19,596,78
+New York City,2020-05-20,682,46
+New York City,2020-05-21,1115,69
+New York City,2020-05-22,791,78
+New York City,2020-05-23,764,52
+New York City,2020-05-24,869,76
+Seattle,2020-04-07,155,8
+Seattle,2020-04-08,202,14
+Seattle,2020-04-09,198,14
+Seattle,2020-04-10,231,19
+Seattle,2020-04-11,145,7
+Seattle,2020-04-12,164,8
+Seattle,2020-04-13,123,4
+Seattle,2020-04-14,71,7
+Seattle,2020-04-15,77,9
+Seattle,2020-04-16,112,8
+Seattle,2020-04-17,93,11
+Seattle,2020-04-18,161,9
+Seattle,2020-04-19,109,6
+Seattle,2020-03-24,112,7
+Seattle,2020-03-25,82,6
+Seattle,2020-03-26,219,10
+Seattle,2020-03-27,251,16
+Seattle,2020-03-28,249,11
+Seattle,2020-03-29,84,8
+Seattle,2020-03-30,169,6
+Seattle,2020-03-31,0,0
+Seattle,2020-04-01,166,14
+Seattle,2020-04-02,160,11
+Seattle,2020-04-03,131,11
+Seattle,2020-04-04,111,16
+Seattle,2020-04-05,269,6
+Seattle,2020-04-06,164,14
+Seattle,2020-04-20,121,14
+Seattle,2020-04-21,86,12
+Seattle,2020-04-22,70,7
+Seattle,2020-04-23,120,5
+Seattle,2020-04-24,120,7
+Seattle,2020-04-25,122,8
+Seattle,2020-04-26,101,9
+Seattle,2020-04-27,78,8
+Seattle,2020-04-28,64,11
+Seattle,2020-04-29,128,9
+Seattle,2020-04-30,126,10
+Seattle,2020-05-01,99,3
+Seattle,2020-05-02,98,5
+Seattle,2020-05-03,113,5
+Seattle,2020-05-04,-36,4
+Seattle,2020-05-05,71,6
+Seattle,2020-05-06,117,5
+Seattle,2020-05-07,93,6
+Seattle,2020-05-08,77,5
+Seattle,2020-05-09,60,5
+Seattle,2020-05-10,46,10
+Seattle,2020-05-11,69,5
+Seattle,2020-05-12,64,6
+Seattle,2020-05-13,42,3
+Seattle,2020-05-14,86,0
+Seattle,2020-05-15,53,7
+Seattle,2020-05-16,80,5
+Seattle,2020-05-17,40,1
+Seattle,2020-05-18,49,1
+Seattle,2020-05-19,53,6
+Seattle,2020-05-20,35,0
+Seattle,2020-05-21,28,5
+Seattle,2020-05-22,52,3
+Seattle,2020-05-23,67,0
+Seattle,2020-05-24,55,5
+Seattle,2020-03-19,130,4
+Seattle,2020-03-20,101,7
+Seattle,2020-03-21,141,8
+Seattle,2020-03-22,101,1
+Seattle,2020-03-23,130,11
+Seattle,2020-03-05,19,0
+Seattle,2020-03-06,7,1
+Seattle,2020-03-07,13,4
+Seattle,2020-03-08,19,2
+Seattle,2020-03-09,26,3
+Seattle,2020-03-10,74,2
+Seattle,2020-03-11,44,4
+Seattle,2020-03-12,36,1
+Seattle,2020-03-13,58,5
+Seattle,2020-03-14,60,3
+Seattle,2020-03-15,32,2
+Seattle,2020-03-16,68,6
+Seattle,2020-03-17,29,3
+Seattle,2020-03-18,45,10
+Seattle,2020-02-29,3,1
+Seattle,2020-03-01,7,2
+Seattle,2020-03-02,4,3
+Seattle,2020-03-03,7,4
+Seattle,2020-03-04,11,1
+Seattle,2020-01-22,0,0
+Seattle,2020-01-23,0,0
+Seattle,2020-01-24,0,0
+Seattle,2020-01-25,0,0
+Seattle,2020-01-26,0,0
+Seattle,2020-01-27,0,0
+Seattle,2020-01-28,0,0
+Seattle,2020-01-29,0,0
+Seattle,2020-01-30,0,0
+Seattle,2020-01-31,0,0
+Seattle,2020-02-01,0,0
+Seattle,2020-02-02,0,0
+Seattle,2020-02-03,0,0
+Seattle,2020-02-04,0,0
+Seattle,2020-02-05,0,0
+Seattle,2020-02-06,0,0
+Seattle,2020-02-07,0,0
+Seattle,2020-02-08,0,0
+Seattle,2020-02-09,0,0
+Seattle,2020-02-10,0,0
+Seattle,2020-02-11,0,0
+Seattle,2020-02-12,0,0
+Seattle,2020-02-13,0,0
+Seattle,2020-02-14,0,0
+Seattle,2020-02-15,0,0
+Seattle,2020-02-16,0,0
+Seattle,2020-02-17,0,0
+Seattle,2020-02-18,0,0
+Seattle,2020-02-19,0,0
+Seattle,2020-02-20,0,0
+Seattle,2020-02-21,0,0
+Seattle,2020-02-22,0,0
+Seattle,2020-02-23,0,0
+Seattle,2020-02-24,0,0
+Seattle,2020-02-25,0,0
+Seattle,2020-02-26,0,0
+Seattle,2020-02-27,0,0
+Seattle,2020-02-28,0,0
+New York,2020-03-02,0,0
+New York,2020-03-03,1,0
+New York,2020-03-04,9,0
+New York,2020-03-05,11,0
+New York,2020-03-06,22,0
+New York,2020-03-07,45,0
+New York,2020-03-08,17,0
+New York,2020-03-09,36,0
+New York,2020-03-10,31,0
+New York,2020-03-11,44,0
+New York,2020-03-12,109,0
+New York,2020-03-13,95,0
+New York,2020-03-14,189,2
+New York,2020-03-15,122,4
+New York,2020-03-16,218,4
+New York,2020-03-17,425,8
+New York,2020-03-18,1012,14
+New York,2020-03-19,1774,7
+New York,2020-03-20,2952,29
+New York,2020-03-21,3258,27
+New York,2020-03-22,4817,47
+New York,2020-03-23,5711,41
+New York,2020-03-24,4804,73
+New York,2020-03-25,7413,119
+New York,2020-03-26,5941,127
+New York,2020-03-27,5688,143
+New York,2020-03-28,8771,290
+New York,2020-03-29,6267,245
+New York,2020-03-30,7679,332
+New York,2020-03-31,8749,417
+New York,2020-04-01,8152,486
+New York,2020-04-02,8608,548
+New York,2020-04-03,10680,753
+New York,2020-04-04,12312,819
+New York,2020-04-05,8122,800
+New York,2020-04-06,7976,795
+New York,2020-04-07,9642,1055
+New York,2020-04-08,9568,953
+New York,2020-04-09,10765,1028
+New York,2020-04-10,10794,996
+New York,2020-04-11,10160,997
+New York,2020-04-12,8435,957
+New York,2020-04-13,6548,882
+New York,2020-04-14,7402,1003
+New York,2020-04-15,11755,936
+New York,2020-04-16,8631,732
+New York,2020-04-17,7532,804
+New York,2020-04-18,7249,668
+New York,2020-04-19,6199,652
+New York,2020-04-20,4867,619
+New York,2020-04-21,4324,628
+New York,2020-04-22,5659,607
+New York,2020-04-23,6341,565
+New York,2020-04-24,8286,547
+New York,2020-04-25,10683,567
+New York,2020-04-26,6013,478
+New York,2020-04-27,4077,463
+New York,2020-04-28,3285,510
+New York,2020-04-29,4718,510
+New York,2020-04-30,4702,329
+New York,2020-05-01,3879,225
+New York,2020-05-02,4559,194
+New York,2020-05-03,3699,541
+New York,2020-05-04,2524,212
+New York,2020-05-05,2302,240
+New York,2020-05-06,2746,928
+New York,2020-05-07,3526,250
+New York,2020-05-08,2873,152
+New York,2020-05-09,2715,226
+New York,2020-05-10,2138,214
+New York,2020-05-11,1610,205
+New York,2020-05-12,1438,279
+New York,2020-05-13,2123,166
+New York,2020-05-14,2364,169
+New York,2020-05-15,2759,138
+New York,2020-05-16,2185,198
+New York,2020-05-17,1901,215
+New York,2020-05-18,1241,134
+New York,2020-05-19,1479,135
+New York,2020-05-20,1478,103
+New York,2020-05-21,2078,123
+New York,2020-05-22,1678,139
+New York,2020-05-23,1754,98
+New York,2020-05-24,1601,146
+Washington,2020-01-22,0,0
+Washington,2020-01-23,0,0
+Washington,2020-01-24,0,0
+Washington,2020-01-25,0,0
+Washington,2020-01-26,0,0
+Washington,2020-01-27,0,0
+Washington,2020-01-28,0,0
+Washington,2020-01-29,0,0
+Washington,2020-01-30,0,0
+Washington,2020-01-31,0,0
+Washington,2020-02-01,0,0
+Washington,2020-02-02,0,0
+Washington,2020-02-03,0,0
+Washington,2020-02-04,0,0
+Washington,2020-02-05,0,0
+Washington,2020-02-06,0,0
+Washington,2020-02-07,0,0
+Washington,2020-02-08,0,0
+Washington,2020-02-09,0,0
+Washington,2020-02-10,0,0
+Washington,2020-02-11,0,0
+Washington,2020-02-12,0,0
+Washington,2020-02-13,0,0
+Washington,2020-02-14,0,0
+Washington,2020-02-15,0,0
+Washington,2020-02-16,0,0
+Washington,2020-02-17,0,0
+Washington,2020-02-18,0,0
+Washington,2020-02-19,0,0
+Washington,2020-02-20,0,0
+Washington,2020-02-21,0,0
+Washington,2020-02-22,0,0
+Washington,2020-02-23,0,0
+Washington,2020-02-24,4,0
+Washington,2020-02-25,0,0
+Washington,2020-02-26,0,0
+Washington,2020-02-27,0,0
+Washington,2020-02-28,2,0
+Washington,2020-02-29,3,1
+Washington,2020-03-01,7,2
+Washington,2020-03-02,6,3
+Washington,2020-03-03,9,4
+Washington,2020-03-04,15,1
+Washington,2020-03-05,28,0
+Washington,2020-03-06,11,1
+Washington,2020-03-07,24,4
+Washington,2020-03-08,31,3
+Washington,2020-03-09,38,3
+Washington,2020-03-10,100,2
+Washington,2020-03-11,59,5
+Washington,2020-03-12,81,3
+Washington,2020-03-13,92,5
+Washington,2020-03-14,98,3
+Washington,2020-03-15,66,2
+Washington,2020-03-16,119,6
+Washington,2020-03-17,114,6
+Washington,2020-03-18,118,14
+Washington,2020-03-19,202,7
+Washington,2020-03-20,176,8
+Washington,2020-03-21,251,12
+Washington,2020-03-22,189,2
+Washington,2020-03-23,257,13
+Washington,2020-03-24,368,13
+Washington,2020-03-25,116,7
+Washington,2020-03-26,623,21
+Washington,2020-03-27,562,26
+Washington,2020-03-28,541,14
+Washington,2020-03-29,585,16
+Washington,2020-03-30,283,14
+Washington,2020-03-31,113,5
+Washington,2020-04-01,296,23
+Washington,2020-04-02,997,23
+Washington,2020-04-03,381,21
+Washington,2020-04-04,532,25
+Washington,2020-04-05,486,26
+Washington,2020-04-06,400,39
+Washington,2020-04-07,298,26
+Washington,2020-04-08,415,21
+Washington,2020-04-09,511,26
+Washington,2020-04-10,279,27
+Washington,2020-04-11,337,15
+Washington,2020-04-12,187,13
+Washington,2020-04-13,127,14
+Washington,2020-04-14,156,27
+Washington,2020-04-15,89,20
+Washington,2020-04-16,369,16
+Washington,2020-04-17,293,22
+Washington,2020-04-18,357,19
+Washington,2020-04-19,3,8
+Washington,2020-04-20,386,24
+Washington,2020-04-21,154,22
+Washington,2020-04-22,194,13
+Washington,2020-04-23,367,21
+Washington,2020-04-24,214,14
+Washington,2020-04-25,364,12
+Washington,2020-04-26,179,14
+Washington,2020-04-27,201,14
+Washington,2020-04-28,195,21
+Washington,2020-04-29,319,13
+Washington,2020-04-30,318,17
+Washington,2020-05-01,314,7
+Washington,2020-05-02,243,4
+Washington,2020-05-03,556,7
+Washington,2020-05-04,96,6
+Washington,2020-05-05,176,17
+Washington,2020-05-06,632,18
+Washington,2020-05-07,304,22
+Washington,2020-05-08,280,12
+Washington,2020-05-09,149,10
+Washington,2020-05-10,146,14
+Washington,2020-05-11,391,18
+Washington,2020-05-12,203,15
+Washington,2020-05-13,101,5
+Washington,2020-05-14,362,14
+Washington,2020-05-15,264,17
+Washington,2020-05-16,196,7
+Washington,2020-05-17,172,1
+Washington,2020-05-18,240,4
+Washington,2020-05-19,225,22
+Washington,2020-05-20,118,3
+Washington,2020-05-21,169,9
+Washington,2020-05-22,241,7
+Washington,2020-05-23,213,1
+Washington,2020-05-24,245,7
