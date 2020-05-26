@@ -11,7 +11,7 @@ ENV = Environment(
 )
 
 def make_index():
-    t = ENV.get_template('index.html')
+    t = ENV.get_template('index.j2')
     html = t.render(title = 'home', 
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             site_name = 'Covid 19',
@@ -21,7 +21,7 @@ def make_index():
         write_obj.write(html)
 
 def make_404():
-    t = ENV.get_template('404.html')
+    t = ENV.get_template('404.j2')
     html = t.render(title = 'home', 
             date = datetime.datetime.now(),
             site_name = 'Covid 19',

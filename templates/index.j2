@@ -1,10 +1,10 @@
-{% extends "base.html" %}
+{% extends "base.j2" %}
 
 {% block title %}{{ website.name }}: {{ website.slogan }}{% endblock %}
 
 {% block main_header %}
         <h1 class="siteNameSlogan">{{ website.name }}: {{ website.slogan }}</h1>
-        {% include "nav.html" %}
+        {% include "nav.j2" %}
 {% endblock main_header %}
 
 

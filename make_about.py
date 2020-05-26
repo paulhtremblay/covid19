@@ -17,7 +17,7 @@ ENV = Environment(
 )
 
 def make_about():
-    t = ENV.get_template('about.html')
+    t = ENV.get_template('about.j2')
     html = t.render(title = 'about', 
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_title = 'About this site',
