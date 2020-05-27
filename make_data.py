@@ -2,6 +2,13 @@ import csv
 import os
 from google.cloud import bigquery
 
+def get_pop_state():
+    return """
+    SELECT state, population_2019
+FROM `paul-henry-tremblay.covid19.population_2019_est`
+where state = county
+    """
+
 def get_state_sql_day_cum():
     return """
     SELECT date, state, cases, deaths
@@ -175,6 +182,8 @@ def get_all_data():
             path = 'sweden_vs.csv')
     gen_writer(client = client, sql =get_state_sql_day_cum(), 
             path = 'states_cum.csv')
+    gen_writer(client = client, sql =get_pop_state(), 
+            path = 'states_population.csv')
 
     
 if __name__ == '__main__':

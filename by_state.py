@@ -1,11 +1,12 @@
 import datetime
-import numpy as np
 import math
 import os
 import pprint
 pp = pprint.PrettyPrinter(indent = 4)
 from google.cloud import bigquery
 import pandas as pd
+import numpy as np
+import csv
 
 from bokeh.io import show
 from bokeh.plotting import figure
@@ -27,6 +28,15 @@ ENV = Environment(
         'templates')),
     autoescape=select_autoescape(['html', 'xml'])
 )
+
+def get_state_pop():
+    path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'states_population.csv')
+    d = {}
+    with open(path, 'r') as read_obj:
+        reader = csv.DictReader(read_obj)
+        for row in reader:
+            d[row['state']] = int(row['population_2019'])
+    return d
 
 def get_state_data_day():
     path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'states.csv')
@@ -68,10 +78,19 @@ def shape_data(df, state, rank, the_dict, key):
     the_dict[county_name]= final
 
 def get_html(date, territory, script, div, curr_death, last_week_deaths,
-        p_curr_week, p_last_week):
+        p_curr_week, p_last_week, cur_week_per_million, last_week_per_million):
+
     """
     Create the HTML for each state
     """
+    if cur_week_per_million == None:
+        cur_week_per_million = ''
+    else:
+        cur_week_per_million = '({n} per million)'.format(n = cur_week_per_million)
+    if last_week_per_million == None:
+        last_week_per_million = ''
+    else:
+        last_week_per_million = '({n} per million)'.format(n = last_week_per_million)
     sig_curr = ''
     if p_curr_week > .1:
         sig_curr = '(not significant change from previous)'
@@ -87,6 +106,8 @@ def get_html(date, territory, script, div, curr_death, last_week_deaths,
             last_week_deaths = int(round(last_week_deaths)),
             sig_curr = sig_curr,
             sig_prev = sig_prev,
+            cur_week_per_million = cur_week_per_million, 
+            last_week_per_million = last_week_per_million,
             )
 
 def make_territories_dir(key):
@@ -152,7 +173,7 @@ def _get_first_nonzero(x):
             return counter
     return 0
 
-def _get_stats_for_state(deaths):
+def _get_stats_for_state(deaths, pop):
     current_week = deaths[-7:]
     last_week = deaths[-14:-7]
     last_week_2 = deaths[-21:-14]
@@ -161,7 +182,7 @@ def _get_stats_for_state(deaths):
     both = bootstrap.combine_resamples(last_week, current_week, resample1, resample2)
     p_value = bootstrap.get_p_value(both)
 
-    resample3, resample4 = bootstrap.resample_two_samples(last_week_2, current_week, num_iterations = 1000)
+    resample3, resample4 = bootstrap.resample_two_samples(last_week_2, last_week, num_iterations = 1000)
     both2 = bootstrap.combine_resamples(last_week_2, current_week, resample3, resample4)
     p_value2 = bootstrap.get_p_value(both2)
 
@@ -170,24 +191,31 @@ def _get_stats_for_state(deaths):
     the_dict['current_week_mean'] = np.mean(current_week)
     the_dict['last_week_mean'] = np.mean(last_week)
     the_dict['last_week_mean_2'] = np.mean(last_week_2)
+    if pop == None:
+        the_dict['current_week_per_million'] = None
+        the_dict['last_week_per_million'] = None
+    else:
+        the_dict['current_week_per_million'] = round(float(np.mean(current_week))/pop * 1000000, 1)
+        the_dict['last_week_per_million'] = round(float(np.mean(last_week))/pop * 1000000, 1)
     return the_dict
 
-def change_with_sig(df):
+def change_with_sig(df, state_pop):
     the_dict = {}
     for i in list(set(df['state'])):
         df_ = df[df['state'] == i]
         deaths = df_['deaths'].tolist()
-        the_dict[i] = _get_stats_for_state(deaths)
+        the_dict[i] = _get_stats_for_state(deaths, state_pop.get(i, None))
     return the_dict
 
 def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400, 
         window = None):
+    state_pop = get_state_pop()
     if not window:
         window = int(variables.values['by_state_window'])
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
     df_day = get_state_data_day()
-    change_dict = change_with_sig(df_day)
+    change_dict = change_with_sig(df_day, state_pop)
     date = datetime.datetime.now()
     df_deaths = get_data_deaths()
     df_cases = get_data_cases()
@@ -237,6 +265,8 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400,
                 curr_death = change_dict[state]['current_week_mean'],
                 p_curr_week = change_dict[state]['p_value_last_week'],
                 p_last_week = change_dict[state]['p_value_last_week2'],
+                cur_week_per_million = change_dict[state]['current_week_per_million'],
+                last_week_per_million = change_dict[state]['last_week_per_million'],
                     )
         with open(os.path.join(dir_path, 
             '{territory}'.format(territory = common.tidy_name(state)) + '.html'), 'w') as write_obj:
