@@ -87,7 +87,6 @@ def get_html(script, div, the_type):
     """
     Create the HTML
     """
-    site_name= 'Covid 19'
     if the_type == 'deaths':
         title = 'Growth of rates of deaths'
     elif the_type == 'cases':
@@ -97,7 +96,6 @@ def get_html(script, div, the_type):
             script =  script,
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             div = div,
-            site_name = site_name,
             page_title = title,
             )
 def main():

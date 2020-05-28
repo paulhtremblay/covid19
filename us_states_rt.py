@@ -120,7 +120,6 @@ def get_html(script, div, date, title, the_type ):
     return t.render(title = title, 
             script =  script,
             date = date,
-            site_name = 'Covid 19 Data: Cases, Deaths, and Changes by State',
             div = div,
             page_title = page_title,
             )
