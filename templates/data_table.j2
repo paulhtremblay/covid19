@@ -1,0 +1,40 @@
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+	</head>
+	<body>
+	<script>
+		$(document).ready(function() {
+    $('#data').DataTable( {
+        "order": [[ 2, "desc" ]]
+    } );
+} );
+	</script>
+	<table id="data" class="display" style="width:100%">
+        <thead>
+            <tr>
+				{% for item in table_head %}
+					<th>{{item}}</th>
+				{% endfor %}
+
+            </tr>
+        </thead>
+        <tbody>
+			{% for row in table_body %}
+				<tr>
+					{% for cell in row %}
+						<td>{{cell}}</td>
+				    {% endfor %}
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+ </body>
+</html>
+ 

@@ -2,6 +2,13 @@ import csv
 import os
 from google.cloud import bigquery
 
+def get_states_totals():
+    return """
+    SELECT * except(fips, date)
+FROM `paul-henry-tremblay.covid19.us_states`
+where date = (select max(date) from `paul-henry-tremblay.covid19.us_states`)
+    """
+
 def get_pop_state():
     return """
     SELECT state, population_2019
@@ -184,6 +191,8 @@ def get_all_data():
             path = 'states_cum.csv')
     gen_writer(client = client, sql =get_pop_state(), 
             path = 'states_population.csv')
+    gen_writer(client = client, sql = get_states_totals(), 
+            path = 'states_totals.csv')
 
     
 if __name__ == '__main__':
