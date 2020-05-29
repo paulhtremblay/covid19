@@ -82,7 +82,7 @@ date,state,county,deaths,rank
 2020-03-01,Washington,Snohomish,0,2
 2020-03-01,Pennsylvania,Delaware,0,3
 2020-03-01,Pennsylvania,other,0,100
-2020-03-01,Rhode Island,Unknown,0,2
+2020-03-01,Rhode Island,other,0,100
 2020-03-01,Massachusetts,Middlesex,0,1
 2020-03-01,Massachusetts,other,0,4
 2020-03-01,Massachusetts,Suffolk,0,3
@@ -90,14 +90,14 @@ date,state,county,deaths,rank
 2020-03-01,North Carolina,other,0,6
 2020-03-01,North Carolina,other,0,8
 2020-03-01,South Carolina,other,0,100
-2020-03-01,South Carolina,other,0,10
+2020-03-01,South Carolina,other,0,11
 2020-03-08,Iowa,other,0,100
 2020-03-08,Ohio,Cuyahoga,0,3
 2020-03-08,Ohio,other,0,7
 2020-03-08,Ohio,other,0,100
 2020-03-08,Utah,other,0,100
 2020-03-08,Utah,Salt Lake,0,1
-2020-03-08,Idaho,Ada,0,1
+2020-03-08,Idaho,Ada,0,2
 2020-03-08,Maine,other,0,100
 2020-03-08,Maine,Cumberland,0,1
 2020-03-08,Texas,other,0,6
@@ -220,7 +220,7 @@ date,state,county,deaths,rank
 2020-03-08,Pennsylvania,Delaware,0,3
 2020-03-08,Pennsylvania,Montgomery,0,2
 2020-03-08,Pennsylvania,Philadelphia,0,1
-2020-03-08,Rhode Island,Unknown,0,2
+2020-03-08,Rhode Island,other,0,100
 2020-03-08,South Dakota,other,0,100
 2020-03-08,South Dakota,Minnehaha,0,1
 2020-03-08,Massachusetts,other,0,100
@@ -233,14 +233,13 @@ date,state,county,deaths,rank
 2020-03-08,New Hampshire,Rockingham,0,2
 2020-03-08,North Carolina,other,0,100
 2020-03-08,North Carolina,other,0,6
-2020-03-08,North Carolina,other,0,15
-2020-03-08,North Carolina,other,0,9
+2020-03-08,North Carolina,other,0,14
+2020-03-08,North Carolina,other,0,10
 2020-03-08,North Carolina,other,0,8
-2020-03-08,North Carolina,other,0,13
 2020-03-08,North Carolina,Mecklenburg,0,1
 2020-03-08,South Carolina,other,0,100
 2020-03-08,South Carolina,other,0,7
-2020-03-08,South Carolina,other,0,10
+2020-03-08,South Carolina,other,0,11
 2020-03-08,District of Columbia,District of Columbia,0,1
 2020-03-15,Guam,Unknown,0,1
 2020-03-15,Iowa,other,0,100
@@ -259,7 +258,8 @@ date,state,county,deaths,rank
 2020-03-15,Ohio,other,0,5
 2020-03-15,Utah,other,0,100
 2020-03-15,Utah,Salt Lake,0,1
-2020-03-15,Idaho,Ada,0,1
+2020-03-15,Utah,Utah,0,2
+2020-03-15,Idaho,Ada,0,2
 2020-03-15,Idaho,other,0,100
 2020-03-15,Idaho,other,0,5
 2020-03-15,Idaho,other,0,4
@@ -323,7 +323,7 @@ date,state,county,deaths,rank
 2020-03-15,Vermont,Chittenden,1,1
 2020-03-15,Wyoming,other,0,100
 2020-03-15,Wyoming,Fremont,0,1
-2020-03-15,Wyoming,Laramie,0,2
+2020-03-15,Wyoming,Laramie,0,3
 2020-03-15,Arkansas,other,0,100
 2020-03-15,Arkansas,Crittenden,0,3
 2020-03-15,Arkansas,Jefferson,0,2
@@ -422,7 +422,7 @@ date,state,county,deaths,rank
 2020-03-15,Mississippi,other,0,15
 2020-03-15,Mississippi,other,0,11
 2020-03-15,Mississippi,other,0,5
-2020-03-15,Mississippi,other,0,9
+2020-03-15,Mississippi,other,0,10
 2020-03-15,Mississippi,other,0,4
 2020-03-15,Puerto Rico,Unknown,1,1
 2020-03-15,North Dakota,other,0,100
@@ -435,7 +435,7 @@ date,state,county,deaths,rank
 2020-03-15,Pennsylvania,other,0,6
 2020-03-15,Pennsylvania,Montgomery,0,2
 2020-03-15,Pennsylvania,Philadelphia,0,1
-2020-03-15,Rhode Island,Unknown,0,2
+2020-03-15,Rhode Island,other,0,100
 2020-03-15,South Dakota,other,0,100
 2020-03-15,South Dakota,Minnehaha,0,1
 2020-03-15,Massachusetts,other,0,100
@@ -458,23 +458,23 @@ date,state,county,deaths,rank
 2020-03-15,North Carolina,other,0,5
 2020-03-15,North Carolina,other,0,7
 2020-03-15,North Carolina,other,0,6
-2020-03-15,North Carolina,other,0,15
-2020-03-15,North Carolina,other,0,9
+2020-03-15,North Carolina,other,0,14
+2020-03-15,North Carolina,other,0,10
 2020-03-15,North Carolina,other,0,8
-2020-03-15,North Carolina,Durham,0,3
-2020-03-15,North Carolina,other,0,13
+2020-03-15,North Carolina,other,0,4
 2020-03-15,North Carolina,Guilford,0,2
 2020-03-15,North Carolina,Mecklenburg,0,1
 2020-03-15,South Carolina,other,1,100
-2020-03-15,South Carolina,other,0,11
-2020-03-15,South Carolina,other,1,4
+2020-03-15,South Carolina,other,0,9
+2020-03-15,South Carolina,other,1,5
 2020-03-15,South Carolina,Richland,0,1
 2020-03-15,South Carolina,other,0,7
-2020-03-15,South Carolina,other,0,9
+2020-03-15,South Carolina,other,0,8
+2020-03-15,South Carolina,other,0,11
 2020-03-15,South Carolina,Clarendon,0,3
+2020-03-15,South Carolina,other,0,4
 2020-03-15,South Carolina,Greenville,0,2
 2020-03-15,South Carolina,other,0,6
-2020-03-15,South Carolina,other,0,10
 2020-03-15,Virgin Islands,Unknown,0,1
 2020-03-15,District of Columbia,District of Columbia,1,1
 2020-03-22,Guam,Unknown,1,1
@@ -498,7 +498,8 @@ date,state,county,deaths,rank
 2020-03-22,Ohio,other,4,5
 2020-03-22,Utah,other,2,100
 2020-03-22,Utah,Salt Lake,0,1
-2020-03-22,Idaho,Ada,1,1
+2020-03-22,Utah,Utah,0,2
+2020-03-22,Idaho,Ada,1,2
 2020-03-22,Idaho,other,0,100
 2020-03-22,Idaho,other,2,5
 2020-03-22,Idaho,other,1,4
@@ -568,7 +569,7 @@ date,state,county,deaths,rank
 2020-03-22,Vermont,Chittenden,5,1
 2020-03-22,Wyoming,other,0,100
 2020-03-22,Wyoming,Fremont,0,1
-2020-03-22,Wyoming,Laramie,0,2
+2020-03-22,Wyoming,Laramie,0,3
 2020-03-22,Wyoming,Washakie,0,2
 2020-03-22,Arkansas,other,5,100
 2020-03-22,Arkansas,Crittenden,0,3
@@ -667,7 +668,6 @@ date,state,county,deaths,rank
 2020-03-22,Connecticut,New Haven,6,3
 2020-03-22,Mississippi,other,11,100
 2020-03-22,Mississippi,other,0,13
-2020-03-22,Mississippi,other,0,14
 2020-03-22,Mississippi,other,0,16
 2020-03-22,Mississippi,Forrest,0,2
 2020-03-22,Mississippi,other,1,6
@@ -676,6 +676,7 @@ date,state,county,deaths,rank
 2020-03-22,Mississippi,Lauderdale,0,1
 2020-03-22,Mississippi,other,0,5
 2020-03-22,Mississippi,other,0,9
+2020-03-22,Mississippi,other,0,10
 2020-03-22,Mississippi,Neshoba,0,3
 2020-03-22,Mississippi,other,0,4
 2020-03-22,Puerto Rico,Unknown,2,1
@@ -689,8 +690,7 @@ date,state,county,deaths,rank
 2020-03-22,Pennsylvania,other,1,6
 2020-03-22,Pennsylvania,Montgomery,5,2
 2020-03-22,Pennsylvania,Philadelphia,5,1
-2020-03-22,Rhode Island,Unknown,2,2
-2020-03-22,Rhode Island,other,0,100
+2020-03-22,Rhode Island,other,2,100
 2020-03-22,Rhode Island,Providence,0,1
 2020-03-22,South Dakota,other,0,100
 2020-03-22,South Dakota,Minnehaha,0,1
@@ -713,28 +713,28 @@ date,state,county,deaths,rank
 2020-03-22,West Virginia,other,0,4
 2020-03-22,North Carolina,other,0,100
 2020-03-22,North Carolina,other,0,5
+2020-03-22,North Carolina,other,2,10
 2020-03-22,North Carolina,other,1,7
-2020-03-22,North Carolina,other,0,17
-2020-03-22,North Carolina,other,0,15
-2020-03-22,North Carolina,other,0,6
-2020-03-22,North Carolina,other,2,9
 2020-03-22,North Carolina,other,0,18
+2020-03-22,North Carolina,other,0,17
+2020-03-22,North Carolina,other,0,6
+2020-03-22,North Carolina,other,1,14
 2020-03-22,North Carolina,other,0,8
-2020-03-22,North Carolina,Durham,0,3
-2020-03-22,North Carolina,other,1,13
-2020-03-22,North Carolina,Guilford,0,2
 2020-03-22,North Carolina,other,0,4
+2020-03-22,North Carolina,Guilford,0,2
+2020-03-22,North Carolina,Henderson,0,3
 2020-03-22,North Carolina,Mecklenburg,0,1
 2020-03-22,South Carolina,other,0,100
-2020-03-22,South Carolina,other,0,11
-2020-03-22,South Carolina,other,2,4
-2020-03-22,South Carolina,Richland,2,1
-2020-03-22,South Carolina,other,2,7
 2020-03-22,South Carolina,other,0,9
+2020-03-22,South Carolina,other,0,5
+2020-03-22,South Carolina,Richland,2,1
+2020-03-22,South Carolina,other,0,7
+2020-03-22,South Carolina,other,2,8
+2020-03-22,South Carolina,other,2,11
 2020-03-22,South Carolina,Clarendon,1,3
+2020-03-22,South Carolina,other,2,4
 2020-03-22,South Carolina,Greenville,1,2
 2020-03-22,South Carolina,other,2,6
-2020-03-22,South Carolina,other,2,10
 2020-03-22,Virgin Islands,Unknown,0,1
 2020-03-22,District of Columbia,District of Columbia,3,1
 2020-03-29,Guam,Unknown,3,1
@@ -758,7 +758,8 @@ date,state,county,deaths,rank
 2020-03-29,Ohio,other,3,5
 2020-03-29,Utah,other,5,100
 2020-03-29,Utah,Salt Lake,1,1
-2020-03-29,Idaho,Ada,2,1
+2020-03-29,Utah,Utah,0,2
+2020-03-29,Idaho,Ada,2,2
 2020-03-29,Idaho,other,1,100
 2020-03-29,Idaho,other,0,5
 2020-03-29,Idaho,other,0,4
@@ -828,7 +829,7 @@ date,state,county,deaths,rank
 2020-03-29,Vermont,Chittenden,0,1
 2020-03-29,Wyoming,other,0,100
 2020-03-29,Wyoming,Fremont,0,1
-2020-03-29,Wyoming,Laramie,0,2
+2020-03-29,Wyoming,Laramie,0,3
 2020-03-29,Wyoming,Washakie,0,2
 2020-03-29,Arkansas,other,3,100
 2020-03-29,Arkansas,Crittenden,0,3
@@ -928,7 +929,6 @@ date,state,county,deaths,rank
 2020-03-29,Connecticut,New Haven,23,3
 2020-03-29,Mississippi,other,15,100
 2020-03-29,Mississippi,other,0,13
-2020-03-29,Mississippi,other,0,14
 2020-03-29,Mississippi,other,2,16
 2020-03-29,Mississippi,other,0,12
 2020-03-29,Mississippi,Forrest,0,2
@@ -938,6 +938,7 @@ date,state,county,deaths,rank
 2020-03-29,Mississippi,Lauderdale,1,1
 2020-03-29,Mississippi,other,1,5
 2020-03-29,Mississippi,other,0,9
+2020-03-29,Mississippi,other,0,10
 2020-03-29,Mississippi,Neshoba,0,3
 2020-03-29,Mississippi,other,1,4
 2020-03-29,Puerto Rico,Unknown,15,1
@@ -951,8 +952,7 @@ date,state,county,deaths,rank
 2020-03-29,Pennsylvania,other,4,6
 2020-03-29,Pennsylvania,Montgomery,12,2
 2020-03-29,Pennsylvania,Philadelphia,19,1
-2020-03-29,Rhode Island,Unknown,8,2
-2020-03-29,Rhode Island,other,0,100
+2020-03-29,Rhode Island,other,8,100
 2020-03-29,Rhode Island,Providence,7,1
 2020-03-29,South Dakota,other,1,100
 2020-03-29,South Dakota,Minnehaha,0,1
@@ -973,30 +973,31 @@ date,state,county,deaths,rank
 2020-03-29,West Virginia,Kanawha,0,1
 2020-03-29,West Virginia,other,0,5
 2020-03-29,West Virginia,other,0,4
-2020-03-29,North Carolina,other,14,100
+2020-03-29,North Carolina,other,15,100
 2020-03-29,North Carolina,other,0,5
+2020-03-29,North Carolina,other,1,10
 2020-03-29,North Carolina,other,0,7
+2020-03-29,North Carolina,other,0,18
 2020-03-29,North Carolina,other,0,17
-2020-03-29,North Carolina,other,0,15
 2020-03-29,North Carolina,other,0,6
-2020-03-29,North Carolina,other,1,9
-2020-03-29,North Carolina,other,1,18
+2020-03-29,North Carolina,other,1,14
 2020-03-29,North Carolina,other,0,8
-2020-03-29,North Carolina,Durham,0,3
-2020-03-29,North Carolina,other,1,13
+2020-03-29,North Carolina,other,0,9
+2020-03-29,North Carolina,other,0,4
 2020-03-29,North Carolina,Guilford,4,2
-2020-03-29,North Carolina,other,1,4
+2020-03-29,North Carolina,Henderson,1,3
 2020-03-29,North Carolina,Mecklenburg,4,1
-2020-03-29,South Carolina,other,12,100
-2020-03-29,South Carolina,other,1,11
-2020-03-29,South Carolina,other,4,4
+2020-03-29,South Carolina,other,9,100
+2020-03-29,South Carolina,other,1,9
+2020-03-29,South Carolina,other,2,5
 2020-03-29,South Carolina,Richland,4,1
-2020-03-29,South Carolina,other,1,7
-2020-03-29,South Carolina,other,0,9
+2020-03-29,South Carolina,other,0,7
+2020-03-29,South Carolina,other,1,8
+2020-03-29,South Carolina,other,3,11
 2020-03-29,South Carolina,Clarendon,0,3
+2020-03-29,South Carolina,other,2,4
 2020-03-29,South Carolina,Greenville,1,2
 2020-03-29,South Carolina,other,2,6
-2020-03-29,South Carolina,other,0,10
 2020-03-29,Virgin Islands,Unknown,0,1
 2020-03-29,District of Columbia,District of Columbia,17,1
 2020-03-29,Northern Mariana Islands,Unknown,1,1
@@ -1021,7 +1022,8 @@ date,state,county,deaths,rank
 2020-04-05,Ohio,other,7,5
 2020-04-05,Utah,other,10,100
 2020-04-05,Utah,Salt Lake,6,1
-2020-04-05,Idaho,Ada,3,1
+2020-04-05,Utah,Utah,0,2
+2020-04-05,Idaho,Ada,3,2
 2020-04-05,Idaho,other,3,100
 2020-04-05,Idaho,other,3,5
 2020-04-05,Idaho,other,4,4
@@ -1091,7 +1093,7 @@ date,state,county,deaths,rank
 2020-04-05,Vermont,Chittenden,10,1
 2020-04-05,Wyoming,other,0,100
 2020-04-05,Wyoming,Fremont,0,1
-2020-04-05,Wyoming,Laramie,0,2
+2020-04-05,Wyoming,Laramie,0,3
 2020-04-05,Wyoming,Washakie,0,2
 2020-04-05,Arkansas,other,4,100
 2020-04-05,Arkansas,Crittenden,2,3
@@ -1192,7 +1194,6 @@ date,state,county,deaths,rank
 2020-04-05,Connecticut,New Haven,78,3
 2020-04-05,Mississippi,other,25,100
 2020-04-05,Mississippi,other,1,13
-2020-04-05,Mississippi,other,0,14
 2020-04-05,Mississippi,other,0,16
 2020-04-05,Mississippi,other,1,12
 2020-04-05,Mississippi,Forrest,2,2
@@ -1201,7 +1202,8 @@ date,state,county,deaths,rank
 2020-04-05,Mississippi,other,0,11
 2020-04-05,Mississippi,Lauderdale,7,1
 2020-04-05,Mississippi,other,3,5
-2020-04-05,Mississippi,other,5,9
+2020-04-05,Mississippi,other,3,9
+2020-04-05,Mississippi,other,2,10
 2020-04-05,Mississippi,Neshoba,0,3
 2020-04-05,Mississippi,other,5,4
 2020-04-05,Puerto Rico,Unknown,24,1
@@ -1215,8 +1217,7 @@ date,state,county,deaths,rank
 2020-04-05,Pennsylvania,other,18,6
 2020-04-05,Pennsylvania,Montgomery,51,2
 2020-04-05,Pennsylvania,Philadelphia,106,1
-2020-04-05,Rhode Island,Unknown,26,2
-2020-04-05,Rhode Island,other,0,100
+2020-04-05,Rhode Island,other,26,100
 2020-04-05,Rhode Island,Providence,13,1
 2020-04-05,South Dakota,other,2,100
 2020-04-05,South Dakota,Minnehaha,2,1
@@ -1238,30 +1239,31 @@ date,state,county,deaths,rank
 2020-04-05,West Virginia,other,3,5
 2020-04-05,West Virginia,Wayne,0,3
 2020-04-05,West Virginia,other,0,4
-2020-04-05,North Carolina,other,29,100
+2020-04-05,North Carolina,other,31,100
 2020-04-05,North Carolina,other,2,5
+2020-04-05,North Carolina,other,1,10
 2020-04-05,North Carolina,other,1,7
-2020-04-05,North Carolina,other,1,17
-2020-04-05,North Carolina,other,1,15
+2020-04-05,North Carolina,other,1,18
+2020-04-05,North Carolina,other,0,17
 2020-04-05,North Carolina,other,0,6
-2020-04-05,North Carolina,other,2,9
-2020-04-05,North Carolina,other,2,18
+2020-04-05,North Carolina,other,4,14
 2020-04-05,North Carolina,other,0,8
-2020-04-05,North Carolina,Durham,1,3
-2020-04-05,North Carolina,other,3,13
-2020-04-05,North Carolina,Guilford,5,2
+2020-04-05,North Carolina,other,1,9
 2020-04-05,North Carolina,other,1,4
+2020-04-05,North Carolina,Guilford,5,2
+2020-04-05,North Carolina,Henderson,1,3
 2020-04-05,North Carolina,Mecklenburg,8,1
-2020-04-05,South Carolina,other,10,100
-2020-04-05,South Carolina,other,2,11
-2020-04-05,South Carolina,other,5,4
+2020-04-05,South Carolina,other,7,100
+2020-04-05,South Carolina,other,3,9
+2020-04-05,South Carolina,other,3,5
 2020-04-05,South Carolina,Richland,4,1
-2020-04-05,South Carolina,other,5,7
-2020-04-05,South Carolina,other,1,9
+2020-04-05,South Carolina,other,4,7
+2020-04-05,South Carolina,other,1,8
+2020-04-05,South Carolina,other,5,11
 2020-04-05,South Carolina,Clarendon,3,3
+2020-04-05,South Carolina,other,2,4
 2020-04-05,South Carolina,Greenville,5,2
 2020-04-05,South Carolina,other,3,6
-2020-04-05,South Carolina,other,2,10
 2020-04-05,Virgin Islands,Unknown,1,1
 2020-04-05,District of Columbia,District of Columbia,26,1
 2020-04-05,Northern Mariana Islands,Unknown,1,1
@@ -1284,9 +1286,10 @@ date,state,county,deaths,rank
 2020-04-12,Ohio,other,10,9
 2020-04-12,Ohio,other,12,7
 2020-04-12,Ohio,other,6,5
-2020-04-12,Utah,other,1,100
+2020-04-12,Utah,other,-4,100
 2020-04-12,Utah,Salt Lake,6,1
-2020-04-12,Idaho,Ada,4,1
+2020-04-12,Utah,Utah,5,2
+2020-04-12,Idaho,Ada,4,2
 2020-04-12,Idaho,other,0,100
 2020-04-12,Idaho,other,0,5
 2020-04-12,Idaho,other,0,4
@@ -1356,7 +1359,7 @@ date,state,county,deaths,rank
 2020-04-12,Vermont,Chittenden,7,1
 2020-04-12,Wyoming,other,1,100
 2020-04-12,Wyoming,Fremont,0,1
-2020-04-12,Wyoming,Laramie,1,2
+2020-04-12,Wyoming,Laramie,1,3
 2020-04-12,Wyoming,Washakie,0,2
 2020-04-12,Arkansas,other,4,100
 2020-04-12,Arkansas,Crittenden,2,3
@@ -1456,10 +1459,9 @@ date,state,county,deaths,rank
 2020-04-12,Connecticut,Fairfield,212,1
 2020-04-12,Connecticut,Hartford,188,2
 2020-04-12,Connecticut,New Haven,134,3
-2020-04-12,Mississippi,other,28,100
+2020-04-12,Mississippi,other,27,100
 2020-04-12,Mississippi,other,5,13
-2020-04-12,Mississippi,other,0,14
-2020-04-12,Mississippi,other,0,16
+2020-04-12,Mississippi,other,1,16
 2020-04-12,Mississippi,other,1,12
 2020-04-12,Mississippi,Forrest,1,2
 2020-04-12,Mississippi,other,6,6
@@ -1467,7 +1469,8 @@ date,state,county,deaths,rank
 2020-04-12,Mississippi,other,0,11
 2020-04-12,Mississippi,Lauderdale,6,1
 2020-04-12,Mississippi,other,2,5
-2020-04-12,Mississippi,other,4,9
+2020-04-12,Mississippi,other,3,9
+2020-04-12,Mississippi,other,1,10
 2020-04-12,Mississippi,Neshoba,1,3
 2020-04-12,Mississippi,other,4,4
 2020-04-12,Puerto Rico,Unknown,18,1
@@ -1481,8 +1484,7 @@ date,state,county,deaths,rank
 2020-04-12,Pennsylvania,other,70,6
 2020-04-12,Pennsylvania,Montgomery,79,2
 2020-04-12,Pennsylvania,Philadelphia,212,1
-2020-04-12,Rhode Island,Unknown,81,2
-2020-04-12,Rhode Island,other,0,100
+2020-04-12,Rhode Island,other,81,100
 2020-04-12,Rhode Island,Providence,0,1
 2020-04-12,South Dakota,other,0,100
 2020-04-12,South Dakota,Minnehaha,1,1
@@ -1504,30 +1506,31 @@ date,state,county,deaths,rank
 2020-04-12,West Virginia,other,1,5
 2020-04-12,West Virginia,Wayne,3,3
 2020-04-12,West Virginia,other,1,4
-2020-04-12,North Carolina,other,23,100
+2020-04-12,North Carolina,other,26,100
 2020-04-12,North Carolina,other,1,5
+2020-04-12,North Carolina,other,2,10
 2020-04-12,North Carolina,other,10,7
-2020-04-12,North Carolina,other,2,17
-2020-04-12,North Carolina,other,4,15
+2020-04-12,North Carolina,other,2,18
+2020-04-12,North Carolina,other,1,17
 2020-04-12,North Carolina,other,4,6
-2020-04-12,North Carolina,other,3,9
-2020-04-12,North Carolina,other,3,18
+2020-04-12,North Carolina,other,14,14
 2020-04-12,North Carolina,other,0,8
-2020-04-12,North Carolina,Durham,3,3
-2020-04-12,North Carolina,other,11,13
+2020-04-12,North Carolina,other,1,9
+2020-04-12,North Carolina,other,3,4
 2020-04-12,North Carolina,Guilford,4,2
-2020-04-12,North Carolina,other,9,4
+2020-04-12,North Carolina,Henderson,9,3
 2020-04-12,North Carolina,Mecklenburg,12,1
 2020-04-12,South Carolina,other,9,100
-2020-04-12,South Carolina,other,2,11
-2020-04-12,South Carolina,other,4,4
+2020-04-12,South Carolina,other,4,9
+2020-04-12,South Carolina,other,3,5
 2020-04-12,South Carolina,Richland,4,1
-2020-04-12,South Carolina,other,3,7
-2020-04-12,South Carolina,other,2,9
+2020-04-12,South Carolina,other,1,7
+2020-04-12,South Carolina,other,2,8
+2020-04-12,South Carolina,other,4,11
 2020-04-12,South Carolina,Clarendon,2,3
+2020-04-12,South Carolina,other,1,4
 2020-04-12,South Carolina,Greenville,4,2
 2020-04-12,South Carolina,other,5,6
-2020-04-12,South Carolina,other,4,10
 2020-04-12,Virgin Islands,Unknown,2,1
 2020-04-12,District of Columbia,District of Columbia,44,1
 2020-04-12,Northern Mariana Islands,Unknown,0,1
@@ -1550,9 +1553,10 @@ date,state,county,deaths,rank
 2020-04-19,Ohio,other,7,9
 2020-04-19,Ohio,other,11,7
 2020-04-19,Ohio,other,15,5
-2020-04-19,Utah,other,4,100
+2020-04-19,Utah,other,2,100
 2020-04-19,Utah,Salt Lake,12,1
-2020-04-19,Idaho,Ada,5,1
+2020-04-19,Utah,Utah,2,2
+2020-04-19,Idaho,Ada,5,2
 2020-04-19,Idaho,other,2,100
 2020-04-19,Idaho,other,0,5
 2020-04-19,Idaho,other,1,4
@@ -1622,7 +1626,7 @@ date,state,county,deaths,rank
 2020-04-19,Vermont,Chittenden,7,1
 2020-04-19,Wyoming,other,1,100
 2020-04-19,Wyoming,Fremont,4,1
-2020-04-19,Wyoming,Laramie,0,2
+2020-04-19,Wyoming,Laramie,0,3
 2020-04-19,Wyoming,Washakie,0,2
 2020-04-19,Arkansas,other,6,100
 2020-04-19,Arkansas,Crittenden,1,3
@@ -1724,7 +1728,6 @@ date,state,county,deaths,rank
 2020-04-19,Connecticut,New Haven,175,3
 2020-04-19,Mississippi,other,30,100
 2020-04-19,Mississippi,other,1,13
-2020-04-19,Mississippi,other,0,14
 2020-04-19,Mississippi,other,2,16
 2020-04-19,Mississippi,other,1,12
 2020-04-19,Mississippi,Forrest,4,2
@@ -1733,7 +1736,8 @@ date,state,county,deaths,rank
 2020-04-19,Mississippi,other,0,11
 2020-04-19,Mississippi,Lauderdale,5,1
 2020-04-19,Mississippi,other,9,5
-2020-04-19,Mississippi,other,4,9
+2020-04-19,Mississippi,other,2,9
+2020-04-19,Mississippi,other,2,10
 2020-04-19,Mississippi,Neshoba,1,3
 2020-04-19,Mississippi,other,4,4
 2020-04-19,Puerto Rico,Unknown,23,1
@@ -1747,8 +1751,7 @@ date,state,county,deaths,rank
 2020-04-19,Pennsylvania,other,47,6
 2020-04-19,Pennsylvania,Montgomery,67,2
 2020-04-19,Pennsylvania,Philadelphia,124,1
-2020-04-19,Rhode Island,Unknown,-21,2
-2020-04-19,Rhode Island,other,8,100
+2020-04-19,Rhode Island,other,-13,100
 2020-04-19,Rhode Island,Providence,91,1
 2020-04-19,South Dakota,other,1,100
 2020-04-19,South Dakota,Minnehaha,2,1
@@ -1772,28 +1775,29 @@ date,state,county,deaths,rank
 2020-04-19,West Virginia,other,0,4
 2020-04-19,North Carolina,other,33,100
 2020-04-19,North Carolina,other,10,5
+2020-04-19,North Carolina,other,11,10
 2020-04-19,North Carolina,other,8,7
-2020-04-19,North Carolina,other,4,17
-2020-04-19,North Carolina,other,5,15
+2020-04-19,North Carolina,other,4,18
+2020-04-19,North Carolina,other,1,17
 2020-04-19,North Carolina,other,9,6
-2020-04-19,North Carolina,other,12,9
-2020-04-19,North Carolina,other,3,18
+2020-04-19,North Carolina,other,12,14
 2020-04-19,North Carolina,other,6,8
-2020-04-19,North Carolina,Durham,5,3
-2020-04-19,North Carolina,other,8,13
+2020-04-19,North Carolina,other,4,9
+2020-04-19,North Carolina,other,5,4
 2020-04-19,North Carolina,Guilford,6,2
-2020-04-19,North Carolina,other,3,4
+2020-04-19,North Carolina,Henderson,3,3
 2020-04-19,North Carolina,Mecklenburg,17,1
-2020-04-19,South Carolina,other,20,100
-2020-04-19,South Carolina,other,1,11
-2020-04-19,South Carolina,other,4,4
+2020-04-19,South Carolina,other,16,100
+2020-04-19,South Carolina,other,6,9
+2020-04-19,South Carolina,other,3,5
 2020-04-19,South Carolina,Richland,4,1
 2020-04-19,South Carolina,other,3,7
-2020-04-19,South Carolina,other,5,9
+2020-04-19,South Carolina,other,0,8
+2020-04-19,South Carolina,other,6,11
 2020-04-19,South Carolina,Clarendon,3,3
+2020-04-19,South Carolina,other,1,4
 2020-04-19,South Carolina,Greenville,5,2
 2020-04-19,South Carolina,other,0,6
-2020-04-19,South Carolina,other,2,10
 2020-04-19,Virgin Islands,Unknown,0,1
 2020-04-19,District of Columbia,District of Columbia,74,1
 2020-04-19,Northern Mariana Islands,Unknown,0,1
@@ -1816,9 +1820,10 @@ date,state,county,deaths,rank
 2020-04-26,Ohio,other,10,9
 2020-04-26,Ohio,other,18,7
 2020-04-26,Ohio,other,22,5
-2020-04-26,Utah,other,3,100
+2020-04-26,Utah,other,1,100
 2020-04-26,Utah,Salt Lake,5,1
-2020-04-26,Idaho,Ada,2,1
+2020-04-26,Utah,Utah,2,2
+2020-04-26,Idaho,Ada,2,2
 2020-04-26,Idaho,other,0,100
 2020-04-26,Idaho,other,0,5
 2020-04-26,Idaho,other,1,4
@@ -1888,7 +1893,7 @@ date,state,county,deaths,rank
 2020-04-26,Vermont,Chittenden,4,1
 2020-04-26,Wyoming,other,0,100
 2020-04-26,Wyoming,Fremont,0,1
-2020-04-26,Wyoming,Laramie,0,2
+2020-04-26,Wyoming,Laramie,0,3
 2020-04-26,Wyoming,Washakie,0,2
 2020-04-26,Arkansas,other,8,100
 2020-04-26,Arkansas,Crittenden,0,3
@@ -1989,8 +1994,7 @@ date,state,county,deaths,rank
 2020-04-26,Connecticut,Hartford,188,2
 2020-04-26,Connecticut,New Haven,149,3
 2020-04-26,Mississippi,other,20,100
-2020-04-26,Mississippi,other,2,13
-2020-04-26,Mississippi,other,1,14
+2020-04-26,Mississippi,other,3,13
 2020-04-26,Mississippi,other,4,16
 2020-04-26,Mississippi,other,0,12
 2020-04-26,Mississippi,Forrest,6,2
@@ -1999,7 +2003,8 @@ date,state,county,deaths,rank
 2020-04-26,Mississippi,other,2,11
 2020-04-26,Mississippi,Lauderdale,6,1
 2020-04-26,Mississippi,other,2,5
-2020-04-26,Mississippi,other,6,9
+2020-04-26,Mississippi,other,3,9
+2020-04-26,Mississippi,other,3,10
 2020-04-26,Mississippi,Neshoba,2,3
 2020-04-26,Mississippi,other,6,4
 2020-04-26,Puerto Rico,Unknown,12,1
@@ -2013,8 +2018,7 @@ date,state,county,deaths,rank
 2020-04-26,Pennsylvania,other,48,6
 2020-04-26,Pennsylvania,Montgomery,155,2
 2020-04-26,Pennsylvania,Philadelphia,239,1
-2020-04-26,Rhode Island,Unknown,53,2
-2020-04-26,Rhode Island,other,7,100
+2020-04-26,Rhode Island,other,60,100
 2020-04-26,Rhode Island,Providence,21,1
 2020-04-26,South Dakota,other,0,100
 2020-04-26,South Dakota,Minnehaha,11,1
@@ -2036,30 +2040,31 @@ date,state,county,deaths,rank
 2020-04-26,West Virginia,other,1,5
 2020-04-26,West Virginia,Wayne,1,3
 2020-04-26,West Virginia,other,1,4
-2020-04-26,North Carolina,other,26,100
+2020-04-26,North Carolina,other,29,100
 2020-04-26,North Carolina,other,5,5
+2020-04-26,North Carolina,other,8,10
 2020-04-26,North Carolina,other,5,7
-2020-04-26,North Carolina,other,4,17
-2020-04-26,North Carolina,other,8,15
+2020-04-26,North Carolina,other,4,18
+2020-04-26,North Carolina,other,5,17
 2020-04-26,North Carolina,other,6,6
-2020-04-26,North Carolina,other,12,9
-2020-04-26,North Carolina,other,3,18
+2020-04-26,North Carolina,other,13,14
 2020-04-26,North Carolina,other,3,8
-2020-04-26,North Carolina,Durham,14,3
-2020-04-26,North Carolina,other,10,13
+2020-04-26,North Carolina,other,4,9
+2020-04-26,North Carolina,other,14,4
 2020-04-26,North Carolina,Guilford,12,2
-2020-04-26,North Carolina,other,7,4
+2020-04-26,North Carolina,Henderson,7,3
 2020-04-26,North Carolina,Mecklenburg,9,1
-2020-04-26,South Carolina,other,18,100
-2020-04-26,South Carolina,other,2,11
-2020-04-26,South Carolina,other,11,4
+2020-04-26,South Carolina,other,17,100
+2020-04-26,South Carolina,other,4,9
+2020-04-26,South Carolina,other,4,5
 2020-04-26,South Carolina,Richland,20,1
-2020-04-26,South Carolina,other,9,7
-2020-04-26,South Carolina,other,2,9
+2020-04-26,South Carolina,other,3,7
+2020-04-26,South Carolina,other,6,8
+2020-04-26,South Carolina,other,1,11
 2020-04-26,South Carolina,Clarendon,12,3
+2020-04-26,South Carolina,other,7,4
 2020-04-26,South Carolina,Greenville,23,2
 2020-04-26,South Carolina,other,4,6
-2020-04-26,South Carolina,other,0,10
 2020-04-26,Virgin Islands,Unknown,1,1
 2020-04-26,District of Columbia,District of Columbia,75,1
 2020-04-26,Northern Mariana Islands,Unknown,0,1
@@ -2082,9 +2087,10 @@ date,state,county,deaths,rank
 2020-05-03,Ohio,other,5,9
 2020-05-03,Ohio,other,15,7
 2020-05-03,Ohio,other,21,5
-2020-05-03,Utah,other,3,100
+2020-05-03,Utah,other,1,100
 2020-05-03,Utah,Salt Lake,14,1
-2020-05-03,Idaho,Ada,2,1
+2020-05-03,Utah,Utah,2,2
+2020-05-03,Idaho,Ada,2,2
 2020-05-03,Idaho,other,1,100
 2020-05-03,Idaho,other,0,5
 2020-05-03,Idaho,other,-1,4
@@ -2154,7 +2160,7 @@ date,state,county,deaths,rank
 2020-05-03,Vermont,Chittenden,3,1
 2020-05-03,Wyoming,other,0,100
 2020-05-03,Wyoming,Fremont,0,1
-2020-05-03,Wyoming,Laramie,0,2
+2020-05-03,Wyoming,Laramie,0,3
 2020-05-03,Wyoming,Washakie,0,2
 2020-05-03,Arkansas,other,4,100
 2020-05-03,Arkansas,Crittenden,2,3
@@ -2254,10 +2260,9 @@ date,state,county,deaths,rank
 2020-05-03,Connecticut,Fairfield,152,1
 2020-05-03,Connecticut,Hartford,160,2
 2020-05-03,Connecticut,New Haven,121,3
-2020-05-03,Mississippi,other,47,100
-2020-05-03,Mississippi,other,2,13
-2020-05-03,Mississippi,other,3,14
-2020-05-03,Mississippi,other,2,16
+2020-05-03,Mississippi,other,46,100
+2020-05-03,Mississippi,other,5,13
+2020-05-03,Mississippi,other,3,16
 2020-05-03,Mississippi,other,4,12
 2020-05-03,Mississippi,Forrest,8,2
 2020-05-03,Mississippi,other,20,6
@@ -2265,7 +2270,8 @@ date,state,county,deaths,rank
 2020-05-03,Mississippi,other,3,11
 2020-05-03,Mississippi,Lauderdale,17,1
 2020-05-03,Mississippi,other,1,5
-2020-05-03,Mississippi,other,6,9
+2020-05-03,Mississippi,other,2,9
+2020-05-03,Mississippi,other,4,10
 2020-05-03,Mississippi,Neshoba,9,3
 2020-05-03,Mississippi,other,4,4
 2020-05-03,Puerto Rico,Unknown,13,1
@@ -2279,8 +2285,7 @@ date,state,county,deaths,rank
 2020-05-03,Pennsylvania,other,40,6
 2020-05-03,Pennsylvania,Montgomery,154,2
 2020-05-03,Pennsylvania,Philadelphia,186,1
-2020-05-03,Rhode Island,Unknown,-50,2
-2020-05-03,Rhode Island,other,39,100
+2020-05-03,Rhode Island,other,-11,100
 2020-05-03,Rhode Island,Providence,133,1
 2020-05-03,South Dakota,other,0,100
 2020-05-03,South Dakota,Minnehaha,13,1
@@ -2302,30 +2307,31 @@ date,state,county,deaths,rank
 2020-05-03,West Virginia,other,0,5
 2020-05-03,West Virginia,Wayne,0,3
 2020-05-03,West Virginia,other,2,4
-2020-05-03,North Carolina,other,38,100
+2020-05-03,North Carolina,other,36,100
 2020-05-03,North Carolina,other,15,5
+2020-05-03,North Carolina,other,16,10
 2020-05-03,North Carolina,other,0,7
+2020-05-03,North Carolina,other,6,18
 2020-05-03,North Carolina,other,6,17
-2020-05-03,North Carolina,other,8,15
 2020-05-03,North Carolina,other,4,6
-2020-05-03,North Carolina,other,16,9
-2020-05-03,North Carolina,other,1,18
+2020-05-03,North Carolina,other,5,14
 2020-05-03,North Carolina,other,2,8
-2020-05-03,North Carolina,Durham,9,3
-2020-05-03,North Carolina,other,3,13
+2020-05-03,North Carolina,other,3,9
+2020-05-03,North Carolina,other,9,4
 2020-05-03,North Carolina,Guilford,7,2
-2020-05-03,North Carolina,other,6,4
+2020-05-03,North Carolina,Henderson,6,3
 2020-05-03,North Carolina,Mecklenburg,11,1
-2020-05-03,South Carolina,other,17,100
-2020-05-03,South Carolina,other,0,11
-2020-05-03,South Carolina,other,9,4
+2020-05-03,South Carolina,other,16,100
+2020-05-03,South Carolina,other,5,9
+2020-05-03,South Carolina,other,5,5
 2020-05-03,South Carolina,Richland,16,1
 2020-05-03,South Carolina,other,1,7
-2020-05-03,South Carolina,other,5,9
+2020-05-03,South Carolina,other,0,8
+2020-05-03,South Carolina,other,3,11
 2020-05-03,South Carolina,Clarendon,5,3
+2020-05-03,South Carolina,other,4,4
 2020-05-03,South Carolina,Greenville,6,2
 2020-05-03,South Carolina,other,2,6
-2020-05-03,South Carolina,other,2,10
 2020-05-03,Virgin Islands,Unknown,0,1
 2020-05-03,District of Columbia,District of Columbia,71,1
 2020-05-03,Northern Mariana Islands,Unknown,0,1
@@ -2350,7 +2356,8 @@ date,state,county,deaths,rank
 2020-05-10,Ohio,other,32,5
 2020-05-10,Utah,other,4,100
 2020-05-10,Utah,Salt Lake,11,1
-2020-05-10,Idaho,Ada,3,1
+2020-05-10,Utah,Utah,0,2
+2020-05-10,Idaho,Ada,3,2
 2020-05-10,Idaho,other,0,100
 2020-05-10,Idaho,other,0,5
 2020-05-10,Idaho,other,0,4
@@ -2420,7 +2427,7 @@ date,state,county,deaths,rank
 2020-05-10,Vermont,Chittenden,0,1
 2020-05-10,Wyoming,other,0,100
 2020-05-10,Wyoming,Fremont,0,1
-2020-05-10,Wyoming,Laramie,0,2
+2020-05-10,Wyoming,Laramie,0,3
 2020-05-10,Wyoming,Washakie,0,2
 2020-05-10,Arkansas,other,7,100
 2020-05-10,Arkansas,Crittenden,0,3
@@ -2520,10 +2527,9 @@ date,state,county,deaths,rank
 2020-05-10,Connecticut,Fairfield,108,1
 2020-05-10,Connecticut,Hartford,143,2
 2020-05-10,Connecticut,New Haven,114,3
-2020-05-10,Mississippi,other,26,100
-2020-05-10,Mississippi,other,4,13
-2020-05-10,Mississippi,other,3,14
-2020-05-10,Mississippi,other,2,16
+2020-05-10,Mississippi,other,22,100
+2020-05-10,Mississippi,other,7,13
+2020-05-10,Mississippi,other,6,16
 2020-05-10,Mississippi,other,5,12
 2020-05-10,Mississippi,Forrest,5,2
 2020-05-10,Mississippi,other,12,6
@@ -2531,7 +2537,8 @@ date,state,county,deaths,rank
 2020-05-10,Mississippi,other,3,11
 2020-05-10,Mississippi,Lauderdale,3,1
 2020-05-10,Mississippi,other,4,5
-2020-05-10,Mississippi,other,10,9
+2020-05-10,Mississippi,other,5,9
+2020-05-10,Mississippi,other,5,10
 2020-05-10,Mississippi,Neshoba,8,3
 2020-05-10,Mississippi,other,2,4
 2020-05-10,Puerto Rico,Unknown,14,1
@@ -2545,8 +2552,7 @@ date,state,county,deaths,rank
 2020-05-10,Pennsylvania,other,27,6
 2020-05-10,Pennsylvania,Montgomery,91,2
 2020-05-10,Pennsylvania,Philadelphia,140,1
-2020-05-10,Rhode Island,Unknown,-35,2
-2020-05-10,Rhode Island,other,29,100
+2020-05-10,Rhode Island,other,-6,100
 2020-05-10,Rhode Island,Providence,77,1
 2020-05-10,South Dakota,other,0,100
 2020-05-10,South Dakota,Minnehaha,10,1
@@ -2568,30 +2574,31 @@ date,state,county,deaths,rank
 2020-05-10,West Virginia,other,0,5
 2020-05-10,West Virginia,Wayne,2,3
 2020-05-10,West Virginia,other,2,4
-2020-05-10,North Carolina,other,40,100
+2020-05-10,North Carolina,other,37,100
 2020-05-10,North Carolina,other,3,5
+2020-05-10,North Carolina,other,17,10
 2020-05-10,North Carolina,other,2,7
-2020-05-10,North Carolina,other,0,17
-2020-05-10,North Carolina,other,6,15
+2020-05-10,North Carolina,other,0,18
+2020-05-10,North Carolina,other,4,17
 2020-05-10,North Carolina,other,5,6
-2020-05-10,North Carolina,other,16,9
-2020-05-10,North Carolina,other,3,18
+2020-05-10,North Carolina,other,4,14
 2020-05-10,North Carolina,other,13,8
-2020-05-10,North Carolina,Durham,5,3
-2020-05-10,North Carolina,other,2,13
+2020-05-10,North Carolina,other,5,9
+2020-05-10,North Carolina,other,5,4
 2020-05-10,North Carolina,Guilford,9,2
-2020-05-10,North Carolina,other,11,4
+2020-05-10,North Carolina,Henderson,11,3
 2020-05-10,North Carolina,Mecklenburg,2,1
 2020-05-10,South Carolina,other,17,100
-2020-05-10,South Carolina,other,3,11
-2020-05-10,South Carolina,other,12,4
+2020-05-10,South Carolina,other,3,9
+2020-05-10,South Carolina,other,5,5
 2020-05-10,South Carolina,Richland,6,1
-2020-05-10,South Carolina,other,5,7
-2020-05-10,South Carolina,other,0,9
+2020-05-10,South Carolina,other,1,7
+2020-05-10,South Carolina,other,4,8
+2020-05-10,South Carolina,other,0,11
 2020-05-10,South Carolina,Clarendon,6,3
+2020-05-10,South Carolina,other,7,4
 2020-05-10,South Carolina,Greenville,1,2
 2020-05-10,South Carolina,other,0,6
-2020-05-10,South Carolina,other,0,10
 2020-05-10,Virgin Islands,Unknown,2,1
 2020-05-10,District of Columbia,District of Columbia,64,1
 2020-05-10,Northern Mariana Islands,Unknown,0,1
@@ -2614,9 +2621,10 @@ date,state,county,deaths,rank
 2020-05-17,Ohio,other,7,9
 2020-05-17,Ohio,other,15,7
 2020-05-17,Ohio,other,49,5
-2020-05-17,Utah,other,6,100
+2020-05-17,Utah,other,3,100
 2020-05-17,Utah,Salt Lake,13,1
-2020-05-17,Idaho,Ada,1,1
+2020-05-17,Utah,Utah,3,2
+2020-05-17,Idaho,Ada,1,2
 2020-05-17,Idaho,other,0,100
 2020-05-17,Idaho,other,0,5
 2020-05-17,Idaho,other,0,4
@@ -2686,7 +2694,7 @@ date,state,county,deaths,rank
 2020-05-17,Vermont,Chittenden,1,1
 2020-05-17,Wyoming,other,1,100
 2020-05-17,Wyoming,Fremont,2,1
-2020-05-17,Wyoming,Laramie,1,2
+2020-05-17,Wyoming,Laramie,1,3
 2020-05-17,Wyoming,Washakie,1,2
 2020-05-17,Arkansas,other,5,100
 2020-05-17,Arkansas,Crittenden,2,3
@@ -2786,10 +2794,9 @@ date,state,county,deaths,rank
 2020-05-17,Connecticut,Fairfield,83,1
 2020-05-17,Connecticut,Hartford,125,2
 2020-05-17,Connecticut,New Haven,97,3
-2020-05-17,Mississippi,other,51,100
-2020-05-17,Mississippi,other,0,13
-2020-05-17,Mississippi,other,5,14
-2020-05-17,Mississippi,other,0,16
+2020-05-17,Mississippi,other,49,100
+2020-05-17,Mississippi,other,5,13
+2020-05-17,Mississippi,other,2,16
 2020-05-17,Mississippi,other,4,12
 2020-05-17,Mississippi,Forrest,7,2
 2020-05-17,Mississippi,other,6,6
@@ -2797,7 +2804,8 @@ date,state,county,deaths,rank
 2020-05-17,Mississippi,other,5,11
 2020-05-17,Mississippi,Lauderdale,9,1
 2020-05-17,Mississippi,other,3,5
-2020-05-17,Mississippi,other,6,9
+2020-05-17,Mississippi,other,2,9
+2020-05-17,Mississippi,other,4,10
 2020-05-17,Mississippi,Neshoba,9,3
 2020-05-17,Mississippi,other,1,4
 2020-05-17,Puerto Rico,Unknown,5,1
@@ -2811,8 +2819,7 @@ date,state,county,deaths,rank
 2020-05-17,Pennsylvania,other,25,6
 2020-05-17,Pennsylvania,Montgomery,19,2
 2020-05-17,Pennsylvania,Philadelphia,202,1
-2020-05-17,Rhode Island,Unknown,108,2
-2020-05-17,Rhode Island,other,0,100
+2020-05-17,Rhode Island,other,108,100
 2020-05-17,Rhode Island,Providence,0,1
 2020-05-17,South Dakota,other,2,100
 2020-05-17,South Dakota,Minnehaha,4,1
@@ -2834,73 +2841,75 @@ date,state,county,deaths,rank
 2020-05-17,West Virginia,other,0,5
 2020-05-17,West Virginia,Wayne,0,3
 2020-05-17,West Virginia,other,0,4
-2020-05-17,North Carolina,other,36,100
+2020-05-17,North Carolina,other,40,100
 2020-05-17,North Carolina,other,3,5
+2020-05-17,North Carolina,other,10,10
 2020-05-17,North Carolina,other,0,7
-2020-05-17,North Carolina,other,0,17
-2020-05-17,North Carolina,other,4,15
+2020-05-17,North Carolina,other,0,18
+2020-05-17,North Carolina,other,1,17
 2020-05-17,North Carolina,other,4,6
-2020-05-17,North Carolina,other,12,9
-2020-05-17,North Carolina,other,5,18
+2020-05-17,North Carolina,other,4,14
 2020-05-17,North Carolina,other,2,8
-2020-05-17,North Carolina,Durham,6,3
-2020-05-17,North Carolina,other,1,13
+2020-05-17,North Carolina,other,3,9
+2020-05-17,North Carolina,other,6,4
 2020-05-17,North Carolina,Guilford,5,2
-2020-05-17,North Carolina,other,4,4
+2020-05-17,North Carolina,Henderson,4,3
 2020-05-17,North Carolina,Mecklenburg,10,1
 2020-05-17,South Carolina,other,16,100
-2020-05-17,South Carolina,other,2,11
-2020-05-17,South Carolina,other,7,4
+2020-05-17,South Carolina,other,2,9
+2020-05-17,South Carolina,other,3,5
 2020-05-17,South Carolina,Richland,3,1
-2020-05-17,South Carolina,other,4,7
-2020-05-17,South Carolina,other,0,9
+2020-05-17,South Carolina,other,3,7
+2020-05-17,South Carolina,other,1,8
+2020-05-17,South Carolina,other,1,11
 2020-05-17,South Carolina,Clarendon,5,3
+2020-05-17,South Carolina,other,4,4
 2020-05-17,South Carolina,Greenville,4,2
 2020-05-17,South Carolina,other,3,6
-2020-05-17,South Carolina,other,1,10
 2020-05-17,Virgin Islands,Unknown,0,1
 2020-05-17,District of Columbia,District of Columbia,52,1
 2020-05-17,Northern Mariana Islands,Unknown,0,1
 2020-05-24,Guam,Unknown,0,1
-2020-05-24,Iowa,other,14,100
-2020-05-24,Iowa,Black Hawk,4,3
+2020-05-24,Iowa,other,19,100
+2020-05-24,Iowa,Black Hawk,6,3
 2020-05-24,Iowa,Linn,1,2
-2020-05-24,Iowa,other,2,4
-2020-05-24,Iowa,Polk,7,1
-2020-05-24,Iowa,other,1,6
-2020-05-24,Iowa,other,5,5
+2020-05-24,Iowa,other,3,4
+2020-05-24,Iowa,Polk,10,1
+2020-05-24,Iowa,other,3,6
+2020-05-24,Iowa,other,8,5
 2020-05-24,Ohio,other,0,10
-2020-05-24,Ohio,other,15,100
-2020-05-24,Ohio,Cuyahoga,14,3
-2020-05-24,Ohio,Franklin,15,1
-2020-05-24,Ohio,other,0,6
-2020-05-24,Ohio,other,-1,8
-2020-05-24,Ohio,Lucas,1,2
-2020-05-24,Ohio,other,2,4
+2020-05-24,Ohio,other,38,100
+2020-05-24,Ohio,Cuyahoga,17,3
+2020-05-24,Ohio,Franklin,19,1
+2020-05-24,Ohio,other,3,6
+2020-05-24,Ohio,other,0,8
+2020-05-24,Ohio,Lucas,5,2
+2020-05-24,Ohio,other,4,4
 2020-05-24,Ohio,other,-1,9
-2020-05-24,Ohio,other,1,7
-2020-05-24,Ohio,other,0,5
-2020-05-24,Utah,other,2,100
-2020-05-24,Utah,Salt Lake,2,1
-2020-05-24,Idaho,Ada,-1,1
+2020-05-24,Ohio,other,2,7
+2020-05-24,Ohio,other,1,5
+2020-05-24,Utah,other,4,100
+2020-05-24,Utah,Salt Lake,3,1
+2020-05-24,Utah,Utah,1,2
+2020-05-24,Idaho,Ada,-1,2
 2020-05-24,Idaho,other,0,100
 2020-05-24,Idaho,other,0,5
 2020-05-24,Idaho,other,0,4
 2020-05-24,Idaho,Nez Perce,0,3
-2020-05-24,Idaho,Twin Falls,3,1
+2020-05-24,Idaho,Twin Falls,4,1
 2020-05-24,Maine,other,0,100
-2020-05-24,Maine,Cumberland,1,1
+2020-05-24,Maine,Cumberland,3,1
 2020-05-24,Maine,Kennebec,0,3
 2020-05-24,Maine,Waldo,0,2
 2020-05-24,Maine,York,1,3
-2020-05-24,Texas,other,14,100
-2020-05-24,Texas,other,2,6
-2020-05-24,Texas,Tarrant,1,3
-2020-05-24,Texas,other,5,4
-2020-05-24,Texas,Harris,2,1
-2020-05-24,Texas,other,3,5
+2020-05-24,Texas,other,27,100
+2020-05-24,Texas,other,10,6
+2020-05-24,Texas,Tarrant,12,3
+2020-05-24,Texas,other,8,4
+2020-05-24,Texas,Harris,4,1
+2020-05-24,Texas,other,4,5
 2020-05-24,Texas,other,0,7
-2020-05-24,Texas,Dallas,3,2
+2020-05-24,Texas,Dallas,11,2
 2020-05-24,Alaska,other,0,100
 2020-05-24,Alaska,Fairbanks North Star Borough,0,2
 2020-05-24,Alaska,Kenai Peninsula Borough,0,3
@@ -2909,40 +2918,40 @@ date,state,county,deaths,rank
 2020-05-24,Hawaii,other,0,100
 2020-05-24,Hawaii,Honolulu,0,1
 2020-05-24,Hawaii,Maui,0,2
-2020-05-24,Kansas,other,3,100
-2020-05-24,Kansas,Johnson,1,2
+2020-05-24,Kansas,other,5,100
+2020-05-24,Kansas,Johnson,2,2
 2020-05-24,Kansas,Sedgwick,0,3
 2020-05-24,Kansas,Wyandotte,0,1
-2020-05-24,Nevada,other,4,100
-2020-05-24,Nevada,Clark,2,1
+2020-05-24,Nevada,other,5,100
+2020-05-24,Nevada,Clark,7,1
 2020-05-24,Oregon,other,1,100
 2020-05-24,Oregon,Marion,0,2
 2020-05-24,Oregon,Multnomah,0,1
 2020-05-24,Oregon,Washington,0,3
-2020-05-24,Alabama,other,14,100
-2020-05-24,Alabama,Jefferson,8,2
+2020-05-24,Alabama,other,16,100
+2020-05-24,Alabama,Jefferson,9,2
 2020-05-24,Alabama,other,0,5
 2020-05-24,Alabama,Mobile,3,1
 2020-05-24,Alabama,other,4,4
 2020-05-24,Alabama,Tallapoosa,1,3
 2020-05-24,Alabama,other,1,6
-2020-05-24,Arizona,other,8,100
-2020-05-24,Arizona,Maricopa,1,1
-2020-05-24,Arizona,Pima,-1,2
-2020-05-24,Florida,other,14,100
-2020-05-24,Florida,Miami-Dade,4,1
-2020-05-24,Florida,Palm Beach,0,2
-2020-05-24,Florida,Broward,8,3
-2020-05-24,Georgia,other,39,100
-2020-05-24,Georgia,other,1,6
-2020-05-24,Georgia,Cobb,9,2
-2020-05-24,Georgia,other,5,5
-2020-05-24,Georgia,Dougherty,3,3
-2020-05-24,Georgia,Fulton,12,1
-2020-05-24,Georgia,other,4,4
-2020-05-24,Indiana,other,31,100
-2020-05-24,Indiana,Lake,1,2
-2020-05-24,Indiana,Marion,8,1
+2020-05-24,Arizona,other,17,100
+2020-05-24,Arizona,Maricopa,14,1
+2020-05-24,Arizona,Pima,1,2
+2020-05-24,Florida,other,42,100
+2020-05-24,Florida,Miami-Dade,26,1
+2020-05-24,Florida,Palm Beach,5,2
+2020-05-24,Florida,Broward,13,3
+2020-05-24,Georgia,other,55,100
+2020-05-24,Georgia,other,3,6
+2020-05-24,Georgia,Cobb,16,2
+2020-05-24,Georgia,other,9,5
+2020-05-24,Georgia,Dougherty,5,3
+2020-05-24,Georgia,Fulton,17,1
+2020-05-24,Georgia,other,5,4
+2020-05-24,Indiana,other,48,100
+2020-05-24,Indiana,Lake,3,2
+2020-05-24,Indiana,Marion,15,1
 2020-05-24,Montana,other,0,100
 2020-05-24,Montana,Cascade,0,3
 2020-05-24,Montana,Flathead,0,3
@@ -2952,64 +2961,64 @@ date,state,county,deaths,rank
 2020-05-24,Vermont,Chittenden,0,1
 2020-05-24,Wyoming,other,0,100
 2020-05-24,Wyoming,Fremont,0,1
-2020-05-24,Wyoming,Laramie,0,2
-2020-05-24,Wyoming,Washakie,1,2
-2020-05-24,Arkansas,other,3,100
+2020-05-24,Wyoming,Laramie,0,3
+2020-05-24,Wyoming,Washakie,2,2
+2020-05-24,Arkansas,other,4,100
 2020-05-24,Arkansas,Crittenden,0,3
 2020-05-24,Arkansas,Jefferson,0,2
 2020-05-24,Arkansas,other,0,4
 2020-05-24,Arkansas,Pulaski,1,1
-2020-05-24,Colorado,other,4,5
-2020-05-24,Colorado,other,3,100
-2020-05-24,Colorado,Arapahoe,6,2
+2020-05-24,Colorado,other,6,5
+2020-05-24,Colorado,other,5,100
+2020-05-24,Colorado,Arapahoe,20,2
 2020-05-24,Colorado,other,2,7
-2020-05-24,Colorado,Denver,2,1
+2020-05-24,Colorado,Denver,14,1
 2020-05-24,Colorado,other,1,6
-2020-05-24,Colorado,Jefferson,5,3
-2020-05-24,Colorado,other,2,4
+2020-05-24,Colorado,Jefferson,15,3
+2020-05-24,Colorado,other,3,4
 2020-05-24,Delaware,other,-1,100
-2020-05-24,Delaware,Kent,1,3
-2020-05-24,Delaware,New Castle,3,1
+2020-05-24,Delaware,Kent,5,3
+2020-05-24,Delaware,New Castle,8,1
 2020-05-24,Delaware,Sussex,8,2
-2020-05-24,Illinois,other,35,100
-2020-05-24,Illinois,Cook,108,1
-2020-05-24,Kentucky,other,1,100
-2020-05-24,Kentucky,Jefferson,7,1
-2020-05-24,Kentucky,Kenton,0,2
-2020-05-24,Maryland,other,22,100
+2020-05-24,Illinois,other,92,100
+2020-05-24,Illinois,Cook,209,1
+2020-05-24,Kentucky,other,10,100
+2020-05-24,Kentucky,Jefferson,10,1
+2020-05-24,Kentucky,Kenton,1,2
+2020-05-24,Maryland,other,50,100
 2020-05-24,Maryland,other,7,4
-2020-05-24,Maryland,other,9,5
-2020-05-24,Maryland,Baltimore,13,3
-2020-05-24,Maryland,Montgomery,17,1
-2020-05-24,Maryland,Prince George's,22,2
-2020-05-24,Michigan,other,31,100
-2020-05-24,Michigan,Oakland,4,2
-2020-05-24,Michigan,Wayne,7,1
-2020-05-24,Michigan,Macomb,1,3
-2020-05-24,Missouri,other,4,100
-2020-05-24,Missouri,St. Louis,3,1
-2020-05-24,Missouri,St. Louis city,6,2
-2020-05-24,Nebraska,other,3,100
+2020-05-24,Maryland,other,13,5
+2020-05-24,Maryland,Baltimore,21,3
+2020-05-24,Maryland,Montgomery,22,1
+2020-05-24,Maryland,Prince George's,36,2
+2020-05-24,Michigan,other,53,100
+2020-05-24,Michigan,Oakland,7,2
+2020-05-24,Michigan,Wayne,45,1
+2020-05-24,Michigan,Macomb,6,3
+2020-05-24,Missouri,other,8,100
+2020-05-24,Missouri,St. Louis,5,1
+2020-05-24,Missouri,St. Louis city,7,2
+2020-05-24,Nebraska,other,5,100
 2020-05-24,Nebraska,other,0,5
-2020-05-24,Nebraska,Dakota,3,3
-2020-05-24,Nebraska,Douglas,0,2
+2020-05-24,Nebraska,Dakota,5,3
+2020-05-24,Nebraska,Douglas,4,2
 2020-05-24,Nebraska,Hall,3,1
 2020-05-24,Nebraska,other,0,4
 2020-05-24,Nebraska,other,1,6
-2020-05-24,New York,New York City,174,1
-2020-05-24,New York,other,167,100
+2020-05-24,New York,New York City,223,1
+2020-05-24,New York,other,216,100
 2020-05-24,Oklahoma,other,2,100
 2020-05-24,Oklahoma,Cleveland,0,3
 2020-05-24,Oklahoma,other,0,6
 2020-05-24,Oklahoma,Oklahoma,2,1
-2020-05-24,Oklahoma,Tulsa,3,2
+2020-05-24,Oklahoma,Tulsa,5,2
 2020-05-24,Oklahoma,other,0,5
-2020-05-24,Oklahoma,other,0,4
-2020-05-24,Virginia,other,42,100
-2020-05-24,Virginia,Arlington,9,3
-2020-05-24,Virginia,Fairfax,14,1
-2020-05-24,Virginia,Henrico,0,2
-2020-05-24,Virginia,other,12,4
+2020-05-24,Oklahoma,other,2,4
+2020-05-24,Virginia,other,54,100
+2020-05-24,Virginia,Arlington,14,3
+2020-05-24,Virginia,Fairfax,38,1
+2020-05-24,Virginia,Henrico,1,2
+2020-05-24,Virginia,other,15,4
 2020-05-24,Louisiana,other,-18,6
 2020-05-24,Louisiana,other,1,4
 2020-05-24,Louisiana,other,22,100
@@ -3017,113 +3026,113 @@ date,state,county,deaths,rank
 2020-05-24,Louisiana,Jefferson,6,2
 2020-05-24,Louisiana,Orleans,4,1
 2020-05-24,Louisiana,other,0,5
-2020-05-24,Minnesota,other,22,100
-2020-05-24,Minnesota,Hennepin,25,1
-2020-05-24,Tennessee,other,4,100
+2020-05-24,Minnesota,other,40,100
+2020-05-24,Minnesota,Hennepin,41,1
+2020-05-24,Tennessee,other,5,100
 2020-05-24,Tennessee,other,0,4
-2020-05-24,Tennessee,Shelby,4,1
+2020-05-24,Tennessee,Shelby,13,1
 2020-05-24,Tennessee,Sumner,0,3
 2020-05-24,Tennessee,Davidson,6,2
-2020-05-24,Wisconsin,other,9,100
-2020-05-24,Wisconsin,Milwaukee,1,1
-2020-05-24,California,other,38,100
-2020-05-24,California,Los Angeles,53,1
-2020-05-24,New Jersey,other,26,100
-2020-05-24,New Jersey,Bergen,7,2
-2020-05-24,New Jersey,Essex,17,1
-2020-05-24,New Jersey,Hudson,5,3
-2020-05-24,New Jersey,other,5,10
-2020-05-24,New Jersey,other,17,5
-2020-05-24,New Jersey,other,8,9
-2020-05-24,New Jersey,other,5,8
-2020-05-24,New Jersey,other,6,7
-2020-05-24,New Jersey,other,4,6
-2020-05-24,New Jersey,other,2,11
-2020-05-24,New Jersey,other,8,4
-2020-05-24,New Mexico,Bernalillo,0,3
+2020-05-24,Wisconsin,other,26,100
+2020-05-24,Wisconsin,Milwaukee,6,1
+2020-05-24,California,other,88,100
+2020-05-24,California,Los Angeles,105,1
+2020-05-24,New Jersey,other,49,100
+2020-05-24,New Jersey,Bergen,26,2
+2020-05-24,New Jersey,Essex,36,1
+2020-05-24,New Jersey,Hudson,20,3
+2020-05-24,New Jersey,other,11,10
+2020-05-24,New Jersey,other,22,5
+2020-05-24,New Jersey,other,24,9
+2020-05-24,New Jersey,other,10,8
+2020-05-24,New Jersey,other,18,7
+2020-05-24,New Jersey,other,11,6
+2020-05-24,New Jersey,other,11,11
+2020-05-24,New Jersey,other,20,4
+2020-05-24,New Mexico,Bernalillo,1,3
 2020-05-24,New Mexico,other,2,100
-2020-05-24,New Mexico,McKinley,8,2
+2020-05-24,New Mexico,McKinley,10,2
 2020-05-24,New Mexico,other,0,4
-2020-05-24,New Mexico,San Juan,7,1
-2020-05-24,Washington,other,10,100
-2020-05-24,Washington,King,10,1
-2020-05-24,Washington,Snohomish,9,2
-2020-05-24,Connecticut,other,19,100
-2020-05-24,Connecticut,Fairfield,23,1
-2020-05-24,Connecticut,Hartford,24,2
-2020-05-24,Connecticut,New Haven,28,3
-2020-05-24,Mississippi,other,12,100
-2020-05-24,Mississippi,other,0,13
-2020-05-24,Mississippi,other,2,14
-2020-05-24,Mississippi,other,0,16
+2020-05-24,New Mexico,San Juan,8,1
+2020-05-24,Washington,other,16,100
+2020-05-24,Washington,King,17,1
+2020-05-24,Washington,Snohomish,11,2
+2020-05-24,Connecticut,other,23,100
+2020-05-24,Connecticut,Fairfield,34,1
+2020-05-24,Connecticut,Hartford,34,2
+2020-05-24,Connecticut,New Haven,37,3
+2020-05-24,Mississippi,other,17,100
+2020-05-24,Mississippi,other,3,13
+2020-05-24,Mississippi,other,4,16
 2020-05-24,Mississippi,other,1,12
 2020-05-24,Mississippi,Forrest,4,2
 2020-05-24,Mississippi,other,1,6
 2020-05-24,Mississippi,other,0,15
-2020-05-24,Mississippi,other,5,11
-2020-05-24,Mississippi,Lauderdale,2,1
-2020-05-24,Mississippi,other,2,5
-2020-05-24,Mississippi,other,1,9
-2020-05-24,Mississippi,Neshoba,3,3
-2020-05-24,Mississippi,other,3,4
+2020-05-24,Mississippi,other,6,11
+2020-05-24,Mississippi,Lauderdale,3,1
+2020-05-24,Mississippi,other,5,5
+2020-05-24,Mississippi,other,2,9
+2020-05-24,Mississippi,other,0,10
+2020-05-24,Mississippi,Neshoba,4,3
+2020-05-24,Mississippi,other,4,4
 2020-05-24,Puerto Rico,Unknown,2,1
 2020-05-24,North Dakota,other,0,100
-2020-05-24,North Dakota,Cass,2,1
-2020-05-24,Pennsylvania,other,24,100
-2020-05-24,Pennsylvania,other,4,5
-2020-05-24,Pennsylvania,other,1,4
-2020-05-24,Pennsylvania,other,7,7
-2020-05-24,Pennsylvania,Delaware,3,3
-2020-05-24,Pennsylvania,other,3,6
-2020-05-24,Pennsylvania,Montgomery,2,2
-2020-05-24,Pennsylvania,Philadelphia,10,1
-2020-05-24,Rhode Island,Unknown,37,2
-2020-05-24,Rhode Island,other,0,100
-2020-05-24,Rhode Island,Providence,0,1
-2020-05-24,South Dakota,other,0,100
-2020-05-24,South Dakota,Minnehaha,0,1
-2020-05-24,Massachusetts,other,11,100
-2020-05-24,Massachusetts,other,20,8
-2020-05-24,Massachusetts,Essex,22,2
-2020-05-24,Massachusetts,other,5,6
-2020-05-24,Massachusetts,Middlesex,23,1
-2020-05-24,Massachusetts,other,17,4
-2020-05-24,Massachusetts,other,21,7
-2020-05-24,Massachusetts,Suffolk,17,3
-2020-05-24,Massachusetts,other,33,5
+2020-05-24,North Dakota,Cass,4,1
+2020-05-24,Pennsylvania,other,54,100
+2020-05-24,Pennsylvania,other,9,5
+2020-05-24,Pennsylvania,other,13,4
+2020-05-24,Pennsylvania,other,15,7
+2020-05-24,Pennsylvania,Delaware,15,3
+2020-05-24,Pennsylvania,other,5,6
+2020-05-24,Pennsylvania,Montgomery,29,2
+2020-05-24,Pennsylvania,Philadelphia,29,1
+2020-05-24,Rhode Island,other,-118,100
+2020-05-24,Rhode Island,Providence,176,1
+2020-05-24,South Dakota,other,2,100
+2020-05-24,South Dakota,Minnehaha,2,1
+2020-05-24,Massachusetts,other,14,100
+2020-05-24,Massachusetts,other,28,8
+2020-05-24,Massachusetts,Essex,30,2
+2020-05-24,Massachusetts,other,13,6
+2020-05-24,Massachusetts,Middlesex,37,1
+2020-05-24,Massachusetts,other,20,4
+2020-05-24,Massachusetts,other,29,7
+2020-05-24,Massachusetts,Suffolk,23,3
+2020-05-24,Massachusetts,other,49,5
 2020-05-24,New Hampshire,other,0,100
-2020-05-24,New Hampshire,Hillsborough,6,1
-2020-05-24,New Hampshire,Rockingham,0,2
+2020-05-24,New Hampshire,Hillsborough,13,1
+2020-05-24,New Hampshire,Rockingham,2,2
 2020-05-24,West Virginia,other,2,100
 2020-05-24,West Virginia,Jackson,0,1
 2020-05-24,West Virginia,Kanawha,0,1
 2020-05-24,West Virginia,other,0,5
 2020-05-24,West Virginia,Wayne,0,3
 2020-05-24,West Virginia,other,0,4
-2020-05-24,North Carolina,other,-3,100
-2020-05-24,North Carolina,other,0,5
-2020-05-24,North Carolina,other,5,7
-2020-05-24,North Carolina,other,0,17
-2020-05-24,North Carolina,other,0,15
-2020-05-24,North Carolina,other,2,6
-2020-05-24,North Carolina,other,8,9
-2020-05-24,North Carolina,other,9,18
+2020-05-24,North Carolina,other,16,100
+2020-05-24,North Carolina,other,1,5
+2020-05-24,North Carolina,other,16,10
+2020-05-24,North Carolina,other,7,7
+2020-05-24,North Carolina,other,1,18
+2020-05-24,North Carolina,other,1,17
+2020-05-24,North Carolina,other,4,6
+2020-05-24,North Carolina,other,2,14
 2020-05-24,North Carolina,other,0,8
-2020-05-24,North Carolina,Durham,2,3
-2020-05-24,North Carolina,other,0,13
-2020-05-24,North Carolina,Guilford,1,2
-2020-05-24,North Carolina,other,1,4
-2020-05-24,North Carolina,Mecklenburg,1,1
-2020-05-24,South Carolina,other,4,100
-2020-05-24,South Carolina,other,0,11
-2020-05-24,South Carolina,other,6,4
-2020-05-24,South Carolina,Richland,0,1
+2020-05-24,North Carolina,other,1,9
+2020-05-24,North Carolina,other,2,4
+2020-05-24,North Carolina,Guilford,2,2
+2020-05-24,North Carolina,Henderson,4,3
+2020-05-24,North Carolina,Mecklenburg,7,1
+2020-05-24,South Carolina,other,13,100
+2020-05-24,South Carolina,other,2,9
+2020-05-24,South Carolina,other,4,5
+2020-05-24,South Carolina,Richland,3,1
 2020-05-24,South Carolina,other,3,7
-2020-05-24,South Carolina,other,0,9
+2020-05-24,South Carolina,other,1,8
+2020-05-24,South Carolina,other,3,11
 2020-05-24,South Carolina,Clarendon,1,3
+2020-05-24,South Carolina,other,3,4
 2020-05-24,South Carolina,Greenville,5,2
-2020-05-24,South Carolina,other,1,6
-2020-05-24,South Carolina,other,1,10
+2020-05-24,South Carolina,other,3,6
 2020-05-24,Virgin Islands,Unknown,0,1
-2020-05-24,District of Columbia,District of Columbia,13,1
+2020-05-24,District of Columbia,District of Columbia,18,1
 2020-05-24,Northern Mariana Islands,Unknown,0,1
