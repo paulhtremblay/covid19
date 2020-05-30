@@ -37,7 +37,7 @@ def get_totals():
     with open(path, 'r') as read_obj:
         reader = csv.DictReader(read_obj)
         for row in reader:
-            d[row['state']] = {'deaths': int(row['deaths']), 'cases':int(row['deaths'])}
+            d[row['state']] = {'deaths': int(row['deaths']), 'cases':int(row['cases'])}
     return d
 
 def _get_stats_for_state(deaths, cases, pop):
@@ -67,9 +67,13 @@ def _get_stats_for_state(deaths, cases, pop):
     if pop == None:
         the_dict['current_week_per_million'] = None
         the_dict['last_week_per_million'] = None
+        the_dict['current_week_cases_per_million'] = None
+        the_dict['last_week_cases_per_million'] = None
     else:
         the_dict['current_week_per_million'] = round(float(np.mean(current_week))/pop * 1000000, 1)
         the_dict['last_week_per_million'] = round(float(np.mean(last_week))/pop * 1000000, 1)
+        the_dict['current_week_cases_per_million'] = round(float(np.mean(current_week_cases))/pop * 1000000, 1)
+        the_dict['last_week_cases_per_million'] = round(float(np.mean(last_week_cases))/pop * 1000000, 1)
     return the_dict
 
 def change_with_sig(df, state_pop):
@@ -101,14 +105,16 @@ def make_state_tables(verbose = False, window = None):
             print('working on {state}'.format(state = state))
     change_dict = change_with_sig(df_day, state_pop)
     field_names = ['state', 
-    'current_week_mean',
+                   'current_week_mean',
                    'current_week_per_million',
                    'last_week_mean',
                    'last_week_mean_2',
                    'last_week_per_million',
+                   'last_week_cases_per_million',
                    'last_week_cases_mean_2', 
                    'last_week_cases_mean', 
                    'current_week_cases_mean',
+                   'current_week_cases_per_million',
                    'p_value_cases_current_last',
                    'p_value_cases_last_last2',
                    'p_value_death_current_last',
@@ -139,19 +145,20 @@ def make_state_tables(verbose = False, window = None):
             csv_writer.writerow(d)
 
 
-def get_html(header, body):
+def get_html(header, body, caption):
     t = ENV.get_template('data_table.j2')
     return t.render(table_head = header, 
             table_body =  body,
+            caption = caption
             )
 
 def make_html_table(path):
     data = []
+    data_cases = []
     header = None
     with open(os.path.join('data', 'data_table.csv'), 'r') as read_obj:
         counter = 0
         csv_reader = csv.DictReader(read_obj)
-        print(csv_reader.fieldnames)
         for row in csv_reader:
             sig =  float(row['p_value_death_current_last']) <= .1
             if sig:
@@ -162,6 +169,10 @@ def make_html_table(path):
                 deaths_mil = round(float(row['total_deaths_per_million']))
             except ValueError:
                 deaths_mil = 0
+            try:
+                cases_mil = round(float(row['total_cases_per_million']))
+            except ValueError:
+                cases_mil = 0
             data.append([row['state'], 
                 round(float(row['current_week_mean'])),
                 row['current_week_per_million'],
@@ -172,14 +183,28 @@ def make_html_table(path):
                 row['total_deaths'],
                 deaths_mil,
                 ])
+            data_cases.append([row['state'], 
+                round(float(row['current_week_cases_mean'])),
+                row['current_week_cases_per_million'],
+                round(float(row['last_week_cases_mean'])),
+                row['last_week_cases_per_million'],
+                round(float(row['current_week_cases_mean'])- float(row['last_week_cases_mean'])),
+                sig,
+                row['total_cases'],
+                cases_mil,
+                ])
     header =['state', 'current week mean', 'per million', 'last week mean',
-            'per million', 'change', 'significant', 'total_deaths', 'per million']
-    html = get_html(header = header, 
-            body =data           )
-    with open(os.path.join('html_temp', 'table_data.html'), 'w') as write_obj:
-        write_obj.write(html)
+            'per million', 'change', 'significant', 'total', 'per million']
+    html_deaths = get_html(header = header, 
+            body =data, caption = 'Deaths')
+    html_cases = get_html(header = header, 
+            body =data_cases, caption= 'Cases')
+    with open(os.path.join('html_temp', 'table_data_deaths.html'), 'w') as write_obj:
+        write_obj.write(html_deaths)
+    with open(os.path.join('html_temp', 'table_data_cases.html'), 'w') as write_obj:
+        write_obj.write(html_cases)
 
 
 if __name__ == '__main__':
-    #make_state_tables()
+    make_state_tables()
     make_html_table(os.path.join('data', 'data_table.csv'))

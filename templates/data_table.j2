@@ -19,6 +19,9 @@
 		.data-header-number{
 			text-align:right;
 		}
+		caption{
+			font-size:18;
+		}
 	</style>
 
 	</head>
@@ -27,11 +30,12 @@
 		$(document).ready(function() {
     $('#data').DataTable( {
         "order": [[ 0, "asc" ]],
-		 "pageLength":25 
+		 "pageLength":10 
     } );
 } );
 	</script>
 	<table id="data" class="display" style="width:100%">
+		<caption>{{caption}}</caption>
         <thead>
             <tr>
 				{% for item in table_head %}
