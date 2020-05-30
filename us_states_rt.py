@@ -132,8 +132,8 @@ def make_rt_html(window = 3):
     #make CSV
     rates(df_states,  min_value = 0, window = window)
     date = datetime.datetime.now()
-    for i in [('deaths', 'states_deaths_rt.html', 'Death Rate', 'deaths', ), 
-            ('cases', 'states_cases_rt.html', 'Cases Rate', 'cases')]:
+    for i in [('deaths', 'states_deaths_rt', 'Death Rate', 'deaths', ), 
+            ('cases', 'states_cases_rt', 'Cases Rate', 'cases')]:
         grid = all_states(df_states = df_states, key = i[0], min_value = 0, 
                 window = window)
         script, div = components(grid)

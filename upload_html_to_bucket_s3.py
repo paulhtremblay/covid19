@@ -13,7 +13,7 @@ def _get_args():
 
 
 def upload_to_storage(local_path, bucket_name, object_name, 
-        content_type= 'text/html'):
+        content_type= 'text/html; charset=utf-8'):
     """Upload a file to an S3 bucket
 
     :param file_name: File to upload
@@ -31,19 +31,19 @@ def upload_to_storage(local_path, bucket_name, object_name,
         ) 
 
 def upload_html(bucket_name, verbose):
-    files = glob.glob('html_temp/*.html')
+    files = glob.glob('html_temp/*')
     for i in files:
         head, tail = os.path.split(i)
         upload_to_storage(local_path = i, bucket_name = bucket_name,
                 object_name = tail)
-    files2 = glob.glob('html_temp/states/*.html')
+    files2 = glob.glob('html_temp/states/*')
     for i in files2:
         head, tail = os.path.split(i)
         if verbose:
             print('uploading {t}'.format(t = tail))
         upload_to_storage(local_path = i, bucket_name = bucket_name,
                 object_name = 'states/{name}'.format(name = tail))
-    files3 = glob.glob('html_temp/countries/*.html')
+    files3 = glob.glob('html_temp/countries/*')
     for i in files3:
         head, tail = os.path.split(i)
         if verbose:

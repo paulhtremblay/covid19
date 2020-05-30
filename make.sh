@@ -27,6 +27,7 @@ python make_territories.py
 python by_state.py
 python sweden.py
 python make_index_404.py
+python make_about.py
 UPLOAD_TO=dev
 if [ $BRANCH == 'master' ]; then
 	UPLOAD_TO=prod

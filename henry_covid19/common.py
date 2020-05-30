@@ -10,7 +10,7 @@ def get_data_path(dir_path, local_path, data_path = 'data'):
     return os.path.join(dir_path, data_path, local_path)
 
 def tidy_name(s):
-    return s.replace(' ', '_').lower()
+    return s.replace(' ', '-').lower()
 
 def get_days_less_than_0(l):
     n = 1

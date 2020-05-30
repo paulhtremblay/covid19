@@ -23,7 +23,7 @@ def make_about():
             page_title = 'About this site',
             contributors = contributors
             )
-    with open(os.path.join('html_temp', 'about.html'), 'w') as write_obj:
+    with open(os.path.join('html_temp', 'about'), 'w') as write_obj:
         write_obj.write(html)
 
 if __name__ == '__main__':
