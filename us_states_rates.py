@@ -104,10 +104,10 @@ def main():
         os.mkdir('html_temp')
     df_states = get_state_data()
     df_us = get_us_data()
-    for i in [('deaths', 'states_deaths', True),
-            ('cases', 'states_cases', True),
-            ('deaths', 'states_deaths_lin', False),
-            ('cases', 'states_cases_lin', False),
+    for i in [('deaths', 'states-deaths', True),
+            ('cases', 'states-cases', True),
+            ('deaths', 'states-deaths-lin', False),
+            ('cases', 'states-cases-lin', False),
             ]:
         grid = all_states(df_states, df_us, key_territory = 'state', 
                 key = i[0], use_log = i[2])
