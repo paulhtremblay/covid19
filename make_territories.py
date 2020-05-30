@@ -134,10 +134,10 @@ def make_territories_ref_list(territory_key, territories):
     territories = sorted(territories)
     d = {'country': 'countries', 'state': 'states'}
     if territory_key == 'state':
-        path = 'states_list'
+        path = 'states/index.html'
         page_title = 'States'
     else:
-        path = 'countries_list'
+        path = 'countries/index.html'
         page_title = 'Countries'
     t = ENV.get_template('territories_ref.j2')
     t =  t.render(title = 'By {k}'.format(k = territory_key), 
@@ -157,8 +157,8 @@ def all_territories(df_week, df_day, territory_key, window = 3, plot_height = 55
     Create all the HTML files for the states
     """
     territories = list(set(df_week[territory_key]))
-    make_territories_ref_list(territory_key, territories)
     dir_path = make_territories_dir(territory_key)
+    make_territories_ref_list(territory_key, territories)
     for i in territories:
         if verbose:
             print('working on {territory}'.format(territory = i))
