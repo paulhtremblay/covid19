@@ -6,13 +6,35 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<<<<<<< HEAD
+=======
+	<style>
+		.data-number{
+		 text-align:right;
+		}
+		.data-state{
+			text-align:left;
+		}
+		.data-header-state{
+			text-align:left;
+		}
+		.data-header-number{
+			text-align:right;
+		}
+	</style>
+>>>>>>> master
 
 	</head>
 	<body>
 	<script>
 		$(document).ready(function() {
     $('#data').DataTable( {
+<<<<<<< HEAD
         "order": [[ 2, "desc" ]]
+=======
+        "order": [[ 0, "asc" ]],
+		 "pageLength":25 
+>>>>>>> master
     } );
 } );
 	</script>
@@ -20,7 +42,15 @@
         <thead>
             <tr>
 				{% for item in table_head %}
+<<<<<<< HEAD
 					<th>{{item}}</th>
+=======
+					{% if loop.index == 1 %}
+						<th class = 'data-header-state'>{{item}}</th>
+					{% else %}
+						<th class = 'data-header-number'>{{item}}</th>
+					{% endif %}
+>>>>>>> master
 				{% endfor %}
 
             </tr>
@@ -29,7 +59,15 @@
 			{% for row in table_body %}
 				<tr>
 					{% for cell in row %}
+<<<<<<< HEAD
 						<td>{{cell}}</td>
+=======
+						{% if loop.index == 1 %}
+							<td class = 'data-state'>{{cell}}</td>
+						{% else %}
+							<td class = 'data-number'>{{cell}}</td>
+						{% endif %}
+>>>>>>> master
 				    {% endfor %}
 				</tr>
 			{% endfor %}

@@ -1,4 +1,5 @@
 state,cases,deaths
+<<<<<<< HEAD
 Guam,1139,6
 Iowa,17999,480
 Ohio,33006,2002
@@ -53,4 +54,60 @@ North Carolina,24188,789
 South Carolina,10416,446
 Virgin Islands,69,6
 District of Columbia,8334,440
+=======
+Guam,1140,6
+Iowa,18446,496
+Ohio,33439,2044
+Utah,8710,105
+Idaho,2731,82
+Maine,2137,81
+Texas,59047,1598
+Alaska,417,8
+Hawaii,634,17
+Kansas,9453,207
+Nevada,8150,402
+Oregon,4038,148
+Alabama,16032,583
+Arizona,17262,831
+Florida,52626,2318
+Georgia,42713,1904
+Indiana,33242,2030
+Montana,481,17
+Vermont,971,54
+Wyoming,860,14
+Arkansas,6277,120
+Colorado,24775,1393
+Delaware,9096,344
+Illinois,114612,5118
+Kentucky,9313,420
+Maryland,49042,2392
+Michigan,55544,5334
+Missouri,12624,705
+Nebraska,12976,168
+New York,369801,29339
+Oklahoma,6229,322
+Virginia,40249,1281
+Louisiana,38694,2722
+Minnesota,22474,942
+Tennessee,21360,353
+Wisconsin,16565,539
+California,101874,3961
+New Jersey,156628,11339
+New Mexico,7252,329
+Washington,21565,1106
+Connecticut,41288,3803
+Mississippi,14044,670
+Puerto Rico,3397,129
+North Dakota,2442,59
+Pennsylvania,73646,5290
+Rhode Island,14353,655
+South Dakota,4710,54
+Massachusetts,94220,6547
+New Hampshire,4286,223
+West Virginia,1947,74
+North Carolina,24787,827
+South Carolina,10623,466
+Virgin Islands,69,6
+District of Columbia,8406,445
+>>>>>>> master
 Northern Mariana Islands,22,2

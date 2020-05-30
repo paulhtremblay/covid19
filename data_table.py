@@ -61,6 +61,12 @@ def _get_stats_for_state(deaths, cases, pop):
     the_dict['current_week_mean'] = np.mean(current_week)
     the_dict['last_week_mean'] = np.mean(last_week)
     the_dict['last_week_mean_2'] = np.mean(last_week_2)
+<<<<<<< HEAD
+=======
+    the_dict['current_week_cases_mean'] = np.mean(current_week_cases)
+    the_dict['last_week_cases_mean'] = np.mean(last_week_cases)
+    the_dict['last_week_cases_mean_2'] = np.mean(last_week_2_cases)
+>>>>>>> master
     if pop == None:
         the_dict['current_week_per_million'] = None
         the_dict['last_week_per_million'] = None
@@ -103,6 +109,12 @@ def make_state_tables(verbose = False, window = None):
                    'last_week_mean',
                    'last_week_mean_2',
                    'last_week_per_million',
+<<<<<<< HEAD
+=======
+                   'last_week_cases_mean_2', 
+                   'last_week_cases_mean', 
+                   'current_week_cases_mean',
+>>>>>>> master
                    'p_value_cases_current_last',
                    'p_value_cases_last_last2',
                    'p_value_death_current_last',
@@ -140,11 +152,44 @@ def get_html(header, body):
             )
 
 def make_html_table(path):
+<<<<<<< HEAD
     html = get_html(header = ['state', 'deaths', 'cases'], 
             body = [['Alabma', 1, 2], ['Washington', 2, 3], 
                 ['Florida', 5, 8]
                 ]
             )
+=======
+    data = []
+    header = None
+    with open(os.path.join('data', 'data_table.csv'), 'r') as read_obj:
+        counter = 0
+        csv_reader = csv.DictReader(read_obj)
+        print(csv_reader.fieldnames)
+        for row in csv_reader:
+            sig =  float(row['p_value_death_current_last']) <= .1
+            if sig:
+                sig = 'Yes'
+            else:
+                sig = 'No'
+            try:
+                deaths_mil = round(float(row['total_deaths_per_million']))
+            except ValueError:
+                deaths_mil = 0
+            data.append([row['state'], 
+                round(float(row['current_week_mean'])),
+                row['current_week_per_million'],
+                round(float(row['last_week_mean'])),
+                row['last_week_per_million'],
+                round(float(row['current_week_mean'])- float(row['last_week_mean'])),
+                sig,
+                row['total_deaths'],
+                deaths_mil,
+                ])
+    header =['state', 'current week mean', 'per million', 'last week mean',
+            'per million', 'change', 'significant', 'total_deaths', 'per million']
+    html = get_html(header = header, 
+            body =data           )
+>>>>>>> master
     with open(os.path.join('html_temp', 'table_data.html'), 'w') as write_obj:
         write_obj.write(html)
 
