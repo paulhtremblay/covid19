@@ -1,0 +1,63 @@
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+	<style>
+		.data-number{
+		 text-align:right;
+		}
+		.data-state{
+			text-align:left;
+		}
+		.data-header-state{
+			text-align:left;
+		}
+		.data-header-number{
+			text-align:right;
+		}
+	</style>
+
+	</head>
+	<body>
+	<script>
+		$(document).ready(function() {
+    $('#data').DataTable( {
+        "order": [[ 0, "asc" ]],
+		 "pageLength":25 
+    } );
+} );
+	</script>
+	<table id="data" class="display" style="width:100%">
+        <thead>
+            <tr>
+				{% for item in table_head %}
+					{% if loop.index == 1 %}
+						<th class = 'data-header-state'>{{item}}</th>
+					{% else %}
+						<th class = 'data-header-number'>{{item}}</th>
+					{% endif %}
+				{% endfor %}
+
+            </tr>
+        </thead>
+        <tbody>
+			{% for row in table_body %}
+				<tr>
+					{% for cell in row %}
+						{% if loop.index == 1 %}
+							<td class = 'data-state'>{{cell}}</td>
+						{% else %}
+							<td class = 'data-number'>{{cell}}</td>
+						{% endif %}
+				    {% endfor %}
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+ </body>
+</html>
+ 
