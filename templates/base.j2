@@ -1,44 +1,42 @@
-<!DOCTYPE html>{% set website = { "name": "Covid-19 Data", "slogan": "Trends in Number and Rates of Infections" } %}
+{%- set website_title = "Covid-19 Data" -%}
+{%- set website_slogan = "Trends in Number and Rates of Infections" -%}
+<!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="utf-8">
-    <title>{% block title %}{{ page_title }} || {{ website.name }}{% endblock title %}</title>
+    <title>{% block title %}{% endblock title %}</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="/styles/site.css">
-	
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js" integrity="sha256-q6H2tiCn/WI6/yUscC8yNCGup3XM1lizbZckx5edIl0=" crossorigin="anonymous"></script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    {%- block scripts -%}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js" integrity="sha256-q6H2tiCn/WI6/yUscC8yNCGup3XM1lizbZckx5edIl0=" crossorigin="anonymous"></script>
     {{script|safe}}
+    {%- endblock scripts -%}
   </head>
 
   <body>
 
     <header>
-    {% block main_header %}
-      <div class="siteNameSlogan">{{ website.name }}: {{ website.slogan }}</div>
-			{% include "nav.j2" %}
-			<h1>{{ page_title }}</h1>
-    {% endblock main_header %}
+    {% block page_header %}
+      {%- include "nav.j2" -%}
+    {% endblock page_header %}
     </header>
 
-    <main>
+    <main class="{{ page_class_attr }}">
     {% block content %}
-      {{div|safe}}
-    {% endblock %}
+    {% endblock content %}
     </main>
 
     <footer>
       <address>
-      {% block address %}
       	<p>
-        	This page is part of a <a href="/about.html">collaborative project</a>
+        	This page is part of a
+          {% block about_link %}<a href="/about.html">collaborative project</a>{% endblock about_link %}
         	created by <a href="https://github.com/paulhtremblay">Henry Tremblay</a>
         </p>
       	<p>
         	<a href="https://github.com/paulhtremblay/covid19">contributions welcome</a>
       	</p>
-      {% endblock address %}
       </address>
     </footer>
 

@@ -1,12 +1,13 @@
 {% extends "base.j2" %}
 
-{% block title %}{{ website.name }}: {{ website.slogan }}{% endblock %}
+{# website home page #}
 
-{% block main_header %}
-        <h1 class="siteNameSlogan">{{ website.name }}: {{ website.slogan }}</h1>
-        {% include "nav.j2" %}
-{% endblock main_header %}
+{% block title %}{{ website_title }}: {{ website_slogan }}{% endblock %}
 
+{% block page_header %}
+        <h1 class="siteNameSlogan">{{ website_title }}: {{ website_slogan }}</h1>
+        {{ super() }}
+{% endblock page_header %}
 
 {% block content %}
       <p>

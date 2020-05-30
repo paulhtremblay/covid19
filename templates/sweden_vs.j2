@@ -1,9 +1,6 @@
 {% extends "base.j2" %}
-{% block content %}
-<h1>{{title}}</h1>
-	<p>updated: {{date}}</p>
-    <p><a href = "../index.html">home</a></p>
-	<h2>{{graph_title}}</h2>
-	{{div|safe}}
 
+{% block content %}
+  <h2>{{graph_title}}</h2>
+  {{div|safe}}
 {% endblock %}

@@ -110,7 +110,7 @@ def make_state_ref(states):
     for i in sorted(states):
         s += '<p><a href="{r}">{i}</a></p>\n'.format(
                 i = i,
-                r = 'states/' + i.replace(' ', '_').lower() + '.html',
+                r = 'states/' + i.replace(' ', '-').lower() + '.html',
                 )
     return s
 
@@ -135,13 +135,16 @@ def make_territories_ref_list(territory_key, territories):
     if territory_key == 'state':
         path = 'states_list.html'
         page_title = 'States'
+        list_class = "states"
     else:
         path = 'countries_list.html'
         page_title = 'Countries'
+        list_class = "countries"
     t = ENV.get_template('territories_ref.j2')
     t =  t.render(title = 'By {k}'.format(k = territory_key), 
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_title = page_title,
+            list_class = list_class,
             territories = [(d[territory_key] + '/' + common.tidy_name(x) + '.html', x) for x in territories]
             )
     if not os.path.isdir('html_temp'):

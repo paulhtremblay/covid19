@@ -1,7 +1,21 @@
 {% extends "base.j2" %}
+
+{# error page #}
+
+{% block title %}Error || {{ website_title }}{% endblock title %}
+
+{%- block scripts -%}{% endblock scripts %}
+
+{% block page_header %}
+      <div class="siteNameSlogan">
+        {{ website_title }}: {{ website_slogan }}
+      </div>
+      {{ super() }}
+      <h1>Error</h1>
+{% endblock page_header %}
+
 {% block content %}
         <p>
           The requested page (or image, or file, or...) was not found.
         </p>
 {% endblock %}
-
