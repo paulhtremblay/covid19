@@ -12,6 +12,18 @@ def get_data_path(dir_path, local_path, data_path = 'data'):
 def tidy_name(s):
     return s.replace(' ', '-').lower()
 
+def make_camel_case(s):
+    """
+    Removes spaces from string and convert to camel case,
+    so "North Dakota" becomes "northDakota". Useful for generating
+    html attributes, e.g., class="northDakota"
+    """
+
+    # split string on spaces
+    components = s.split(' ')
+    # capitalize the first letter of all but the first component, then join them
+    return components[0] + ''.join(x.title() for x in components[1:])
+
 def get_days_less_than_0(l):
     n = 1
     for i in range(len(l)):

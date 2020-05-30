@@ -95,6 +95,7 @@ def get_html(script, div, the_type):
     return t.render(title = title, 
             script =  script,
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            page_class_attr = ["deathRateGrowth"],
             div = div,
             page_title = title,
             )

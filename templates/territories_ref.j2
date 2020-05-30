@@ -1,7 +1,7 @@
 {% extends "data.j2" %}
 
 {% block content %}
-      <ul class="regions {{ list_class }}">
+      <ul>
         {% for t in territories %}
 		    <li><a href="{{ t[0]}}">{{ t[1] }}</a></li>
         {% endfor %}

@@ -49,6 +49,7 @@ def get_html(date, script, div, window):
     return t.render(title = 'Sweden Vs. Other', 
             script =  script,
             date = date,
+            page_class_attr = ["swedenComparison"],
             div = div,
             graph_title = 'Deaths per million ({w} day rolling mean)'.format(
                 w = window

@@ -14,6 +14,7 @@ def make_index():
     t = ENV.get_template('index.j2')
     html = t.render(title = 'home',
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            page_class_attr = ["home"],
             )
     with open(os.path.join('html_temp', 'index.html'), 'w') as write_obj:
         write_obj.write(html)
@@ -23,6 +24,7 @@ def make_404():
     html = t.render(title = 'home', 
             date = datetime.datetime.now(),
             page_title = 'Not Found',
+            page_class_attr = ["error"],
             )
     with open(os.path.join('html_temp', '404.html'), 'w') as write_obj:
         write_obj.write(html)

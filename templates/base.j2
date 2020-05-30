@@ -22,7 +22,7 @@
     {% endblock page_header %}
     </header>
 
-    <main class="{{ page_class_attr }}">
+    <main class="{{ page_class_attr|join(' ') }}">
     {% block content %}
     {% endblock content %}
     </main>

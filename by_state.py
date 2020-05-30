@@ -101,6 +101,7 @@ def get_html(date, territory, script, div, curr_death, last_week_deaths,
     return t.render(territory_name = territory, 
             script =  script,
             date = date,
+            page_class_attr = ["state", "graph", common.make_hyphenated(territory)],
             div = div,
             curr_death = int(round(curr_death)),
             last_week_deaths = int(round(last_week_deaths)),
@@ -153,7 +154,6 @@ def make_territories_ref_list(territory_key, territories):
     if territory_key == 'state':
         path = 'states_list'
         page_title = 'States'
-        list_class = "states"
     else:
         path = 'countries_list'
         page_title = 'Countries'
@@ -161,8 +161,8 @@ def make_territories_ref_list(territory_key, territories):
     t =  t.render(title = 'By {k}'.format(k = territory_key), 
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_title = page_title,
-            list_class = list_class,
             territories = [(d[territory_key] + '/' + common.tidy_name(x), x) for x in territories]
+            page_class_attr = ["regionList", territory_key.lower()],
             )
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')

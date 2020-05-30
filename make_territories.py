@@ -65,6 +65,7 @@ def get_html(territory, script, div, death_ro, death_double_rate,
     return t.render(title = territory, 
             script =  script,
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            page_class_attr = ["country", "graph", common.make_hyphenated(territory)],
             death_ro = round(death_ro, 1), cases_ro = round(cases_ro,1),
             death_double_rate = death_double_rate, 
             cases_double_rate = cases_double_rate,
@@ -135,17 +136,15 @@ def make_territories_ref_list(territory_key, territories):
     if territory_key == 'state':
         path = 'states_list'
         page_title = 'States'
-        list_class = "states"
     else:
         path = 'countries_list'
         page_title = 'Countries'
-        list_class = "countries"
     t = ENV.get_template('territories_ref.j2')
     t =  t.render(title = 'By {k}'.format(k = territory_key), 
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_title = page_title,
-            list_class = list_class,
             territories = [(d[territory_key] + '/' + common.tidy_name(x), x) for x in territories]
+            page_class_attr = ["regionList", territory_key.lower()],
             )
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')

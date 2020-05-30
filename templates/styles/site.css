@@ -11,7 +11,7 @@ a:hover {
   background-color: blue;
 }
 
-nav > ul > li > a {
+ul > li > a {
   padding: .3em;
 }
 
@@ -48,18 +48,14 @@ nav > ul > li > a {
 
 }
 
-ul.regions.states {
+.regionList.state > ul {
   column-width: 12.5rem;
 }
 
-ul.regions.countries {
+.regionList.country > ul {
   column-width: 20.5rem;
 }
 
-ul.regions > li {
+.regionList > ul > li {
   margin-bottom: .5em;
-}
-
-ul.regions > li > a {
-  padding: .4em;
 }
