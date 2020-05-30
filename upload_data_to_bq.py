@@ -25,7 +25,7 @@ def get_html_file(url):
             if not country_code2:
                 country_code2 = 'N/A'
             cases = row['cases']
-            deaths = row['cases']
+            deaths = row['deaths']
             population = row['popData2018']
             if population == '':
                 population = 0
