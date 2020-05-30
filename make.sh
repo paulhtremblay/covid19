@@ -1,13 +1,15 @@
 set -e 
 VERBOSE=false
 REFRESH_DATA=false
+UPLOAD=false
 
-while getopts u:vr flag
+while getopts p:vru flag
 do
     case "${flag}" in
 		v) VERBOSE='true';;
 		r) REFRESH_DATA='true';;
-        u) username=${OPTARG};;
+		u) UPLOAD='true';;
+        p) username=${OPTARG};;
     esac
 done
 if [ $REFRESH_DATA == 'true' ]; then
@@ -28,17 +30,18 @@ python by_state.py
 python sweden.py
 python make_index_404.py
 python make_about.py
+python data_table.py
 UPLOAD_TO=dev
 if [ $BRANCH == 'master' ]; then
 	UPLOAD_TO=prod
 fi
-if [ $BRANCH == 'development' ] || [ $BRANCH == 'master' ]; then
+if [ $UPLOAD == 'true' ] || [ $BRANCH == 'master' ]; then
 	if [ $VERBOSE == 'true' ]; then
 		echo uploading to ${UPLOAD_TO}
 	fi
 	python upload_html_to_bucket_s3.py --branch ${UPLOAD_TO}
 else
-	echo Not uploading because not dev or prod
+	echo Not uploading 
 fi
 # copy styles
 
