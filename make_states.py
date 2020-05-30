@@ -76,7 +76,7 @@ def get_html(state, script, div, death_ro, death_double_rate,
         death_ro = 0
     if cases_ro == None:
         cases_ro = 0
-    with open(os.path.join('html_dir', 'states_ind.html'), 'r') as read_obj:
+    with open(os.path.join('html_dir', 'states_ind'), 'r') as read_obj:
         s = ''.join(read_obj.readlines())
     return s.format(
         title = state, 
@@ -127,7 +127,7 @@ def make_state_ref(states):
     for i in sorted(states):
         s += '<p><a href="{r}">{i}</a></p>\n'.format(
                 i = i,
-                r = 'states/' + i.replace(' ', '_').lower() + '.html',
+                r = 'states/' + i.replace(' ', '_').lower(),
                 )
     return s
 
@@ -135,7 +135,7 @@ def make_states_ref_list(states):
     """
     create the link page  for each state
     """
-    with open('html_dir/states_list.html', 'r') as read_obj:
+    with open('html_dir/states_list', 'r') as read_obj:
         s = ''.join(read_obj.readlines())
     s = s.format(
             states = make_state_ref(states),
@@ -143,7 +143,7 @@ def make_states_ref_list(states):
             date = 'date',
 
             )
-    with open(os.path.join('html_temp', 'by_state.html'), 'w') as write_obj:
+    with open(os.path.join('html_temp', 'by_state'), 'w') as write_obj:
         write_obj.write(s)
 
 def all_states(df_week, df_day, window = 3, plot_height = 550,
@@ -179,7 +179,7 @@ def all_states(df_week, df_day, window = 3, plot_height = 550,
                 death_ro = death_ro, cases_ro = cases_ro, 
                 death_double_rate = death_double_rate, 
                 cases_double_rate = cases_double_rate)
-        with open(os.path.join('html_temp', 'states', '{state}.html'.format(
+        with open(os.path.join('html_temp', 'states', '{state}'.format(
             state = i.replace(' ', '_').lower())), 'w') as write_obj:
             write_obj.write(html)
     make_states_ref_list(states)

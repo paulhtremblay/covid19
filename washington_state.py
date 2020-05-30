@@ -90,7 +90,6 @@ def get_html(script, div, date, title):
     return t.render(title = title, 
             script =  script,
             date = date,
-            site_name = 'Covid 19 Data: Cases, Deaths, and Changes by State',
             div = div,
             page_title = 'States Rate of Growth Deaths',
             )
@@ -110,7 +109,7 @@ def make_washington_graphs():
     grid = gridplot([p_all, p_counties], ncols = 4)
     script, div = components(grid)
     html = get_html(script, div, date, title = 'Washington')
-    with open('html_temp/wa.html', 'w') as write_obj:
+    with open('html_temp/wa', 'w') as write_obj:
         write_obj.write(html)
 
 if __name__ == '__main__':

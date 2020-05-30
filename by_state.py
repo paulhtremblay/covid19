@@ -151,16 +151,18 @@ def make_territories_ref_list(territory_key, territories):
     territories = sorted(territories)
     d = {'country': 'countries', 'state': 'states'}
     if territory_key == 'state':
-        path = 'states_list.html'
-        h1_name = 'States'
+        path = 'states_list'
+        page_title = 'States'
+        list_class = "states"
     else:
-        path = 'countries_list.html'
-        h1_name = 'Countries'
+        path = 'countries_list'
+        page_title = 'Countries'
     t = ENV.get_template('territories_ref.j2')
     t =  t.render(title = 'By {k}'.format(k = territory_key), 
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-            h1_name = h1_name,
-            territories = [(d[territory_key] + '/' + common.tidy_name(x) + '.html', x) for x in territories]
+            page_title = page_title,
+            list_class = list_class,
+            territories = [(d[territory_key] + '/' + common.tidy_name(x), x) for x in territories]
             )
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
@@ -269,7 +271,7 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400,
                 last_week_per_million = change_dict[state]['last_week_per_million'],
                     )
         with open(os.path.join(dir_path, 
-            '{territory}'.format(territory = common.tidy_name(state)) + '.html'), 'w') as write_obj:
+            '{territory}'.format(territory = common.tidy_name(state))), 'w') as write_obj:
             write_obj.write(html)
     make_territories_ref_list('state', list(set(df_day['state'])))
 

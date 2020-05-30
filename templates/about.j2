@@ -1,31 +1,23 @@
-{% extends "base.j2" %}
+{% extends "data.j2" %}
 
-{% block main_header %}
-      {{ super() }}
-      <p>Last updated: {{date}}</p>
-{% endblock main_header %}
+{# about the site page to show links to contributors' github pages #}
 
 {% block content %}
       <p>
-        {{ website.name }} is a collaborative project with these contributors:
+        {{ website_title }} is a collaborative project with these contributors:
       </p>
 
       <ul>
-      	{% for contributor in contributors %}
+      	{% for c in contributors %}
         <li>
-          <a href="{{ contributor.html_url }}">{{ contributor.login }}</a>
-          ({{ contributor.contributions }} contributions)
+          <a href="{{ c.html_url }}">{{ c.login }}</a>
+          ({{ c.contributions }} contributions)
         </li>
       	{% endfor %}
       </ul>
-{% endblock %}
 
-{% block address %}
-      	<p>
-        	This page is part of a collaborative project
-        	created by <a href="https://github.com/paulhtremblay">Henry Tremblay</a>
-        </p>
-      	<p>
-        	<a href="https://github.com/paulhtremblay/covid19">contributions welcome</a>
-      	</p>
-{% endblock address %}
+      <p>{{ self }}</p>
+
+{% endblock content %}
+
+{% block about_link %}collaborative project{% endblock about_link %}

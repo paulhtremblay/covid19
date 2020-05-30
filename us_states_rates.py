@@ -87,7 +87,6 @@ def get_html(script, div, the_type):
     """
     Create the HTML
     """
-    site_name= 'Covid 19'
     if the_type == 'deaths':
         title = 'Growth of rates of deaths'
     elif the_type == 'cases':
@@ -97,7 +96,6 @@ def get_html(script, div, the_type):
             script =  script,
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             div = div,
-            site_name = site_name,
             page_title = title,
             )
 def main():
@@ -105,10 +103,10 @@ def main():
         os.mkdir('html_temp')
     df_states = get_state_data()
     df_us = get_us_data()
-    for i in [('deaths', 'states_deaths.html', True),
-            ('cases', 'states_cases.html', True),
-            ('deaths', 'states_deaths_lin.html', False),
-            ('cases', 'states_cases_lin.html', False),
+    for i in [('deaths', 'states_deaths', True),
+            ('cases', 'states_cases', True),
+            ('deaths', 'states_deaths_lin', False),
+            ('cases', 'states_cases_lin', False),
             ]:
         grid = all_states(df_states, df_us, key_territory = 'state', 
                 key = i[0], use_log = i[2])

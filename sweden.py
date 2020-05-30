@@ -88,7 +88,7 @@ def make_sweden_graph(plot_width = 300, plot_height = 300, window = 3):
     script, div = components(grid)
     html = get_html(script = script, div = div,
                 date = date, window = window)
-    with open(os.path.join('html_temp', 'sweden_vs_other.html'), 'w') as write_obj:
+    with open(os.path.join('html_temp', 'sweden_vs_other'), 'w') as write_obj:
             write_obj.write(html)
 
 if __name__ == '__main__':

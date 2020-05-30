@@ -9,7 +9,7 @@ the bash make.sh does the following:
 
 1. Creates bokeh objects and inserts them into HTML documents using jina
 
-2. copy all .html files to a bucket in GCP, wher they are served. 
+2. copy all html files to a bucket in GCP, wher they are served. 
 
 Setup
 ======

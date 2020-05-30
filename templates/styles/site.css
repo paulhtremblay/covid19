@@ -47,3 +47,19 @@ nav > ul > li > a {
   }
 
 }
+
+ul.regions.states {
+  column-width: 12.5rem;
+}
+
+ul.regions.countries {
+  column-width: 20.5rem;
+}
+
+ul.regions > li {
+  margin-bottom: .5em;
+}
+
+ul.regions > li > a {
+  padding: .4em;
+}

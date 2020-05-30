@@ -110,7 +110,7 @@ def make_state_ref(states):
     for i in sorted(states):
         s += '<p><a href="{r}">{i}</a></p>\n'.format(
                 i = i,
-                r = 'states/' + i.replace(' ', '_').lower() + '.html',
+                r = 'states/' + i.replace(' ', '-').lower(),
                 )
     return s
 
@@ -133,16 +133,19 @@ def make_territories_ref_list(territory_key, territories):
     territories = sorted(territories)
     d = {'country': 'countries', 'state': 'states'}
     if territory_key == 'state':
-        path = 'states_list.html'
+        path = 'states_list'
         page_title = 'States'
+        list_class = "states"
     else:
-        path = 'countries_list.html'
+        path = 'countries_list'
         page_title = 'Countries'
+        list_class = "countries"
     t = ENV.get_template('territories_ref.j2')
     t =  t.render(title = 'By {k}'.format(k = territory_key), 
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_title = page_title,
-            territories = [(d[territory_key] + '/' + common.tidy_name(x) + '.html', x) for x in territories]
+            list_class = list_class,
+            territories = [(d[territory_key] + '/' + common.tidy_name(x), x) for x in territories]
             )
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
@@ -186,7 +189,7 @@ def all_territories(df_week, df_day, territory_key, window = 3, plot_height = 55
                 death_ro = death_ro, cases_ro = cases_ro, 
                 death_double_rate = death_double_rate, 
                 cases_double_rate = cases_double_rate)
-        with open(os.path.join(dir_path, '{territory}.html'.format(
+        with open(os.path.join(dir_path, '{territory}'.format(
             territory = common.tidy_name(i))), 'w') as write_obj:
             write_obj.write(html)
 
