@@ -34,6 +34,8 @@ def upload_html(bucket_name, verbose):
     files = glob.glob('html_temp/*')
     for i in files:
         head, tail = os.path.split(i)
+        if os.path.isdir(i):
+            continue
         upload_to_storage(local_path = i, bucket_name = bucket_name,
                 object_name = tail)
     files2 = glob.glob('html_temp/states/*')
