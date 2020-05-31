@@ -147,9 +147,12 @@ def make_state_tables(verbose = False, window = None):
 
 def get_html(header, body, caption):
     t = ENV.get_template('data_table.j2')
-    return t.render(table_head = header, 
+    return t.render(page_title = caption,
+            date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            table_head = header, 
             table_body =  body,
-            caption = caption
+            caption = caption,
+            page_class_attr = ["dataTable"],
             )
 
 def make_html_table(path):
@@ -199,9 +202,9 @@ def make_html_table(path):
             body =data, caption = 'Deaths')
     html_cases = get_html(header = header, 
             body =data_cases, caption= 'Cases')
-    with open(os.path.join('html_temp', 'table_data_deaths.html'), 'w') as write_obj:
+    with open(os.path.join('html_temp', 'table-data-deaths'), 'w') as write_obj:
         write_obj.write(html_deaths)
-    with open(os.path.join('html_temp', 'table_data_cases.html'), 'w') as write_obj:
+    with open(os.path.join('html_temp', 'table-data-cases'), 'w') as write_obj:
         write_obj.write(html_cases)
 
 
