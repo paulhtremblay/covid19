@@ -41,6 +41,25 @@ def upload_to_storage(local_path, bucket_name, blob_name):
         blob = bucket.blob(blob_name)
         blob.upload_from_file(fh)
 
+def fix_us_counties(path):
+    # new york city no fips
+    #date,county,state,fips,cases,deaths
+    out_path = 'us_counties_tmp.csv'
+    with open(path, 'r') as read_obj, open(out_path, 'w') as write_obj:
+        csv_reader = csv.reader(read_obj)
+        csv_writer = csv.writer(write_obj)
+        counter = 0
+        for row in csv_reader:
+            counter += 1
+            if counter == 1:
+                csv_writer.writerow(row)
+            elif row[1] == 'New York City' and row[2] == 'New York':
+                csv_writer.writerow([row[0], row[1], row[2], '36061', row[4], row[5]])
+            else:
+                csv_writer.writerow(row)
+    return out_path
+
+
 def upload_to_bq(client, gs_path, table_name):
     if not client:
         client = bigquery.Client()
@@ -66,11 +85,12 @@ def main(verbose = False):
     if verbose:
         print('uploading to storage')
     client = bigquery.Client()
+    fix_us_counties('us-counties.csv')
     upload_to_storage(local_path = 'us-states.csv', 
             bucket_name = 'paul-henry-tremblay-covid19', 
             blob_name = 'covid_19_us_states.csv'
             )
-    upload_to_storage(local_path = 'us-counties.csv', 
+    upload_to_storage(local_path = 'us_counties_tmp.csv', 
             bucket_name = 'paul-henry-tremblay-covid19', 
             blob_name = 'covid_19_us_counties.csv'
             )
