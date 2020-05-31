@@ -21,6 +21,7 @@ def make_about():
     html = t.render(title = 'about', 
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_title = 'About this site',
+            page_class_attr = ["aboutSite"],
             contributors = contributors
             )
     with open(os.path.join('html_temp', 'about'), 'w') as write_obj:

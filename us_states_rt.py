@@ -120,6 +120,7 @@ def get_html(script, div, date, title, the_type ):
     return t.render(title = title, 
             script =  script,
             date = date,
+            page_class_attr = ["infectionGrowthRate"],
             div = div,
             page_title = page_title,
             )

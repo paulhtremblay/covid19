@@ -49,6 +49,7 @@ def get_html(date, script, div, window):
     return t.render(title = 'Sweden Vs. Other', 
             script =  script,
             date = date,
+            page_class_attr = ["swedenComparison"],
             div = div,
             graph_title = 'Deaths per million ({w} day rolling mean)'.format(
                 w = window
@@ -88,7 +89,7 @@ def make_sweden_graph(plot_width = 300, plot_height = 300, window = 3):
     script, div = components(grid)
     html = get_html(script = script, div = div,
                 date = date, window = window)
-    with open(os.path.join('html_temp', 'sweden_vs_other'), 'w') as write_obj:
+    with open(os.path.join('html_temp', 'sweden-vs-other'), 'w') as write_obj:
             write_obj.write(html)
 
 if __name__ == '__main__':

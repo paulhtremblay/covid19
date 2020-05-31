@@ -63,8 +63,9 @@ def get_html(territory, script, div, death_ro, death_double_rate,
         cases_ro = 0
     t = ENV.get_template('countries.j2')
     return t.render(title = territory, 
-            script =  script,
+            script = script,
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            page_class_attr = ["country", "graph", common.make_hyphenated(territory)],
             death_ro = round(death_ro, 1), cases_ro = round(cases_ro,1),
             death_double_rate = death_double_rate, 
             cases_double_rate = cases_double_rate,
@@ -133,19 +134,17 @@ def make_territories_ref_list(territory_key, territories):
     territories = sorted(territories)
     d = {'country': 'countries', 'state': 'states'}
     if territory_key == 'state':
-        path = 'states_list'
+        path = 'states/index.html'
         page_title = 'States'
-        list_class = "states"
     else:
-        path = 'countries_list'
+        path = 'countries/index.html'
         page_title = 'Countries'
-        list_class = "countries"
     t = ENV.get_template('territories_ref.j2')
     t =  t.render(title = 'By {k}'.format(k = territory_key), 
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_title = page_title,
-            list_class = list_class,
-            territories = [(d[territory_key] + '/' + common.tidy_name(x), x) for x in territories]
+            page_class_attr = ["regionList", territory_key.lower()],
+            territories = [(common.make_hyphenated(x), x) for x in territories]
             )
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
@@ -158,8 +157,8 @@ def all_territories(df_week, df_day, territory_key, window = 3, plot_height = 55
     Create all the HTML files for the states
     """
     territories = list(set(df_week[territory_key]))
-    make_territories_ref_list(territory_key, territories)
     dir_path = make_territories_dir(territory_key)
+    make_territories_ref_list(territory_key, territories)
     for i in territories:
         if verbose:
             print('working on {territory}'.format(territory = i))
@@ -190,7 +189,7 @@ def all_territories(df_week, df_day, territory_key, window = 3, plot_height = 55
                 death_double_rate = death_double_rate, 
                 cases_double_rate = cases_double_rate)
         with open(os.path.join(dir_path, '{territory}'.format(
-            territory = common.tidy_name(i))), 'w') as write_obj:
+            territory = common.make_hyphenated(i))), 'w') as write_obj:
             write_obj.write(html)
 
 

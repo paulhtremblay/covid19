@@ -14,11 +14,13 @@ def _get_args():
 
 def upload_to_storage(local_path, bucket_name, object_name, 
         content_type= 'text/html; charset=utf-8'):
-    """Upload a file to an S3 bucket
+    """
+    Upload a file to an S3 bucket
 
     :param file_name: File to upload
     :param bucket: Bucket to upload to
     :param object_name: S3 object name. 
+    :param content_type: S3 http content mime-type (and encoding)
     """
     with open(local_path, 'rb') as read_obj:
         b = b''.join(read_obj.readlines())
