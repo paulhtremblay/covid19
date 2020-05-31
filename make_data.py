@@ -2,6 +2,32 @@ import csv
 import os
 from google.cloud import bigquery
 
+def get_7_day_state():
+    return """
+    SELECT u.state, date, new_deaths, new_cases,
+AVG(new_deaths) OVER (ORDER BY date ROWS BETWEEN 7 PRECEDING AND CURRENT ROW) AS seven_rolling_deaths,
+AVG(new_cases) OVER (ORDER BY date ROWS BETWEEN 7 PRECEDING AND CURRENT ROW) AS seven_rolling_cases,
+population_2019 as population
+FROM `paul-henry-tremblay.covid19.us_states_day_diff` u
+inner join covid19.population_2019_est p
+on p.state = u.state
+where p.state = p.county
+    """
+
+def get_7_day_county():
+    return """
+    SELECT u.state, u.county, date, new_deaths, new_cases,
+AVG(new_deaths) OVER (ORDER BY date ROWS BETWEEN 7 PRECEDING AND CURRENT ROW) AS seven_rolling_deaths,
+AVG(new_cases) OVER (ORDER BY date ROWS BETWEEN 7 PRECEDING AND CURRENT ROW) AS seven_rolling_cases,
+population_2019 as population,
+rucc_2013
+FROM `paul-henry-tremblay.covid19.us_counties_diff` u
+inner join covid19.population_2019_est p
+on p.fips = u.fips
+inner join covid19.rural_urban_codes_2013 r
+on r.fips = u.fips
+    """
+
 def get_pop_state():
     return """
     SELECT state, population_2019
@@ -184,7 +210,10 @@ def get_all_data():
             path = 'states_cum.csv')
     gen_writer(client = client, sql =get_pop_state(), 
             path = 'states_population.csv')
-
+    gen_writer(client = client, sql =get_7_day_state(), 
+            path = 'seven_day_state.csv')
+    gen_writer(client = client, sql =get_7_day_county(), 
+            path = 'seven_day_county.csv')
     
 if __name__ == '__main__':
     get_all_data()
