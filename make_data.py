@@ -16,10 +16,15 @@ where p.state = p.county
 
 def get_7_day_county():
     return """
-    SELECT u.state, u.county, date, new_deaths, new_cases,
-AVG(new_deaths) OVER (ORDER BY date ROWS BETWEEN 7 PRECEDING AND CURRENT ROW) AS seven_rolling_deaths,
-AVG(new_cases) OVER (ORDER BY date ROWS BETWEEN 7 PRECEDING AND CURRENT ROW) AS seven_rolling_cases,
-population_2019 as population,
+     with ny_pop as
+ (select sum(population_2019) as population
+ from covid19.population_2019_est
+ where state = 'New York'
+ and  county in ('Kings County', 'Queens County', 'Bronx County', 'New York County')
+ )
+ SELECT u.state, u.county, date, new_deaths, new_cases,
+ case when u.county = 'New York City' then (select population from ny_pop) else
+population_2019 end as population,
 rucc_2013
 FROM `paul-henry-tremblay.covid19.us_counties_diff` u
 inner join covid19.population_2019_est p
