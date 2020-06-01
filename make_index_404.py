@@ -23,7 +23,7 @@ def make_404():
     t = ENV.get_template('404.j2')
     html = t.render(title = 'home', 
             date = datetime.datetime.now(),
-            page_title = 'Not Found',
+            page_title = 'Error',
             page_class_attr = ["error"],
             )
     with open(os.path.join('html_temp', '404.html'), 'w') as write_obj:

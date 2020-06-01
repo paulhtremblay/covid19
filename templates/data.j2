@@ -1,17 +1,6 @@
-{% extends "base.j2" %} {# for all pages that show Covid data/charts/etc. #}
+{% extends "base.j2" %}
 
-{# parent of all data pages (basically, all but home and error pages) #}
-
-{% block title %}{{ page_title }} || {{ website_title }}{% endblock title %}
-
-{% block page_header %}
-      <div class="siteNameSlogan">
-        {{ website_title }}: {{ website_slogan }}
-      </div>
-      {{ super() }}
-			<h1>{{ page_title }}</h1>
-      <p>Last updated: {{date}}</p>
-{% endblock page_header %}
+{# for all data pages #}
 
 {% block content %}
       {{div|safe}}

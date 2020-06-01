@@ -1,15 +1,16 @@
-{%- set website_title = "Covid-19 Data" -%}
-{%- set website_slogan = "Trends in Number and Rates of Infections" -%}
+{%- set site_name = "Covid-19 Data" -%}
+{%- set site_slogan = "Trends in Number and Rates of Infections" -%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{% block title %}{% endblock title %}</title>
+    <title>{% block title %}{{ page_title }} || {{ site_name }}{% endblock title %}</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/styles/site.css">
-    {% block stylesheets -%}{% endblock stylesheets %}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&amp;family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap">
+    {% block stylesheets %}{% endblock stylesheets %}
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-    {% block scripts %}
+    {%- block scripts %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bokeh/2.0.2/bokeh.min.js" integrity="sha256-q6H2tiCn/WI6/yUscC8yNCGup3XM1lizbZckx5edIl0=" crossorigin="anonymous"></script>
     {{script|safe}}
     {% endblock scripts %}
@@ -18,9 +19,16 @@
   <body>
 
     <header>
-    {% block page_header %}
-      {%- include "nav.j2" -%}
-    {% endblock page_header %}
+
+    {%- block page_header %}
+      <div class="siteNameSlogan">
+        {% block site_name %}<div class="siteName">{{ site_name }}</div>{% endblock site_name %}
+        <span class="siteSlogan">{{ site_slogan }}</span>
+      </div>
+      {% include "nav.j2" %}
+			{% block page_h1 %}<h1>{{ page_title }}</h1>{% endblock page_h1 %}
+      {% block last_updated %}<p>Last updated: {{date}}</p>{% endblock last_updated %}
+    {%- endblock page_header %}
     </header>
 
     <main class="{{ page_class_attr|join(' ') }}">
@@ -31,7 +39,7 @@
     <footer>
       <address>
       	<p>
-        	This page is part of a
+        	This page is part of {{ site_name }}, a
           {% block about_link %}<a href="/about">collaborative project</a>{% endblock about_link %}
         	created by <a href="https://github.com/paulhtremblay">Henry Tremblay</a>
         </p>
