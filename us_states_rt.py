@@ -117,12 +117,11 @@ def get_html(script, div, date, title, the_type ):
         page_title = 'States Rate of Growth Deaths'
     elif the_type == 'cases':
         page_title = 'States Rate of Growth Infections'
-    return t.render(title = title, 
+    return t.render(page_title = page_title,
             script =  script,
             date = date,
             page_class_attr = ["infectionGrowthRate"],
             div = div,
-            page_title = page_title,
             )
 
 def make_rt_html(window = 3):

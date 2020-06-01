@@ -158,7 +158,7 @@ def make_territories_ref_list(territory_key, territories):
         path = 'countries/index.html'
         page_title = 'Countries'
     t = ENV.get_template('territories_ref.j2')
-    t =  t.render(title = 'By {k}'.format(k = territory_key), 
+    t =  t.render(page_title = 'By {k}'.format(k = territory_key),
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_title = page_title,
             page_class_attr = ["regionList", territory_key.lower()],

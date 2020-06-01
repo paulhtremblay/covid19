@@ -92,12 +92,11 @@ def get_html(script, div, the_type):
     elif the_type == 'cases':
         title = 'Growth of rates of cases'
     t = ENV.get_template('data.j2')
-    return t.render(title = title, 
+    return t.render(page_title = title,
             script =  script,
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_class_attr = ["deathRateGrowth"],
             div = div,
-            page_title = title,
             )
 def main():
     if not os.path.isdir('html_temp'):
