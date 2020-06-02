@@ -62,7 +62,7 @@ def get_html(territory, script, div, death_ro, death_double_rate,
     if cases_ro == None:
         cases_ro = 0
     t = ENV.get_template('countries.j2')
-    return t.render(title = territory, 
+    return t.render(page_title = territory,
             script = script,
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_class_attr = ["country", "graph", common.make_hyphenated(territory)],

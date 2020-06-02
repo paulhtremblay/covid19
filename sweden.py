@@ -46,8 +46,8 @@ def get_html(date, script, div, window):
     Create the HTML 
     """
     t = ENV.get_template('sweden_vs.j2')
-    return t.render(title = 'Sweden Vs. Other', 
-            script =  script,
+    return t.render(page_title = "Sweden Vs. Other",
+            script = script,
             date = date,
             page_class_attr = ["swedenComparison"],
             div = div,

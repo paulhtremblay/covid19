@@ -1,7 +1,7 @@
 temp_data/*
 .ipynb_checkpoints/*
 html_temp/*
-html_dir/*
+data/*
 henry_covid19/__pycache__/*
 temp.py
 __pycache__/*

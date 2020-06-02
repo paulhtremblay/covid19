@@ -12,8 +12,7 @@ ENV = Environment(
 
 def make_index():
     t = ENV.get_template('index.j2')
-    html = t.render(title = 'home',
-            date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+    html = t.render(date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_class_attr = ["home"],
             )
     with open(os.path.join('html_temp', 'index.html'), 'w') as write_obj:
@@ -21,9 +20,7 @@ def make_index():
 
 def make_404():
     t = ENV.get_template('404.j2')
-    html = t.render(title = 'home', 
-            date = datetime.datetime.now(),
-            page_title = 'Not Found',
+    html = t.render(page_title = 'Error',
             page_class_attr = ["error"],
             )
     with open(os.path.join('html_temp', '404.html'), 'w') as write_obj:
@@ -33,4 +30,3 @@ def make_404():
 if __name__ == '__main__':
     make_index()
     make_404()
-

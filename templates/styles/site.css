@@ -1,14 +1,74 @@
 /* site wide styles for covid 19 data site */
 
+html {
+  --bloodRed: rgb(155, 17, 28);
+  --pageBackground: #fff;
+  --bleedPadding: .5rem;
+  --bleedMargin: -.5rem;
+}
+
+header {
+  --txtColor: #ffdc00;
+}
+
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body > header > nav,
 .siteNameSlogan {
-  font-size: 200%;
-  font-weight: bold;
-  margin-top: .68em;
+  margin-left: var(--bleedMargin);
+  margin-right: var(--bleedMargin);
+  padding-left: var(--bleedPadding);
+  padding-right: var(--bleedPadding);
+}
+
+
+h1 {
+  color: var(--bloodRed);
+  background-color: var(--pageBackground);
+}
+
+h1.siteName,
+nav,
+.siteNameSlogan {
+  color: var(--txtColor);
+  background-color: var(--bloodRed);
+}
+
+.siteNameSlogan {
+  padding-top: .68em;
+  padding-bottom: .66em;
+}
+
+nav {
+  padding-top: 1px;
+  padding-bottom: .1em;
+  font-size: 110%;
 }
 
 a:hover {
   color: white;
   background-color: blue;
+  text-decoration: none;
+}
+
+.home > article > h1,
+.siteName, .siteSlogan {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+nav > ul > li > a {
+  color: var(--grayColor);
+  background-color: var(--bloodRed);
+}
+
+nav > ul > li > a:hover {
+  color: #ffdc00;
+  background-color: var(--bloodRed);
 }
 
 ul > li > a {
@@ -19,6 +79,10 @@ ul > li > a {
 
   nav > ul > li {
     margin-bottom: .5em;
+  }
+
+  .siteSlogan {
+    display: none;
   }
 
 }
@@ -35,6 +99,15 @@ ul > li > a {
 
   nav > ul > li {
     display: inline-block;
+  }
+
+  .siteName,
+  .siteSlogan {
+    display: inline;
+  }
+
+  .siteName:after {
+    content: ": ";
   }
 
 }
@@ -60,23 +133,29 @@ ul > li > a {
   margin-bottom: .5em;
 }
 
+td {
+  font-family: "Roboto Mono", monospace;
+  padding-right: 2em !important;
+}
+
 caption {
   font-size: 120%;
 }
 
-table > thead > tr > th + th {
+table.covidData > thead > tr > th + th {
   text-align: right;
 }
 
-table > thead > tr > th:first-child {
+table.covidData > thead > tr > th:first-child {
   text-align: left;
 }
 
-table > tbody > tr > th {
+table.covidData > tbody > tr > th {
   font-weight: normal;
   text-align: left;
 }
 
-table > tbody > tr > td {
+table.covidData > tbody > tr > td {
   text-align: right;
 }
+

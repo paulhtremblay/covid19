@@ -87,11 +87,10 @@ def get_html(script, div, date, title):
     Create the HTML for each state
     """
     t = ENV.get_template('data.j2')
-    return t.render(title = title, 
+    return t.render(page_title = title,
             script =  script,
             date = date,
             div = div,
-            page_title = 'States Rate of Growth Deaths',
             )
 
 def make_washington_graphs():

@@ -2,20 +2,14 @@
 
 {# error page #}
 
-{% block title %}Error || {{ website_title }}{% endblock title %}
-
 {%- block scripts -%}{% endblock scripts %}
 
-{% block page_header %}
-      <div class="siteNameSlogan">
-        {{ website_title }}: {{ website_slogan }}
-      </div>
-      {{ super() }}
-      <h1>Error</h1>
-{% endblock page_header %}
+{% block title %}Error || {{ site_name }}{% endblock title %}
+
+{%- block last_updated -%}{%- endblock last_updated -%}
 
 {% block content %}
         <p>
-          The requested page (or image, or file, or...) was not found.
+          There was an error retrieving the page/resource you requested.
         </p>
 {% endblock %}
