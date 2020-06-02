@@ -4639,7 +4639,7 @@ date,state,cases,deaths
 2020-05-27,Utah,88,4
 2020-05-27,Idaho,32,1
 2020-05-27,Maine,28,2
-2020-05-27,Texas,1502,46
+2020-05-27,Texas,1532,46
 2020-05-27,Alaska,1,0
 2020-05-27,Hawaii,1,0
 2020-05-27,Kansas,101,3
@@ -4694,7 +4694,7 @@ date,state,cases,deaths
 2020-05-28,Utah,243,1
 2020-05-28,Idaho,39,0
 2020-05-28,Maine,52,3
-2020-05-28,Texas,1712,20
+2020-05-28,Texas,1715,20
 2020-05-28,Alaska,13,0
 2020-05-28,Hawaii,3,0
 2020-05-28,Kansas,59,2
@@ -4749,7 +4749,7 @@ date,state,cases,deaths
 2020-05-29,Utah,329,1
 2020-05-29,Idaho,34,0
 2020-05-29,Maine,37,1
-2020-05-29,Texas,1275,27
+2020-05-29,Texas,1253,27
 2020-05-29,Alaska,6,0
 2020-05-29,Hawaii,2,0
 2020-05-29,Kansas,314,0
@@ -4798,3 +4798,113 @@ date,state,cases,deaths
 2020-05-29,Virgin Islands,0,0
 2020-05-29,District of Columbia,46,7
 2020-05-29,Northern Mariana Islands,0,0
+2020-05-30,Guam,0,0
+2020-05-30,Iowa,317,6
+2020-05-30,Ohio,468,18
+2020-05-30,Utah,269,5
+2020-05-30,Idaho,36,0
+2020-05-30,Maine,56,4
+2020-05-30,Texas,1323,31
+2020-05-30,Alaska,5,0
+2020-05-30,Hawaii,2,0
+2020-05-30,Kansas,21,0
+2020-05-30,Nevada,144,2
+2020-05-30,Oregon,54,2
+2020-05-30,Alabama,328,8
+2020-05-30,Arizona,790,18
+2020-05-30,Florida,927,34
+2020-05-30,Georgia,448,20
+2020-05-30,Indiana,665,15
+2020-05-30,Montana,12,0
+2020-05-30,Vermont,2,0
+2020-05-30,Wyoming,7,1
+2020-05-30,Arkansas,236,1
+2020-05-30,Colorado,482,6
+2020-05-30,Delaware,186,5
+2020-05-30,Illinois,1496,60
+2020-05-30,Kentucky,199,7
+2020-05-30,Maryland,1031,43
+2020-05-30,Michigan,259,57
+2020-05-30,Missouri,169,42
+2020-05-30,Nebraska,251,0
+2020-05-30,New York,1363,77
+2020-05-30,Oklahoma,80,5
+2020-05-30,Virginia,1078,12
+2020-05-30,Louisiana,775,19
+2020-05-30,Minnesota,659,30
+2020-05-30,Tennessee,477,4
+2020-05-30,Wisconsin,465,19
+2020-05-30,California,3057,70
+2020-05-30,New Jersey,764,103
+2020-05-30,New Mexico,131,7
+2020-05-30,Washington,238,6
+2020-05-30,Connecticut,260,44
+2020-05-30,Mississippi,439,13
+2020-05-30,Puerto Rico,71,1
+2020-05-30,North Dakota,34,1
+2020-05-30,Pennsylvania,716,70
+2020-05-30,Rhode Island,184,18
+2020-05-30,South Dakota,94,3
+2020-05-30,Massachusetts,789,50
+2020-05-30,New Hampshire,53,4
+2020-05-30,West Virginia,17,1
+2020-05-30,North Carolina,1026,15
+2020-05-30,South Carolina,263,4
+2020-05-30,Virgin Islands,0,0
+2020-05-30,District of Columbia,179,2
+2020-05-30,Northern Mariana Islands,0,0
+2020-05-31,Guam,3,0
+2020-05-31,Iowa,285,6
+2020-05-31,Ohio,479,6
+2020-05-31,Utah,278,1
+2020-05-31,Idaho,15,0
+2020-05-31,Maine,43,0
+2020-05-31,Texas,1578,7
+2020-05-31,Alaska,28,0
+2020-05-31,Hawaii,1,0
+2020-05-31,Kansas,31,2
+2020-05-31,Nevada,109,4
+2020-05-31,Oregon,58,0
+2020-05-31,Alabama,593,12
+2020-05-31,Arizona,681,3
+2020-05-31,Florida,739,4
+2020-05-31,Georgia,715,46
+2020-05-31,Indiana,365,9
+2020-05-31,Montana,10,0
+2020-05-31,Vermont,4,0
+2020-05-31,Wyoming,5,0
+2020-05-31,Arkansas,240,0
+2020-05-31,Colorado,280,2
+2020-05-31,Delaware,76,5
+2020-05-31,Illinois,1298,58
+2020-05-31,Kentucky,50,0
+2020-05-31,Maryland,794,23
+2020-05-31,Michigan,507,28
+2020-05-31,Missouri,179,2
+2020-05-31,Nebraska,196,1
+2020-05-31,New York,1104,87
+2020-05-31,Oklahoma,88,0
+2020-05-31,Virginia,996,5
+2020-05-31,Louisiana,339,6
+2020-05-31,Minnesota,660,14
+2020-05-31,Tennessee,156,0
+2020-05-31,Wisconsin,169,6
+2020-05-31,California,3014,28
+2020-05-31,New Jersey,837,64
+2020-05-31,New Mexico,65,5
+2020-05-31,Washington,196,0
+2020-05-31,Connecticut,179,32
+2020-05-31,Mississippi,272,11
+2020-05-31,Puerto Rico,58,3
+2020-05-31,North Dakota,23,1
+2020-05-31,Pennsylvania,429,18
+2020-05-31,Rhode Island,109,7
+2020-05-31,South Dakota,33,0
+2020-05-31,Massachusetts,664,78
+2020-05-31,New Hampshire,106,3
+2020-05-31,West Virginia,21,0
+2020-05-31,North Carolina,925,8
+2020-05-31,South Carolina,467,7
+2020-05-31,Virgin Islands,0,0
+2020-05-31,District of Columbia,84,4
+2020-05-31,Northern Mariana Islands,0,0
