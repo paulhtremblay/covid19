@@ -15,13 +15,10 @@ from henry_covid19 import variables
 from jinja2 import Environment, select_autoescape, FileSystemLoader
 
 ENV = Environment(
-    loader=FileSystemLoader(os.path.join(
-        os.path.split(os.path.abspath(__file__))[0],
-        'templates'),
-        os.path.join(
-        os.path.split(os.path.abspath(__file__))[0], 
-        'includes')
-        ),
+    loader=FileSystemLoader([
+          os.path.join(os.path.split(os.path.abspath(__file__))[0], 'templates'),
+          os.path.join(os.path.split(os.path.abspath(__file__))[0], 'includes'),
+    ]),
     autoescape=select_autoescape(['html', 'xml'])
 )
 
