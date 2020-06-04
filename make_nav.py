@@ -13,7 +13,10 @@ from henry_covid19 import bootstrap
 ENV = Environment(
     loader=FileSystemLoader(os.path.join(
         os.path.split(os.path.abspath(__file__))[0],
-        'templates')
+        'templates'),
+        os.path.join(
+        os.path.split(os.path.abspath(__file__))[0], 
+        'includes')
         ),
     autoescape=select_autoescape(['html', 'xml'])
 

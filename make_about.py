@@ -11,10 +11,13 @@ with urllib.request.urlopen("https://api.github.com/repos/paulhtremblay/covid19/
 
 ENV = Environment(
     loader=FileSystemLoader(os.path.join(
+        os.path.split(os.path.abspath(__file__))[0],
+        'templates'),
+        os.path.join(
         os.path.split(os.path.abspath(__file__))[0], 
-        'templates')),
+        'includes')
+        ),
     autoescape=select_autoescape(['html', 'xml'])
-)
 
 def make_about():
     t = ENV.get_template('about.j2')

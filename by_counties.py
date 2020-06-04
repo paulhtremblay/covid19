@@ -16,8 +16,12 @@ from jinja2 import Environment, select_autoescape, FileSystemLoader
 
 ENV = Environment(
     loader=FileSystemLoader(os.path.join(
+        os.path.split(os.path.abspath(__file__))[0],
+        'templates'),
+        os.path.join(
         os.path.split(os.path.abspath(__file__))[0], 
-        'templates')),
+        'includes')
+        ),
     autoescape=select_autoescape(['html', 'xml'])
 )
 

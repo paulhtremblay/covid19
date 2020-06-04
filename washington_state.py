@@ -19,10 +19,13 @@ from henry_covid19 import common
 
 ENV = Environment(
     loader=FileSystemLoader(os.path.join(
+        os.path.split(os.path.abspath(__file__))[0],
+        'templates'),
+        os.path.join(
         os.path.split(os.path.abspath(__file__))[0], 
-        'templates')),
+        'includes')
+        ),
     autoescape=select_autoescape(['html', 'xml'])
-)
 
 """
 makes bar graphs for deaths/cases for WA and by counties

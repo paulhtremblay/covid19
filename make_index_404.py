@@ -5,10 +5,13 @@ from jinja2 import Environment, select_autoescape, FileSystemLoader
 
 ENV = Environment(
     loader=FileSystemLoader(os.path.join(
+        os.path.split(os.path.abspath(__file__))[0],
+        'templates'),
+        os.path.join(
         os.path.split(os.path.abspath(__file__))[0], 
-        'templates')),
+        'includes')
+        ),
     autoescape=select_autoescape(['html', 'xml'])
-)
 
 def make_index():
     t = ENV.get_template('index.j2')
