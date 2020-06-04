@@ -208,6 +208,15 @@ def change_with_sig(df, state_pop):
         the_dict[i] = _get_stats_for_state(deaths, state_pop.get(i, None))
     return the_dict
 
+def make_wa():
+    dir_path = make_territories_dir('state')
+    t = ENV.get_template('wa.j2')
+    html =  t.render(state_name = 'Washington',
+            the_type = 'Deaths'
+            )
+    with open(os.path.join(dir_path, 'wa'), 'w') as write_obj:
+            write_obj.write(html)
+
 def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400, 
         window = None):
     state_pop = get_state_pop()
@@ -273,6 +282,7 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400,
             '{territory}'.format(territory = common.make_hyphenated(state))), 'w') as write_obj:
             write_obj.write(html)
     make_territories_ref_list('state', list(set(df_day['state'])))
+    make_wa()
 
 if __name__ == '__main__':
     make_state_graphs()
