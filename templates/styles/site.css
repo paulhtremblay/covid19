@@ -1,10 +1,12 @@
 /* site wide styles for covid 19 data site */
 
 html {
-  --bloodRed: rgb(155, 17, 28);
   --pageBackground: #fff;
   --bleedPadding: .5rem;
   --bleedMargin: -.5rem;
+  --bloodRed: rgb(155, 17, 28);
+  --golden: #ffdc00;
+  --brightYellow: #ffff00;
 }
 
 header {
@@ -61,14 +63,20 @@ a:hover {
   font-weight: bold;
 }
 
+.siteName > a,
 nav > ul > li > a {
-  color: var(--grayColor);
+  color: var(--golden);
   background-color: var(--bloodRed);
 }
 
+.siteName > a:hover,
 nav > ul > li > a:hover {
-  color: #ffdc00;
+  color: var(--brightYellow);
   background-color: var(--bloodRed);
+}
+
+.siteName > a {
+  text-decoration: none;
 }
 
 ul > li > a {
