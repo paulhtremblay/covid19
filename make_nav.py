@@ -55,10 +55,10 @@ def make_nav():
             countries = [(common.make_hyphenated(x), x) for x in country_list],
             states = [(common.make_hyphenated(x), x) for x in state_list]
             )
-    if not os.path.isdir('temp'):
-        os.mkdir('temp')
+    if not os.path.isdir('templates'):
+        os.mkdir('templates')
 
-    with open(os.path.join('temp', 'nav.html'), 'w') as write_obj:
+    with open(os.path.join('templates', 'nav.html'), 'w') as write_obj:
         write_obj.write(t)
 
 
