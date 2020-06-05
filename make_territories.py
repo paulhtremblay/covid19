@@ -21,7 +21,10 @@ pp = pprint.PrettyPrinter(indent = 4)
 DIR = os.path.split(os.path.abspath(__file__))[0]
 
 ENV = Environment(
-    loader=FileSystemLoader(os.path.join(DIR, 'templates')),
+    loader=FileSystemLoader([
+          os.path.join(os.path.split(os.path.abspath(__file__))[0], 'templates'),
+          os.path.join(os.path.split(os.path.abspath(__file__))[0], 'includes'),
+    ]),
     autoescape=select_autoescape(['html', 'xml'])
 )
 

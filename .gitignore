@@ -5,4 +5,4 @@ data/*
 henry_covid19/__pycache__/*
 temp.py
 __pycache__/*
-*.html
+includes/*
