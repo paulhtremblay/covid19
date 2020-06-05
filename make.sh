@@ -26,6 +26,7 @@ mkdir html_temp
 rm -Rf includes
 mkdir includes
 cp -R templates/styles html_temp/styles
+python make_nav.py
 python us_states_rates.py
 python make_territories.py
 python by_state.py
