@@ -18,10 +18,9 @@ from jinja2 import Environment, select_autoescape, FileSystemLoader
 from henry_covid19 import common
 
 ENV = Environment(
-    loader=FileSystemLoader([
-          os.path.join(os.path.split(os.path.abspath(__file__))[0], 'templates'),
-          os.path.join(os.path.split(os.path.abspath(__file__))[0], 'includes'),
-    ]),
+    loader=FileSystemLoader(os.path.join(
+        os.path.split(os.path.abspath(__file__))[0], 
+        'templates')),
     autoescape=select_autoescape(['html', 'xml'])
 )
 
