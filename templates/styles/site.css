@@ -1,10 +1,12 @@
 /* site wide styles for covid 19 data site */
 
 html {
-  --bloodRed: rgb(155, 17, 28);
   --pageBackground: #fff;
   --bleedPadding: .5rem;
   --bleedMargin: -.5rem;
+  --bloodRed: rgb(155, 17, 28);
+  --golden: #ffdc00;
+  --brightYellow: #ffff00;
 }
 
 header {
@@ -61,19 +63,84 @@ a:hover {
   font-weight: bold;
 }
 
+.siteName > a,
 nav > ul > li > a {
-  color: var(--grayColor);
+  color: var(--golden);
   background-color: var(--bloodRed);
 }
 
+nav > ul > li > a {
+  padding: .5em;
+}
+
+nav > ul > li.hasSubmenu > a {
+  padding-right: 0;
+}
+
+.siteName > a:hover,
 nav > ul > li > a:hover {
-  color: #ffdc00;
-  background-color: var(--bloodRed);
+  color: var(--bloodRed);
+  background-color: var(--golden);
+}
+
+.siteName > a {
+  text-decoration: none;
+}
+
+svg {
+  height: 1.5em;
+  width: 1.3em;
+  padding: 0 .3em 0 .3em;
+  vertical-align: middle;
+  stroke: var(--golden);
+}
+
+svg:hover {
+  cursor: pointer;
+  stroke: var(--bloodRed);
+  background-color: var(--golden);
+}
+
+svg.open {
+  transform: rotate(180deg);
 }
 
 ul > li > a {
   padding: .3em;
 }
+
+li.hasSubmenu {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  left: 0;
+  top: 2em;
+  margin-left: 0;
+  padding-left: 0;
+  max-height: 30em;
+  max-height: 80vh;
+  overflow-y: scroll;
+  list-style: none;
+  color: black;
+  background-color: white;
+  z-index: 10;
+  display: none;
+  box-shadow: .3em -0.1em .5em var(--bloodRed)
+}
+
+.submenu > li > a {
+  display: block;
+  white-space: nowrap;
+  border-left: 1px solid var(--bloodRed);
+  border-bottom: 1px solid var(--bloodRed);
+  border-right: 1px solid var(--bloodRed);
+  padding-top: .4em;
+  padding-bottom: .4em;
+}
+
+
 
 @media screen and (width < 20em) {
 
@@ -116,7 +183,6 @@ ul > li > a {
 
   nav > ul {
     justify-content: space-between;
-    max-width: 60em;
   }
 
 }
