@@ -10,10 +10,9 @@ with urllib.request.urlopen("https://api.github.com/repos/paulhtremblay/covid19/
     contributors = json.loads(url.read().decode())
 
 ENV = Environment(
-    loader=FileSystemLoader([
-          os.path.join(os.path.split(os.path.abspath(__file__))[0], 'templates'),
-          os.path.join(os.path.split(os.path.abspath(__file__))[0], 'includes'),
-    ]),
+    loader=FileSystemLoader(os.path.join(
+        os.path.split(os.path.abspath(__file__))[0], 
+        'templates')),
     autoescape=select_autoescape(['html', 'xml'])
 )
 

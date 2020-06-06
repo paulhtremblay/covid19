@@ -24,10 +24,9 @@ from henry_covid19.states_data import us_states_list as states_list
 DIR = os.path.split(os.path.abspath(__file__))[0]
 
 ENV = Environment(
-    loader=FileSystemLoader([
-          os.path.join(os.path.split(os.path.abspath(__file__))[0], 'templates'),
-          os.path.join(os.path.split(os.path.abspath(__file__))[0], 'includes'),
-    ]),
+    loader=FileSystemLoader(os.path.join(
+        DIR, 
+        'templates')),
     autoescape=select_autoescape(['html', 'xml'])
 )
 

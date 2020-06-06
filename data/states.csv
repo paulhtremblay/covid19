@@ -4254,7 +4254,7 @@ date,state,cases,deaths
 2020-05-20,Utah,187,2
 2020-05-20,Idaho,30,0
 2020-05-20,Maine,78,0
-2020-05-20,Texas,1103,33
+2020-05-20,Texas,1289,38
 2020-05-20,Alaska,3,0
 2020-05-20,Hawaii,2,0
 2020-05-20,Kansas,173,4
@@ -4309,7 +4309,7 @@ date,state,cases,deaths
 2020-05-21,Utah,159,2
 2020-05-21,Idaho,28,0
 2020-05-21,Maine,58,0
-2020-05-21,Texas,1258,42
+2020-05-21,Texas,1072,37
 2020-05-21,Alaska,0,0
 2020-05-21,Hawaii,4,0
 2020-05-21,Kansas,110,2
@@ -5073,3 +5073,58 @@ date,state,cases,deaths
 2020-06-03,Virgin Islands,0,0
 2020-06-03,District of Columbia,130,3
 2020-06-03,Northern Mariana Islands,1,0
+2020-06-04,Guam,2,0
+2020-06-04,Iowa,567,16
+2020-06-04,Ohio,490,40
+2020-06-04,Utah,300,0
+2020-06-04,Idaho,64,0
+2020-06-04,Maine,28,0
+2020-06-04,Texas,1784,27
+2020-06-04,Alaska,26,2
+2020-06-04,Hawaii,1,0
+2020-06-04,Kansas,51,3
+2020-06-04,Nevada,168,0
+2020-06-04,Oregon,75,0
+2020-06-04,Alabama,221,0
+2020-06-04,Arizona,573,17
+2020-06-04,Florida,1419,41
+2020-06-04,Georgia,817,24
+2020-06-04,Indiana,396,24
+2020-06-04,Montana,14,0
+2020-06-04,Vermont,36,0
+2020-06-04,Wyoming,6,0
+2020-06-04,Arkansas,358,9
+2020-06-04,Colorado,300,18
+2020-06-04,Delaware,34,11
+2020-06-04,Illinois,870,107
+2020-06-04,Kentucky,296,11
+2020-06-04,Maryland,873,27
+2020-06-04,Michigan,225,25
+2020-06-04,Missouri,266,5
+2020-06-04,Nebraska,251,4
+2020-06-04,New York,1053,93
+2020-06-04,Oklahoma,102,3
+2020-06-04,Virginia,951,17
+2020-06-04,Louisiana,429,13
+2020-06-04,Minnesota,403,29
+2020-06-04,Tennessee,350,15
+2020-06-04,Wisconsin,461,9
+2020-06-04,California,2510,62
+2020-06-04,New Jersey,462,90
+2020-06-04,New Mexico,213,8
+2020-06-04,Washington,222,5
+2020-06-04,Connecticut,148,18
+2020-06-04,Mississippi,238,12
+2020-06-04,Puerto Rico,485,0
+2020-06-04,North Dakota,27,0
+2020-06-04,Pennsylvania,557,120
+2020-06-04,Rhode Island,106,14
+2020-06-04,South Dakota,85,2
+2020-06-04,Massachusetts,471,49
+2020-06-04,New Hampshire,81,8
+2020-06-04,West Virginia,25,1
+2020-06-04,North Carolina,1263,22
+2020-06-04,South Carolina,354,7
+2020-06-04,Virgin Islands,1,0
+2020-06-04,District of Columbia,104,2
+2020-06-04,Northern Mariana Islands,2,0
