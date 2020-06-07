@@ -27,7 +27,9 @@
 
     {%- block page_header %}
       <div class="siteNameSlogan">
-        {% block site_name %}<div class="siteName">{{ site_name }}</div>{% endblock site_name %}
+        {% block site_name -%}
+        <div class="siteName"><a href="/" title="Covid-19 Data home">{{ site_name }}</a></div>
+        {%- endblock site_name %}
         <span class="siteSlogan">{{ site_slogan }}</span>
       </div>
       {% include "nav.html" %}
