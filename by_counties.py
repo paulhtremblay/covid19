@@ -50,8 +50,8 @@ def make_county_ref_list(states):
     states = sorted(states)
     path = 'counties/index.html'
     page_title = 'Counties'
-    t = ENV.get_template('territories_ref.j2')
-    t =  t.render(title = 'By County', 
+    t = ENV.get_template('counties_ref.j2')
+    t =  t.render(title = 'By County',
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_title = page_title,
             page_class_attr = ["regionList", "state", "county"],
