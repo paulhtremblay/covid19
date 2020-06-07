@@ -1,4 +1,3 @@
-import datetime
 import os
 
 from jinja2 import Environment, select_autoescape, FileSystemLoader
@@ -14,7 +13,7 @@ ENV = Environment(
 
 def make_index():
     t = ENV.get_template('index.j2')
-    html = t.render(date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+    html = t.render(
             page_class_attr = ["home"],
             )
     with open(os.path.join('html_temp', 'index.html'), 'w') as write_obj:

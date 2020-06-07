@@ -161,7 +161,6 @@ def make_territories_ref_list(territory_key, territories):
         page_title = 'Countries'
     t = ENV.get_template('territories_ref.j2')
     t =  t.render(page_title = page_title,
-            date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_class_attr = ["regionList", territory_key.lower()],
             territories = [(slugify(x), x) for x in territories]
             )
@@ -228,7 +227,6 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400,
         os.mkdir('html_temp')
     df_day = get_state_data_day()
     change_dict = change_with_sig(df_day, state_pop)
-    date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     df_deaths = get_data_deaths()
     df_cases = get_data_cases()
     df_day = get_state_data_day()

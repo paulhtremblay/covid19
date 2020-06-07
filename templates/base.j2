@@ -33,8 +33,10 @@
         <span class="siteSlogan">{{ site_slogan }}</span>
       </div>
       {% include "nav.html" %}
-			{% block page_h1 %}<h1>{{ page_title }}</h1>{% endblock page_h1 %}
-      {% block last_updated %}<p>Last updated: <time>{{date}}</time></p>{% endblock last_updated %}
+	  {% block page_h1 %}<h1>{{ page_title }}</h1>{% endblock page_h1 %}
+      {%- block last_updated %}
+      <p>Last updated: <time>{% include "site_updated_time.txt" %}</time></p>
+      {%- endblock last_updated -%}
     {%- endblock page_header %}
     </header>
 

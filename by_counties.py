@@ -52,7 +52,6 @@ def make_county_ref_list(states):
     page_title = 'Counties'
     t = ENV.get_template('counties_ref.j2')
     t =  t.render(title = 'By County',
-            date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_title = page_title,
             page_class_attr = ["regionList", "state", "county"],
             territories = [(slugify(x), x) for x in states]

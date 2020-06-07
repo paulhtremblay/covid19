@@ -1,4 +1,3 @@
-import datetime
 import os
 import ssl
 import urllib.request
@@ -21,7 +20,6 @@ ENV = Environment(
 def make_about():
     t = ENV.get_template('about.j2')
     html = t.render(page_title = 'About This Site',
-            date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_class_attr = ["aboutSite"],
             contributors = contributors
             )

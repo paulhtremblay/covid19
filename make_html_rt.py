@@ -61,7 +61,6 @@ html_raw = """
 """.format(
         states1_js = states1_js, 
         states1_div = states1_div,
-        date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         )
 
 html_raw2 = """
@@ -116,7 +115,6 @@ html_raw2 = """
 """.format(
         states2_js = states2_js, 
         states2_div = states2_div,
-        date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         )
 
 
