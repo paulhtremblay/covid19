@@ -30,7 +30,7 @@
         {% block site_name %}<div class="siteName">{{ site_name }}</div>{% endblock site_name %}
         <span class="siteSlogan">{{ site_slogan }}</span>
       </div>
-      {% include "nav.j2" %}
+      {% include "nav.html" %}
 			{% block page_h1 %}<h1>{{ page_title }}</h1>{% endblock page_h1 %}
       {% block last_updated %}<p>Last updated: <date>{{date}}</date></p>{% endblock last_updated %}
     {%- endblock page_header %}

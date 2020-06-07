@@ -74,7 +74,6 @@ nav > ul > li > a {
 }
 
 nav > ul > li.hasSubmenu > a {
-  padding-right: 0;
 }
 
 .siteName > a:hover,
@@ -93,6 +92,7 @@ svg {
   padding: 0 .3em 0 .3em;
   vertical-align: middle;
   stroke: var(--golden);
+  margin-left: -.3em;
 }
 
 svg:hover {
@@ -138,6 +138,10 @@ li.hasSubmenu {
   border-right: 1px solid var(--bloodRed);
   padding-top: .4em;
   padding-bottom: .4em;
+}
+
+.submenu.county > li:nth-child(odd) > a {
+  border-top: 1px solid var(--bloodRed);
 }
 
 
@@ -198,6 +202,24 @@ li.hasSubmenu {
 .regionList > ul > li {
   margin-bottom: .5em;
 }
+
+.regionList.state.byCounty > ul > li > ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.regionList.state.byCounty > ul > li {
+  break-inside: avoid-column;
+  page-break-inside: avoid;
+  margin-bottom: 1em;
+}
+
+.regionList.state.byCounty > ul > li > ul > li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+
 
 td {
   font-family: "Roboto Mono", monospace;
