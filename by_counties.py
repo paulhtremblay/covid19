@@ -142,7 +142,7 @@ def do_counties():
             script, div = components(grid)
             html = get_html(state=state, script=script, div=div, the_type=title[the_type])
             with open(os.path.join(dir_path,
-                    '{state}-{the_type}'.format(state=common.make_hyphenated(state),
+                    '{state}-{the_type}'.format(state=common.slugify(state),
                     the_type=the_type)), 'w') as write_obj:
                 write_obj.write(html)
     make_county_ref_list(states)
