@@ -24,6 +24,7 @@ BRANCH=`git rev-parse --abbrev-ref HEAD`
 rm -Rf html_temp 
 mkdir html_temp
 cp -R templates/styles html_temp/styles
+cp -R templates/javascript html_temp/javascript
 python make_nav.py
 python us_states_rates.py
 python make_territories.py
