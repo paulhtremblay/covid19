@@ -191,12 +191,16 @@ li.hasSubmenu {
 
 }
 
+.regionList.country > ul {
+  column-width: 20.5rem;
+}
+
 .regionList.state > ul {
   column-width: 12.5rem;
 }
 
-.regionList.country > ul {
-  column-width: 20.5rem;
+.regionList.state.county > ul {
+  column-width: 17rem;
 }
 
 .regionList > ul > li {
@@ -207,19 +211,6 @@ li.hasSubmenu {
   margin-left: 0;
   padding-left: 0;
 }
-
-.regionList.state.byCounty > ul > li {
-  break-inside: avoid-column;
-  page-break-inside: avoid;
-  margin-bottom: 1em;
-}
-
-.regionList.state.byCounty > ul > li > ul > li {
-  display: inline-block;
-  margin-right: 1em;
-}
-
-
 
 td {
   font-family: "Roboto Mono", monospace;
