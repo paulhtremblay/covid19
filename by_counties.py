@@ -12,6 +12,8 @@ from bokeh.embed import components
 from henry_covid19 import common
 from henry_covid19 import variables
 
+from slugify import slugify
+
 from jinja2 import Environment, select_autoescape, FileSystemLoader
 
 ENV = Environment(
@@ -52,8 +54,8 @@ def make_county_ref_list(states):
     t =  t.render(title = 'By County', 
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_title = page_title,
-            page_class_attr = ["regionList", "state"],
-            territories = [(common.make_hyphenated(x) + '-deaths', x) for x in states]
+            page_class_attr = ["regionList", "state", "county"],
+            territories = [(slugify(x), x) for x in states]
             )
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
@@ -61,16 +63,15 @@ def make_county_ref_list(states):
         write_obj.write(t)
 
 def get_html(state, script, div, the_type):
-
     """
     Create the HTML for each state
     """
     if the_type == 'Deaths':
         link_name = 'Cases'
-        link = '{state}-{the_type}'.format(state = common.make_hyphenated(state), the_type = 'cases')
+        link = '{state}-{the_type}'.format(state = slugify(state), the_type = 'cases')
     else:
         link_name = 'Deaths'
-        link = '{state}-{the_type}'.format(state = common.make_hyphenated(state), the_type = 'deaths')
+        link = '{state}-{the_type}'.format(state = slugify(state), the_type = 'deaths')
     t = ENV.get_template('counties.j2')
     return t.render(page_title = state + " " + the_type,
             script =  script,
@@ -123,7 +124,7 @@ def state_counties(df, state, key = 'new_deaths'):
         p = figure(x_axis_type = 'datetime', plot_width = 250, plot_height = 250,
                   title = '{i}'.format(i =i), y_range = (0,max_y),
                   x_range = (min_date, max_date))
-        p.vbar(x=dates, top=y) 
+        p.vbar(x=dates, top=y)
         p.yaxis.axis_label = 'deaths/million'
         ps.append(p)
     grid = gridplot(ps, ncols = 4)

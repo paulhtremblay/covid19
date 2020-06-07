@@ -10,6 +10,8 @@ from henry_covid19 import common
 from henry_covid19 import variables
 from henry_covid19 import bootstrap
 
+from slugify import slugify
+
 ENV = Environment(
     loader=FileSystemLoader([
           os.path.join(os.path.split(os.path.abspath(__file__))[0], 'templates'),
@@ -61,9 +63,9 @@ def make_nav():
     t = ENV.get_template('nav.j2')
     t =  t.render(
 
-            countries = [(common.make_hyphenated(x), x) for x in country_list],
-            states = [(common.make_hyphenated(x), x) for x in state_list]
-            counties = [(common.make_hyphenated(x), x) for x in county_list]
+            countries = [(slugify(x), x) for x in country_list],
+            states = [(slugify(x), x) for x in state_list],
+            counties = [(slugify(x), x) for x in county_list]
             )
     if not os.path.isdir('includes'):
         os.mkdir('includes')

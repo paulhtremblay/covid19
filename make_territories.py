@@ -14,6 +14,8 @@ from bokeh.models import DatetimeTickFormatter
 from bokeh.embed import components
 from henry_covid19 import common
 
+from slugify import slugify
+
 import pprint
 pp = pprint.PrettyPrinter(indent = 4)
 
@@ -37,9 +39,11 @@ def get_world_data_week():
     path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'world_week.csv')
     with open(path, 'r') as read_obj:
         df = pd.read_csv(read_obj)
+    df['country'] = df['country'].str.replace('_', ' ')
     df['date'] = pd.to_datetime(df['date'])
     df['dates'] = df['date']
     return df
+
 
 def get_world_data_day():
     """
@@ -50,13 +54,14 @@ def get_world_data_day():
     path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'world.csv')
     with open(path, 'r') as read_obj:
         df = pd.read_csv(read_obj)
+    df['country'] = df['country'].str.replace('_', ' ')
     df['date'] = pd.to_datetime(df['date'])
     df['dates'] = df['date']
     return df
 
 
 
-def get_html(territory, script, div, death_ro, death_double_rate, 
+def get_html(territory, script, div, death_ro, death_double_rate,
         cases_ro, cases_double_rate):
     """
     Create the HTML for each state
@@ -69,7 +74,7 @@ def get_html(territory, script, div, death_ro, death_double_rate,
     return t.render(page_title = territory,
             script = script,
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-            page_class_attr = ["country", "graph", common.make_hyphenated(territory)],
+            page_class_attr = ["country", "graph", common.make_camel_case(territory)],
             death_ro = round(death_ro, 1), cases_ro = round(cases_ro,1),
             death_double_rate = death_double_rate, 
             cases_double_rate = cases_double_rate,
@@ -148,7 +153,7 @@ def make_territories_ref_list(territory_key, territories):
             date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_title = page_title,
             page_class_attr = ["regionList", territory_key.lower()],
-            territories = [(common.make_hyphenated(x), x) for x in territories]
+            territories = [(slugify(x), x) for x in territories]
             )
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
@@ -193,7 +198,7 @@ def all_territories(df_week, df_day, territory_key, window = 3, plot_height = 55
                 death_double_rate = death_double_rate, 
                 cases_double_rate = cases_double_rate)
         with open(os.path.join(dir_path, '{territory}'.format(
-            territory = common.make_hyphenated(i))), 'w') as write_obj:
+            territory = slugify(i))), 'w') as write_obj:
             write_obj.write(html)
 
 

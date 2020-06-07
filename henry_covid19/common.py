@@ -5,19 +5,13 @@ import pandas as pd
 import math
 import numpy as np
 from bokeh.plotting import figure
+from slugify import slugify
 
 def get_data_path(dir_path, local_path, data_path = 'data'):
     return os.path.join(dir_path, data_path, local_path)
 
 def tidy_name(s):
     return s.replace(' ', '_').lower()
-
-def make_hyphenated(s):
-    """
-    Replaces spaces in string with hyphens, so "North Dakota" becomes "north-dakota".
-    Useful for generating urls, e.g., <a href="north-dakota">North Dakota</a>
-    """
-    return s.replace(' ', '-').lower()
 
 def make_camel_case(s):
     """
@@ -30,6 +24,13 @@ def make_camel_case(s):
     components = s.split(' ')
     # capitalize the first letter of all but the first component, then join them
     return components[0] + ''.join(x.title() for x in components[1:])
+
+def remove_underscore(s):
+    """
+    Replaces underscores in string with spaces, so "Dominican_Republic" becomes "Dominican Republic".
+    Useful for generating page titles and headings.
+    """
+    return s.replace('_', ' ')
 
 def get_days_less_than_0(l):
     n = 1
