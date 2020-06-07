@@ -105,6 +105,11 @@ svg.open {
   transform: rotate(180deg);
 }
 
+ul.contributors > li {
+  margin-top: .5em;
+    margin-bottom: .5em;
+}
+
 ul > li > a {
   padding: .3em;
 }

@@ -7,7 +7,7 @@
         {{ site_title }} is a collaborative project with these contributors:
       </p>
 
-      <ul>
+      <ul class="contributors">
       	{% for c in contributors %}
         <li>
           <a href="{{ c.html_url }}">{{ c.login }}</a>
