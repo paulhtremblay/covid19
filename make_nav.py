@@ -44,6 +44,16 @@ def get_territory_list(territory_key ='country'):
     return territory_list
 
 
+def get_site_last_updated():
+    """
+    get last updated time stamp
+    """
+    path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'site_last_updated.csv')
+    with open(path, 'r') as read_obj:
+        df = pd.read_csv(read_obj)
+    return df.loc['site_last_updated'].iloc[0]
+
+
 
 
 def make_nav():
@@ -72,6 +82,11 @@ def make_nav():
 
     with open(os.path.join('includes', 'nav.html'), 'w') as write_obj:
         write_obj.write(t)
+
+    site_last_updated = get_site_last_updated()
+    with open(os.path.join('includes', 'site_updated_time.txt'), 'w') as write_obj:
+        write_obj.write(site_last_updated)
+
 
 
 if __name__ == '__main__':

@@ -184,6 +184,15 @@ group by date_trunc(date, week), county, state, the_rank
 ) order by date
     """
 
+
+def get_timestamp():
+    return  """
+    /* LAST UPDATED */
+  SELECT NOW()
+  FROM `paul-henry-tremblay.covid19`
+  """
+
+
 def gen_writer(client, sql, path):
     result = client.query(sql)
     with open(os.path.join('data', path), 'w') as write_obj:
@@ -219,6 +228,8 @@ def get_all_data():
             path = 'seven_day_state.csv')
     gen_writer(client = client, sql =get_7_day_county(), 
             path = 'seven_day_county.csv')
-    
+    gen_writer(client = client, sql = get_timestamp(),
+            path = 'site_last_updated.csv')
+
 if __name__ == '__main__':
     get_all_data()
