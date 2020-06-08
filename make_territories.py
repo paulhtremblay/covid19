@@ -123,6 +123,8 @@ def make_territories_dir(key):
     else:
         raise ValueError('not a valid key')
     dir_path = os.path.join('html_temp', dir_path)
+    if not os.path.isdir('html_temp'):
+        os.mkdir('html_temp')
     if not os.path.isdir(dir_path):
         os.mkdir(dir_path)
     return dir_path
