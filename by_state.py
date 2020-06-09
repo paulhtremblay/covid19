@@ -7,6 +7,7 @@ from google.cloud import bigquery
 import pandas as pd
 import numpy as np
 import csv
+from slugify import slugify
 
 from bokeh.io import show
 from bokeh.plotting import figure
@@ -23,9 +24,10 @@ from henry_covid19 import variables
 from henry_covid19 import bootstrap
 
 ENV = Environment(
-    loader=FileSystemLoader(os.path.join(
-        os.path.split(os.path.abspath(__file__))[0], 
-        'templates')),
+    loader=FileSystemLoader([
+        os.path.join(os.path.split(os.path.abspath(__file__))[0], 'templates'),
+        os.path.join(os.path.split(os.path.abspath(__file__))[0], 'includes')
+    ]),
     autoescape=select_autoescape(['html', 'xml'])
 )
 
@@ -98,16 +100,16 @@ def get_html(date, territory, script, div, curr_death, last_week_deaths,
     if p_last_week > .1:
         sig_prev = '(not significant change from previous)'
     t = ENV.get_template('countries.j2')
-    return t.render(territory_name = territory, 
+    return t.render(page_title = territory,
             script =  script,
             date = date,
-            page_class_attr = ["state", "graph", common.make_hyphenated(territory)],
+            page_class_attr = ["state", "graph", slugify(territory)],
             div = div,
             curr_death = int(round(curr_death)),
             last_week_deaths = int(round(last_week_deaths)),
             sig_curr = sig_curr,
             sig_prev = sig_prev,
-            cur_week_per_million = cur_week_per_million, 
+            cur_week_per_million = cur_week_per_million,
             last_week_per_million = last_week_per_million,
             )
 
@@ -159,9 +161,8 @@ def make_territories_ref_list(territory_key, territories):
         page_title = 'Countries'
     t = ENV.get_template('territories_ref.j2')
     t =  t.render(page_title = page_title,
-            date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_class_attr = ["regionList", territory_key.lower()],
-            territories = [(common.make_hyphenated(x), x) for x in territories]
+            territories = [(slugify(x), x) for x in territories]
             )
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
@@ -226,7 +227,6 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400,
         os.mkdir('html_temp')
     df_day = get_state_data_day()
     change_dict = change_with_sig(df_day, state_pop)
-    date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     df_deaths = get_data_deaths()
     df_cases = get_data_cases()
     df_day = get_state_data_day()
@@ -279,7 +279,7 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400,
                 last_week_per_million = change_dict[state]['last_week_per_million'],
                     )
         with open(os.path.join(dir_path, 
-            '{territory}'.format(territory = common.make_hyphenated(state))), 'w') as write_obj:
+            '{territory}'.format(territory = slugify(state))), 'w') as write_obj:
             write_obj.write(html)
     make_territories_ref_list('state', list(set(df_day['state'])))
     make_wa()

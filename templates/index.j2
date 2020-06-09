@@ -7,18 +7,10 @@
 {% block site_name %}<h1 class="siteName">{{ site_name }}</h1>{% endblock site_name %}
 
 {%- block page_h1 -%}{%- endblock page_h1 -%}
-{%- block last_updated -%}{%- endblock last_updated -%}
 
 {% block content %}
-      <article>
-        <header>
-          <h1>{{ page_title }}</h1>
-          <p>Last updated: {{date}}</p>
-        </header>
 
         {{div|safe}}
-
-      </article>
 
       <p>
         Graphs showing trends in Covid-19 infection, deaths, and rates

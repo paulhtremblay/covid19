@@ -82,7 +82,6 @@ def get_html(state, script, div, death_ro, death_double_rate,
         title = state, 
         div = div,
         script = script,
-        date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
         death_ro = round(death_ro, 1), cases_ro = round(cases_ro,1),
         death_double_rate = death_double_rate, 
         cases_double_rate = cases_double_rate

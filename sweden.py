@@ -19,11 +19,13 @@ from jinja2 import Environment, select_autoescape, FileSystemLoader
 from henry_covid19 import common
 
 ENV = Environment(
-    loader=FileSystemLoader(os.path.join(
-        os.path.split(os.path.abspath(__file__))[0], 
-        'templates')),
+    loader=FileSystemLoader([
+        os.path.join(os.path.split(os.path.abspath(__file__))[0], 'templates'),
+        os.path.join(os.path.split(os.path.abspath(__file__))[0], 'includes')
+    ]),
     autoescape=select_autoescape(['html', 'xml'])
 )
+
 def get_data():
     path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'sweden_vs.csv')
     with open(path, 'r') as read_obj:

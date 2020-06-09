@@ -55,8 +55,7 @@ html_raw = """
 </html>
 """.format(
         states1_js = states1_js, 
-        states1_div = states1_div,
-        date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        states1_div = states1_div
         )
 
 with open('html_temp/wa.html', 'w') as write_obj:

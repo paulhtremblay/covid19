@@ -17,5 +17,19 @@
               {%- endfor %}
             </ul>
           </li>
-          <li><a href="/counties/">Counties</a></li>
+          <li class="hasSubmenu">
+            <a href="/counties/">Counties</a>
+            <ul class="submenu county" hidden>
+              {%- for ct in counties %}
+              <li><a href="/counties/{{ ct[0]}}-cases">{{ ct[1] }} cases</a></li>
+              <li><a href="/counties/{{ ct[0]}}-deaths">{{ ct[1] }} deaths</a></li>
+              {%- endfor %}
+            </ul>
+          </li>
+          <li><a href="/states-deaths">Deaths over Time</a></li>
+          <li><a href="/states-cases">Cases over Time</a></li>
+          <li><a href="/sweden-vs-other">Sweden Compared to Other</a></li>
+          <li><a href="/table-data-deaths">Table Data Deaths</a></li>
+          <li><a href="/table-data-cases">Table Data Cases</a></li>        
+        </ul>
       </nav>

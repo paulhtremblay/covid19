@@ -74,7 +74,6 @@ nav > ul > li > a {
 }
 
 nav > ul > li.hasSubmenu > a {
-  padding-right: 0;
 }
 
 .siteName > a:hover,
@@ -93,6 +92,7 @@ svg {
   padding: 0 .3em 0 .3em;
   vertical-align: middle;
   stroke: var(--golden);
+  margin-left: -.3em;
 }
 
 svg:hover {
@@ -103,6 +103,11 @@ svg:hover {
 
 svg.open {
   transform: rotate(180deg);
+}
+
+ul.contributors > li {
+  margin-top: .5em;
+    margin-bottom: .5em;
 }
 
 ul > li > a {
@@ -138,6 +143,10 @@ li.hasSubmenu {
   border-right: 1px solid var(--bloodRed);
   padding-top: .4em;
   padding-bottom: .4em;
+}
+
+.submenu.county > li:nth-child(odd) > a {
+  border-top: 1px solid var(--bloodRed);
 }
 
 
@@ -187,16 +196,25 @@ li.hasSubmenu {
 
 }
 
-.regionList.state > ul {
-  column-width: 12.5rem;
-}
-
 .regionList.country > ul {
   column-width: 20.5rem;
 }
 
+.regionList.state > ul {
+  column-width: 12.5rem;
+}
+
+.regionList.state.county > ul {
+  column-width: 17rem;
+}
+
 .regionList > ul > li {
   margin-bottom: .5em;
+}
+
+.regionList.state.byCounty > ul > li > ul {
+  margin-left: 0;
+  padding-left: 0;
 }
 
 td {

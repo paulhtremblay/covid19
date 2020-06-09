@@ -12,14 +12,18 @@ from bokeh.embed import components
 from henry_covid19 import common
 from henry_covid19 import variables
 
+from slugify import slugify
+
 from jinja2 import Environment, select_autoescape, FileSystemLoader
 
 ENV = Environment(
-    loader=FileSystemLoader(os.path.join(
-        os.path.split(os.path.abspath(__file__))[0], 
-        'templates')),
+    loader=FileSystemLoader([
+        os.path.join(os.path.split(os.path.abspath(__file__))[0], 'templates'),
+        os.path.join(os.path.split(os.path.abspath(__file__))[0], 'includes')
+    ]),
     autoescape=select_autoescape(['html', 'xml'])
 )
+
 
 def get_county_data():
     path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'seven_day_county.csv')
@@ -46,12 +50,11 @@ def make_county_ref_list(states):
     states = sorted(states)
     path = 'counties/index.html'
     page_title = 'Counties'
-    t = ENV.get_template('territories_ref.j2')
-    t =  t.render(title = 'By County', 
-            date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+    t = ENV.get_template('counties_ref.j2')
+    t =  t.render(title = 'By County',
             page_title = page_title,
-            page_class_attr = ["regionList", "state"],
-            territories = [(common.make_hyphenated(x) + '-deaths', x) for x in states]
+            page_class_attr = ["regionList", "state", "county"],
+            territories = [(slugify(x), x) for x in states]
             )
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
@@ -59,16 +62,15 @@ def make_county_ref_list(states):
         write_obj.write(t)
 
 def get_html(state, script, div, the_type):
-
     """
     Create the HTML for each state
     """
     if the_type == 'Deaths':
         link_name = 'Cases'
-        link = '{state}-{the_type}'.format(state = common.make_hyphenated(state), the_type = 'cases')
+        link = '{state}-{the_type}'.format(state = slugify(state), the_type = 'cases')
     else:
         link_name = 'Deaths'
-        link = '{state}-{the_type}'.format(state = common.make_hyphenated(state), the_type = 'deaths')
+        link = '{state}-{the_type}'.format(state = slugify(state), the_type = 'deaths')
     t = ENV.get_template('counties.j2')
     return t.render(page_title = state + " " + the_type,
             script =  script,
@@ -121,7 +123,7 @@ def state_counties(df, state, key = 'new_deaths'):
         p = figure(x_axis_type = 'datetime', plot_width = 250, plot_height = 250,
                   title = '{i}'.format(i =i), y_range = (0,max_y),
                   x_range = (min_date, max_date))
-        p.vbar(x=dates, top=y) 
+        p.vbar(x=dates, top=y)
         p.yaxis.axis_label = 'deaths/million'
         ps.append(p)
     grid = gridplot(ps, ncols = 4)
@@ -133,6 +135,15 @@ def do_counties():
     title = {'deaths':'Deaths', 'cases': 'Cases'}
     keys = {'deaths': 'new_deaths', 'cases':'new_cases'}
     dir_path = make_counties_dir('county')
+    for the_type in ['deaths', 'cases']:
+        for state in states:
+            grid = state_counties(df, state, key=keys[the_type])
+            script, div = components(grid)
+            html = get_html(state=state, script=script, div=div, the_type=title[the_type])
+            with open(os.path.join(dir_path,
+                    '{state}-{the_type}'.format(state=common.slugify(state),
+                    the_type=the_type)), 'w') as write_obj:
+                write_obj.write(html)
     make_county_ref_list(states)
 
 if __name__ == '__main__':
