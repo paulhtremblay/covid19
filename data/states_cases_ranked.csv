@@ -83,7 +83,7 @@ date,state,county,cases,rank
 2020-03-01,Washington,Snohomish,24,3
 2020-03-01,Pennsylvania,Delaware,0,3
 2020-03-01,Pennsylvania,other,0,100
-2020-03-01,Rhode Island,Unknown,1,2
+2020-03-01,Rhode Island,other,1,100
 2020-03-01,Massachusetts,Middlesex,4,1
 2020-03-01,Massachusetts,other,2,5
 2020-03-01,Massachusetts,Suffolk,3,2
@@ -206,12 +206,12 @@ date,state,county,cases,rank
 2020-03-08,New Jersey,other,1,10
 2020-03-08,New Jersey,Essex,6,3
 2020-03-08,New Jersey,Hudson,4,1
-2020-03-08,New Jersey,other,6,5
+2020-03-08,New Jersey,other,6,6
 2020-03-08,New Jersey,other,6,8
 2020-03-08,New Jersey,other,4,11
 2020-03-08,New Jersey,other,0,7
 2020-03-08,New Jersey,other,1,4
-2020-03-08,New Jersey,other,0,6
+2020-03-08,New Jersey,other,0,5
 2020-03-08,New Mexico,Bernalillo,5,3
 2020-03-08,New Mexico,other,2,100
 2020-03-08,Washington,other,19,100
@@ -222,8 +222,8 @@ date,state,county,cases,rank
 2020-03-08,Connecticut,Fairfield,14,1
 2020-03-08,Connecticut,other,2,100
 2020-03-08,Mississippi,other,0,12
-2020-03-08,Mississippi,other,2,8
-2020-03-08,Mississippi,other,0,20
+2020-03-08,Mississippi,other,2,7
+2020-03-08,Mississippi,other,0,17
 2020-03-08,Mississippi,other,0,100
 2020-03-08,Puerto Rico,Unknown,1,1
 2020-03-08,North Dakota,other,0,100
@@ -232,7 +232,7 @@ date,state,county,cases,rank
 2020-03-08,Pennsylvania,Delaware,5,3
 2020-03-08,Pennsylvania,Montgomery,18,2
 2020-03-08,Pennsylvania,Philadelphia,3,1
-2020-03-08,Rhode Island,Unknown,17,2
+2020-03-08,Rhode Island,other,17,100
 2020-03-08,South Dakota,other,0,100
 2020-03-08,South Dakota,Minnehaha,2,1
 2020-03-08,Massachusetts,other,8,100
@@ -253,9 +253,8 @@ date,state,county,cases,rank
 2020-03-08,South Carolina,other,0,5
 2020-03-08,District of Columbia,District of Columbia,15,1
 2020-03-15,Guam,Unknown,12,1
-2020-03-15,Iowa,other,20,100
+2020-03-15,Iowa,other,24,100
 2020-03-15,Iowa,Black Hawk,2,3
-2020-03-15,Iowa,other,4,6
 2020-03-15,Iowa,Polk,9,1
 2020-03-15,Ohio,other,56,100
 2020-03-15,Ohio,Cuyahoga,81,2
@@ -284,8 +283,8 @@ date,state,county,cases,rank
 2020-03-15,Texas,Harris,57,1
 2020-03-15,Texas,other,38,6
 2020-03-15,Texas,Dallas,84,2
-2020-03-15,Alaska,Fairbanks North Star Borough,5,2
-2020-03-15,Alaska,Kenai Peninsula Borough,2,3
+2020-03-15,Alaska,Fairbanks North Star Borough,5,3
+2020-03-15,Alaska,Kenai Peninsula Borough,2,2
 2020-03-15,Alaska,other,5,100
 2020-03-15,Alaska,Anchorage,4,1
 2020-03-15,Hawaii,other,3,100
@@ -319,9 +318,9 @@ date,state,county,cases,rank
 2020-03-15,Florida,Miami-Dade,162,1
 2020-03-15,Florida,Palm Beach,51,3
 2020-03-15,Florida,Broward,143,2
-2020-03-15,Georgia,other,21,7
+2020-03-15,Georgia,other,21,8
 2020-03-15,Georgia,other,148,100
-2020-03-15,Georgia,other,10,8
+2020-03-15,Georgia,other,10,7
 2020-03-15,Georgia,other,41,4
 2020-03-15,Georgia,DeKalb,34,3
 2020-03-15,Georgia,other,41,6
@@ -347,11 +346,11 @@ date,state,county,cases,rank
 2020-03-15,Arkansas,other,25,100
 2020-03-15,Arkansas,other,0,8
 2020-03-15,Arkansas,Washington,0,2
-2020-03-15,Arkansas,other,0,4
+2020-03-15,Arkansas,Benton,0,3
 2020-03-15,Arkansas,other,0,9
 2020-03-15,Arkansas,other,0,7
 2020-03-15,Arkansas,other,17,6
-2020-03-15,Arkansas,Lincoln,0,3
+2020-03-15,Arkansas,other,0,4
 2020-03-15,Arkansas,Pulaski,21,1
 2020-03-15,Colorado,Adams,8,3
 2020-03-15,Colorado,Arapahoe,30,2
@@ -426,13 +425,13 @@ date,state,county,cases,rank
 2020-03-15,New Jersey,Essex,100,3
 2020-03-15,New Jersey,Hudson,92,1
 2020-03-15,New Jersey,other,29,9
-2020-03-15,New Jersey,other,108,5
+2020-03-15,New Jersey,other,108,6
 2020-03-15,New Jersey,other,84,8
 2020-03-15,New Jersey,other,59,11
 2020-03-15,New Jersey,other,61,7
 2020-03-15,New Jersey,other,65,4
 2020-03-15,New Jersey,other,30,13
-2020-03-15,New Jersey,other,80,6
+2020-03-15,New Jersey,other,80,5
 2020-03-15,New Mexico,Bernalillo,26,3
 2020-03-15,New Mexico,other,1,6
 2020-03-15,New Mexico,McKinley,0,1
@@ -448,16 +447,17 @@ date,state,county,cases,rank
 2020-03-15,Connecticut,other,14,100
 2020-03-15,Connecticut,New Haven,23,2
 2020-03-15,Mississippi,other,0,16
-2020-03-15,Mississippi,other,22,100
+2020-03-15,Mississippi,other,18,100
 2020-03-15,Mississippi,other,1,12
-2020-03-15,Mississippi,other,12,7
-2020-03-15,Mississippi,other,2,8
+2020-03-15,Mississippi,other,12,8
+2020-03-15,Mississippi,other,2,7
 2020-03-15,Mississippi,other,9,21
 2020-03-15,Mississippi,Hinds,12,1
 2020-03-15,Mississippi,other,2,11
 2020-03-15,Mississippi,other,4,13
-2020-03-15,Mississippi,other,0,5
-2020-03-15,Mississippi,other,6,20
+2020-03-15,Mississippi,other,0,4
+2020-03-15,Mississippi,other,4,25
+2020-03-15,Mississippi,other,6,17
 2020-03-15,Mississippi,Madison,6,2
 2020-03-15,Mississippi,other,1,22
 2020-03-15,Mississippi,other,4,9
@@ -470,7 +470,7 @@ date,state,county,cases,rank
 2020-03-15,Pennsylvania,Delaware,27,3
 2020-03-15,Pennsylvania,Montgomery,57,2
 2020-03-15,Pennsylvania,Philadelphia,65,1
-2020-03-15,Rhode Island,Unknown,46,2
+2020-03-15,Rhode Island,other,46,100
 2020-03-15,South Dakota,other,3,100
 2020-03-15,South Dakota,Minnehaha,2,1
 2020-03-15,Massachusetts,other,49,100
@@ -511,9 +511,8 @@ date,state,county,cases,rank
 2020-03-15,Virgin Islands,Unknown,5,1
 2020-03-15,District of Columbia,District of Columbia,61,1
 2020-03-22,Guam,Unknown,42,1
-2020-03-22,Iowa,other,114,100
+2020-03-22,Iowa,other,124,100
 2020-03-22,Iowa,Black Hawk,3,3
-2020-03-22,Iowa,other,10,6
 2020-03-22,Iowa,other,33,5
 2020-03-22,Iowa,Polk,30,1
 2020-03-22,Iowa,Woodbury,2,2
@@ -545,9 +544,9 @@ date,state,county,cases,rank
 2020-03-22,Texas,Harris,377,1
 2020-03-22,Texas,other,75,6
 2020-03-22,Texas,Dallas,344,2
-2020-03-22,Alaska,Fairbanks North Star Borough,16,2
+2020-03-22,Alaska,Fairbanks North Star Borough,16,3
 2020-03-22,Alaska,other,9,100
-2020-03-22,Alaska,Kenai Peninsula Borough,4,3
+2020-03-22,Alaska,Kenai Peninsula Borough,4,2
 2020-03-22,Alaska,Anchorage,49,1
 2020-03-22,Hawaii,other,15,100
 2020-03-22,Hawaii,Honolulu,73,1
@@ -584,9 +583,9 @@ date,state,county,cases,rank
 2020-03-22,Florida,Miami-Dade,951,1
 2020-03-22,Florida,Palm Beach,262,3
 2020-03-22,Florida,Broward,656,2
-2020-03-22,Georgia,other,202,7
+2020-03-22,Georgia,other,202,8
 2020-03-22,Georgia,other,661,100
-2020-03-22,Georgia,other,45,8
+2020-03-22,Georgia,other,45,7
 2020-03-22,Georgia,other,129,4
 2020-03-22,Georgia,DeKalb,204,3
 2020-03-22,Georgia,other,177,6
@@ -612,11 +611,11 @@ date,state,county,cases,rank
 2020-03-22,Arkansas,other,145,100
 2020-03-22,Arkansas,other,0,8
 2020-03-22,Arkansas,Washington,13,2
-2020-03-22,Arkansas,other,28,4
+2020-03-22,Arkansas,Benton,28,3
 2020-03-22,Arkansas,other,3,9
 2020-03-22,Arkansas,other,14,7
 2020-03-22,Arkansas,other,6,6
-2020-03-22,Arkansas,Lincoln,5,3
+2020-03-22,Arkansas,other,5,4
 2020-03-22,Arkansas,Pulaski,64,1
 2020-03-22,Colorado,Adams,81,3
 2020-03-22,Colorado,other,461,100
@@ -693,13 +692,13 @@ date,state,county,cases,rank
 2020-03-22,New Jersey,Essex,979,3
 2020-03-22,New Jersey,Hudson,674,1
 2020-03-22,New Jersey,other,138,9
-2020-03-22,New Jersey,other,692,5
+2020-03-22,New Jersey,other,692,6
 2020-03-22,New Jersey,other,689,8
 2020-03-22,New Jersey,other,378,11
 2020-03-22,New Jersey,other,562,7
 2020-03-22,New Jersey,other,541,4
 2020-03-22,New Jersey,other,224,13
-2020-03-22,New Jersey,other,661,6
+2020-03-22,New Jersey,other,661,5
 2020-03-22,New Mexico,Bernalillo,61,3
 2020-03-22,New Mexico,other,36,100
 2020-03-22,New Mexico,other,15,6
@@ -715,28 +714,28 @@ date,state,county,cases,rank
 2020-03-22,Connecticut,Hartford,193,3
 2020-03-22,Connecticut,other,128,100
 2020-03-22,Connecticut,New Haven,212,2
-2020-03-22,Mississippi,other,193,100
+2020-03-22,Mississippi,other,181,100
 2020-03-22,Mississippi,other,3,16
-2020-03-22,Mississippi,other,8,14
+2020-03-22,Mississippi,other,8,15
 2020-03-22,Mississippi,other,6,12
-2020-03-22,Mississippi,other,52,7
-2020-03-22,Mississippi,other,13,8
+2020-03-22,Mississippi,other,52,8
+2020-03-22,Mississippi,other,13,7
 2020-03-22,Mississippi,other,28,21
 2020-03-22,Mississippi,Hinds,44,1
 2020-03-22,Mississippi,other,10,11
 2020-03-22,Mississippi,other,28,13
-2020-03-22,Mississippi,other,2,5
+2020-03-22,Mississippi,other,2,4
 2020-03-22,Mississippi,other,3,24
 2020-03-22,Mississippi,Lauderdale,9,3
 2020-03-22,Mississippi,other,3,10
-2020-03-22,Mississippi,other,8,20
-2020-03-22,Mississippi,other,7,19
+2020-03-22,Mississippi,other,12,25
+2020-03-22,Mississippi,other,8,17
+2020-03-22,Mississippi,other,19,19
 2020-03-22,Mississippi,other,6,23
 2020-03-22,Mississippi,Madison,22,2
 2020-03-22,Mississippi,other,1,22
-2020-03-22,Mississippi,other,2,4
-2020-03-22,Mississippi,other,0,17
-2020-03-22,Mississippi,other,12,18
+2020-03-22,Mississippi,other,2,5
+2020-03-22,Mississippi,other,0,18
 2020-03-22,Mississippi,other,24,9
 2020-03-22,Mississippi,other,6,6
 2020-03-22,Puerto Rico,Unknown,79,1
@@ -747,8 +746,7 @@ date,state,county,cases,rank
 2020-03-22,Pennsylvania,Delaware,193,3
 2020-03-22,Pennsylvania,Montgomery,334,2
 2020-03-22,Pennsylvania,Philadelphia,640,1
-2020-03-22,Rhode Island,Unknown,102,2
-2020-03-22,Rhode Island,other,0,100
+2020-03-22,Rhode Island,other,102,100
 2020-03-22,Rhode Island,Providence,5,1
 2020-03-22,South Dakota,other,19,100
 2020-03-22,South Dakota,Minnehaha,16,1
@@ -791,9 +789,8 @@ date,state,county,cases,rank
 2020-03-22,Virgin Islands,Unknown,13,1
 2020-03-22,District of Columbia,District of Columbia,227,1
 2020-03-29,Guam,Unknown,166,1
-2020-03-29,Iowa,other,268,100
+2020-03-29,Iowa,other,286,100
 2020-03-29,Iowa,Black Hawk,4,3
-2020-03-29,Iowa,other,18,6
 2020-03-29,Iowa,other,103,5
 2020-03-29,Iowa,Polk,69,1
 2020-03-29,Iowa,Woodbury,5,2
@@ -826,9 +823,9 @@ date,state,county,cases,rank
 2020-03-29,Texas,Harris,839,1
 2020-03-29,Texas,other,270,6
 2020-03-29,Texas,Dallas,576,2
-2020-03-29,Alaska,Fairbanks North Star Borough,23,2
+2020-03-29,Alaska,Fairbanks North Star Borough,23,3
 2020-03-29,Alaska,other,12,100
-2020-03-29,Alaska,Kenai Peninsula Borough,3,3
+2020-03-29,Alaska,Kenai Peninsula Borough,3,2
 2020-03-29,Alaska,Anchorage,27,1
 2020-03-29,Hawaii,other,16,100
 2020-03-29,Hawaii,Honolulu,158,1
@@ -866,9 +863,9 @@ date,state,county,cases,rank
 2020-03-29,Florida,Miami-Dade,2768,1
 2020-03-29,Florida,Palm Beach,634,3
 2020-03-29,Florida,Broward,945,2
-2020-03-29,Georgia,other,-141,7
+2020-03-29,Georgia,other,-141,8
 2020-03-29,Georgia,other,1897,100
-2020-03-29,Georgia,other,178,8
+2020-03-29,Georgia,other,178,7
 2020-03-29,Georgia,other,268,4
 2020-03-29,Georgia,DeKalb,293,3
 2020-03-29,Georgia,other,461,6
@@ -895,11 +892,11 @@ date,state,county,cases,rank
 2020-03-29,Arkansas,other,2,5
 2020-03-29,Arkansas,other,2,8
 2020-03-29,Arkansas,Washington,11,2
-2020-03-29,Arkansas,other,11,4
+2020-03-29,Arkansas,Benton,11,3
 2020-03-29,Arkansas,other,13,9
 2020-03-29,Arkansas,other,29,7
 2020-03-29,Arkansas,other,28,6
-2020-03-29,Arkansas,Lincoln,0,3
+2020-03-29,Arkansas,other,0,4
 2020-03-29,Arkansas,Pulaski,47,1
 2020-03-29,Colorado,Adams,225,3
 2020-03-29,Colorado,other,695,100
@@ -978,13 +975,13 @@ date,state,county,cases,rank
 2020-03-29,New Jersey,Essex,2498,3
 2020-03-29,New Jersey,Hudson,2720,1
 2020-03-29,New Jersey,other,418,9
-2020-03-29,New Jersey,other,1770,5
+2020-03-29,New Jersey,other,1770,6
 2020-03-29,New Jersey,other,1284,8
 2020-03-29,New Jersey,other,1176,11
 2020-03-29,New Jersey,other,1379,7
 2020-03-29,New Jersey,other,2248,4
 2020-03-29,New Jersey,other,507,13
-2020-03-29,New Jersey,other,2174,6
+2020-03-29,New Jersey,other,2174,5
 2020-03-29,New Mexico,other,66,100
 2020-03-29,New Mexico,Bernalillo,132,3
 2020-03-29,New Mexico,other,6,6
@@ -1001,30 +998,31 @@ date,state,county,cases,rank
 2020-03-29,Connecticut,Fairfield,1916,1
 2020-03-29,Connecticut,Hartford,498,3
 2020-03-29,Connecticut,New Haven,788,2
-2020-03-29,Mississippi,other,333,100
+2020-03-29,Mississippi,other,322,100
 2020-03-29,Mississippi,other,15,16
-2020-03-29,Mississippi,other,6,14
+2020-03-29,Mississippi,other,5,15
 2020-03-29,Mississippi,other,4,12
-2020-03-29,Mississippi,other,53,7
-2020-03-29,Mississippi,other,16,8
+2020-03-29,Mississippi,other,53,8
+2020-03-29,Mississippi,other,16,7
 2020-03-29,Mississippi,other,32,21
 2020-03-29,Mississippi,Hinds,82,1
 2020-03-29,Mississippi,other,4,11
 2020-03-29,Mississippi,other,46,13
-2020-03-29,Mississippi,other,6,5
+2020-03-29,Mississippi,other,6,4
 2020-03-29,Mississippi,other,9,24
 2020-03-29,Mississippi,Lauderdale,49,3
 2020-03-29,Mississippi,other,4,10
-2020-03-29,Mississippi,other,7,20
-2020-03-29,Mississippi,other,6,19
+2020-03-29,Mississippi,other,11,25
+2020-03-29,Mississippi,other,7,17
+2020-03-29,Mississippi,other,16,19
 2020-03-29,Mississippi,other,3,23
 2020-03-29,Mississippi,Madison,38,2
 2020-03-29,Mississippi,other,9,22
-2020-03-29,Mississippi,other,3,4
-2020-03-29,Mississippi,other,5,17
-2020-03-29,Mississippi,other,10,18
+2020-03-29,Mississippi,other,3,5
+2020-03-29,Mississippi,other,5,18
 2020-03-29,Mississippi,other,35,9
 2020-03-29,Mississippi,other,10,6
+2020-03-29,Mississippi,other,1,14
 2020-03-29,Puerto Rico,Unknown,352,1
 2020-03-29,North Dakota,other,51,100
 2020-03-29,North Dakota,Cass,30,1
@@ -1033,8 +1031,7 @@ date,state,county,cases,rank
 2020-03-29,Pennsylvania,Delaware,390,3
 2020-03-29,Pennsylvania,Montgomery,571,2
 2020-03-29,Pennsylvania,Philadelphia,1901,1
-2020-03-29,Rhode Island,Unknown,-46,2
-2020-03-29,Rhode Island,other,164,100
+2020-03-29,Rhode Island,other,118,100
 2020-03-29,Rhode Island,Providence,449,1
 2020-03-29,South Dakota,other,75,100
 2020-03-29,South Dakota,Minnehaha,60,1
@@ -1080,10 +1077,9 @@ date,state,county,cases,rank
 2020-03-29,District of Columbia,District of Columbia,598,1
 2020-03-29,Northern Mariana Islands,Unknown,6,1
 2020-04-05,Guam,Unknown,458,1
-2020-04-05,Iowa,other,516,100
+2020-04-05,Iowa,other,520,100
 2020-04-05,Iowa,Black Hawk,31,3
 2020-04-05,Iowa,other,1,4
-2020-04-05,Iowa,other,4,6
 2020-04-05,Iowa,other,96,5
 2020-04-05,Iowa,Polk,54,1
 2020-04-05,Iowa,Woodbury,10,2
@@ -1117,8 +1113,8 @@ date,state,county,cases,rank
 2020-04-05,Texas,other,328,6
 2020-04-05,Texas,Dallas,633,2
 2020-04-05,Alaska,other,9,100
-2020-04-05,Alaska,Fairbanks North Star Borough,30,2
-2020-04-05,Alaska,Kenai Peninsula Borough,4,3
+2020-04-05,Alaska,Fairbanks North Star Borough,30,3
+2020-04-05,Alaska,Kenai Peninsula Borough,4,2
 2020-04-05,Alaska,Anchorage,40,1
 2020-04-05,Hawaii,other,16,100
 2020-04-05,Hawaii,Honolulu,82,1
@@ -1157,9 +1153,9 @@ date,state,county,cases,rank
 2020-04-05,Florida,Miami-Dade,2868,1
 2020-04-05,Florida,Palm Beach,547,3
 2020-04-05,Florida,Broward,1079,2
-2020-04-05,Georgia,other,1212,7
+2020-04-05,Georgia,other,1212,8
 2020-04-05,Georgia,other,2644,100
-2020-04-05,Georgia,other,104,8
+2020-04-05,Georgia,other,104,7
 2020-04-05,Georgia,other,252,4
 2020-04-05,Georgia,DeKalb,309,3
 2020-04-05,Georgia,other,417,6
@@ -1188,11 +1184,11 @@ date,state,county,cases,rank
 2020-04-05,Arkansas,other,3,8
 2020-04-05,Arkansas,Washington,12,2
 2020-04-05,Arkansas,other,0,11
-2020-04-05,Arkansas,other,7,4
+2020-04-05,Arkansas,Benton,7,3
 2020-04-05,Arkansas,other,14,9
 2020-04-05,Arkansas,other,45,7
 2020-04-05,Arkansas,other,38,6
-2020-04-05,Arkansas,Lincoln,4,3
+2020-04-05,Arkansas,other,4,4
 2020-04-05,Arkansas,Pulaski,110,1
 2020-04-05,Colorado,Adams,273,3
 2020-04-05,Colorado,other,560,100
@@ -1272,13 +1268,13 @@ date,state,county,cases,rank
 2020-04-05,New Jersey,Essex,3423,3
 2020-04-05,New Jersey,Hudson,3360,1
 2020-04-05,New Jersey,other,848,9
-2020-04-05,New Jersey,other,2828,5
+2020-04-05,New Jersey,other,2828,6
 2020-04-05,New Jersey,other,1586,8
 2020-04-05,New Jersey,other,1307,11
 2020-04-05,New Jersey,other,1400,7
 2020-04-05,New Jersey,other,2439,4
 2020-04-05,New Jersey,other,877,13
-2020-04-05,New Jersey,other,2949,6
+2020-04-05,New Jersey,other,2949,5
 2020-04-05,New Mexico,Bernalillo,197,3
 2020-04-05,New Mexico,other,73,100
 2020-04-05,New Mexico,other,26,6
@@ -1295,30 +1291,31 @@ date,state,county,cases,rank
 2020-04-05,Connecticut,Fairfield,2583,1
 2020-04-05,Connecticut,Hartford,1106,3
 2020-04-05,Connecticut,New Haven,1691,2
-2020-04-05,Mississippi,other,463,100
+2020-04-05,Mississippi,other,449,100
 2020-04-05,Mississippi,other,39,16
-2020-04-05,Mississippi,other,10,14
+2020-04-05,Mississippi,other,4,15
 2020-04-05,Mississippi,other,16,12
-2020-04-05,Mississippi,other,45,7
-2020-04-05,Mississippi,other,52,8
+2020-04-05,Mississippi,other,45,8
+2020-04-05,Mississippi,other,52,7
 2020-04-05,Mississippi,other,37,21
 2020-04-05,Mississippi,Hinds,94,1
 2020-04-05,Mississippi,other,25,11
 2020-04-05,Mississippi,other,60,13
-2020-04-05,Mississippi,other,21,5
+2020-04-05,Mississippi,other,21,4
 2020-04-05,Mississippi,other,18,24
 2020-04-05,Mississippi,Lauderdale,72,3
 2020-04-05,Mississippi,other,19,10
-2020-04-05,Mississippi,other,22,20
-2020-04-05,Mississippi,other,27,19
+2020-04-05,Mississippi,other,14,25
+2020-04-05,Mississippi,other,22,17
+2020-04-05,Mississippi,other,39,19
 2020-04-05,Mississippi,other,9,23
 2020-04-05,Mississippi,Madison,32,2
 2020-04-05,Mississippi,other,19,22
-2020-04-05,Mississippi,other,20,4
-2020-04-05,Mississippi,other,6,17
-2020-04-05,Mississippi,other,12,18
+2020-04-05,Mississippi,other,20,5
+2020-04-05,Mississippi,other,6,18
 2020-04-05,Mississippi,other,28,9
 2020-04-05,Mississippi,other,35,6
+2020-04-05,Mississippi,other,6,14
 2020-04-05,Puerto Rico,Unknown,336,1
 2020-04-05,North Dakota,other,54,100
 2020-04-05,North Dakota,Cass,47,1
@@ -1327,8 +1324,7 @@ date,state,county,cases,rank
 2020-04-05,Pennsylvania,Delaware,894,3
 2020-04-05,Pennsylvania,Montgomery,1071,2
 2020-04-05,Pennsylvania,Philadelphia,3412,1
-2020-04-05,Rhode Island,Unknown,551,2
-2020-04-05,Rhode Island,other,205,100
+2020-04-05,Rhode Island,other,756,100
 2020-04-05,Rhode Island,Providence,787,1
 2020-04-05,South Dakota,other,52,100
 2020-04-05,South Dakota,Minnehaha,357,1
@@ -1375,10 +1371,9 @@ date,state,county,cases,rank
 2020-04-05,District of Columbia,District of Columbia,876,1
 2020-04-05,Northern Mariana Islands,Unknown,3,1
 2020-04-12,Guam,Unknown,124,1
-2020-04-12,Iowa,other,624,100
+2020-04-12,Iowa,other,632,100
 2020-04-12,Iowa,Black Hawk,125,3
 2020-04-12,Iowa,other,0,4
-2020-04-12,Iowa,other,8,6
 2020-04-12,Iowa,other,97,5
 2020-04-12,Iowa,Polk,130,1
 2020-04-12,Iowa,Woodbury,17,2
@@ -1412,8 +1407,8 @@ date,state,county,cases,rank
 2020-04-12,Texas,other,280,6
 2020-04-12,Texas,Dallas,676,2
 2020-04-12,Alaska,other,18,100
-2020-04-12,Alaska,Fairbanks North Star Borough,3,2
-2020-04-12,Alaska,Kenai Peninsula Borough,4,3
+2020-04-12,Alaska,Fairbanks North Star Borough,3,3
+2020-04-12,Alaska,Kenai Peninsula Borough,4,2
 2020-04-12,Alaska,Anchorage,30,1
 2020-04-12,Hawaii,other,29,100
 2020-04-12,Hawaii,Honolulu,34,1
@@ -1452,9 +1447,9 @@ date,state,county,cases,rank
 2020-04-12,Florida,Miami-Dade,2287,1
 2020-04-12,Florida,Palm Beach,637,3
 2020-04-12,Florida,Broward,994,2
-2020-04-12,Georgia,other,-1055,7
+2020-04-12,Georgia,other,-1055,8
 2020-04-12,Georgia,other,3047,100
-2020-04-12,Georgia,other,166,8
+2020-04-12,Georgia,other,166,7
 2020-04-12,Georgia,other,399,4
 2020-04-12,Georgia,DeKalb,560,3
 2020-04-12,Georgia,other,307,6
@@ -1483,11 +1478,11 @@ date,state,county,cases,rank
 2020-04-12,Arkansas,other,3,8
 2020-04-12,Arkansas,Washington,8,2
 2020-04-12,Arkansas,other,1,11
-2020-04-12,Arkansas,other,15,4
+2020-04-12,Arkansas,Benton,15,3
 2020-04-12,Arkansas,other,12,9
 2020-04-12,Arkansas,other,49,7
 2020-04-12,Arkansas,other,27,6
-2020-04-12,Arkansas,Lincoln,101,3
+2020-04-12,Arkansas,other,101,4
 2020-04-12,Arkansas,Pulaski,128,1
 2020-04-12,Colorado,Adams,301,3
 2020-04-12,Colorado,other,587,100
@@ -1568,13 +1563,13 @@ date,state,county,cases,rank
 2020-04-12,New Jersey,Essex,2894,3
 2020-04-12,New Jersey,Hudson,3105,1
 2020-04-12,New Jersey,other,781,9
-2020-04-12,New Jersey,other,2218,5
+2020-04-12,New Jersey,other,2218,6
 2020-04-12,New Jersey,other,877,8
 2020-04-12,New Jersey,other,1059,11
 2020-04-12,New Jersey,other,1145,7
 2020-04-12,New Jersey,other,2641,4
 2020-04-12,New Jersey,other,641,13
-2020-04-12,New Jersey,other,3094,6
+2020-04-12,New Jersey,other,3094,5
 2020-04-12,New Mexico,Bernalillo,105,3
 2020-04-12,New Mexico,other,61,100
 2020-04-12,New Mexico,other,18,6
@@ -1591,30 +1586,31 @@ date,state,county,cases,rank
 2020-04-12,Connecticut,Fairfield,1956,1
 2020-04-12,Connecticut,Hartford,1364,3
 2020-04-12,Connecticut,New Haven,2028,2
-2020-04-12,Mississippi,other,509,100
+2020-04-12,Mississippi,other,497,100
 2020-04-12,Mississippi,other,27,16
-2020-04-12,Mississippi,other,18,14
+2020-04-12,Mississippi,other,16,15
 2020-04-12,Mississippi,other,13,12
-2020-04-12,Mississippi,other,57,7
-2020-04-12,Mississippi,other,51,8
+2020-04-12,Mississippi,other,57,8
+2020-04-12,Mississippi,other,51,7
 2020-04-12,Mississippi,other,37,21
 2020-04-12,Mississippi,Hinds,91,1
 2020-04-12,Mississippi,other,16,11
 2020-04-12,Mississippi,other,62,13
-2020-04-12,Mississippi,other,33,5
+2020-04-12,Mississippi,other,33,4
 2020-04-12,Mississippi,other,28,24
 2020-04-12,Mississippi,Lauderdale,57,3
 2020-04-12,Mississippi,other,37,10
-2020-04-12,Mississippi,other,31,20
-2020-04-12,Mississippi,other,61,19
+2020-04-12,Mississippi,other,12,25
+2020-04-12,Mississippi,other,31,17
+2020-04-12,Mississippi,other,68,19
 2020-04-12,Mississippi,other,10,23
 2020-04-12,Mississippi,Madison,28,2
 2020-04-12,Mississippi,other,31,22
-2020-04-12,Mississippi,other,29,4
-2020-04-12,Mississippi,other,9,17
-2020-04-12,Mississippi,other,7,18
+2020-04-12,Mississippi,other,29,5
+2020-04-12,Mississippi,other,9,18
 2020-04-12,Mississippi,other,36,9
 2020-04-12,Mississippi,other,54,6
+2020-04-12,Mississippi,other,2,14
 2020-04-12,Puerto Rico,Unknown,330,1
 2020-04-12,North Dakota,other,133,100
 2020-04-12,North Dakota,Cass,102,1
@@ -1623,8 +1619,7 @@ date,state,county,cases,rank
 2020-04-12,Pennsylvania,Delaware,862,3
 2020-04-12,Pennsylvania,Montgomery,728,2
 2020-04-12,Pennsylvania,Philadelphia,2992,1
-2020-04-12,Rhode Island,Unknown,142,2
-2020-04-12,Rhode Island,other,264,100
+2020-04-12,Rhode Island,other,406,100
 2020-04-12,Rhode Island,Providence,1736,1
 2020-04-12,South Dakota,other,73,100
 2020-04-12,South Dakota,Minnehaha,838,1
@@ -1671,10 +1666,9 @@ date,state,county,cases,rank
 2020-04-12,District of Columbia,District of Columbia,888,1
 2020-04-12,Northern Mariana Islands,Unknown,3,1
 2020-04-19,Guam,Unknown,192,1
-2020-04-19,Iowa,other,1113,100
+2020-04-19,Iowa,other,1199,100
 2020-04-19,Iowa,Black Hawk,526,3
 2020-04-19,Iowa,other,1,4
-2020-04-19,Iowa,other,86,6
 2020-04-19,Iowa,other,218,5
 2020-04-19,Iowa,Polk,367,1
 2020-04-19,Iowa,Woodbury,281,2
@@ -1708,8 +1702,8 @@ date,state,county,cases,rank
 2020-04-19,Texas,other,240,6
 2020-04-19,Texas,Dallas,585,2
 2020-04-19,Alaska,other,8,100
-2020-04-19,Alaska,Fairbanks North Star Borough,0,2
-2020-04-19,Alaska,Kenai Peninsula Borough,0,3
+2020-04-19,Alaska,Fairbanks North Star Borough,0,3
+2020-04-19,Alaska,Kenai Peninsula Borough,0,2
 2020-04-19,Alaska,Anchorage,17,1
 2020-04-19,Hawaii,other,8,100
 2020-04-19,Hawaii,Honolulu,13,1
@@ -1748,9 +1742,9 @@ date,state,county,cases,rank
 2020-04-19,Florida,Miami-Dade,1960,1
 2020-04-19,Florida,Palm Beach,476,3
 2020-04-19,Florida,Broward,821,2
-2020-04-19,Georgia,other,363,7
+2020-04-19,Georgia,other,363,8
 2020-04-19,Georgia,other,2675,100
-2020-04-19,Georgia,other,137,8
+2020-04-19,Georgia,other,137,7
 2020-04-19,Georgia,other,291,4
 2020-04-19,Georgia,DeKalb,380,3
 2020-04-19,Georgia,other,61,6
@@ -1779,11 +1773,11 @@ date,state,county,cases,rank
 2020-04-19,Arkansas,other,2,8
 2020-04-19,Arkansas,Washington,29,2
 2020-04-19,Arkansas,other,1,11
-2020-04-19,Arkansas,other,17,4
+2020-04-19,Arkansas,Benton,17,3
 2020-04-19,Arkansas,other,19,9
 2020-04-19,Arkansas,other,31,7
 2020-04-19,Arkansas,other,31,6
-2020-04-19,Arkansas,Lincoln,610,3
+2020-04-19,Arkansas,other,610,4
 2020-04-19,Arkansas,Pulaski,94,1
 2020-04-19,Colorado,Adams,408,3
 2020-04-19,Colorado,other,878,100
@@ -1864,13 +1858,13 @@ date,state,county,cases,rank
 2020-04-19,New Jersey,Essex,2619,3
 2020-04-19,New Jersey,Hudson,3411,1
 2020-04-19,New Jersey,other,1030,9
-2020-04-19,New Jersey,other,2451,5
+2020-04-19,New Jersey,other,2451,6
 2020-04-19,New Jersey,other,993,8
 2020-04-19,New Jersey,other,837,11
 2020-04-19,New Jersey,other,1263,7
 2020-04-19,New Jersey,other,2802,4
 2020-04-19,New Jersey,other,747,13
-2020-04-19,New Jersey,other,2564,6
+2020-04-19,New Jersey,other,2564,5
 2020-04-19,New Mexico,Bernalillo,143,3
 2020-04-19,New Mexico,other,93,100
 2020-04-19,New Mexico,other,43,6
@@ -1887,30 +1881,31 @@ date,state,county,cases,rank
 2020-04-19,Connecticut,Fairfield,3010,1
 2020-04-19,Connecticut,Hartford,1565,3
 2020-04-19,Connecticut,New Haven,1766,2
-2020-04-19,Mississippi,other,614,100
+2020-04-19,Mississippi,other,596,100
 2020-04-19,Mississippi,other,35,16
-2020-04-19,Mississippi,other,55,14
+2020-04-19,Mississippi,other,46,15
 2020-04-19,Mississippi,other,27,12
-2020-04-19,Mississippi,other,43,7
-2020-04-19,Mississippi,other,44,8
+2020-04-19,Mississippi,other,43,8
+2020-04-19,Mississippi,other,44,7
 2020-04-19,Mississippi,other,14,21
 2020-04-19,Mississippi,Hinds,87,1
 2020-04-19,Mississippi,other,42,11
 2020-04-19,Mississippi,other,36,13
-2020-04-19,Mississippi,other,53,5
+2020-04-19,Mississippi,other,53,4
 2020-04-19,Mississippi,other,26,24
 2020-04-19,Mississippi,Lauderdale,94,3
 2020-04-19,Mississippi,other,85,10
-2020-04-19,Mississippi,other,56,20
-2020-04-19,Mississippi,other,34,19
+2020-04-19,Mississippi,other,18,25
+2020-04-19,Mississippi,other,56,17
+2020-04-19,Mississippi,other,37,19
 2020-04-19,Mississippi,other,9,23
 2020-04-19,Mississippi,Madison,59,2
 2020-04-19,Mississippi,other,61,22
-2020-04-19,Mississippi,other,64,4
-2020-04-19,Mississippi,other,37,17
-2020-04-19,Mississippi,other,3,18
+2020-04-19,Mississippi,other,64,5
+2020-04-19,Mississippi,other,37,18
 2020-04-19,Mississippi,other,32,9
 2020-04-19,Mississippi,other,134,6
+2020-04-19,Mississippi,other,9,14
 2020-04-19,Puerto Rico,Unknown,189,1
 2020-04-19,North Dakota,other,112,100
 2020-04-19,North Dakota,Cass,160,1
@@ -1919,8 +1914,7 @@ date,state,county,cases,rank
 2020-04-19,Pennsylvania,Delaware,841,3
 2020-04-19,Pennsylvania,Montgomery,846,2
 2020-04-19,Pennsylvania,Philadelphia,3315,1
-2020-04-19,Rhode Island,Unknown,383,2
-2020-04-19,Rhode Island,other,353,100
+2020-04-19,Rhode Island,other,736,100
 2020-04-19,Rhode Island,Providence,1902,1
 2020-04-19,South Dakota,other,84,100
 2020-04-19,South Dakota,Minnehaha,520,1
@@ -1967,10 +1961,9 @@ date,state,county,cases,rank
 2020-04-19,District of Columbia,District of Columbia,1033,1
 2020-04-19,Northern Mariana Islands,Unknown,0,1
 2020-04-26,Guam,Unknown,120,1
-2020-04-26,Iowa,other,967,100
+2020-04-26,Iowa,other,1351,100
 2020-04-26,Iowa,Black Hawk,563,3
 2020-04-26,Iowa,other,2,4
-2020-04-26,Iowa,other,384,6
 2020-04-26,Iowa,other,155,5
 2020-04-26,Iowa,Polk,690,1
 2020-04-26,Iowa,Woodbury,758,2
@@ -2004,8 +1997,8 @@ date,state,county,cases,rank
 2020-04-26,Texas,other,342,6
 2020-04-26,Texas,Dallas,990,2
 2020-04-26,Alaska,other,2,100
-2020-04-26,Alaska,Fairbanks North Star Borough,4,2
-2020-04-26,Alaska,Kenai Peninsula Borough,2,3
+2020-04-26,Alaska,Fairbanks North Star Borough,4,3
+2020-04-26,Alaska,Kenai Peninsula Borough,2,2
 2020-04-26,Alaska,Anchorage,17,1
 2020-04-26,Hawaii,other,4,100
 2020-04-26,Hawaii,Honolulu,5,1
@@ -2044,9 +2037,9 @@ date,state,county,cases,rank
 2020-04-26,Florida,Miami-Dade,1627,1
 2020-04-26,Florida,Palm Beach,466,3
 2020-04-26,Florida,Broward,598,2
-2020-04-26,Georgia,other,-83,7
+2020-04-26,Georgia,other,-83,8
 2020-04-26,Georgia,other,2565,100
-2020-04-26,Georgia,other,135,8
+2020-04-26,Georgia,other,135,7
 2020-04-26,Georgia,other,354,4
 2020-04-26,Georgia,DeKalb,360,3
 2020-04-26,Georgia,other,64,6
@@ -2075,11 +2068,11 @@ date,state,county,cases,rank
 2020-04-26,Arkansas,other,1,8
 2020-04-26,Arkansas,Washington,13,2
 2020-04-26,Arkansas,other,1,11
-2020-04-26,Arkansas,other,33,4
+2020-04-26,Arkansas,Benton,33,3
 2020-04-26,Arkansas,other,19,9
 2020-04-26,Arkansas,other,24,7
 2020-04-26,Arkansas,other,29,6
-2020-04-26,Arkansas,Lincoln,96,3
+2020-04-26,Arkansas,other,96,4
 2020-04-26,Arkansas,Pulaski,68,1
 2020-04-26,Colorado,Adams,428,3
 2020-04-26,Colorado,other,778,100
@@ -2160,13 +2153,13 @@ date,state,county,cases,rank
 2020-04-26,New Jersey,Essex,1728,3
 2020-04-26,New Jersey,Hudson,2034,1
 2020-04-26,New Jersey,other,1026,9
-2020-04-26,New Jersey,other,2138,5
+2020-04-26,New Jersey,other,2138,6
 2020-04-26,New Jersey,other,677,8
 2020-04-26,New Jersey,other,585,11
 2020-04-26,New Jersey,other,881,7
 2020-04-26,New Jersey,other,2344,4
 2020-04-26,New Jersey,other,575,13
-2020-04-26,New Jersey,other,1473,6
+2020-04-26,New Jersey,other,1473,5
 2020-04-26,New Mexico,other,84,100
 2020-04-26,New Mexico,Bernalillo,213,3
 2020-04-26,New Mexico,other,43,6
@@ -2183,30 +2176,31 @@ date,state,county,cases,rank
 2020-04-26,Connecticut,Fairfield,1428,1
 2020-04-26,Connecticut,Hartford,1351,3
 2020-04-26,Connecticut,New Haven,1515,2
-2020-04-26,Mississippi,other,600,100
+2020-04-26,Mississippi,other,601,100
 2020-04-26,Mississippi,other,24,16
-2020-04-26,Mississippi,other,42,14
+2020-04-26,Mississippi,other,37,15
 2020-04-26,Mississippi,other,46,12
-2020-04-26,Mississippi,other,31,7
-2020-04-26,Mississippi,other,45,8
+2020-04-26,Mississippi,other,31,8
+2020-04-26,Mississippi,other,45,7
 2020-04-26,Mississippi,other,23,21
 2020-04-26,Mississippi,Hinds,93,1
 2020-04-26,Mississippi,other,59,11
 2020-04-26,Mississippi,other,30,13
-2020-04-26,Mississippi,other,52,5
+2020-04-26,Mississippi,other,52,4
 2020-04-26,Mississippi,other,29,24
 2020-04-26,Mississippi,Lauderdale,94,3
 2020-04-26,Mississippi,other,80,10
-2020-04-26,Mississippi,other,34,20
-2020-04-26,Mississippi,other,14,19
+2020-04-26,Mississippi,other,-1,25
+2020-04-26,Mississippi,other,34,17
+2020-04-26,Mississippi,other,20,19
 2020-04-26,Mississippi,other,17,23
 2020-04-26,Mississippi,Madison,82,2
 2020-04-26,Mississippi,other,50,22
-2020-04-26,Mississippi,other,93,4
-2020-04-26,Mississippi,other,30,17
-2020-04-26,Mississippi,other,6,18
+2020-04-26,Mississippi,other,93,5
+2020-04-26,Mississippi,other,30,18
 2020-04-26,Mississippi,other,35,9
 2020-04-26,Mississippi,other,114,6
+2020-04-26,Mississippi,other,5,14
 2020-04-26,Puerto Rico,Unknown,448,1
 2020-04-26,North Dakota,other,133,100
 2020-04-26,North Dakota,Cass,215,1
@@ -2215,8 +2209,7 @@ date,state,county,cases,rank
 2020-04-26,Pennsylvania,Delaware,840,3
 2020-04-26,Pennsylvania,Montgomery,860,2
 2020-04-26,Pennsylvania,Philadelphia,3198,1
-2020-04-26,Rhode Island,Unknown,-56,2
-2020-04-26,Rhode Island,other,310,100
+2020-04-26,Rhode Island,other,254,100
 2020-04-26,Rhode Island,Providence,1906,1
 2020-04-26,South Dakota,other,109,100
 2020-04-26,South Dakota,Minnehaha,327,1
@@ -2263,10 +2256,9 @@ date,state,county,cases,rank
 2020-04-26,District of Columbia,District of Columbia,1098,1
 2020-04-26,Northern Mariana Islands,Unknown,0,1
 2020-05-03,Guam,Unknown,3,1
-2020-05-03,Iowa,other,1279,100
+2020-05-03,Iowa,other,1424,100
 2020-05-03,Iowa,Black Hawk,222,3
 2020-05-03,Iowa,other,25,4
-2020-05-03,Iowa,other,145,6
 2020-05-03,Iowa,other,114,5
 2020-05-03,Iowa,Polk,844,1
 2020-05-03,Iowa,Woodbury,480,2
@@ -2300,8 +2292,8 @@ date,state,county,cases,rank
 2020-05-03,Texas,other,302,6
 2020-05-03,Texas,Dallas,1720,2
 2020-05-03,Alaska,other,1,100
-2020-05-03,Alaska,Fairbanks North Star Borough,0,2
-2020-05-03,Alaska,Kenai Peninsula Borough,3,3
+2020-05-03,Alaska,Fairbanks North Star Borough,0,3
+2020-05-03,Alaska,Kenai Peninsula Borough,3,2
 2020-05-03,Alaska,Anchorage,9,1
 2020-05-03,Hawaii,other,2,100
 2020-05-03,Hawaii,Honolulu,7,1
@@ -2340,9 +2332,9 @@ date,state,county,cases,rank
 2020-05-03,Florida,Miami-Dade,1209,1
 2020-05-03,Florida,Palm Beach,718,3
 2020-05-03,Florida,Broward,523,2
-2020-05-03,Georgia,other,98,7
+2020-05-03,Georgia,other,98,8
 2020-05-03,Georgia,other,1982,100
-2020-05-03,Georgia,other,124,8
+2020-05-03,Georgia,other,124,7
 2020-05-03,Georgia,other,379,4
 2020-05-03,Georgia,DeKalb,341,3
 2020-05-03,Georgia,other,53,6
@@ -2371,11 +2363,11 @@ date,state,county,cases,rank
 2020-05-03,Arkansas,other,4,8
 2020-05-03,Arkansas,Washington,18,2
 2020-05-03,Arkansas,other,3,11
-2020-05-03,Arkansas,other,4,4
+2020-05-03,Arkansas,Benton,4,3
 2020-05-03,Arkansas,other,11,9
 2020-05-03,Arkansas,other,12,7
 2020-05-03,Arkansas,other,48,6
-2020-05-03,Arkansas,Lincoln,90,3
+2020-05-03,Arkansas,other,90,4
 2020-05-03,Arkansas,Pulaski,64,1
 2020-05-03,Colorado,Adams,475,3
 2020-05-03,Colorado,other,688,100
@@ -2456,13 +2448,13 @@ date,state,county,cases,rank
 2020-05-03,New Jersey,Essex,1117,3
 2020-05-03,New Jersey,Hudson,1274,1
 2020-05-03,New Jersey,other,962,9
-2020-05-03,New Jersey,other,1546,5
+2020-05-03,New Jersey,other,1546,6
 2020-05-03,New Jersey,other,617,8
 2020-05-03,New Jersey,other,427,11
 2020-05-03,New Jersey,other,674,7
 2020-05-03,New Jersey,other,1346,4
 2020-05-03,New Jersey,other,391,13
-2020-05-03,New Jersey,other,988,6
+2020-05-03,New Jersey,other,988,5
 2020-05-03,New Mexico,other,72,100
 2020-05-03,New Mexico,Bernalillo,167,3
 2020-05-03,New Mexico,other,59,6
@@ -2479,30 +2471,31 @@ date,state,county,cases,rank
 2020-05-03,Connecticut,Fairfield,1229,1
 2020-05-03,Connecticut,Hartford,993,3
 2020-05-03,Connecticut,New Haven,1067,2
-2020-05-03,Mississippi,other,593,100
+2020-05-03,Mississippi,other,586,100
 2020-05-03,Mississippi,other,18,16
-2020-05-03,Mississippi,other,77,14
+2020-05-03,Mississippi,other,74,15
 2020-05-03,Mississippi,other,43,12
-2020-05-03,Mississippi,other,39,7
-2020-05-03,Mississippi,other,83,8
+2020-05-03,Mississippi,other,39,8
+2020-05-03,Mississippi,other,83,7
 2020-05-03,Mississippi,other,17,21
 2020-05-03,Mississippi,Hinds,158,1
 2020-05-03,Mississippi,other,47,11
 2020-05-03,Mississippi,other,8,13
-2020-05-03,Mississippi,other,75,5
+2020-05-03,Mississippi,other,75,4
 2020-05-03,Mississippi,other,31,24
 2020-05-03,Mississippi,Lauderdale,93,3
 2020-05-03,Mississippi,other,70,10
-2020-05-03,Mississippi,other,20,20
-2020-05-03,Mississippi,other,34,19
+2020-05-03,Mississippi,other,7,25
+2020-05-03,Mississippi,other,20,17
+2020-05-03,Mississippi,other,68,19
 2020-05-03,Mississippi,other,21,23
 2020-05-03,Mississippi,Madison,154,2
 2020-05-03,Mississippi,other,27,22
-2020-05-03,Mississippi,other,95,4
-2020-05-03,Mississippi,other,49,17
-2020-05-03,Mississippi,other,34,18
+2020-05-03,Mississippi,other,95,5
+2020-05-03,Mississippi,other,49,18
 2020-05-03,Mississippi,other,51,9
 2020-05-03,Mississippi,other,100,6
+2020-05-03,Mississippi,other,3,14
 2020-05-03,Puerto Rico,Unknown,418,1
 2020-05-03,North Dakota,other,96,100
 2020-05-03,North Dakota,Cass,209,1
@@ -2511,8 +2504,7 @@ date,state,county,cases,rank
 2020-05-03,Pennsylvania,Delaware,841,3
 2020-05-03,Pennsylvania,Montgomery,629,2
 2020-05-03,Pennsylvania,Philadelphia,2354,1
-2020-05-03,Rhode Island,Unknown,1328,2
-2020-05-03,Rhode Island,other,56,100
+2020-05-03,Rhode Island,other,1384,100
 2020-05-03,Rhode Island,Providence,316,1
 2020-05-03,South Dakota,other,159,100
 2020-05-03,South Dakota,Minnehaha,644,1
@@ -2559,10 +2551,9 @@ date,state,county,cases,rank
 2020-05-03,District of Columbia,District of Columbia,1305,1
 2020-05-03,Northern Mariana Islands,Unknown,2,1
 2020-05-10,Guam,Unknown,3,1
-2020-05-10,Iowa,other,1067,100
+2020-05-10,Iowa,other,1180,100
 2020-05-10,Iowa,Black Hawk,94,3
 2020-05-10,Iowa,other,52,4
-2020-05-10,Iowa,other,113,6
 2020-05-10,Iowa,other,73,5
 2020-05-10,Iowa,Polk,651,1
 2020-05-10,Iowa,Woodbury,603,2
@@ -2596,8 +2587,8 @@ date,state,county,cases,rank
 2020-05-10,Texas,other,233,6
 2020-05-10,Texas,Dallas,1631,2
 2020-05-10,Alaska,other,4,100
-2020-05-10,Alaska,Fairbanks North Star Borough,2,2
-2020-05-10,Alaska,Kenai Peninsula Borough,1,3
+2020-05-10,Alaska,Fairbanks North Star Borough,2,3
+2020-05-10,Alaska,Kenai Peninsula Borough,1,2
 2020-05-10,Alaska,Anchorage,8,1
 2020-05-10,Hawaii,other,1,100
 2020-05-10,Hawaii,Honolulu,8,1
@@ -2636,9 +2627,9 @@ date,state,county,cases,rank
 2020-05-10,Florida,Miami-Dade,1525,1
 2020-05-10,Florida,Palm Beach,642,3
 2020-05-10,Florida,Broward,421,2
-2020-05-10,Georgia,other,1037,7
+2020-05-10,Georgia,other,1037,8
 2020-05-10,Georgia,other,1669,100
-2020-05-10,Georgia,other,101,8
+2020-05-10,Georgia,other,101,7
 2020-05-10,Georgia,other,279,4
 2020-05-10,Georgia,DeKalb,311,3
 2020-05-10,Georgia,other,75,6
@@ -2667,11 +2658,11 @@ date,state,county,cases,rank
 2020-05-10,Arkansas,other,11,8
 2020-05-10,Arkansas,Washington,36,2
 2020-05-10,Arkansas,other,6,11
-2020-05-10,Arkansas,other,28,4
+2020-05-10,Arkansas,Benton,28,3
 2020-05-10,Arkansas,other,45,9
 2020-05-10,Arkansas,other,25,7
 2020-05-10,Arkansas,other,136,6
-2020-05-10,Arkansas,Lincoln,48,3
+2020-05-10,Arkansas,other,48,4
 2020-05-10,Arkansas,Pulaski,80,1
 2020-05-10,Colorado,Adams,370,3
 2020-05-10,Colorado,other,502,100
@@ -2752,13 +2743,13 @@ date,state,county,cases,rank
 2020-05-10,New Jersey,Essex,667,3
 2020-05-10,New Jersey,Hudson,651,1
 2020-05-10,New Jersey,other,486,9
-2020-05-10,New Jersey,other,755,5
+2020-05-10,New Jersey,other,755,6
 2020-05-10,New Jersey,other,482,8
 2020-05-10,New Jersey,other,179,11
 2020-05-10,New Jersey,other,512,7
 2020-05-10,New Jersey,other,603,4
 2020-05-10,New Jersey,other,216,13
-2020-05-10,New Jersey,other,585,6
+2020-05-10,New Jersey,other,585,5
 2020-05-10,New Mexico,Bernalillo,144,3
 2020-05-10,New Mexico,other,91,100
 2020-05-10,New Mexico,other,81,6
@@ -2775,30 +2766,31 @@ date,state,county,cases,rank
 2020-05-10,Connecticut,Fairfield,1110,1
 2020-05-10,Connecticut,Hartford,1194,3
 2020-05-10,Connecticut,New Haven,984,2
-2020-05-10,Mississippi,other,552,100
+2020-05-10,Mississippi,other,541,100
 2020-05-10,Mississippi,other,20,16
-2020-05-10,Mississippi,other,52,14
+2020-05-10,Mississippi,other,42,15
 2020-05-10,Mississippi,other,38,12
-2020-05-10,Mississippi,other,51,7
-2020-05-10,Mississippi,other,107,8
+2020-05-10,Mississippi,other,51,8
+2020-05-10,Mississippi,other,107,7
 2020-05-10,Mississippi,other,17,21
 2020-05-10,Mississippi,Hinds,105,1
 2020-05-10,Mississippi,other,82,11
 2020-05-10,Mississippi,other,9,13
-2020-05-10,Mississippi,other,76,5
+2020-05-10,Mississippi,other,76,4
 2020-05-10,Mississippi,other,28,24
 2020-05-10,Mississippi,Lauderdale,107,3
 2020-05-10,Mississippi,other,53,10
-2020-05-10,Mississippi,other,15,20
-2020-05-10,Mississippi,other,18,19
+2020-05-10,Mississippi,other,11,25
+2020-05-10,Mississippi,other,15,17
+2020-05-10,Mississippi,other,34,19
 2020-05-10,Mississippi,other,33,23
 2020-05-10,Mississippi,Madison,104,2
 2020-05-10,Mississippi,other,22,22
-2020-05-10,Mississippi,other,90,4
-2020-05-10,Mississippi,other,49,17
-2020-05-10,Mississippi,other,16,18
+2020-05-10,Mississippi,other,90,5
+2020-05-10,Mississippi,other,49,18
 2020-05-10,Mississippi,other,34,9
 2020-05-10,Mississippi,other,67,6
+2020-05-10,Mississippi,other,10,14
 2020-05-10,Puerto Rico,Unknown,416,1
 2020-05-10,North Dakota,other,59,100
 2020-05-10,North Dakota,Cass,325,1
@@ -2807,8 +2799,7 @@ date,state,county,cases,rank
 2020-05-10,Pennsylvania,Delaware,661,3
 2020-05-10,Pennsylvania,Montgomery,681,2
 2020-05-10,Pennsylvania,Philadelphia,1725,1
-2020-05-10,Rhode Island,Unknown,-825,2
-2020-05-10,Rhode Island,other,296,100
+2020-05-10,Rhode Island,other,-529,100
 2020-05-10,Rhode Island,Providence,1974,1
 2020-05-10,South Dakota,other,213,100
 2020-05-10,South Dakota,Minnehaha,352,1
@@ -2855,10 +2846,9 @@ date,state,county,cases,rank
 2020-05-10,District of Columbia,District of Columbia,940,1
 2020-05-10,Northern Mariana Islands,Unknown,5,1
 2020-05-17,Guam,Unknown,11,1
-2020-05-17,Iowa,other,972,100
+2020-05-17,Iowa,other,1020,100
 2020-05-17,Iowa,Black Hawk,92,3
 2020-05-17,Iowa,other,58,4
-2020-05-17,Iowa,other,48,6
 2020-05-17,Iowa,other,25,5
 2020-05-17,Iowa,Polk,680,1
 2020-05-17,Iowa,Woodbury,311,2
@@ -2892,8 +2882,8 @@ date,state,county,cases,rank
 2020-05-17,Texas,other,298,6
 2020-05-17,Texas,Dallas,1399,2
 2020-05-17,Alaska,other,9,100
-2020-05-17,Alaska,Fairbanks North Star Borough,0,2
-2020-05-17,Alaska,Kenai Peninsula Borough,1,3
+2020-05-17,Alaska,Fairbanks North Star Borough,0,3
+2020-05-17,Alaska,Kenai Peninsula Borough,1,2
 2020-05-17,Alaska,Anchorage,5,1
 2020-05-17,Hawaii,other,4,100
 2020-05-17,Hawaii,Honolulu,-1,1
@@ -2932,9 +2922,9 @@ date,state,county,cases,rank
 2020-05-17,Florida,Miami-Dade,1328,1
 2020-05-17,Florida,Palm Beach,700,3
 2020-05-17,Florida,Broward,448,2
-2020-05-17,Georgia,other,895,7
+2020-05-17,Georgia,other,895,8
 2020-05-17,Georgia,other,2321,100
-2020-05-17,Georgia,other,87,8
+2020-05-17,Georgia,other,87,7
 2020-05-17,Georgia,other,254,4
 2020-05-17,Georgia,DeKalb,346,3
 2020-05-17,Georgia,other,63,6
@@ -2963,11 +2953,11 @@ date,state,county,cases,rank
 2020-05-17,Arkansas,other,52,8
 2020-05-17,Arkansas,Washington,92,2
 2020-05-17,Arkansas,other,81,11
-2020-05-17,Arkansas,other,93,4
+2020-05-17,Arkansas,Benton,93,3
 2020-05-17,Arkansas,other,44,9
 2020-05-17,Arkansas,other,50,7
 2020-05-17,Arkansas,other,142,6
-2020-05-17,Arkansas,Lincoln,15,3
+2020-05-17,Arkansas,other,15,4
 2020-05-17,Arkansas,Pulaski,90,1
 2020-05-17,Colorado,Adams,281,3
 2020-05-17,Colorado,other,481,100
@@ -3048,13 +3038,13 @@ date,state,county,cases,rank
 2020-05-17,New Jersey,Essex,1033,3
 2020-05-17,New Jersey,Hudson,584,1
 2020-05-17,New Jersey,other,632,9
-2020-05-17,New Jersey,other,701,5
+2020-05-17,New Jersey,other,701,6
 2020-05-17,New Jersey,other,423,8
 2020-05-17,New Jersey,other,180,11
 2020-05-17,New Jersey,other,438,7
 2020-05-17,New Jersey,other,579,4
 2020-05-17,New Jersey,other,213,13
-2020-05-17,New Jersey,other,617,6
+2020-05-17,New Jersey,other,617,5
 2020-05-17,New Mexico,other,74,100
 2020-05-17,New Mexico,Bernalillo,132,3
 2020-05-17,New Mexico,other,109,6
@@ -3071,30 +3061,31 @@ date,state,county,cases,rank
 2020-05-17,Connecticut,Fairfield,849,1
 2020-05-17,Connecticut,Hartford,1246,3
 2020-05-17,Connecticut,New Haven,772,2
-2020-05-17,Mississippi,other,530,100
+2020-05-17,Mississippi,other,518,100
 2020-05-17,Mississippi,other,22,16
-2020-05-17,Mississippi,other,76,14
+2020-05-17,Mississippi,other,37,15
 2020-05-17,Mississippi,other,78,12
-2020-05-17,Mississippi,other,74,7
-2020-05-17,Mississippi,other,62,8
+2020-05-17,Mississippi,other,74,8
+2020-05-17,Mississippi,other,62,7
 2020-05-17,Mississippi,other,16,21
 2020-05-17,Mississippi,Hinds,109,1
 2020-05-17,Mississippi,other,71,11
 2020-05-17,Mississippi,other,12,13
-2020-05-17,Mississippi,other,116,5
+2020-05-17,Mississippi,other,116,4
 2020-05-17,Mississippi,other,45,24
 2020-05-17,Mississippi,Lauderdale,92,3
 2020-05-17,Mississippi,other,30,10
-2020-05-17,Mississippi,other,40,20
-2020-05-17,Mississippi,other,36,19
+2020-05-17,Mississippi,other,12,25
+2020-05-17,Mississippi,other,40,17
+2020-05-17,Mississippi,other,62,19
 2020-05-17,Mississippi,other,46,23
 2020-05-17,Mississippi,Madison,113,2
 2020-05-17,Mississippi,other,19,22
-2020-05-17,Mississippi,other,114,4
-2020-05-17,Mississippi,other,35,17
-2020-05-17,Mississippi,other,26,18
+2020-05-17,Mississippi,other,114,5
+2020-05-17,Mississippi,other,35,18
 2020-05-17,Mississippi,other,54,9
 2020-05-17,Mississippi,other,66,6
+2020-05-17,Mississippi,other,39,14
 2020-05-17,Puerto Rico,Unknown,511,1
 2020-05-17,North Dakota,other,133,100
 2020-05-17,North Dakota,Cass,381,1
@@ -3103,8 +3094,7 @@ date,state,county,cases,rank
 2020-05-17,Pennsylvania,Delaware,613,3
 2020-05-17,Pennsylvania,Montgomery,667,2
 2020-05-17,Pennsylvania,Philadelphia,1628,1
-2020-05-17,Rhode Island,Unknown,-141,2
-2020-05-17,Rhode Island,other,252,100
+2020-05-17,Rhode Island,other,111,100
 2020-05-17,Rhode Island,Providence,1407,1
 2020-05-17,South Dakota,other,380,100
 2020-05-17,South Dakota,Minnehaha,129,1
@@ -3151,10 +3141,9 @@ date,state,county,cases,rank
 2020-05-17,District of Columbia,District of Columbia,924,1
 2020-05-17,Northern Mariana Islands,Unknown,1,1
 2020-05-24,Guam,Unknown,7,1
-2020-05-24,Iowa,other,703,100
+2020-05-24,Iowa,other,782,100
 2020-05-24,Iowa,Black Hawk,80,3
 2020-05-24,Iowa,other,603,4
-2020-05-24,Iowa,other,79,6
 2020-05-24,Iowa,other,35,5
 2020-05-24,Iowa,Polk,664,1
 2020-05-24,Iowa,Woodbury,277,2
@@ -3188,8 +3177,8 @@ date,state,county,cases,rank
 2020-05-24,Texas,other,419,6
 2020-05-24,Texas,Dallas,1357,2
 2020-05-24,Alaska,other,5,100
-2020-05-24,Alaska,Fairbanks North Star Borough,0,2
-2020-05-24,Alaska,Kenai Peninsula Borough,15,3
+2020-05-24,Alaska,Fairbanks North Star Borough,0,3
+2020-05-24,Alaska,Kenai Peninsula Borough,15,2
 2020-05-24,Alaska,Anchorage,10,1
 2020-05-24,Hawaii,other,0,100
 2020-05-24,Hawaii,Honolulu,7,1
@@ -3228,9 +3217,9 @@ date,state,county,cases,rank
 2020-05-24,Florida,Miami-Dade,1132,1
 2020-05-24,Florida,Palm Beach,758,3
 2020-05-24,Florida,Broward,418,2
-2020-05-24,Georgia,other,-1480,7
+2020-05-24,Georgia,other,-1480,8
 2020-05-24,Georgia,other,2839,100
-2020-05-24,Georgia,other,127,8
+2020-05-24,Georgia,other,127,7
 2020-05-24,Georgia,other,348,4
 2020-05-24,Georgia,DeKalb,585,3
 2020-05-24,Georgia,other,45,6
@@ -3259,11 +3248,11 @@ date,state,county,cases,rank
 2020-05-24,Arkansas,other,91,8
 2020-05-24,Arkansas,Washington,219,2
 2020-05-24,Arkansas,other,43,11
-2020-05-24,Arkansas,other,270,4
+2020-05-24,Arkansas,Benton,270,3
 2020-05-24,Arkansas,other,31,9
 2020-05-24,Arkansas,other,87,7
 2020-05-24,Arkansas,other,13,6
-2020-05-24,Arkansas,Lincoln,8,3
+2020-05-24,Arkansas,other,8,4
 2020-05-24,Arkansas,Pulaski,103,1
 2020-05-24,Colorado,Adams,368,3
 2020-05-24,Colorado,other,534,100
@@ -3344,13 +3333,13 @@ date,state,county,cases,rank
 2020-05-24,New Jersey,Essex,529,3
 2020-05-24,New Jersey,Hudson,433,1
 2020-05-24,New Jersey,other,499,9
-2020-05-24,New Jersey,other,609,5
+2020-05-24,New Jersey,other,609,6
 2020-05-24,New Jersey,other,439,8
 2020-05-24,New Jersey,other,191,11
 2020-05-24,New Jersey,other,384,7
 2020-05-24,New Jersey,other,489,4
 2020-05-24,New Jersey,other,142,13
-2020-05-24,New Jersey,other,578,6
+2020-05-24,New Jersey,other,578,5
 2020-05-24,New Mexico,Bernalillo,138,3
 2020-05-24,New Mexico,other,102,100
 2020-05-24,New Mexico,other,69,6
@@ -3367,30 +3356,31 @@ date,state,county,cases,rank
 2020-05-24,Connecticut,Fairfield,513,1
 2020-05-24,Connecticut,Hartford,662,3
 2020-05-24,Connecticut,New Haven,462,2
-2020-05-24,Mississippi,other,758,100
+2020-05-24,Mississippi,other,710,100
 2020-05-24,Mississippi,other,69,16
-2020-05-24,Mississippi,other,123,14
+2020-05-24,Mississippi,other,22,15
 2020-05-24,Mississippi,other,37,12
-2020-05-24,Mississippi,other,75,7
 2020-05-24,Mississippi,other,75,8
+2020-05-24,Mississippi,other,75,7
 2020-05-24,Mississippi,other,26,21
 2020-05-24,Mississippi,Hinds,122,1
 2020-05-24,Mississippi,other,38,11
 2020-05-24,Mississippi,other,9,13
-2020-05-24,Mississippi,other,163,5
+2020-05-24,Mississippi,other,163,4
 2020-05-24,Mississippi,other,17,24
 2020-05-24,Mississippi,Lauderdale,65,3
 2020-05-24,Mississippi,other,39,10
-2020-05-24,Mississippi,other,18,20
-2020-05-24,Mississippi,other,18,19
+2020-05-24,Mississippi,other,48,25
+2020-05-24,Mississippi,other,18,17
+2020-05-24,Mississippi,other,125,19
 2020-05-24,Mississippi,other,53,23
 2020-05-24,Mississippi,Madison,81,2
 2020-05-24,Mississippi,other,14,22
-2020-05-24,Mississippi,other,119,4
-2020-05-24,Mississippi,other,50,17
-2020-05-24,Mississippi,other,107,18
+2020-05-24,Mississippi,other,119,5
+2020-05-24,Mississippi,other,50,18
 2020-05-24,Mississippi,other,85,9
 2020-05-24,Mississippi,other,63,6
+2020-05-24,Mississippi,other,101,14
 2020-05-24,Puerto Rico,Unknown,618,1
 2020-05-24,North Dakota,other,-9,100
 2020-05-24,North Dakota,Cass,198,1
@@ -3399,8 +3389,7 @@ date,state,county,cases,rank
 2020-05-24,Pennsylvania,Delaware,305,3
 2020-05-24,Pennsylvania,Montgomery,542,2
 2020-05-24,Pennsylvania,Philadelphia,1395,1
-2020-05-24,Rhode Island,Unknown,244,2
-2020-05-24,Rhode Island,other,90,100
+2020-05-24,Rhode Island,other,334,100
 2020-05-24,Rhode Island,Providence,533,1
 2020-05-24,South Dakota,other,392,100
 2020-05-24,South Dakota,Minnehaha,97,1
@@ -3447,10 +3436,9 @@ date,state,county,cases,rank
 2020-05-24,District of Columbia,District of Columbia,751,1
 2020-05-24,Northern Mariana Islands,Unknown,0,1
 2020-05-31,Guam,Unknown,7,1
-2020-05-31,Iowa,other,1015,100
+2020-05-31,Iowa,other,1074,100
 2020-05-31,Iowa,Black Hawk,48,3
 2020-05-31,Iowa,other,372,4
-2020-05-31,Iowa,other,59,6
 2020-05-31,Iowa,other,31,5
 2020-05-31,Iowa,Polk,502,1
 2020-05-31,Iowa,Woodbury,164,2
@@ -3484,8 +3472,8 @@ date,state,county,cases,rank
 2020-05-31,Texas,other,465,6
 2020-05-31,Texas,Dallas,1824,2
 2020-05-31,Alaska,other,25,100
-2020-05-31,Alaska,Fairbanks North Star Borough,1,2
-2020-05-31,Alaska,Kenai Peninsula Borough,43,3
+2020-05-31,Alaska,Fairbanks North Star Borough,1,3
+2020-05-31,Alaska,Kenai Peninsula Borough,43,2
 2020-05-31,Alaska,Anchorage,65,1
 2020-05-31,Hawaii,other,1,100
 2020-05-31,Hawaii,Honolulu,18,1
@@ -3524,9 +3512,9 @@ date,state,county,cases,rank
 2020-05-31,Florida,Miami-Dade,1473,1
 2020-05-31,Florida,Palm Beach,1176,3
 2020-05-31,Florida,Broward,623,2
-2020-05-31,Georgia,other,-75,7
+2020-05-31,Georgia,other,-75,8
 2020-05-31,Georgia,other,2905,100
-2020-05-31,Georgia,other,107,8
+2020-05-31,Georgia,other,107,7
 2020-05-31,Georgia,other,233,4
 2020-05-31,Georgia,DeKalb,277,3
 2020-05-31,Georgia,other,33,6
@@ -3555,11 +3543,11 @@ date,state,county,cases,rank
 2020-05-31,Arkansas,other,156,8
 2020-05-31,Arkansas,Washington,461,2
 2020-05-31,Arkansas,other,85,11
-2020-05-31,Arkansas,other,376,4
+2020-05-31,Arkansas,Benton,376,3
 2020-05-31,Arkansas,other,88,9
 2020-05-31,Arkansas,other,85,7
 2020-05-31,Arkansas,other,30,6
-2020-05-31,Arkansas,Lincoln,7,3
+2020-05-31,Arkansas,other,7,4
 2020-05-31,Arkansas,Pulaski,215,1
 2020-05-31,Colorado,Adams,328,3
 2020-05-31,Colorado,other,400,100
@@ -3640,13 +3628,13 @@ date,state,county,cases,rank
 2020-05-31,New Jersey,Essex,472,3
 2020-05-31,New Jersey,Hudson,205,1
 2020-05-31,New Jersey,other,298,9
-2020-05-31,New Jersey,other,379,5
+2020-05-31,New Jersey,other,379,6
 2020-05-31,New Jersey,other,295,8
 2020-05-31,New Jersey,other,201,11
 2020-05-31,New Jersey,other,279,7
 2020-05-31,New Jersey,other,337,4
 2020-05-31,New Jersey,other,97,13
-2020-05-31,New Jersey,other,352,6
+2020-05-31,New Jersey,other,352,5
 2020-05-31,New Mexico,Bernalillo,111,3
 2020-05-31,New Mexico,other,100,100
 2020-05-31,New Mexico,other,98,6
@@ -3663,30 +3651,31 @@ date,state,county,cases,rank
 2020-05-31,Connecticut,Fairfield,518,1
 2020-05-31,Connecticut,Hartford,540,3
 2020-05-31,Connecticut,New Haven,508,2
-2020-05-31,Mississippi,other,614,100
+2020-05-31,Mississippi,other,543,100
 2020-05-31,Mississippi,other,27,16
-2020-05-31,Mississippi,other,141,14
+2020-05-31,Mississippi,other,23,15
 2020-05-31,Mississippi,other,27,12
-2020-05-31,Mississippi,other,72,7
-2020-05-31,Mississippi,other,54,8
+2020-05-31,Mississippi,other,72,8
+2020-05-31,Mississippi,other,54,7
 2020-05-31,Mississippi,other,17,21
 2020-05-31,Mississippi,Hinds,112,1
 2020-05-31,Mississippi,other,47,11
 2020-05-31,Mississippi,other,12,13
-2020-05-31,Mississippi,other,117,5
+2020-05-31,Mississippi,other,117,4
 2020-05-31,Mississippi,other,19,24
 2020-05-31,Mississippi,Lauderdale,40,3
 2020-05-31,Mississippi,other,39,10
-2020-05-31,Mississippi,other,29,20
-2020-05-31,Mississippi,other,30,19
+2020-05-31,Mississippi,other,71,25
+2020-05-31,Mississippi,other,29,17
+2020-05-31,Mississippi,other,85,19
 2020-05-31,Mississippi,other,52,23
 2020-05-31,Mississippi,Madison,68,2
 2020-05-31,Mississippi,other,18,22
-2020-05-31,Mississippi,other,117,4
-2020-05-31,Mississippi,other,26,17
-2020-05-31,Mississippi,other,55,18
+2020-05-31,Mississippi,other,117,5
+2020-05-31,Mississippi,other,26,18
 2020-05-31,Mississippi,other,52,9
 2020-05-31,Mississippi,other,20,6
+2020-05-31,Mississippi,other,118,14
 2020-05-31,Puerto Rico,Unknown,1197,1
 2020-05-31,North Dakota,other,64,100
 2020-05-31,North Dakota,Cass,195,1
@@ -3695,8 +3684,7 @@ date,state,county,cases,rank
 2020-05-31,Pennsylvania,Delaware,188,3
 2020-05-31,Pennsylvania,Montgomery,536,2
 2020-05-31,Pennsylvania,Philadelphia,900,1
-2020-05-31,Rhode Island,Unknown,622,2
-2020-05-31,Rhode Island,other,0,100
+2020-05-31,Rhode Island,other,622,100
 2020-05-31,Rhode Island,Providence,0,1
 2020-05-31,South Dakota,other,349,100
 2020-05-31,South Dakota,Minnehaha,52,1
@@ -3742,299 +3730,298 @@ date,state,county,cases,rank
 2020-05-31,Virgin Islands,Unknown,2,1
 2020-05-31,District of Columbia,District of Columbia,552,1
 2020-05-31,Northern Mariana Islands,Unknown,4,1
-2020-06-07,Guam,Unknown,0,1
-2020-06-07,Iowa,other,138,100
-2020-06-07,Iowa,Black Hawk,9,3
-2020-06-07,Iowa,other,39,4
-2020-06-07,Iowa,other,0,6
-2020-06-07,Iowa,other,4,5
-2020-06-07,Iowa,Polk,59,1
-2020-06-07,Iowa,Woodbury,18,2
-2020-06-07,Ohio,other,165,100
-2020-06-07,Ohio,Cuyahoga,31,2
-2020-06-07,Ohio,Franklin,106,1
-2020-06-07,Ohio,Hamilton,29,3
-2020-06-07,Ohio,other,8,5
-2020-06-07,Ohio,other,9,8
-2020-06-07,Ohio,other,2,4
-2020-06-07,Ohio,other,7,6
-2020-06-07,Ohio,other,8,7
-2020-06-07,Utah,other,54,100
-2020-06-07,Utah,Salt Lake,86,1
-2020-06-07,Utah,Utah,78,2
-2020-06-07,Idaho,Ada,0,1
-2020-06-07,Idaho,other,14,100
+2020-06-07,Guam,Unknown,1,1
+2020-06-07,Iowa,other,271,100
+2020-06-07,Iowa,Black Hawk,10,3
+2020-06-07,Iowa,other,106,4
+2020-06-07,Iowa,other,17,5
+2020-06-07,Iowa,Polk,150,1
+2020-06-07,Iowa,Woodbury,30,2
+2020-06-07,Ohio,other,330,100
+2020-06-07,Ohio,Cuyahoga,83,2
+2020-06-07,Ohio,Franklin,180,1
+2020-06-07,Ohio,Hamilton,60,3
+2020-06-07,Ohio,other,14,5
+2020-06-07,Ohio,other,14,8
+2020-06-07,Ohio,other,5,4
+2020-06-07,Ohio,other,9,6
+2020-06-07,Ohio,other,31,7
+2020-06-07,Utah,other,168,100
+2020-06-07,Utah,Salt Lake,217,1
+2020-06-07,Utah,Utah,127,2
+2020-06-07,Idaho,Ada,6,1
+2020-06-07,Idaho,other,32,100
 2020-06-07,Idaho,Blaine,0,2
-2020-06-07,Idaho,other,0,4
-2020-06-07,Idaho,other,0,5
-2020-06-07,Idaho,Twin Falls,0,3
-2020-06-07,Maine,Androscoggin,21,3
-2020-06-07,Maine,other,-1,100
-2020-06-07,Maine,Cumberland,17,1
-2020-06-07,Maine,York,7,2
-2020-06-07,Texas,other,234,100
-2020-06-07,Texas,other,78,5
-2020-06-07,Texas,Tarrant,77,3
-2020-06-07,Texas,other,35,4
-2020-06-07,Texas,Harris,163,1
-2020-06-07,Texas,other,21,6
-2020-06-07,Texas,Dallas,263,2
-2020-06-07,Alaska,other,1,100
-2020-06-07,Alaska,Fairbanks North Star Borough,0,2
-2020-06-07,Alaska,Kenai Peninsula Borough,1,3
-2020-06-07,Alaska,Anchorage,7,1
+2020-06-07,Idaho,other,5,4
+2020-06-07,Idaho,other,4,5
+2020-06-07,Idaho,Twin Falls,11,3
+2020-06-07,Maine,other,3,100
+2020-06-07,Maine,Androscoggin,30,3
+2020-06-07,Maine,Cumberland,21,1
+2020-06-07,Maine,York,8,2
+2020-06-07,Texas,other,590,100
+2020-06-07,Texas,other,155,5
+2020-06-07,Texas,Tarrant,296,3
+2020-06-07,Texas,other,153,4
+2020-06-07,Texas,Harris,495,1
+2020-06-07,Texas,other,43,6
+2020-06-07,Texas,Dallas,517,2
+2020-06-07,Alaska,other,4,100
+2020-06-07,Alaska,Fairbanks North Star Borough,0,3
+2020-06-07,Alaska,Kenai Peninsula Borough,5,2
+2020-06-07,Alaska,Anchorage,18,1
 2020-06-07,Hawaii,other,0,100
-2020-06-07,Hawaii,Honolulu,2,1
+2020-06-07,Hawaii,Honolulu,3,1
 2020-06-07,Hawaii,Maui,0,2
-2020-06-07,Kansas,other,7,100
-2020-06-07,Kansas,Finney,0,3
-2020-06-07,Kansas,Ford,0,1
-2020-06-07,Kansas,other,1,5
-2020-06-07,Kansas,other,0,4
-2020-06-07,Kansas,other,0,8
-2020-06-07,Kansas,other,14,7
-2020-06-07,Kansas,other,0,6
-2020-06-07,Kansas,other,0,9
-2020-06-07,Kansas,Wyandotte,10,2
-2020-06-07,Nevada,other,3,100
-2020-06-07,Nevada,Clark,152,1
-2020-06-07,Nevada,Washoe,24,2
-2020-06-07,Oregon,other,86,100
-2020-06-07,Oregon,other,14,4
-2020-06-07,Oregon,Marion,11,2
-2020-06-07,Oregon,Multnomah,18,1
-2020-06-07,Oregon,Washington,8,3
-2020-06-07,Alabama,other,230,100
-2020-06-07,Alabama,other,9,6
-2020-06-07,Alabama,Jefferson,59,3
-2020-06-07,Alabama,other,7,7
-2020-06-07,Alabama,other,9,5
-2020-06-07,Alabama,Mobile,56,1
-2020-06-07,Alabama,Montgomery,61,2
-2020-06-07,Alabama,other,7,8
-2020-06-07,Alabama,other,19,4
-2020-06-07,Arizona,other,522,100
-2020-06-07,Arizona,Maricopa,737,1
-2020-06-07,Arizona,Pima,148,2
-2020-06-07,Florida,other,662,100
-2020-06-07,Florida,Miami-Dade,248,1
-2020-06-07,Florida,Palm Beach,156,3
-2020-06-07,Florida,Broward,114,2
-2020-06-07,Georgia,other,276,7
-2020-06-07,Georgia,other,127,100
-2020-06-07,Georgia,other,5,8
-2020-06-07,Georgia,other,7,4
-2020-06-07,Georgia,DeKalb,4,3
-2020-06-07,Georgia,other,0,6
-2020-06-07,Georgia,Fulton,1,1
-2020-06-07,Georgia,Gwinnett,7,2
-2020-06-07,Georgia,other,1,5
-2020-06-07,Indiana,other,325,100
-2020-06-07,Indiana,Lake,25,2
-2020-06-07,Indiana,Marion,50,1
-2020-06-07,Montana,other,0,100
+2020-06-07,Kansas,other,45,100
+2020-06-07,Kansas,Finney,10,3
+2020-06-07,Kansas,Ford,33,1
+2020-06-07,Kansas,other,38,5
+2020-06-07,Kansas,other,3,4
+2020-06-07,Kansas,other,14,8
+2020-06-07,Kansas,other,20,7
+2020-06-07,Kansas,other,9,6
+2020-06-07,Kansas,other,12,9
+2020-06-07,Kansas,Wyandotte,23,2
+2020-06-07,Nevada,other,7,100
+2020-06-07,Nevada,Clark,261,1
+2020-06-07,Nevada,Washoe,53,2
+2020-06-07,Oregon,other,163,100
+2020-06-07,Oregon,other,27,4
+2020-06-07,Oregon,Marion,19,2
+2020-06-07,Oregon,Multnomah,34,1
+2020-06-07,Oregon,Washington,10,3
+2020-06-07,Alabama,other,465,100
+2020-06-07,Alabama,other,17,6
+2020-06-07,Alabama,Jefferson,98,3
+2020-06-07,Alabama,other,17,7
+2020-06-07,Alabama,other,14,5
+2020-06-07,Alabama,Mobile,84,1
+2020-06-07,Alabama,Montgomery,135,2
+2020-06-07,Alabama,other,12,8
+2020-06-07,Alabama,other,40,4
+2020-06-07,Arizona,other,798,100
+2020-06-07,Arizona,Maricopa,1242,1
+2020-06-07,Arizona,Pima,204,2
+2020-06-07,Florida,other,1200,100
+2020-06-07,Florida,Miami-Dade,457,1
+2020-06-07,Florida,Palm Beach,255,3
+2020-06-07,Florida,Broward,234,2
+2020-06-07,Georgia,other,195,8
+2020-06-07,Georgia,other,475,100
+2020-06-07,Georgia,other,20,7
+2020-06-07,Georgia,other,56,4
+2020-06-07,Georgia,DeKalb,46,3
+2020-06-07,Georgia,other,3,6
+2020-06-07,Georgia,Fulton,65,1
+2020-06-07,Georgia,Gwinnett,165,2
+2020-06-07,Georgia,other,27,5
+2020-06-07,Indiana,other,500,100
+2020-06-07,Indiana,Lake,44,2
+2020-06-07,Indiana,Marion,81,1
+2020-06-07,Montana,other,1,100
 2020-06-07,Montana,other,3,4
 2020-06-07,Montana,other,0,5
-2020-06-07,Montana,Gallatin,1,1
+2020-06-07,Montana,Gallatin,3,1
 2020-06-07,Montana,Missoula,0,3
 2020-06-07,Montana,Yellowstone,1,2
-2020-06-07,Vermont,other,0,100
-2020-06-07,Vermont,Chittenden,17,1
-2020-06-07,Wyoming,other,8,100
-2020-06-07,Wyoming,Fremont,0,1
+2020-06-07,Vermont,other,4,100
+2020-06-07,Vermont,Chittenden,25,1
+2020-06-07,Wyoming,other,14,100
+2020-06-07,Wyoming,Fremont,2,1
 2020-06-07,Wyoming,Laramie,0,2
-2020-06-07,Wyoming,other,0,4
+2020-06-07,Wyoming,other,5,4
 2020-06-07,Wyoming,Teton,0,3
-2020-06-07,Arkansas,other,0,10
-2020-06-07,Arkansas,other,88,100
-2020-06-07,Arkansas,other,9,5
-2020-06-07,Arkansas,other,13,8
-2020-06-07,Arkansas,Washington,103,2
-2020-06-07,Arkansas,other,13,11
-2020-06-07,Arkansas,other,73,4
-2020-06-07,Arkansas,other,2,9
-2020-06-07,Arkansas,other,11,7
-2020-06-07,Arkansas,other,1,6
-2020-06-07,Arkansas,Lincoln,0,3
-2020-06-07,Arkansas,Pulaski,12,1
-2020-06-07,Colorado,Adams,23,3
-2020-06-07,Colorado,other,55,100
-2020-06-07,Colorado,Arapahoe,11,2
-2020-06-07,Colorado,Denver,27,1
-2020-06-07,Colorado,other,17,6
-2020-06-07,Colorado,other,3,5
-2020-06-07,Colorado,other,17,4
-2020-06-07,Delaware,other,3,100
-2020-06-07,Delaware,Kent,15,3
-2020-06-07,Delaware,New Castle,75,2
-2020-06-07,Delaware,Sussex,4,1
-2020-06-07,Illinois,other,316,100
-2020-06-07,Illinois,Cook,503,1
-2020-06-07,Kentucky,other,34,100
-2020-06-07,Kentucky,Fayette,0,3
-2020-06-07,Kentucky,Jefferson,0,1
-2020-06-07,Kentucky,other,0,4
-2020-06-07,Kentucky,Warren,0,2
-2020-06-07,Maryland,other,92,100
-2020-06-07,Maryland,other,88,4
-2020-06-07,Maryland,other,26,5
-2020-06-07,Maryland,Baltimore,57,3
-2020-06-07,Maryland,Montgomery,111,2
-2020-06-07,Maryland,Prince George's,120,1
-2020-06-07,Michigan,other,113,100
-2020-06-07,Michigan,Oakland,25,2
-2020-06-07,Michigan,Wayne,224,1
-2020-06-07,Michigan,Macomb,57,3
-2020-06-07,Missouri,Kansas City,26,3
-2020-06-07,Missouri,other,53,100
-2020-06-07,Missouri,St. Louis,243,1
+2020-06-07,Arkansas,other,36,10
+2020-06-07,Arkansas,other,181,100
+2020-06-07,Arkansas,other,11,5
+2020-06-07,Arkansas,other,29,8
+2020-06-07,Arkansas,Washington,184,2
+2020-06-07,Arkansas,other,18,11
+2020-06-07,Arkansas,Benton,128,3
+2020-06-07,Arkansas,other,5,9
+2020-06-07,Arkansas,other,13,7
+2020-06-07,Arkansas,other,7,6
+2020-06-07,Arkansas,other,0,4
+2020-06-07,Arkansas,Pulaski,27,1
+2020-06-07,Colorado,Adams,53,3
+2020-06-07,Colorado,other,95,100
+2020-06-07,Colorado,Arapahoe,37,2
+2020-06-07,Colorado,Denver,59,1
+2020-06-07,Colorado,other,45,6
+2020-06-07,Colorado,other,14,5
+2020-06-07,Colorado,other,32,4
+2020-06-07,Delaware,other,-1,100
+2020-06-07,Delaware,Kent,17,3
+2020-06-07,Delaware,New Castle,100,2
+2020-06-07,Delaware,Sussex,11,1
+2020-06-07,Illinois,other,673,100
+2020-06-07,Illinois,Cook,895,1
+2020-06-07,Kentucky,other,186,100
+2020-06-07,Kentucky,Fayette,56,3
+2020-06-07,Kentucky,Jefferson,61,1
+2020-06-07,Kentucky,other,9,4
+2020-06-07,Kentucky,Warren,30,2
+2020-06-07,Maryland,other,191,100
+2020-06-07,Maryland,other,155,4
+2020-06-07,Maryland,other,57,5
+2020-06-07,Maryland,Baltimore,118,3
+2020-06-07,Maryland,Montgomery,195,2
+2020-06-07,Maryland,Prince George's,209,1
+2020-06-07,Michigan,other,203,100
+2020-06-07,Michigan,Oakland,153,2
+2020-06-07,Michigan,Wayne,292,1
+2020-06-07,Michigan,Macomb,67,3
+2020-06-07,Missouri,Kansas City,64,3
+2020-06-07,Missouri,other,160,100
+2020-06-07,Missouri,St. Louis,272,1
 2020-06-07,Missouri,St. Louis city,3,2
-2020-06-07,Nebraska,other,-13,100
-2020-06-07,Nebraska,Dakota,2,2
-2020-06-07,Nebraska,Douglas,86,1
-2020-06-07,Nebraska,Hall,0,3
-2020-06-07,Nebraska,other,16,4
-2020-06-07,New York,other,323,100
-2020-06-07,New York,New York City,454,1
-2020-06-07,Oklahoma,other,54,100
-2020-06-07,Oklahoma,other,1,4
+2020-06-07,Nebraska,other,11,100
+2020-06-07,Nebraska,Dakota,12,2
+2020-06-07,Nebraska,Douglas,140,1
+2020-06-07,Nebraska,Hall,14,3
+2020-06-07,Nebraska,other,32,4
+2020-06-07,New York,other,641,100
+2020-06-07,New York,New York City,848,1
+2020-06-07,Oklahoma,other,82,100
+2020-06-07,Oklahoma,other,5,4
 2020-06-07,Oklahoma,other,1,6
-2020-06-07,Oklahoma,Oklahoma,9,1
+2020-06-07,Oklahoma,Oklahoma,24,1
 2020-06-07,Oklahoma,Texas,3,3
-2020-06-07,Oklahoma,Tulsa,23,2
+2020-06-07,Oklahoma,Tulsa,31,2
 2020-06-07,Oklahoma,other,0,5
-2020-06-07,Virginia,other,644,100
-2020-06-07,Virginia,Fairfax,399,1
-2020-06-07,Virginia,Loudoun,155,3
-2020-06-07,Virginia,Prince William,86,2
-2020-06-07,Louisiana,other,226,100
-2020-06-07,Louisiana,other,18,4
-2020-06-07,Louisiana,East Baton Rouge,38,3
-2020-06-07,Louisiana,Jefferson,31,1
-2020-06-07,Louisiana,Orleans,8,2
-2020-06-07,Louisiana,other,9,5
-2020-06-07,Minnesota,other,199,100
-2020-06-07,Minnesota,Stearns,7,3
-2020-06-07,Minnesota,Hennepin,117,1
-2020-06-07,Minnesota,Ramsey,62,2
-2020-06-07,Tennessee,other,161,100
-2020-06-07,Tennessee,Rutherford,36,3
-2020-06-07,Tennessee,Shelby,96,2
-2020-06-07,Tennessee,other,0,5
-2020-06-07,Tennessee,Davidson,124,1
-2020-06-07,Tennessee,other,35,4
-2020-06-07,Wisconsin,other,124,100
-2020-06-07,Wisconsin,Milwaukee,118,1
-2020-06-07,Wisconsin,Racine,4,3
+2020-06-07,Virginia,other,942,100
+2020-06-07,Virginia,Fairfax,547,1
+2020-06-07,Virginia,Loudoun,208,3
+2020-06-07,Virginia,Prince William,157,2
+2020-06-07,Louisiana,other,409,100
+2020-06-07,Louisiana,other,24,4
+2020-06-07,Louisiana,East Baton Rouge,52,3
+2020-06-07,Louisiana,Jefferson,54,1
+2020-06-07,Louisiana,Orleans,15,2
+2020-06-07,Louisiana,other,12,5
+2020-06-07,Minnesota,other,382,100
+2020-06-07,Minnesota,Stearns,8,3
+2020-06-07,Minnesota,Hennepin,225,1
+2020-06-07,Minnesota,Ramsey,108,2
+2020-06-07,Tennessee,other,324,100
+2020-06-07,Tennessee,Rutherford,79,3
+2020-06-07,Tennessee,Shelby,193,2
+2020-06-07,Tennessee,other,3,5
+2020-06-07,Tennessee,Davidson,196,1
+2020-06-07,Tennessee,other,63,4
+2020-06-07,Wisconsin,other,236,100
+2020-06-07,Wisconsin,Milwaukee,216,1
+2020-06-07,Wisconsin,Racine,5,3
 2020-06-07,Wisconsin,Brown,3,2
-2020-06-07,California,other,1344,100
-2020-06-07,California,Los Angeles,1506,1
-2020-06-07,New Jersey,other,24,100
-2020-06-07,New Jersey,Bergen,20,2
-2020-06-07,New Jersey,other,16,12
-2020-06-07,New Jersey,other,14,10
-2020-06-07,New Jersey,Essex,11,3
-2020-06-07,New Jersey,Hudson,17,1
-2020-06-07,New Jersey,other,18,9
-2020-06-07,New Jersey,other,-5,5
-2020-06-07,New Jersey,other,24,8
-2020-06-07,New Jersey,other,8,11
-2020-06-07,New Jersey,other,43,7
-2020-06-07,New Jersey,other,13,4
-2020-06-07,New Jersey,other,-2,13
-2020-06-07,New Jersey,other,70,6
-2020-06-07,New Mexico,Bernalillo,17,3
-2020-06-07,New Mexico,other,18,100
-2020-06-07,New Mexico,other,12,6
-2020-06-07,New Mexico,McKinley,37,1
+2020-06-07,California,other,2834,100
+2020-06-07,California,Los Angeles,2306,1
+2020-06-07,New Jersey,other,60,100
+2020-06-07,New Jersey,Bergen,46,2
+2020-06-07,New Jersey,other,29,12
+2020-06-07,New Jersey,other,42,10
+2020-06-07,New Jersey,Essex,51,3
+2020-06-07,New Jersey,Hudson,36,1
+2020-06-07,New Jersey,other,36,9
+2020-06-07,New Jersey,other,24,6
+2020-06-07,New Jersey,other,44,8
+2020-06-07,New Jersey,other,18,11
+2020-06-07,New Jersey,other,62,7
+2020-06-07,New Jersey,other,25,4
+2020-06-07,New Jersey,other,6,13
+2020-06-07,New Jersey,other,125,5
+2020-06-07,New Mexico,other,35,100
+2020-06-07,New Mexico,Bernalillo,25,3
+2020-06-07,New Mexico,other,29,6
+2020-06-07,New Mexico,McKinley,89,1
 2020-06-07,New Mexico,other,1,4
-2020-06-07,New Mexico,other,12,5
-2020-06-07,New Mexico,San Juan,43,2
-2020-06-07,Washington,other,66,100
-2020-06-07,Washington,King,48,1
-2020-06-07,Washington,other,290,4
-2020-06-07,Washington,Snohomish,-1,3
-2020-06-07,Washington,Yakima,175,2
-2020-06-07,Connecticut,other,41,100
-2020-06-07,Connecticut,Fairfield,36,1
-2020-06-07,Connecticut,Hartford,62,3
-2020-06-07,Connecticut,New Haven,11,2
-2020-06-07,Mississippi,other,83,100
-2020-06-07,Mississippi,other,1,16
-2020-06-07,Mississippi,other,20,14
-2020-06-07,Mississippi,other,4,12
-2020-06-07,Mississippi,other,6,7
-2020-06-07,Mississippi,other,3,8
-2020-06-07,Mississippi,other,7,21
-2020-06-07,Mississippi,Hinds,26,1
-2020-06-07,Mississippi,other,10,11
-2020-06-07,Mississippi,other,4,13
-2020-06-07,Mississippi,other,14,5
-2020-06-07,Mississippi,other,5,24
-2020-06-07,Mississippi,Lauderdale,4,3
-2020-06-07,Mississippi,other,2,10
-2020-06-07,Mississippi,other,1,20
-2020-06-07,Mississippi,other,3,19
-2020-06-07,Mississippi,other,7,23
-2020-06-07,Mississippi,Madison,8,2
-2020-06-07,Mississippi,other,4,22
-2020-06-07,Mississippi,other,8,4
-2020-06-07,Mississippi,other,1,17
-2020-06-07,Mississippi,other,7,18
-2020-06-07,Mississippi,other,7,9
-2020-06-07,Mississippi,other,1,6
-2020-06-07,Puerto Rico,Unknown,70,1
-2020-06-07,North Dakota,other,14,100
-2020-06-07,North Dakota,Cass,31,1
-2020-06-07,Pennsylvania,other,354,100
-2020-06-07,Pennsylvania,other,18,4
-2020-06-07,Pennsylvania,Delaware,82,3
-2020-06-07,Pennsylvania,Montgomery,40,2
-2020-06-07,Pennsylvania,Philadelphia,0,1
-2020-06-07,Rhode Island,Unknown,0,2
-2020-06-07,Rhode Island,other,0,100
-2020-06-07,Rhode Island,Providence,0,1
-2020-06-07,South Dakota,other,61,100
-2020-06-07,South Dakota,Minnehaha,10,1
-2020-06-07,Massachusetts,other,3,100
-2020-06-07,Massachusetts,other,48,7
-2020-06-07,Massachusetts,Essex,47,3
-2020-06-07,Massachusetts,other,16,8
-2020-06-07,Massachusetts,Middlesex,68,1
-2020-06-07,Massachusetts,other,24,5
-2020-06-07,Massachusetts,other,16,6
-2020-06-07,Massachusetts,Suffolk,46,2
-2020-06-07,Massachusetts,other,36,4
-2020-06-07,New Hampshire,other,0,100
-2020-06-07,New Hampshire,Hillsborough,22,1
-2020-06-07,New Hampshire,Rockingham,2,2
-2020-06-07,West Virginia,other,5,100
-2020-06-07,West Virginia,other,0,5
+2020-06-07,New Mexico,other,15,5
+2020-06-07,New Mexico,San Juan,67,2
+2020-06-07,Washington,other,292,100
+2020-06-07,Washington,King,90,1
+2020-06-07,Washington,other,303,4
+2020-06-07,Washington,Snohomish,32,3
+2020-06-07,Washington,Yakima,390,2
+2020-06-07,Connecticut,other,62,100
+2020-06-07,Connecticut,Fairfield,72,1
+2020-06-07,Connecticut,Hartford,97,3
+2020-06-07,Connecticut,New Haven,43,2
+2020-06-07,Mississippi,other,287,100
+2020-06-07,Mississippi,other,10,16
+2020-06-07,Mississippi,other,2,15
+2020-06-07,Mississippi,other,20,12
+2020-06-07,Mississippi,other,28,8
+2020-06-07,Mississippi,other,28,7
+2020-06-07,Mississippi,other,14,21
+2020-06-07,Mississippi,Hinds,53,1
+2020-06-07,Mississippi,other,17,11
+2020-06-07,Mississippi,other,12,13
+2020-06-07,Mississippi,other,62,4
+2020-06-07,Mississippi,other,8,24
+2020-06-07,Mississippi,Lauderdale,10,3
+2020-06-07,Mississippi,other,6,10
+2020-06-07,Mississippi,other,17,25
+2020-06-07,Mississippi,other,22,17
+2020-06-07,Mississippi,other,24,19
+2020-06-07,Mississippi,other,11,23
+2020-06-07,Mississippi,Madison,19,2
+2020-06-07,Mississippi,other,7,22
+2020-06-07,Mississippi,other,25,5
+2020-06-07,Mississippi,other,4,18
+2020-06-07,Mississippi,other,12,9
+2020-06-07,Mississippi,other,3,6
+2020-06-07,Mississippi,other,33,14
+2020-06-07,Puerto Rico,Unknown,131,1
+2020-06-07,North Dakota,other,27,100
+2020-06-07,North Dakota,Cass,37,1
+2020-06-07,Pennsylvania,other,567,100
+2020-06-07,Pennsylvania,other,35,4
+2020-06-07,Pennsylvania,Delaware,93,3
+2020-06-07,Pennsylvania,Montgomery,68,2
+2020-06-07,Pennsylvania,Philadelphia,162,1
+2020-06-07,Rhode Island,other,-706,100
+2020-06-07,Rhode Island,Providence,907,1
+2020-06-07,South Dakota,other,92,100
+2020-06-07,South Dakota,Minnehaha,12,1
+2020-06-07,Massachusetts,other,25,100
+2020-06-07,Massachusetts,other,63,7
+2020-06-07,Massachusetts,Essex,66,3
+2020-06-07,Massachusetts,other,28,8
+2020-06-07,Massachusetts,Middlesex,126,1
+2020-06-07,Massachusetts,other,26,5
+2020-06-07,Massachusetts,other,25,6
+2020-06-07,Massachusetts,Suffolk,73,2
+2020-06-07,Massachusetts,other,62,4
+2020-06-07,New Hampshire,other,8,100
+2020-06-07,New Hampshire,Hillsborough,44,1
+2020-06-07,New Hampshire,Rockingham,8,2
+2020-06-07,West Virginia,other,10,100
+2020-06-07,West Virginia,other,2,5
 2020-06-07,West Virginia,Jefferson,0,3
-2020-06-07,West Virginia,Kanawha,1,2
+2020-06-07,West Virginia,Kanawha,6,2
 2020-06-07,West Virginia,other,1,4
-2020-06-07,West Virginia,other,0,6
+2020-06-07,West Virginia,other,2,6
 2020-06-07,West Virginia,other,0,7
-2020-06-07,West Virginia,Berkeley,1,1
+2020-06-07,West Virginia,Berkeley,4,1
 2020-06-07,West Virginia,other,0,8
-2020-06-07,North Carolina,other,456,100
-2020-06-07,North Carolina,Wake,69,2
-2020-06-07,North Carolina,other,38,6
-2020-06-07,North Carolina,Durham,47,3
-2020-06-07,North Carolina,other,53,4
-2020-06-07,North Carolina,other,40,5
-2020-06-07,North Carolina,Mecklenburg,151,1
-2020-06-07,South Carolina,other,109,100
-2020-06-07,South Carolina,Lexington,29,3
-2020-06-07,South Carolina,Richland,30,2
-2020-06-07,South Carolina,other,39,4
-2020-06-07,South Carolina,other,14,9
-2020-06-07,South Carolina,other,7,8
-2020-06-07,South Carolina,other,9,10
-2020-06-07,South Carolina,other,31,5
-2020-06-07,South Carolina,other,6,6
-2020-06-07,South Carolina,Greenville,48,1
-2020-06-07,South Carolina,other,48,7
+2020-06-07,North Carolina,other,937,100
+2020-06-07,North Carolina,Wake,139,2
+2020-06-07,North Carolina,other,67,6
+2020-06-07,North Carolina,Durham,113,3
+2020-06-07,North Carolina,other,95,4
+2020-06-07,North Carolina,other,97,5
+2020-06-07,North Carolina,Mecklenburg,324,1
+2020-06-07,South Carolina,other,243,100
+2020-06-07,South Carolina,Lexington,72,3
+2020-06-07,South Carolina,Richland,76,2
+2020-06-07,South Carolina,other,70,4
+2020-06-07,South Carolina,other,24,9
+2020-06-07,South Carolina,other,28,8
+2020-06-07,South Carolina,other,23,10
+2020-06-07,South Carolina,other,66,5
+2020-06-07,South Carolina,other,13,6
+2020-06-07,South Carolina,Greenville,163,1
+2020-06-07,South Carolina,other,106,7
 2020-06-07,Virgin Islands,Unknown,0,1
-2020-06-07,District of Columbia,District of Columbia,63,1
-2020-06-07,Northern Mariana Islands,Unknown,1,1
+2020-06-07,District of Columbia,District of Columbia,120,1
+2020-06-07,Northern Mariana Islands,Unknown,2,1
