@@ -1,14 +1,18 @@
 {% extends "data.j2" %}
+
 {% block content %}
-<h2 class = 'territory-name'>{{territory_name}}</h2>
 
 	<!--
 	<p>Cases RO: {{cases_ro}} Deaths RO: {{death_ro}} <p>
 	-->
-	<p>Last 7-days deaths: {{curr_death}}  per day {{cur_week_per_million}} {{sig_curr}}
 	<p>
+  	Last 7-days deaths: {{curr_death}}  per day {{cur_week_per_million}} {{sig_curr}}
+  </p>
+
 	<p>
-	Previous 7-day deaths: {{last_week_deaths}}  per day {{last_week_per_million}} {{sig_prev}} </p>
+  	Previous 7-day deaths: {{last_week_deaths}}  per day {{last_week_per_million}} {{sig_prev}}
+  </p>
+
 	{{div|safe}}
 
 {% endblock %}

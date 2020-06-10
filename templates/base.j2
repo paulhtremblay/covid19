@@ -27,12 +27,16 @@
 
     {%- block page_header %}
       <div class="siteNameSlogan">
-        {% block site_name %}<div class="siteName">{{ site_name }}</div>{% endblock site_name %}
+        {% block site_name -%}
+        <div class="siteName"><a href="/" title="Covid-19 Data home">{{ site_name }}</a></div>
+        {%- endblock site_name %}
         <span class="siteSlogan">{{ site_slogan }}</span>
       </div>
-      {% include "nav.j2" %}
-			{% block page_h1 %}<h1>{{ page_title }}</h1>{% endblock page_h1 %}
-      {% block last_updated %}<p>Last updated: <date>{{date}}</date></p>{% endblock last_updated %}
+      {% include "nav.html" %}
+	  {% block page_h1 %}<h1>{{ page_title }}</h1>{% endblock page_h1 %}
+      {%- block last_updated %}
+      <p>Last updated: <time>{% include "site_updated_time.txt" %}</time></p>
+      {%- endblock last_updated -%}
     {%- endblock page_header %}
     </header>
 
