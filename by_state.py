@@ -221,6 +221,7 @@ def make_wa():
 def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400, 
         window = None):
     state_pop = get_state_pop()
+    date = datetime.datetime.now()
     if not window:
         window = int(variables.values['by_state_window'])
     if not os.path.isdir('html_temp'):
