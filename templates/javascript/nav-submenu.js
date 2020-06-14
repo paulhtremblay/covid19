@@ -5,14 +5,21 @@ $(document).ready(function(){
   var targetSubMenu, searchText, regionName;
 
   // add svg down arrow after menu nav items that contain a submenu
-  $('.hasSubmenu > a').after('<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="240px" viewBox="0 0 400 240"><line x1="20" y1="20" x2="210" y2="210" stroke-width="40" /><line x1="380" y1="20" x2="185" y2="210" stroke-width="40" /></svg>');
+  $('.hasSubmenu > a').after(
+    '<svg viewBox="0 0 400 240" stroke-width="40"><line x1="20" y1="20" x2="210" y2="210" /><line x1="380" y1="20" x2="185" y2="210" /></svg>'
+  );
 
-  // create submenu container, add search input, and insert
-  // it to main page nav after other li.submenu elements
+  // create submenu container, add label (for input element), and
+  // insert it in main page nav after other li.submenu elements
   $('<li class="hasSubmenu"></li>')
-    .append('<label title="region search">Search <input type="search"></label>')
+    .append('<label title="search for a country or state"></label>')
     .append('<ul class="submenu searchResults" hidden></ul>')
     .insertAfter('.lastRegionContainer');
+
+  // append svg search icon and input element to label
+  $('.hasSubmenu > label')
+    .append('<svg viewBox="0 0 250 450"><title>search</title><g stroke-width="30"><circle cx="130" cy="120" r="100" /><line x1="130" y1="220" x2="130" y2="270" /></g><g stroke-width="43"><line x1="130" y1="273" x2="130" y2="370" /><line x1="130" y1="330" x2="130" y2="425" stroke-linecap="round" /></g></svg>')
+    .append('<input type="search" size="14">');
 
   // add all region page links to ul.searchResults
   $('.regions > li').clone().appendTo('.searchResults');

@@ -20,7 +20,7 @@ ENV = Environment(
     autoescape=select_autoescape(['html', 'xml'])
 )
 
-def get_territory_list(territory_key: str = 'country'):
+def get_territory_list(territory_key = 'country'):
     """
     Searches .csv file and returns unique regions from region column. Creates
     list of tuples, where the first field is the name of the web page, and the
