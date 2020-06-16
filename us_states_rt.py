@@ -18,6 +18,8 @@ from bokeh.embed import components
 
 from jinja2 import Environment, select_autoescape, FileSystemLoader
 
+from slugify import slugify
+
 from henry_covid19 import common
 from henry_covid19.states_data import us_states_list as states_list
 
@@ -31,6 +33,7 @@ ENV = Environment(
     autoescape=select_autoescape(['html', 'xml'])
 )
 
+ENV.filters['slugify'] = slugify
 
 def get_state_data(test = False):
   if test:

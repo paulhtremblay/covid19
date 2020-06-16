@@ -20,6 +20,8 @@ ENV = Environment(
     autoescape=select_autoescape(['html', 'xml'])
 )
 
+ENV.filters['slugify'] = slugify
+
 def get_territory_list(territory_key = 'country'):
     """
     Searches .csv file and returns unique regions from region column. Creates

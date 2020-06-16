@@ -16,6 +16,8 @@ from bokeh.embed import components
 
 from jinja2 import Environment, select_autoescape, FileSystemLoader
 
+from slugify import slugify
+
 from henry_covid19 import common
 
 ENV = Environment(
@@ -25,6 +27,8 @@ ENV = Environment(
     ]),
     autoescape=select_autoescape(['html', 'xml'])
 )
+
+ENV.filters['slugify'] = slugify
 
 def get_data():
     path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'sweden_vs.csv')

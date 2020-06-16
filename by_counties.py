@@ -24,6 +24,7 @@ ENV = Environment(
     autoescape=select_autoescape(['html', 'xml'])
 )
 
+ENV.filters['slugify'] = slugify
 
 def get_county_data():
     path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'seven_day_county.csv')

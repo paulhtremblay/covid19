@@ -15,6 +15,8 @@ from bokeh.embed import components
 
 from jinja2 import Environment, select_autoescape, FileSystemLoader
 
+from slugify import slugify
+
 from henry_covid19 import common
 
 DIR = os.path.split(os.path.abspath(__file__))[0]
@@ -27,6 +29,7 @@ ENV = Environment(
     autoescape=select_autoescape(['html', 'xml'])
 )
 
+ENV.filters['slugify'] = slugify
 
 """
 makes graphs for rates of states compared to US

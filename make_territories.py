@@ -30,7 +30,7 @@ ENV = Environment(
     autoescape=select_autoescape(['html', 'xml'])
 )
 
-
+ENV.filters['slugify'] = slugify
 
 def get_world_data_week():
     """

@@ -15,6 +15,8 @@ from bokeh.embed import components
 
 from jinja2 import Environment, select_autoescape, FileSystemLoader
 
+from slugify import slugify
+
 from henry_covid19 import common
 
 ENV = Environment(
@@ -25,6 +27,7 @@ ENV = Environment(
     autoescape=select_autoescape(['html', 'xml'])
 )
 
+ENV.filters['slugify'] = slugify
 
 """
 makes bar graphs for deaths/cases for WA and by counties
