@@ -39,7 +39,7 @@
             <tr>
   					{% for cell in row -%}
 						  {%- if loop.index == 1 -%}
-              <th>{{cell}}</th>
+              <th><a href="{{cell|slugify}}">{{cell}}</a></th>
               {% else -%}
               <td>{{cell}}</td>
               {% endif -%}
