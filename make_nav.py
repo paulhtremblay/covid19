@@ -43,18 +43,14 @@ def get_territory_list(territory_key = 'country'):
         df = pd.read_csv(read_obj)
 
     if territory_key == 'country':
-        t_list = df.country.unique()
-        t_list = [w.replace('_', ' ') for w in t_list]
-        territory_list = [(t, '/countries/' + slugify(t)) for t in t_list]
+        territory_list = df.country.unique()
+        territory_list = [w.replace('_', ' ') for w in territory_list]
 
     elif territory_key == 'state':
-        t_list = df.state.unique()
-        territory_list = [(t, '/states/' + slugify(t)) for t in t_list]
+        territory_list = df.state.unique()
 
     else:
-        t_list = df.state.unique()
-        territory_list = [(t + ' Cases by County', '/counties/' + slugify(t) + '-cases') for t in t_list]
-        territory_list += [(t + ' Deaths by County', '/counties/' + slugify(t) + '-deaths') for t in t_list]
+        territory_list = df.state.unique()
 
     territory_list = sorted(territory_list)
     return territory_list

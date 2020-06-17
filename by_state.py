@@ -164,7 +164,7 @@ def make_territories_ref_list(territory_key, territories):
     t = ENV.get_template('territories_ref.j2')
     t =  t.render(page_title = page_title,
             page_class_attr = ["regionList", territory_key.lower()],
-            territories = [(slugify(x), x) for x in territories]
+            territories = territories
             )
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')

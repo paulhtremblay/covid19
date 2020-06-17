@@ -5,7 +5,7 @@
             <a href="/countries/">Countries</a>
             <ul class="submenu regions" hidden>
               {%- for c in countries %}
-              <li><a href="{{ c[1] }}">{{ c[0] }}</a></li>
+              <li><a href="/countries/{{ c|slugify }}">{{ c }}</a></li>
               {%- endfor %}
             </ul>
           </li>
@@ -13,7 +13,7 @@
             <a href="/states/">U.S. States</a>
             <ul class="submenu regions" hidden>
               {%- for s in states %}
-              <li><a href="{{ s[1] }}">{{ s[0] }}</a></li>
+              <li><a href="/states/{{ s|slugify }}">{{ s }}</a></li>
               {%- endfor %}
             </ul>
           </li>
@@ -21,7 +21,8 @@
             <a href="/counties/">Counties</a>
             <ul class="submenu regions county" hidden>
               {%- for ct in counties %}
-              <li><a href="{{ ct[1] }}">{{ ct[0] }}</a></li>
+              <li><a href="/counties/{{ ct|slugify }}-cases">{{ ct }} Cases by County</a></li>
+              <li><a href="/counties/{{ ct|slugify }}-deaths">{{ ct }} Deaths by County</a></li>
               {%- endfor %}
             </ul>
           </li>

@@ -3,7 +3,15 @@
 {# for pages showing cases/deaths in each county by state #}
 
 {% block content %}
-	<p><a href="{{link}}">{{link_name}}</a></p>
+	<p>On this page: {{ data_type }} by county </p>
+
+	<p>View
+    {%- if data_type == "Cases" %}
+	<a href="{{ state|slugify }}-deaths">Deaths by County</a>
+    {%- else %}
+	<a href="{{ state|slugify }}-cases">Cases by County</a>
+    {%- endif %}
+    </p>
 
 	{{div|safe}}
 

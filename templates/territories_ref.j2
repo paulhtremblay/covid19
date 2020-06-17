@@ -3,7 +3,7 @@
 {% block content %}
       <ul>
         {% for t in territories %}
-		    <li><a href="{{ t[0]}}">{{ t[1] }}</a></li>
+		    <li><a href="{{ t|slugify }}">{{ t }}</a></li>
         {% endfor %}
       </ul>
 	<p><a href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Washington by RT</a>
