@@ -10,7 +10,7 @@
             </ul>
           </li>
           <li class="hasSubmenu">
-            <a href="/states/">U.S. States</a>
+            <a href="/states/"><abbr title="United States">U.S.</abbr> States</a>
             <ul class="submenu regions" hidden>
               {%- for s in states %}
               <li><a href="/states/{{ s|slugify }}">{{ s }}</a></li>
@@ -18,7 +18,7 @@
             </ul>
           </li>
           <li class="hasSubmenu lastRegionContainer">
-            <a href="/counties/">Counties</a>
+            <a href="/counties/"><abbr title="United States">U.S.</abbr> Counties</a>
             <ul class="submenu regions county" hidden>
               {%- for ct in counties %}
               <li><a href="/counties/{{ ct|slugify }}-cases">{{ ct }} Cases by County</a></li>

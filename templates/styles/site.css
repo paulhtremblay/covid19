@@ -221,7 +221,8 @@ li.hasSubmenu {
 @media screen and (min-width: 40em) {
 
   nav > ul {
-    justify-content: space-around;
+    justify-content: space-between;
+    max-width: 60em;
   }
 
 }

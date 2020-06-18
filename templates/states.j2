@@ -1,0 +1,17 @@
+{% extends "data.j2" %}
+
+{% block content %}
+
+{# page_title in by_states.py is state name #}
+	<ul>
+		<li>
+			<a href="/counties/{{ page_title|slugify }}-cases">{{ page_title }} Cases by County</a>
+		</li>
+		<li>
+			<a href="/counties/{{ page_title|slugify }}-deaths">{{ page_title }} Deaths by County</a>
+		</li>
+	</ul>
+
+	{{div|safe}}
+
+{% endblock %}
