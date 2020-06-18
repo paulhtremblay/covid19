@@ -12,8 +12,6 @@
           <li class="hasSubmenu">
             <a href="/states/">U.S. States</a>
             <ul class="submenu regions" hidden>
-              <li><a href="/states/table-cases">Table of Cases</a></li>
-              <li><a href="/states/table-deaths">Table of Deaths</a></li>
               {%- for s in states %}
               <li><a href="/states/{{ s|slugify }}">{{ s }}</a></li>
               {%- endfor %}
@@ -28,8 +26,5 @@
               {%- endfor %}
             </ul>
           </li>
-          <li><a href="/states-cases">Cases Over Time</a></li>
-          <li><a href="/states-deaths">Deaths Over Time</a></li>
-          <li><a href="/sweden-vs-other">Sweden Comparison</a></li>
         </ul>
       </nav>

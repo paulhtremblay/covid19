@@ -132,7 +132,8 @@ ul.contributors > li {
   margin-bottom: .5em;
 }
 
-ul > li > a {
+nav > ul > li > a,
+nav > ul > li > ul > li > a {
   padding: .3em;
 }
 
