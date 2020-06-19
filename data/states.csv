@@ -5674,7 +5674,7 @@ date,state,cases,deaths
 2020-06-14,New Hampshire,19,2
 2020-06-14,West Virginia,16,0
 2020-06-14,North Carolina,1288,4
-2020-06-14,South Carolina,840,1
+2020-06-14,South Carolina,841,1
 2020-06-14,Virgin Islands,0,0
 2020-06-14,District of Columbia,58,4
 2020-06-14,Northern Mariana Islands,0,0
@@ -5696,7 +5696,7 @@ date,state,cases,deaths
 2020-06-15,Georgia,631,41
 2020-06-15,Indiana,521,11
 2020-06-15,Montana,8,0
-2020-06-15,Vermont,1,0
+2020-06-15,Vermont,3,0
 2020-06-15,Wyoming,19,0
 2020-06-15,Arkansas,416,3
 2020-06-15,Colorado,169,6
@@ -5729,7 +5729,7 @@ date,state,cases,deaths
 2020-06-15,New Hampshire,27,0
 2020-06-15,West Virginia,32,0
 2020-06-15,North Carolina,1058,17
-2020-06-15,South Carolina,583,2
+2020-06-15,South Carolina,585,2
 2020-06-15,Virgin Islands,0,0
 2020-06-15,District of Columbia,32,0
 2020-06-15,Northern Mariana Islands,0,0
@@ -5751,7 +5751,7 @@ date,state,cases,deaths
 2020-06-16,Georgia,797,35
 2020-06-16,Indiana,358,14
 2020-06-16,Montana,5,0
-2020-06-16,Vermont,3,0
+2020-06-16,Vermont,0,0
 2020-06-16,Wyoming,10,0
 2020-06-16,Arkansas,274,6
 2020-06-16,Colorado,143,12
@@ -5784,7 +5784,62 @@ date,state,cases,deaths
 2020-06-16,New Hampshire,19,6
 2020-06-16,West Virginia,19,0
 2020-06-16,North Carolina,848,29
-2020-06-16,South Carolina,612,5
+2020-06-16,South Carolina,614,5
 2020-06-16,Virgin Islands,0,0
 2020-06-16,District of Columbia,19,5
 2020-06-16,Northern Mariana Islands,0,0
+2020-06-17,Guam,2,0
+2020-06-17,Iowa,353,7
+2020-06-17,Ohio,412,14
+2020-06-17,Utah,387,4
+2020-06-17,Idaho,91,0
+2020-06-17,Maine,17,1
+2020-06-17,Texas,3493,42
+2020-06-17,Alaska,25,0
+2020-06-17,Hawaii,4,0
+2020-06-17,Kansas,232,2
+2020-06-17,Nevada,179,6
+2020-06-17,Oregon,120,1
+2020-06-17,Alabama,400,5
+2020-06-17,Arizona,1861,24
+2020-06-17,Florida,2610,25
+2020-06-17,Georgia,915,44
+2020-06-17,Indiana,256,28
+2020-06-17,Montana,16,1
+2020-06-17,Vermont,0,0
+2020-06-17,Wyoming,25,0
+2020-06-17,Arkansas,415,9
+2020-06-17,Colorado,231,14
+2020-06-17,Delaware,41,2
+2020-06-17,Illinois,550,79
+2020-06-17,Kentucky,291,6
+2020-06-17,Maryland,561,14
+2020-06-17,Michigan,228,2
+2020-06-17,Missouri,221,21
+2020-06-17,Nebraska,195,3
+2020-06-17,New York,561,39
+2020-06-17,Oklahoma,259,1
+2020-06-17,Virginia,444,13
+2020-06-17,Louisiana,928,20
+2020-06-17,Minnesota,415,13
+2020-06-17,Tennessee,489,6
+2020-06-17,Wisconsin,304,9
+2020-06-17,California,4237,84
+2020-06-17,New Jersey,277,42
+2020-06-17,New Mexico,132,5
+2020-06-17,Washington,321,-5
+2020-06-17,Connecticut,80,9
+2020-06-17,Mississippi,489,23
+2020-06-17,Puerto Rico,52,0
+2020-06-17,North Dakota,43,1
+2020-06-17,Pennsylvania,310,39
+2020-06-17,Rhode Island,49,11
+2020-06-17,South Dakota,84,1
+2020-06-17,Massachusetts,266,69
+2020-06-17,New Hampshire,72,4
+2020-06-17,West Virginia,35,0
+2020-06-17,North Carolina,1037,13
+2020-06-17,South Carolina,561,10
+2020-06-17,Virgin Islands,1,0
+2020-06-17,District of Columbia,29,3
+2020-06-17,Northern Mariana Islands,0,0
