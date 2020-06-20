@@ -150,8 +150,7 @@ def make_state_tables(verbose = False, window = None):
 def get_html(header, body, caption):
     t = ENV.get_template('data_table.j2')
     return t.render(page_title = caption,
-            date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-            table_head = header, 
+            table_head = header,
             table_body =  body,
             caption = caption,
             page_class_attr = ["dataTable"],

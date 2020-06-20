@@ -98,7 +98,6 @@ def get_html(script, div, the_type):
     t = ENV.get_template('data.j2')
     return t.render(page_title = title,
             script =  script,
-            date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_class_attr = ["deathRateGrowth"],
             div = div,
             )

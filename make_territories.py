@@ -73,7 +73,6 @@ def get_html(territory, script, div, death_ro, death_double_rate,
     t = ENV.get_template('countries.j2')
     return t.render(page_title = territory,
             script = script,
-            date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_class_attr = ["country", "graph", common.make_camel_case(territory)],
             death_ro = round(death_ro, 1), cases_ro = round(cases_ro,1),
             death_double_rate = death_double_rate, 
@@ -132,6 +131,8 @@ def make_territories_dir(key):
     else:
         raise ValueError('not a valid key')
     dir_path = os.path.join('html_temp', dir_path)
+    if not os.path.isdir('html_temp'):
+        os.mkdir('html_temp')
     if not os.path.isdir(dir_path):
         os.mkdir(dir_path)
     return dir_path
@@ -150,7 +151,6 @@ def make_territories_ref_list(territory_key, territories):
         page_title = 'Countries'
     t = ENV.get_template('territories_ref.j2')
     t =  t.render(title = 'By {k}'.format(k = territory_key), 
-            date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             page_title = page_title,
             page_class_attr = ["regionList", territory_key.lower()],
             territories = [(slugify(x), x) for x in territories]

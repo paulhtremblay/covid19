@@ -21,8 +21,10 @@ fi
 
 
 BRANCH=`git rev-parse --abbrev-ref HEAD`
-rm -Rf html_temp 
+rm -Rf html_temp
 mkdir html_temp
+rm -Rf includes
+mkdir includes
 cp -R templates/styles html_temp/styles
 cp -R templates/javascript html_temp/javascript
 python make_nav.py

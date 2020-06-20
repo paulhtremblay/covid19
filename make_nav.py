@@ -1,5 +1,6 @@
 import datetime
 import os
+import datetime
 import pprint
 pp = pprint.PrettyPrinter(indent = 4)
 import csv
@@ -44,6 +45,18 @@ def get_territory_list(territory_key ='country'):
 
     return territory_list
 
+def get_site_updated_time():
+    """
+    bodge to make sure there's a date field
+    TODO: add function in get_data.py to write a csv file with last_updated
+    :return:
+    """
+    if not os.path.isdir('includes'):
+        os.mkdir('includes')
+    if not os.path.isfile('site_updated_time.txt'):
+        site_updated_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        with open(os.path.join('includes', 'site_updated_time.txt'), 'w') as write_obj:
+            write_obj.write(site_updated_time)
 
 def get_site_last_updated():
     """
@@ -61,6 +74,8 @@ def make_nav():
     """
     create nav list of US states
     """
+
+    get_site_updated_time()
 
     country_list = get_territory_list('country')
     country_list = sorted(country_list)
