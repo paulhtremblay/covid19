@@ -1,3 +1,4 @@
+import datetime
 import os
 import datetime
 import pprint
@@ -57,8 +58,18 @@ def get_site_updated_time():
         with open(os.path.join('includes', 'site_updated_time.txt'), 'w') as write_obj:
             write_obj.write(site_updated_time)
 
+def get_site_last_updated():
+    """
+    get last updated time stamp
+    """
+    path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'site_last_updated.csv')
+    with open(path, 'r') as read_obj:
+        lines = read_obj.readlines()
+    d = datetime.datetime.strptime(lines[1][0:19], '%Y-%m-%d %H:%M:%S').strftime("%Y-%m-%d %H:%M:%S")
+    return d
 
-
+    print(lines)
+    
 def make_nav():
     """
     create nav list of US states
@@ -87,6 +98,11 @@ def make_nav():
 
     with open(os.path.join('includes', 'nav.html'), 'w') as write_obj:
         write_obj.write(t)
+
+    site_last_updated = get_site_last_updated()
+    with open(os.path.join('includes', 'site_updated_time.txt'), 'w') as write_obj:
+        write_obj.write(site_last_updated)
+
 
 
 if __name__ == '__main__':
