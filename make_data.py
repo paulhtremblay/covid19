@@ -188,8 +188,8 @@ group by date_trunc(date, week), county, state, the_rank
 def get_timestamp():
     return  """
     /* LAST UPDATED */
-  SELECT NOW()
-  FROM `paul-henry-tremblay.covid19`
+  SELECT  TIMESTAMP_MILLIS(last_modified_time) as last_updated
+FROM `covid19.__TABLES__` where table_id = 'us_states'
   """
 
 

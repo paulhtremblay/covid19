@@ -1,3 +1,4 @@
+import datetime
 import os
 import pprint
 pp = pprint.PrettyPrinter(indent = 4)
@@ -50,12 +51,12 @@ def get_site_last_updated():
     """
     path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'site_last_updated.csv')
     with open(path, 'r') as read_obj:
-        df = pd.read_csv(read_obj)
-    return df.loc['site_last_updated'].iloc[0]
+        lines = read_obj.readlines()
+    d = datetime.datetime.strptime(lines[1][0:19], '%Y-%m-%d %H:%M:%S').strftime("%Y-%m-%d %H:%M:%S")
+    return d
 
-
-
-
+    print(lines)
+    
 def make_nav():
     """
     create nav list of US states
