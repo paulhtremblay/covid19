@@ -91,6 +91,7 @@ def make_state_graphs():
             ('Georgia',),
             ('Kentucky',),
             ('Tennessee',),
+            ('Utah',),
            ]
     df_ny = shape_data(df = df_state, df_pop = df_pop, state = 'New York')
     df_wash = shape_data(df = df_state, df_pop = df_pop, state = 'Washington')
