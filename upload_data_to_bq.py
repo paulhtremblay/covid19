@@ -10,7 +10,12 @@ import datetime
 def get_html_file(url):
     fh, path = tempfile.mkstemp()
     urllib.request.urlretrieve(url, path)
-    with open(path, 'r') as read_obj, open('world_tmp.csv', 'w') as write_obj:
+    fh2, path2 = tempfile.mkstemp()
+    with open(path2, 'w') as write_obj, open(path, 'r') as read_obj:
+        for line in read_obj.readlines():
+            line = line.replace('\ufeff', '')
+            write_obj.write(line)
+    with open(path2, 'r') as read_obj, open('world_tmp.csv', 'w') as write_obj:
         reader = csv.DictReader(read_obj)
         csv_writer = csv.writer(write_obj)
         counter = 0
@@ -26,12 +31,14 @@ def get_html_file(url):
                 country_code2 = 'N/A'
             cases = row['cases']
             deaths = row['deaths']
-            population = row['popData2018']
+            population = row['popData2019']
             if population == '':
                 population = 0
             csv_writer.writerow([date, country, country_code1, country_code2, cases, deaths, population])
     os.close(fh)
     os.remove(path)
+    os.close(fh2)
+    os.remove(path2)
     return 'world_tmp.csv'
 
 def upload_to_storage(local_path, bucket_name, blob_name):
