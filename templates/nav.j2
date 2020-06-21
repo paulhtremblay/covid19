@@ -3,26 +3,25 @@
           <li><a href="/">Home</a></li>
           <li class="hasSubmenu">
             <a href="/countries/">Countries</a>
-            <ul class="submenu" hidden>
+            <ul class="submenu regions" hidden>
               {%- for c in countries %}
-              <li><a href="/countries/{{ c[0]}}">{{ c[1] }}</a></li>
+              <li><a href="{{ c[1] }}">{{ c[0] }}</a></li>
               {%- endfor %}
             </ul>
           </li>
           <li class="hasSubmenu">
             <a href="/states/">U.S. States</a>
-            <ul class="submenu" hidden>
+            <ul class="submenu regions" hidden>
               {%- for s in states %}
-              <li><a href="/states/{{ s[0]}}">{{ s[1] }}</a></li>
+              <li><a href="{{ s[1] }}">{{ s[0] }}</a></li>
               {%- endfor %}
             </ul>
           </li>
-          <li class="hasSubmenu">
+          <li class="hasSubmenu lastRegionContainer">
             <a href="/counties/">Counties</a>
-            <ul class="submenu county" hidden>
+            <ul class="submenu regions county" hidden>
               {%- for ct in counties %}
-              <li><a href="/counties/{{ ct[0]}}-cases">{{ ct[1] }} cases</a></li>
-              <li><a href="/counties/{{ ct[0]}}-deaths">{{ ct[1] }} deaths</a></li>
+              <li><a href="{{ ct[1] }}">{{ ct[0] }}</a></li>
               {%- endfor %}
             </ul>
           </li>
@@ -32,5 +31,10 @@
           <li><a href="/table-data-deaths">Table Data Deaths</a></li>
           <li><a href="/table-data-cases">Table Data Cases</a></li>        
           <li><a href="/comparisons">Comparsions: States with Increasing Rates</a></li>        
+          <li><a href="/states-cases">Cases Over Time</a></li>
+          <li><a href="/states-deaths">Deaths Over Time</a></li>
+          <li><a href="/sweden-vs-other">Sweden Comparison</a></li>
+          <li><a href="/table-data-cases">Table of Cases</a></li>
+          <li><a href="/table-data-deaths">Table of Deaths</a></li>
         </ul>
       </nav>

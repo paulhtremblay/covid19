@@ -19,6 +19,9 @@ body {
   padding-top: 0;
 }
 
+footer {
+  margin-top: 4em;
+}
 body > header > nav,
 .siteNameSlogan {
   margin-left: var(--bleedMargin);
@@ -69,16 +72,21 @@ nav > ul > li > a {
   background-color: var(--bloodRed);
 }
 
-nav > ul > li > a {
+nav > ul > li > label > input {
+  font-size: 90%;
+  width: 9em;
+}
+
+nav > ul > li > a,
+nav > ul > li > svg {
   padding: .5em;
 }
 
-nav > ul > li.hasSubmenu > a {
-}
-
-.siteName > a:hover,
-nav > ul > li > a:hover {
+.hasSubmenu > svg:hover,
+nav > ul > li > a:hover,
+.siteName > a:hover {
   color: var(--bloodRed);
+  stroke: var(--bloodRed);
   background-color: var(--golden);
 }
 
@@ -86,19 +94,33 @@ nav > ul > li > a:hover {
   text-decoration: none;
 }
 
-svg {
-  height: 1.5em;
-  width: 1.3em;
-  padding: 0 .3em 0 .3em;
+nav > ul {
+  line-height: 2.4em;
+}
+
+.submenu {
+  line-height: 1.2em;
+  font-size: 1rem;
+}
+
+.hasSubmenu svg {
   vertical-align: middle;
   stroke: var(--golden);
+}
+
+.hasSubmenu > svg {
+  height: 1.5em;
+  width: 1.3em;
   margin-left: -.3em;
 }
 
-svg:hover {
-  cursor: pointer;
-  stroke: var(--bloodRed);
-  background-color: var(--golden);
+.hasSubmenu > label > svg {
+  fill: var(--bloodRed);
+  height: 2.5em;
+  width: auto;
+  transform: rotate(40deg);
+  margin-right: .5em;
+  margin-left: .1em;
 }
 
 svg.open {
@@ -107,7 +129,7 @@ svg.open {
 
 ul.contributors > li {
   margin-top: .5em;
-    margin-bottom: .5em;
+  margin-bottom: .5em;
 }
 
 ul > li > a {
@@ -121,7 +143,7 @@ li.hasSubmenu {
 .submenu {
   position: absolute;
   left: 0;
-  top: 2em;
+  top: 3em;
   margin-left: 0;
   padding-left: 0;
   max-height: 30em;
@@ -133,6 +155,14 @@ li.hasSubmenu {
   z-index: 10;
   display: none;
   box-shadow: .3em -0.1em .5em var(--bloodRed)
+}
+
+.lastRegionContainer + .hasSubmenu > .submenu {
+  left: 2em;
+}
+
+.submenu > li {
+  min-width: 12em;
 }
 
 .submenu > li > a {
@@ -170,7 +200,6 @@ li.hasSubmenu {
     padding-left: 0;
     display: flex;
     flex-flow: wrap;
-    justify-content: space-evenly;
   }
 
   nav > ul > li {
@@ -191,7 +220,7 @@ li.hasSubmenu {
 @media screen and (min-width: 40em) {
 
   nav > ul {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
 }

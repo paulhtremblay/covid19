@@ -1,4 +1,6 @@
+import datetime
 import os
+import datetime
 import pprint
 pp = pprint.PrettyPrinter(indent = 4)
 import csv
@@ -20,7 +22,14 @@ ENV = Environment(
     autoescape=select_autoescape(['html', 'xml'])
 )
 
-def get_territory_list(territory_key ='country'):
+def get_territory_list(territory_key = 'country'):
+    """
+    Searches .csv file and returns unique regions from region column. Creates
+    list of tuples, where the first field is the name of the web page, and the
+    second is the page's url.
+    :param territory_key: str determining which .csv file to search and filter
+    :return: alphabetically sorted list of tuples
+    """
     if territory_key == 'country':
         csv_file_name = 'world'
     elif territory_key == 'state':
@@ -34,44 +43,74 @@ def get_territory_list(territory_key ='country'):
         df = pd.read_csv(read_obj)
 
     if territory_key == 'country':
-        territory_list = df.country.unique()
-        territory_list = [w.replace('_', ' ') for w in territory_list]
-    elif territory_key == 'state':
-        territory_list = df.state.unique()
-    else:
-        territory_list = df.state.unique()
+        t_list = df.country.unique()
+        t_list = [w.replace('_', ' ') for w in t_list]
+        territory_list = [(t, '/countries/' + slugify(t)) for t in t_list]
 
+    elif territory_key == 'state':
+        t_list = df.state.unique()
+        territory_list = [(t, '/states/' + slugify(t)) for t in t_list]
+
+    else:
+        t_list = df.state.unique()
+        territory_list = [(t + ' Cases by County', '/counties/' + slugify(t) + '-cases') for t in t_list]
+        territory_list += [(t + ' Deaths by County', '/counties/' + slugify(t) + '-deaths') for t in t_list]
+
+    territory_list = sorted(territory_list)
     return territory_list
 
+def get_site_updated_time():
+    """
+    bodge to make sure there's a date field
+    TODO: add function in get_data.py to write a csv file with last_updated
+    :return:
+    """
+    if not os.path.isdir('includes'):
+        os.mkdir('includes')
+    if not os.path.isfile('site_updated_time.txt'):
+        site_updated_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        with open(os.path.join('includes', 'site_updated_time.txt'), 'w') as write_obj:
+            write_obj.write(site_updated_time)
 
+def get_site_last_updated():
+    """
+    get last updated time stamp
+    """
+    path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'site_last_updated.csv')
+    with open(path, 'r') as read_obj:
+        lines = read_obj.readlines()
+    d = datetime.datetime.strptime(lines[1][0:19], '%Y-%m-%d %H:%M:%S').strftime("%Y-%m-%d %H:%M:%S")
+    return d
 
-
+    print(lines)
+    
 def make_nav():
     """
     create nav list of US states
     """
 
+    get_site_updated_time()
+
     country_list = get_territory_list('country')
-    country_list = sorted(country_list)
-
     state_list = get_territory_list('state')
-    state_list = sorted(state_list)
-
     county_list = get_territory_list('county')
-    county_list = sorted(county_list)
 
     t = ENV.get_template('nav.j2')
     t =  t.render(
-
-            countries = [(slugify(x), x) for x in country_list],
-            states = [(slugify(x), x) for x in state_list],
-            counties = [(slugify(x), x) for x in county_list]
-            )
+            countries = country_list,
+            states = state_list,
+            counties = county_list
+        )
     if not os.path.isdir('includes'):
         os.mkdir('includes')
 
     with open(os.path.join('includes', 'nav.html'), 'w') as write_obj:
         write_obj.write(t)
+
+    site_last_updated = get_site_last_updated()
+    with open(os.path.join('includes', 'site_updated_time.txt'), 'w') as write_obj:
+        write_obj.write(site_last_updated)
+
 
 
 if __name__ == '__main__':
