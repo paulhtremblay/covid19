@@ -7,7 +7,8 @@ from bokeh.io import show
 from bokeh.plotting import figure
 from bokeh.layouts import gridplot
 import pprint
-pp =pprint.PrettyPrinter(indent = 4)
+pp = pprint.PrettyPrinter(indent=4)
+
 
 def get_data2():
     sql = """
@@ -140,9 +141,9 @@ def get_data():
             val_r.append(daily_cases)
             daily_cases_per_100k_people_r.append(daily_cases_per_100k_people)
             daily_deaths_per_100k_people_r.append(daily_deaths_per_100k_people)
-    return (date_u, val_u, date_r, val_r, daily_cases_per_100k_people_u , 
-            daily_cases_per_100k_people_r, daily_deaths_per_100k_people_u, 
-            daily_deaths_per_100k_people_r) 
+    return (date_u, val_u, date_r, val_r, daily_cases_per_100k_people_u,
+            daily_cases_per_100k_people_r, daily_deaths_per_100k_people_u,
+            daily_deaths_per_100k_people_r)
 
 
 def daily_cases_graph(dates_1, val_1, dates_2, val_2):
@@ -158,13 +159,21 @@ def daily_cases_graph(dates_1, val_1, dates_2, val_2):
     plt.show()
     plt.savefig('temp.png')
 
-def daily_cases_graph_bokeh(dates, incidents, plot_height = 250, 
-        plot_width= 250, title = None):
+
+def daily_cases_graph_bokeh(dates,
+                            incidents,
+                            plot_height=250,
+                            plot_width=250,
+                            title=None):
     #have to convert date to datetime. rather inconvenient but necessary
-    dates = [datetime.datetime(x.year, x.month, x.day) for x in dates if x != None]
-    p = figure(x_axis_type = 'datetime', title = title, plot_height =plot_height, 
-            plot_width = plot_width) 
-    p.line(x = dates, y = incidents, color = 'red')
+    dates = [
+        datetime.datetime(x.year, x.month, x.day) for x in dates if x != None
+    ]
+    p = figure(x_axis_type='datetime',
+               title=title,
+               plot_height=plot_height,
+               plot_width=plot_width)
+    p.line(x=dates, y=incidents, color='red')
     p.yaxis.axis_label = 'per 100k'
     return p
 
@@ -182,22 +191,28 @@ daily_cases_graph_bokeh(date_u, daily_cases_per_100k_people_u, date_r, daily_cas
 """
 the_dict = get_data2()
 data_king = the_dict['King']
-dates =[]
+dates = []
 for i in data_king:
     dates.append(i[0])
 cases = []
 for i in data_king:
     cases.append(i[1])
-p_king = daily_cases_graph_bokeh(dates, cases)
+p_king = daily_cases_graph_bokeh(dates,
+                                 cases,
+                                 title='King County',
+                                 plot_width=500)
 
 data_lincoln = the_dict['Jefferson']
-dates =[]
+dates = []
 for i in data_lincoln:
     dates.append(i[0])
 cases = []
 for i in data_lincoln:
     cases.append(i[1])
-p_lincoln = daily_cases_graph_bokeh(dates, cases)
+p_lincoln = daily_cases_graph_bokeh(dates,
+                                    cases,
+                                    plot_width=500,
+                                    title='Jerrerson')
 
-grid = gridplot([p_king, p_lincoln], ncols = 2)
+grid = gridplot([p_king, p_lincoln], ncols=2)
 show(grid)

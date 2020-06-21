@@ -94,11 +94,11 @@ def two_weekly_case_per_100k_people_graph_bokeh(date, threshold):
     p.yaxis.axis_label = 'cases/100k'
     show(p)
 
-def get_data():
+def get_data_h():
     all_data, thresholds  = get_data()
 
 def main():
-    get_data()
+    get_data_h()
     # do something with the data
 
     #two_weekly_case_per_100k_people_graph_bokeh(dates, two_weekly_cases_per_100k_people)
