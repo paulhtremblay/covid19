@@ -70,6 +70,16 @@ def upload_html(bucket_name, verbose):
                 object_name = 'styles/{name}'.format(name = tail),
                 content_type = 'text/css'
                 )
+    files6 = glob.glob('templates/javascript/*')
+    for i in files6:
+        head, tail = os.path.split(i)
+        if verbose:
+            print('uploading {t}'.format(t = tail))
+        upload_to_storage(local_path = i, bucket_name = bucket_name,
+                object_name = 'javascript/{name}'.format(name = tail),
+                content_type = 'text/javascript'
+                )
+
 
 def get_bucket_name(branch):
     if branch == 'dev':
