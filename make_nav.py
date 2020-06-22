@@ -84,7 +84,7 @@ def get_site_last_updated():
     
 def make_nav():
     """
-    create nav list of US states
+    create nav list of countries, US states, and U.S. state counties
     """
 
     get_site_updated_time()

@@ -2,6 +2,10 @@
 
 {# about the site page to show links to contributors' github pages #}
 
+      {%- block last_updated %}
+
+      {%- endblock last_updated -%}
+
 {% block content %}
       <p>
         {{ site_title }} is a collaborative project with these contributors:
@@ -15,6 +19,11 @@
         </li>
       	{% endfor %}
       </ul>
+
+        <p>
+            Contributions list last updated:
+            <time datetime="{{ about_page_update }}Z">{{ about_page_update }} UTC</time>
+        </p>
 
 {% endblock content %}
 
