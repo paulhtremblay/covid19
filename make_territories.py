@@ -30,7 +30,7 @@ ENV = Environment(
     autoescape=select_autoescape(['html', 'xml'])
 )
 
-
+ENV.filters['slugify'] = slugify
 
 def get_world_data_week():
     """
@@ -153,7 +153,7 @@ def make_territories_ref_list(territory_key, territories):
     t =  t.render(title = 'By {k}'.format(k = territory_key), 
             page_title = page_title,
             page_class_attr = ["regionList", territory_key.lower()],
-            territories = [(slugify(x), x) for x in territories]
+            territories = territories
             )
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')

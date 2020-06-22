@@ -1,34 +1,30 @@
-<nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li class="hasSubmenu">
-            <a href="/countries/">Countries</a>
-            <ul class="submenu regions" hidden>
-              {%- for c in countries %}
-              <li><a href="{{ c[1] }}">{{ c[0] }}</a></li>
-              {%- endfor %}
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li class="hasSubmenu">
+                <a href="/countries/">Countries</a>
+                <ul class="submenu regions" hidden>
+                  {%- for c in countries %}
+                  <li><a href="/countries/{{ c|slugify }}">{{ c }}</a></li>
+                  {%- endfor %}
+                </ul>
+              </li>
+              <li class="hasSubmenu">
+                <a href="/states/"><abbr title="United States">U.S.</abbr> States</a>
+                <ul class="submenu regions" hidden>
+                  {%- for s in states %}
+                  <li><a href="/states/{{ s|slugify }}">{{ s }}</a></li>
+                  {%- endfor %}
+                </ul>
+              </li>
+              <li class="hasSubmenu lastRegionContainer">
+                <a href="/counties/"><abbr title="United States">U.S.</abbr> Counties</a>
+                <ul class="submenu regions county" hidden>
+                  {%- for ct in counties %}
+                  <li><a href="/counties/{{ ct|slugify }}-cases">{{ ct }} Cases by County</a></li>
+                  <li><a href="/counties/{{ ct|slugify }}-deaths">{{ ct }} Deaths by County</a></li>
+                  {%- endfor %}
+                </ul>
+              </li>
             </ul>
-          </li>
-          <li class="hasSubmenu">
-            <a href="/states/">U.S. States</a>
-            <ul class="submenu regions" hidden>
-              {%- for s in states %}
-              <li><a href="{{ s[1] }}">{{ s[0] }}</a></li>
-              {%- endfor %}
-            </ul>
-          </li>
-          <li class="hasSubmenu lastRegionContainer">
-            <a href="/counties/">Counties</a>
-            <ul class="submenu regions county" hidden>
-              {%- for ct in counties %}
-              <li><a href="{{ ct[1] }}">{{ ct[0] }}</a></li>
-              {%- endfor %}
-            </ul>
-          </li>
-          <li><a href="/states-cases">Cases Over Time</a></li>
-          <li><a href="/states-deaths">Deaths Over Time</a></li>
-          <li><a href="/sweden-vs-other">Sweden Comparison</a></li>
-          <li><a href="/table-data-cases">Table of Cases</a></li>
-          <li><a href="/table-data-deaths">Table of Deaths</a></li>
-        </ul>
-      </nav>
+          </nav>

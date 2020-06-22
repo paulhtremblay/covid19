@@ -1,9 +1,16 @@
 {% extends "data.j2" %}
 
 {% block content %}
+
+        <p>
+            Choose a country in the list below to see graphs for that country.
+            You can also look at
+            <a href="/sweden-vs-other">Sweden Compared With Other Countries</a>.
+        </p>
+
       <ul>
         {% for t in territories %}
-		    <li><a href="{{ t[0]}}">{{ t[1] }}</a></li>
+		    <li><a href="{{ t|slugify }}">{{ t }}</a></li>
         {% endfor %}
       </ul>
 	<p><a href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Washington by RT</a>
