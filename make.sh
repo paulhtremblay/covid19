@@ -34,8 +34,9 @@ python by_state.py
 python sweden.py
 python make_index_404.py
 python make_about.py
-python data_table.py
-python by_counties.py
+python comparison_open.py
+#python data_table.py
+#python by_counties.py
 UPLOAD_TO=dev
 if [ $BRANCH == 'master' ]; then
 	UPLOAD_TO=prod
