@@ -31,7 +31,10 @@
       </div>
 	  {% block page_h1 %}<h1>{{ page_title }}</h1>{% endblock page_h1 %}
       {%- block last_updated %}
-      {%- endblock last_updated -%}
+      <p>
+        Last updated: <time>{% include "site_updated_time.txt" %}</time>
+      </p>
+      {%- endblock last_updated %}
     </header>
 
     <main class="{{ page_class_attr|join(' ') }}"> {# TODO change to xmlattr filter #}

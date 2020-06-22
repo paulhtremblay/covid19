@@ -193,13 +193,6 @@ def get_timestamp():
 FROM `covid19.__TABLES__` where table_id = 'us_states'
   """
 
-def get_site_updated_time():
-    site_updated_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    if not os.path.isdir('includes'):
-        os.mkdir('includes')
-    with open(os.path.join('includes', 'site_updated_time.txt'), 'w') as write_obj:
-        write_obj.write(site_updated_time)
-
 
 def gen_writer(client, sql, path):
     result = client.query(sql)
@@ -238,7 +231,6 @@ def get_all_data():
             path = 'seven_day_county.csv')
     gen_writer(client = client, sql = get_timestamp(),
             path = 'site_last_updated.csv')
-    get_site_updated_time()
 
 if __name__ == '__main__':
     get_all_data()
