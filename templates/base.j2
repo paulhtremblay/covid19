@@ -37,22 +37,33 @@
       {%- endblock last_updated %}
     </header>
 
-    <main class="{{ page_class_attr|join(' ') }}"> {# TODO change to xmlattr filter #}
+    <main class="{{ page_class_attr|join(' ') }}">
     {% block content %}
     {% endblock content %}
     </main>
 
     <footer>
+
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/countries/">Countries</a></li>
+                <li><a href="/states/">U.S. States</a></li>
+                <li><a href="/counties/">U.S. Counties</a></li>
+            </ul>
+        </nav>
+
       <address>
       	<p>
         	This page is part of {{ site_name }}, a
-            {% block about_link %}<a href="/about">collaborative project</a>{% endblock about_link %}
-        	created by <a href="https://github.com/paulhtremblay">Henry Tremblay</a>
+          {% block about_link %}<a href="/about">collaborative project</a>{% endblock about_link %}
+        	created by <a href="https://github.com/paulhtremblay">Henry Tremblay</a>.
         </p>
       	<p>
-        	<a href="https://github.com/paulhtremblay/covid19">contributions welcome</a>
+        	<a href="https://github.com/paulhtremblay/covid19">Contributions welcome</a>.
       	</p>
       </address>
+
     </footer>
 
   </body>

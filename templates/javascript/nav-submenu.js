@@ -14,7 +14,7 @@ $(document).ready(function(){
   $('<li class="hasSubmenu searchWidget"></li>')
     .append('<label title="search for a country or state"></label>')
     .append('<output><ul class="submenu" hidden></ul></output>')
-    .appendTo('body > header > div > nav > ul');
+    .appendTo('body > header > div > nav > ul, body > footer > nav > ul');
 
   // append svg search icon and input element to label
   $('.hasSubmenu > label')
@@ -58,7 +58,7 @@ $(document).ready(function(){
     // if there are characters in the input
     closeSubmenus();
     if ($.trim(this.value)) {
-      $('output > .submenu').slideDown(300);
+      $(this).parent('label').next('output').children('.submenu').slideDown(300);
     }
   });
 
@@ -71,13 +71,13 @@ $(document).ready(function(){
 
     if (searchText) {
       // filter search results based on text entered in input
-      $('output > .submenu > li').each(function(){
+      $(this).parent('label').next('output').children('.submenu').children('li').each(function(){
         regionName = $(this).text().toLowerCase();
         (regionName.indexOf(searchText) >= 0) ? $(this).show() : $(this).hide();
       });
       // show search results output ul.submenu
-      if ($('output > .submenu').is(':hidden')) {
-        $('output > .submenu').slideDown(300);
+      if ($(this).parent('label').next('output').children('.submenu').is(':hidden')) {
+        $(this).parent('label').next('output').children('.submenu').slideDown(300);
       }
     }
     else {

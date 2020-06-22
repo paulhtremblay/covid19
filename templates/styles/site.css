@@ -1,34 +1,46 @@
 /* site wide styles for covid 19 data site */
 
-html {
-  --bleedPadding: .5rem;
-  --bleedMargin: -.4rem;
+body {
+  --pagePadding: .5rem;
+
   --bloodRed: rgb(155, 17, 28);
   --golden: #ffdc00;
   --brightYellow: #ffff00;
+
+  --linkHoverColor: white;
+  --linkHoverBgColor: #00f;
 }
 
-header {
+footer,
+.siteMarque {
   --txtColor: var(--golden);
   --bgColor: var(--bloodRed);
+  --linkHoverColor: var(--bloodRed);
+  --linkHoverBgColor: var(--golden);
 }
 
 body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
-  margin-top: 0;
-  padding-top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body > header > h1,
+body > header > p,
+footer,
+main,
+.siteMarque {
+  padding-left: var(--pagePadding);
+  padding-right: var(--pagePadding);
+}
+
+footer {
+  padding-top: var(--pagePadding);
+  padding-bottom: var(--pagePadding);
 }
 
 footer {
   margin-top: 4em;
-}
-
-body > header > nav,
-.siteMarque {
-  margin-left: var(--bleedMargin);
-  margin-right: var(--bleedMargin);
-  padding-left: var(--bleedPadding);
-  padding-right: var(--bleedPadding);
 }
 
 .siteMarque {
@@ -38,9 +50,22 @@ body > header > nav,
 a.siteName,
 h1.siteName,
 .siteMarque,
-nav > ul > li > a {
+nav > ul > li > a,
+footer,
+footer > address > p > a {
   color: var(--txtColor);
   background-color: var(--bgColor);
+}
+
+a:hover {
+  color: var(--linkHoverColor);
+  background-color: var(--linkHoverBgColor);
+  text-decoration: none;
+}
+
+.hasSubmenu > svg:hover {
+  stroke: var(--bgColor);
+  background-color: var(--linkHoverBgColor);
 }
 
 h1 {
@@ -88,12 +113,6 @@ nav > ul > li > svg {
   fill: var(--bgColor);
 }
 
-a:hover {
-  color: white;
-  background-color: blue;
-  text-decoration: none;
-}
-
 .hasSubmenu svg {
   vertical-align: middle;
 }
@@ -104,15 +123,6 @@ a:hover {
   transform: rotate(40deg);
   margin-right: .5em;
   margin-left: .1em;
-}
-
-a.siteName:hover,
-.hasSubmenu > svg:hover,
-nav > ul > li > a:hover {
-  /* reverse color on nav :hover */
-  color: var(--bgColor);
-  stroke: var(--bgColor);
-  background-color: var(--txtColor);
 }
 
 a.siteName {
@@ -219,7 +229,6 @@ h1.siteName {
 
     .submenu {
       position: absolute;
-      left: 0;
       top: 3em;
       margin-left: 0;
       padding-left: 0;
@@ -232,6 +241,11 @@ h1.siteName {
       z-index: 10;
       display: none;
       box-shadow: .3em -0.1em .5em var(--bgColor);
+    }
+
+    footer .hasSubmenu > output > .submenu {
+      top: unset;
+      bottom: 3em;
     }
 
     .hasSubmenu > output > .submenu {
