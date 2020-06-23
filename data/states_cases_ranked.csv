@@ -349,10 +349,9 @@ date,state,county,cases,rank
 2020-03-15,Wyoming,other,1,4
 2020-03-15,Arkansas,other,2,10
 2020-03-15,Arkansas,other,25,100
-2020-03-15,Arkansas,other,0,9
+2020-03-15,Arkansas,other,0,7
 2020-03-15,Arkansas,Washington,0,1
 2020-03-15,Arkansas,Benton,0,2
-2020-03-15,Arkansas,other,0,7
 2020-03-15,Arkansas,other,17,6
 2020-03-15,Arkansas,other,0,4
 2020-03-15,Arkansas,Pulaski,21,3
@@ -615,10 +614,9 @@ date,state,county,cases,rank
 2020-03-22,Wyoming,other,12,4
 2020-03-22,Arkansas,other,40,10
 2020-03-22,Arkansas,other,148,100
-2020-03-22,Arkansas,other,0,9
+2020-03-22,Arkansas,other,14,7
 2020-03-22,Arkansas,Washington,13,1
 2020-03-22,Arkansas,Benton,28,2
-2020-03-22,Arkansas,other,14,7
 2020-03-22,Arkansas,other,6,6
 2020-03-22,Arkansas,other,5,4
 2020-03-22,Arkansas,Pulaski,64,3
@@ -898,12 +896,11 @@ date,state,county,cases,rank
 2020-03-29,Arkansas,other,-49,10
 2020-03-29,Arkansas,other,181,100
 2020-03-29,Arkansas,other,2,5
-2020-03-29,Arkansas,other,2,9
+2020-03-29,Arkansas,other,31,7
 2020-03-29,Arkansas,Washington,11,1
 2020-03-29,Arkansas,Benton,11,2
-2020-03-29,Arkansas,other,29,7
 2020-03-29,Arkansas,other,28,6
-2020-03-29,Arkansas,other,0,8
+2020-03-29,Arkansas,other,0,9
 2020-03-29,Arkansas,other,0,4
 2020-03-29,Arkansas,Pulaski,47,3
 2020-03-29,Colorado,Adams,225,3
@@ -988,8 +985,8 @@ date,state,county,cases,rank
 2020-03-29,New Jersey,other,2248,4
 2020-03-29,New Jersey,other,507,13
 2020-03-29,New Jersey,other,2174,6
-2020-03-29,New Mexico,Bernalillo,132,3
 2020-03-29,New Mexico,other,66,100
+2020-03-29,New Mexico,Bernalillo,132,3
 2020-03-29,New Mexico,other,6,5
 2020-03-29,New Mexico,McKinley,27,1
 2020-03-29,New Mexico,other,1,4
@@ -1191,12 +1188,11 @@ date,state,county,cases,rank
 2020-04-05,Arkansas,other,7,10
 2020-04-05,Arkansas,other,222,100
 2020-04-05,Arkansas,other,28,5
-2020-04-05,Arkansas,other,3,9
+2020-04-05,Arkansas,other,48,7
 2020-04-05,Arkansas,Washington,12,1
 2020-04-05,Arkansas,Benton,7,2
-2020-04-05,Arkansas,other,45,7
 2020-04-05,Arkansas,other,38,6
-2020-04-05,Arkansas,other,1,8
+2020-04-05,Arkansas,other,1,9
 2020-04-05,Arkansas,other,4,4
 2020-04-05,Arkansas,Pulaski,110,3
 2020-04-05,Colorado,Adams,273,3
@@ -1485,12 +1481,11 @@ date,state,county,cases,rank
 2020-04-12,Arkansas,other,27,10
 2020-04-12,Arkansas,other,156,100
 2020-04-12,Arkansas,other,33,5
-2020-04-12,Arkansas,other,3,9
+2020-04-12,Arkansas,other,52,7
 2020-04-12,Arkansas,Washington,8,1
 2020-04-12,Arkansas,Benton,15,2
-2020-04-12,Arkansas,other,49,7
 2020-04-12,Arkansas,other,27,6
-2020-04-12,Arkansas,other,1,8
+2020-04-12,Arkansas,other,1,9
 2020-04-12,Arkansas,other,101,4
 2020-04-12,Arkansas,Pulaski,128,3
 2020-04-12,Colorado,Adams,301,3
@@ -1780,12 +1775,11 @@ date,state,county,cases,rank
 2020-04-19,Arkansas,other,156,10
 2020-04-19,Arkansas,other,150,100
 2020-04-19,Arkansas,other,11,5
-2020-04-19,Arkansas,other,2,9
+2020-04-19,Arkansas,other,33,7
 2020-04-19,Arkansas,Washington,29,1
 2020-04-19,Arkansas,Benton,17,2
-2020-04-19,Arkansas,other,31,7
 2020-04-19,Arkansas,other,31,6
-2020-04-19,Arkansas,other,0,8
+2020-04-19,Arkansas,other,0,9
 2020-04-19,Arkansas,other,610,4
 2020-04-19,Arkansas,Pulaski,94,3
 2020-04-19,Colorado,Adams,408,3
@@ -2075,12 +2069,11 @@ date,state,county,cases,rank
 2020-04-26,Arkansas,other,-24,10
 2020-04-26,Arkansas,other,210,100
 2020-04-26,Arkansas,other,12,5
-2020-04-26,Arkansas,other,1,9
+2020-04-26,Arkansas,other,25,7
 2020-04-26,Arkansas,Washington,13,1
 2020-04-26,Arkansas,Benton,33,2
-2020-04-26,Arkansas,other,24,7
 2020-04-26,Arkansas,other,29,6
-2020-04-26,Arkansas,other,0,8
+2020-04-26,Arkansas,other,0,9
 2020-04-26,Arkansas,other,96,4
 2020-04-26,Arkansas,Pulaski,68,3
 2020-04-26,Colorado,Adams,428,3
@@ -2167,8 +2160,8 @@ date,state,county,cases,rank
 2020-04-26,New Jersey,other,2344,4
 2020-04-26,New Jersey,other,575,13
 2020-04-26,New Jersey,other,1473,6
-2020-04-26,New Mexico,Bernalillo,213,3
 2020-04-26,New Mexico,other,84,100
+2020-04-26,New Mexico,Bernalillo,213,3
 2020-04-26,New Mexico,other,43,5
 2020-04-26,New Mexico,McKinley,408,1
 2020-04-26,New Mexico,other,1,4
@@ -2370,12 +2363,11 @@ date,state,county,cases,rank
 2020-05-03,Arkansas,other,-24,10
 2020-05-03,Arkansas,other,137,100
 2020-05-03,Arkansas,other,21,5
-2020-05-03,Arkansas,other,4,9
+2020-05-03,Arkansas,other,16,7
 2020-05-03,Arkansas,Washington,18,1
 2020-05-03,Arkansas,Benton,4,2
-2020-05-03,Arkansas,other,12,7
 2020-05-03,Arkansas,other,48,6
-2020-05-03,Arkansas,other,1,8
+2020-05-03,Arkansas,other,1,9
 2020-05-03,Arkansas,other,90,4
 2020-05-03,Arkansas,Pulaski,64,3
 2020-05-03,Colorado,Adams,475,3
@@ -2462,8 +2454,8 @@ date,state,county,cases,rank
 2020-05-03,New Jersey,other,1346,4
 2020-05-03,New Jersey,other,391,13
 2020-05-03,New Jersey,other,988,6
-2020-05-03,New Mexico,Bernalillo,167,3
 2020-05-03,New Mexico,other,72,100
+2020-05-03,New Mexico,Bernalillo,167,3
 2020-05-03,New Mexico,other,59,5
 2020-05-03,New Mexico,McKinley,392,1
 2020-05-03,New Mexico,other,9,4
@@ -2665,12 +2657,11 @@ date,state,county,cases,rank
 2020-05-10,Arkansas,other,-23,10
 2020-05-10,Arkansas,other,256,100
 2020-05-10,Arkansas,other,227,5
-2020-05-10,Arkansas,other,11,9
+2020-05-10,Arkansas,other,36,7
 2020-05-10,Arkansas,Washington,36,1
 2020-05-10,Arkansas,Benton,28,2
-2020-05-10,Arkansas,other,25,7
 2020-05-10,Arkansas,other,136,6
-2020-05-10,Arkansas,other,6,8
+2020-05-10,Arkansas,other,6,9
 2020-05-10,Arkansas,other,48,4
 2020-05-10,Arkansas,Pulaski,80,3
 2020-05-10,Colorado,Adams,370,3
@@ -2960,12 +2951,11 @@ date,state,county,cases,rank
 2020-05-17,Arkansas,other,17,10
 2020-05-17,Arkansas,other,349,100
 2020-05-17,Arkansas,other,293,5
-2020-05-17,Arkansas,other,52,9
+2020-05-17,Arkansas,other,102,7
 2020-05-17,Arkansas,Washington,92,1
 2020-05-17,Arkansas,Benton,93,2
-2020-05-17,Arkansas,other,50,7
 2020-05-17,Arkansas,other,142,6
-2020-05-17,Arkansas,other,4,8
+2020-05-17,Arkansas,other,4,9
 2020-05-17,Arkansas,other,15,4
 2020-05-17,Arkansas,Pulaski,90,3
 2020-05-17,Colorado,Adams,281,3
@@ -3052,8 +3042,8 @@ date,state,county,cases,rank
 2020-05-17,New Jersey,other,579,4
 2020-05-17,New Jersey,other,213,13
 2020-05-17,New Jersey,other,617,6
+2020-05-17,New Mexico,other,74,100
 2020-05-17,New Mexico,Bernalillo,132,3
-2020-05-17,New Mexico,other,71,100
 2020-05-17,New Mexico,other,109,5
 2020-05-17,New Mexico,McKinley,264,1
 2020-05-17,New Mexico,other,108,4
@@ -3255,12 +3245,11 @@ date,state,county,cases,rank
 2020-05-24,Arkansas,other,48,10
 2020-05-24,Arkansas,other,350,100
 2020-05-24,Arkansas,other,44,5
-2020-05-24,Arkansas,other,91,9
+2020-05-24,Arkansas,other,178,7
 2020-05-24,Arkansas,Washington,219,1
 2020-05-24,Arkansas,Benton,270,2
-2020-05-24,Arkansas,other,87,7
 2020-05-24,Arkansas,other,13,6
-2020-05-24,Arkansas,other,5,8
+2020-05-24,Arkansas,other,5,9
 2020-05-24,Arkansas,other,8,4
 2020-05-24,Arkansas,Pulaski,103,3
 2020-05-24,Colorado,Adams,368,3
@@ -3550,12 +3539,11 @@ date,state,county,cases,rank
 2020-05-31,Arkansas,other,68,10
 2020-05-31,Arkansas,other,605,100
 2020-05-31,Arkansas,other,72,5
-2020-05-31,Arkansas,other,156,9
+2020-05-31,Arkansas,other,241,7
 2020-05-31,Arkansas,Washington,461,1
 2020-05-31,Arkansas,Benton,376,2
-2020-05-31,Arkansas,other,85,7
 2020-05-31,Arkansas,other,30,6
-2020-05-31,Arkansas,other,13,8
+2020-05-31,Arkansas,other,13,9
 2020-05-31,Arkansas,other,7,4
 2020-05-31,Arkansas,Pulaski,215,3
 2020-05-31,Colorado,Adams,328,3
@@ -3845,12 +3833,11 @@ date,state,county,cases,rank
 2020-06-07,Arkansas,other,57,10
 2020-06-07,Arkansas,other,760,100
 2020-06-07,Arkansas,other,27,5
-2020-06-07,Arkansas,other,102,9
+2020-06-07,Arkansas,other,167,7
 2020-06-07,Arkansas,Washington,797,1
 2020-06-07,Arkansas,Benton,479,2
-2020-06-07,Arkansas,other,65,7
 2020-06-07,Arkansas,other,81,6
-2020-06-07,Arkansas,other,449,8
+2020-06-07,Arkansas,other,449,9
 2020-06-07,Arkansas,other,2,4
 2020-06-07,Arkansas,Pulaski,175,3
 2020-06-07,Colorado,Adams,177,3
@@ -3937,8 +3924,8 @@ date,state,county,cases,rank
 2020-06-07,New Jersey,other,176,4
 2020-06-07,New Jersey,other,92,13
 2020-06-07,New Jersey,other,221,6
-2020-06-07,New Mexico,Bernalillo,107,3
 2020-06-07,New Mexico,other,143,100
+2020-06-07,New Mexico,Bernalillo,107,3
 2020-06-07,New Mexico,other,87,5
 2020-06-07,New Mexico,McKinley,239,1
 2020-06-07,New Mexico,other,54,4
@@ -4140,12 +4127,11 @@ date,state,county,cases,rank
 2020-06-14,Arkansas,other,239,10
 2020-06-14,Arkansas,other,1051,100
 2020-06-14,Arkansas,other,20,5
-2020-06-14,Arkansas,other,135,9
+2020-06-14,Arkansas,other,195,7
 2020-06-14,Arkansas,Washington,611,1
 2020-06-14,Arkansas,Benton,542,2
-2020-06-14,Arkansas,other,60,7
 2020-06-14,Arkansas,other,16,6
-2020-06-14,Arkansas,other,91,8
+2020-06-14,Arkansas,other,91,9
 2020-06-14,Arkansas,other,49,4
 2020-06-14,Arkansas,Pulaski,233,3
 2020-06-14,Colorado,Adams,143,3
@@ -4326,3 +4312,298 @@ date,state,county,cases,rank
 2020-06-14,Virgin Islands,Unknown,2,1
 2020-06-14,District of Columbia,District of Columbia,275,1
 2020-06-14,Northern Mariana Islands,Unknown,0,1
+2020-06-21,Guam,Unknown,0,1
+2020-06-21,Iowa,other,353,100
+2020-06-21,Iowa,Black Hawk,12,3
+2020-06-21,Iowa,other,18,4
+2020-06-21,Iowa,Polk,72,1
+2020-06-21,Iowa,Woodbury,13,2
+2020-06-21,Ohio,other,247,100
+2020-06-21,Ohio,Cuyahoga,78,2
+2020-06-21,Ohio,Franklin,100,1
+2020-06-21,Ohio,Hamilton,85,3
+2020-06-21,Ohio,other,7,5
+2020-06-21,Ohio,other,15,8
+2020-06-21,Ohio,other,0,4
+2020-06-21,Ohio,other,2,6
+2020-06-21,Ohio,other,13,7
+2020-06-21,Utah,other,149,100
+2020-06-21,Utah,Salt Lake,165,1
+2020-06-21,Utah,Utah,80,2
+2020-06-21,Idaho,Ada,0,1
+2020-06-21,Idaho,other,21,100
+2020-06-21,Idaho,Blaine,0,2
+2020-06-21,Idaho,other,0,4
+2020-06-21,Idaho,Twin Falls,0,3
+2020-06-21,Maine,other,6,100
+2020-06-21,Maine,Androscoggin,4,3
+2020-06-21,Maine,Cumberland,6,1
+2020-06-21,Maine,York,3,2
+2020-06-21,Texas,other,1069,100
+2020-06-21,Texas,other,148,6
+2020-06-21,Texas,Tarrant,444,3
+2020-06-21,Texas,other,506,5
+2020-06-21,Texas,Harris,179,1
+2020-06-21,Texas,other,538,4
+2020-06-21,Texas,Dallas,408,2
+2020-06-21,Alaska,other,3,100
+2020-06-21,Alaska,Fairbanks North Star Borough,3,3
+2020-06-21,Alaska,Kenai Peninsula Borough,1,2
+2020-06-21,Alaska,Anchorage,7,1
+2020-06-21,Hawaii,other,2,100
+2020-06-21,Hawaii,Honolulu,9,1
+2020-06-21,Hawaii,Maui,0,2
+2020-06-21,Kansas,other,2,100
+2020-06-21,Kansas,Finney,0,3
+2020-06-21,Kansas,Ford,0,1
+2020-06-21,Kansas,other,21,4
+2020-06-21,Kansas,other,0,5
+2020-06-21,Kansas,other,0,9
+2020-06-21,Kansas,other,15,7
+2020-06-21,Kansas,other,0,6
+2020-06-21,Kansas,other,0,8
+2020-06-21,Kansas,Wyandotte,2,2
+2020-06-21,Nevada,other,2,100
+2020-06-21,Nevada,Clark,227,1
+2020-06-21,Nevada,Washoe,30,2
+2020-06-21,Oregon,other,121,100
+2020-06-21,Oregon,other,12,4
+2020-06-21,Oregon,Marion,37,2
+2020-06-21,Oregon,Multnomah,84,1
+2020-06-21,Oregon,Washington,22,3
+2020-06-21,Alabama,other,149,100
+2020-06-21,Alabama,other,10,12
+2020-06-21,Alabama,other,6,8
+2020-06-21,Alabama,Jefferson,84,3
+2020-06-21,Alabama,other,11,6
+2020-06-21,Alabama,other,15,10
+2020-06-21,Alabama,other,21,5
+2020-06-21,Alabama,Mobile,62,2
+2020-06-21,Alabama,Montgomery,36,1
+2020-06-21,Alabama,other,21,9
+2020-06-21,Alabama,other,6,7
+2020-06-21,Alabama,other,37,4
+2020-06-21,Alabama,other,14,11
+2020-06-21,Arizona,other,635,100
+2020-06-21,Arizona,Maricopa,1833,1
+2020-06-21,Florida,other,1957,100
+2020-06-21,Florida,other,261,4
+2020-06-21,Florida,Miami-Dade,710,1
+2020-06-21,Florida,Palm Beach,248,3
+2020-06-21,Florida,Broward,318,2
+2020-06-21,Georgia,other,108,6
+2020-06-21,Georgia,other,428,100
+2020-06-21,Georgia,other,31,8
+2020-06-21,Georgia,other,52,4
+2020-06-21,Georgia,DeKalb,28,3
+2020-06-21,Georgia,other,4,7
+2020-06-21,Georgia,Fulton,52,2
+2020-06-21,Georgia,Gwinnett,108,1
+2020-06-21,Georgia,other,13,5
+2020-06-21,Indiana,other,165,100
+2020-06-21,Indiana,other,46,4
+2020-06-21,Indiana,Elkhart,65,3
+2020-06-21,Indiana,Lake,44,2
+2020-06-21,Indiana,Marion,41,1
+2020-06-21,Montana,other,5,100
+2020-06-21,Montana,Big Horn,4,3
+2020-06-21,Montana,other,1,5
+2020-06-21,Montana,Gallatin,5,1
+2020-06-21,Montana,other,1,4
+2020-06-21,Montana,Yellowstone,3,2
+2020-06-21,Vermont,other,5,100
+2020-06-21,Vermont,Chittenden,7,1
+2020-06-21,Wyoming,other,6,100
+2020-06-21,Wyoming,Fremont,2,1
+2020-06-21,Wyoming,Laramie,0,2
+2020-06-21,Wyoming,other,1,5
+2020-06-21,Wyoming,other,1,4
+2020-06-21,Wyoming,Uinta,8,3
+2020-06-21,Arkansas,other,11,10
+2020-06-21,Arkansas,other,167,100
+2020-06-21,Arkansas,other,0,5
+2020-06-21,Arkansas,other,36,7
+2020-06-21,Arkansas,Washington,83,1
+2020-06-21,Arkansas,Benton,99,2
+2020-06-21,Arkansas,other,6,6
+2020-06-21,Arkansas,other,2,9
+2020-06-21,Arkansas,other,0,4
+2020-06-21,Arkansas,Pulaski,15,3
+2020-06-21,Colorado,Adams,37,3
+2020-06-21,Colorado,other,71,100
+2020-06-21,Colorado,Arapahoe,20,2
+2020-06-21,Colorado,Denver,27,1
+2020-06-21,Colorado,other,22,6
+2020-06-21,Colorado,other,6,5
+2020-06-21,Colorado,other,7,4
+2020-06-21,Delaware,other,1,100
+2020-06-21,Delaware,Kent,7,3
+2020-06-21,Delaware,New Castle,78,1
+2020-06-21,Delaware,Sussex,8,2
+2020-06-21,Illinois,other,327,100
+2020-06-21,Illinois,Cook,292,1
+2020-06-21,Kentucky,other,74,100
+2020-06-21,Kentucky,Fayette,0,3
+2020-06-21,Kentucky,Jefferson,21,1
+2020-06-21,Kentucky,other,6,4
+2020-06-21,Kentucky,Warren,18,2
+2020-06-21,Maryland,other,64,100
+2020-06-21,Maryland,other,60,4
+2020-06-21,Maryland,other,24,5
+2020-06-21,Maryland,Baltimore,58,3
+2020-06-21,Maryland,Montgomery,75,2
+2020-06-21,Maryland,Prince George's,57,1
+2020-06-21,Michigan,other,59,100
+2020-06-21,Michigan,Oakland,18,2
+2020-06-21,Michigan,Wayne,54,1
+2020-06-21,Michigan,other,15,4
+2020-06-21,Michigan,Macomb,6,3
+2020-06-21,Missouri,Kansas City,7,3
+2020-06-21,Missouri,other,365,100
+2020-06-21,Missouri,St. Louis,25,1
+2020-06-21,Missouri,St. Louis city,0,2
+2020-06-21,Nebraska,other,-77,100
+2020-06-21,Nebraska,Dakota,0,2
+2020-06-21,Nebraska,Douglas,172,1
+2020-06-21,Nebraska,other,0,4
+2020-06-21,Nebraska,Lancaster,8,3
+2020-06-21,New York,other,279,100
+2020-06-21,New York,New York City,386,1
+2020-06-21,Oklahoma,other,186,100
+2020-06-21,Oklahoma,other,37,4
+2020-06-21,Oklahoma,Oklahoma,109,2
+2020-06-21,Oklahoma,Texas,2,3
+2020-06-21,Oklahoma,Tulsa,143,1
+2020-06-21,Virginia,other,359,100
+2020-06-21,Virginia,Fairfax,78,1
+2020-06-21,Virginia,Loudoun,42,3
+2020-06-21,Virginia,Prince William,72,2
+2020-06-21,Louisiana,other,219,100
+2020-06-21,Louisiana,other,24,4
+2020-06-21,Louisiana,East Baton Rouge,42,3
+2020-06-21,Louisiana,Jefferson,34,1
+2020-06-21,Louisiana,Orleans,27,2
+2020-06-21,Louisiana,other,33,6
+2020-06-21,Louisiana,other,14,5
+2020-06-21,Minnesota,other,266,100
+2020-06-21,Minnesota,Hennepin,125,1
+2020-06-21,Minnesota,Ramsey,62,2
+2020-06-21,Tennessee,other,193,100
+2020-06-21,Tennessee,other,41,4
+2020-06-21,Tennessee,Shelby,179,2
+2020-06-21,Tennessee,Davidson,66,1
+2020-06-21,Tennessee,Hamilton,17,3
+2020-06-21,Wisconsin,other,153,100
+2020-06-21,Wisconsin,Milwaukee,100,1
+2020-06-21,Wisconsin,Racine,2,3
+2020-06-21,Wisconsin,Brown,8,2
+2020-06-21,California,other,2192,100
+2020-06-21,California,Los Angeles,1761,1
+2020-06-21,New Jersey,other,73,100
+2020-06-21,New Jersey,Bergen,14,1
+2020-06-21,New Jersey,other,29,12
+2020-06-21,New Jersey,other,18,10
+2020-06-21,New Jersey,Essex,36,3
+2020-06-21,New Jersey,Hudson,-31,2
+2020-06-21,New Jersey,other,52,9
+2020-06-21,New Jersey,other,13,5
+2020-06-21,New Jersey,other,17,8
+2020-06-21,New Jersey,other,10,11
+2020-06-21,New Jersey,other,12,7
+2020-06-21,New Jersey,other,34,4
+2020-06-21,New Jersey,other,7,13
+2020-06-21,New Jersey,other,24,6
+2020-06-21,New Mexico,Bernalillo,13,3
+2020-06-21,New Mexico,other,19,100
+2020-06-21,New Mexico,other,18,5
+2020-06-21,New Mexico,McKinley,32,1
+2020-06-21,New Mexico,other,-1,4
+2020-06-21,New Mexico,other,3,6
+2020-06-21,New Mexico,San Juan,10,2
+2020-06-21,Washington,other,86,100
+2020-06-21,Washington,King,69,1
+2020-06-21,Washington,other,59,4
+2020-06-21,Washington,Snohomish,0,3
+2020-06-21,Washington,Yakima,117,2
+2020-06-21,Connecticut,other,10,100
+2020-06-21,Connecticut,Fairfield,6,1
+2020-06-21,Connecticut,Hartford,13,3
+2020-06-21,Connecticut,New Haven,11,2
+2020-06-21,Mississippi,other,0,18
+2020-06-21,Mississippi,other,0,100
+2020-06-21,Mississippi,other,0,19
+2020-06-21,Mississippi,other,0,21
+2020-06-21,Mississippi,other,0,12
+2020-06-21,Mississippi,other,0,6
+2020-06-21,Mississippi,other,0,7
+2020-06-21,Mississippi,other,0,14
+2020-06-21,Mississippi,Hinds,0,1
+2020-06-21,Mississippi,other,0,11
+2020-06-21,Mississippi,other,0,16
+2020-06-21,Mississippi,other,0,4
+2020-06-21,Mississippi,other,0,26
+2020-06-21,Mississippi,other,0,5
+2020-06-21,Mississippi,other,0,10
+2020-06-21,Mississippi,other,0,22
+2020-06-21,Mississippi,other,0,20
+2020-06-21,Mississippi,Madison,0,2
+2020-06-21,Mississippi,other,0,25
+2020-06-21,Mississippi,Neshoba,0,3
+2020-06-21,Mississippi,other,0,24
+2020-06-21,Mississippi,other,0,15
+2020-06-21,Mississippi,other,0,9
+2020-06-21,Mississippi,other,0,8
+2020-06-21,Mississippi,other,0,27
+2020-06-21,Mississippi,other,0,13
+2020-06-21,Puerto Rico,Unknown,62,1
+2020-06-21,North Dakota,other,17,100
+2020-06-21,North Dakota,Cass,20,1
+2020-06-21,Pennsylvania,other,292,100
+2020-06-21,Pennsylvania,other,12,4
+2020-06-21,Pennsylvania,Delaware,15,3
+2020-06-21,Pennsylvania,Montgomery,27,2
+2020-06-21,Pennsylvania,Philadelphia,0,1
+2020-06-21,Rhode Island,other,0,100
+2020-06-21,Rhode Island,Providence,0,1
+2020-06-21,South Dakota,other,52,100
+2020-06-21,South Dakota,Minnehaha,20,1
+2020-06-21,Massachusetts,other,13,100
+2020-06-21,Massachusetts,other,7,7
+2020-06-21,Massachusetts,Essex,12,3
+2020-06-21,Massachusetts,other,14,8
+2020-06-21,Massachusetts,Middlesex,30,1
+2020-06-21,Massachusetts,other,11,5
+2020-06-21,Massachusetts,other,7,6
+2020-06-21,Massachusetts,Suffolk,23,2
+2020-06-21,Massachusetts,other,8,4
+2020-06-21,New Hampshire,other,3,100
+2020-06-21,New Hampshire,Hillsborough,16,1
+2020-06-21,New Hampshire,Rockingham,7,2
+2020-06-21,West Virginia,other,35,100
+2020-06-21,West Virginia,other,0,6
+2020-06-21,West Virginia,Jefferson,1,3
+2020-06-21,West Virginia,Kanawha,2,2
+2020-06-21,West Virginia,other,1,4
+2020-06-21,West Virginia,other,1,5
+2020-06-21,West Virginia,other,0,7
+2020-06-21,West Virginia,Berkeley,3,1
+2020-06-21,North Carolina,other,800,100
+2020-06-21,North Carolina,Wake,51,2
+2020-06-21,North Carolina,Durham,45,3
+2020-06-21,North Carolina,other,27,4
+2020-06-21,North Carolina,other,50,5
+2020-06-21,North Carolina,Mecklenburg,241,1
+2020-06-21,South Carolina,other,353,100
+2020-06-21,South Carolina,other,40,5
+2020-06-21,South Carolina,Richland,34,2
+2020-06-21,South Carolina,other,17,6
+2020-06-21,South Carolina,other,15,10
+2020-06-21,South Carolina,other,31,9
+2020-06-21,South Carolina,other,41,8
+2020-06-21,South Carolina,other,108,4
+2020-06-21,South Carolina,other,20,7
+2020-06-21,South Carolina,Greenville,134,1
+2020-06-21,South Carolina,Horry,114,3
+2020-06-21,Virgin Islands,Unknown,2,1
+2020-06-21,District of Columbia,District of Columbia,36,1
+2020-06-21,Northern Mariana Islands,Unknown,0,1
