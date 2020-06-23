@@ -66,46 +66,52 @@ def make_dir(key):
         os.mkdir(dir_path)
     return dir_path
 
-def get_html(date, script, div):
+def get_html(date, script, div, title):
 
     """
     Create the HTML  
     """
-    t = ENV.get_template('countries.j2')
+    t = ENV.get_template('comparison.j2')
     return t.render( script =  script,
             date = date,
             div = div,
+            title = title,
             )
 
 def make_state_graphs():
     date = datetime.datetime.now()
     df_pop = _get_pop_df()
     df_state = _get_state_df()
-    l = []
-    info = [('Arizona',),
-           ('Texas',),
-            ('Arkansas',),
-            ('Florida',),
-            ('California',),
-            ('North Carolina',),
-            ('Georgia',),
-            ('Kentucky',),
-            ('Tennessee',),
-            ('Utah',),
-           ]
+    states = list(set(df_state['state']))
+    html_paths = {'cases_pop':'comparisons-cases',
+            'deaths_pop': 'comparisons-deaths',
+            }
+    titles = {'cases_pop':'Cases',
+            'deaths_pop': 'Deaths',
+            }
+    exclude = ['New York', 'Washington',
+        'Northern Mariana Islands',
+        'Puerto Rico',
+        'Virgin Islands',
+        'Guam',
+    ]
     df_ny = shape_data(df = df_state, df_pop = df_pop, state = 'New York')
     df_wash = shape_data(df = df_state, df_pop = df_pop, state = 'Washington')
-    for i in info:
-        df_ = shape_data(df = df_state, df_pop = df_pop, state = i[0])
-        append_to_graph(shape_data(df = df_state, df_pop = df_pop, state = i[0]), l, i[0])
-        append_to_graph(df_wash, l, 'Washington')
-        append_to_graph(df_ny, l, 'New york')
-    grid = gridplot(l, ncols = 3)
-    #show(grid)
-    script, div = components(grid)
-    html = get_html(script = script, div = div, date = date)
-    with open(os.path.join('html_temp', 'comparisons'), 'w') as write_obj:
-        write_obj.write(html)
+    for case in [('cases_pop', 600),  ('deaths_pop', 60)]:
+        l = []
+        for i in sorted(states):
+            if i in exclude:
+                continue
+            df_ = shape_data(df = df_state, df_pop = df_pop, state = i)
+            append_to_graph(shape_data(df = df_state, df_pop = df_pop, 
+                state = i), l, i, keyword = case[0], max_y = case[1])
+            append_to_graph(df_wash, l, 'Washington', keyword = case[0], max_y = case[1])
+            append_to_graph(df_ny, l, 'New york', keyword = case[0], max_y = case[1])
+        grid = gridplot(l, ncols = 3)
+        script, div = components(grid)
+        html = get_html(script = script, div = div, date = date, title = titles[case[0]])
+        with open(os.path.join('html_temp', html_paths[case[0]]), 'w') as write_obj:
+            write_obj.write(html)
 
 if __name__ == '__main__':
     make_state_graphs()
