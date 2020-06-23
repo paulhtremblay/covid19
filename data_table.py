@@ -1,6 +1,7 @@
 import datetime
 import math
 import os
+import pathlib
 import pprint
 pp = pprint.PrettyPrinter(indent = 4)
 from google.cloud import bigquery
@@ -8,6 +9,7 @@ import pandas as pd
 import numpy as np
 import csv
 
+from slugify import slugify
 
 from jinja2 import Environment, select_autoescape, FileSystemLoader
 
@@ -23,6 +25,7 @@ ENV = Environment(
     autoescape=select_autoescape(['html', 'xml'])
 )
 
+ENV.filters['slugify'] = slugify
 
 def get_state_pop():
     path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'states_population.csv')
@@ -99,8 +102,7 @@ def make_state_tables(verbose = False, window = None):
     totals = get_totals()
     if not window:
         window = int(variables.values['by_state_window'])
-    if not os.path.isdir('html_temp'):
-        os.mkdir('html_temp')
+    pathlib.Path('html_temp/states').mkdir(parents=True, exist_ok=True)
     df_day = get_state_data_day()
     for state in set(df_day['state']):
         if verbose:
@@ -177,7 +179,7 @@ def make_html_table(path):
                 cases_mil = round(float(row['total_cases_per_million']))
             except ValueError:
                 cases_mil = 0
-            data.append([row['state'], 
+            data.append([row['state'],
                 round(float(row['current_week_mean'])),
                 row['current_week_per_million'],
                 round(float(row['last_week_mean'])),
@@ -187,7 +189,7 @@ def make_html_table(path):
                 row['total_deaths'],
                 deaths_mil,
                 ])
-            data_cases.append([row['state'], 
+            data_cases.append([ row['state'],
                 round(float(row['current_week_cases_mean'])),
                 row['current_week_cases_per_million'],
                 round(float(row['last_week_cases_mean'])),
@@ -199,13 +201,13 @@ def make_html_table(path):
                 ])
     header =['state', 'current week mean', 'per million', 'last week mean',
             'per million', 'change', 'significant', 'total', 'per million']
-    html_deaths = get_html(header = header, 
+    html_deaths = get_html(header = header,
             body =data, caption = 'Deaths')
-    html_cases = get_html(header = header, 
+    html_cases = get_html(header = header,
             body =data_cases, caption= 'Cases')
-    with open(os.path.join('html_temp', 'table-data-deaths'), 'w') as write_obj:
+    with open(os.path.join('html_temp', 'states', 'table-deaths'), 'w') as write_obj:
         write_obj.write(html_deaths)
-    with open(os.path.join('html_temp', 'table-data-cases'), 'w') as write_obj:
+    with open(os.path.join('html_temp', 'states', 'table-cases'), 'w') as write_obj:
         write_obj.write(html_cases)
 
 

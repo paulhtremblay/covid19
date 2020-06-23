@@ -2,6 +2,8 @@ import os
 
 from jinja2 import Environment, select_autoescape, FileSystemLoader
 
+from slugify import slugify
+
 ENV = Environment(
     loader=FileSystemLoader([
         os.path.join(os.path.split(os.path.abspath(__file__))[0], 'templates'),
@@ -10,6 +12,7 @@ ENV = Environment(
     autoescape=select_autoescape(['html', 'xml'])
 )
 
+ENV.filters['slugify'] = slugify
 
 def make_index():
     t = ENV.get_template('index.j2')

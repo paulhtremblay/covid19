@@ -4,9 +4,9 @@
       <ul>
         {%- for t in territories %}
         <li>
-          {{ t[1] }}
-            <a href="{{ t[0]}}-cases" title="{{ t[1] }} Cases">Cases</a>
-            <a href="{{ t[0]}}-deaths" title="{{ t[1] }} Deaths">Deaths</a>
+          {{ t }}
+            <a href="{{ t|slugify }}-cases" title="{{ t }} Cases">Cases</a>
+            <a href="{{ t|slugify }}-deaths" title="{{ t }} Deaths">Deaths</a>
         </li>
         {%- endfor %}
       </ul>

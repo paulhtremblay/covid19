@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  // opens and closes submenus with country/state lists in main <nav> when user clicks icon
-  // opens filtered search results list when search input is focussed and contains text
+  // opens and closes submenus with country/state lists in main <nav> when user clicks icon;
+  // opens filtered search results list when search input has focus and contains text
 
   var targetSubMenu, searchText, regionName;
 
@@ -11,18 +11,18 @@ $(document).ready(function(){
 
   // create submenu container, add label (for input element), and
   // insert it in main page nav after other li.submenu elements
-  $('<li class="hasSubmenu"></li>')
+  $('<li class="hasSubmenu searchWidget"></li>')
     .append('<label title="search for a country or state"></label>')
-    .append('<ul class="submenu searchResults" hidden></ul>')
-    .insertAfter('.lastRegionContainer');
+    .append('<output><ul class="submenu" hidden></ul></output>')
+    .appendTo('body > header > div > nav > ul');
 
   // append svg search icon and input element to label
   $('.hasSubmenu > label')
     .append('<svg viewBox="0 0 250 450"><title>search</title><g stroke-width="30"><circle cx="130" cy="120" r="100" /><line x1="130" y1="220" x2="130" y2="270" /></g><g stroke-width="43"><line x1="130" y1="273" x2="130" y2="370" /><line x1="130" y1="330" x2="130" y2="425" stroke-linecap="round" /></g></svg>')
     .append('<input type="search" size="14">');
 
-  // add all region page links to ul.searchResults
-  $('.regions > li').clone().appendTo('.searchResults');
+  // add all region page links to output ul search results
+  $('.regions > li').clone().appendTo('output > ul.submenu');
   // TODO improve clone, maybe clone entire ul element then flatten instead of cloning each li element
 
 
@@ -58,31 +58,31 @@ $(document).ready(function(){
     // if there are characters in the input
     closeSubmenus();
     if ($.trim(this.value)) {
-      $('.searchResults').slideDown(300);
+      $('output > .submenu').slideDown(300);
     }
   });
 
 
   $('.hasSubmenu > label > input').on('input', function(){
-    // on input to search form, show filtered .searchResults matching
-    // any text entered or hide .searchResults if field is empty
+    // on input to search form, show filtered li elements matching
+    // any text entered, or hide output ul if field is empty
 
     searchText = $.trim(this.value).toLowerCase();
 
     if (searchText) {
-      // filter .searchResults based on text entered in input
-      $('.searchResults > li').each(function(){
+      // filter search results based on text entered in input
+      $('output > .submenu > li').each(function(){
         regionName = $(this).text().toLowerCase();
         (regionName.indexOf(searchText) >= 0) ? $(this).show() : $(this).hide();
       });
-      // show ul.searchResults
-      if ($('.searchResults').is(':hidden')) {
-        $('.searchResults').slideDown(300);
+      // show search results output ul.submenu
+      if ($('output > .submenu').is(':hidden')) {
+        $('output > .submenu').slideDown(300);
       }
     }
     else {
-      // input is empty, so hide ul.searchResults
-      $('.searchResults').hide();
+      // input is empty, so hide search results output ul.submenu
+      $('output > .submenu').hide();
     }
   });
 

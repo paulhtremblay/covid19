@@ -1,0 +1,16 @@
+{% extends "data.j2" %}
+
+{% block content %}
+
+        <p><a href="/states/table-cases">Cases Per State—Table</a></p>
+
+        <p><a href="/states/table-deaths">Deaths Per State—Table</a></p>
+
+        <ul>
+            {% for t in territories %}
+            <li><a href="{{ t|slugify }}">{{ t }}</a></li>
+            {% endfor %}
+        </ul>
+
+	<p><a href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Washington by RT</a>
+{% endblock %}

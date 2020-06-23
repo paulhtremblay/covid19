@@ -5,6 +5,8 @@ import json
 
 from jinja2 import Environment, select_autoescape, FileSystemLoader
 
+from slugify import slugify
+
 with urllib.request.urlopen("https://api.github.com/repos/paulhtremblay/covid19/contributors") as url:
     contributors = json.loads(url.read().decode())
 
@@ -16,6 +18,7 @@ ENV = Environment(
     autoescape=select_autoescape(['html', 'xml'])
 )
 
+ENV.filters['slugify'] = slugify
 
 def make_about():
     t = ENV.get_template('about.j2')

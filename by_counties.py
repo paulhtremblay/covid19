@@ -24,6 +24,7 @@ ENV = Environment(
     autoescape=select_autoescape(['html', 'xml'])
 )
 
+ENV.filters['slugify'] = slugify
 
 def get_county_data():
     path = common.get_data_path(os.path.abspath(os.path.dirname(__file__)), 'seven_day_county.csv')
@@ -54,29 +55,28 @@ def make_county_ref_list(states):
     t =  t.render(title = 'By County',
             page_title = page_title,
             page_class_attr = ["regionList", "state", "county"],
-            territories = [(slugify(x), x) for x in states]
+            territories = states
             )
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
     with open(os.path.join('html_temp', path), 'w') as write_obj:
         write_obj.write(t)
 
-def get_html(state, script, div, the_type):
+def get_html(state, script, div, data_type):
     """
     Create the HTML for each state
     """
-    if the_type == 'Deaths':
-        link_name = 'Cases'
-        link = '{state}-{the_type}'.format(state = slugify(state), the_type = 'cases')
+    if data_type == 'Deaths':
+        other_type = 'Cases'
     else:
-        link_name = 'Deaths'
-        link = '{state}-{the_type}'.format(state = slugify(state), the_type = 'deaths')
+        other_type = 'Deaths'
     t = ENV.get_template('counties.j2')
-    return t.render(page_title = state + " " + the_type,
+    return t.render(page_title = state + " " + data_type + " by County",
             script =  script,
             div = div,
-            link = link,
-            link_name = link_name,
+            state = state,
+            data_type = data_type,
+            other_type = other_type,
             )
 
 def pre_graphs(state, df, sort_by = 'adjusted', key = 'new_deaths'):
@@ -135,14 +135,14 @@ def do_counties():
     title = {'deaths':'Deaths', 'cases': 'Cases'}
     keys = {'deaths': 'new_deaths', 'cases':'new_cases'}
     dir_path = make_counties_dir('county')
-    for the_type in ['deaths', 'cases']:
+    for data_type in ['deaths', 'cases']:
         for state in states:
-            grid = state_counties(df, state, key=keys[the_type])
+            grid = state_counties(df, state, key=keys[data_type])
             script, div = components(grid)
-            html = get_html(state=state, script=script, div=div, the_type=title[the_type])
+            html = get_html(state=state, script=script, div=div, data_type=title[data_type])
             with open(os.path.join(dir_path,
-                    '{state}-{the_type}'.format(state=common.slugify(state),
-                    the_type=the_type)), 'w') as write_obj:
+                    '{state}-{data_type}'.format(state=common.slugify(state),
+                    data_type=data_type)), 'w') as write_obj:
                 write_obj.write(html)
     make_county_ref_list(states)
 
