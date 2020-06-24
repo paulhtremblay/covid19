@@ -5818,7 +5818,7 @@ date,state,cases,deaths
 2020-06-17,Missouri,221,21
 2020-06-17,Nebraska,195,3
 2020-06-17,New York,561,39
-2020-06-17,Oklahoma,259,1
+2020-06-17,Oklahoma,258,1
 2020-06-17,Virginia,444,13
 2020-06-17,Louisiana,928,20
 2020-06-17,Minnesota,415,13
@@ -5873,7 +5873,7 @@ date,state,cases,deaths
 2020-06-18,Missouri,337,39
 2020-06-18,Nebraska,189,5
 2020-06-18,New York,626,45
-2020-06-18,Oklahoma,450,2
+2020-06-18,Oklahoma,451,2
 2020-06-18,Virginia,463,3
 2020-06-18,Louisiana,760,7
 2020-06-18,Minnesota,379,19
@@ -6063,3 +6063,58 @@ date,state,cases,deaths
 2020-06-21,Virgin Islands,2,0
 2020-06-21,District of Columbia,36,2
 2020-06-21,Northern Mariana Islands,0,0
+2020-06-22,Guam,0,0
+2020-06-22,Iowa,197,1
+2020-06-22,Ohio,729,4
+2020-06-22,Utah,468,0
+2020-06-22,Idaho,242,0
+2020-06-22,Maine,14,0
+2020-06-22,Texas,4760,18
+2020-06-22,Alaska,10,0
+2020-06-22,Hawaii,2,0
+2020-06-22,Kansas,318,1
+2020-06-22,Nevada,339,3
+2020-06-22,Oregon,145,2
+2020-06-22,Alabama,433,2
+2020-06-22,Arizona,2101,4
+2020-06-22,Florida,2926,12
+2020-06-22,Georgia,1212,4
+2020-06-22,Indiana,213,13
+2020-06-22,Montana,17,1
+2020-06-22,Vermont,4,0
+2020-06-22,Wyoming,33,0
+2020-06-22,Arkansas,522,2
+2020-06-22,Colorado,165,4
+2020-06-22,Delaware,45,0
+2020-06-22,Illinois,461,24
+2020-06-22,Kentucky,154,5
+2020-06-22,Maryland,299,8
+2020-06-22,Michigan,271,7
+2020-06-22,Missouri,181,5
+2020-06-22,Nebraska,147,3
+2020-06-22,New York,555,50
+2020-06-22,Oklahoma,218,0
+2020-06-22,Virginia,471,9
+2020-06-22,Louisiana,462,12
+2020-06-22,Minnesota,307,4
+2020-06-22,Tennessee,536,6
+2020-06-22,Wisconsin,261,1
+2020-06-22,California,5813,44
+2020-06-22,New Jersey,273,25
+2020-06-22,New Mexico,129,0
+2020-06-22,Washington,646,6
+2020-06-22,Connecticut,27,3
+2020-06-22,Mississippi,1265,35
+2020-06-22,Puerto Rico,39,0
+2020-06-22,North Dakota,25,0
+2020-06-22,Pennsylvania,642,3
+2020-06-22,Rhode Island,122,9
+2020-06-22,South Dakota,29,0
+2020-06-22,Massachusetts,149,16
+2020-06-22,New Hampshire,14,0
+2020-06-22,West Virginia,28,1
+2020-06-22,North Carolina,986,5
+2020-06-22,South Carolina,1008,6
+2020-06-22,Virgin Islands,0,0
+2020-06-22,District of Columbia,38,2
+2020-06-22,Northern Mariana Islands,0,0
