@@ -98,7 +98,7 @@ def make_state_graphs():
     titles = {'cases_pop':'Cases',
             'deaths_pop': 'Deaths',
             }
-    exclude = ['New York', 'Washington',
+    exclude = ['New York', 
         'Northern Mariana Islands',
         'Puerto Rico',
         'Virgin Islands',
