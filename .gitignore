@@ -1,4 +1,5 @@
 temp_data/*
+data/*
 .ipynb_checkpoints/*
 html_temp/*
 includes/*
