@@ -908,7 +908,7 @@ date,state,cases,deaths
 2020-03-20,Utah,32,0
 2020-03-20,Idaho,8,0
 2020-03-20,Maine,5,0
-2020-03-20,Texas,129,1
+2020-03-20,Texas,138,1
 2020-03-20,Alaska,2,0
 2020-03-20,Hawaii,11,0
 2020-03-20,Kansas,14,0
@@ -962,7 +962,7 @@ date,state,cases,deaths
 2020-03-21,Utah,26,0
 2020-03-21,Idaho,11,0
 2020-03-21,Maine,13,0
-2020-03-21,Texas,170,0
+2020-03-21,Texas,161,0
 2020-03-21,Alaska,7,0
 2020-03-21,Hawaii,11,0
 2020-03-21,Kansas,8,1
@@ -1016,7 +1016,7 @@ date,state,cases,deaths
 2020-03-22,Utah,44,1
 2020-03-22,Idaho,5,0
 2020-03-22,Maine,19,0
-2020-03-22,Texas,85,2
+2020-03-22,Texas,92,2
 2020-03-22,Alaska,1,0
 2020-03-22,Hawaii,8,0
 2020-03-22,Kansas,9,0
@@ -1070,7 +1070,7 @@ date,state,cases,deaths
 2020-03-23,Utah,75,0
 2020-03-23,Idaho,3,0
 2020-03-23,Maine,18,0
-2020-03-23,Texas,96,0
+2020-03-23,Texas,89,0
 2020-03-23,Alaska,14,0
 2020-03-23,Hawaii,21,0
 2020-03-23,Kansas,16,0
@@ -1121,18 +1121,18 @@ date,state,cases,deaths
 2020-03-24,Guam,3,0
 2020-03-24,Iowa,19,1
 2020-03-24,Ohio,120,2
-2020-03-24,Utah,41,0
+2020-03-24,Utah,42,0
 2020-03-24,Idaho,23,0
 2020-03-24,Maine,11,0
 2020-03-24,Texas,129,4
 2020-03-24,Alaska,6,0
 2020-03-24,Hawaii,13,0
-2020-03-24,Kansas,17,1
+2020-03-24,Kansas,20,1
 2020-03-24,Nevada,50,2
 2020-03-24,Oregon,18,3
 2020-03-24,Alabama,46,0
 2020-03-24,Arizona,92,4
-2020-03-24,Florida,245,1
+2020-03-24,Florida,245,2
 2020-03-24,Georgia,295,13
 2020-03-24,Indiana,107,5
 2020-03-24,Montana,6,0
@@ -1147,11 +1147,11 @@ date,state,cases,deaths
 2020-03-24,Michigan,467,8
 2020-03-24,Missouri,72,1
 2020-03-24,Nebraska,4,0
-2020-03-24,New York,4804,73
+2020-03-24,New York,4805,81
 2020-03-24,Oklahoma,25,1
-2020-03-24,Virginia,36,1
+2020-03-24,Virginia,37,1
 2020-03-24,Louisiana,216,12
-2020-03-24,Minnesota,27,0
+2020-03-24,Minnesota,29,0
 2020-03-24,Tennessee,156,0
 2020-03-24,Wisconsin,63,0
 2020-03-24,California,404,13
@@ -1161,32 +1161,32 @@ date,state,cases,deaths
 2020-03-24,Connecticut,203,2
 2020-03-24,Mississippi,71,0
 2020-03-24,Puerto Rico,8,0
-2020-03-24,North Dakota,4,0
-2020-03-24,Pennsylvania,207,1
+2020-03-24,North Dakota,5,0
+2020-03-24,Pennsylvania,207,2
 2020-03-24,Rhode Island,18,0
 2020-03-24,South Dakota,2,0
 2020-03-24,Massachusetts,382,2
 2020-03-24,New Hampshire,7,0
 2020-03-24,West Virginia,23,0
 2020-03-24,North Carolina,95,0
-2020-03-24,South Carolina,43,2
+2020-03-24,South Carolina,43,3
 2020-03-24,Virgin Islands,0,0
 2020-03-24,District of Columbia,21,0
 2020-03-25,Guam,0,0
-2020-03-25,Iowa,21,0
-2020-03-25,Ohio,142,3
-2020-03-25,Utah,48,0
+2020-03-25,Iowa,23,0
+2020-03-25,Ohio,143,3
+2020-03-25,Utah,47,0
 2020-03-25,Idaho,50,0
 2020-03-25,Maine,24,0
-2020-03-25,Texas,262,1
+2020-03-25,Texas,275,2
 2020-03-25,Alaska,17,0
 2020-03-25,Hawaii,5,0
-2020-03-25,Kansas,33,0
+2020-03-25,Kansas,32,0
 2020-03-25,Nevada,90,4
 2020-03-25,Oregon,57,2
 2020-03-25,Alabama,144,1
 2020-03-25,Arizona,76,0
-2020-03-25,Florida,498,4
+2020-03-25,Florida,504,3
 2020-03-25,Georgia,290,9
 2020-03-25,Indiana,113,2
 2020-03-25,Montana,14,0
@@ -1199,40 +1199,40 @@ date,state,cases,deaths
 2020-03-25,Kentucky,41,2
 2020-03-25,Maryland,74,0
 2020-03-25,Michigan,502,19
-2020-03-25,Missouri,122,3
+2020-03-25,Missouri,129,3
 2020-03-25,Nebraska,7,0
-2020-03-25,New York,7413,119
+2020-03-25,New York,7413,117
 2020-03-25,Oklahoma,58,2
-2020-03-25,Virginia,100,2
+2020-03-25,Virginia,99,2
 2020-03-25,Louisiana,407,19
 2020-03-25,Minnesota,25,0
 2020-03-25,Tennessee,128,1
 2020-03-25,Wisconsin,142,2
-2020-03-25,California,539,15
+2020-03-25,California,539,16
 2020-03-25,New Jersey,727,18
-2020-03-25,New Mexico,12,1
+2020-03-25,New Mexico,13,1
 2020-03-25,Washington,116,7
 2020-03-25,Connecticut,257,7
 2020-03-25,Mississippi,56,4
 2020-03-25,Puerto Rico,12,0
-2020-03-25,North Dakota,9,0
+2020-03-25,North Dakota,8,0
 2020-03-25,Pennsylvania,300,4
 2020-03-25,Rhode Island,8,0
 2020-03-25,South Dakota,11,0
 2020-03-25,Massachusetts,679,4
 2020-03-25,New Hampshire,29,0
 2020-03-25,West Virginia,12,0
-2020-03-25,North Carolina,164,1
-2020-03-25,South Carolina,82,0
+2020-03-25,North Carolina,165,1
+2020-03-25,South Carolina,83,0
 2020-03-25,Virgin Islands,0,0
 2020-03-25,District of Columbia,46,0
 2020-03-26,Guam,17,0
-2020-03-26,Iowa,34,0
-2020-03-26,Ohio,161,4
+2020-03-26,Iowa,32,0
+2020-03-26,Ohio,160,4
 2020-03-26,Utah,56,0
 2020-03-26,Idaho,66,3
 2020-03-26,Maine,13,0
-2020-03-26,Texas,423,9
+2020-03-26,Texas,410,8
 2020-03-26,Alaska,10,0
 2020-03-26,Hawaii,11,0
 2020-03-26,Kansas,39,0
@@ -1240,7 +1240,7 @@ date,state,cases,deaths
 2020-03-26,Oregon,50,1
 2020-03-26,Alabama,152,2
 2020-03-26,Arizona,106,2
-2020-03-26,Florida,512,6
+2020-03-26,Florida,507,6
 2020-03-26,Georgia,256,9
 2020-03-26,Indiana,177,4
 2020-03-26,Montana,25,0
@@ -1253,62 +1253,62 @@ date,state,cases,deaths
 2020-03-26,Kentucky,50,0
 2020-03-26,Maryland,158,0
 2020-03-26,Michigan,584,20
-2020-03-26,Missouri,130,0
+2020-03-26,Missouri,124,0
 2020-03-26,Nebraska,7,0
-2020-03-26,New York,5941,127
+2020-03-26,New York,5941,121
 2020-03-26,Oklahoma,84,2
 2020-03-26,Virginia,213,5
 2020-03-26,Louisiana,510,18
-2020-03-26,Minnesota,59,1
+2020-03-26,Minnesota,57,1
 2020-03-26,Tennessee,175,0
 2020-03-26,Wisconsin,131,3
 2020-03-26,California,877,15
-2020-03-26,New Jersey,2474,19
-2020-03-26,New Mexico,24,0
-2020-03-26,Washington,623,21
+2020-03-26,New Jersey,2474,20
+2020-03-26,New Mexico,23,0
+2020-03-26,Washington,623,22
 2020-03-26,Connecticut,137,2
 2020-03-26,Mississippi,110,1
 2020-03-26,Puerto Rico,13,0
 2020-03-26,North Dakota,13,0
-2020-03-26,Pennsylvania,539,5
+2020-03-26,Pennsylvania,539,4
 2020-03-26,Rhode Island,33,0
 2020-03-26,South Dakota,5,0
 2020-03-26,Massachusetts,579,10
 2020-03-26,New Hampshire,21,0
 2020-03-26,West Virginia,25,0
-2020-03-26,North Carolina,76,1
-2020-03-26,South Carolina,32,2
+2020-03-26,North Carolina,77,1
+2020-03-26,South Carolina,31,1
 2020-03-26,Virgin Islands,0,0
 2020-03-26,District of Columbia,48,1
 2020-03-27,Guam,4,0
-2020-03-27,Iowa,56,2
+2020-03-27,Iowa,57,2
 2020-03-27,Ohio,277,7
 2020-03-27,Utah,78,1
-2020-03-27,Idaho,42,1
+2020-03-27,Idaho,43,1
 2020-03-27,Maine,13,1
-2020-03-27,Texas,398,2
+2020-03-27,Texas,429,4
 2020-03-27,Alaska,16,1
 2020-03-27,Hawaii,14,0
-2020-03-27,Kansas,41,1
+2020-03-27,Kansas,40,1
 2020-03-27,Nevada,86,0
-2020-03-27,Oregon,98,1
+2020-03-27,Oregon,99,1
 2020-03-27,Alabama,101,1
 2020-03-27,Arizona,157,7
-2020-03-27,Florida,721,17
+2020-03-27,Florida,720,17
 2020-03-27,Georgia,557,8
-2020-03-27,Indiana,327,9
+2020-03-27,Indiana,331,9
 2020-03-27,Montana,31,1
 2020-03-27,Vermont,26,1
-2020-03-27,Wyoming,17,0
+2020-03-27,Wyoming,18,0
 2020-03-27,Arkansas,35,0
 2020-03-27,Colorado,303,7
 2020-03-27,Delaware,22,1
 2020-03-27,Illinois,491,11
 2020-03-27,Kentucky,54,3
-2020-03-27,Maryland,194,1
+2020-03-27,Maryland,209,1
 2020-03-27,Michigan,778,30
-2020-03-27,Missouri,163,1
-2020-03-27,Nebraska,8,2
+2020-03-27,Missouri,162,1
+2020-03-27,Nebraska,11,2
 2020-03-27,New York,5688,143
 2020-03-27,Oklahoma,74,1
 2020-03-27,Virginia,2,0
@@ -1316,10 +1316,10 @@ date,state,cases,deaths
 2020-03-27,Minnesota,52,2
 2020-03-27,Tennessee,199,3
 2020-03-27,Wisconsin,176,6
-2020-03-27,California,854,20
-2020-03-27,New Jersey,1949,27
+2020-03-27,California,855,21
+2020-03-27,New Jersey,1949,26
 2020-03-27,New Mexico,55,0
-2020-03-27,Washington,562,26
+2020-03-27,Washington,562,27
 2020-03-27,Connecticut,279,6
 2020-03-27,Mississippi,93,2
 2020-03-27,Puerto Rico,15,1
@@ -1331,16 +1331,16 @@ date,state,cases,deaths
 2020-03-27,New Hampshire,29,1
 2020-03-27,West Virginia,20,0
 2020-03-27,North Carolina,145,1
-2020-03-27,South Carolina,83,4
+2020-03-27,South Carolina,86,4
 2020-03-27,Virgin Islands,2,0
 2020-03-27,District of Columbia,36,0
 2020-03-28,Guam,4,0
-2020-03-28,Iowa,63,0
+2020-03-28,Iowa,62,0
 2020-03-28,Ohio,262,3
 2020-03-28,Utah,128,0
 2020-03-28,Idaho,30,1
 2020-03-28,Maine,43,0
-2020-03-28,Texas,218,6
+2020-03-28,Texas,410,5
 2020-03-28,Alaska,17,0
 2020-03-28,Hawaii,31,0
 2020-03-28,Kansas,59,2
@@ -1350,7 +1350,7 @@ date,state,cases,deaths
 2020-03-28,Arizona,108,0
 2020-03-28,Florida,840,10
 2020-03-28,Georgia,249,15
-2020-03-28,Indiana,251,6
+2020-03-28,Indiana,247,6
 2020-03-28,Montana,26,0
 2020-03-28,Vermont,27,2
 2020-03-28,Wyoming,11,0
@@ -1359,20 +1359,20 @@ date,state,cases,deaths
 2020-03-28,Delaware,49,3
 2020-03-28,Illinois,518,13
 2020-03-28,Kentucky,92,1
-2020-03-28,Maryland,291,5
-2020-03-28,Michigan,979,18
-2020-03-28,Missouri,167,1
-2020-03-28,Nebraska,22,0
+2020-03-28,Maryland,276,5
+2020-03-28,Michigan,979,19
+2020-03-28,Missouri,167,2
+2020-03-28,Nebraska,20,0
 2020-03-28,New York,8771,290
 2020-03-28,Oklahoma,55,7
 2020-03-28,Virginia,134,3
 2020-03-28,Louisiana,569,18
-2020-03-28,Minnesota,42,1
+2020-03-28,Minnesota,44,1
 2020-03-28,Tennessee,183,0
 2020-03-28,Wisconsin,112,1
-2020-03-28,California,651,19
+2020-03-28,California,651,18
 2020-03-28,New Jersey,2299,32
-2020-03-28,New Mexico,17,1
+2020-03-28,New Mexico,19,1
 2020-03-28,Washington,541,14
 2020-03-28,Connecticut,233,6
 2020-03-28,Mississippi,90,5
@@ -1384,25 +1384,25 @@ date,state,cases,deaths
 2020-03-28,Massachusetts,1017,9
 2020-03-28,New Hampshire,27,0
 2020-03-28,West Virginia,17,0
-2020-03-28,North Carolina,189,1
-2020-03-28,South Carolina,121,2
+2020-03-28,North Carolina,188,1
+2020-03-28,South Carolina,119,2
 2020-03-28,Virgin Islands,0,0
 2020-03-28,District of Columbia,37,1
 2020-03-29,Guam,1,0
 2020-03-29,Iowa,38,1
 2020-03-29,Ohio,259,5
 2020-03-29,Utah,111,0
-2020-03-29,Idaho,49,1
+2020-03-29,Idaho,48,1
 2020-03-29,Maine,42,2
-2020-03-29,Texas,551,6
-2020-03-29,Alaska,12,0
+2020-03-29,Texas,341,5
+2020-03-29,Alaska,12,1
 2020-03-29,Hawaii,24,0
 2020-03-29,Kansas,61,1
 2020-03-29,Nevada,182,1
 2020-03-29,Oregon,69,0
 2020-03-29,Alabama,110,1
-2020-03-29,Arizona,156,3
-2020-03-29,Florida,904,3
+2020-03-29,Arizona,157,3
+2020-03-29,Florida,905,4
 2020-03-29,Georgia,236,4
 2020-03-29,Indiana,283,2
 2020-03-29,Montana,14,0
@@ -1411,22 +1411,22 @@ date,state,cases,deaths
 2020-03-29,Arkansas,40,1
 2020-03-29,Colorado,254,3
 2020-03-29,Delaware,18,1
-2020-03-29,Illinois,1066,20
+2020-03-29,Illinois,1068,21
 2020-03-29,Kentucky,45,0
 2020-03-29,Maryland,178,1
-2020-03-29,Michigan,852,21
-2020-03-29,Missouri,65,2
-2020-03-29,Nebraska,15,0
-2020-03-29,New York,6267,245
+2020-03-29,Michigan,852,20
+2020-03-29,Missouri,65,1
+2020-03-29,Nebraska,16,0
+2020-03-29,New York,6266,245
 2020-03-29,Oklahoma,52,1
 2020-03-29,Virginia,150,5
-2020-03-29,Louisiana,224,15
-2020-03-29,Minnesota,64,4
+2020-03-29,Louisiana,224,16
+2020-03-29,Minnesota,62,4
 2020-03-29,Tennessee,206,1
 2020-03-29,Wisconsin,78,0
-2020-03-29,California,701,9
+2020-03-29,California,755,10
 2020-03-29,New Jersey,2262,21
-2020-03-29,New Mexico,29,0
+2020-03-29,New Mexico,27,0
 2020-03-29,Washington,586,16
 2020-03-29,Connecticut,469,1
 2020-03-29,Mississippi,90,1
@@ -1438,7 +1438,7 @@ date,state,cases,deaths
 2020-03-29,Massachusetts,698,4
 2020-03-29,New Hampshire,44,1
 2020-03-29,West Virginia,11,1
-2020-03-29,North Carolina,193,2
+2020-03-29,North Carolina,194,2
 2020-03-29,South Carolina,114,1
 2020-03-29,Virgin Islands,4,0
 2020-03-29,District of Columbia,38,1
@@ -1449,16 +1449,16 @@ date,state,cases,deaths
 2020-03-30,Utah,87,2
 2020-03-30,Idaho,105,1
 2020-03-30,Maine,22,0
-2020-03-30,Texas,327,11
-2020-03-30,Alaska,5,1
+2020-03-30,Texas,343,11
+2020-03-30,Alaska,6,0
 2020-03-30,Hawaii,29,0
 2020-03-30,Kansas,41,2
 2020-03-30,Nevada,124,3
 2020-03-30,Oregon,58,3
 2020-03-30,Alabama,117,6
-2020-03-30,Arizona,240,2
+2020-03-30,Arizona,239,2
 2020-03-30,Florida,752,12
-2020-03-30,Georgia,349,19
+2020-03-30,Georgia,349,20
 2020-03-30,Indiana,275,4
 2020-03-30,Montana,16,3
 2020-03-30,Vermont,21,0
@@ -1466,35 +1466,35 @@ date,state,cases,deaths
 2020-03-30,Arkansas,59,1
 2020-03-30,Colorado,313,4
 2020-03-30,Delaware,32,1
-2020-03-30,Illinois,457,14
+2020-03-30,Illinois,455,13
 2020-03-30,Kentucky,41,2
-2020-03-30,Maryland,170,4
+2020-03-30,Maryland,171,4
 2020-03-30,Michigan,1022,65
 2020-03-30,Missouri,147,1
-2020-03-30,Nebraska,49,1
-2020-03-30,New York,7679,332
+2020-03-30,Nebraska,47,1
+2020-03-30,New York,7721,332
 2020-03-30,Oklahoma,52,1
 2020-03-30,Virginia,131,4
-2020-03-30,Louisiana,485,34
+2020-03-30,Louisiana,485,33
 2020-03-30,Minnesota,72,1
 2020-03-30,Tennessee,152,6
-2020-03-30,Wisconsin,147,3
-2020-03-30,California,1155,16
+2020-03-30,Wisconsin,149,3
+2020-03-30,California,1100,15
 2020-03-30,New Jersey,3250,38
-2020-03-30,New Mexico,44,2
-2020-03-30,Washington,283,14
+2020-03-30,New Mexico,45,2
+2020-03-30,Washington,283,12
 2020-03-30,Connecticut,578,2
 2020-03-30,Mississippi,89,2
 2020-03-30,Puerto Rico,47,1
-2020-03-30,North Dakota,11,2
+2020-03-30,North Dakota,12,2
 2020-03-30,Pennsylvania,715,8
 2020-03-30,Rhode Island,114,1
 2020-03-30,South Dakota,10,0
 2020-03-30,Massachusetts,797,8
 2020-03-30,New Hampshire,56,0
 2020-03-30,West Virginia,21,0
-2020-03-30,North Carolina,138,0
-2020-03-30,South Carolina,151,2
+2020-03-30,North Carolina,137,0
+2020-03-30,South Carolina,150,2
 2020-03-30,Virgin Islands,7,0
 2020-03-30,District of Columbia,59,4
 2020-03-30,Northern Mariana Islands,0,0
@@ -1504,17 +1504,17 @@ date,state,cases,deaths
 2020-03-31,Utah,81,1
 2020-03-31,Idaho,111,2
 2020-03-31,Maine,28,2
-2020-03-31,Texas,534,11
-2020-03-31,Alaska,14,0
+2020-03-31,Texas,523,11
+2020-03-31,Alaska,13,0
 2020-03-31,Hawaii,20,1
 2020-03-31,Kansas,61,1
 2020-03-31,Nevada,69,8
-2020-03-31,Oregon,84,2
-2020-03-31,Alabama,52,2
+2020-03-31,Oregon,83,2
+2020-03-31,Alabama,52,3
 2020-03-31,Arizona,129,4
-2020-03-31,Florida,1047,14
+2020-03-31,Florida,1047,13
 2020-03-31,Georgia,1084,23
-2020-03-31,Indiana,373,17
+2020-03-31,Indiana,380,17
 2020-03-31,Montana,21,1
 2020-03-31,Vermont,37,1
 2020-03-31,Wyoming,25,0
@@ -1523,25 +1523,25 @@ date,state,cases,deaths
 2020-03-31,Delaware,55,3
 2020-03-31,Illinois,922,23
 2020-03-31,Kentucky,110,7
-2020-03-31,Maryland,248,3
+2020-03-31,Maryland,247,3
 2020-03-31,Michigan,1121,67
 2020-03-31,Missouri,301,2
-2020-03-31,Nebraska,8,1
-2020-03-31,New York,8749,417
+2020-03-31,Nebraska,14,1
+2020-03-31,New York,8707,417
 2020-03-31,Oklahoma,85,6
 2020-03-31,Virginia,229,1
 2020-03-31,Louisiana,1213,54
 2020-03-31,Minnesota,53,2
 2020-03-31,Tennessee,328,0
-2020-03-31,Wisconsin,84,5
-2020-03-31,California,1161,37
+2020-03-31,Wisconsin,82,5
+2020-03-31,California,1162,37
 2020-03-31,New Jersey,2060,68
-2020-03-31,New Mexico,34,1
+2020-03-31,New Mexico,33,1
 2020-03-31,Washington,113,5
 2020-03-31,Connecticut,557,33
 2020-03-31,Mississippi,89,4
 2020-03-31,Puerto Rico,65,2
-2020-03-31,North Dakota,18,0
+2020-03-31,North Dakota,17,0
 2020-03-31,Pennsylvania,841,24
 2020-03-31,Rhode Island,80,4
 2020-03-31,South Dakota,7,0
@@ -1555,22 +1555,22 @@ date,state,cases,deaths
 2020-03-31,Northern Mariana Islands,0,0
 2020-04-01,Guam,8,1
 2020-04-01,Iowa,51,2
-2020-04-01,Ohio,348,10
+2020-04-01,Ohio,349,10
 2020-04-01,Utah,125,2
 2020-04-01,Idaho,143,0
 2020-04-01,Maine,41,2
-2020-04-01,Texas,685,6
+2020-04-01,Texas,814,8
 2020-04-01,Alaska,10,0
 2020-04-01,Hawaii,34,0
 2020-04-01,Kansas,54,1
 2020-04-01,Nevada,166,6
-2020-04-01,Oregon,46,1
-2020-04-01,Alabama,107,15
+2020-04-01,Oregon,47,1
+2020-04-01,Alabama,109,14
 2020-04-01,Arizona,115,5
-2020-04-01,Florida,1024,15
-2020-04-01,Georgia,631,29
-2020-04-01,Indiana,408,18
-2020-04-01,Montana,19,0
+2020-04-01,Florida,1027,15
+2020-04-01,Georgia,631,28
+2020-04-01,Indiana,401,19
+2020-04-01,Montana,21,0
 2020-04-01,Vermont,28,3
 2020-04-01,Wyoming,17,0
 2020-04-01,Arkansas,60,2
@@ -1580,30 +1580,30 @@ date,state,cases,deaths
 2020-04-01,Kentucky,84,2
 2020-04-01,Maryland,323,15
 2020-04-01,Michigan,1663,72
-2020-04-01,Missouri,230,3
-2020-04-01,Nebraska,56,1
-2020-04-01,New York,8152,486
+2020-04-01,Missouri,230,6
+2020-04-01,Nebraska,50,1
+2020-04-01,New York,8153,486
 2020-04-01,Oklahoma,153,7
-2020-04-01,Virginia,262,7
-2020-04-01,Louisiana,1187,33
+2020-04-01,Virginia,262,-9
+2020-04-01,Louisiana,1187,35
 2020-04-01,Minnesota,60,5
 2020-04-01,Tennessee,640,10
-2020-04-01,Wisconsin,199,8
-2020-04-01,California,1234,29
+2020-04-01,Wisconsin,201,8
+2020-04-01,California,1274,28
 2020-04-01,New Jersey,3559,88
 2020-04-01,New Mexico,48,1
-2020-04-01,Washington,296,23
+2020-04-01,Washington,296,24
 2020-04-01,Connecticut,429,16
 2020-04-01,Mississippi,136,2
 2020-04-01,Puerto Rico,47,3
 2020-04-01,North Dakota,21,0
-2020-04-01,Pennsylvania,808,2
+2020-04-01,Pennsylvania,808,6
 2020-04-01,Rhode Island,78,2
-2020-04-01,South Dakota,21,1
+2020-04-01,South Dakota,22,0
 2020-04-01,Massachusetts,1118,33
 2020-04-01,New Hampshire,48,1
 2020-04-01,West Virginia,29,1
-2020-04-01,North Carolina,54,1
+2020-04-01,North Carolina,64,1
 2020-04-01,South Carolina,210,4
 2020-04-01,Virgin Islands,0,0
 2020-04-01,District of Columbia,91,2
@@ -1612,20 +1612,20 @@ date,state,cases,deaths
 2020-04-02,Iowa,65,2
 2020-04-02,Ohio,355,16
 2020-04-02,Utah,65,0
-2020-04-02,Idaho,221,0
+2020-04-02,Idaho,222,0
 2020-04-02,Maine,32,0
-2020-04-02,Texas,625,16
+2020-04-02,Texas,550,15
 2020-04-02,Alaska,3,0
 2020-04-02,Hawaii,25,1
-2020-04-02,Kansas,66,3
+2020-04-02,Kansas,65,3
 2020-04-02,Nevada,179,6
 2020-04-02,Oregon,90,2
-2020-04-02,Alabama,164,4
+2020-04-02,Alabama,162,4
 2020-04-02,Arizona,187,6
-2020-04-02,Florida,1235,44
+2020-04-02,Florida,1231,44
 2020-04-02,Georgia,697,22
-2020-04-02,Indiana,478,15
-2020-04-02,Montana,24,0
+2020-04-02,Indiana,478,14
+2020-04-02,Montana,22,0
 2020-04-02,Vermont,17,1
 2020-04-02,Wyoming,16,0
 2020-04-02,Arkansas,59,2
@@ -1635,46 +1635,46 @@ date,state,cases,deaths
 2020-04-02,Kentucky,73,14
 2020-04-02,Maryland,346,3
 2020-04-02,Michigan,1499,81
-2020-04-02,Missouri,254,6
+2020-04-02,Missouri,254,7
 2020-04-02,Nebraska,24,1
-2020-04-02,New York,8608,548
+2020-04-02,New York,8996,548
 2020-04-02,Oklahoma,160,4
-2020-04-02,Virginia,194,7
-2020-04-02,Louisiana,2728,37
+2020-04-02,Virginia,195,0
+2020-04-02,Louisiana,2728,35
 2020-04-02,Minnesota,53,1
 2020-04-02,Tennessee,179,9
-2020-04-02,Wisconsin,180,4
-2020-04-02,California,1374,35
+2020-04-02,Wisconsin,178,4
+2020-04-02,California,1333,35
 2020-04-02,New Jersey,3335,184
 2020-04-02,New Mexico,40,1
-2020-04-02,Washington,997,23
+2020-04-02,Washington,997,22
 2020-04-02,Connecticut,267,27
 2020-04-02,Mississippi,104,4
 2020-04-02,Puerto Rico,30,1
 2020-04-02,North Dakota,12,0
-2020-04-02,Pennsylvania,1211,16
+2020-04-02,Pennsylvania,1216,13
 2020-04-02,Rhode Island,91,2
-2020-04-02,South Dakota,37,0
+2020-04-02,South Dakota,36,1
 2020-04-02,Massachusetts,1228,32
 2020-04-02,New Hampshire,64,1
 2020-04-02,West Virginia,26,0
-2020-04-02,North Carolina,277,6
+2020-04-02,North Carolina,267,6
 2020-04-02,South Carolina,261,5
 2020-04-02,Virgin Islands,7,0
 2020-04-02,District of Columbia,67,1
 2020-04-02,Northern Mariana Islands,2,0
 2020-04-03,Guam,2,1
 2020-04-03,Iowa,85,0
-2020-04-03,Ohio,410,10
+2020-04-03,Ohio,409,10
 2020-04-03,Utah,171,0
-2020-04-03,Idaho,122,1
+2020-04-03,Idaho,121,1
 2020-04-03,Maine,56,2
-2020-04-03,Texas,789,18
+2020-04-03,Texas,821,18
 2020-04-03,Alaska,10,0
 2020-04-03,Hawaii,34,1
-2020-04-03,Kansas,70,5
+2020-04-03,Kansas,71,5
 2020-04-03,Nevada,91,5
-2020-04-03,Oregon,73,1
+2020-04-03,Oregon,72,1
 2020-04-03,Alabama,265,6
 2020-04-03,Arizona,169,6
 2020-04-03,Florida,1260,25
@@ -1686,19 +1686,19 @@ date,state,cases,deaths
 2020-04-03,Arkansas,55,0
 2020-04-03,Colorado,454,14
 2020-04-03,Delaware,57,2
-2020-04-03,Illinois,1209,46
+2020-04-03,Illinois,1209,47
 2020-04-03,Kentucky,15,0
 2020-04-03,Maryland,427,6
 2020-04-03,Michigan,1878,61
-2020-04-03,Missouri,279,7
-2020-04-03,Nebraska,23,0
-2020-04-03,New York,10680,753
-2020-04-03,Oklahoma,108,4
-2020-04-03,Virginia,306,5
+2020-04-03,Missouri,279,8
+2020-04-03,Nebraska,24,0
+2020-04-03,New York,10329,753
+2020-04-03,Oklahoma,110,4
+2020-04-03,Virginia,305,28
 2020-04-03,Louisiana,1147,60
 2020-04-03,Minnesota,47,4
-2020-04-03,Tennessee,164,4
-2020-04-03,Wisconsin,186,12
+2020-04-03,Tennessee,164,6
+2020-04-03,Wisconsin,186,13
 2020-04-03,California,1379,35
 2020-04-03,New Jersey,4305,108
 2020-04-03,New Mexico,92,3
@@ -1707,13 +1707,13 @@ date,state,cases,deaths
 2020-04-03,Mississippi,181,3
 2020-04-03,Puerto Rico,62,3
 2020-04-03,North Dakota,14,0
-2020-04-03,Pennsylvania,1404,12
+2020-04-03,Pennsylvania,1399,11
 2020-04-03,Rhode Island,54,2
 2020-04-03,South Dakota,22,0
 2020-04-03,Massachusetts,1436,38
 2020-04-03,New Hampshire,61,2
 2020-04-03,West Virginia,25,0
-2020-04-03,North Carolina,236,2
+2020-04-03,North Carolina,235,6
 2020-04-03,South Carolina,146,3
 2020-04-03,Virgin Islands,1,0
 2020-04-03,District of Columbia,104,3
@@ -1724,12 +1724,12 @@ date,state,cases,deaths
 2020-04-04,Utah,178,1
 2020-04-04,Idaho,64,0
 2020-04-04,Maine,24,1
-2020-04-04,Texas,897,27
+2020-04-04,Texas,793,26
 2020-04-04,Alaska,13,1
 2020-04-04,Hawaii,32,0
-2020-04-04,Kansas,78,2
+2020-04-04,Kansas,77,2
 2020-04-04,Nevada,209,3
-2020-04-04,Oregon,100,4
+2020-04-04,Oregon,101,4
 2020-04-04,Alabama,97,6
 2020-04-04,Arizona,250,12
 2020-04-04,Florida,1277,25
@@ -1741,34 +1741,34 @@ date,state,cases,deaths
 2020-04-04,Arkansas,5,2
 2020-04-04,Colorado,392,16
 2020-04-04,Delaware,143,0
-2020-04-04,Illinois,1453,37
+2020-04-04,Illinois,1453,36
 2020-04-04,Kentucky,147,6
 2020-04-04,Maryland,367,12
-2020-04-04,Michigan,1556,62
-2020-04-04,Missouri,178,13
-2020-04-04,Nebraska,43,2
-2020-04-04,New York,12312,819
-2020-04-04,Oklahoma,172,4
-2020-04-04,Virginia,395,6
+2020-04-04,Michigan,1556,63
+2020-04-04,Missouri,178,8
+2020-04-04,Nebraska,42,2
+2020-04-04,New York,12274,819
+2020-04-04,Oklahoma,170,4
+2020-04-04,Virginia,397,6
 2020-04-04,Louisiana,2201,42
 2020-04-04,Minnesota,76,2
-2020-04-04,Tennessee,233,11
-2020-04-04,Wisconsin,196,11
+2020-04-04,Tennessee,233,9
+2020-04-04,Wisconsin,196,10
 2020-04-04,California,1227,41
 2020-04-04,New Jersey,4229,200
-2020-04-04,New Mexico,48,1
+2020-04-04,New Mexico,49,1
 2020-04-04,Washington,532,25
 2020-04-04,Connecticut,361,33
 2020-04-04,Mississippi,97,6
 2020-04-04,Puerto Rico,74,3
 2020-04-04,North Dakota,13,0
-2020-04-04,Pennsylvania,1689,37
+2020-04-04,Pennsylvania,1690,38
 2020-04-04,Rhode Island,95,3
 2020-04-04,South Dakota,25,0
 2020-04-04,Massachusetts,1334,24
 2020-04-04,New Hampshire,81,2
 2020-04-04,West Virginia,40,0
-2020-04-04,North Carolina,309,11
+2020-04-04,North Carolina,309,7
 2020-04-04,South Carolina,217,6
 2020-04-04,Virgin Islands,4,0
 2020-04-04,District of Columbia,145,6
@@ -1779,12 +1779,12 @@ date,state,cases,deaths
 2020-04-05,Utah,192,0
 2020-04-05,Idaho,24,0
 2020-04-05,Maine,14,0
-2020-04-05,Texas,525,12
+2020-04-05,Texas,551,12
 2020-04-05,Alaska,14,1
 2020-04-05,Hawaii,20,1
-2020-04-05,Kansas,65,2
+2020-04-05,Kansas,67,2
 2020-04-05,Nevada,122,0
-2020-04-05,Oregon,69,1
+2020-04-05,Oregon,68,1
 2020-04-05,Alabama,208,1
 2020-04-05,Arizona,250,11
 2020-04-05,Florida,805,26
@@ -1792,37 +1792,37 @@ date,state,cases,deaths
 2020-04-05,Indiana,462,15
 2020-04-05,Montana,17,0
 2020-04-05,Vermont,51,2
-2020-04-05,Wyoming,12,0
+2020-04-05,Wyoming,11,0
 2020-04-05,Arkansas,110,2
 2020-04-05,Colorado,376,14
 2020-04-05,Delaware,80,0
-2020-04-05,Illinois,919,34
+2020-04-05,Illinois,919,35
 2020-04-05,Kentucky,139,4
 2020-04-05,Maryland,484,14
 2020-04-05,Michigan,1408,76
 2020-04-05,Missouri,76,8
-2020-04-05,Nebraska,37,0
+2020-04-05,Nebraska,38,0
 2020-04-05,New York,8122,800
 2020-04-05,Oklahoma,92,4
-2020-04-05,Virginia,230,0
+2020-04-05,Virginia,228,0
 2020-04-05,Louisiana,514,65
 2020-04-05,Minnesota,70,5
 2020-04-05,Tennessee,273,3
 2020-04-05,Wisconsin,155,13
-2020-04-05,California,1280,26
+2020-04-05,California,1406,28
 2020-04-05,New Jersey,3381,70
-2020-04-05,New Mexico,81,1
+2020-04-05,New Mexico,80,1
 2020-04-05,Washington,486,26
 2020-04-05,Connecticut,399,24
 2020-04-05,Mississippi,183,8
 2020-04-05,Puerto Rico,23,2
 2020-04-05,North Dakota,21,0
-2020-04-05,Pennsylvania,1480,20
+2020-04-05,Pennsylvania,1480,19
 2020-04-05,Rhode Island,116,8
 2020-04-05,South Dakota,28,0
 2020-04-05,Massachusetts,764,15
 2020-04-05,New Hampshire,48,0
-2020-04-05,West Virginia,42,1
+2020-04-05,West Virginia,43,1
 2020-04-05,North Carolina,183,7
 2020-04-05,South Carolina,132,4
 2020-04-05,Virgin Islands,0,0
@@ -1834,37 +1834,37 @@ date,state,cases,deaths
 2020-04-06,Utah,44,5
 2020-04-06,Idaho,70,3
 2020-04-06,Maine,29,0
-2020-04-06,Texas,1013,23
+2020-04-06,Texas,1033,23
 2020-04-06,Alaska,6,0
 2020-04-06,Hawaii,16,1
-2020-04-06,Kansas,87,2
+2020-04-06,Kansas,85,2
 2020-04-06,Nevada,91,12
 2020-04-06,Oregon,64,2
 2020-04-06,Alabama,165,8
-2020-04-06,Arizona,196,3
+2020-04-06,Arizona,197,3
 2020-04-06,Florida,1279,33
 2020-04-06,Georgia,816,75
 2020-04-06,Indiana,549,20
 2020-04-06,Montana,21,0
 2020-04-06,Vermont,31,1
-2020-04-06,Wyoming,12,0
+2020-04-06,Wyoming,13,0
 2020-04-06,Arkansas,74,0
 2020-04-06,Colorado,222,10
 2020-04-06,Delaware,110,1
-2020-04-06,Illinois,986,27
+2020-04-06,Illinois,986,26
 2020-04-06,Kentucky,9,8
 2020-04-06,Maryland,436,24
-2020-04-06,Michigan,1496,111
+2020-04-06,Michigan,1496,110
 2020-04-06,Missouri,355,4
 2020-04-06,Nebraska,61,2
-2020-04-06,New York,7976,795
+2020-04-06,New York,9304,814
 2020-04-06,Oklahoma,75,5
 2020-04-06,Virginia,241,2
 2020-04-06,Louisiana,1853,35
 2020-04-06,Minnesota,51,1
 2020-04-06,Tennessee,215,15
 2020-04-06,Wisconsin,173,10
-2020-04-06,California,1208,37
+2020-04-06,California,1159,35
 2020-04-06,New Jersey,3585,88
 2020-04-06,New Mexico,62,0
 2020-04-06,Washington,400,39
@@ -1872,13 +1872,13 @@ date,state,cases,deaths
 2020-04-06,Mississippi,100,8
 2020-04-06,Puerto Rico,38,1
 2020-04-06,North Dakota,18,0
-2020-04-06,Pennsylvania,1485,10
+2020-04-06,Pennsylvania,1485,11
 2020-04-06,Rhode Island,160,2
 2020-04-06,South Dakota,48,2
 2020-04-06,Massachusetts,1337,29
 2020-04-06,New Hampshire,46,0
-2020-04-06,West Virginia,21,1
-2020-04-06,North Carolina,285,3
+2020-04-06,West Virginia,22,1
+2020-04-06,North Carolina,285,5
 2020-04-06,South Carolina,183,4
 2020-04-06,Virgin Islands,1,1
 2020-04-06,District of Columbia,99,2
@@ -1889,20 +1889,20 @@ date,state,cases,deaths
 2020-04-07,Utah,75,0
 2020-04-07,Idaho,40,2
 2020-04-07,Maine,20,2
-2020-04-07,Texas,864,18
+2020-04-07,Texas,818,18
 2020-04-07,Alaska,22,0
 2020-04-07,Hawaii,23,0
 2020-04-07,Kansas,51,5
 2020-04-07,Nevada,130,2
 2020-04-07,Oregon,49,4
 2020-04-07,Alabama,192,11
-2020-04-07,Arizona,110,10
+2020-04-07,Arizona,111,10
 2020-04-07,Florida,1118,42
 2020-04-07,Georgia,1598,54
-2020-04-07,Indiana,556,37
+2020-04-07,Indiana,558,37
 2020-04-07,Montana,0,0
 2020-04-07,Vermont,32,0
-2020-04-07,Wyoming,9,0
+2020-04-07,Wyoming,8,0
 2020-04-07,Arkansas,70,2
 2020-04-07,Colorado,257,29
 2020-04-07,Delaware,145,1
@@ -1910,16 +1910,16 @@ date,state,cases,deaths
 2020-04-07,Kentucky,232,14
 2020-04-07,Maryland,326,12
 2020-04-07,Michigan,1722,118
-2020-04-07,Missouri,315,23
+2020-04-07,Missouri,315,24
 2020-04-07,Nebraska,53,2
-2020-04-07,New York,9642,1055
+2020-04-07,New York,8314,1036
 2020-04-07,Oklahoma,144,16
 2020-04-07,Virginia,455,15
 2020-04-07,Louisiana,1417,70
 2020-04-07,Minnesota,83,4
 2020-04-07,Tennessee,257,7
 2020-04-07,Wisconsin,138,11
-2020-04-07,California,1256,61
+2020-04-07,California,1179,61
 2020-04-07,New Jersey,3326,227
 2020-04-07,New Mexico,108,1
 2020-04-07,Washington,298,26
@@ -1927,13 +1927,13 @@ date,state,cases,deaths
 2020-04-07,Mississippi,177,8
 2020-04-07,Puerto Rico,60,2
 2020-04-07,North Dakota,12,1
-2020-04-07,Pennsylvania,1508,71
+2020-04-07,Pennsylvania,1507,71
 2020-04-07,Rhode Island,147,3
 2020-04-07,South Dakota,32,2
 2020-04-07,Massachusetts,1365,96
 2020-04-07,New Hampshire,32,4
-2020-04-07,West Virginia,67,0
-2020-04-07,North Carolina,350,10
+2020-04-07,West Virginia,66,0
+2020-04-07,North Carolina,350,8
 2020-04-07,South Carolina,185,3
 2020-04-07,Virgin Islands,2,0
 2020-04-07,District of Columbia,114,0
@@ -1951,10 +1951,10 @@ date,state,cases,deaths
 2020-04-08,Nevada,217,20
 2020-04-08,Oregon,58,5
 2020-04-08,Alabama,301,3
-2020-04-08,Arizona,151,3
+2020-04-08,Arizona,149,3
 2020-04-08,Florida,951,27
 2020-04-08,Georgia,1048,22
-2020-04-08,Indiana,444,38
+2020-04-08,Indiana,442,38
 2020-04-08,Montana,13,0
 2020-04-08,Vermont,30,0
 2020-04-08,Wyoming,9,0
@@ -1965,11 +1965,11 @@ date,state,cases,deaths
 2020-04-08,Kentucky,104,7
 2020-04-08,Maryland,1158,20
 2020-04-08,Michigan,1369,114
-2020-04-08,Missouri,290,7
-2020-04-08,Nebraska,48,2
+2020-04-08,Missouri,290,6
+2020-04-08,Nebraska,47,2
 2020-04-08,New York,9568,953
 2020-04-08,Oklahoma,53,12
-2020-04-08,Virginia,312,6
+2020-04-08,Virginia,312,-9
 2020-04-08,Louisiana,746,70
 2020-04-08,Minnesota,85,5
 2020-04-08,Tennessee,236,11
@@ -1982,12 +1982,12 @@ date,state,cases,deaths
 2020-04-08,Mississippi,88,8
 2020-04-08,Puerto Rico,47,1
 2020-04-08,North Dakota,14,0
-2020-04-08,Pennsylvania,1832,73
+2020-04-08,Pennsylvania,1832,72
 2020-04-08,Rhode Island,221,5
 2020-04-08,South Dakota,73,0
 2020-04-08,Massachusetts,1588,77
 2020-04-08,New Hampshire,41,5
-2020-04-08,West Virginia,71,0
+2020-04-08,West Virginia,70,0
 2020-04-08,North Carolina,203,11
 2020-04-08,South Carolina,135,12
 2020-04-08,Virgin Islands,0,0
@@ -2024,7 +2024,7 @@ date,state,cases,deaths
 2020-04-09,Nebraska,56,1
 2020-04-09,New York,10765,1028
 2020-04-09,Oklahoma,160,1
-2020-04-09,Virginia,397,34
+2020-04-09,Virginia,397,49
 2020-04-09,Louisiana,1253,50
 2020-04-09,Minnesota,88,11
 2020-04-09,Tennessee,210,12
@@ -2054,7 +2054,7 @@ date,state,cases,deaths
 2020-04-10,Utah,123,4
 2020-04-10,Idaho,59,1
 2020-04-10,Maine,26,1
-2020-04-10,Texas,918,18
+2020-04-10,Texas,919,21
 2020-04-10,Alaska,11,0
 2020-04-10,Hawaii,23,2
 2020-04-10,Kansas,64,8
@@ -2079,7 +2079,7 @@ date,state,cases,deaths
 2020-04-10,Nebraska,84,3
 2020-04-10,New York,10794,996
 2020-04-10,Oklahoma,111,8
-2020-04-10,Virginia,467,12
+2020-04-10,Virginia,468,12
 2020-04-10,Louisiana,970,53
 2020-04-10,Minnesota,93,7
 2020-04-10,Tennessee,337,9
@@ -2109,7 +2109,7 @@ date,state,cases,deaths
 2020-04-11,Utah,105,1
 2020-04-11,Idaho,13,2
 2020-04-11,Maine,30,2
-2020-04-11,Texas,918,19
+2020-04-11,Texas,917,16
 2020-04-11,Alaska,11,1
 2020-04-11,Hawaii,21,0
 2020-04-11,Kansas,102,5
@@ -2129,12 +2129,12 @@ date,state,cases,deaths
 2020-04-11,Illinois,1293,75
 2020-04-11,Kentucky,149,4
 2020-04-11,Maryland,726,35
-2020-04-11,Michigan,1207,111
+2020-04-11,Michigan,1209,115
 2020-04-11,Missouri,225,11
 2020-04-11,Nebraska,40,0
 2020-04-11,New York,10160,997
 2020-04-11,Oklahoma,74,5
-2020-04-11,Virginia,568,9
+2020-04-11,Virginia,567,9
 2020-04-11,Louisiana,761,51
 2020-04-11,Minnesota,92,7
 2020-04-11,Tennessee,190,3
@@ -2184,7 +2184,7 @@ date,state,cases,deaths
 2020-04-12,Illinois,1672,45
 2020-04-12,Kentucky,112,4
 2020-04-12,Maryland,531,29
-2020-04-12,Michigan,641,95
+2020-04-12,Michigan,641,93
 2020-04-12,Missouri,136,0
 2020-04-12,Nebraska,87,0
 2020-04-12,New York,8435,957
@@ -2222,7 +2222,7 @@ date,state,cases,deaths
 2020-04-13,Texas,711,32
 2020-04-13,Alaska,5,0
 2020-04-13,Hawaii,5,0
-2020-04-13,Kansas,45,7
+2020-04-13,Kansas,47,7
 2020-04-13,Nevada,176,1
 2020-04-13,Oregon,57,1
 2020-04-13,Alabama,222,11
@@ -2239,7 +2239,7 @@ date,state,cases,deaths
 2020-04-13,Illinois,1173,73
 2020-04-13,Kentucky,85,8
 2020-04-13,Maryland,711,26
-2020-04-13,Michigan,993,115
+2020-04-13,Michigan,994,115
 2020-04-13,Missouri,228,20
 2020-04-13,Nebraska,65,1
 2020-04-13,New York,6548,882
@@ -2294,12 +2294,12 @@ date,state,cases,deaths
 2020-04-14,Illinois,1222,78
 2020-04-14,Kentucky,162,9
 2020-04-14,Maryland,536,40
-2020-04-14,Michigan,1357,165
+2020-04-14,Michigan,1355,164
 2020-04-14,Missouri,298,15
 2020-04-14,Nebraska,60,2
 2020-04-14,New York,7402,1003
 2020-04-14,Oklahoma,115,11
-2020-04-14,Virginia,424,5
+2020-04-14,Virginia,427,5
 2020-04-14,Louisiana,502,129
 2020-04-14,Minnesota,45,9
 2020-04-14,Tennessee,171,9
@@ -2369,7 +2369,7 @@ date,state,cases,deaths
 2020-04-15,North Dakota,24,0
 2020-04-15,Pennsylvania,1213,87
 2020-04-15,Rhode Island,278,7
-2020-04-15,South Dakota,180,0
+2020-04-15,South Dakota,181,0
 2020-04-15,Massachusetts,1755,151
 2020-04-15,New Hampshire,48,5
 2020-04-15,West Virginia,28,2
@@ -2449,7 +2449,7 @@ date,state,cases,deaths
 2020-04-17,Arizona,273,22
 2020-04-17,Florida,1413,58
 2020-04-17,Georgia,1014,50
-2020-04-17,Indiana,615,45
+2020-04-17,Indiana,616,45
 2020-04-17,Montana,7,1
 2020-04-17,Vermont,11,0
 2020-04-17,Wyoming,8,0
@@ -2459,12 +2459,12 @@ date,state,cases,deaths
 2020-04-17,Illinois,1841,61
 2020-04-17,Kentucky,93,9
 2020-04-17,Maryland,790,35
-2020-04-17,Michigan,833,135
+2020-04-17,Michigan,834,135
 2020-04-17,Missouri,172,14
 2020-04-17,Nebraska,122,0
 2020-04-17,New York,7532,804
 2020-04-17,Oklahoma,108,5
-2020-04-17,Virginia,602,30
+2020-04-17,Virginia,601,30
 2020-04-17,Louisiana,586,57
 2020-04-17,Minnesota,159,17
 2020-04-17,Tennessee,346,4
@@ -2514,12 +2514,12 @@ date,state,cases,deaths
 2020-04-18,Illinois,1585,130
 2020-04-18,Kentucky,185,5
 2020-04-18,Maryland,738,40
-2020-04-18,Michigan,765,81
+2020-04-18,Michigan,764,80
 2020-04-18,Missouri,234,10
 2020-04-18,Nebraska,132,4
 2020-04-18,New York,7249,668
 2020-04-18,Oklahoma,105,3
-2020-04-18,Virginia,562,20
+2020-04-18,Virginia,561,20
 2020-04-18,Louisiana,462,54
 2020-04-18,Minnesota,142,10
 2020-04-18,Tennessee,201,2
@@ -2534,7 +2534,7 @@ date,state,cases,deaths
 2020-04-18,North Dakota,89,0
 2020-04-18,Pennsylvania,1621,123
 2020-04-18,Rhode Island,314,19
-2020-04-18,South Dakota,131,0
+2020-04-18,South Dakota,130,0
 2020-04-18,Massachusetts,1970,156
 2020-04-18,New Hampshire,55,1
 2020-04-18,West Virginia,49,2
@@ -2552,7 +2552,7 @@ date,state,cases,deaths
 2020-04-19,Texas,514,16
 2020-04-19,Alaska,5,0
 2020-04-19,Hawaii,6,1
-2020-04-19,Kansas,78,8
+2020-04-19,Kansas,77,8
 2020-04-19,Nevada,84,3
 2020-04-19,Oregon,66,2
 2020-04-19,Alabama,180,13
@@ -2574,7 +2574,7 @@ date,state,cases,deaths
 2020-04-19,Nebraska,125,0
 2020-04-19,New York,6199,652
 2020-04-19,Oklahoma,29,1
-2020-04-19,Virginia,484,19
+2020-04-19,Virginia,483,19
 2020-04-19,Louisiana,348,29
 2020-04-19,Minnesota,143,13
 2020-04-19,Tennessee,200,3
@@ -2624,7 +2624,7 @@ date,state,cases,deaths
 2020-04-20,Illinois,1151,57
 2020-04-20,Kentucky,90,6
 2020-04-20,Maryland,858,34
-2020-04-20,Michigan,579,77
+2020-04-20,Michigan,580,77
 2020-04-20,Missouri,140,5
 2020-04-20,Nebraska,173,5
 2020-04-20,New York,4867,619
@@ -2669,17 +2669,17 @@ date,state,cases,deaths
 2020-04-21,Arizona,187,22
 2020-04-21,Florida,811,44
 2020-04-21,Georgia,742,43
-2020-04-21,Indiana,415,65
+2020-04-21,Indiana,430,65
 2020-04-21,Montana,4,0
 2020-04-21,Vermont,2,2
-2020-04-21,Wyoming,15,4
+2020-04-21,Wyoming,16,4
 2020-04-21,Arkansas,291,1
 2020-04-21,Colorado,341,36
 2020-04-21,Delaware,186,10
 2020-04-21,Illinois,1551,120
 2020-04-21,Kentucky,143,17
 2020-04-21,Maryland,511,70
-2020-04-21,Michigan,1008,232
+2020-04-21,Michigan,1007,232
 2020-04-21,Missouri,134,20
 2020-04-21,Nebraska,80,5
 2020-04-21,New York,4324,628
@@ -2724,10 +2724,10 @@ date,state,cases,deaths
 2020-04-22,Arizona,208,23
 2020-04-22,Florida,440,60
 2020-04-22,Georgia,910,27
-2020-04-22,Indiana,353,33
+2020-04-22,Indiana,361,33
 2020-04-22,Montana,2,2
 2020-04-22,Vermont,5,0
-2020-04-22,Wyoming,6,0
+2020-04-22,Wyoming,5,0
 2020-04-22,Arkansas,130,1
 2020-04-22,Colorado,431,42
 2020-04-22,Delaware,269,7
@@ -2779,7 +2779,7 @@ date,state,cases,deaths
 2020-04-23,Arizona,310,21
 2020-04-23,Florida,1339,60
 2020-04-23,Georgia,806,34
-2020-04-23,Indiana,633,47
+2020-04-23,Indiana,621,47
 2020-04-23,Montana,3,0
 2020-04-23,Vermont,2,3
 2020-04-23,Wyoming,6,1
@@ -2834,7 +2834,7 @@ date,state,cases,deaths
 2020-04-24,Arizona,276,11
 2020-04-24,Florida,885,59
 2020-04-24,Georgia,670,18
-2020-04-24,Indiana,653,40
+2020-04-24,Indiana,652,40
 2020-04-24,Montana,2,0
 2020-04-24,Vermont,2,1
 2020-04-24,Wyoming,20,0
@@ -2892,7 +2892,7 @@ date,state,cases,deaths
 2020-04-25,Indiana,719,46
 2020-04-25,Montana,1,0
 2020-04-25,Vermont,16,2
-2020-04-25,Wyoming,0,0
+2020-04-25,Wyoming,4,0
 2020-04-25,Arkansas,99,1
 2020-04-25,Colorado,712,-2
 2020-04-25,Delaware,134,12
@@ -2923,7 +2923,7 @@ date,state,cases,deaths
 2020-04-25,Massachusetts,2379,174
 2020-04-25,New Hampshire,73,7
 2020-04-25,West Virginia,15,1
-2020-04-25,North Carolina,490,30
+2020-04-25,North Carolina,496,34
 2020-04-25,South Carolina,183,9
 2020-04-25,Virgin Islands,1,0
 2020-04-25,District of Columbia,171,12
@@ -2944,10 +2944,10 @@ date,state,cases,deaths
 2020-04-26,Arizona,246,2
 2020-04-26,Florida,689,19
 2020-04-26,Georgia,234,10
-2020-04-26,Indiana,619,31
+2020-04-26,Indiana,620,31
 2020-04-26,Montana,3,0
 2020-04-26,Vermont,8,0
-2020-04-26,Wyoming,29,0
+2020-04-26,Wyoming,25,0
 2020-04-26,Arkansas,92,2
 2020-04-26,Colorado,473,8
 2020-04-26,Delaware,458,8
@@ -2977,8 +2977,8 @@ date,state,cases,deaths
 2020-04-26,South Dakota,66,1
 2020-04-26,Massachusetts,1590,169
 2020-04-26,New Hampshire,71,0
-2020-04-26,West Virginia,28,1
-2020-04-26,North Carolina,288,9
+2020-04-26,West Virginia,29,1
+2020-04-26,North Carolina,282,5
 2020-04-26,South Carolina,237,8
 2020-04-26,Virgin Islands,2,1
 2020-04-26,District of Columbia,142,13
@@ -2999,7 +2999,7 @@ date,state,cases,deaths
 2020-04-27,Arizona,190,0
 2020-04-27,Florida,610,14
 2020-04-27,Georgia,770,74
-2020-04-27,Indiana,962,4
+2020-04-27,Indiana,950,4
 2020-04-27,Montana,1,0
 2020-04-27,Vermont,4,1
 2020-04-27,Wyoming,18,0
@@ -3047,7 +3047,7 @@ date,state,cases,deaths
 2020-04-28,Texas,905,39
 2020-04-28,Alaska,6,0
 2020-04-28,Hawaii,2,0
-2020-04-28,Kansas,195,1
+2020-04-28,Kansas,194,1
 2020-04-28,Nevada,104,6
 2020-04-28,Oregon,31,7
 2020-04-28,Alabama,211,14
@@ -3229,7 +3229,7 @@ date,state,cases,deaths
 2020-05-01,Illinois,3137,103
 2020-05-01,Kentucky,171,8
 2020-05-01,Maryland,1741,53
-2020-05-01,Michigan,1001,78
+2020-05-01,Michigan,1000,78
 2020-05-01,Missouri,277,14
 2020-05-01,Nebraska,506,2
 2020-05-01,New York,3879,225
@@ -3610,7 +3610,7 @@ date,state,cases,deaths
 2020-05-08,Wyoming,9,0
 2020-05-08,Arkansas,53,0
 2020-05-08,Colorado,455,16
-2020-05-08,Delaware,172,11
+2020-05-08,Delaware,144,11
 2020-05-08,Illinois,2886,123
 2020-05-08,Kentucky,125,2
 2020-05-08,Maryland,1116,57
@@ -3665,7 +3665,7 @@ date,state,cases,deaths
 2020-05-09,Wyoming,9,0
 2020-05-09,Arkansas,0,0
 2020-05-09,Colorado,548,7
-2020-05-09,Delaware,166,8
+2020-05-09,Delaware,194,8
 2020-05-09,Illinois,2320,100
 2020-05-09,Kentucky,171,8
 2020-05-09,Maryland,1046,54
@@ -4006,7 +4006,7 @@ date,state,cases,deaths
 2020-05-15,Oklahoma,124,1
 2020-05-15,Virginia,859,22
 2020-05-15,Louisiana,348,31
-2020-05-15,Minnesota,806,20
+2020-05-15,Minnesota,797,20
 2020-05-15,Tennessee,329,4
 2020-05-15,Wisconsin,574,11
 2020-05-15,California,2068,153
@@ -4077,7 +4077,7 @@ date,state,cases,deaths
 2020-05-16,South Dakota,72,0
 2020-05-16,Massachusetts,1512,113
 2020-05-16,New Hampshire,92,12
-2020-05-16,West Virginia,23,1
+2020-05-16,West Virginia,22,1
 2020-05-16,North Carolina,819,11
 2020-05-16,South Carolina,254,0
 2020-05-16,Virgin Islands,0,0
@@ -4116,7 +4116,7 @@ date,state,cases,deaths
 2020-05-17,Oklahoma,73,0
 2020-05-17,Virginia,705,7
 2020-05-17,Louisiana,315,12
-2020-05-17,Minnesota,699,22
+2020-05-17,Minnesota,708,22
 2020-05-17,Tennessee,187,1
 2020-05-17,Wisconsin,203,0
 2020-05-17,California,1433,36
@@ -4171,7 +4171,7 @@ date,state,cases,deaths
 2020-05-18,Oklahoma,88,0
 2020-05-18,Virginia,752,5
 2020-05-18,Louisiana,334,72
-2020-05-18,Minnesota,704,9
+2020-05-18,Minnesota,695,9
 2020-05-18,Tennessee,376,3
 2020-05-18,Wisconsin,151,6
 2020-05-18,California,1577,32
@@ -4226,7 +4226,7 @@ date,state,cases,deaths
 2020-05-19,Oklahoma,91,6
 2020-05-19,Virginia,1005,27
 2020-05-19,Louisiana,329,18
-2020-05-19,Minnesota,657,17
+2020-05-19,Minnesota,666,17
 2020-05-19,Tennessee,534,5
 2020-05-19,Wisconsin,279,8
 2020-05-19,California,2038,100
@@ -4313,7 +4313,7 @@ date,state,cases,deaths
 2020-05-21,Alaska,0,0
 2020-05-21,Hawaii,4,0
 2020-05-21,Kansas,110,2
-2020-05-21,Nevada,101,3
+2020-05-21,Nevada,103,3
 2020-05-21,Oregon,16,1
 2020-05-21,Alabama,362,7
 2020-05-21,Arizona,418,16
@@ -4338,7 +4338,7 @@ date,state,cases,deaths
 2020-05-21,Louisiana,1188,21
 2020-05-21,Minnesota,530,32
 2020-05-21,Tennessee,436,4
-2020-05-21,Wisconsin,318,6
+2020-05-21,Wisconsin,393,6
 2020-05-21,California,2363,110
 2020-05-21,New Jersey,1073,96
 2020-05-21,New Mexico,134,11
@@ -4353,7 +4353,7 @@ date,state,cases,deaths
 2020-05-21,Massachusetts,1114,82
 2020-05-21,New Hampshire,67,9
 2020-05-21,West Virginia,36,2
-2020-05-21,North Carolina,694,12
+2020-05-21,North Carolina,713,13
 2020-05-21,South Carolina,204,9
 2020-05-21,Virgin Islands,0,0
 2020-05-21,District of Columbia,237,5
@@ -4368,7 +4368,7 @@ date,state,cases,deaths
 2020-05-22,Alaska,2,0
 2020-05-22,Hawaii,-5,0
 2020-05-22,Kansas,297,1
-2020-05-22,Nevada,129,6
+2020-05-22,Nevada,127,6
 2020-05-22,Oregon,47,2
 2020-05-22,Alabama,256,12
 2020-05-22,Arizona,293,12
@@ -4393,7 +4393,7 @@ date,state,cases,deaths
 2020-05-22,Louisiana,421,40
 2020-05-22,Minnesota,805,33
 2020-05-22,Tennessee,394,2
-2020-05-22,Wisconsin,665,9
+2020-05-22,Wisconsin,590,9
 2020-05-22,California,2313,66
 2020-05-22,New Jersey,1247,142
 2020-05-22,New Mexico,153,8
@@ -4408,7 +4408,7 @@ date,state,cases,deaths
 2020-05-22,Massachusetts,805,80
 2020-05-22,New Hampshire,79,5
 2020-05-22,West Virginia,102,1
-2020-05-22,North Carolina,746,21
+2020-05-22,North Carolina,727,20
 2020-05-22,South Carolina,259,3
 2020-05-22,Virgin Islands,0,0
 2020-05-22,District of Columbia,105,6
@@ -4419,7 +4419,7 @@ date,state,cases,deaths
 2020-05-23,Utah,203,4
 2020-05-23,Idaho,31,0
 2020-05-23,Maine,65,2
-2020-05-23,Texas,1017,24
+2020-05-23,Texas,1082,24
 2020-05-23,Alaska,5,0
 2020-05-23,Hawaii,1,0
 2020-05-23,Kansas,51,0
@@ -4474,7 +4474,7 @@ date,state,cases,deaths
 2020-05-24,Utah,132,0
 2020-05-24,Idaho,24,0
 2020-05-24,Maine,42,1
-2020-05-24,Texas,664,11
+2020-05-24,Texas,599,11
 2020-05-24,Alaska,0,0
 2020-05-24,Hawaii,0,0
 2020-05-24,Kansas,16,0
@@ -4697,7 +4697,7 @@ date,state,cases,deaths
 2020-05-28,Texas,1715,20
 2020-05-28,Alaska,13,0
 2020-05-28,Hawaii,3,0
-2020-05-28,Kansas,59,2
+2020-05-28,Kansas,60,2
 2020-05-28,Nevada,97,8
 2020-05-28,Oregon,48,3
 2020-05-28,Alabama,498,8
@@ -4752,7 +4752,7 @@ date,state,cases,deaths
 2020-05-29,Texas,1253,27
 2020-05-29,Alaska,6,0
 2020-05-29,Hawaii,2,0
-2020-05-29,Kansas,314,0
+2020-05-29,Kansas,313,0
 2020-05-29,Nevada,128,5
 2020-05-29,Oregon,45,0
 2020-05-29,Alabama,501,19
@@ -6072,7 +6072,7 @@ date,state,cases,deaths
 2020-06-22,Texas,4760,18
 2020-06-22,Alaska,10,0
 2020-06-22,Hawaii,2,0
-2020-06-22,Kansas,318,1
+2020-06-22,Kansas,318,2
 2020-06-22,Nevada,339,3
 2020-06-22,Oregon,145,2
 2020-06-22,Alabama,433,2
@@ -6127,7 +6127,7 @@ date,state,cases,deaths
 2020-06-23,Texas,5080,33
 2020-06-23,Alaska,36,0
 2020-06-23,Hawaii,3,0
-2020-06-23,Kansas,83,2
+2020-06-23,Kansas,83,1
 2020-06-23,Nevada,483,2
 2020-06-23,Oregon,191,0
 2020-06-23,Alabama,643,23
@@ -6182,7 +6182,7 @@ date,state,cases,deaths
 2020-06-24,Texas,6584,46
 2020-06-24,Alaska,21,0
 2020-06-24,Hawaii,14,0
-2020-06-24,Kansas,451,0
+2020-06-24,Kansas,451,1
 2020-06-24,Nevada,402,2
 2020-06-24,Oregon,170,3
 2020-06-24,Alabama,967,27
@@ -6228,3 +6228,58 @@ date,state,cases,deaths
 2020-06-24,Virgin Islands,2,0
 2020-06-24,District of Columbia,34,4
 2020-06-24,Northern Mariana Islands,0,0
+2020-06-25,Guam,14,0
+2020-06-25,Iowa,487,8
+2020-06-25,Ohio,892,17
+2020-06-25,Utah,629,1
+2020-06-25,Idaho,219,0
+2020-06-25,Maine,53,0
+2020-06-25,Texas,5473,29
+2020-06-25,Alaska,45,0
+2020-06-25,Hawaii,15,0
+2020-06-25,Kansas,97,1
+2020-06-25,Nevada,451,1
+2020-06-25,Oregon,124,4
+2020-06-25,Alabama,1142,5
+2020-06-25,Arizona,3090,28
+2020-06-25,Florida,5004,46
+2020-06-25,Georgia,1506,46
+2020-06-25,Indiana,519,8
+2020-06-25,Montana,37,0
+2020-06-25,Vermont,7,0
+2020-06-25,Wyoming,44,0
+2020-06-25,Arkansas,687,0
+2020-06-25,Colorado,324,2
+2020-06-25,Delaware,91,2
+2020-06-25,Illinois,910,38
+2020-06-25,Kentucky,271,8
+2020-06-25,Maryland,463,21
+2020-06-25,Michigan,448,19
+2020-06-25,Missouri,598,5
+2020-06-25,Nebraska,125,3
+2020-06-25,New York,738,28
+2020-06-25,Oklahoma,438,3
+2020-06-25,Virginia,432,14
+2020-06-25,Louisiana,938,12
+2020-06-25,Minnesota,360,9
+2020-06-25,Tennessee,873,10
+2020-06-25,Wisconsin,509,6
+2020-06-25,California,5524,82
+2020-06-25,New Jersey,2158,1877
+2020-06-25,New Mexico,202,5
+2020-06-25,Washington,598,7
+2020-06-25,Connecticut,81,11
+2020-06-25,Mississippi,1092,5
+2020-06-25,Puerto Rico,57,2
+2020-06-25,North Dakota,32,1
+2020-06-25,Pennsylvania,455,34
+2020-06-25,Rhode Island,34,8
+2020-06-25,South Dakota,60,3
+2020-06-25,Massachusetts,226,25
+2020-06-25,New Hampshire,40,10
+2020-06-25,West Virginia,65,0
+2020-06-25,North Carolina,1277,10
+2020-06-25,South Carolina,1125,10
+2020-06-25,Virgin Islands,3,0
+2020-06-25,District of Columbia,31,2
+2020-06-25,Northern Mariana Islands,0,0
