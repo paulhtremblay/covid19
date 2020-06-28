@@ -14,7 +14,7 @@ $(document).ready(function(){
   $('<li class="hasSubmenu searchWidget"></li>')
     .append('<label title="search for a country or state"></label>')
     .append('<output><ul class="submenu" hidden></ul></output>')
-    .appendTo('body > header > div > nav > ul, body > footer > nav > ul');
+    .appendTo('.siteMarque > nav > ul, footer > nav > ul');
 
   // append svg search icon and input element to label
   $('.hasSubmenu > label')

@@ -153,9 +153,7 @@ a.siteName {
   text-decoration: none;
 }
 
-.siteMarque > nav > ul > .hasSubmenu > label,
-.siteMarque > nav > ul > .hasSubmenu > output,
-.submenu {
+.siteMarque > nav > ul > .hasSubmenu > label {
   display: none;
 }
 
@@ -262,6 +260,10 @@ h1.siteName {
 
   nav > ul > li {
     display: inline-block;
+  }
+
+  .siteMarque > nav > ul > .hasSubmenu > label {
+    display: unset;
   }
 
   .siteSlogan {
