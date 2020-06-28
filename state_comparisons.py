@@ -2,6 +2,9 @@ import os
 import datetime
 
 import pandas as pd
+
+from slugify import slugify
+
 from bokeh.plotting import figure
 from bokeh.io import output_notebook
 from bokeh.io import show
@@ -19,6 +22,8 @@ ENV = Environment(
     ]),
     autoescape=select_autoescape(['html', 'xml'])
 )
+
+ENV.filters['slugify'] = slugify
 
 
 def _get_state_df():
