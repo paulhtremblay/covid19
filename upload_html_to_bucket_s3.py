@@ -61,7 +61,14 @@ def upload_html(bucket_name, verbose):
             print('uploading {t}'.format(t = tail))
         upload_to_storage(local_path = i, bucket_name = bucket_name,
                 object_name = 'counties/{name}'.format(name = tail))
-    files5 = glob.glob('templates/styles/*')
+    files5 = glob.glob('html_temp/comparisons/*')
+    for i in files4:
+        head, tail = os.path.split(i)
+        if verbose:
+            print('uploading {t}'.format(t = tail))
+        upload_to_storage(local_path = i, bucket_name = bucket_name,
+                object_name = 'comparisons/{name}'.format(name = tail))
+    files6 = glob.glob('templates/styles/*')
     for i in files5:
         head, tail = os.path.split(i)
         if verbose:
@@ -70,7 +77,7 @@ def upload_html(bucket_name, verbose):
                 object_name = 'styles/{name}'.format(name = tail),
                 content_type = 'text/css'
                 )
-    files6 = glob.glob('templates/javascript/*')
+    files7 = glob.glob('templates/javascript/*')
     for i in files6:
         head, tail = os.path.split(i)
         if verbose:

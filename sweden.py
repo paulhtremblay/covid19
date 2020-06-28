@@ -1,6 +1,7 @@
 import datetime
 import math
 import os
+import pathlib
 import pprint
 pp = pprint.PrettyPrinter(indent = 4)
 from google.cloud import bigquery
@@ -64,6 +65,7 @@ def get_html(date, script, div, window):
 
 
 def make_sweden_graph(plot_width = 300, plot_height = 300, window = 3):
+    pathlib.Path("html_temp/comparisons").mkdir(parents=True, exist_ok=True)
     pops = {   'belgium': 11460000.0,
     'norway': 5368000.0,
     'ny': 19450000.0,
@@ -95,7 +97,7 @@ def make_sweden_graph(plot_width = 300, plot_height = 300, window = 3):
     script, div = components(grid)
     html = get_html(script = script, div = div,
                 date = date, window = window)
-    with open(os.path.join('html_temp', 'sweden-vs-other'), 'w') as write_obj:
+    with open(os.path.join('html_temp', 'comparisons', 'sweden'), 'w') as write_obj:
             write_obj.write(html)
 
 if __name__ == '__main__':
