@@ -64,6 +64,19 @@ def get_html(date, script, div, window):
             )
 
 
+def make_comparisons_index_html():
+    """
+    Create the HTML for the /comparisons/ index page
+    """
+    t = ENV.get_template('comparisons_index.j2')
+    html = t.render(page_title = "Comparisons",
+            page_class_attr = ["comparisons"],
+            )
+    with open(os.path.join('html_temp', 'comparisons', 'index.html'), 'w') as write_obj:
+            write_obj.write(html)
+
+
+
 def make_sweden_graph(plot_width = 300, plot_height = 300, window = 3):
     pathlib.Path("html_temp/comparisons").mkdir(parents=True, exist_ok=True)
     pops = {   'belgium': 11460000.0,
@@ -99,6 +112,7 @@ def make_sweden_graph(plot_width = 300, plot_height = 300, window = 3):
                 date = date, window = window)
     with open(os.path.join('html_temp', 'comparisons', 'sweden'), 'w') as write_obj:
             write_obj.write(html)
+    make_comparisons_index_html()
 
 if __name__ == '__main__':
     make_sweden_graph()
