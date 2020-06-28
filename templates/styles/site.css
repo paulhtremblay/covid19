@@ -349,6 +349,7 @@ h1.siteName {
     padding-left: 0;
     display: flex;
     flex-flow: wrap;
+    align-items: baseline;
   }
 
 }
