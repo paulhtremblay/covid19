@@ -1,4 +1,3 @@
-import datetime
 import math
 import os
 import pathlib
@@ -48,14 +47,13 @@ def do_graphs(df,  pop, title, y_range, window,
             y_axis_label = 'deaths/million')
     return p
 
-def get_html(date, script, div, window):
+def get_html(script, div, window):
     """
     Create the HTML 
     """
     t = ENV.get_template('sweden_vs.j2')
     return t.render(page_title = "Sweden Vs. Other",
             script = script,
-            date = date,
             page_class_attr = ["swedenComparison"],
             div = div,
             graph_title = 'Deaths per million ({w} day rolling mean)'.format(
@@ -86,7 +84,6 @@ def make_sweden_graph(plot_width = 300, plot_height = 300, window = 3):
     'washington': 7615000.0}
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
-    date = datetime.datetime.now()
     df = get_data()
     df_sweden = df[(df.region == 'Sweden') & (df.deaths > 0)]
     df_norway = df[(df.region == 'Norway') & (df.deaths > 0)]
@@ -108,8 +105,7 @@ def make_sweden_graph(plot_width = 300, plot_height = 300, window = 3):
             window = window))
     grid = gridplot(l, ncols = 3)
     script, div = components(grid)
-    html = get_html(script = script, div = div,
-                date = date, window = window)
+    html = get_html(script = script, div = div, window = window)
     with open(os.path.join('html_temp', 'comparisons', 'sweden'), 'w') as write_obj:
             write_obj.write(html)
     make_comparisons_index_html()

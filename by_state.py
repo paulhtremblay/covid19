@@ -1,4 +1,3 @@
-import datetime
 import math
 import os
 import pprint
@@ -81,7 +80,7 @@ def shape_data(df, state, rank, the_dict, key):
         final.append(temp_dict.get(i, 0))
     the_dict[county_name]= final
 
-def get_html(date, territory, script, div, curr_death, last_week_deaths,
+def get_html(territory, script, div, curr_death, last_week_deaths,
         p_curr_week, p_last_week, cur_week_per_million, last_week_per_million):
 
     """
@@ -104,7 +103,6 @@ def get_html(date, territory, script, div, curr_death, last_week_deaths,
     t = ENV.get_template('states.j2')
     return t.render(page_title = territory,
             script =  script,
-            date = date,
             page_class_attr = ["state", "graph", slugify(territory)],
             div = div,
             curr_death = int(round(curr_death)),
@@ -223,7 +221,6 @@ def make_wa():
 def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400, 
         window = None):
     state_pop = get_state_pop()
-    date = datetime.datetime.now()
     if not window:
         window = int(variables.values['by_state_window'])
     if not os.path.isdir('html_temp'):
@@ -273,7 +270,6 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400,
         grid = gridplot(ps, ncols = 2)
         script, div = components(grid)
         html = get_html(territory = state, script = script, div = div,
-                date = date, 
                 last_week_deaths = change_dict[state]['last_week_mean'],
                 curr_death = change_dict[state]['current_week_mean'],
                 p_curr_week = change_dict[state]['p_value_last_week'],

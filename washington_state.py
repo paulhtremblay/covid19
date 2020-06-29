@@ -1,4 +1,3 @@
-import datetime
 import os
 import pprint
 pp = pprint.PrettyPrinter(indent = 4)
@@ -87,21 +86,19 @@ order by date
         final.append([i.get('date'), i.get('state'), i.get('cases'), i.get('deaths')])
     return final
 
-def get_html(script, div, date, title):
+def get_html(script, div, title):
     """
     Create the HTML for each state
     """
     t = ENV.get_template('data.j2')
     return t.render(page_title = title,
             script =  script,
-            date = date,
             div = div,
             )
 
 def make_washington_graphs():
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
-    date = datetime.datetime.now()
     df_states = common.make_dataframe(get_state_data())
     df_counties =  make_dataframe_wash_order()
     p_counties = common.graph_wash_county_order(df = df_counties, 
@@ -112,7 +109,7 @@ def make_washington_graphs():
             plot_width = 600, title = None)
     grid = gridplot([p_all, p_counties], ncols = 4)
     script, div = components(grid)
-    html = get_html(script, div, date, title = 'Washington')
+    html = get_html(script, div, title = 'Washington')
     with open('html_temp/wa', 'w') as write_obj:
         write_obj.write(html)
 
