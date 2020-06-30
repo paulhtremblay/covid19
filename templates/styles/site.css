@@ -1,57 +1,108 @@
 /* site wide styles for covid 19 data site */
 
-html {
-  --bleedPadding: .5rem;
-  --bleedMargin: -.4rem;
+body {
+  --pagePadding: .5rem;
+
   --bloodRed: rgb(155, 17, 28);
   --golden: #ffdc00;
   --brightYellow: #ffff00;
+
+  --txtColor: #090909;
+  --hColor: #400909;
+  --bgColor: #fefefe;
+
+  --linkHoverColor: #fefe33;
+  --linkHoverBgColor: #00f;
 }
 
-header {
+.siteMarque,
+footer {
   --txtColor: var(--golden);
   --bgColor: var(--bloodRed);
+  --linkHoverColor: var(--bloodRed);
+  --linkHoverBgColor: var(--golden);
 }
 
 body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
-  margin-top: 0;
-  padding-top: 0;
+  margin: 0;
+  padding: 0;
+  color: var(--txtColor);
+  background-color: var(--bgColor);
 }
 
-footer {
-  margin-top: 4em;
-}
-
-body > header > nav,
+body > header > h1,
+body > header > p,
+footer,
+main,
 .siteMarque {
-  margin-left: var(--bleedMargin);
-  margin-right: var(--bleedMargin);
-  padding-left: var(--bleedPadding);
-  padding-right: var(--bleedPadding);
+  padding-left: var(--pagePadding);
+  padding-right: var(--pagePadding);
 }
 
 .siteMarque {
   padding-top: .66em;
 }
 
+footer {
+  padding-top: var(--pagePadding);
+  padding-bottom: var(--pagePadding);
+  margin-top: 4em;
+}
+
 a.siteName,
 h1.siteName,
 .siteMarque,
-nav > ul > li > a {
+nav > ul > li > a,
+footer,
+footer > address > p > a {
   color: var(--txtColor);
   background-color: var(--bgColor);
-}
-
-h1 {
-  /* for h1 elements except h1.siteName on home page */
-  color: var(--bloodRed);
-  background-color: white;
 }
 
 h1.siteName {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+a:hover {
+  color: var(--linkHoverColor);
+  background-color: var(--linkHoverBgColor);
+  text-decoration: none;
+}
+
+.siteMarque > nav > svg {
+  height: auto;
+  width: 2em;
+  border-width: 2px;
+  border-style: outset;
+  border-color: #dcc;
+}
+
+.siteMarque > nav > svg.down {
+  border-style: inset;
+}
+
+.siteMarque > nav > svg > rect {
+  fill: var(--bgColor);
+}
+
+.siteMarque > nav > svg > g {
+  fill: var(--txtColor);
+}
+
+.siteMarque > nav > svg:hover > rect {
+  fill: var(--txtColor);
+}
+
+.siteMarque > nav > svg:hover > g {
+  fill: var(--bgColor);
+}
+
+h1 {
+  /* for h1 elements except h1.siteName on home page */
+  color: var(--hColor);
+  background-color: var(--bgColor);
 }
 
 nav {
@@ -83,18 +134,10 @@ nav > ul > li > svg {
   padding: .3em;
 }
 
-.hasSubmenu svg  {
+.hasSubmenu > label > svg,
+.hasSubmenu > svg {
   stroke: var(--txtColor);
   fill: var(--bgColor);
-}
-
-a:hover {
-  color: white;
-  background-color: blue;
-  text-decoration: none;
-}
-
-.hasSubmenu svg {
   vertical-align: middle;
 }
 
@@ -106,42 +149,46 @@ a:hover {
   margin-left: .1em;
 }
 
-a.siteName:hover,
-.hasSubmenu > svg:hover,
-nav > ul > li > a:hover {
-  /* reverse color on nav :hover */
-  color: var(--bgColor);
-  stroke: var(--bgColor);
-  background-color: var(--txtColor);
-}
-
 a.siteName {
   text-decoration: none;
 }
 
-nav > ul {
-  line-height: 2.4em;
-}
-
-.hasSubmenu > label,
-.hasSubmenu > output,
- .submenu {
+.siteMarque > nav > ul > .hasSubmenu > label {
   display: none;
 }
 
-ul.contributors > li {
-  margin-top: .5em;
+.submenu {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  color: black;
+  background-color: white;
+  display: none;
+}
+
+.contributors > li {
   margin-bottom: .5em;
 }
 
-nav > ul > li > ul > li > a,
-nav > ul > li > output > ul > li > a {
+.submenu > li > a,
+output > ul > li > a {
   padding: .3em;
+  display: block;
+  border-left: 1px solid var(--bgColor);
+  border-bottom: 1px solid var(--bgColor);
+  border-right: 1px solid var(--bgColor);
+  padding-top: .4em;
+  padding-bottom: .4em;
+}
+
+.submenu > li:first-child > a,
+output > ul > li:first-child > a {
+  border-top: 1px solid var(--bgColor);
 }
 
 h1.siteName {
-    padding-bottom: 0;
-    margin-border: 0;
+  padding-bottom: 0;
+  margin-border: 0;
 }
 
 @media screen and (width < 31em) {
@@ -150,22 +197,47 @@ h1.siteName {
     text-align: center;
   }
 
+  .siteMarque > nav {
+    position: relative;
+  }
+
+  .siteMarque > nav > svg {
+    z-index: 8;
+  }
+
+  .siteMarque > nav > ul {
+    display: none;  /* this is unset when svg is '.down' */
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    top: 1.5em;
+  }
+
+  .siteMarque > nav > svg.down + ul {
+    display: unset; /* unset display: none */
+  }
+
   nav > ul {
-    width: 13em;
+    width: 11em;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 0;
     list-style: none;
-    line-height: 1.5em;
+    text-align: center;
   }
+
+  /* TODO allow search results to take 100% width */
 
   nav > ul > li > a {
     display: block;
-    border: 1px solid;
-    border-top: none;
+    border-width: 0 1px 1px 1px ;
+    border-style: solid;
+    border-color: #400;
   }
 
   nav > ul > li:first-child > a {
-    border-top: 1px solid;
+    border-top-width: 1px;
   }
 
   nav > ul > li > svg,
@@ -173,12 +245,13 @@ h1.siteName {
     display: none;
   }
 
-  .submenu {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 31em) {
+
+  .siteMarque > nav > svg {
+    display: none;
+  }
 
   nav > ul {
     margin-left: 0;
@@ -189,14 +262,18 @@ h1.siteName {
     display: inline-block;
   }
 
+  .siteMarque > nav > ul > .hasSubmenu > label {
+    display: unset;
+  }
+
   .siteSlogan {
     display: none;
   }
 
-    .submenu {
-      line-height: 1.2em;
-      font-size: 1rem;
-    }
+  .submenu {
+    line-height: 1.2em;
+    font-size: 1rem;
+  }
 
     .hasSubmenu > svg {
       height: 1.5em;
@@ -219,7 +296,6 @@ h1.siteName {
 
     .submenu {
       position: absolute;
-      left: 0;
       top: 3em;
       margin-left: 0;
       padding-left: 0;
@@ -234,6 +310,11 @@ h1.siteName {
       box-shadow: .3em -0.1em .5em var(--bgColor);
     }
 
+    footer .hasSubmenu > output > .submenu {
+      top: unset;
+      bottom: 3em;
+    }
+
     .hasSubmenu > output > .submenu {
       left: 2em;
     }
@@ -243,17 +324,11 @@ h1.siteName {
     }
 
     .submenu > li > a {
-      display: block;
       white-space: nowrap;
-      border-left: 1px solid var(--bgColor);
-      border-bottom: 1px solid var(--bgColor);
-      border-right: 1px solid var(--bgColor);
-      padding-top: .4em;
-      padding-bottom: .4em;
     }
 
     .submenu.county > li:nth-child(odd) > a {
-      border-top: 1px solid var(--bloodRed);
+      border-top: 1px solid var(--bgColor);
     }
 
 
@@ -274,6 +349,7 @@ h1.siteName {
     padding-left: 0;
     display: flex;
     flex-flow: wrap;
+    align-items: baseline;
   }
 
 }
@@ -285,7 +361,10 @@ h1.siteName {
   }
 
   .siteName:after {
-    content: ": ";
+    content: ":";
+  }
+
+  a.siteName:after {
     color: var(--txtColor);
     background-color: var(--bgColor);
   }
@@ -293,6 +372,7 @@ h1.siteName {
   .siteSlogan {
     font-size: 200%;
     font-weight: bold;
+    padding-left: .1em;
   }
 
 }
@@ -303,6 +383,7 @@ h1.siteName {
     justify-content: space-between;
     max-width: 60em;
   }
+  /* TODO change padding on first nav li so it lines up with site name */
 
 }
 

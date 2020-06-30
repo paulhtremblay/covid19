@@ -28,11 +28,11 @@ mkdir includes
 cp -R templates/styles html_temp/styles
 cp -R templates/javascript html_temp/javascript
 python make_nav.py
+python make_index_404.py
 python us_states_rates.py
 python make_territories.py
 python by_state.py
 python sweden.py
-python make_index_404.py
 python make_about.py
 #python comparison_open.py
 python state_comparisons.py

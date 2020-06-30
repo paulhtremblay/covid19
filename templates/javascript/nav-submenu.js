@@ -14,7 +14,7 @@ $(document).ready(function(){
   $('<li class="hasSubmenu searchWidget"></li>')
     .append('<label title="search for a country or state"></label>')
     .append('<output><ul class="submenu" hidden></ul></output>')
-    .appendTo('body > header > div > nav > ul');
+    .appendTo('.siteMarque > nav > ul, footer > nav > ul');
 
   // append svg search icon and input element to label
   $('.hasSubmenu > label')
@@ -24,6 +24,11 @@ $(document).ready(function(){
   // add all region page links to output ul search results
   $('.regions > li').clone().appendTo('output > ul.submenu');
   // TODO improve clone, maybe clone entire ul element then flatten instead of cloning each li element
+
+
+  $('.siteMarque > nav > svg').click(function(){
+    $(this).toggleClass('down');
+  });
 
 
   $(".hasSubmenu > svg").click(function(){
@@ -44,9 +49,8 @@ $(document).ready(function(){
 
 
   // if user clicks anywhere outside of submenu, close any open submenus
-  $(document).click(function(event) {
-    $target = $(event.target);
-    if(!$target.closest('.hasSubmenu').length && $('.submenu').is(":visible")) {
+  $(document).click(function(evt) {
+    if(!$(evt.target).closest('.hasSubmenu').length && $('.submenu').is(":visible")) {
       closeSubmenus(200);
     }
   });
@@ -54,11 +58,11 @@ $(document).ready(function(){
 
   $('.hasSubmenu > label > input').focus(function(){
     // on search input focus (e.g. when user clicks inside it)
-    // close other submenu popovers, and open filtered ul.searchResutls
-    // if there are characters in the input
+    // close other submenu popovers, and open filtered search
+    // results ul if there are characters in the input
     closeSubmenus();
     if ($.trim(this.value)) {
-      $('output > .submenu').slideDown(300);
+      $(this).parent('label').next('output').children('.submenu').slideDown(300);
     }
   });
 
@@ -67,22 +71,24 @@ $(document).ready(function(){
     // on input to search form, show filtered li elements matching
     // any text entered, or hide output ul if field is empty
 
-    searchText = $.trim(this.value).toLowerCase();
+    var regionName;
+    var searchText = $.trim(this.value).toLowerCase();
+    var searchResults = $(this).parent('label').next('output').children('.submenu');
 
     if (searchText) {
       // filter search results based on text entered in input
-      $('output > .submenu > li').each(function(){
+      searchResults.children('li').each(function(){
         regionName = $(this).text().toLowerCase();
         (regionName.indexOf(searchText) >= 0) ? $(this).show() : $(this).hide();
       });
       // show search results output ul.submenu
-      if ($('output > .submenu').is(':hidden')) {
-        $('output > .submenu').slideDown(300);
+      if (searchResults.is(':hidden')) {
+        searchResults.slideDown(300);
       }
     }
     else {
       // input is empty, so hide search results output ul.submenu
-      $('output > .submenu').hide();
+      $('output > .submenu').slideUp(300);
     }
   });
 
@@ -97,6 +103,7 @@ $(document).ready(function(){
   // reset page before navigating away, so that if user
   // presses back button on browser, submenus will be closed
   window.onbeforeunload = function(){
+    $('.siteMarque > nav > ul').hide().addClass('hide');
     closeSubmenus(1);
   }
 

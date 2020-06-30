@@ -1,7 +1,11 @@
 import os
+import pathlib
 import datetime
 
 import pandas as pd
+
+from slugify import slugify
+
 from bokeh.plotting import figure
 from bokeh.io import output_notebook
 from bokeh.io import show
@@ -19,6 +23,8 @@ ENV = Environment(
     ]),
     autoescape=select_autoescape(['html', 'xml'])
 )
+
+ENV.filters['slugify'] = slugify
 
 
 def _get_state_df():
@@ -68,32 +74,23 @@ def append_to_graph(df, l, title, df_ny, keyword = 'cases_pop', max_y = 600):
         x_range = (datetime.datetime(2020,3, 1) , datetime.datetime(2020,6, 20))
     ))
 
-def make_dir(key):
-    dir_path = os.path.join('html_temp', key)
-    if not os.path.isdir(dir_path):
-        print(dir_path)
-        os.mkdir(dir_path)
-    return dir_path
-
-def get_html(date, script, div, title):
-
+def get_html(script, div, title):
     """
     Create the HTML  
     """
-    t = ENV.get_template('comparison.j2')
-    return t.render( script =  script,
-            date = date,
+    t = ENV.get_template('data.j2')
+    return t.render(page_title = title,
+            script = script,
             div = div,
-            title = title,
             )
 
 def make_state_graphs():
-    date = datetime.datetime.now()
+    pathlib.Path("html_temp/comparisons").mkdir(parents=True, exist_ok=True)
     df_pop = _get_pop_df()
     df_state = _get_state_df()
     states = list(set(df_state['state']))
-    html_paths = {'cases_pop':'comparisons-cases',
-            'deaths_pop': 'comparisons-deaths',
+    html_paths = {'cases_pop':'state-cases',
+            'deaths_pop': 'state-deaths',
             }
     titles = {'cases_pop':'Cases',
             'deaths_pop': 'Deaths',
@@ -119,8 +116,8 @@ def make_state_graphs():
             #append_to_graph(df_ny, l, 'New york', keyword = case[0], max_y = case[1])
         grid = gridplot(l, ncols = 3)
         script, div = components(grid)
-        html = get_html(script = script, div = div, date = date, title = titles[case[0]])
-        with open(os.path.join('html_temp', html_paths[case[0]]), 'w') as write_obj:
+        html = get_html(script = script, div = div, title = titles[case[0]])
+        with open(os.path.join('html_temp', 'comparisons', html_paths[case[0]]), 'w') as write_obj:
             write_obj.write(html)
 
 if __name__ == '__main__':

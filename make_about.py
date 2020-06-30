@@ -1,4 +1,5 @@
 import os
+import datetime
 import ssl
 import urllib.request
 import json
@@ -21,10 +22,12 @@ ENV = Environment(
 ENV.filters['slugify'] = slugify
 
 def make_about():
+    about_page_update = datetime.datetime.utcnow().replace(microsecond=0)
     t = ENV.get_template('about.j2')
     html = t.render(page_title = 'About This Site',
             page_class_attr = ["aboutSite"],
-            contributors = contributors
+            contributors = contributors,
+            about_page_update = about_page_update
             )
     with open(os.path.join('html_temp', 'about'), 'w') as write_obj:
         write_obj.write(html)
