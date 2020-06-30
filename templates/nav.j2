@@ -1,30 +1,47 @@
-          <nav>
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li class="hasSubmenu">
-                <a href="/countries/">Countries</a>
-                <ul class="submenu regions" hidden>
-                  {%- for c in countries %}
-                  <li><a href="/countries/{{ c|slugify }}">{{ c }}</a></li>
-                  {%- endfor %}
-                </ul>
-              </li>
-              <li class="hasSubmenu">
-                <a href="/states/"><abbr title="United States">U.S.</abbr> States</a>
-                <ul class="submenu regions" hidden>
-                  {%- for s in states %}
-                  <li><a href="/states/{{ s|slugify }}">{{ s }}</a></li>
-                  {%- endfor %}
-                </ul>
-              </li>
-              <li class="hasSubmenu lastRegionContainer">
-                <a href="/counties/"><abbr title="United States">U.S.</abbr> Counties</a>
-                <ul class="submenu regions county" hidden>
-                  {%- for ct in counties %}
-                  <li><a href="/counties/{{ ct|slugify }}-cases">{{ ct }} Cases by County</a></li>
-                  <li><a href="/counties/{{ ct|slugify }}-deaths">{{ ct }} Deaths by County</a></li>
-                  {%- endfor %}
-                </ul>
-              </li>
-            </ul>
-          </nav>
+<nav>
+          <svg width="14" height="14" viewBox="0 0 14 14">
+            <title>menu</title>
+            <rect height="14" width="14" rx="1"/>
+            <g fill="#eee">
+              <rect id="bar" x="1" y="2" height="2" width="12" rx="1"/>
+              <use href="#bar" y="4"/>
+              <use href="#bar" y="8"/>
+            </g>
+          </svg>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li class="hasSubmenu">
+              <a href="/countries/">Countries</a>
+              <ul class="submenu regions" hidden>
+              {%- for c in countries %}
+                <li><a href="/countries/{{ c|slugify }}">{{ c }}</a></li>
+              {%- endfor %}
+              </ul>
+            </li>
+            <li class="hasSubmenu">
+              <a href="/states/"><abbr title="United States">U.S.</abbr> States</a>
+              <ul class="submenu regions" hidden>
+              {%- for s in states %}
+                <li><a href="/states/{{ s|slugify }}">{{ s }}</a></li>
+              {%- endfor %}
+              </ul>
+            </li>
+            <li class="hasSubmenu">
+              <a href="/counties/"><abbr title="United States">U.S.</abbr> Counties</a>
+              <ul class="submenu regions county" hidden>
+              {%- for ct in counties %}
+                <li><a href="/counties/{{ ct|slugify }}-cases">{{ ct }} Cases by County</a></li>
+                <li><a href="/counties/{{ ct|slugify }}-deaths">{{ ct }} Deaths by County</a></li>
+              {%- endfor %}
+              </ul>
+            </li>
+            <li class="hasSubmenu">
+              <a href="/comparisons/">Comparisons</a>
+              <ul class="submenu" hidden>
+                <li><a href="/comparisons/sweden">Sweden vs. Other Countries</a></li>
+                <li><a href="/comparisons/state-cases">State Cases vs New York</a></li>
+                <li><a href="/comparisons/state-deaths">State Deaths vs New York</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>

@@ -1,6 +1,6 @@
-import datetime
 import math
 import os
+import pathlib
 import pprint
 pp = pprint.PrettyPrinter(indent = 4)
 from google.cloud import bigquery
@@ -47,14 +47,13 @@ def do_graphs(df,  pop, title, y_range, window,
             y_axis_label = 'deaths/million')
     return p
 
-def get_html(date, script, div, window):
+def get_html(script, div, window):
     """
     Create the HTML 
     """
     t = ENV.get_template('sweden_vs.j2')
     return t.render(page_title = "Sweden Vs. Other",
             script = script,
-            date = date,
             page_class_attr = ["swedenComparison"],
             div = div,
             graph_title = 'Deaths per million ({w} day rolling mean)'.format(
@@ -63,7 +62,21 @@ def get_html(date, script, div, window):
             )
 
 
+def make_comparisons_index_html():
+    """
+    Create the HTML for the /comparisons/ index page
+    """
+    t = ENV.get_template('comparisons_index.j2')
+    html = t.render(page_title = "Comparisons",
+            page_class_attr = ["comparisons"],
+            )
+    with open(os.path.join('html_temp', 'comparisons', 'index.html'), 'w') as write_obj:
+            write_obj.write(html)
+
+
+
 def make_sweden_graph(plot_width = 300, plot_height = 300, window = 3):
+    pathlib.Path("html_temp/comparisons").mkdir(parents=True, exist_ok=True)
     pops = {   'belgium': 11460000.0,
     'norway': 5368000.0,
     'ny': 19450000.0,
@@ -71,7 +84,6 @@ def make_sweden_graph(plot_width = 300, plot_height = 300, window = 3):
     'washington': 7615000.0}
     if not os.path.isdir('html_temp'):
         os.mkdir('html_temp')
-    date = datetime.datetime.now()
     df = get_data()
     df_sweden = df[(df.region == 'Sweden') & (df.deaths > 0)]
     df_norway = df[(df.region == 'Norway') & (df.deaths > 0)]
@@ -93,10 +105,10 @@ def make_sweden_graph(plot_width = 300, plot_height = 300, window = 3):
             window = window))
     grid = gridplot(l, ncols = 3)
     script, div = components(grid)
-    html = get_html(script = script, div = div,
-                date = date, window = window)
-    with open(os.path.join('html_temp', 'sweden-vs-other'), 'w') as write_obj:
+    html = get_html(script = script, div = div, window = window)
+    with open(os.path.join('html_temp', 'comparisons', 'sweden'), 'w') as write_obj:
             write_obj.write(html)
+    make_comparisons_index_html()
 
 if __name__ == '__main__':
     make_sweden_graph()

@@ -3,6 +3,13 @@ import os
 from google.cloud import bigquery
 import datetime
 
+def get_state_totals_sql():
+    return """
+    SELECT state, cases, deaths
+FROM `paul-henry-tremblay.covid19.us_states`
+where date = (select max(date) from `paul-henry-tremblay.covid19.us_states`)
+    """
+
 def get_7_day_state():
     return """
     SELECT u.state, date, new_deaths, new_cases,
@@ -207,6 +214,8 @@ def gen_writer(client, sql, path):
 
 def get_all_data():
     client = bigquery.Client(project='paul-henry-tremblay')
+    gen_writer(client = client, sql = get_state_totals_sql(),
+            path = 'states_totals.csv')
     gen_writer(client = client, sql =get_sql_deaths_ranked(), 
             path = 'states_deaths_ranked.csv')
     gen_writer(client = client, sql =get_sql_cases_ranked(), 
