@@ -3,6 +3,18 @@ import os
 from google.cloud import bigquery
 import datetime
 
+def get_non_king_slq():
+    return """
+    SELECT date,  sum(new_cases) as cases,
+sum(new_deaths) as deaths
+FROM `paul-henry-tremblay.covid19.us_counties_diff`
+where state = 'Washington'
+and county != 'King'
+--and date > '2020-06-01'
+group by date
+order by date
+    """
+
 def get_state_totals_sql():
     return """
     SELECT state, cases, deaths
@@ -236,6 +248,8 @@ def get_all_data():
             path = 'states_population.csv')
     gen_writer(client = client, sql =get_7_day_state(), 
             path = 'seven_day_state.csv')
+    gen_writer(client = client, sql =get_non_king_slq(), 
+            path = 'non_king.csv')
     gen_writer(client = client, sql =get_7_day_county(), 
             path = 'seven_day_county.csv')
     gen_writer(client = client, sql = get_timestamp(),
