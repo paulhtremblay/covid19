@@ -71,7 +71,7 @@ def append_to_graph(df, l, title, df_ny, keyword = 'cases_pop', max_y = 600):
     l.append(incidents_over_time_bar(df = df, key = keyword, 
         df_ny = df_ny, plot_width = 300,
         plot_height = 300, title = title, y_range = (0,max_y),
-        x_range = (datetime.datetime(2020,3, 1) , datetime.datetime(2020,6, 20))
+        x_range = (datetime.datetime(2020,3, 1) , datetime.datetime.now())
     ))
 
 def get_html(script, div, title):
