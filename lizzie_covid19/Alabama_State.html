@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.2.min.js" integrity="sha384-ufR9RFnRs6lniiaFvtJziE0YeidtAgBRH6ux2oUItHw5WTvE1zuk9uzhUU/FJXDp" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="ba26a3e6-ff63-4c92-b9e0-df5dc6572ce3" data-root-id="2584"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2767">
+          {"d4bc89e1-0c20-4728-88f8-8e7064e64b50":{"roots":{"references":[{"attributes":{"children":[{"id":"2583"},{"id":"2581"}]},"id":"2584","type":"Column"},{"attributes":{"source":{"id":"2507"}},"id":"2546","type":"CDSView"},{"attributes":{"data_source":{"id":"2507"},"glyph":{"id":"2543"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2544"},"selection_glyph":null,"view":{"id":"2546"}},"id":"2545","type":"GlyphRenderer"},{"attributes":{"items":[{"id":"2554"},{"id":"2568"}],"label_text_font_size":"8pt","location":"top_left"},"id":"2553","type":"Legend"},{"attributes":{},"id":"2515","type":"LinearScale"},{"attributes":{"label":{"value":"daily_cases"},"renderers":[{"id":"2545"}]},"id":"2554","type":"LegendItem"},{"attributes":{},"id":"2528","type":"WheelZoomTool"},{"attributes":{"toolbar":{"id":"2582"},"toolbar_location":"above"},"id":"2583","type":"ToolbarBox"},{"attributes":{},"id":"2565","type":"UnionRenderers"},{"attributes":{"callback":null,"mode":"vline","tooltips":[["date","@ToolTipDates"],["daily_cases","@daily_cases"],["daily_deaths","@daily_deaths"]]},"id":"2571","type":"HoverTool"},{"attributes":{"below":[{"id":"2519"}],"center":[{"id":"2522"},{"id":"2526"},{"id":"2553"}],"left":[{"id":"2523"}],"plot_height":400,"plot_width":450,"renderers":[{"id":"2545"},{"id":"2558"}],"title":{"id":"2509"},"toolbar":{"id":"2534"},"toolbar_location":null,"x_range":{"id":"2511"},"x_scale":{"id":"2515"},"y_range":{"id":"2541"},"y_scale":{"id":"2517"}},"id":"2508","subtype":"Figure","type":"Plot"},{"attributes":{"line_color":"blue","line_width":2,"x":{"field":"date"},"y":{"field":"daily_cases"}},"id":"2543","type":"Line"},{"attributes":{"line_color":"red","line_width":3,"x":{"field":"date"},"y":{"field":"daily_deaths"}},"id":"2556","type":"Line"},{"attributes":{},"id":"2530","type":"SaveTool"},{"attributes":{"source":{"id":"2507"}},"id":"2559","type":"CDSView"},{"attributes":{},"id":"2527","type":"PanTool"},{"attributes":{"line_alpha":0.1,"line_color":"red","line_width":3,"x":{"field":"date"},"y":{"field":"daily_deaths"}},"id":"2557","type":"Line"},{"attributes":{"toolbars":[{"id":"2534"}],"tools":[{"id":"2527"},{"id":"2528"},{"id":"2529"},{"id":"2530"},{"id":"2531"},{"id":"2532"},{"id":"2571"}]},"id":"2582","type":"ProxyToolbar"},{"attributes":{"days":["%m/%d","%a%d%y"]},"id":"2569","type":"DatetimeTickFormatter"},{"attributes":{"overlay":{"id":"2533"}},"id":"2529","type":"BoxZoomTool"},{"attributes":{},"id":"2531","type":"ResetTool"},{"attributes":{"axis_label":"Daily new cases and deaths","formatter":{"id":"2549"},"ticker":{"id":"2524"}},"id":"2523","type":"LinearAxis"},{"attributes":{"data_source":{"id":"2507"},"glyph":{"id":"2556"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2557"},"selection_glyph":null,"view":{"id":"2559"}},"id":"2558","type":"GlyphRenderer"},{"attributes":{},"id":"2517","type":"LinearScale"},{"attributes":{"data":{"ToolTipDates":["May 30","May 31","Jun 01","Jun 02","Jun 03","Jun 04","Jun 05","Jun 06","Jun 07","Jun 08","Jun 09","Jun 10","Jun 11","Jun 12","Jun 13","Jun 14","Jun 15","Jun 16","Jun 17","Jun 18","Jun 19","Jun 20","Jun 21","Jun 22","Jun 23","Jun 24","Jun 25","Jun 26"],"county":["Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga","Autauga"],"daily_cases":{"__ndarray__":"AAAAAAAA+H8AAAAAAAAUQAAAAAAAACpAAAAAAAAAGEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAHEAAAAAAAAAmQAAAAAAAABhAAAAAAAAAHEAAAAAAAAAkQAAAAAAAACpAAAAAAAAANEAAAAAAAAAmQAAAAAAAACBAAAAAAAAAOkAAAAAAAAAcQAAAAAAAABRAAAAAAAAAAEAAAAAAAAA5QAAAAAAAACZAAAAAAAAANEAAAAAAAAAIQAAAAAAAACBAAAAAAAAAJkAAAAAAAAAwQAAAAAAAACRAAAAAAAAAIkA=","dtype":"float64","shape":[28]},"daily_deaths":{"__ndarray__":"AAAAAAAA+H8AAAAAAAAAAAAAAAAAAPA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPA/AAAAAAAAAAAAAAAAAADwPwAAAAAAAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=","dtype":"float64","shape":[28]},"date":{"__ndarray__":"AAAADS4md0IAAMBygCZ3QgAAgNjSJndCAABAPiUnd0IAAACkdyd3QgAAwAnKJ3dCAACAbxwod0IAAEDVbih3QgAAADvBKHdCAADAoBMpd0IAAIAGZil3QgAAQGy4KXdCAAAA0goqd0IAAMA3XSp3QgAAgJ2vKndCAABAAwIrd0IAAABpVCt3QgAAwM6mK3dCAACANPkrd0IAAECaSyx3QgAAAACeLHdCAADAZfAsd0IAAIDLQi13QgAAQDGVLXdCAAAAl+ctd0IAAMD8OS53QgAAgGKMLndCAABAyN4ud0I=","dtype":"float64","shape":[28]},"index":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27],"state":["Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama","Alabama"]},"selected":{"id":"2566"},"selection_policy":{"id":"2565"}},"id":"2507","type":"ColumnDataSource"},{"attributes":{},"id":"2532","type":"HelpTool"},{"attributes":{"axis":{"id":"2523"},"dimension":1,"ticker":null},"id":"2526","type":"Grid"},{"attributes":{},"id":"2566","type":"Selection"},{"attributes":{},"id":"2524","type":"BasicTicker"},{"attributes":{"line_alpha":0.1,"line_color":"blue","line_width":2,"x":{"field":"date"},"y":{"field":"daily_cases"}},"id":"2544","type":"Line"},{"attributes":{"label":{"value":"daily_deaths"},"renderers":[{"id":"2558"}]},"id":"2568","type":"LegendItem"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"2527"},{"id":"2528"},{"id":"2529"},{"id":"2530"},{"id":"2531"},{"id":"2532"},{"id":"2571"}]},"id":"2534","type":"Toolbar"},{"attributes":{},"id":"2520","type":"BasicTicker"},{"attributes":{"axis":{"id":"2519"},"grid_line_color":null,"ticker":null},"id":"2522","type":"Grid"},{"attributes":{"axis_label":"Date","formatter":{"id":"2569"},"ticker":{"id":"2520"}},"id":"2519","type":"LinearAxis"},{"attributes":{},"id":"2511","type":"DataRange1d"},{"attributes":{"end":26.52},"id":"2541","type":"Range1d"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"2533","type":"BoxAnnotation"},{"attributes":{"children":[[{"id":"2508"},0,0]]},"id":"2581","type":"GridBox"},{"attributes":{},"id":"2549","type":"BasicTickFormatter"},{"attributes":{"text":"Autauga County Alabama State"},"id":"2509","type":"Title"}],"root_ids":["2584"]},"title":"Bokeh Application","version":"2.0.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('2767').textContent;
+                  var render_items = [{"docid":"d4bc89e1-0c20-4728-88f8-8e7064e64b50","root_ids":["2584"],"roots":{"2584":"ba26a3e6-ff63-4c92-b9e0-df5dc6572ce3"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
