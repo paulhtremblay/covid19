@@ -35,6 +35,8 @@ def covid_tracker_get():
     'score' : True,
     'positiveScore' : True,
     'total' : True,
+    'deathConfirmed': True,
+    'deathProbable': True,
             }
 
     good_fields = {
