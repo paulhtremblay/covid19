@@ -1,4 +1,5 @@
 import os
+import textile
 
 from jinja2 import Environment, select_autoescape, FileSystemLoader
 
@@ -15,9 +16,24 @@ ENV = Environment(
 ENV.filters['slugify'] = slugify
 
 def make_index():
+    if not os.path.isfile(os.path.join('home_page', 'script')):
+        script = ''
+        div = ''
+        text_commentary = ''
+    else:
+        with open('home_page/script', 'r') as read_obj:
+            script = ''.join(read_obj.readlines())
+        with open('home_page/div', 'r') as read_obj:
+            div = ''.join(read_obj.readlines())
+        with open('home_page/text.txt', 'r') as read_obj:
+            text_commentary = ''.join(read_obj.readlines())
+            text_commentary = textile.textile(text_commentary )
     t = ENV.get_template('index.j2')
     html = t.render(
             page_class_attr = ["home"],
+            script = script,
+            div = div,
+            text_commentary = text_commentary
             )
     with open(os.path.join('html_temp', 'index.html'), 'w') as write_obj:
         write_obj.write(html)
