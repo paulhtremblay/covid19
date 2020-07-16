@@ -9,25 +9,33 @@
 {%- block page_h1 -%}{%- endblock page_h1 -%}
 
 {% block content %}
-
-
         <p>
             Number of Covid-19 infections and deaths
             in the <abbr title="United States">U.S.</abbr> and world,
             in graphs and tables.
         </p>
-		<h3>Graph of the Day</h3>
-        {{div|safe}}
-		{{text_commentary|safe}}
-        <p>
-            Quick links:
-        </p>
-        <ul>
-            <li><a href="/countries/united-states-of-america">United States</a></li>
-            <li><a href="/countries/">List of countries</a></li>
-            <li><a href="/states/">List of states in the U.S.</a></li>
-            <li><a href="/states/table-cases">Table of cases in U.S. states</a></li>
-            <li><a href="/states/table-deaths">Table of deaths in U.S. states</a></li>
-        </ul>
+
+        {% if div is defined and div|length %}
+        <article>
+
+    		<h1>Graph of the Day</h1>
+
+            {{div|safe}}
+
+    	    <p>
+    	        {{text_commentary|safe}}
+    	    </p>
+
+	    </article>
+	    {% endif %}
+
+        <section>
+            <h1>Quick links:</h1>
+            <ul>
+                <li><a href="/countries/united-states-of-america">United States</a></li>
+                <li><a href="/states/table-cases">Table of cases in U.S. states</a></li>
+                <li><a href="/states/table-deaths">Table of deaths in U.S. states</a></li>
+            </ul>
+	    </section>
 
 {% endblock content %}
