@@ -250,6 +250,8 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400,
             for i in range(1,5):
                 shape_data(df, state, i, the_dict, key = the_info[1], 
                         )
+            if state == 'Northern Mariana Islands':
+                continue
             the_dict = _trim_data(the_dict)
             y = df_day_[df_day_['state'] == state][the_info[1]].rolling(window).mean()  
             first = _get_first_nonzero(y)
