@@ -38,6 +38,7 @@ python make_about.py
 python state_comparisons.py
 python data_table.py
 python by_counties.py
+python masks_states.py
 python state_comparisons.py
 UPLOAD_TO=dev
 if [ $BRANCH == 'master' ]; then
