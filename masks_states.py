@@ -266,7 +266,7 @@ def main():
     g = do_mask_mandates(window = 7, plot_height = 350, plot_width = 300)
     script, div = components(g)
     html = get_html(script=script, div=div)
-    with open(os.path.join('html_temp', 'state-masks'), 'w') as write_obj:
+    with open(os.path.join('html_temp', 'comparisons', 'state-masks'), 'w') as write_obj:
         write_obj.write(html)
 
 if __name__ == '__main__':
