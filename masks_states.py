@@ -258,6 +258,7 @@ def get_html(script, div):
     """
     t = ENV.get_template('masks.j2')
     return t.render(
+            page_title = 'Impact of Mask Mandates',
             script = script,
             div = div,
             )
