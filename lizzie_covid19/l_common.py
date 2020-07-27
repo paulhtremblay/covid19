@@ -82,6 +82,16 @@ def dataframe_from_sql(col_names, sql_str):
     # return source
 
 
+# Get sub DataFrame from DataFrame by items in specific column
+def split_df_by_column(df, col):
+    dict = {}
+    # Unique items in col
+    unique_col_items = sorted(list(set(df[col])))
+    for col_item in unique_col_items:
+        dict[col_item] = df[df[col] == col_item]
+    return dict
+
+
 def make_county_graph(state, county, df, max_y=None):
     # Filter state
     df_county = df[(df['state'] == state) & (df['county'] == county)]

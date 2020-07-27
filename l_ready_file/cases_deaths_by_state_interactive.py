@@ -9,12 +9,8 @@ import datetime
 import pandas as pd
 from bokeh.io import curdoc
 from bokeh.plotting import figure, show
-from bokeh.models import (CategoricalColorMapper, HoverTool, ColumnDataSource,
-                          Panel, DatetimeTickFormatter, FuncTickFormatter,
-                          SingleIntervalTicker, LinearAxis)
-from bokeh.models.widgets import (CheckboxGroup, Slider, RangeSlider, Tabs,
-                                  CheckboxButtonGroup, TableColumn, DataTable,
-                                  Select)
+from bokeh.models import (HoverTool, ColumnDataSource, DatetimeTickFormatter)
+from bokeh.models.widgets import (CheckboxGroup, Select)
 from bokeh.layouts import column, row
 
 
@@ -22,9 +18,7 @@ from bokeh.layouts import column, row
 def vbar_tab(cds):
 
     # Function to make a dataset for vbars based on a list of states
-
     def make_dataset(cds, states):
-        # cds_states = cds[cds['state'] == states]
         # Iterate through all the states
         for i, state in enumerate(states):
             # Subset to the state
@@ -64,7 +58,7 @@ def vbar_tab(cds):
                bottom=-10,
                source=source,
                line_width=3,
-               width=datetime.timedelta(days=1),
+               width=datetime.timedelta(days=0.5),
                color='blue',
                legend_label='daily_cases')
 
@@ -73,7 +67,7 @@ def vbar_tab(cds):
                bottom=-10,
                source=source,
                line_width=3,
-               width=datetime.timedelta(days=1),
+               width=datetime.timedelta(days=0.5),
                color='red',
                legend_label='daily_deaths')
 
@@ -103,7 +97,7 @@ def vbar_tab(cds):
 
         source.data.update(new_source.data)
 
-    # States and colors
+    # A list of states
     states = list(set(cds['state']))
     states.sort()
 
@@ -123,15 +117,9 @@ def vbar_tab(cds):
     controls = column(state_selection)
 
     # Create a row layout
-
     layout = row(controls, p)
 
-    # # Make a tab with the layout
-    # tab = Panel(child=layout, title='Unites States Vbar')
-
-    # return tab
-
-    # Put the tabs in the current document for display
+    # Put the layout in the current document for display
     curdoc().add_root(layout)
 
 
@@ -143,10 +131,5 @@ cds = pd.read_csv(
     parse_dates=['date'],
     # Parse cases,deaths,daily_cases,daily_deaths columns as an integer
     dtype={('daily_deaths', 'daily_cases'): int})
-
-# cds.loc[:, 'date'] = pd.to_datetime(cds.loc[:, 'date'])
-
-# cds.loc[:, 'ToolTipDates'] = cds.loc[:,
-#                                     'date'].map(lambda x: x.strftime("%b %d"))
 
 vbar_tab(cds)
