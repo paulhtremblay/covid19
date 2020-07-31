@@ -3,6 +3,29 @@ import os
 from google.cloud import bigquery
 import datetime
 
+def get_sates_tracker_sql():
+    return """
+    with t1 as
+(
+SELECT date, state_long as state, total_test_results, positive_cases_viral, positive, negative,
+total_test_results_increase, positive_increase, death_increase
+FROM `paul-henry-tremblay.covid19.covid19_track_states` c
+inner join covid19.state_conversion sc
+on sc.state_code = c.state
+--where state = 'WA'
+), t2 as
+(select *
+from `paul-henry-tremblay.covid19.us_states_day_diff`
+--where state = 'Washington'
+)
+select t1.*, new_cases, new_deaths
+from t1
+inner join t2
+on t1.date = t2.date
+and t1.state = t2.state
+order by t1.date
+    """
+
 def get_non_king_slq():
     return """
     SELECT date,  sum(new_cases) as cases,
@@ -254,6 +277,8 @@ def get_all_data():
             path = 'seven_day_county.csv')
     gen_writer(client = client, sql = get_timestamp(),
             path = 'site_last_updated.csv')
+    gen_writer(client = client, sql =get_sates_tracker_sql(), 
+            path = 'covid_tracker_states.csv')
 
 if __name__ == '__main__':
     get_all_data()
