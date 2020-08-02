@@ -48,7 +48,7 @@ def get_data():
         from covid19.us_counties  as c
         left join covid19.rural_urban_codes_2013 as ruc
         on c.fips = ruc.FIPS
-        where c.state = "Washington" 
+        where c.state = "Washington"
         -- and county = "King"
         order by c.county, c.date;
 
@@ -68,7 +68,8 @@ def get_data():
         two_weekly_case_per_100k_people = i.get(
             'two_weekly_cases_per_100k_people')
         dates.append(date)
-        two_weekly_cases_per_100k_people.append( two_weekly_case_per_100k_people)
+        two_weekly_cases_per_100k_people.append(
+            two_weekly_case_per_100k_people)
         all_data.append([county, date, two_weekly_case_per_100k_people])
     thresholds = [6 for x in range(0, len(dates))]
     return all_data, thresholds
@@ -86,16 +87,23 @@ def two_weekly_case_per_100k_people_graph(date, threshold):
     plt.tight_layout()
     plt.savefig('temp.png')
 
+
 def two_weekly_case_per_100k_people_graph_bokeh(date, threshold):
     #have to convert date to datetime. rather inconvenient but necessary
     date = [datetime.datetime(x.year, x.month, x.day) for x in date]
-    p = figure(x_axis_type = 'datetime', title = 'not sure') 
-    p.line(x = date, y = threshold, line_width = 2, color = 'red', legend_label = 'urban')
+    p = figure(x_axis_type='datetime', title='not sure')
+    p.line(x=date,
+           y=threshold,
+           line_width=2,
+           color='red',
+           legend_label='urban')
     p.yaxis.axis_label = 'cases/100k'
     show(p)
 
+
 def get_data_h():
-    all_data, thresholds  = get_data()
+    all_data, thresholds = get_data()
+
 
 def main():
     get_data_h()
@@ -104,7 +112,6 @@ def main():
     #two_weekly_case_per_100k_people_graph_bokeh(dates, two_weekly_cases_per_100k_people)
     #two_weekly_case_per_100k_people_graph(dates, two_weekly_cases_per_100k_people)
 
+
 if __name__ == '__main__':
     main()
-
-
