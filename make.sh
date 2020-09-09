@@ -1,4 +1,5 @@
 set -e 
+#bash -x make.sh 
 VERBOSE=false
 REFRESH_DATA=false
 UPLOAD=false
