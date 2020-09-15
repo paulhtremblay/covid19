@@ -39,7 +39,8 @@ def get_data():
 
 def do_graphs(df,  pop, title, y_range, window, 
         plot_width = 300, plot_height = 300):
-    df['deaths_million'] = df['deaths'] /(pop/1e6) 
+    df = df.assign(deaths_million = df['deaths'] /(pop/1e6) )
+    #df_s = df_s.assign(deaths_pop = df_s['deaths'] * (1e6/pop[0]))
     y = df['deaths_million'].rolling(window).mean()
     p = common.incidents_over_time_bar2(x = df['date'], y= y, 
             title = title,
