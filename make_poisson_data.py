@@ -106,8 +106,8 @@ def gen_poission(path, out_path, the_type = 'state'):
         for key in d.keys():
             data = sorted(d[key])
             p_data = get_poisson_for_all_days(dates = [x[0] for x in data], 
-                cases = [x[1] for x in data])
-            for i in data:
+                    cases = [x[1] for x in data])[:-14]
+            for i in p_data:
                 if the_type == 'state':
                     csv_writer.writerow([key, i[0].strftime('%Y-%m-%d'), i[1]])
                 else:
