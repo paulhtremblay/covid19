@@ -173,6 +173,7 @@ def all_states(df_week, df_day, window = 3, plot_height = 550,
         cases_ro, cases_double_rate, p4 =  dy_dx(state = i, df = df_day, window = window, 
                 key = 'cases', plot_height = 300, plot_width = 300)
         grid = gridplot([p1, p2, p6, p5,  p3, p4], ncols = 2)
+        return grid
         script, div = components(grid)
         html = get_html(state = i, script = script, div = div,
                 death_ro = death_ro, cases_ro = cases_ro, 
@@ -187,7 +188,8 @@ def all_states(df_week, df_day, window = 3, plot_height = 550,
 def main():
     df_states_week = get_state_data_week()
     df_states_day = common.make_dataframe(get_state_data_day())
-    all_states(df_week =  df_states_week, df_day = df_states_day)
+    g = all_states(df_week =  df_states_week, df_day = df_states_day)
+    show(g)
 
 if __name__ == '__main__':
     main()

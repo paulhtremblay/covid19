@@ -218,6 +218,27 @@ def make_wa():
     with open(os.path.join(dir_path, 'wa'), 'w') as write_obj:
             write_obj.write(html)
 
+def get_poisson_data():
+    df = pd.read_csv(os.path.join('data','state_poisson.csv'))
+    df['date'] =pd.to_datetime(df['date'])
+    df = df.sort_values(by = ['date'])
+    return df
+
+def make_dt_graph(dates, y, dates2, y2, plot_height = 350, plot_width = 350, p = None):
+    if not p:
+        p = figure(title = "Cases", x_axis_type = 'datetime',
+              plot_height = plot_height, plot_width = plot_width)
+    p.line(x = dates, y = y, line_width = 2, legend_label = "Actual date")
+    p.line(x = dates2, y = y2, color = 'red', line_width = .5, alpha = .5, 
+            legend_label = 'Reported')
+    return p
+
+def make_state_graph(df, df2, state):
+    df_ = df[df['state']== state]
+    df2_ = df2[df2['state'] == state]
+    return make_dt_graph(dates = df_['date'], y = df_['cases'],
+          dates2 = df2_['date'], y2 = df2_['cases'])
+
 def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400, 
         window = None):
     state_pop = get_state_pop()
@@ -230,6 +251,7 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400,
     df_deaths = get_data_deaths()
     df_cases = get_data_cases()
     df_day = get_state_data_day()
+    df_poisson = get_poisson_data()
     dir_path = make_territories_dir('state')
     for state in set(df_deaths['state']):
         if verbose:
@@ -252,6 +274,7 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400,
                         )
             if state in ['Northern Mariana Islands', 'Virgin Islands']:
                 continue
+            p_poisson = make_state_graph(df = df_poisson, df2 = df_day_, state = state) 
             the_dict = _trim_data(the_dict)
             y = df_day_[df_day_['state'] == state][the_info[1]].rolling(window).mean()  
             first = _get_first_nonzero(y)
@@ -269,6 +292,8 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400,
                     plot_width = plot_width, title = the_info[5])
             ps.append(p)
             ps.append(p_day)
+            if the_info[1] == 'cases':
+                ps.append(p_poisson)
         grid = gridplot(ps, ncols = 2)
         script, div = components(grid)
         html = get_html(territory = state, script = script, div = div,
