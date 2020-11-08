@@ -1,3 +1,4 @@
+import sys
 import os
 from google.cloud import storage
 import google
@@ -21,6 +22,7 @@ def covid_tracker_get():
             'tn': True, 'tx': True, 'ut': True, 'vt': True, 'va': True, 
             'wa': True, 'wv': True, 'wi': True, 'wy': True}
 
+    #note that totalTestEncountersViral is not deprecated, but it was added late, so ignoring
     deprecated = {'checkTimeEt': True,
     'commercialScore' : True,
     'dateChecked' : True,
@@ -37,6 +39,7 @@ def covid_tracker_get():
     'total' : True,
     'deathConfirmed': True,
     'deathProbable': True,
+
             }
 
     good_fields = {
@@ -58,6 +61,30 @@ def covid_tracker_get():
             'positiveTestsViral':'positive_tests_viral',
             'positiveIncrease':'positive_increase',
             'inIcuCumulative':'in_icu_cumulative',
+            }
+
+    allowed_fields = {
+            'date':True,
+            'state':True,
+            'fips': True,
+            }
+
+    allowed_fields_ = {
+            'date':True,
+            'state':True,
+            'fips': True,
+            'totalTestEncountersViral': True,
+            'totalTestsPeopleViral': True,
+            'totalTestsAntibody':True,
+            'positiveTestsAntibody': True,
+            'negativeTestsAntibody': True,
+            'totalTestsPeopleAntibody':True,
+            'positiveTestsPeopleAntibody': True,
+            'negativeTestsPeopleAntibody':True,
+            'totalTestsPeopleAntigen': True,
+            'positiveTestsPeopleAntigen':True,
+            'totalTestsAntigen':True,
+            'positiveTestsAntigen':True,
             }
 
     int_dict = {'positive':True,
@@ -83,6 +110,7 @@ def covid_tracker_get():
     fh, path = tempfile.mkstemp()
     fh2, path2 = tempfile.mkstemp()
     out_path = 'covid_tracker_states.json'
+    bad_found = {}
     with  open(out_path, 'w') as write_obj:
         for j in state_abb.keys():
             url = 'https://covidtracking.com/api/v1/states/{s}/daily.csv'.format(s = j)
@@ -95,6 +123,12 @@ def covid_tracker_get():
                     for i in fieldnames:
                         if deprecated.get(i):
                             continue
+                        true_name = good_fields.get(i)
+                        if not true_name and not int_dict.get(i) and not allowed_fields.get(i):
+                            if not bad_found.get(i):
+                                sys.stderr.write('{i} will be ignored\n'.format(i = i))
+                            bad_found[i] = True
+                            continue
                         true_name = good_fields.get(i, i)
                         if true_name == 'date':
                             new_d['date'] = datetime.datetime.strptime(row[i], '%Y%m%d')\
@@ -105,7 +139,7 @@ def covid_tracker_get():
                                         .strftime('%Y-%m-%d %H:%M:%S')
                             except ValueError:
                                 new_d['last_update_et'] = ''
-                        elif int_dict.get(true_name) and row[i] == '':
+                        elif int_dict.get(true_name) and (row[i] == '' or row[i] == 'NaN'):
                             new_d[true_name] = 0
                         elif int_dict.get(true_name):
                             new_d[true_name] = int(row[i])
@@ -216,10 +250,20 @@ def upload_to_bq(client, gs_path, table_name, source_format ='csv'):
 
 
 def main(verbose = False):
+    cron_d = '/home/henry/cron_logs/'
     if verbose:
         print('uploading to storage')
+    with open(os.path.join(cron_d, 'upload.txt'), 'a') as write_obj:
+        write_obj.write('Starting load job at {d}\n'.format(d = datetime.datetime.now().strftime(
+            '%Y-%m-%d %H:%M:%S')))
     client = bigquery.Client()
+    with open(os.path.join(cron_d, 'upload.txt'), 'a') as write_obj:
+        write_obj.write('client loaded at {d}\n'.format(d = datetime.datetime.now().strftime(
+            '%Y-%m-%d %H:%M:%S')))
     fix_us_counties('us-counties.csv')
+    with open(os.path.join(cron_d, 'upload.txt'), 'a') as write_obj:
+        write_obj.write('fixed at {d}\n'.format(d = datetime.datetime.now().strftime(
+            '%Y-%m-%d %H:%M:%S')))
     upload_to_storage(local_path = 'us-states.csv', 
             bucket_name = 'paul-henry-tremblay-covid19', 
             blob_name = 'covid_19_us_states.csv'
@@ -258,3 +302,6 @@ def main(verbose = False):
     
 if __name__ == '__main__':
     main()
+    with open('/home/henry/cron_logs/upload.txt', 'a') as write_obj:
+        write_obj.write('successfully uploaded at {d}\n'.format(
+            d = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))

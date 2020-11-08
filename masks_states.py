@@ -61,6 +61,14 @@ def make_mask_graph(df, mask_start, title = None, plot_height = 450, plot_width 
 def do_mask_mandates(window = 3, plot_height = 450, 
                     plot_width = 450, ncols = 4):
     return gridplot([
+            make_mask_graph(df = 
+                make_df(state = 'Alabama', 
+                        start_date = datetime.datetime(2020,5,18)),
+                mask_start = datetime.datetime(2020,7, 16),
+                    title = 'Alabama', plot_height = plot_height,
+                                     plot_width = plot_width,
+                            window = window,
+               ),   
             
             make_mask_graph(df = 
                 make_df(state = 'California', 
