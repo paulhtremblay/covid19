@@ -231,6 +231,15 @@ def make_dt_graph(dates, y, dates2, y2, plot_height = 350, plot_width = 350, p =
     p.line(x = dates, y = y, line_width = 2, legend_label = "Actual date")
     p.line(x = dates2, y = y2, color = 'red', line_width = .5, alpha = .5, 
             legend_label = 'Reported')
+    p.legend.location = "top_left"
+    return p
+
+def make_hospital_graph(df, state):
+    df_ = df[df['state'] == state]
+    p = figure(x_axis_type = 'datetime', plot_height = 350, 
+            plot_width = 350, title = 'Hospitalizations')
+    p.line(x = df_['date'], y = df_['hospitalized_currently'], 
+            color = 'blue',)
     return p
 
 def make_state_graph(df, df2, state):
@@ -253,6 +262,8 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400,
     df_day = get_state_data_day()
     df_poisson = get_poisson_data()
     dir_path = make_territories_dir('state')
+    df_hospital = pd.read_csv('data/hospital.csv') 
+    df_hospital['date'] = pd.to_datetime(df_hospital['date'])
     for state in set(df_deaths['state']):
         if verbose:
             print('working on {state}'.format(state = state))
@@ -275,6 +286,7 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400,
             if state in ['Northern Mariana Islands', 'Virgin Islands']:
                 continue
             p_poisson = make_state_graph(df = df_poisson, df2 = df_day_, state = state) 
+            p_hospital = make_hospital_graph(df_hospital, state = state)
             the_dict = _trim_data(the_dict)
             y = df_day_[df_day_['state'] == state][the_info[1]].rolling(window).mean()  
             first = _get_first_nonzero(y)
@@ -294,6 +306,7 @@ def make_state_graphs(verbose = False, plot_height = 400, plot_width = 400,
             ps.append(p_day)
             if the_info[1] == 'cases':
                 ps.append(p_poisson)
+                ps.append(p_hospital)
         grid = gridplot(ps, ncols = 2)
         script, div = components(grid)
         html = get_html(territory = state, script = script, div = div,

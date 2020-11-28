@@ -56,15 +56,15 @@ def incidents_over_time_bar(df, df_ny, key, window= 3, plot_height = 600,
     if key == 'deaths_pop':
         p.yaxis.axis_label = 'deaths/million'
     else:
-        p.yaxis.axis_label = 'cases/million'
+        p.yaxis.axis_label = 'cases/100000'
     return p
 
-def shape_data(df, df_pop, state):
+def shape_data(df, df_pop, state, death_divide = 1e6, case_divide = 100000):
     df_s = df[df['state'] == state]
     pop = df_pop[df_pop['state'] == state]['population_2019'].tolist()
     #df_s['deaths_pop'] = df_s.loc[:, 'deaths'] * (1e6 / pop[0] )
-    df_s = df_s.assign(deaths_pop = df_s['deaths'] * (1e6/pop[0]))
-    df_s = df_s.assign(cases_pop = df_s['cases'] * (1e6/pop[0]))
+    df_s = df_s.assign(deaths_pop = df_s['deaths'] * (death_divide/pop[0]))
+    df_s = df_s.assign(cases_pop = df_s['cases'] * (case_divide/pop[0]))
     return df_s
 
 def append_to_graph(df, l, title, df_ny, keyword = 'cases_pop', max_y = 600):
@@ -103,7 +103,7 @@ def make_state_graphs():
     ]
     df_ny = shape_data(df = df_state, df_pop = df_pop, state = 'New York')
     df_wash = shape_data(df = df_state, df_pop = df_pop, state = 'Washington')
-    for case in [('cases_pop', 600),  ('deaths_pop', 60)]:
+    for case in [('cases_pop', 150),  ('deaths_pop', 60)]:
         l = []
         for i in sorted(states):
             if i in exclude:

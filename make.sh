@@ -1,13 +1,20 @@
 set -e 
 #bash -x make.sh 
+
 echo "starting make at `date`"
+export GOOGLE_APPLICATION_CREDENTIALS="/home/henry/Downloads/paul-henry-tremblay-855de77c0ffe.json"
+cd /home/henry/projects/covid19_data/covid-19-data
+P=/home/henry/Envs2/covid19/bin/python
+git pull
+$P upload_data_to_bq.py
+cd /home/henry/projects/covid19
 VERBOSE=false
 REFRESH_DATA=false
 UPLOAD=false
 source /home/henry/.bashrc
-#P=$WORKON_HOME/covid19/bin/python
-P=/home/henry/Envs2/covid19/bin/python
 $P --version
+$P make_data.py
+$P make_poisson_data.py
  
 while getopts p:vru flag
 do
@@ -42,7 +49,6 @@ $P by_state.py
 $P sweden.py
 $P make_about.py
 #python comparison_open.py
-$P state_comparisons.py
 $P data_table.py
 $P by_counties.py
 $P masks_states.py

@@ -3,6 +3,64 @@ import os
 from google.cloud import bigquery
 import datetime
 
+def get_hospital_maks_sql():
+    return """
+    SELECT date, state_long as state,  hospitalized_currently, death_increase,
+    positive_increase
+    FROM `paul-henry-tremblay.covid19.covid19_track_states` t
+    inner join covid19.state_conversion sc
+    on sc.state_code = t.state
+    order by state_long, date
+    """
+
+def get_sql_masks_kansas_sql():
+    return """
+    with t1 as
+(
+select c.date, c.county, c.new_cases
+from covid19.us_counties_diff c
+where state = 'Kansas'
+),
+pop as
+(select replace(county, ' County', '') as county, population_2019
+from covid19.population_2019_est
+where state = 'Kansas'
+),
+t2 as
+(select county, date_add(date, interval 5 day) as date
+from covid19.masks_kansas
+),
+t3 as
+(select t1.date, t1.county, t1.new_cases,
+t2.date as mask_start,
+case when t2.date is null then false
+when t1.date >= t2.date then true
+when t1.date < t2.date then false
+else null
+end as mask
+from t1
+left join t2
+on t1.county = t2.county
+),
+with_pop as
+(select t3.*, new_cases/population_2019 * 10000 as per_pop
+from t3
+inner join pop p
+on p.county = t3.county
+),
+t4 as
+(select date,
+sum (case when mask then new_cases else 0 end) as masked,
+sum (case when not  mask then new_cases else 0 end) as non_masked,
+sum (case when not  mask then per_pop else 0 end) as non_masked_pop,
+sum (case when   mask then per_pop else 0 end) as masked_pop,
+from with_pop
+group by date
+)
+select * from t4
+order by date
+    """
+
 def get_sates_tracker_sql():
     return """
     with t1 as
@@ -179,7 +237,7 @@ from
 (
 SELECT c.date,
 c.state,
-case when the_rank <= 3 then c.county else 'other' end as county,
+case when the_rank <= 4 then c.county else 'other' end as county,
 c.new_cases as cases,
 the_rank
 FROM `paul-henry-tremblay.covid19.us_counties_diff` c
@@ -279,6 +337,10 @@ def get_all_data():
             path = 'site_last_updated.csv')
     gen_writer(client = client, sql =get_sates_tracker_sql(), 
             path = 'covid_tracker_states.csv')
+    gen_writer(client = client, sql =get_sql_masks_kansas_sql(), 
+            path = 'kansas_masks.csv')
+    gen_writer(client = client, sql =get_hospital_maks_sql(), 
+            path = 'hospital.csv')
 
 if __name__ == '__main__':
     get_all_data()
