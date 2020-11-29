@@ -201,10 +201,14 @@ def fix_us_counties(path):
             counter += 1
             if counter == 1:
                 csv_writer.writerow(row)
-            elif row[1] == 'New York City' and row[2] == 'New York':
-                csv_writer.writerow([row[0], row[1], row[2], '36061', row[4], row[5]])
             else:
-                csv_writer.writerow(row)
+                deaths = row[5]
+                if deaths == '':
+                    deaths = 0
+                if row[1] == 'New York City' and row[2] == 'New York':
+                    csv_writer.writerow([row[0], row[1], row[2], '36061', row[4], deaths])
+                else:
+                    csv_writer.writerow([row[0], row[1], row[2], row[3], row[4], deaths])
     return out_path
 
 
