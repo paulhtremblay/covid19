@@ -3,6 +3,13 @@ import os
 from google.cloud import bigquery
 import datetime
 
+def get_state_masks():
+    return """
+    SELECT *
+    FROM `paul-henry-tremblay.covid19.masks_states` t
+    order by state
+    """
+
 def get_hospital_maks_sql():
     return """
     SELECT date, state_long as state,  hospitalized_currently, death_increase,
@@ -191,11 +198,20 @@ covid19.world
 where country = 'Norway'
     """
 
-def get_sql_world_day():
+def get_sql_world_day_old():
     return  """
     /* WORLD BY DAY */
   SELECT  date, country, cases, deaths
 FROM `paul-henry-tremblay.covid19.world`
+order by date
+  """
+
+def get_sql_world_day():
+    return  """
+    /* WORLD BY DAY */
+  SELECT  date, country, new_cases as cases, new_deaths as deaths,
+  population
+FROM `paul-henry-tremblay.covid19.world2`
 order by date
   """
 
@@ -207,9 +223,9 @@ from
 (
 SELECT DATE_TRUNC(date, week) as date,
 country,
-sum(cases) as cases,
-sum(deaths) as deaths
-from covid19.world
+sum(new_cases) as cases,
+sum(new_deaths) as deaths
+from covid19.world2
 group by date_trunc(date,week), country
 ) order by country, date
   """
@@ -307,6 +323,8 @@ def gen_writer(client, sql, path):
 
 def get_all_data():
     client = bigquery.Client(project='paul-henry-tremblay')
+    gen_writer(client = client, sql = get_state_masks(),
+            path = 'masks_states.csv')
     gen_writer(client = client, sql = get_state_totals_sql(),
             path = 'states_totals.csv')
     gen_writer(client = client, sql =get_sql_deaths_ranked(), 

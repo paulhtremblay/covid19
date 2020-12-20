@@ -9,6 +9,63 @@ import csv
 import datetime
 import json
 
+def get_world_data2():
+    path = 'world2.csv'
+    path2 = 'world3.csv'
+    with open(path2, 'w') as write_obj, open(path, 'r') as read_obj:
+        reader = csv.DictReader(read_obj)
+        writer = csv.writer(write_obj)
+        fieldnames = reader.fieldnames
+        for row in reader:
+            date = row['date']
+            new_cases = row['new_cases']
+            if row['new_cases'] == '':
+                new_cases = 0
+            else:
+                new_cases = int(float(row['new_cases']))
+            if row['new_deaths'] == '':
+                new_deaths = 0
+            else:
+                new_deaths = int(float(row['new_deaths']))
+            if row['population'] == '':
+                population = 0
+            else:
+                try:
+                    population = int(row['population'])
+                except ValueError:
+                    population = int(float(row['population']))
+            iso_code = row['iso_code']
+            country = row['location']
+            if row['total_cases'] == '':
+                total_cases = 0
+            else:
+                total_cases = int(float(row['total_cases']))
+            if row['total_deaths'] == '':
+                total_deaths = 0
+            else:
+                total_deaths = int(float(row['total_deaths']))
+            if row['icu_patients'] == '':
+                icu_patients = 0
+            else:
+                icu_patients = int(float(row['icu_patients']))
+            if row['hosp_patients'] == '':
+                hosp_patients = 0
+            else:
+                hosp_patients = int(float(row['hosp_patients']))
+            if iso_code == '':
+                continue
+            new_row = [date, iso_code, country, total_cases, total_deaths,
+                    new_cases, new_deaths, hosp_patients, icu_patients, population]
+            writer.writerow(new_row)
+    return path2
+
+def get_world_data2_():
+    path = 'world2.csv'
+    path2 = 'world3.csv'
+    with  open(path, 'w') as write_obj:
+        url = 'https://covid.ourworldindata.org/data/owid-covid-data.csv'
+        urllib.request.urlretrieve(url, path)
+
 def covid_tracker_get():
     state_abb = {'al': True, 'ak': True, 'az': True, 'ar': True, 'ca': True, 
             'co': True, 'ct': True, 'de': True, 'dc': True, 
@@ -254,13 +311,22 @@ def upload_to_bq(client, gs_path, table_name, source_format ='csv'):
 
 
 def main(verbose = False):
+    client = bigquery.Client()
     cron_d = '/home/henry/cron_logs/'
     if verbose:
         print('uploading to storage')
+    local_path = get_world_data2()
+    upload_to_storage(local_path = local_path, 
+            bucket_name = 'paul-henry-tremblay-covid19', 
+            blob_name = 'covid19_world2.csv'
+            )
+    upload_to_bq(client = client, 
+        gs_path = 'gs://paul-henry-tremblay-covid19/covid19_world2.csv',
+        table_name = 'world2'
+        )
     with open(os.path.join(cron_d, 'upload.txt'), 'a') as write_obj:
         write_obj.write('Starting load job at {d}\n'.format(d = datetime.datetime.now().strftime(
             '%Y-%m-%d %H:%M:%S')))
-    client = bigquery.Client()
     with open(os.path.join(cron_d, 'upload.txt'), 'a') as write_obj:
         write_obj.write('client loaded at {d}\n'.format(d = datetime.datetime.now().strftime(
             '%Y-%m-%d %H:%M:%S')))
@@ -285,6 +351,7 @@ def main(verbose = False):
         table_name = 'us_counties'
         )
     
+    """
     path = get_html_file('https://opendata.ecdc.europa.eu/covid19/casedistribution/csv')
     upload_to_storage(local_path = path, 
             bucket_name = 'paul-henry-tremblay-covid19', 
@@ -294,6 +361,7 @@ def main(verbose = False):
         gs_path = 'gs://paul-henry-tremblay-covid19/covid_19_world.csv',
         table_name = 'world'
         )
+    """
     covid_tracker_get()
     upload_to_storage(local_path = 'covid_tracker_states.json', 
             bucket_name = 'paul-henry-tremblay-covid19', 
