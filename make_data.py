@@ -3,6 +3,20 @@ import os
 from google.cloud import bigquery
 import datetime
 
+def get_party_state_cases_sql():
+    return """
+    select distinct s.state, s.cases, s.deaths, p.population_2019 as population,
+e.result as party
+from `paul-henry-tremblay.covid19.us_states` s
+inner join `paul-henry-tremblay.covid19.population_2019_est` p
+on p.state = s.state
+inner join `paul-henry-tremblay.covid19.election_2020` e
+on e.state = p.state
+where s.date = (select max(date) from  `paul-henry-tremblay.covid19.us_states`)
+and p.county = p.state
+    """
+
+
 def get_state_masks():
     return """
     SELECT *
@@ -325,6 +339,8 @@ def get_all_data():
     client = bigquery.Client(project='paul-henry-tremblay')
     gen_writer(client = client, sql = get_state_masks(),
             path = 'masks_states.csv')
+    gen_writer(client = client, sql = get_party_state_cases_sql(),
+            path = 'party_cases_deaths_pop.csv')
     gen_writer(client = client, sql = get_state_totals_sql(),
             path = 'states_totals.csv')
     gen_writer(client = client, sql =get_sql_deaths_ranked(), 
