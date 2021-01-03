@@ -3,6 +3,8 @@ set -e
 
 echo "starting make at `date`"
 export GOOGLE_APPLICATION_CREDENTIALS="/home/henry/Downloads/paul-henry-tremblay-855de77c0ffe.json"
+cd /home/henry/projects/covid19-infection-estimates-latest
+git pull
 cd /home/henry/projects/covid19_data/covid-19-data
 P=/home/henry/Envs2/covid19/bin/python
 git pull

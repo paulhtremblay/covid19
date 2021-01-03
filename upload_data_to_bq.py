@@ -315,6 +315,14 @@ def main(verbose = False):
     cron_d = '/home/henry/cron_logs/'
     if verbose:
         print('uploading to storage')
+    upload_to_storage(local_path =  '/home/henry/projects/covid19-infection-estimates-latest/latest_all_estimates_us.csv',
+            bucket_name = 'paul-henry-tremblay-covid19', 
+            blob_name = 'covid19_infections_estimates.csv'
+            )
+    upload_to_bq(client = client, 
+        gs_path = 'gs://paul-henry-tremblay-covid19/covid19_infections_estimates.csv',
+        table_name = 'infection_estimates'
+        )
     local_path = get_world_data2()
     upload_to_storage(local_path = local_path, 
             bucket_name = 'paul-henry-tremblay-covid19', 
