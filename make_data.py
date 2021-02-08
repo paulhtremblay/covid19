@@ -3,6 +3,169 @@ import os
 from google.cloud import bigquery
 import datetime
 
+def get_data_mask_usa():
+    return """
+    with masked_dates as
+(
+SELECT c.date, c.state, c.new_deaths, c.new_cases, m.date as mask_date
+FROM `paul-henry-tremblay.covid19.us_states_day_diff` c
+left join covid19.masks_states m
+on m.state = c.state
+where c.state != 'Kansas'
+),
+masked_dates_kansas as
+(SELECT c.date, c.county, c.state, c.new_deaths, c.new_cases, m.date as mask_date
+FROM `paul-henry-tremblay.covid19.us_counties_diff` c
+left join covid19.masks_kansas m
+on m.county = c.county
+where c.state = 'Kansas'
+),
+pop as
+(select state, population_2019 as population
+from covid19.population_2019_est
+where state = county
+),
+pop_kansas as
+(select county, fips, population_2019 as population
+from covid19.population_2019_est
+where state != county
+and state = 'Kansas'
+),
+true_infected_ as
+(select i.date, s.state_long as state, i.new_infected_mean as infected
+from covid19.infection_estimates i
+inner join covid19.state_conversion s
+on s.state_code = i.state
+),
+true_infected_kansas_ as
+(select i.date, s.state_long as state, county, fips, i.new_infected_mean as infected
+from covid19.infection_estimates_counties i
+inner join covid19.state_conversion s
+on s.state_code = i.state
+where s.state_long = 'Kansas'
+),
+true_infected as
+(select t.*, new_deaths, new_cases, mask_date
+from true_infected_ t
+inner join masked_dates m
+on m.date = t.date
+and m.state = t.state
+),
+true_infected_kansas as
+(select t.*, new_deaths, new_cases, mask_date
+from true_infected_kansas_ t
+inner join masked_dates_kansas m
+on m.date = t.date
+and m.state = t.state
+and m.county = t.county
+),
+
+with_pop as
+(select m.*, p.population
+from true_infected m
+inner join pop p
+on p.state = m.state
+),
+with_pop_kansas as
+(select m.*, p.population
+from true_infected_kansas m
+inner join pop_kansas p
+on p.fips = m.fips
+),
+
+mask_no_mask as
+(select p.date, p.state,
+case
+  when mask_date is null or date < DATE_ADD(mask_date, INTERVAL 5 DAY) then new_deaths else 0
+end as no_mask_deaths,
+case
+  when date >= DATE_ADD(mask_date, INTERVAL 5 DAY) then new_deaths else 0
+end as mask_deaths,
+case
+  when mask_date is null or date < DATE_ADD(mask_date, INTERVAL 5 DAY) then new_cases else 0
+end as no_mask_cases,
+case
+  when date >= DATE_ADD(mask_date, INTERVAL 5 DAY) then new_cases else 0
+end as mask_cases,
+case
+  when mask_date is null or date < DATE_ADD(mask_date, INTERVAL 5 DAY) then infected else 0
+end as no_mask_infections,
+case
+  when date >= DATE_ADD(mask_date, INTERVAL 5 DAY) then infected else 0
+end as mask_infections,
+case
+  when mask_date is null or date < DATE_ADD(mask_date, INTERVAL 5 DAY) then population else 0
+end as no_mask_population,
+case
+  when date >= DATE_ADD(mask_date, INTERVAL 5 DAY) then population else 0
+end as mask_population
+from with_pop p
+),
+mask_no_mask_kansas as
+(select p.date, 'Kansas' as state,
+case
+  when mask_date is null or date < DATE_ADD(mask_date, INTERVAL 5 DAY) then new_deaths else 0
+end as no_mask_deaths,
+case
+  when date >= DATE_ADD(mask_date, INTERVAL 5 DAY) then new_deaths else 0
+end as mask_deaths,
+case
+  when mask_date is null or date < DATE_ADD(mask_date, INTERVAL 5 DAY) then new_cases else 0
+end as no_mask_cases,
+case
+  when date >= DATE_ADD(mask_date, INTERVAL 5 DAY) then new_cases else 0
+end as mask_cases,
+case
+  when mask_date is null or date < DATE_ADD(mask_date, INTERVAL 5 DAY) then infected else 0
+end as no_mask_infections,
+case
+  when date >= DATE_ADD(mask_date, INTERVAL 5 DAY) then infected else 0
+end as mask_infections,
+case
+  when mask_date is null or date < DATE_ADD(mask_date, INTERVAL 5 DAY) then population else 0
+end as no_mask_population,
+case
+  when date >= DATE_ADD(mask_date, INTERVAL 5 DAY) then population else 0
+end as mask_population
+from with_pop_kansas p
+),
+mask_no_mask_kansas2 as
+(
+select date, max(state) as state, sum(no_mask_deaths) as no_mask_deaths,
+sum(mask_deaths) as mask_deaths,
+sum(no_mask_cases) as no_mask_cases,
+sum(mask_cases) as mask_cases,
+sum(no_mask_infections) as no_mask_infections,
+sum(mask_infections) as mask_infections,
+sum(no_mask_population) as no_mask_population,
+sum(mask_population) as mask_population
+from mask_no_mask_kansas
+group by date
+),
+both as
+(select * from mask_no_mask_kansas2
+union all
+select * from mask_no_mask
+),
+usa as
+(select date,
+sum(no_mask_deaths) as no_mask_deaths,
+sum(mask_deaths) as mask_deaths,
+sum(no_mask_cases) as no_mask_cases,
+sum(mask_cases) as mask_cases,
+sum(no_mask_infections) as no_mask_infections,
+sum(mask_infections) as mask_infections,
+sum(mask_population) as mask_population,
+sum(no_mask_population) as no_mask_population
+from both
+group by date
+)
+
+select *
+from  usa
+
+    """
+
 def get_party_state_cases_sql():
     return """
     select distinct s.state, s.cases, s.deaths, p.population_2019 as population,
@@ -337,6 +500,8 @@ def gen_writer(client, sql, path):
 
 def get_all_data():
     client = bigquery.Client(project='paul-henry-tremblay')
+    gen_writer(client = client, sql = get_data_mask_usa(),
+            path = 'masks_us.csv')
     gen_writer(client = client, sql = get_state_masks(),
             path = 'masks_states.csv')
     gen_writer(client = client, sql = get_party_state_cases_sql(),

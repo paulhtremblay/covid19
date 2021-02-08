@@ -315,7 +315,7 @@ def main(verbose = False):
     cron_d = '/home/henry/cron_logs/'
     if verbose:
         print('uploading to storage')
-    upload_to_storage(local_path =  '/home/henry/projects/covid19-infection-estimates-latest/latest_all_estimates_us.csv',
+    upload_to_storage(local_path =  '/home/henry/projects/covid19-infection-estimates-latest/latest_all_estimates_states.csv',
             bucket_name = 'paul-henry-tremblay-covid19', 
             blob_name = 'covid19_infections_estimates.csv'
             )
