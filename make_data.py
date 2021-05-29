@@ -3,6 +3,28 @@ import os
 from google.cloud import bigquery
 import datetime
 
+def us_cum_sql():
+    return """
+    with hosp as
+(
+SELECT date, coalesce(sum( currently_hospitalized ),0) as hos,
+coalesce(sum(new_hospitalized),0) as new_hos
+FROM `paul-henry-tremblay.covid19.hospitalized_by_day`
+group by date
+),
+cases_t as
+(SELECT date, coalesce(sum( new_cases ),0) as cases,
+coalesce(sum( new_deaths ),0) as deaths
+FROM `paul-henry-tremblay.covid19.us_states_day_diff`
+group by date
+)
+select h.date, cases, deaths, hos, new_hos
+from hosp h
+inner join
+cases_t c
+on c.date = h.date
+    """
+
 def get_data_mask_usa():
     return """
     with masked_dates as
@@ -187,15 +209,21 @@ def get_state_masks():
     order by state
     """
 
-def get_hospital_maks_sql():
+def get_hospitals_sql():
     return """
-    SELECT date, state_long as state,  hospitalized_currently, death_increase,
-    positive_increase
-    FROM `paul-henry-tremblay.covid19.covid19_track_states` t
-    inner join covid19.state_conversion sc
-    on sc.state_code = t.state
-    order by state_long, date
+    SELECT date, state, currently_hospitalized as hospitalized_currently, new_hospitalized
+FROM `paul-henry-tremblay.covid19.hospitalized_by_day`
+order by date
     """
+
+def get_hospitals_sql_old():
+    return """
+    select date, state_name as state, 
+    current_hospitalizations as hospitalized_currently
+    FROM `paul-henry-tremblay.covid19.hospitals` 
+
+    """
+    #date,state,hospitalized_currently,death_increase,positive_increase
 
 def get_sql_masks_kansas_sql():
     return """
@@ -500,6 +528,8 @@ def gen_writer(client, sql, path):
 
 def get_all_data():
     client = bigquery.Client(project='paul-henry-tremblay')
+    gen_writer(client = client, sql = us_cum_sql(),
+            path = 'us_cum.csv')
     gen_writer(client = client, sql = get_data_mask_usa(),
             path = 'masks_us.csv')
     gen_writer(client = client, sql = get_state_masks(),
@@ -538,7 +568,7 @@ def get_all_data():
             path = 'covid_tracker_states.csv')
     gen_writer(client = client, sql =get_sql_masks_kansas_sql(), 
             path = 'kansas_masks.csv')
-    gen_writer(client = client, sql =get_hospital_maks_sql(), 
+    gen_writer(client = client, sql =get_hospitals_sql(), 
             path = 'hospital.csv')
 
 if __name__ == '__main__':

@@ -8,10 +8,68 @@ import tempfile
 import csv
 import datetime
 import json
+import glob
+
+def get_hospitalizations():
+    url = 'https://csom-mili-api-covidhospitalizations.s3.us-east-2.amazonaws.com/hospitalizations/hospitalizations.csv'
+
+    in_path = 'hospitalizations.csv'
+    out_path = 'hospitalizations_upload.csv'
+    urllib.request.urlretrieve(url, 'hospitalizations.csv')
+    with open(out_path, 'w') as write_obj, open(in_path, 'r') as read_obj:
+        fieldnames  = ['fips', 
+            'state_abbreviation', 
+            'state_name', 
+            'date', 
+            'state_reported_date', 
+            'total_hosp_to_date', 
+            'total_in_icu_to_date', 
+            'current_hospitalizations', 
+            'currently_in_icu', 
+            'currently_on_ventilator', 
+            'total_deaths']
+        reader = csv.DictReader(read_obj)
+        writer = csv.DictWriter(write_obj, fieldnames = fieldnames)
+        read_fieldnames = reader.fieldnames
+        ['FIPS', 'StateAbbreviation', 'StateName', 
+                'Date', 'StateReportedDate', 'TotalHospToDate', 
+                'TotalInICUToDate', 'CurrentHospitalizations', 'CurrentlyInICU', 
+                'CurrentlyOnVentilator', 'TotalDeaths']
+        d = {'FIPS': 'fips', 
+            'StateAbbreviation': 'state_abbreviation', 
+            'StateName':'state_name', 
+            'Date':'date', 
+            'StateReportedDate':'state_reported_date', 
+            'TotalHospToDate':'total_hosp_to_date', 
+            'TotalInICUToDate':'total_in_icu_to_date', 
+            'CurrentHospitalizations':'current_hospitalizations', 
+            'CurrentlyInICU':'currently_in_icu', 
+            'CurrentlyOnVentilator':'currently_on_ventilator', 
+            'TotalDeaths':'total_deaths'}
+        writer.writeheader()
+        for row in reader:
+            row_dict = {}
+            for i in read_fieldnames:
+                v = row[i]
+                if v == '' and i not in ['FIPS', 'StateAbbreviation', 'StateName', 'Date', 
+                        'StateReportedDate']:
+                    v = 0
+                elif v == '' and i  in ['FIPS', 'StateAbbreviation', 'StateName', 'Date', 
+                        'StateReportedDate']:
+                    v = 0
+                k = d[i]
+                row_dict[k] = v
+            writer.writerow(row_dict)
 
 def get_world_data2():
-    path = 'world2.csv'
+    path=  '/home/henry/projects/covid-19-data/public/data/owid-covid-data.csv'
     path2 = 'world3.csv'
+    """
+    with  open(path, 'w') as write_obj:
+        url = 'https://covid.ourworldindata.org/data/owid-covid-data.csv'
+        url = "https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-data.csv"
+        urllib.request.urlretrieve(url, path)
+    """
     with open(path2, 'w') as write_obj, open(path, 'r') as read_obj:
         reader = csv.DictReader(read_obj)
         writer = csv.writer(write_obj)
@@ -287,6 +345,31 @@ def upload_to_bq_old(client, gs_path, table_name):
     except google.api_core.exceptions.BadRequest:
         raise ValueError(load_job.errors)
 
+def _fix_infections(path):
+    head, tail = os.path.split(path)
+    filename, ext = os.path.splitext(tail)
+    out_path = os.path.join(head, '{t}_new.csv'.format(t = filename))
+    with open(out_path, 'w') as write_obj, open(path, 'r') as read_obj:
+        reader = csv.DictReader(read_obj)
+    print(out_path)
+    assert False
+    return out_path
+
+def upload_infection_counties_to_storage():
+    for i in glob.glob('/home/henry/projects/covid19-infection-estimates-latest/counties/*'):
+        head, tail = os.path.split(i)
+        filename, ext = os.path.splitext(tail)
+        if ext != '.csv':
+            continue
+        if tail[0:6] != 'latest':
+            continue
+        i = _fix_infections(i)
+        print('uploading {f} to storage'.format(f = i))
+        upload_to_storage(local_path =  i,
+            bucket_name = 'paul-henry-tremblay-covid19', 
+            blob_name =os.path.join( 'infection_estimates_counties', tail) 
+            )
+
 
 def upload_to_bq(client, gs_path, table_name, source_format ='csv'):
     if not client:
@@ -315,7 +398,18 @@ def main(verbose = False):
     cron_d = '/home/henry/cron_logs/'
     if verbose:
         print('uploading to storage')
-    upload_to_storage(local_path =  '/home/henry/projects/covid19-infection-estimates-latest/latest_all_estimates_states.csv',
+    get_hospitalizations()
+    upload_to_storage(
+            local_path = '/home/henry/projects/covid19_data/covid-19-data/hospitalizations_upload.csv',
+            bucket_name = 'paul-henry-tremblay-covid19', 
+            blob_name = 'covid19_hosptials.csv'
+            )
+    upload_to_bq(client = client, 
+        gs_path = 'gs://paul-henry-tremblay-covid19/covid19_hosptials.csv',
+        table_name = 'hospitals'
+        )
+    upload_to_storage(
+            local_path =  '/home/henry/projects/covid19-infection-estimates-latest/latest_all_estimates_states.csv',
             bucket_name = 'paul-henry-tremblay-covid19', 
             blob_name = 'covid19_infections_estimates.csv'
             )
@@ -323,6 +417,8 @@ def main(verbose = False):
         gs_path = 'gs://paul-henry-tremblay-covid19/covid19_infections_estimates.csv',
         table_name = 'infection_estimates'
         )
+
+    
     local_path = get_world_data2()
     upload_to_storage(local_path = local_path, 
             bucket_name = 'paul-henry-tremblay-covid19', 
