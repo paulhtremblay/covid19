@@ -3,6 +3,20 @@ import os
 from google.cloud import bigquery
 import datetime
 
+def world_data2_sql():
+    return """
+    select * from `paul-henry-tremblay.covid19.world_cases_deaths_hosp`
+    """
+
+def gb_data_sql():
+    return """
+    SELECT *
+FROM
+  `paul-henry-tremblay.covid19.world2`
+where iso_code = 'GBR'
+order by date
+    """
+
 def us_cum_sql():
     return """
     with hosp as
@@ -528,6 +542,8 @@ def gen_writer(client, sql, path):
 
 def get_all_data():
     client = bigquery.Client(project='paul-henry-tremblay')
+    gen_writer(client = client, sql =world_data2_sql(), 
+            path = 'world2.csv')
     gen_writer(client = client, sql = us_cum_sql(),
             path = 'us_cum.csv')
     gen_writer(client = client, sql = get_data_mask_usa(),
@@ -570,6 +586,8 @@ def get_all_data():
             path = 'kansas_masks.csv')
     gen_writer(client = client, sql =get_hospitals_sql(), 
             path = 'hospital.csv')
+    gen_writer(client = client, sql =gb_data_sql(), 
+            path = 'gb.csv')
 
 if __name__ == '__main__':
     get_all_data()
