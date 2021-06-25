@@ -34,15 +34,17 @@ def main(event, context):
          event (dict): Event payload.
          context (google.cloud.functions.Context): Metadata for the event.
     """
-    d = {'covid_19_us_states.csv':'us_states'
+    d = {'covid_19_us_states.csv':'us_states',
+            'covid_19_us_counties.csv':'us_counties',
+            'covid19_hosptials.csv':'hospitals',
+            'covid19_world.csv':'world2',
+            'covid19_vaccines.csv': 'vaccination_states',
             }
     
     file_path = event['name']
     assert d.get(file_path), 'File path {f} has no matching table'.format(
             f = file_path)
-    upload_to_bq(gs_path = 'gs://paul-henry-tremblay-covid19/{f}'.format(f = file_path),
+    upload_to_bq(gs_path = 'gs://paul-henry-tremblay-covid19-2/{f}'.format(f = file_path),
         table_name = d[file_path]
         )
 
-if __name__ == '__main__':
-    main()
