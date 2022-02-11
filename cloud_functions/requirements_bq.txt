@@ -13,7 +13,7 @@ grpcio==1.38.0
 idna==2.10
 packaging==20.9
 proto-plus==1.18.1
-protobuf==3.17.3
+protobuf==3.15.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycparser==2.20
